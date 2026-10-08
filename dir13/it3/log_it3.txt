@@ -1,0 +1,8 @@
+0.02 0 final 1-Fgauge median 5.55e-03 (stale-before-update 5.55e-03)
+0.02 2 final 1-Fgauge median 4.39e-01 (stale-before-update 4.47e-01)
+0.02 4 final 1-Fgauge median 3.67e-01 (stale-before-update 3.52e-01)
+0.02 8 final 1-Fgauge median 7.47e-02 (stale-before-update 7.93e-02)
+0.02 16 final 1-Fgauge median 1.06e-02 (stale-before-update 9.33e-03)
+0.05 0 final 1-Fgauge median 3.43e-02 (stale-before-update 3.43e-02)
+0.05 2 final 1-Fgauge median 4.86e-01 (stale-before-update 4.66e-01)
+0.05 4 final 1-Fgauge median 3.81e-01 (stale-before-update 3.81e-01)

@@ -1,0 +1,12 @@
+thin_noFresnel_air|lam1.55|ghostFalse {'F': 0.9963, 'F_trim': 0.9964, 'eta': 0.8727, 'IL_dB': 0.5912, 'MDL_dB': 0.1799}
+air_uncoated|lam1.55|ghostFalse {'F': 0.9961, 'F_trim': 0.9962, 'eta': 0.421, 'IL_dB': 3.7569, 'MDL_dB': 0.2461}
+air_uncoated|lam1.55|ghostTrue {'F': 0.9903, 'F_trim': 0.991, 'eta': 0.3363, 'IL_dB': 4.7333, 'MDL_dB': 1.7427}
+air_AR0.5pct|lam1.55|ghostFalse {'F': 0.9963, 'F_trim': 0.9964, 'eta': 0.8044, 'IL_dB': 0.9454, 'MDL_dB': 0.1784}
+air_AR0.5pct|lam1.55|ghostTrue {'F': 0.9964, 'F_trim': 0.9964, 'eta': 0.7847, 'IL_dB': 1.053, 'MDL_dB': 0.2704}
+air_AR0.1pct|lam1.55|ghostFalse {'F': 0.9963, 'F_trim': 0.9964, 'eta': 0.8586, 'IL_dB': 0.6619, 'MDL_dB': 0.1789}
+air_AR0.1pct|lam1.55|ghostTrue {'F': 0.9963, 'F_trim': 0.9964, 'eta': 0.8544, 'IL_dB': 0.6834, 'MDL_dB': 0.189}
+embed1.37_exit_uncoated|lam1.55|ghostFalse {'F': 0.9986, 'F_trim': 0.9986, 'eta': 0.8655, 'IL_dB': 0.6274, 'MDL_dB': 0.0922}
+embed1.37_exit_uncoated|lam1.55|ghostTrue {'F': 0.9985, 'F_trim': 0.9985, 'eta': 0.8508, 'IL_dB': 0.7018, 'MDL_dB': 0.2411}
+embed1.37_exit_AR0.5pct|lam1.55|ghostFalse {'F': 0.9986, 'F_trim': 0.9986, 'eta': 0.8827, 'IL_dB': 0.542, 'MDL_dB': 0.0922}
+embed1.37_exit_AR0.5pct|lam1.55|ghostTrue {'F': 0.9985, 'F_trim': 0.9985, 'eta': 0.8677, 'IL_dB': 0.6164, 'MDL_dB': 0.2411}
+thin_noFresnel_embed|lam1.55|ghostFalse {'F': 0.9986, 'F_trim': 0.9986, 'eta': 0.9272, 'IL_dB': 0.3282, 'MDL_dB': 0.0888}

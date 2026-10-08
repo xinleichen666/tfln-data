@@ -1,0 +1,7 @@
+platform,loss_dB_per_us,length_m_per_us
+"TFLN optical, 1.3 dB/m (record ring)",169.45217391304348,130.34782608695653
+"TFLN optical, 0.2 dB/m (material limit)",26.069565217391307,130.34782608695653
+"SMF fibre, 0.2 dB/km (off-chip)",0.040844686648501355,204.2234332425068
+"LN phonon RT, 4.0 dB/mm (Mayor 2021)",12.399999999999999,0.0031
+"LN phonon 4 K, 0.7 dB/mm (Mayor 2021)",2.17,0.0031
+"TFLN SBS phonon RT, 11.9 MHz linewidth",324.7215722143582,0.0031

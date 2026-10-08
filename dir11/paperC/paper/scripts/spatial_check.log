@@ -1,0 +1,6 @@
+{'local': {'theta': 1.2, 'eta_target': np.float64(0.9266790844752376), 'eta_orth': np.float64(0.0001078510563878413), 'sel': np.float64(0.9998836290713075)}}
+{'local': {'theta': 1.2, 'eta_target': np.float64(0.9266790844752376), 'eta_orth': np.float64(0.0001078510563878413), 'sel': np.float64(0.9998836290713075)}, 'spatial': {'theta': 1.2, 'eta_target': np.float64(0.4630767728037097), 'eta_orth': np.float64(0.46307930560913474), 'sel': np.float64(0.49999863262495164)}}
+
+real	0m42.078s
+user	0m34.511s
+sys	0m3.550s

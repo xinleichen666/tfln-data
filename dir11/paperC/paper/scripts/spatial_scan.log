@@ -1,0 +1,10 @@
+{'local_full': (np.float64(0.9266790844752376), np.float64(0.0001078510563878413))}
+{'kappa': 0, 'dqL': 0.0, 'eta_target': np.float64(0.9263970952505911), 'eta_orth': np.float64(0.0), 'sel': np.float64(1.0)}
+{'kappa': 0.0003, 'dqL': 0.07539822368615504, 'eta_target': np.float64(0.9140639619403751), 'eta_orth': np.float64(0.01236154100110685), 'sel': np.float64(0.9866567349863989)}
+{'kappa': 0.001, 'dqL': 0.25132741228718347, 'eta_target': np.float64(0.7955694220272527), 'eta_orth': np.float64(0.1311432471286355), 'sel': np.float64(0.8584855354917187)}
+{'kappa': 0.003, 'dqL': 0.7539822368615503, 'eta_target': np.float64(0.15746288630218272), 'eta_orth': np.float64(0.7717690722545858), 'sel': np.float64(0.16945487598892459)}
+{'kappa': 0.01, 'dqL': 2.5132741228718345, 'eta_target': np.float64(0.543399675506856), 'eta_orth': np.float64(0.41383626000342194), 'sel': np.float64(0.5676758000285306)}
+{'kappa': 0.03, 'dqL': 7.539822368615503, 'eta_target': np.float64(0.5199094003685383), 'eta_orth': np.float64(0.6385431091022735), 'sel': np.float64(0.44879647298276915)}
+{'kappa': 0.1, 'dqL': 25.132741228718345, 'eta_target': np.float64(0.8080734776287944), 'eta_orth': np.float64(0.8081203540811559), 'sel': np.float64(0.4999854978866267)}
+{'kappa': 1.0, 'dqL': 251.32741228718345, 'eta_target': np.float64(0.8209336952388426), 'eta_orth': np.float64(0.8209336952388424), 'sel': np.float64(0.5000000000000001)}
+{'eta_bin0': np.float64(0.9263970952505901), 'eta_bin1': np.float64(0.0), 'eta_bin0_local': np.float64(0.9263970952505903)}

@@ -1,0 +1,3 @@
+{'case': 'vacuum', 'pix': 4.0, 'pol': 'TM', 'overlap': 0.9999999988000563, 'power_ratio': 0.9993148463930581}
+{'case': 'plate', 'pix': 4.0, 'pol': 'TM', 'overlap': 0.9798204320491778, 'power_ratio': 0.9115410693644679}
+{'case': 'plate', 'pix': 4.0, 'pol': 'TE', 'overlap': 0.97232494360512, 'power_ratio': 0.9178111094077406}

@@ -1,0 +1,17 @@
+nominal F 0.9931 +- 0.0 Ftrim 0.9931 IL 1.54
+height_rand_50nm F 0.9929 +- 0.0003 Ftrim 0.9931 IL 1.79
+height_corr3um_50nm F 0.9895 +- 0.0032 Ftrim 0.9916 IL 1.77
+height_corr3um_100nm F 0.9786 +- 0.0102 Ftrim 0.987 IL 2.45
+shrink_sigma2pct F 0.9918 +- 0.0026 Ftrim 0.9926 IL 1.59
+shrink_sigma5pct F 0.9844 +- 0.0136 Ftrim 0.9883 IL 1.82
+inshift_sigma0.3um F 0.9928 +- 0.0007 Ftrim 0.9929 IL 1.57
+inshift_sigma1um F 0.9906 +- 0.0036 Ftrim 0.9908 IL 1.85
+planeshift_sigma0.1um F 0.9926 +- 0.0006 Ftrim 0.993 IL 1.58
+planeshift_sigma0.2um F 0.9912 +- 0.0018 Ftrim 0.9924 IL 1.68
+planeshift_sigma0.25um F 0.99 +- 0.0035 Ftrim 0.9921 IL 1.75
+dz_sigma1um F 0.9921 +- 0.0009 Ftrim 0.9925 IL 1.68
+dz_sigma2um F 0.9909 +- 0.0017 Ftrim 0.9915 IL 1.86
+lam_1.53 F 0.9855 +- 0.0 Ftrim 0.9909 IL 2.43
+lam_1.57 F 0.982 +- 0.0 Ftrim 0.9839 IL 2.38
+combined_chip F 0.9854 +- 0.0062 Ftrim 0.9894 IL 2.1
+combined_freespace F 0.9747 +- 0.0129 Ftrim 0.9797 IL 3.28

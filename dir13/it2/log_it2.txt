@@ -1,0 +1,9 @@
+xt0.0|r1|fyr|X1 104 1-Fproc 2.14e-01 1-Fgauge 7.34e-02 1-Famp 2.46e-02 epsRMSE 0.053 dRMSE 0.467 20s
+xt0.0|r1|fyr|X0 104 1-Fproc 1.57e-01 1-Fgauge 6.63e-02 1-Famp 4.04e-03 epsRMSE 0.058 dRMSE 0.206 41s
+xt0.0|r1|int|X0 104 1-Fproc 3.39e-02 1-Fgauge 1.73e-07 1-Famp 6.07e-08 epsRMSE 0.000 dRMSE 0.127 108s
+xt0.0|r1|coh|X0 104 1-Fproc 3.97e-07 1-Fgauge 1.96e-07 1-Famp 6.46e-08 epsRMSE 0.000 dRMSE 0.000 238s
+xt0.0|r4|fyr|X1 104 1-Fproc 2.14e-01 1-Fgauge 7.34e-02 1-Famp 2.46e-02 epsRMSE 0.053 dRMSE 0.467 300s
+xt0.0|r4|fyr|X0 104 1-Fproc 1.57e-01 1-Fgauge 6.63e-02 1-Famp 4.04e-03 epsRMSE 0.058 dRMSE 0.206 356s
+xt0.0|r4|int|X0 104 1-Fproc 3.39e-02 1-Fgauge 1.73e-07 1-Famp 6.07e-08 epsRMSE 0.000 dRMSE 0.127 512s
+xt0.0|r4|coh|X0 104 1-Fproc 3.97e-07 1-Fgauge 1.96e-07 1-Famp 6.46e-08 epsRMSE 0.000 dRMSE 0.000 687s
+xt0.0|r8|fyr|X1 192 1-Fproc 3.31e-02 1-Fgauge 5.44e-05 1-Famp 1.79e-05 epsRMSE 0.002 dRMSE 0.159 877s

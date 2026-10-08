@@ -1,0 +1,19 @@
+{
+ "Vc_needed_V": 0.57,
+ "X_ohm": 434.4934291343034,
+ "dw_GHz": 0.5786371546459945,
+ "G_GHz": 0.28931857732299726,
+ "P_W": {
+  "AO_ShaoIDT_as_measured(~50% coupling)": 7.410604512826886e-06,
+  "AO_perfectly_matched_IDT(100%)": 3.705302256413443e-06,
+  "AO_poor_IDT(10% RF->acoustic, Xu 2025 LNOS level)": 3.705302256413443e-05,
+  "AO_travelling_wave_Xu_alpha(acoustic)": 4.718446402717201e-05,
+  "AO_travelling_wave_Xu_alpha(RF, 10%)": 0.00047184464027172005,
+  "EO_Hu_convention_Vc=V0": 0.0032489999999999997,
+  "EO_open_capacitor_Vc=2V0": 0.0008122499999999999,
+  "EO_LC_matched_inductorQ30": 1.375354634071312e-05,
+  "EO_LC_matched_inductorQ100": 5.029593926628757e-06,
+  "EO_LC_matched_ideal_inductor(R=1.5ohm)": 1.2907571777354581e-06,
+  "EO_LC_bandwidth_MHz_Q30": 122.49614623620931
+ }
+}
