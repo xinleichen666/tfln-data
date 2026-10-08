@@ -1,0 +1,25 @@
+# dirE log: on-chip polarization-entangled source on TFLN
+## E1 literature (done)
+- Kim C. et al., Optica 13, 1553 (2026) / arXiv 2506.23625: TFLN, MMI + 2 type-0 PPLN + PSR; CW; 508.5 MHz/mW on-chip; purity 0.901, concurrence 0.900, F=0.944. "first pol-entanglement on TFLN".
+- Shi X. et al., Nat Commun (14 Aug 2026) s41467-026-76631-z: 600nm X-cut Y-prop, w2um etch300; D-QPM type-0 (1.20mm, 4.76um) + type-I (7.43mm, 4.54um) in one waveguide; thermal phase; F 99.8%/99.3%; CAR>500 (>5000 low P); 2e7 /s/mW on-chip per 0.3nm (6.7e7/s/mW/nm); BW 78/51 nm; 4-user 50km network. Notes dual type-0 would be brighter (d33).
+- Matsuda Sci Rep 2, 817 (2012) Si SFWM + rotator F 0.91, C 0.88. Others: Jiang PR Applied 24 044098 (2025); Du Newton 2025 Si 155km; Hua APL Photonics 2025 Si; Zhang OE 32 22804 (2024) SiN dual ring; Jiao PRL 135 250803 (2025) electrically pumped; Orieux PRL 2013 AlGaAs; Appas npjQI 2021.
+- GAP: no TFLN source with EO (Pockels) fast Bell-state/phase control; Kim (dual type-0+PSR) F only 0.944 -> PSR/imbalance limited; D-QPM uses weak d31 (7.4mm) and thermal (slow) control. Our angle: dual type-0 (d33) + broadband Y-prop PSR + EO phase/ratio control, all Y-prop on X-cut.
+## E2 qpm.py relaunched (TE&TM neff, fixed empty-mode crash)
+## E2 done (qpm_neff.json, res30/40, noisy ~±0.01): 600/300 w2 air: Lambda=4.45um (Shi NC SiO2-clad 4.76um, ok within cladding diff). 400/280 w1.2: nSH 2.032, nFH 1.738 -> Lambda~2.63um.
+## E3 fid.py -> fid_psr.json: PSR used as COMBINER: PSR imperfections become loss, not pol error (reciprocal TE xt -31..-50 dB). Static-balanced F over +-100nm pairs: uniform ADC (dirC) >=0.986; dirB adiabatic 0.9999; dirC taper+adiabatic 0.9994. F(r): r0.9->0.997, 0.6->0.941; F(dphi): 0.1rad->0.9975, 0.3->0.978.
+=> PSR is NOT the fidelity bottleneck; arm JSA mismatch & pair-phase dispersion are. E4: qpm2 (res70) for QPM sensitivity / JSA overlap.
+## steering: realistic/conservative MC required (loss>=0.2dB/cm, poling duty/period errors, film thickness, worst PSR corner, coupling, detector, thermal drift); ideal = upper bound only
+## E4 qpm2 (res50) 400/280 w1.2 Y: Lambda~2.65um; sensitivities d(nSH-nFH): dw -0.11/um, dH -0.0055/nm, detch +0.0025/nm (noise ~±0.003 -> ±50%).
+## E5 plan: MC (mc.py) arch E-I: 600nm Xcut, 2x type-0 PPLN Y-prop (Shi-like 1.2mm) + PSR Z-prop (dirB/round6) via bends + EO MZI ratio/phase; arch E-II: 400/280 all-Y (dirC PSR). Sources table in final_summary.
+## E5 done: mc.py -> mc_results.json, mc.log (300 MC conservative, 120 per sweep)
+- conservative (0.5 mW): F_meas median 0.9936 [P10 0.9914, P90 0.9955]; F_pure 0.9993 [0.997,0.9999]; CAR 135 [114,196]; on-chip rate/0.3nm chan 7.4e6/s [5.1e6,8.8e6]
+- 0.1 mW: F 0.9983 [0.9955,0.9988], CAR 659. Ideal upper (0.5mW): F_pure 1.0, F_meas 0.9922 (CAR-limited).
+- Dominant: differential thermal drift dT: 0.2K -> median 0.987 (P10 0.95); 0.5K -> 0.937 (P10 0.73). PSR IL 0.19-2 dB: no effect on F (calibrated), only rate. Thickness errors: rate loss (up to 10x at 2nm), F unaffected.
+## E6 Kim 2026 full text (arXiv 2506.23625v): 300nm film, 240nm etch, top w 2.304um, Lambda 3.2um, SHG 777nm; off-chip 8.059 MHz/mW, on-chip 508.5 MHz/mW (facet loss -4dB@1550, -10dB@775); CAR 2.9e4 @89.7nW (2ns window in Fig2; 200ps for QST); visibilities 98.33/97.36%; purity 0.901, C 0.900, F 0.944; eta=0.444, 2phi=0.867rad; accidentals subtracted. Kim attribute limit to PSR crosstalk/fab + TE/TM loss & coupling difference. NOTE: my earlier 'thermal drift ~ Kim 0.944' was coincidence; eta=0.444 alone gives F 0.997 -> Kim limit = mixedness (purity 0.90).
+## Moretti JAP 98, 036101 (2005) doi 10.1063/1.1988987: dn_e/dT=3.34e-5 /K @1523nm, 300K (via citing source; abstract confirms 1523nm, e/o). 
+## EO VpiL: 600nm Xcut 1.41 V.cm push-pull @1550 (LPR 2023, high-k clad, 200nm etch); 300nm film 0.55 V.cm @738nm (Nat Commun 14, 1496? s41467-023-36870-w); ACS Omega 2023 0.78 V.cm@850 /1.29@1550.
+## E7 bend.py running: diagonal-eps approx (tensorial solver unavailable locally: needs tidy3d-extras/server) TE/TM vs angle, bend loss R40-120
+## E7 bend done (bend.json/log, diagonal-eps approx): w1.2 600/300: TE0 highest at all angles 0-90 (1.891->1.958), TM0 ~1.855 no TE0-TM0 crossing; TM0-TE1 hybridizes near Z (TM te-frac 0.25 @90deg). w2.0: TM0/TE1 anticrossing at ~60deg (PSR mechanism) -> wide bends forbidden for TM. Bend k_eff=0 in all cases (radiation not resolved by solver) -> bend loss = assumption. R=40-60: extra TE-like mode near TE0 -> use R>=80um.
+## E8 thermo.py: Jundt-1997 dne/dT 3.78e-5 @1523 (Moretti measured 3.34e-5, -12%); 775: 4.46e-5. d(nSH-nFH)/dT 4.8-6.1e-6/K (G 0.7-0.9 assumption) + period expansion -> dk/dT 60-72 /m/K; PM shift +0.127..0.150 nm/K (bulk ng). Pair phase drift 1.30 rad/K (Lpump3mm+Lpair2mm).
+## E9 mc.py v2 (mc2.log): period jitter + computed dk/dT + phase coefficients. conservative 0.5mW: F 0.9939 [0.9918,0.9957], Fpure 0.9994; 0.1mW 0.9983; sig_Lam 2-100nm: F same, rate drops 2x at 100nm. dT 0.2K: 0.986 [0.955]; 0.5K: 0.955 [0.73].
+## experiment_plan.md written (no new simulation; SJTU fab plan for E-I)
