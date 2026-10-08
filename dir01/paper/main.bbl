@@ -1,0 +1,114 @@
+\begin{thebibliography}{12}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Kuttner et~al.(2026)Kuttner, Sabatti, Kellner, Grange, and
+  Chapman]{Kuttner2026}
+Tristan Kuttner, Alessandra Sabatti, Jost Kellner, Rachel Grange, and Robert~J.
+  Chapman.
+\newblock Heralded quantum interference in integrated lithium niobate
+  nanophotonics.
+\newblock \emph{Optica Quantum}, 4\penalty0 (2):\penalty0 121--129, 2026.
+\newblock \doi{10.1364/OPTICAQ.578936}.
+\newblock Also arXiv:2506.20519.
+
+\bibitem[Tambasco et~al.(2016)Tambasco, Boes, Helt, Steel, and
+  Mitchell]{Tambasco2016}
+J.-L. Tambasco, A.~Boes, L.~G. Helt, M.~J. Steel, and A.~Mitchell.
+\newblock Domain engineering algorithm for practical and effective photon
+  sources.
+\newblock \emph{Optics Express}, 24\penalty0 (17):\penalty0 19616--19626, 2016.
+\newblock \doi{10.1364/OE.24.019616}.
+
+\bibitem[Chen et~al.(2024)Chen, Briggs, Cui, Zhang, Shah, and Fan]{Chen2024}
+Pao-Kang Chen, Ian Briggs, Chaohan Cui, Liang Zhang, Manav Shah, and Linran
+  Fan.
+\newblock Adapted poling to break the nonlinear efficiency limit in
+  nanophotonic lithium niobate waveguides.
+\newblock \emph{Nature Nanotechnology}, 19\penalty0 (1):\penalty0 44--50, 2024.
+\newblock \doi{10.1038/s41565-023-01525-w}.
+
+\bibitem[Xin et~al.(2025)Xin, Lu, Yang, Shams-Ansari, Desiatov, Magalh{\~a}es,
+  Ghosh, McGee, Renaud, Achuthan, Zvyagintsev, Barton, Sinclair, and
+  Lon{\v{c}}ar]{Xin2025}
+C.~J. Xin, Shengyuan Lu, Jiayu Yang, Amirhassan Shams-Ansari, Boris Desiatov,
+  Let{\'i}cia~S. Magalh{\~a}es, Soumya~S. Ghosh, Erin McGee, Dylan Renaud,
+  Nicholas Achuthan, Arseniy Zvyagintsev, David Barton, Neil Sinclair, and
+  Marko Lon{\v{c}}ar.
+\newblock Wavelength-accurate and wafer-scale process for nonlinear frequency
+  mixers in thin-film lithium niobate.
+\newblock \emph{Communications Physics}, 8:\penalty0 136, 2025.
+\newblock \doi{10.1038/s42005-025-02068-3}.
+
+\bibitem[Santandrea et~al.(2019)Santandrea, Stefszky, Ansari, and
+  Silberhorn]{Santandrea2019}
+Matteo Santandrea, Michael Stefszky, Vahid Ansari, and Christine Silberhorn.
+\newblock Fabrication limits of waveguides in nonlinear crystals and their
+  impact on quantum optics applications.
+\newblock \emph{New Journal of Physics}, 21:\penalty0 033038, 2019.
+\newblock \doi{10.1088/1367-2630/aaff13}.
+
+\bibitem[Babel et~al.(2025)Babel, Bollmers, Roeder, Ridder, Golla,
+  K{\"o}themann, Reineke, Herrmann, Brecht, Eigner, Padberg, and
+  Silberhorn]{Babel2025}
+Silia Babel, Laura Bollmers, Franz Roeder, Werner Ridder, Christian Golla,
+  Ronja K{\"o}themann, Bernhard Reineke, Harald Herrmann, Benjamin Brecht,
+  Christof Eigner, Laura Padberg, and Christine Silberhorn.
+\newblock A ultrabright, two-colour photon pair source based on thin-film
+  lithium niobate for bridging visible and telecom wavelengths.
+\newblock \emph{Optics Express}, 33:\penalty0 52729, 2025.
+\newblock \doi{10.1364/OE.571605}.
+
+\bibitem[He et~al.(2024)He, Liu, Lin, Chen, and Ma]{He2024}
+Junjie He, Lian Liu, Mianjie Lin, Houhong Chen, and Fei Ma.
+\newblock Efficient second-harmonic generation in adapted-width waveguides
+  based on periodically poled thin-film lithium niobate.
+\newblock \emph{Micromachines}, 15\penalty0 (9):\penalty0 1145, 2024.
+\newblock \doi{10.3390/mi15091145}.
+
+\bibitem[Zelmon et~al.(1997)Zelmon, Small, and Jundt]{Zelmon1997}
+David~E. Zelmon, David~L. Small, and Dieter Jundt.
+\newblock Infrared corrected {Sellmeier} coefficients for congruently grown
+  lithium niobate and 5 mol.\% magnesium oxide--doped lithium niobate.
+\newblock \emph{Journal of the Optical Society of America B}, 14\penalty0
+  (12):\penalty0 3319--3322, 1997.
+\newblock \doi{10.1364/JOSAB.14.003319}.
+
+\bibitem[Zhao et~al.(2023)Zhao, Li, Hu, Sayem, Li, Tate, Kim, Kopf, Sanjari,
+  Earnshaw, Fontaine, Wang, and Blanco-Redondo]{ZhaoLu2023}
+Jie Zhao, Xiaoting Li, Ting-Chen Hu, Ayed~Al Sayem, Haochuan Li, Alaric Tate,
+  Kwangwoong Kim, Rose Kopf, Pouria Sanjari, Mark Earnshaw, Nicolas~K.
+  Fontaine, Cheng Wang, and Andrea Blanco-Redondo.
+\newblock Unveiling the origins of quasi-phase matching spectral imperfections
+  in thin-film lithium niobate frequency doublers.
+\newblock \emph{APL Photonics}, 8\penalty0 (12):\penalty0 126106, 2023.
+\newblock \doi{10.1063/5.0171106}.
+
+\bibitem[Graffitti et~al.(2018)Graffitti, Kelly-Massicotte, Fedrizzi, and
+  Bra{\'n}czyk]{Graffitti2018}
+Francesco Graffitti, J{\'e}r{\'e}my Kelly-Massicotte, Alessandro Fedrizzi, and
+  Agata~M. Bra{\'n}czyk.
+\newblock Design considerations for high-purity heralded single-photon sources.
+\newblock \emph{Physical Review A}, 98:\penalty0 053811, 2018.
+\newblock \doi{10.1103/PhysRevA.98.053811}.
+
+\bibitem[Zhao et~al.(2020)Zhao, Ma, R{\"u}sing, and Mookherjea]{Zhao2020}
+Jie Zhao, Chaoxuan Ma, Michael R{\"u}sing, and Shayan Mookherjea.
+\newblock High quality entangled photon pair generation in periodically poled
+  thin-film lithium niobate waveguides.
+\newblock \emph{Physical Review Letters}, 124:\penalty0 163603, 2020.
+\newblock \doi{10.1103/PhysRevLett.124.163603}.
+
+\bibitem[Shi et~al.(2024)Shi, Mohanraj, Dhyani, Baiju, Wang, Sun, Zhou,
+  Paterova, Leong, and Zhu]{Shi2024}
+Xiaodong Shi, Sakthi~Sanjeev Mohanraj, Veerendra Dhyani, Angela~Anna Baiju,
+  Sihao Wang, Jiapeng Sun, Lin Zhou, Anna Paterova, Victor Leong, and Di~Zhu.
+\newblock Efficient photon-pair generation in layer-poled lithium niobate
+  nanophotonic waveguides.
+\newblock \emph{Light: Science \& Applications}, 13:\penalty0 282, 2024.
+\newblock \doi{10.1038/s41377-024-01645-5}.
+
+\end{thebibliography}

@@ -1,0 +1,42 @@
+{
+ "process": "x-cut TFLN, pump TM 0.764 um, signal TE 1.528 um, idler TM 1.528 um",
+ "geometry": {
+  "w_um": 1.4,
+  "h_um": 0.3,
+  "t_um": 0.6,
+  "sidewall": "vertical",
+  "solver": "geo.neff dx=0.02 dy=0.005"
+ },
+ "neff_center": {
+  "pump_TM": 2.168893886889195,
+  "signal_TE": 1.9106718869571133,
+  "idler_TM": 1.8864467698761385
+ },
+ "Dk_rad_per_um": 2.2232488557823764,
+ "period_um": 2.8261277593094682,
+ "period_mm": 0.0028261277593094685,
+ "beta1_ps_per_mm": {
+  "pump": 8.196706138709088,
+  "signal": 7.623677258131452,
+  "idler": 8.31695030985774
+ },
+ "A_ps_per_mm": 0.5730288805776356,
+ "B_ps_per_mm": -0.12024417114865216,
+ "abs_A_over_B": 4.765543935341591,
+ "b2_ps2_per_mm": {
+  "pump": 0.00027017497001436113,
+  "signal": -1.3501949218630452e-06,
+  "idler": -0.0003877858895122515
+ },
+ "St_rad_per_mm_per_nm": -3.129339067917858,
+ "St_method": "central difference, two evaluations, step 5 nm: (Dk(t=0.605)-Dk(t=0.595))/0.010 um. Dk in rad/um. Numerically equal to rad/mm/nm. h fixed at 0.3 um (etch depth not changed with film).",
+ "St_check_pm10_nm": -3.129527431275614,
+ "St_forward_5nm": -3.108606891728183,
+ "St_backward_5nm": -3.150071244107533,
+ "Sw_rad_per_mm_per_nm": -0.3346835390647174,
+ "Sw_method": "central difference +/-40 nm at t=0.600, h=0.3",
+ "Sh_rad_per_mm_per_nm": 0.5170102050508385,
+ "Sh_method": "central difference +/-10 nm at t=0.600, w=1.4",
+ "group_index_method": "quadratic fit of beta(omega) at lambda0 and lambda0+/-0.008 um; beta1=d(beta)/d(omega) in fs/um = ps/mm",
+ "not_used_secant_560_640": -3.1614231863126006
+}

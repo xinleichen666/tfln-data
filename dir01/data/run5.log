@@ -1,0 +1,5 @@
+2 ideal 0.994 eta_h 0.397 {'none': np.float64(0.896), 'a0.2_e0.3': np.float64(0.971), 'a0.1_e0.3': np.float64(0.978), 'a0.1_e0.5': np.float64(0.943), 'a0.04_e0.3': np.float64(0.982)}
+5 ideal 0.994 eta_h 0.393 {'none': np.float64(0.488), 'a0.2_e0.3': np.float64(0.9), 'a0.1_e0.3': np.float64(0.944), 'a0.1_e0.5': np.float64(0.903), 'a0.04_e0.3': np.float64(0.965)}
+10 ideal 0.995 eta_h 0.386 {'none': np.float64(0.385), 'a0.2_e0.3': np.float64(0.744), 'a0.1_e0.3': np.float64(0.859), 'a0.1_e0.5': np.float64(0.775), 'a0.04_e0.3': np.float64(0.9)}
+15 ideal 0.995 eta_h 0.38 {'none': np.float64(0.192), 'a0.2_e0.3': np.float64(0.566), 'a0.1_e0.3': np.float64(0.728), 'a0.1_e0.5': np.float64(0.59), 'a0.04_e0.3': np.float64(0.799)}
+20 ideal 0.995 eta_h 0.373 {'none': np.float64(0.181), 'a0.2_e0.3': np.float64(0.582), 'a0.1_e0.3': np.float64(0.671), 'a0.1_e0.5': np.float64(0.511), 'a0.04_e0.3': np.float64(0.747)}
