@@ -1,0 +1,131 @@
+{
+  "gate": "direction2_hard_gate1_thermoacoustic_alpha",
+  "platform": "GaN-on-sapphire (Xu PnIC)",
+  "result": "PASS",
+  "alpha_calc_rad_per_W": 11.228191056908914,
+  "alpha_calc_median_rad_per_W": 10.950625314386482,
+  "alpha_calc_band_rad_per_W": [
+    4.5449476786626315,
+    28.14083719695229
+  ],
+  "alpha_Xu_rad_per_W": 4.03,
+  "ratio_calc_over_Xu": 2.786151627024544,
+  "ratio_median_over_Xu": 2.717276752949499,
+  "pass_criterion": "0.1 \u2264 \u03b1_calc/\u03b1_Xu \u2264 10 (same order of magnitude)",
+  "optical_waveguide_added": false,
+  "device_metrics_written": false,
+  "inputs": {
+    "f_Hz": 1500000000.0,
+    "L_m": 0.0001,
+    "v_phase_m_per_s": 4879.0,
+    "v_group_m_per_s": 3904.0,
+    "w_wg_m": 2.8e-06,
+    "h_GaN_m": 7e-07,
+    "TCF_nom_1_per_K": -5.5e-05,
+    "TCF_range_1_per_K": [
+      -3e-05,
+      -9.65e-05
+    ],
+    "R_th_2D_K_per_W": 1056.8340446406269,
+    "R_th_analytic_heater_K_per_W": 468.1423945846233,
+    "dT_heater_per_W": 1158.4804075925704,
+    "dT_wg_per_W": 1056.8340446406269,
+    "k_sapphire_W_per_mK": 35.0,
+    "k_GaN_W_per_mK": 130.0,
+    "heater_width_m_ASSUMED": 1e-05,
+    "heater_gap_m_ASSUMED": 6e-06,
+    "sapphire_thickness_m_ASSUMED": 0.00043,
+    "formula": "alpha = -(omega*L/v)*TCF*R_th"
+  },
+  "uncertainty_samples": [
+    {
+      "tcf_1_per_K": -3e-05,
+      "k_sapphire": 46.0,
+      "w_heater_m": 2.5e-05,
+      "gap_m": 1e-05,
+      "R_th": 784.2731084840952,
+      "alpha": 4.5449476786626315
+    },
+    {
+      "tcf_1_per_K": -5.5e-05,
+      "k_sapphire": 35.0,
+      "w_heater_m": 1e-05,
+      "gap_m": 6e-06,
+      "R_th": 1110.3438487673807,
+      "alpha": 11.796698768408
+    },
+    {
+      "tcf_1_per_K": -9.65e-05,
+      "k_sapphire": 23.0,
+      "w_heater_m": 5e-06,
+      "gap_m": 3e-06,
+      "R_th": 1509.6260835051344,
+      "alpha": 28.14083719695229
+    },
+    {
+      "tcf_1_per_K": -5.5e-05,
+      "k_sapphire": 23.0,
+      "w_heater_m": 1e-05,
+      "gap_m": 6e-06,
+      "R_th": 1689.2704236684667,
+      "alpha": 17.94742623964658
+    },
+    {
+      "tcf_1_per_K": -5.5e-05,
+      "k_sapphire": 46.0,
+      "w_heater_m": 1e-05,
+      "gap_m": 6e-06,
+      "R_th": 844.9853428375841,
+      "alpha": 8.977433039540585
+    },
+    {
+      "tcf_1_per_K": -3e-05,
+      "k_sapphire": 35.0,
+      "w_heater_m": 1e-05,
+      "gap_m": 6e-06,
+      "R_th": 1110.3438487673807,
+      "alpha": 6.43456296458618
+    },
+    {
+      "tcf_1_per_K": -9.65e-05,
+      "k_sapphire": 35.0,
+      "w_heater_m": 1e-05,
+      "gap_m": 6e-06,
+      "R_th": 1110.3438487673807,
+      "alpha": 20.69784420275221
+    },
+    {
+      "tcf_1_per_K": -5.5e-05,
+      "k_sapphire": 35.0,
+      "w_heater_m": 5e-06,
+      "gap_m": 3e-06,
+      "R_th": 992.492087378188,
+      "alpha": 10.544598592432813
+    },
+    {
+      "tcf_1_per_K": -5.5e-05,
+      "k_sapphire": 35.0,
+      "w_heater_m": 2.5e-05,
+      "gap_m": 1e-05,
+      "R_th": 1030.7086496560837,
+      "alpha": 10.950625314386482
+    }
+  ],
+  "shao_crosscheck": {
+    "bulk_LN_rad_per_W": 45.378560551852566,
+    "LNoS_rad_per_W": 9.075712110370514,
+    "L_assumed_m": 0.0002,
+    "alpha_over_L_Xu": 40300.0,
+    "alpha_over_L_calc": 112281.91056908913,
+    "alpha_over_L_shao_bulk": 226892.80275926282,
+    "alpha_over_L_shao_lnos": 45378.56055185257,
+    "note": "Shao heater length not unique for quoted deg/mW; 200 \u00b5m mid-range ASSUMED for /L"
+  },
+  "sources": {
+    "Xu": "arXiv:2510.26596 Fig.2h / text",
+    "Shao": "Phys. Rev. Applied 18, 054078 (2022); arXiv:2203.16003",
+    "TCF_GaN_sapphire": "Lee et al. SAW filters; Nicoloiu IEEE Access 2022; Oota JJAP 44 L564 (2005)",
+    "k_sapphire": "~35 W/mK @300K (tables; anisotropy 23\u201346)",
+    "k_GaN_epi": "Kyma/NCSU ~130 W/mK thin templates on sapphire"
+  }
+}
