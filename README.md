@@ -21,6 +21,7 @@ Internal group use only: simulation and scheme draft; measurements pending; no f
 - `dir15/`：方向 15 的仿真记录。
 - `tfln_sim/`：另一些薄膜铌酸锂仿真记录。
 - `dir2/`：方向二工作稿（声学马赫–曾德尔 + 热声相位 + 单波导光弹重叠 + 联合误差传递）。`dir2/fig/` 是脚本出图目录；`dir2/paper/fig/` 是文稿用图。
+- `dir1_metrology/paper/`：方向一方法工作稿（膜厚计量间距 → SPDC 预告纯度上界）。出图脚本在 `dir1_metrology/scripts/`。
 - `tfln_review/ao_shared_params_v1.md`：声光方向一/二共用参数表。
 - `tfln_review/user_materials/2026-10-12/bib_pagecheck_2026-10-12.md`：2026-10-12 文献页码核对记录。
 
@@ -31,3 +32,9 @@ Internal group use only: simulation and scheme draft; measurements pending; no f
 `freq_shift_noise/paper/` 是方向一（移频噪声账本）的工作稿包；配套脚本、参数和仍待测的自测表在 `freq_shift_noise/`，共用参数表在 `tfln_review/ao_shared_params_v1.md`。
 
 本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 未下单，无流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。仓写完后再改 private。
+
+## 计量→纯度上界方法稿
+
+`dir1_metrology/paper/` 是方向一（计量 → SPDC 纯度上界）的方法工作稿包；出图脚本在 `dir1_metrology/scripts/`。
+
+本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 对本方向 N/A，无自有流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。仓写完后再改 private。
