@@ -1,0 +1,107 @@
+{
+  "step": 2,
+  "structure": "acoustic MZI bus + thermal phase arm + single optical WG (NO double-ring)",
+  "gate1_wording": "same order of magnitude as Xu 4.03; uncertainty band covers Xu — NOT 'reproduced 4.03'",
+  "thermoacoustic": {
+    "alpha_LNoS_rad_per_W": 25.134185267885787,
+    "alpha_LNoS_band": [
+      25.134185267885787,
+      38.62955005027418
+    ],
+    "alpha_bulk_rad_per_W": 147.7177555796063,
+    "Shao_LNoS_rad_per_W": 9.075712110370514,
+    "Shao_bulk_rad_per_W": 45.378560551852566,
+    "ratio_LNoS_calc_over_Shao": 2.769389879518742,
+    "ratio_bulk_calc_over_Shao": 3.2552322899448107,
+    "LNoS_same_order_as_Shao": true,
+    "bulk_same_order_as_Shao": true,
+    "R_th_LNoS": 425.02441900947355,
+    "R_th_bulk": 4031.500078301084,
+    "L_heater_m": 0.0002,
+    "f_LNoS_Hz": 2450000000.0,
+    "f_bulk_Hz": 1385000000.0,
+    "v_LNoS": 4165.0,
+    "v_bulk": 3800.0,
+    "cut_mode_LNoS": "X-cut LN on sapphire; acoustic along crystal Y; quasi-Rayleigh / shear (Shao 2022)",
+    "cut_mode_bulk": "128° Y-cut LN; acoustic along crystal X; Rayleigh (Shao 2022)",
+    "group_delay_s": 4.8019207683073234e-08
+  },
+  "acousto_optic": {
+    "VpiL_calc_Vcm_eta10": 0.4734213799040786,
+    "VpiL_calc_Vcm_eta50": 0.21172047749345457,
+    "VpiL_band_Vcm": [
+      0.08334757574314933,
+      1.3473808681650798
+    ],
+    "Vpi_V_eta10": 23.67106899520393,
+    "P_RF_pi_W_eta10": 5.60319507375705,
+    "L_ao_m": 0.0002,
+    "p_eff": 0.141,
+    "p_eff_source": "Andrushchak JAP 106, 073510 (2009) p31=0.141; Shao Optica 2019 uses p31 for TE",
+    "n_TE": 2.14,
+    "lambda_m": 1.55e-06,
+    "Gamma_area_ASSUMED": 8.0,
+    "Gamma_ov_ASSUMED": 0.45,
+    "A_eff_m2": 3.472e-11,
+    "eta_idt_main": 0.1,
+    "optical_mode": "TE0 @ 1550 nm in single LN rib (no double-ring)",
+    "anchor_Shao_suspended_VpiL_Vcm": 0.045,
+    "anchor_Ni_nonsuspended_VpiL_Vcm": 1.004,
+    "Ni_flag": "arXiv:2606.05337 full text verified; Device 3 VπL=1.004 V·cm; non-suspended X-cut TFLN-on-Si (360 nm LN / 4.7 µm BOX / Si), 0.842 GHz, L=400 µm; NOT LNoS",
+    "claim_beats_Shao_0p045": false,
+    "claim_beats_Ni_1p004": false,
+    "note": "Traveling-wave unsuspended estimate; Shao 0.045 is suspended RESONANT MZI — not a fair beat target",
+    "anchor_Ni_platform": "X-cut TFLN-on-Si non-suspended (not LNoS, not Shao suspended)"
+  },
+  "joint_crosstalk": {
+    "dphi_ac_dP_H_rad_per_W": 25.134185267885787,
+    "dphi_ao_dP_RF_rad_per_W_at_10mW_scale": 6.635933202311904,
+    "dphi_err_dP_H_rad_per_W": 4.028158579263661,
+    "dphi_err_dP_RF_rad_per_W": 1.832160489003384,
+    "xi_RF_heat_ASSUMED": 0.05,
+    "xi_H_to_opt_ASSUMED": 0.35,
+    "sense_rad_per_mW_heater": 0.025134185267885786,
+    "sensing_definition": "heater-limited Δφ = |α|×1 mW; NOT a gas-sensing card"
+  },
+  "materials": {
+    "elastic_GPa": {
+      "c11": 199.56,
+      "c12": 55.27,
+      "c13": 67.67,
+      "c14": 8.7,
+      "c33": 235.2,
+      "c44": 59.48,
+      "source": "Ogi et al., J. Appl. Phys. 92, 2451 (2002) Table I"
+    },
+    "piezoelectric_C_per_m2": {
+      "e15": 3.65,
+      "e22": 2.39,
+      "e31": 0.31,
+      "e33": 1.72,
+      "source": "Ogi et al., JAP 92, 2451 (2002) Table I"
+    },
+    "photoelastic": {
+      "p11": -0.021,
+      "p12": 0.06,
+      "p13": 0.172,
+      "p14": -0.052,
+      "p31": 0.141,
+      "p33": 0.118,
+      "p41": -0.109,
+      "p44": 0.121,
+      "source": "Andrushchak et al., J. Appl. Phys. 106, 073510 (2009)"
+    },
+    "k_LN_W_per_mK": 4.2,
+    "k_sapphire": 35.0,
+    "TCF_LN_1_per_K": -8e-05,
+    "rho_kg_per_m3": 4700.0
+  },
+  "non_claims": [
+    "Do not claim α reproduced Xu 4.03 — only same order; band covers Xu (gate1).",
+    "Do not claim VπL beats Shao suspended 0.045 V·cm.",
+    "Do not claim VπL beats Ni/Bhave 1.004 V·cm; different platform (LNoS calc vs TFLN-on-Si) + assumed Γ.",
+    "Simulation only; no fabrication; no 'on-chip already integrates shift+delay'.",
+    "No Zhu coupled-double-ring / photon-molecule geometry.",
+    "No unverified gas-sensing application card."
+  ]
+}
