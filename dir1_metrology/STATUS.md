@@ -19,7 +19,7 @@
 | `paper/fig/assumption_stress.*` | 假设应力：w=10 nm / ε=1 nm |
 | `paper/run7_summary.json` | 从图脚本抽出的分位数汇总 |
 | `scripts/plot_run7_bounds.py` | 出图脚本（只读 `dir01/data/run7.json`） |
-| `upstream_dir01` → `/workspace/dir01` | 上游数据/代码软链 |
+| `upstream_dir01` | **不在本仓库**。本地工作区可软链到 `/workspace/dir01`；不要把该软链加入仓库。 |
 
 ## 框 vs 旧稿
 
@@ -39,11 +39,15 @@
 - 主表内唯一 10% 也≥0.90：5 mm @ 0.04 mm（0.969；0.932–0.982）
 - 基线假设：w_rms=2 nm，ε=0.3 nm；改 10 nm / 1 nm 则崩
 
+## 仓状态
+
+- 已在 GitHub `xinleichen666/tfln-data` 的 `main`：PR #4 `aafd59ea`（方法包入库），PR #5 `7a60a402`（Cursor A 语气锁定）。
+- 仓库内没有 `upstream_dir01` 软链。本地软链只留在工作区，指向 `/workspace/dir01`；不要添加进本仓库。
+- 仓仍 public；用户写完再改 private（既定）。
+
 ## 未做 / 等拍板
 
-- **未推** GitHub `tfln-data`（等总结包审后再推；可新目录 `dir1_metrology/`）。
 - 是否保留英文全文（不止摘要）或投 PRA vs OE methods——等总结包。
-- 仓仍 public；用户写完再改 private（既定）。
 
 ## 挂仓声明（摘要/README 已写死）
 
