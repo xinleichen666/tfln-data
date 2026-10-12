@@ -1,4 +1,4 @@
-# 方向一工作稿包（计量 → SPDC 纯度上界）
+# 方向一工作稿包（方法·噪声预算：膜厚计量 → SPDC 纯度上界）
 
 路径根：`/workspace/dir1_metrology/paper/`
 
@@ -8,7 +8,7 @@
 >
 > **挂仓声明：** 本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 对本方向 N/A，无自有流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。仓写完后再改 private。
 
-**状态（2026-10-12）**：**方法·噪声预算框**（PRA / OE methods / 预印本先挂）。**不是** Optics Express 器件设计文。禁止主叙事「推荐 10 mm 器件设计点」。
+**状态（2026-10-12 · Cursor A 锁定）**：**PRA methods·噪声预算** 正文语气；**预印本先挂**。**不是** OE 器件设计文。主表**唯一稳态点** = **5 mm @ Δz=0.04 mm**（中位 0.969；10%–90% 0.932–0.982）。**10 mm** 只报分布（中位 0.906 / 10th 0.855），**永不当设计点**。挂仓声明 / non_claims **不删不砍**。
 
 ## 本目录
 
@@ -49,11 +49,12 @@
 - **中**：在公开晶圆膜厚迹线与自洽 TM 泵系数下，用蒙特卡洛把**膜厚计量间距与测量误差假设**映射为 SPDC 预告纯度上界与处方；仿真+公开迹线，无自有流片，不虚构测量。
 - **EN：** We map film-thickness metrology spacing and assumed measurement error onto Monte Carlo upper bounds on SPDC heralded purity using public wafer traces and a self-consistent TM-pump coefficient set; simulation only—no in-house fab, no invented measurements.
 
-## 边界快查
+## 边界快查（Cursor A）
 
-- 框：**计量 → 上界**，不是器件 recipe。
-- 10 mm @ Δz=0.04 mm：中位 0.906，10%=0.855 → **禁止当设计点**。
-- 唯一主表内 10% 也≥0.90：5 mm @ 0.04 mm。
+- 框：**PRA methods·计量噪声预算**；预印本先挂；不是器件 recipe。
+- 主表**唯一稳态点**：**5 mm @ Δz=0.04 mm**（0.969；0.932–0.982）。
+- **10 mm** @ 0.04 mm：只报分布（中位 0.906 / 10th 0.855），**永不当设计点**。
 - 第 6 轮数字作废；只认 run7。
 - 宽度 2 nm、误差 0.3 nm = 假设；应力图已画。
-- **未推仓**；等总结包审。
+- 挂仓声明 / `non_claims.md` **不删不砍**（do not cut）。
+- **未推仓**；打 tar 由父代理。
