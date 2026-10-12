@@ -11,7 +11,7 @@
 >
 > **Preprint status (2026-10-12):** simulation + scheme manuscript; **no experimental data**; measured cells empty; planned self-test markers **pending**; primary numbers unchanged; Fiber-Q not ordered yet.
 >
-> **挂仓声明：** 本稿仅为仿真与台面方案，实测单元仍 pending，不含实测或伪造数据；Fiber-Q 尚未下单，无自有流片。  
+> **挂仓声明：** 本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 未下单，无流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。仓写完后再改 private。  
 **英文摘要 / 关键词**：见同目录 `abstract_en.md`。  
 **参考文献**：见 `references.md` / `refs.bib`（与共用表一致）。
 

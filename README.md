@@ -23,4 +23,4 @@
 
 `freq_shift_noise/paper/` 是方向一（移频噪声账本）的工作稿包；配套脚本、参数和仍待测的自测表在 `freq_shift_noise/`，共用参数表在 `tfln_review/ao_shared_params_v1.md`。
 
-本稿仅为仿真与台面方案，实测单元仍 pending，不含实测或伪造数据；Fiber-Q 尚未下单，无自有流片。
+本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 未下单，无流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。仓写完后再改 private。
