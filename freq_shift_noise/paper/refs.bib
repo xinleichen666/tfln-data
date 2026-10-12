@@ -1,0 +1,81 @@
+% Direction-1 preprint references (aligned with ao_shared_params_v1.md)
+% Copied/trimmed from /workspace/dir11/paperB/paper/refs.bib — bibliographic fields only.
+% Page ranges filled 2026-10-12 (bib_pagecheck): Hu 587-593 (Crossref); Shao Optica 1498-1505 & Shao OE 23728-23738 (arXiv journal_ref).
+% Xu2025b (arXiv:2509.01940) appears in params_table.md only; main text does NOT cite Xu 4.03 rad/W.
+% Ni/Bhave arXiv:2606.05337 is NOT cited in Direction 1.
+
+@article{Hu2021,
+  author  = {Hu, Yaowen and Yu, Mengjie and Zhu, Di and Sinclair, Neil and Shams-Ansari, Amirhassan and Shao, Linbo and Holzgrafe, Jeffrey and Puma, Eric and Zhang, Mian and Lon{\v{c}}ar, Marko},
+  title   = {On-chip electro-optic frequency shifters and beam splitters},
+  journal = {Nature},
+  volume  = {599},
+  number  = {7886},
+  pages   = {587--593},
+  year    = {2021},
+  doi     = {10.1038/s41586-021-03999-x}
+}
+
+% Verified THIS session (2026-10-07): arXiv:1907.08593 full text (PDF, verify/1907.08593.txt).
+% Main text: MZI V_pi=4.6 V, V_pi L=0.046 V cm, 100 um resonator, 3.33 GHz, acoustic Q up to 3,600, ~1 MHz bandwidth,
+% 0.5 electrical-to-acoustic coupling (-3 dB S11 dip); racetrack loaded optical Q 2.2e6 at 1574.9 nm, linewidth 95 MHz;
+% heating-induced red shift with increasing microwave power.
+% Supplement: Q_m = 2,000 and gamma_e/gamma = 0.15 used for simulation; R_in = 50 ohm; eta_cav = 0.15;
+% Table S2: omega0/2pi=200 THz, kappa/2pi = 95 MHz, 2kappa_e/kappa = 0.3, gamma/2pi=1.28 MHz, Omega_m/2pi=2.007 GHz, g0/2pi=1.1 kHz.
+
+@article{Shao2019,
+  author  = {Shao, Linbo and Yu, Mengjie and Maity, Smarak and Sinclair, Neil and Zheng, Lu and Chia, Cleaven and Shams-Ansari, Amirhassan and Wang, Cheng and Zhang, Mian and Lai, Keji and Lon{\v{c}}ar, Marko},
+  title   = {Microwave-to-optical conversion using lithium niobate thin-film acoustic resonators},
+  journal = {Optica},
+  volume  = {6},
+  number  = {12},
+  pages   = {1498--1505},
+  year    = {2019},
+  doi     = {10.1364/OPTICA.6.001498}
+}
+
+% Verified THIS session (2026-10-07): arXiv:2005.03794v1 full text (verify/2005.03794.txt), Sec. on efficiency:
+% "The measured efficiency linearly raises with microwave power and reaches 3.5% at a 30-dBm microwave power applied
+% to the IDT pads"; on-chip efficiency = deflected / transmitted (microwave off). Also: ~3 GHz, carrier suppression >30 dB,
+% sideband suppression >40 dB, 70 MHz 3-dB microwave bandwidth, IL -15 dB fiber-to-fiber. Issue 16 from Crossref.
+
+@article{Shao2020,
+  author  = {Shao, Linbo and Sinclair, Neil and Leatham, James and Hu, Yaowen and Yu, Mengjie and Turpin, Terry and Crowe, Devon and Lon{\v{c}}ar, Marko},
+  title   = {Integrated microwave acousto-optic frequency shifter on thin-film lithium niobate},
+  journal = {Opt. Express},
+  volume  = {28},
+  number  = {16},
+  pages   = {23728--23738},
+  year    = {2020},
+  doi     = {10.1364/OE.397138}
+}
+
+% Verified THIS session (2026-10-07): arXiv:2511.22585v1 full text (verify/2511.22585.txt; v1 dated Dec 1, 2025).
+% LN-on-sapphire, IDT-launched guided acoustic wave, backward-Brillouin dynamic Bragg mirror coupling forward and backward
+% light, Omega/2pi ~ 8.54 GHz, strong supermode coupling at P_a ~ 0.6 mW, C/P_a = 2.46 /mW, DBM reflectivity up to 24%.
+% No shift efficiency / insertion loss of a forward frequency-shifter operating point found.
+
+@misc{Zhu2025ao,
+  author        = {Zhu, Zheng-Xu and Yang, Yuan-Hao and Xu, Xin-Biao and Wang, Jia-Qi and Zeng, Yu and Zou, Jia-Hua and Lu, Juanjuan and Wang, Weiting and Li, Ming and Zhang, Yan-Lei and Guo, Guang-Can and Sun, Luyan and Zou, Chang-Ling},
+  title         = {Acoustically control of integrated optical microrings: from photonic molecule to {M}obius strip},
+  year          = {2025},
+  eprint        = {2511.22585},
+  archivePrefix = {arXiv},
+  primaryClass  = {physics.optics}
+}
+
+% Verified (earlier session, ../../paper/refs.bib): arXiv:2509.01940 full text. Quoted: G^2 = alpha P_a,
+% alpha = 1774 +/- 171 GHz^2/W, 8.533 GHz, RF-to-acoustic conversion ~10%.
+
+@misc{Xu2025b,
+  author        = {Xu, Xin-Biao and Zhu, Zheng-Xu and Yang, Yuan-Hao and Wang, Jia-Qi and Zeng, Yu and Zou, Jia-Hua and Lu, Juanjuan and Zhang, Yan-Lei and Wang, Weiting and Guo, Guang-Can and Sun, Luyan and Zou, Chang-Ling},
+  title         = {Magnetic-free optical mode degeneracy lifting in lithium niobate microring resonators},
+  year          = {2025},
+  eprint        = {2509.01940},
+  archivePrefix = {arXiv}
+}
+
+% Qiu 2025: full text not obtainable (Optica paywall). Bibliographic data and abstract numbers confirmed (2026-10-07)
+% against the Optica abstract page, Crossref, and an Engineering Village record (authors, Opt. Lett. 50(4), 1132-1135,
+% doi 10.1364/OL.549857; two cascaded traveling-wave PMs on LNOI, serrodyne, V_pi ~ 2.3 V, shifting efficiency >98.8%,
+% CSR 42 dB, SSR 31 dB). Cited as a qualitative comparison with abstract values only.
+

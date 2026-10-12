@@ -18,3 +18,9 @@
 - `tfln_sim/`：另一些薄膜铌酸锂仿真记录。
 
 论文 B，以及 `dir11/`、`dir13/`、`dir15/` 和 `tfln_sim/` 里的其他草稿，都是仿真记录，不是已经完成的器件设计。
+
+## 移频噪声账本工作稿
+
+`freq_shift_noise/paper/` 是方向一（移频噪声账本）的工作稿包；配套脚本、参数和仍待测的自测表在 `freq_shift_noise/`，共用参数表在 `tfln_review/ao_shared_params_v1.md`。
+
+本稿仅为仿真与台面方案，实测单元仍 pending，不含实测或伪造数据；Fiber-Q 尚未下单，无自有流片。

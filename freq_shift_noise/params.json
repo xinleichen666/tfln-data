@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "title": "移频噪声账本参数表",
+    "T_K": 300.0,
+    "notes": "室温台面口径。每条必须有 cite 或 kind=assumed。禁止无损 / n_th→0 / 效率追平 Hu≈99% 作为主结果。"
+  },
+  "params": [
+    {
+      "id": "shao2020_eta_onchip",
+      "value": 0.035,
+      "unit": "1",
+      "condition": "30 dBm RF, Stokes/anti-Stokes deflection port",
+      "cite": "Shao et al., Opt. Express 28, 23728 (2020); arXiv:2005.03794",
+      "kind": "measured",
+      "notes": "片上效率 = 偏转光功率 / 关微波时透射光功率。不含光纤耦合损耗。原文 Fig.4 / 正文核实。"
+    },
+    {
+      "id": "shao2020_CSR_dB",
+      "value": 31.0,
+      "unit": "dB",
+      "condition": "Stokes config ~31 dB; anti-Stokes ~33 dB; abstract >30 dB",
+      "cite": "Shao et al., Opt. Express 28, 23728 (2020) Fig.3(b,d)",
+      "kind": "measured",
+      "notes": "CSR = P_shift/P_carrier at deflection port. 主曲线工作点取 31 dB（Stokes）。"
+    },
+    {
+      "id": "shao2020_SSR_dB",
+      "value": 40.0,
+      "unit": "dB",
+      "condition": "opposite sideband below noise floor",
+      "cite": "Shao et al., Opt. Express 28, 23728 (2020)",
+      "kind": "measured",
+      "notes": "对侧边带抑制 >40 dB（噪声底以下）。账本按 40 dB 下界处理。"
+    },
+    {
+      "id": "shao2020_IL_fiber_dB",
+      "value": -15.0,
+      "unit": "dB",
+      "condition": "fiber-to-fiber via transmitted-light port",
+      "cite": "Shao et al., Opt. Express 28, 23728 (2020) text near Fig.4",
+      "kind": "measured",
+      "notes": "原文：insertion loss of −15 dB by fiber-to-fiber through transmitted port；主因透镜光纤–波导模场失配。只进计数率，不进纯度。"
+    },
+    {
+      "id": "shao2020_Omega_GHz",
+      "value": 3.0,
+      "unit": "GHz",
+      "condition": "Bragg AOFS operating point",
+      "cite": "Shao et al., Opt. Express 28, 23728 (2020)",
+      "kind": "measured",
+      "notes": "声光移频量约 3 GHz。"
+    },
+    {
+      "id": "shao2020_MW_BW_MHz",
+      "value": 70.0,
+      "unit": "MHz",
+      "condition": "3 dB microwave bandwidth",
+      "cite": "Shao et al., Opt. Express 28, 23728 (2020)",
+      "kind": "measured",
+      "notes": "行波 IDT，非谐振。"
+    },
+    {
+      "id": "fiber_AOM_CSR_dB",
+      "value": 50.0,
+      "unit": "dB",
+      "condition": "G&H Fiber-Q typical extinction ratio (RF on/off, 1st order)",
+      "cite": "Gooch & Housego Fiber-Q datasheet (e.g. T-M040/T-M080 1550 nm): extinction ratio ≥50 dB",
+      "kind": "datasheet",
+      "notes": "商用对照，非本组测量。光纤 AOM 的 extinction ratio 规格；作台面锚的 CSR 量级对照行。"
+    },
+    {
+      "id": "fiber_AOM_IL_dB",
+      "value": -2.5,
+      "unit": "dB",
+      "condition": "typical Fiber-Q 1550 nm 40–80 MHz",
+      "cite": "G&H Fiber-Q datasheets: IL typical ~2–3 dB (40/80 MHz), up to ~5 dB (200 MHz)",
+      "kind": "datasheet",
+      "notes": "商用对照。插损远优于片上 Shao2020 的 −15 dB；衍射效率也远高于片上 3.5%。"
+    },
+    {
+      "id": "fiber_AOM_eta_typical",
+      "value": 0.5,
+      "unit": "1",
+      "condition": "order-of-magnitude diffraction efficiency for commercial fiber AOM",
+      "cite": "typical commercial fiber/bulk AOM specs (order of magnitude); Brimrose pigtailed AOFS cited in Shao2020 intro deflects 3–10%",
+      "kind": "assumed",
+      "notes": "假设量级对照：商用器件效率远高于片上 3.5%。Shao2020 引言亦提到 Brimrose 1.5 GHz 尾纤 AOFS 偏转 3–10%。主账本不依赖此精确值。"
+    },
+    {
+      "id": "shao2019_Vpi_V",
+      "value": 4.6,
+      "unit": "V",
+      "condition": "100 µm single-arm MZI, 3.33 GHz",
+      "cite": "Shao et al., Optica 6, 1498 (2019); arXiv:1907.08593",
+      "kind": "measured",
+      "notes": "V_πL = 0.046 V·cm。乙类只锁定，不写频率仓 HOM 主结果。"
+    },
+    {
+      "id": "shao2019_g0_Hz",
+      "value": 1100.0,
+      "unit": "Hz",
+      "condition": "g0/2π ≈ 1.1 kHz",
+      "cite": "Shao et al., Optica 6, 1498 (2019) Table S2 / main text",
+      "kind": "measured",
+      "notes": "单光子耦合率。"
+    },
+    {
+      "id": "shao2019_kappa_Hz",
+      "value": 95000000.0,
+      "unit": "Hz",
+      "condition": "κ/2π = 95 MHz",
+      "cite": "Shao et al., Optica 6, 1498 (2019) Table S2",
+      "kind": "measured",
+      "notes": "光学总损耗率。"
+    },
+    {
+      "id": "shao2019_2ke_over_k",
+      "value": 0.3,
+      "unit": "1",
+      "condition": "2κ_e/κ = 0.3",
+      "cite": "Shao et al., Optica 6, 1498 (2019) Table S2",
+      "kind": "measured",
+      "notes": "外耦合占比。"
+    },
+    {
+      "id": "shao2019_gamma_Hz",
+      "value": 1280000.0,
+      "unit": "Hz",
+      "condition": "γ/2π = 1.28 MHz",
+      "cite": "Shao et al., Optica 6, 1498 (2019) Table S2",
+      "kind": "measured",
+      "notes": "声学总损耗率。"
+    },
+    {
+      "id": "shao2019_2ge_over_g",
+      "value": 0.34,
+      "unit": "1",
+      "condition": "2γ_e/γ = 0.34",
+      "cite": "Shao et al., Optica 6, 1498 (2019) Table S2",
+      "kind": "measured",
+      "notes": "IDT 外耦合占比。"
+    },
+    {
+      "id": "shao2019_Omega_Hz",
+      "value": 2007000000.0,
+      "unit": "Hz",
+      "condition": "Ω/2π = 2.007 GHz",
+      "cite": "Shao et al., Optica 6, 1498 (2019) Table S2",
+      "kind": "measured",
+      "notes": "声学谐振频率。"
+    },
+    {
+      "id": "shao2019_C0",
+      "value": 4.0e-8,
+      "unit": "1",
+      "condition": "single-photon cooperativity",
+      "cite": "Shao et al., Optica 6, 1498 (2019); dir11 report.md Iter4 verified C0≈3.98e-8",
+      "kind": "measured",
+      "notes": "C0 = 4g0²/(κγ)。乙类锁定用。"
+    },
+    {
+      "id": "shao2019_Q_ac_typical",
+      "value": 2000.0,
+      "unit": "1",
+      "condition": "modeling typical; up to 3600 in Fig.3(c)",
+      "cite": "Shao et al., Optica 6, 1498 (2019) Fig.3(c) 'up to 3,600'; modeling uses ~2000",
+      "kind": "measured",
+      "notes": "声学 Q 量级 10³。上限 3600 为实测。"
+    },
+    {
+      "id": "zhu2025_C_per_mW",
+      "value": 2.46,
+      "unit": "1/mW",
+      "condition": "normalized cooperativity C/P_a; acoustic power",
+      "cite": "Zhu et al., arXiv:2511.22585",
+      "kind": "measured",
+      "notes": "声学光子分子 / DBM。C=6.2 @ 2.5 mW 声功率。"
+    },
+    {
+      "id": "zhu2025_R_max_measured",
+      "value": 0.24,
+      "unit": "1",
+      "condition": "DBM reflectivity at 6.3 mW acoustic; Al IDT power-handling limited",
+      "cite": "Zhu et al., arXiv:2511.22585",
+      "kind": "measured",
+      "notes": "实测反射率上限 24%。"
+    },
+    {
+      "id": "zhu2025_R_pred_99pct_mW",
+      "value": 26.0,
+      "unit": "mW",
+      "condition": "theory prediction R=99% at ~26 mW acoustic",
+      "cite": "Zhu et al., arXiv:2511.22585",
+      "kind": "theory",
+      "notes": "理论外推，非实测。丙类曲线敏感性用。"
+    },
+    {
+      "id": "zhu2025_Omega_GHz",
+      "value": 8.54,
+      "unit": "GHz",
+      "condition": "backward Brillouin",
+      "cite": "Zhu et al., arXiv:2511.22585",
+      "kind": "measured",
+      "notes": "声频，用于 n_th。"
+    },
+    {
+      "id": "xu2025_alpha_GHz2_per_W",
+      "value": 1774.0,
+      "unit": "GHz^2/W",
+      "condition": "G²=α P_a at 8.533 GHz; α=1774±171",
+      "cite": "Xu et al., arXiv:2509.01940",
+      "kind": "measured",
+      "notes": "LNOS 环耦合标定。RF→acoustic ≈10%。"
+    },
+    {
+      "id": "xu2025_RF_to_acoustic",
+      "value": 0.10,
+      "unit": "1",
+      "condition": "RF to acoustic conversion efficiency",
+      "cite": "Xu et al., arXiv:2509.01940",
+      "kind": "measured",
+      "notes": "~10% IDT 效率量级。"
+    },
+    {
+      "id": "typeC_spont_model",
+      "value": "delta_sp = n_th / (n_th + 4*C)",
+      "unit": "formula",
+      "condition": "room-T beam-splitter-like ledger",
+      "cite": "model assumption (optomechanics-inspired); not a measured device formula",
+      "kind": "assumed",
+      "notes": "丙类：自发散射进信号仓的相对权重上界。图注必须写「模型假设」。敏感性扫 C 缩放因子。"
+    }
+  ]
+}
