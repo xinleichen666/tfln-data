@@ -39,13 +39,15 @@ Internal group use only: simulation and scheme draft; measurements pending; no f
 
 本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 对本方向 N/A，无自有流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。仓写完后再改 private。
 
-## 仿真写作四轨 A–D（内部工作稿）
+## 仿真写作六轨 A–F（内部工作稿）
 
-`qkernel_budget/`、`qcnn_protocol/`、`mmd_coverage/`、`floquet_crit_budget/` 是 2026-10-13 已汇合的仿真与方案工作稿。汇合页是根目录 `sim_tracks_汇合_STATUS.md`。各轨表内数字出自该轨 `data/summary.json`。无 `verify/`，无第三方 PDF。
+`qkernel_budget/`、`qcnn_protocol/`、`mmd_coverage/`、`floquet_crit_budget/` 是 2026-10-13 已汇合的仿真与方案工作稿。`skyrmion_noise/`、`qfc_domain_budget/` 是 2026-10-14 已汇合的仿真与方案工作稿。汇合页是根目录 `sim_tracks_汇合_STATUS.md`。各轨表内数字出自该轨 `data/summary.json`。无 `verify/`，无第三方 PDF。
 
 - `qkernel_budget/`：分块保真度核的失配 / 标签噪声预算。
 - `qcnn_protocol/`：无噪声模拟器上的 QCNN–CNN 协议对照。
 - `mmd_coverage/`：Pauli-Z 矩匹配损失与未见有效覆盖。
 - `floquet_crit_budget/`：Floquet SSH 临界签名的无序与损耗预算。标准模型诊断，不是该实验的复现。
+- `skyrmion_noise/`：自旋–轨道纹理上的经典噪声预算（纹理积分斯格明子数）。自定纹理上的预算，不是 Zhao 实验的复现。
+- `qfc_domain_budget/`：标准准相位匹配的畴 / 膜厚预算。标准模型预算，不是该实验的复现。
 
 本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 对本方向 N/A，无自有流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。仓写完后再改 private。

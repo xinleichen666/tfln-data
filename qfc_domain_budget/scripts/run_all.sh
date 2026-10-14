@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+PY="${ROOT}/.venv/bin/python"
+rm -rf "${ROOT}/data"/*
+mkdir -p "${ROOT}/data" "${ROOT}/paper/fig"
+"$PY" "${ROOT}/scripts/run_qfc_budget.py"
+"$PY" "${ROOT}/scripts/plot_figures.py"
+echo "[run_all] OK"
