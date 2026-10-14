@@ -1,0 +1,812 @@
+{
+  "track": "skyrmion_noise",
+  "title_frame": "方法·噪声预算",
+  "prior_cite": "Zhao et al., Nat. Phys. (2026), doi:10.1038/s41567-026-03487-x",
+  "disclaimer": "本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 对本方向 N/A，无自有流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。仓写完后再改 private。",
+  "seeds": {
+    "master": 20261014,
+    "depolarizing_sweep": 401,
+    "phase_flip_sweep": 402,
+    "bit_phase_flip_sweep": 403,
+    "grid_probe": 404
+  },
+  "protocol": {
+    "model_note": "自定自旋–轨道纹理 + 伴侣量子比特的经典噪声预算；不是 Zhao 实验复现",
+    "state": "(|L⟩_A|0⟩_B + |R⟩_A|1⟩_B)/√2",
+    "spatial": {
+      "u_L": "LG_{0,0}",
+      "u_R": "LG_{0,1}",
+      "waist": 1.0,
+      "ell": 1,
+      "grid_n": 97,
+      "grid_half_waist": 4.0,
+      "dx": 0.08333333333333348,
+      "dy": 0.08333333333333348
+    },
+    "skyrmion_definition": "N_sk=(1/4π)∬ n·(∂x n × ∂y n) dx dy; n=S/|S| from conditional Stokes after B→|+⟩; NOT an eigenvalue of the 4×4 density matrix",
+    "conditional_projection": "|+⟩_B=(|0⟩+|1⟩)/√2",
+    "channels": {
+      "depolarizing": "ρ'=(1-ξ)ρ+(ξ/4)I_4",
+      "phase_flip": "ρ'=(1-p)ρ + p (Z⊗I)ρ(Z⊗I); Z on skyrmion qubit A",
+      "bit_phase_flip": "ρ'=(1-p)ρ + p (Y⊗I)ρ(Y⊗I); Y on skyrmion qubit A"
+    },
+    "xi_grid": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95,
+      1.0
+    ],
+    "p_grid": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95,
+      1.0
+    ],
+    "zero_threshold_abs": 0.02,
+    "concurrence": "Wootters two-qubit",
+    "discord": "D(A|B)=I(A:B)-max J; projective measure on B, Bloch angles optimized",
+    "no_zhao_device_numbers_in_results": true,
+    "no_chip_fabrication": true,
+    "no_state_transfer_advantage": true,
+    "not_merged_with_floquet": true
+  },
+  "clean_limit": {
+    "skyrmion_number": 0.9533350520813986,
+    "skyrmion_abs": 0.9533350520813986,
+    "concurrence": 0.9999999999999998,
+    "discord": 0.9999999999999993,
+    "fidelity": 0.9999999999999998,
+    "purity": 1.0
+  },
+  "headline": {
+    "clean_skyrmion_number": 0.9533350520813986,
+    "clean_skyrmion_abs": 0.9533350520813986,
+    "clean_concurrence": 0.9999999999999998,
+    "clean_discord": 0.9999999999999993,
+    "clean_fidelity": 0.9999999999999998,
+    "clean_purity": 1.0,
+    "ell": 1,
+    "waist": 1.0,
+    "grid_n": 97,
+    "xi_range": [
+      0.0,
+      1.0
+    ],
+    "p_range": [
+      0.0,
+      1.0
+    ],
+    "vanish_depolarizing": {
+      "skyrmion": {
+        "crossed": true,
+        "cross_x": 1.0,
+        "cross_y": 0.0,
+        "note": null
+      },
+      "concurrence": {
+        "crossed": true,
+        "cross_x": 0.7,
+        "cross_y": 0.0,
+        "note": null
+      },
+      "discord": {
+        "crossed": true,
+        "cross_x": 0.9,
+        "cross_y": 0.01318864346986115,
+        "note": null
+      }
+    },
+    "vanish_phase_flip": {
+      "skyrmion": {
+        "crossed": true,
+        "cross_x": 0.5,
+        "cross_y": 0.0,
+        "note": null
+      },
+      "concurrence": {
+        "crossed": true,
+        "cross_x": 0.5,
+        "cross_y": 0.0,
+        "note": null
+      },
+      "discord": {
+        "crossed": true,
+        "cross_x": 0.45,
+        "cross_y": 0.007225546012191053,
+        "note": null
+      }
+    },
+    "vanish_bit_phase_flip": {
+      "skyrmion": {
+        "crossed": true,
+        "cross_x": 0.5,
+        "cross_y": 0.0,
+        "note": null
+      },
+      "concurrence": {
+        "crossed": true,
+        "cross_x": 0.5,
+        "cross_y": 0.0,
+        "note": null
+      },
+      "discord": {
+        "crossed": true,
+        "cross_x": 0.45,
+        "cross_y": 0.007225546012191719,
+        "note": null
+      }
+    },
+    "who_first_depolarizing": {
+      "who_first_to_zero": "concurrence",
+      "order": [
+        {
+          "metric": "concurrence",
+          "cross_x": 0.7
+        },
+        {
+          "metric": "discord",
+          "cross_x": 0.9
+        },
+        {
+          "metric": "skyrmion",
+          "cross_x": 1.0
+        }
+      ],
+      "xlabel": "xi"
+    },
+    "who_first_phase_flip": {
+      "who_first_to_zero": "discord",
+      "order": [
+        {
+          "metric": "discord",
+          "cross_x": 0.45
+        },
+        {
+          "metric": "concurrence",
+          "cross_x": 0.5
+        },
+        {
+          "metric": "skyrmion",
+          "cross_x": 0.5
+        }
+      ],
+      "xlabel": "p"
+    },
+    "who_first_bit_phase_flip": {
+      "who_first_to_zero": "discord",
+      "order": [
+        {
+          "metric": "discord",
+          "cross_x": 0.45
+        },
+        {
+          "metric": "concurrence",
+          "cross_x": 0.5
+        },
+        {
+          "metric": "skyrmion",
+          "cross_x": 0.5
+        }
+      ],
+      "xlabel": "p"
+    }
+  },
+  "sweeps": {
+    "depolarizing": [
+      {
+        "xi": 0.0,
+        "skyrmion_number": 0.9533350520813986,
+        "skyrmion_abs": 0.9533350520813986,
+        "concurrence": 0.9999999999999998,
+        "discord": 0.9999999999999993,
+        "fidelity": 0.9999999999999998,
+        "purity": 1.0
+      },
+      {
+        "xi": 0.05,
+        "skyrmion_number": 0.9567769407033608,
+        "skyrmion_abs": 0.9567769407033608,
+        "concurrence": 0.9249999999999977,
+        "discord": 0.8785148820281496,
+        "fidelity": 0.9624999999999998,
+        "purity": 0.926875
+      },
+      {
+        "xi": 0.1,
+        "skyrmion_number": 0.9600650602761759,
+        "skyrmion_abs": 0.9600650602761759,
+        "concurrence": 0.8500000000000002,
+        "discord": 0.7832132254353719,
+        "fidelity": 0.9249999999999998,
+        "purity": 0.8575
+      },
+      {
+        "xi": 0.15,
+        "skyrmion_number": 0.9631828291739947,
+        "skyrmion_abs": 0.9631828291739947,
+        "concurrence": 0.7750000000000006,
+        "discord": 0.6985922991306693,
+        "fidelity": 0.8875,
+        "purity": 0.7918750000000002
+      },
+      {
+        "xi": 0.2,
+        "skyrmion_number": 0.9661110637471777,
+        "skyrmion_abs": 0.9661110637471777,
+        "concurrence": 0.7000000000000004,
+        "discord": 0.6214109137647068,
+        "fidelity": 0.8499999999999999,
+        "purity": 0.7300000000000001
+      },
+      {
+        "xi": 0.25,
+        "skyrmion_number": 0.9688269713067252,
+        "skyrmion_abs": 0.9688269713067252,
+        "concurrence": 0.6250000000000003,
+        "discord": 0.5501717141892329,
+        "fidelity": 0.8124999999999998,
+        "purity": 0.671875
+      },
+      {
+        "xi": 0.3,
+        "skyrmion_number": 0.9713026073343857,
+        "skyrmion_abs": 0.9713026073343857,
+        "concurrence": 0.5499999999999996,
+        "discord": 0.4840309130411258,
+        "fidelity": 0.7749999999999999,
+        "purity": 0.6175
+      },
+      {
+        "xi": 0.35,
+        "skyrmion_number": 0.9735024586448143,
+        "skyrmion_abs": 0.9735024586448143,
+        "concurrence": 0.47499999999999976,
+        "discord": 0.42246765611367343,
+        "fidelity": 0.7374999999999998,
+        "purity": 0.5668749999999999
+      },
+      {
+        "xi": 0.4,
+        "skyrmion_number": 0.9753795566909451,
+        "skyrmion_abs": 0.9753795566909451,
+        "concurrence": 0.39999999999999986,
+        "discord": 0.36514844544032266,
+        "fidelity": 0.6999999999999998,
+        "purity": 0.52
+      },
+      {
+        "xi": 0.45,
+        "skyrmion_number": 0.976869030531036,
+        "skyrmion_abs": 0.976869030531036,
+        "concurrence": 0.32499999999999984,
+        "discord": 0.31186172326055106,
+        "fidelity": 0.6625,
+        "purity": 0.47687500000000016
+      },
+      {
+        "xi": 0.5,
+        "skyrmion_number": 0.9778770138660484,
+        "skyrmion_abs": 0.9778770138660484,
+        "concurrence": 0.24999999999999972,
+        "discord": 0.26248318376373403,
+        "fidelity": 0.6249999999999999,
+        "purity": 0.4375
+      },
+      {
+        "xi": 0.55,
+        "skyrmion_number": 0.978260709250049,
+        "skyrmion_abs": 0.978260709250049,
+        "concurrence": 0.17499999999999988,
+        "discord": 0.21695657645575006,
+        "fidelity": 0.5874999999999999,
+        "purity": 0.401875
+      },
+      {
+        "xi": 0.6,
+        "skyrmion_number": 0.9777906464881633,
+        "skyrmion_abs": 0.9777906464881633,
+        "concurrence": 0.09999999999999964,
+        "discord": 0.1752833199183632,
+        "fidelity": 0.5499999999999998,
+        "purity": 0.36999999999999994
+      },
+      {
+        "xi": 0.65,
+        "skyrmion_number": 0.9760745994347529,
+        "skyrmion_abs": 0.9760745994347529,
+        "concurrence": 0.024999999999999994,
+        "discord": 0.1375177926043536,
+        "fidelity": 0.5124999999999998,
+        "purity": 0.34187499999999993
+      },
+      {
+        "xi": 0.7,
+        "skyrmion_number": 0.9723919805341829,
+        "skyrmion_abs": 0.9723919805341829,
+        "concurrence": 0.0,
+        "discord": 0.10376686345407382,
+        "fidelity": 0.475,
+        "purity": 0.31750000000000006
+      },
+      {
+        "xi": 0.75,
+        "skyrmion_number": 0.9652973413875869,
+        "skyrmion_abs": 0.9652973413875869,
+        "concurrence": 0.0,
+        "discord": 0.07419318798081687,
+        "fidelity": 0.4374999999999999,
+        "purity": 0.296875
+      },
+      {
+        "xi": 0.8,
+        "skyrmion_number": 0.9515473807356323,
+        "skyrmion_abs": 0.9515473807356323,
+        "concurrence": 0.0,
+        "discord": 0.04902249956730598,
+        "fidelity": 0.39999999999999986,
+        "purity": 0.28
+      },
+      {
+        "xi": 0.85,
+        "skyrmion_number": 0.9226694985019013,
+        "skyrmion_abs": 0.9226694985019013,
+        "concurrence": 0.0,
+        "discord": 0.028555839766658986,
+        "fidelity": 0.3624999999999999,
+        "purity": 0.266875
+      },
+      {
+        "xi": 0.9,
+        "skyrmion_number": 0.8511788166658959,
+        "skyrmion_abs": 0.8511788166658959,
+        "concurrence": 0.0,
+        "discord": 0.01318864346986115,
+        "fidelity": 0.3249999999999999,
+        "purity": 0.25749999999999995
+      },
+      {
+        "xi": 0.95,
+        "skyrmion_number": 0.6243376686680729,
+        "skyrmion_abs": 0.6243376686680729,
+        "concurrence": 0.0,
+        "discord": 0.003440199850393233,
+        "fidelity": 0.2875,
+        "purity": 0.251875
+      },
+      {
+        "xi": 1.0,
+        "skyrmion_number": 0.0,
+        "skyrmion_abs": 0.0,
+        "concurrence": 0.0,
+        "discord": 0.0,
+        "fidelity": 0.24999999999999994,
+        "purity": 0.25
+      }
+    ],
+    "phase_flip": [
+      {
+        "p": 0.0,
+        "skyrmion_number": 0.9533350520813986,
+        "skyrmion_abs": 0.9533350520813986,
+        "concurrence": 0.9999999999999998,
+        "discord": 0.9999999999999993,
+        "fidelity": 0.9999999999999998,
+        "purity": 1.0
+      },
+      {
+        "p": 0.05,
+        "skyrmion_number": 0.9600650602761756,
+        "skyrmion_abs": 0.9600650602761756,
+        "concurrence": 0.9,
+        "discord": 0.7136030428840436,
+        "fidelity": 0.9499999999999997,
+        "purity": 0.9049999999999999
+      },
+      {
+        "p": 0.1,
+        "skyrmion_number": 0.9661110637471777,
+        "skyrmion_abs": 0.9661110637471777,
+        "concurrence": 0.7999999999999996,
+        "discord": 0.5310044064107187,
+        "fidelity": 0.8999999999999999,
+        "purity": 0.8200000000000001
+      },
+      {
+        "p": 0.15,
+        "skyrmion_number": 0.9713026073343857,
+        "skyrmion_abs": 0.9713026073343857,
+        "concurrence": 0.6999999999999997,
+        "discord": 0.3901596952835986,
+        "fidelity": 0.8499999999999999,
+        "purity": 0.7449999999999999
+      },
+      {
+        "p": 0.2,
+        "skyrmion_number": 0.9753795566909451,
+        "skyrmion_abs": 0.9753795566909451,
+        "concurrence": 0.5999999999999999,
+        "discord": 0.27807190511263746,
+        "fidelity": 0.7999999999999999,
+        "purity": 0.6799999999999999
+      },
+      {
+        "p": 0.25,
+        "skyrmion_number": 0.9778770138660484,
+        "skyrmion_abs": 0.9778770138660484,
+        "concurrence": 0.49999999999999994,
+        "discord": 0.18872187554086683,
+        "fidelity": 0.7499999999999999,
+        "purity": 0.625
+      },
+      {
+        "p": 0.3,
+        "skyrmion_number": 0.9777906464881634,
+        "skyrmion_abs": 0.9777906464881634,
+        "concurrence": 0.40000000000000013,
+        "discord": 0.11870910076930663,
+        "fidelity": 0.6999999999999998,
+        "purity": 0.5800000000000001
+      },
+      {
+        "p": 0.35,
+        "skyrmion_number": 0.9723919805341829,
+        "skyrmion_abs": 0.9723919805341829,
+        "concurrence": 0.3000000000000001,
+        "discord": 0.06593194462450835,
+        "fidelity": 0.6499999999999999,
+        "purity": 0.545
+      },
+      {
+        "p": 0.4,
+        "skyrmion_number": 0.951547380735632,
+        "skyrmion_abs": 0.951547380735632,
+        "concurrence": 0.19999999999999996,
+        "discord": 0.029049405545330753,
+        "fidelity": 0.5999999999999999,
+        "purity": 0.52
+      },
+      {
+        "p": 0.45,
+        "skyrmion_number": 0.8511788166658961,
+        "skyrmion_abs": 0.8511788166658961,
+        "concurrence": 0.10000000000000003,
+        "discord": 0.007225546012191053,
+        "fidelity": 0.5499999999999999,
+        "purity": 0.505
+      },
+      {
+        "p": 0.5,
+        "skyrmion_number": 0.0,
+        "skyrmion_abs": 0.0,
+        "concurrence": 0.0,
+        "discord": 0.0,
+        "fidelity": 0.4999999999999999,
+        "purity": 0.5
+      },
+      {
+        "p": 0.55,
+        "skyrmion_number": 0.8511788166658961,
+        "skyrmion_abs": 0.8511788166658961,
+        "concurrence": 0.10000000000000014,
+        "discord": 0.007225546012191497,
+        "fidelity": 0.44999999999999984,
+        "purity": 0.505
+      },
+      {
+        "p": 0.6,
+        "skyrmion_number": 0.951547380735632,
+        "skyrmion_abs": 0.951547380735632,
+        "concurrence": 0.19999999999999996,
+        "discord": 0.029049405545330753,
+        "fidelity": 0.39999999999999997,
+        "purity": 0.52
+      },
+      {
+        "p": 0.65,
+        "skyrmion_number": 0.9723919805341829,
+        "skyrmion_abs": 0.9723919805341829,
+        "concurrence": 0.3000000000000001,
+        "discord": 0.06593194462450835,
+        "fidelity": 0.3499999999999999,
+        "purity": 0.545
+      },
+      {
+        "p": 0.7,
+        "skyrmion_number": 0.9777906464881634,
+        "skyrmion_abs": 0.9777906464881634,
+        "concurrence": 0.4,
+        "discord": 0.11870910076930641,
+        "fidelity": 0.3,
+        "purity": 0.58
+      },
+      {
+        "p": 0.75,
+        "skyrmion_number": 0.9778770138660484,
+        "skyrmion_abs": 0.9778770138660484,
+        "concurrence": 0.49999999999999994,
+        "discord": 0.18872187554086683,
+        "fidelity": 0.25,
+        "purity": 0.625
+      },
+      {
+        "p": 0.8,
+        "skyrmion_number": 0.9753795566909451,
+        "skyrmion_abs": 0.9753795566909451,
+        "concurrence": 0.5999999999999999,
+        "discord": 0.27807190511263746,
+        "fidelity": 0.19999999999999998,
+        "purity": 0.6799999999999999
+      },
+      {
+        "p": 0.85,
+        "skyrmion_number": 0.9713026073343857,
+        "skyrmion_abs": 0.9713026073343857,
+        "concurrence": 0.6999999999999997,
+        "discord": 0.3901596952835986,
+        "fidelity": 0.15000000000000005,
+        "purity": 0.7449999999999999
+      },
+      {
+        "p": 0.9,
+        "skyrmion_number": 0.9661110637471777,
+        "skyrmion_abs": 0.9661110637471777,
+        "concurrence": 0.7999999999999996,
+        "discord": 0.5310044064107187,
+        "fidelity": 0.09999999999999995,
+        "purity": 0.8200000000000001
+      },
+      {
+        "p": 0.95,
+        "skyrmion_number": 0.9600650602761756,
+        "skyrmion_abs": 0.9600650602761756,
+        "concurrence": 0.9,
+        "discord": 0.7136030428840436,
+        "fidelity": 0.050000000000000044,
+        "purity": 0.9049999999999999
+      },
+      {
+        "p": 1.0,
+        "skyrmion_number": 0.9533350520813986,
+        "skyrmion_abs": 0.9533350520813986,
+        "concurrence": 0.9999999999999998,
+        "discord": 0.9999999999999993,
+        "fidelity": 0.0,
+        "purity": 1.0
+      }
+    ],
+    "bit_phase_flip": [
+      {
+        "p": 0.0,
+        "skyrmion_number": 0.9533350520813986,
+        "skyrmion_abs": 0.9533350520813986,
+        "concurrence": 0.9999999999999998,
+        "discord": 0.9999999999999993,
+        "fidelity": 0.9999999999999998,
+        "purity": 1.0
+      },
+      {
+        "p": 0.05,
+        "skyrmion_number": 0.9600650602761756,
+        "skyrmion_abs": 0.9600650602761756,
+        "concurrence": 0.8999999904484772,
+        "discord": 0.7136030428840439,
+        "fidelity": 0.9499999999999997,
+        "purity": 0.9049999999999999
+      },
+      {
+        "p": 0.1,
+        "skyrmion_number": 0.9661110637471777,
+        "skyrmion_abs": 0.9661110637471777,
+        "concurrence": 0.7999999983869018,
+        "discord": 0.5310044064107187,
+        "fidelity": 0.8999999999999999,
+        "purity": 0.8200000000000001
+      },
+      {
+        "p": 0.15,
+        "skyrmion_number": 0.9713026073343857,
+        "skyrmion_abs": 0.9713026073343857,
+        "concurrence": 0.6999999937691664,
+        "discord": 0.3901596952835995,
+        "fidelity": 0.8499999999999999,
+        "purity": 0.7449999999999999
+      },
+      {
+        "p": 0.2,
+        "skyrmion_number": 0.9753795566909451,
+        "skyrmion_abs": 0.9753795566909451,
+        "concurrence": 0.5999999973658218,
+        "discord": 0.2780719051126379,
+        "fidelity": 0.7999999999999999,
+        "purity": 0.6800000000000002
+      },
+      {
+        "p": 0.25,
+        "skyrmion_number": 0.9778770138660484,
+        "skyrmion_abs": 0.9778770138660484,
+        "concurrence": 0.4999999962747095,
+        "discord": 0.18872187554086706,
+        "fidelity": 0.7499999999999997,
+        "purity": 0.6249999999999999
+      },
+      {
+        "p": 0.3,
+        "skyrmion_number": 0.9777906464881634,
+        "skyrmion_abs": 0.9777906464881634,
+        "concurrence": 0.3999999971619129,
+        "discord": 0.1187091007693073,
+        "fidelity": 0.6999999999999998,
+        "purity": 0.58
+      },
+      {
+        "p": 0.35,
+        "skyrmion_number": 0.9723919805341829,
+        "skyrmion_abs": 0.9723919805341829,
+        "concurrence": 0.29999999575554603,
+        "discord": 0.06593194462450902,
+        "fidelity": 0.6499999999999999,
+        "purity": 0.545
+      },
+      {
+        "p": 0.4,
+        "skyrmion_number": 0.9515473807356323,
+        "skyrmion_abs": 0.9515473807356323,
+        "concurrence": 0.19999999749389435,
+        "discord": 0.02904940554533142,
+        "fidelity": 0.5999999999999999,
+        "purity": 0.52
+      },
+      {
+        "p": 0.45,
+        "skyrmion_number": 0.8511788166658959,
+        "skyrmion_abs": 0.8511788166658959,
+        "concurrence": 0.09999999652447775,
+        "discord": 0.007225546012191719,
+        "fidelity": 0.5499999999999999,
+        "purity": 0.5050000000000001
+      },
+      {
+        "p": 0.5,
+        "skyrmion_number": 0.0,
+        "skyrmion_abs": 0.0,
+        "concurrence": 0.0,
+        "discord": 0.0,
+        "fidelity": 0.4999999999999999,
+        "purity": 0.5
+      },
+      {
+        "p": 0.55,
+        "skyrmion_number": 0.8511788166658961,
+        "skyrmion_abs": 0.8511788166658961,
+        "concurrence": 0.10000000000000003,
+        "discord": 0.007225546012191719,
+        "fidelity": 0.44999999999999984,
+        "purity": 0.505
+      },
+      {
+        "p": 0.6,
+        "skyrmion_number": 0.9515473807356323,
+        "skyrmion_abs": 0.9515473807356323,
+        "concurrence": 0.1999999973658219,
+        "discord": 0.02904940554533142,
+        "fidelity": 0.39999999999999997,
+        "purity": 0.52
+      },
+      {
+        "p": 0.65,
+        "skyrmion_number": 0.9723919805341829,
+        "skyrmion_abs": 0.9723919805341829,
+        "concurrence": 0.29999999575554614,
+        "discord": 0.06593194462450902,
+        "fidelity": 0.3499999999999999,
+        "purity": 0.545
+      },
+      {
+        "p": 0.7,
+        "skyrmion_number": 0.9777906464881633,
+        "skyrmion_abs": 0.9777906464881633,
+        "concurrence": 0.39999999853511387,
+        "discord": 0.1187091007693073,
+        "fidelity": 0.3,
+        "purity": 0.58
+      },
+      {
+        "p": 0.75,
+        "skyrmion_number": 0.9778770138660484,
+        "skyrmion_abs": 0.9778770138660484,
+        "concurrence": 0.4999999962747095,
+        "discord": 0.18872187554086683,
+        "fidelity": 0.24999999999999994,
+        "purity": 0.6249999999999999
+      },
+      {
+        "p": 0.8,
+        "skyrmion_number": 0.9753795566909451,
+        "skyrmion_abs": 0.9753795566909451,
+        "concurrence": 0.5999999928636097,
+        "discord": 0.2780719051126377,
+        "fidelity": 0.1999999999999999,
+        "purity": 0.6800000000000002
+      },
+      {
+        "p": 0.85,
+        "skyrmion_number": 0.9713026073343857,
+        "skyrmion_abs": 0.9713026073343857,
+        "concurrence": 0.6999999959980095,
+        "discord": 0.3901596952835995,
+        "fidelity": 0.15,
+        "purity": 0.7449999999999999
+      },
+      {
+        "p": 0.9,
+        "skyrmion_number": 0.9661110637471777,
+        "skyrmion_abs": 0.9661110637471777,
+        "concurrence": 0.7999999979174992,
+        "discord": 0.5310044064107187,
+        "fidelity": 0.09999999999999995,
+        "purity": 0.8200000000000001
+      },
+      {
+        "p": 0.95,
+        "skyrmion_number": 0.9600650602761756,
+        "skyrmion_abs": 0.9600650602761756,
+        "concurrence": 0.8999999947833056,
+        "discord": 0.7136030428840434,
+        "fidelity": 0.05000000000000004,
+        "purity": 0.905
+      },
+      {
+        "p": 1.0,
+        "skyrmion_number": 0.9533350520813986,
+        "skyrmion_abs": 0.9533350520813986,
+        "concurrence": 0.9999999999999998,
+        "discord": 0.9999999999999993,
+        "fidelity": 0.0,
+        "purity": 1.0
+      }
+    ]
+  },
+  "literature_contrast_only": {
+    "role": "仅对照",
+    "note": "Zhao 新闻/实验数不得写入结果表",
+    "zhao_skyrmion_approx": 1.981,
+    "zhao_fidelity_avg_pct": 89,
+    "zhao_purity_concurrence_zero": 0.34,
+    "zhao_purity_skyrmion_drop": 0.25,
+    "zhao_mix_ratio": 0.5
+  }
+}
