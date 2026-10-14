@@ -1,0 +1,61 @@
+{
+ "track": "dir11/paperB",
+ "seed_note": "deterministic; no RNG",
+ "master_refs": {
+  "results_B": "data/results_B.json",
+  "core": "core.py Design B: F, WM, G, KI",
+  "g0_source": "Shao et al. Optica 6, 1498 (2019) Table S2: g0/2pi = 1.1 kHz"
+ },
+ "symbol_map": {
+  "G_core": "gamma (bus external coupling of ring 1), rad/s",
+  "KI_core": "kappa_i (intrinsic), rad/s",
+  "kappa": "G + KI = loaded decay of ring 1, rad/s",
+  "WM": "Omega_m acoustic angular frequency, rad/s",
+  "gamma_m": "Omega_m / Q_m, rad/s",
+  "g0": "2*pi*1.1e3 rad/s (Shao 2019)",
+  "C0": "4*g0^2/(kappa*gamma_m), single-photon cooperativity (dimensionless)",
+  "n_th": "1/(exp(hbar*Omega_m/kT)-1) at T=300 K",
+  "n_th_C0": "upper bound: spontaneous scattering into SAME acoustic mode relative to one intracavity photon (not a full multimode calculation)",
+  "term1_n_th_over_Ncoh": "drive-jitter / incoherent coupling fluctuation (kept from make_all; NOT deleted)"
+ },
+ "inputs": {
+  "F_Hz": 3330000000.0,
+  "Omega_m_over_2pi_Hz": 3330000000.0000005,
+  "gamma_over_2pi_Hz": 600000000.0,
+  "kappa_i_over_2pi_Hz": 80750000.0,
+  "kappa_over_2pi_Hz": 680750000.0,
+  "Q_m": 2000,
+  "gamma_m_over_2pi_Hz": 1665000.0000000002,
+  "g0_over_2pi_Hz": 1100.0,
+  "T_K": 300.0,
+  "eta_shift_ideal": 0.9834592761556122,
+  "V_unfiltered_HOM_10MHz": 0.9834592154088903
+ },
+ "term1_drive_jitter": {
+  "N_coh": 175405367406.1411,
+  "n_th_300K": 1876.6227742014996,
+  "n_th_over_Ncoh": 1.0698776223057569e-08,
+  "note": "Unchanged from results_B.json thermal; incoherent coupling fluctuation only."
+ },
+ "term2_spontaneous_same_mode": {
+  "C0": 4.27015337041044e-09,
+  "n_th_300K_from_results": 1876.6227742014996,
+  "n_th_300K_recompute_check": 1876.6227742014996,
+  "n_th_C0": 8.013467064245523e-06,
+  "definition": "C0 = 4 g0^2 / (kappa gamma_m) with all rates in rad/s. n_th*C0 upper-bounds spontaneous scattering mediated by the SAME driven acoustic mode, relative to a single intracavity photon. It is NOT a claim of multimode leakage to other optical modes, NOT a measured noise floor, and NOT a quantum-advantage metric."
+ },
+ "comparison": {
+  "unfiltered_sideband_error_1_minus_eta": 0.01654072384438776,
+  "unfiltered_HOM_infidelity_1_minus_V": 0.016540784591109747,
+  "n_th_C0_over_sideband_error": 0.0004844689470445683,
+  "verdict": "still_much_smaller_than_unfiltered_sideband_error",
+  "verdict_zh": "室温下 n_th·C0 仍远小于未滤波边带误差 1−η_shift；自发散射上界不主导；与驱动抖动项同属可忽略量级。"
+ },
+ "non_claims": [
+  "Not a measurement; simulation/order-of-magnitude bound only.",
+  "Does not model spontaneous scattering into OTHER optical modes (different spatial/spectral channels); that channel remains unquantified here.",
+  "Does not claim quantum advantage, fab readiness, or Fiber-Q relevance (N/A).",
+  "g0 is a literature input from Shao 2019, not remeasured on Design B geometry."
+ ],
+ "sha16": "19039c40cf5a9623"
+}

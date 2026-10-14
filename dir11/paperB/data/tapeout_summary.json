@@ -1,0 +1,357 @@
+{
+ "ideal": {
+  "eta_shift": 0.9834592761556122,
+  "IL_dB": 2.4865482771749905,
+  "eta_abs": 0.5547554190990173,
+  "eta_abs_fiber_to_fiber": 0.2780363338379745
+ },
+ "nominal_extra_loss": {
+  "eta_shift": 0.977234642487221,
+  "IL_dB": 4.781884057185708,
+  "eta_abs": 0.32494544115549123
+ },
+ "xi_definition": {
+  "xi_equals_1": "delta_omega/2pi = 21.3 GHz/V extrapolated from Shao 2019 straight-waveguide VpiL=0.046 V cm (source-referred, incl ~50% IDT); acoustic Q used in that modeling typically 2000 (measured up to 3600).",
+  "power_scales_as": "1/xi^2 at fixed delta_omega"
+ },
+ "power_uW": {
+  "IDT50_Qa2000_xi1": 6.74835006752403,
+  "IDT10_Qa2000_xi1": 33.74175033762015,
+  "IDT10_Qa1570_xi1": 42.98312144919764
+ },
+ "power_vs_xi_uW": {
+  "xi_0.3": {
+   "IDT10_Qa2000": 374.90833708466835,
+   "IDT10_Qa1570": 477.59023832441824,
+   "IDT50_Qa2000": 74.98166741693367
+  },
+  "xi_0.5": {
+   "IDT10_Qa2000": 134.9670013504806,
+   "IDT10_Qa1570": 171.93248579679056,
+   "IDT50_Qa2000": 26.99340027009612
+  },
+  "xi_1": {
+   "IDT10_Qa2000": 33.74175033762015,
+   "IDT10_Qa1570": 42.98312144919764,
+   "IDT50_Qa2000": 6.74835006752403
+  },
+  "xi_2": {
+   "IDT10_Qa2000": 8.435437584405037,
+   "IDT10_Qa1570": 10.74578036229941,
+   "IDT50_Qa2000": 1.6870875168810076
+  }
+ },
+ "conservative_power": {
+  "xi": 0.5,
+  "eta_IDT": 0.1,
+  "Qm": 1570,
+  "P_RF_uW": 171.93248579679056,
+  "P_dissipated_uW": 154.73923721711154,
+  "Shao2019_heating_note": "Shao 2019 Fig.5: optical resonance red-shift observed with increasing microwave power at ~1\u20135 mW class; compare dissipated (1-eta_IDT)*P_RF qualitatively to that scale.",
+  "Shao2019_ref_mW_range": [
+   1.0,
+   5.0
+  ]
+ },
+ "RF_FWHM_MHz": {
+  "Qa2000": 1.665,
+  "Qa1570": 2.121019108280255,
+  "Qa3600": 0.925
+ },
+ "dfdT_GHz_per_K": {
+  "thermo_optic_only": 2.808504347826087,
+  "with_expansion": 5.579674086956522
+ },
+ "params": {
+  "eta_IDT_main": 0.1,
+  "eta_IDT_ref": 0.5,
+  "Qa_nom": 2000,
+  "Qa_upper": 3600,
+  "Qa_cons": 1570,
+  "dndT": 3.34e-05,
+  "alpha": 1.54e-05,
+  "n_eff": 2.14,
+  "ki_extra_frac": 1.0,
+  "sigT_lock_mK": 5.0,
+  "sig_gap_nm": 5.0,
+  "gap_decay_nm": 150.0,
+  "retune_MHz": 1.0,
+  "facet_dB": 1.5,
+  "Qi_spread": [
+   0.7,
+   1.3
+  ],
+  "coupler_r0": 1.2,
+  "P_pi_mW": 25.0,
+  "xtalk_K_per_W": 0.5,
+  "g0_Hz": 1100.0,
+  "gamma_e_over_gamma": 0.15
+ },
+ "thermal_phonon": {
+  "n_th_over_Ncoh_300K": 1.0698776223057569e-08,
+  "N_coh": 175405367406.1411,
+  "n_th_300K": 1876.672939536653,
+  "g0_Hz": 1100.0,
+  "kappa_over_2pi_Hz": 680750000.0,
+  "gamma_m_over_2pi_Hz": 1665000.0000000002,
+  "C0": 4.27015337041044e-09,
+  "C0_definition": "C0 = 4 g0^2 / (kappa * gamma_m) with kappa=gamma+kappa_i (bus+intrinsic of ring 1), gamma_m=Omega_m/Q_m (Q_m=2000), g0/2pi=1.1 kHz (Shao 2019 Table S2). n_th*C0 is an upper bound on spontaneous scattering into the same acoustic mode relative to a single intracavity photon; compare to unfiltered sideband error 1-eta_shift.",
+  "n_th_C0_300K": 8.013681277920506e-06,
+  "unfiltered_1_minus_eta": 0.01654072384438776,
+  "non_dominant": true
+ },
+ "spectrum_gate": {
+  "spectrum_dB_vs_input": {
+   "-3": -61.36591024377125,
+   "-2": -58.2446203616246,
+   "-1": -23.76174402546402,
+   "0": -25.72046012749518,
+   "1": -2.5589844669251987,
+   "2": -26.12270491288892,
+   "3": -57.474961765034166
+  },
+  "largest_spurious_order": -1,
+  "largest_spur_is_qm1": true,
+  "q_m1_rel_to_shift_dB": -21.20275955853882
+ },
+ "MC_heater_OFF_IL_ShaoQi": {
+  "eta_shift_p10_50_90": [
+   0.7640229024849,
+   0.9346687426302157,
+   0.9805678763239805
+  ],
+  "IL_dB_p10_50_90": [
+   1.9950919077847455,
+   2.6553744410944162,
+   3.320999763389435
+  ],
+  "eta_abs_onchip_p10_50_90": [
+   0.37439593741246285,
+   0.4905414605855817,
+   0.5972580952894868
+  ],
+  "eta_abs_fiber_to_fiber_p10_50_90": [
+   0.18764246415304162,
+   0.24585311761036927,
+   0.2993381325396317
+  ],
+  "frac_eta_ge_095": 0.403,
+  "frac_eta_ge_090": 0.613,
+  "N": 1000,
+  "eps_raw_MHz_std": 136.94510805608218,
+  "eps_after_heater_MHz_p10_50_90": [
+   -147.96313466810662,
+   1.336896944475976,
+   145.09514885025584
+  ],
+  "eps_res_MHz_p10_50_90": [
+   -146.96313466810662,
+   0.33689694447597607,
+   144.09514885025584
+  ],
+  "frac_can_reach_Omega": null,
+  "frac_eps_beyond_retune": 0.992,
+  "P_heater_mW_p10_50_90": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "coupler_r0": 1.2
+ },
+ "MC_heater_OFF_IL_extra": {
+  "eta_shift_p10_50_90": [
+   0.8244503424736667,
+   0.9433922449362517,
+   0.9785114837671015
+  ],
+  "IL_dB_p10_50_90": [
+   3.8636074984198148,
+   5.022860446303187,
+   6.120068646136294
+  ],
+  "eta_abs_onchip_p10_50_90": [
+   0.21475858843077594,
+   0.2837024332894582,
+   0.38765970763870367
+  ],
+  "eta_abs_fiber_to_fiber_p10_50_90": [
+   0.1076342628333185,
+   0.14218803771366928,
+   0.19429009646019904
+  ],
+  "frac_eta_ge_095": 0.447,
+  "frac_eta_ge_090": 0.73,
+  "N": 1000,
+  "eps_raw_MHz_std": 136.94510805608218,
+  "eps_after_heater_MHz_p10_50_90": [
+   -147.96313466810662,
+   1.336896944475976,
+   145.09514885025584
+  ],
+  "eps_res_MHz_p10_50_90": [
+   -146.96313466810662,
+   0.33689694447597607,
+   144.09514885025584
+  ],
+  "frac_can_reach_Omega": null,
+  "frac_eps_beyond_retune": 0.992,
+  "P_heater_mW_p10_50_90": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "coupler_r0": 1.2
+ },
+ "MC_heater_ON_IL_ShaoQi": {
+  "eta_shift_p10_50_90": [
+   0.9543960897866929,
+   0.9786185745190326,
+   0.985930079425351
+  ],
+  "IL_dB_p10_50_90": [
+   1.9361611459954735,
+   2.4962649717956724,
+   3.09084758183914
+  ],
+  "eta_abs_onchip_p10_50_90": [
+   0.47745836913917417,
+   0.5476863779845416,
+   0.6268075738160899
+  ],
+  "eta_abs_fiber_to_fiber_p10_50_90": [
+   0.23929603920105166,
+   0.27449342067741295,
+   0.31414795393750833
+  ],
+  "frac_eta_ge_095": 0.914,
+  "frac_eta_ge_090": 0.984,
+  "N": 1000,
+  "eps_raw_MHz_std": 136.94510805608218,
+  "eps_after_heater_MHz_p10_50_90": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "eps_res_MHz_p10_50_90": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "frac_can_reach_Omega": 1.0,
+  "frac_eps_beyond_retune": 0.0,
+  "P_heater_mW_p10_50_90": [
+   7.3598388967852,
+   7.834450318577748,
+   8.430777475959315
+  ],
+  "coupler_r0": 1.2
+ },
+ "MC_heater_ON_IL_extra": {
+  "eta_shift_p10_50_90": [
+   0.923040604199967,
+   0.9667617693934577,
+   0.9834541017657047
+  ],
+  "IL_dB_p10_50_90": [
+   3.7610771270627597,
+   4.772915125132478,
+   5.734046655574589
+  ],
+  "eta_abs_onchip_p10_50_90": [
+   0.2505655812679852,
+   0.3210151790428663,
+   0.40975709991888387
+  ],
+  "eta_abs_fiber_to_fiber_p10_50_90": [
+   0.12558027051791099,
+   0.16088870953685766,
+   0.20536502736747916
+  ],
+  "frac_eta_ge_095": 0.729,
+  "frac_eta_ge_090": 0.944,
+  "N": 1000,
+  "eps_raw_MHz_std": 136.94510805608218,
+  "eps_after_heater_MHz_p10_50_90": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "eps_res_MHz_p10_50_90": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "frac_can_reach_Omega": 1.0,
+  "frac_eps_beyond_retune": 0.0,
+  "P_heater_mW_p10_50_90": [
+   7.3598388967852,
+   7.834450318577748,
+   8.430777475959315
+  ],
+  "coupler_r0": 1.2
+ },
+ "IL_two_columns": {
+  "A_Shao2019_Qi_as_is": {
+   "note": "Uses measured Qi of suspended racetrack with IDT (Shao 2019); no extra kappa_i.",
+   "ideal_IL_dB": 2.4865482771749905,
+   "heater_ON_IL_dB_p10_50_90": [
+    1.9361611459954735,
+    2.4962649717956724,
+    3.09084758183914
+   ],
+   "heater_ON_eta_abs_onchip_p10_50_90": [
+    0.47745836913917417,
+    0.5476863779845416,
+    0.6268075738160899
+   ]
+  },
+  "B_extra_kappa_i_x2": {
+   "note": "Adds assumed extra kappa_i x2 on top of Shao Qi (possible double-count).",
+   "ideal_IL_dB": 4.781884057185708,
+   "heater_ON_IL_dB_p10_50_90": [
+    3.7610771270627597,
+    4.772915125132478,
+    5.734046655574589
+   ],
+   "heater_ON_eta_abs_onchip_p10_50_90": [
+    0.2505655812679852,
+    0.3210151790428663,
+    0.40975709991888387
+   ]
+  }
+ },
+ "heater_coverage": {
+  "frac_samples_2mu_max_ge_Omega": 1.0,
+  "covers_100MHz_gap_scatter": true,
+  "design_note": "coupler_r0=1.20 gives ~20% headroom; if frac_reach<0.9, redesign coupler (do not fab fixed-gap dual-ring)."
+ },
+ "tapeout_gates": {
+  "gate1_yield": {
+   "require": "heater ON + conservative loss (kappa_i x2) + 10% IDT: >=90% samples eta_shift>=90%",
+   "frac_eta_ge_090": 0.944,
+   "eta_p10_50_90": [
+    0.923040604199967,
+    0.9667617693934577,
+    0.9834541017657047
+   ],
+   "pass_": true
+  },
+  "gate2_power": {
+   "require": "conservative RF (xi=0.5, Qm=1570, eta_IDT=10%) dissipated (1-eta_IDT)P_RF still far below Shao 2019 thermal-redshift drive (~1\u20135 mW)",
+   "P_RF_uW": 171.93248579679056,
+   "P_dissipated_uW": 154.73923721711154,
+   "Shao_ref_mW": [
+    1,
+    5
+   ],
+   "pass_": true
+  },
+  "gate3_spur": {
+   "require": "largest spurious sideband is still q=-1 (spectrometer-visible)",
+   "largest_spurious_order": -1,
+   "pass_": true
+  },
+  "all_pass": true,
+  "fab_verdict": "PASS: tunable-coupler layout may proceed to fab under stated assumptions"
+ }
+}

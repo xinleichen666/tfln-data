@@ -71,7 +71,7 @@ lab={'AO_Shao_IDT(50%)':'AO, Shao IDT (50%)','AO_IDT_100%':'AO, ideal IDT','AO_I
 for mode,cs in [('ao',cases_ao),('eo',cases_eo)]:
     for c in cs:
         P=[P_from_dw(r[0],c) for r in sw[mode]]; ax[0].semilogx(np.array(P)*1e3,sw[mode][:,1],color=sty[c][0],ls=sty[c][1],label=lab[c])
-ax[0].plot(96,0.987,'k*',ms=7,label='Hu 2021 EO meas. (28.2 GHz)'); ax[0].plot(1000,0.035,'kv',ms=5,label='Shao 2020 AO, meas. (abs.)')
+ax[0].plot(96,0.987,'k*',ms=7,label='Hu 2021 EO meas. (28.2 GHz)')  # Shao 2020 3.5% is absolute eff.; not on eta_shift axis
 ax[0].set_xlabel('source RF power (mW)'); ax[0].set_ylabel(r'$\eta_{\rm shift}$'); ax[0].set_ylim(0,1.03); ax[0].set_xlim(1e-6,3e3); ax[0].legend(fontsize=4.6,loc='center left',bbox_to_anchor=(1.0,0.5),frameon=False)
 qs=np.arange(-3,4)
 for k,off,cl in [('ao',-0.18,'C0'),('eo',0.18,'C1')]:
