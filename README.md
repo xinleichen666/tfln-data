@@ -38,3 +38,16 @@ Internal group use only: simulation and scheme draft; measurements pending; no f
 `dir1_metrology/paper/` 是方向一（计量 → SPDC 纯度上界）的方法工作稿包；出图脚本在 `dir1_metrology/scripts/`。
 
 本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 对本方向 N/A，无自有流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。仓写完后再改 private。
+
+## 内部仿真写作六轨（A–F）
+
+下面六个目录是课题组内部的经典数值仿真工作稿，放在仓库根目录，与 `dir01/`、`dir1_metrology/` 等并列。它们不是实验结果，也不是器件记录。各轨数字只来自该目录自己的 `scripts/` 与 `data/summary.json`，轨与轨不互引未跑出的数。`paper/fig/` 里的 pdf 是本轨脚本出图，不是第三方论文 PDF。未放入 `.venv`、`__pycache__`、`verify/` 或第三方 PDF。A–D 的 2026-10-13 汇合记录在 `sim_tracks_ABCD_汇合_STATUS.md`。
+
+本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 对本方向 N/A，无自有流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。仓写完后再改 private。
+
+- `qkernel_budget/`（A）：分块保真度核的失配与标签噪声预算。
+- `qcnn_protocol/`（B）：无噪声模拟器上的 QCNN–CNN 协议对照。
+- `mmd_coverage/`（C）：Pauli-Z 矩匹配损失与未见有效覆盖。
+- `floquet_crit_budget/`（D）：教科书 Floquet SSH 临界签名噪声预算。标准模型诊断，不是实验复现。
+- `skyrmion_noise/`（E）：自定自旋–轨道纹理上的经典噪声预算。不是实验复现。
+- `qfc_domain_budget/`（F）：量子频率转换的畴壁、占空比与膜厚噪声预算。标准模型预算，不是实验复现。
