@@ -1,0 +1,17 @@
+parameter,unit,value,note
+period_p,um,2.8326,locked after eigen tune to 3.330092 GHz
+finger_width,um,0.7082,duty 0.25 times p
+LN_thickness_hLn,nm,500,flat slab etch depth 0
+Al_thickness_hAl,nm,100,
+eigenfrequency_GHz,,3.330092,picked vertical-type mode
+wave_number_k,rad/m,2.218169e+06,k=2*pi/p
+cut,,X-cut,piezo LN from COMSOL library
+crystal_x_axis,,geometry +y,wafer normal / thickness
+crystal_y_axis,,geometry -x,propagation along +x is -crystal y
+crystal_z_axis,,out-of-plane,aperture in 3D
+optical_slab_neff_TE,,1.88978,analytic 500 nm slab 1550 nm
+optical_slab_ng_TE,,2.21727,
+La,um,100,acoustic phase length in ring formula
+Lring,mm,0.667,
+f_opt,THz,193.4,
+mph_local,,D:\comsol_ao_run\photoelastic\Photo_Model.mph,not in git
