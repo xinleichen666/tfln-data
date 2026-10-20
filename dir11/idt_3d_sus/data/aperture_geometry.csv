@@ -1,0 +1,13 @@
+parameter,unit,value,note
+period_p,um,2.58,from 2D suspended vertical-mode scan at 3.33 GHz band
+wave_number_k,rad/m,2.435343e+06,k=2*pi/p
+aperture_length_Wap,um,10,finger length along z (crystal aperture direction)
+aperture_start_z0,um,2,Al fingers from z=z0 to z=z0+Wap
+stack_width_Wstack,um,14,2 um margin beyond fingers on each z side
+LN_thickness_hLn,nm,500,suspended slab only
+Al_thickness_hAl,nm,100,
+duty_cycle,,0.25,finger width = duty*p
+mesh_tet_elements,,136270,from Idt3dSus_Model build log 2026-10-16
+eigenmodes_computed,,12,shift 3.33 GHz
+comsol_version,,6.3.0.290,
+mph_source,D:\comsol_ao_run\idt_3d_sus\Idt3dSus_Model.mph,

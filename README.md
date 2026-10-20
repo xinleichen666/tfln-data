@@ -15,6 +15,7 @@ Internal group use only: simulation and scheme draft; measurements pending; no f
 下面这些目录是仿真记录和文稿草稿。第三方论文 PDF 仍然没有放入。
 
 - `dir11/`：声光方向的根目录文件，包括脚本、数据、图和这一层自己的文稿草稿。这些文件不在 `paperB/` 或 `paperC/` 里面。
+- `dir11/idt_3d_sus/`：悬空三维叉指 COMSOL 本征模场 CSV（含孔径几何与 z 向剖面）。`.mph` 仍在本地 `D:\comsol_ao_run\idt_3d_sus\`。
 - `dir11/paperB/`：论文 B 的脚本、数据、`fig/`、`fig1/` 和文稿草稿。
 - `dir11/paperC/`：论文 C 的存档。这是一份否定结果，不是准备投稿的论文。
 - `dir13/`：方向 13 的仿真记录。
