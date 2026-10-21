@@ -1,0 +1,1121 @@
+*******************************************
+***COMSOL 6.3.0.290 progress output file***
+*******************************************
+Wed Oct 21 21:32:31 CST 2026
+COMSOL Multiphysics 6.3 (开发版本: 290) 在批处理模式下启动
+正在运行: D:\comsol_ao_run\step3_orient_check\Step3Orient2D.class
+STEP3_2D_START
+VARIANT_BEGIN variant=2D-basis dim=2 setting=basis orient=basis
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 417/438 441/466
+           当前进度:   0 % - 矩形
+Memory: 426/438 450/466
+           当前进度:   8 % - 矩形 2
+Memory: 427/438 451/466
+-          当前进度:  15 % - 矩形 3
+--         当前进度:  23 % - 形成联合体
+--------   当前进度:  88 % - 解析域和空区域
+Memory: 428/438 451/466
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 429/438 451/466
+---------- 当前进度: 100 % - 正在创建可视化网格
+Memory: 432/438 452/466
+BASIS_DEFAULT_COORD pzm1=comp1_xz_sys ccp1=comp1_xz_sys
+TYPE2D_READBACK variant=2D-basis value=PlaneStrain
+顶点单元数：12
+边界单元数：197
+单元数：2467
+最小单元质量：0.6409
+---------- 当前进度: 100 % - 正在定型网格
+Memory: 948/952 967/973
+NUMELEM variant=2D-basis n_elem=2467
+----       当前进度:  47 % - 生成方程
+Memory: 963/972 985/991
+------     当前进度:  60 % - 生成方程
+Memory: 965/977 986/996
+---        当前进度:  39 % - 生成方程
+Memory: 972/980 992/999
+-------    当前进度:  72 % - 生成方程
+Memory: 975/980 994/999
+BUILD_OK variant=2D-basis
+           当前进度:   1 % - 生成方程
+Memory: 972/980 990/999
+           当前进度:   2 % - 生成方程
+Memory: 979/980 998/999
+           当前进度:   3 % - 生成方程
+Memory: 973/981 992/1000
+<---- 研究/解 1 (sol1) 中的“编译方程: 特征频率” ---------------------------------------------
+开始于 2026年10月21日 下午9:32:43。
+几何形函数: 二次巧凑边点单元
+在  上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 6 个内核）。
+可用内存：32.37 GB。
+           当前进度:   5 % - 编译方程: 特征频率
+Memory: 988/991 1003/1006
+           当前进度:   5 % - 正在创建可视化网格
+时间：1。
+物理内存: 994 MB
+虚拟内存: 1009 MB
+结束时间：2026年10月21日 下午9:32:44。
+----- 研究/解 1 (sol1) 中的“编译方程: 特征频率” -------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“因变量 1” --------------------------------------------------
+开始于 2026年10月21日 下午9:32:44。
+           当前进度:   5 % - 因变量 1
+Memory: 998/998 1010/1010
+求解时间：0 s。
+物理内存: 998 MB
+虚拟内存: 1010 MB
+结束时间：2026年10月21日 下午9:32:44。
+----- 研究/解 1 (sol1) 中的“因变量 1” ------------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“特征值求解器 1” -----------------------------------------------
+开始于 2026年10月21日 下午9:32:44。
+特征值求解器
+求解的自由度数：14984。
+找到对称矩阵。
+缩放因变量：
+位移场 (comp1.u): 5.8e-11
+电势 (comp1.V): 1
+已使用显式-正交零空间函数。
+非对称特征值求解器
+Iter      ErrEst  Nconv
+           当前进度:   8 % - 求解线性方程组
+Memory: 1068/1068 1082/1086
+   1      0.0012     21
+--------   当前进度:  88 % - 求解线性方程组
+   2       7e-10     24
+62 线性方程组的解。
+62 矩阵乘法。
+57 重正交化。
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 1038/1077 1050/1095
+求解时间：2 s。
+物理内存: 1.08 GB
+虚拟内存: 1.1 GB
+结束时间：2026年10月21日 下午9:32:45。
+----- 研究/解 1 (sol1) 中的“特征值求解器 1” ---------------------------------------------->
+W_EXISTS variant=2D-basis
+NMODE variant=2D-basis n=24
+ROW variant=2D-basis dim=2 f_GHz=0.000000 fi_MHz=-0.0023 fracLN=0.9405 fracAl=0.0595 pu=0.995 pv=0.005 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=0.000000 fi_MHz=0.0026 fracLN=0.9222 fracAl=0.0778 pu=0.001 pv=0.999 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=0.588269 fi_MHz=0.1403 fracLN=0.9887 fracAl=0.0113 pu=0.059 pv=0.941 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=0.616602 fi_MHz=0.1321 fracLN=0.8899 fracAl=0.1101 pu=0.056 pv=0.944 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=1.832316 fi_MHz=0.3941 fracLN=0.9638 fracAl=0.0362 pu=0.103 pv=0.897 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=1.905652 fi_MHz=0.3841 fracLN=0.9051 fracAl=0.0949 pu=0.095 pv=0.905 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=2.078960 fi_MHz=0.5142 fracLN=0.9900 fracAl=0.0100 pu=0.986 pv=0.014 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=2.198434 fi_MHz=0.5306 fracLN=0.9667 fracAl=0.0333 pu=0.985 pv=0.015 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=3.317401 fi_MHz=0.8029 fracLN=0.9705 fracAl=0.0295 pu=0.986 pv=0.014 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=3.330092 fi_MHz=0.6531 fracLN=0.9401 fracAl=0.0599 pu=0.101 pv=0.899 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=3.337487 fi_MHz=0.6397 fracLN=0.9138 fracAl=0.0862 pu=0.105 pv=0.895 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=4.064271 fi_MHz=0.8596 fracLN=0.9298 fracAl=0.0702 pu=0.878 pv=0.122 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=4.157341 fi_MHz=1.0249 fracLN=0.9895 fracAl=0.0105 pu=0.900 pv=0.100 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=4.182688 fi_MHz=1.0183 fracLN=0.9745 fracAl=0.0255 pu=0.898 pv=0.102 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=4.444059 fi_MHz=0.9656 fracLN=0.9580 fracAl=0.0420 pu=0.953 pv=0.047 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=4.753139 fi_MHz=0.8480 fracLN=0.8737 fracAl=0.1263 pu=0.093 pv=0.907 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=4.921859 fi_MHz=0.9122 fracLN=0.9288 fracAl=0.0712 pu=0.112 pv=0.888 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=5.446651 fi_MHz=1.0508 fracLN=0.8071 fracAl=0.1929 pu=0.717 pv=0.283 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=5.499404 fi_MHz=1.3217 fracLN=0.9655 fracAl=0.0345 pu=0.485 pv=0.515 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=5.551405 fi_MHz=1.3004 fracLN=0.9473 fracAl=0.0527 pu=0.452 pv=0.548 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=5.756565 fi_MHz=1.1086 fracLN=0.8447 fracAl=0.1553 pu=0.763 pv=0.237 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=5.867283 fi_MHz=1.1982 fracLN=0.8447 fracAl=0.1553 pu=0.686 pv=0.314 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=5.982962 fi_MHz=1.3620 fracLN=0.9614 fracAl=0.0386 pu=0.695 pv=0.305 pw=0.000 orient=basis
+ROW variant=2D-basis dim=2 f_GHz=6.040106 fi_MHz=1.3458 fracLN=0.9180 fracAl=0.0820 pu=0.449 pv=0.551 pw=0.000 orient=basis
+TENSOR variant=2D-basis orient=basis expr=solid.cE11 value=2.02897000e+11
+TENSOR variant=2D-basis orient=basis expr=solid.cE22 value=2.02897000e+11
+TENSOR variant=2D-basis orient=basis expr=solid.cE33 value=2.43075000e+11
+TENSOR variant=2D-basis orient=basis expr=solid.cE12 value=5.29177000e+10
+TENSOR variant=2D-basis orient=basis expr=solid.cE13 value=7.49098000e+10
+TENSOR variant=2D-basis orient=basis expr=solid.cE23 value=7.49098000e+10
+TENSOR variant=2D-basis orient=basis expr=solid.cE44 value=5.99034000e+10
+TENSOR variant=2D-basis orient=basis expr=solid.cE55 value=5.99018000e+10
+TENSOR variant=2D-basis orient=basis expr=solid.cE66 value=7.48772000e+10
+TENSOR variant=2D-basis orient=basis expr=solid.cE14 value=8.99874000e+09
+TENSOR variant=2D-basis orient=basis expr=solid.cE15 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cE16 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cE24 value=-8.99874000e+09
+TENSOR variant=2D-basis orient=basis expr=solid.cE25 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cE26 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cE34 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cE35 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cE36 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cE45 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cE46 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cE56 value=8.98526000e+09
+TENSOR variant=2D-basis orient=basis expr=solid.eES11 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.eES12 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.eES13 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.eES14 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.eES15 value=3.69594000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.eES16 value=-2.53384000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.eES21 value=-2.53764000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.eES22 value=2.53764000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.eES23 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.eES24 value=3.69548000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.eES25 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.eES26 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.eES31 value=1.93644000e-01
+TENSOR variant=2D-basis orient=basis expr=solid.eES32 value=1.93644000e-01
+TENSOR variant=2D-basis orient=basis expr=solid.eES33 value=1.30863000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.eES34 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.eES35 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.eES36 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.D11 value=2.02897000e+11
+TENSOR variant=2D-basis orient=basis expr=solid.D22 value=2.02897000e+11
+TENSOR variant=2D-basis orient=basis expr=solid.D33 value=2.43075000e+11
+TENSOR variant=2D-basis orient=basis expr=solid.D12 value=5.29177000e+10
+TENSOR variant=2D-basis orient=basis expr=solid.D44 value=7.48772000e+10
+TENSOR variant=2D-basis orient=basis expr=solid.D55 value=5.99034000e+10
+TENSOR variant=2D-basis orient=basis expr=solid.D66 value=5.99018000e+10
+TENSOR variant=2D-basis orient=basis expr=solid.cEg11 value=2.02897000e+11
+TENSOR variant=2D-basis orient=basis expr=solid.cEg22 value=2.43075000e+11
+TENSOR variant=2D-basis orient=basis expr=solid.cEg33 value=2.02897000e+11
+TENSOR variant=2D-basis orient=basis expr=solid.cEg12 value=7.49098000e+10
+TENSOR variant=2D-basis orient=basis expr=solid.cEg13 value=5.29177000e+10
+TENSOR variant=2D-basis orient=basis expr=solid.cEg23 value=7.49098000e+10
+TENSOR variant=2D-basis orient=basis expr=solid.cEg44 value=5.99034000e+10
+TENSOR variant=2D-basis orient=basis expr=solid.cEg55 value=7.48772000e+10
+TENSOR variant=2D-basis orient=basis expr=solid.cEg66 value=5.99018000e+10
+TENSOR variant=2D-basis orient=basis expr=solid.cEg14 value=-8.99874000e+09
+TENSOR variant=2D-basis orient=basis expr=solid.cEg15 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cEg16 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cEg24 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cEg25 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cEg26 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cEg34 value=8.99874000e+09
+TENSOR variant=2D-basis orient=basis expr=solid.cEg35 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cEg36 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cEg45 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cEg46 value=0.00000000e+00
+TENSOR variant=2D-basis orient=basis expr=solid.cEg56 value=-8.98526000e+09
+TENSOR_DEFINED_COUNT variant=2D-basis n=67/67
+TENSOR variant=2D-basis_ALT orient=basis expr=solid.eESg11 value=UNDEFINED
+TENSOR variant=2D-basis_ALT orient=basis expr=solid.eESg12 value=UNDEFINED
+TENSOR variant=2D-basis_ALT orient=basis expr=solid.eESg21 value=UNDEFINED
+TENSOR variant=2D-basis_ALT orient=basis expr=solid.eESg31 value=UNDEFINED
+TENSOR variant=2D-basis_ALT orient=basis expr=solid.dETg11 value=UNDEFINED
+TENSOR variant=2D-basis_ALT orient=basis expr=solid.epsilonrSg11 value=UNDEFINED
+TENSOR variant=2D-basis_ALT orient=basis expr=solid.Dg11 value=UNDEFINED
+VARIANT_END variant=2D-basis
+VARIANT_BEGIN variant=2D-basisFine dim=2 setting=basis;fineMesh orient=basis
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 1050/1077 1057/1095
+           当前进度:   0 % - 矩形
+Memory: 1050/1077 1058/1095
+           当前进度:   8 % - 矩形 2
+-          当前进度:  15 % - 矩形 3
+--         当前进度:  23 % - 形成联合体
+---------- 当前进度: 100 % - 正在更新选择
+---------- 当前进度: 100 % - 正在创建可视化网格
+Memory: 1053/1077 1061/1095
+BASIS_DEFAULT_COORD pzm1=comp1_xz_sys ccp1=comp1_xz_sys
+TYPE2D_READBACK variant=2D-basisFine value=PlaneStrain
+顶点单元数：12
+边界单元数：428
+单元数：9910
+最小单元质量：0.663
+---------- 当前进度: 100 % - 正在定型网格
+Memory: 1056/1077 1064/1095
+NUMELEM variant=2D-basisFine n_elem=9910
+----       当前进度:  47 % - 生成方程
+Memory: 1063/1077 1072/1095
+------     当前进度:  60 % - 生成方程
+Memory: 1058/1077 1066/1095
+---        当前进度:  39 % - 生成方程
+Memory: 1061/1077 1070/1095
+-----      当前进度:  54 % - 生成方程
+Memory: 1063/1077 1071/1095
+BUILD_OK variant=2D-basisFine
+           当前进度:   1 % - 生成方程
+Memory: 1057/1077 1065/1095
+           当前进度:   2 % - 生成方程
+Memory: 1069/1077 1077/1095
+           当前进度:   3 % - 生成方程
+Memory: 1064/1077 1072/1095
+<---- 研究/解 1 (sol1) 中的“编译方程: 特征频率” ---------------------------------------------
+开始于 2026年10月21日 下午9:32:52。
+几何形函数: 二次巧凑边点单元
+在  上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 6 个内核）。
+可用内存：32.37 GB。
+           当前进度:   5 % - 编译方程: 特征频率
+Memory: 1051/1078 1064/1095
+           当前进度:   5 % - 正在创建可视化网格
+Memory: 1064/1078 1076/1095
+时间：1。
+物理内存: 1.08 GB
+虚拟内存: 1.08 GB
+结束时间：2026年10月21日 下午9:32:53。
+----- 研究/解 1 (sol1) 中的“编译方程: 特征频率” -------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“因变量 1” --------------------------------------------------
+开始于 2026年10月21日 下午9:32:53。
+           当前进度:   5 % - 因变量 1
+Memory: 1075/1078 1086/1095
+求解时间：0 s。
+物理内存: 1.08 GB
+虚拟内存: 1.09 GB
+结束时间：2026年10月21日 下午9:32:53。
+----- 研究/解 1 (sol1) 中的“因变量 1” ------------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“特征值求解器 1” -----------------------------------------------
+开始于 2026年10月21日 下午9:32:53。
+特征值求解器
+求解的自由度数：58503。
+找到对称矩阵。
+缩放因变量：
+位移场 (comp1.u): 5.7e-11
+电势 (comp1.V): 1
+已使用显式-正交零空间函数。
+           当前进度:   8 % - 矩阵分解
+Memory: 1218/1232 1243/1257
+非对称特征值求解器
+Iter      ErrEst  Nconv
+           当前进度:   8 % - 求解线性方程组
+Memory: 1359/1359 1402/1406
+   1      0.0011     20
+--------   当前进度:  85 % - 求解线性方程组
+   2     5.3e-10     24
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 1347/1364 1391/1408
+62 线性方程组的解。
+62 矩阵乘法。
+57 重正交化。
+求解时间：5 s。
+物理内存: 1.39 GB
+虚拟内存: 1.44 GB
+结束时间：2026年10月21日 下午9:32:58。
+----- 研究/解 1 (sol1) 中的“特征值求解器 1” ---------------------------------------------->
+W_EXISTS variant=2D-basisFine
+NMODE variant=2D-basisFine n=24
+ROW variant=2D-basisFine dim=2 f_GHz=0.000000 fi_MHz=-0.0039 fracLN=0.9257 fracAl=0.0743 pu=0.670 pv=0.330 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=0.000000 fi_MHz=-0.0056 fracLN=0.9054 fracAl=0.0946 pu=0.364 pv=0.636 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=0.588158 fi_MHz=0.1403 fracLN=0.9890 fracAl=0.0110 pu=0.059 pv=0.941 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=0.616337 fi_MHz=0.1322 fracLN=0.8907 fracAl=0.1093 pu=0.056 pv=0.944 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=1.831380 fi_MHz=0.3942 fracLN=0.9646 fracAl=0.0354 pu=0.103 pv=0.897 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=1.905480 fi_MHz=0.3842 fracLN=0.9054 fracAl=0.0946 pu=0.095 pv=0.905 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=2.078687 fi_MHz=0.5142 fracLN=0.9901 fracAl=0.0099 pu=0.986 pv=0.014 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=2.198221 fi_MHz=0.5307 fracLN=0.9670 fracAl=0.0330 pu=0.985 pv=0.015 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=3.316989 fi_MHz=0.8027 fracLN=0.9703 fracAl=0.0297 pu=0.985 pv=0.015 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=3.328177 fi_MHz=0.6534 fracLN=0.9409 fracAl=0.0591 pu=0.102 pv=0.898 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=3.337215 fi_MHz=0.6396 fracLN=0.9136 fracAl=0.0864 pu=0.105 pv=0.895 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=4.063136 fi_MHz=0.8592 fracLN=0.9295 fracAl=0.0705 pu=0.878 pv=0.122 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=4.157013 fi_MHz=1.0249 fracLN=0.9896 fracAl=0.0104 pu=0.900 pv=0.100 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=4.182675 fi_MHz=1.0182 fracLN=0.9744 fracAl=0.0256 pu=0.898 pv=0.102 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=4.444009 fi_MHz=0.9655 fracLN=0.9579 fracAl=0.0421 pu=0.953 pv=0.047 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=4.749672 fi_MHz=0.8468 fracLN=0.8726 fracAl=0.1274 pu=0.093 pv=0.907 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=4.920866 fi_MHz=0.9124 fracLN=0.9292 fracAl=0.0708 pu=0.111 pv=0.889 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=5.440328 fi_MHz=1.0489 fracLN=0.8064 fracAl=0.1936 pu=0.715 pv=0.285 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=5.498030 fi_MHz=1.3201 fracLN=0.9647 fracAl=0.0353 pu=0.484 pv=0.516 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=5.549801 fi_MHz=1.2972 fracLN=0.9456 fracAl=0.0544 pu=0.451 pv=0.549 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=5.754609 fi_MHz=1.1058 fracLN=0.8427 fracAl=0.1573 pu=0.759 pv=0.241 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=5.863307 fi_MHz=1.1964 fracLN=0.8441 fracAl=0.1559 pu=0.687 pv=0.313 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=5.981588 fi_MHz=1.3613 fracLN=0.9616 fracAl=0.0384 pu=0.697 pv=0.303 pw=0.000 orient=basis
+ROW variant=2D-basisFine dim=2 f_GHz=6.038474 fi_MHz=1.3453 fracLN=0.9184 fracAl=0.0816 pu=0.452 pv=0.548 pw=0.000 orient=basis
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE11 value=2.02897000e+11
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE22 value=2.02897000e+11
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE33 value=2.43075000e+11
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE12 value=5.29177000e+10
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE13 value=7.49098000e+10
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE23 value=7.49098000e+10
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE44 value=5.99034000e+10
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE55 value=5.99018000e+10
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE66 value=7.48772000e+10
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE14 value=8.99874000e+09
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE15 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE16 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE24 value=-8.99874000e+09
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE25 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE26 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE34 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE35 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE36 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE45 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE46 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cE56 value=8.98526000e+09
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES11 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES12 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES13 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES14 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES15 value=3.69594000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES16 value=-2.53384000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES21 value=-2.53764000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES22 value=2.53764000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES23 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES24 value=3.69548000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES25 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES26 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES31 value=1.93644000e-01
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES32 value=1.93644000e-01
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES33 value=1.30863000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES34 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES35 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.eES36 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.D11 value=2.02897000e+11
+TENSOR variant=2D-basisFine orient=basis expr=solid.D22 value=2.02897000e+11
+TENSOR variant=2D-basisFine orient=basis expr=solid.D33 value=2.43075000e+11
+TENSOR variant=2D-basisFine orient=basis expr=solid.D12 value=5.29177000e+10
+TENSOR variant=2D-basisFine orient=basis expr=solid.D44 value=7.48772000e+10
+TENSOR variant=2D-basisFine orient=basis expr=solid.D55 value=5.99034000e+10
+TENSOR variant=2D-basisFine orient=basis expr=solid.D66 value=5.99018000e+10
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg11 value=2.02897000e+11
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg22 value=2.43075000e+11
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg33 value=2.02897000e+11
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg12 value=7.49098000e+10
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg13 value=5.29177000e+10
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg23 value=7.49098000e+10
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg44 value=5.99034000e+10
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg55 value=7.48772000e+10
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg66 value=5.99018000e+10
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg14 value=-8.99874000e+09
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg15 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg16 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg24 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg25 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg26 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg34 value=8.99874000e+09
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg35 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg36 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg45 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg46 value=0.00000000e+00
+TENSOR variant=2D-basisFine orient=basis expr=solid.cEg56 value=-8.98526000e+09
+TENSOR_DEFINED_COUNT variant=2D-basisFine n=67/67
+TENSOR variant=2D-basisFine_ALT orient=basis expr=solid.eESg11 value=UNDEFINED
+TENSOR variant=2D-basisFine_ALT orient=basis expr=solid.eESg12 value=UNDEFINED
+TENSOR variant=2D-basisFine_ALT orient=basis expr=solid.eESg21 value=UNDEFINED
+TENSOR variant=2D-basisFine_ALT orient=basis expr=solid.eESg31 value=UNDEFINED
+TENSOR variant=2D-basisFine_ALT orient=basis expr=solid.dETg11 value=UNDEFINED
+TENSOR variant=2D-basisFine_ALT orient=basis expr=solid.epsilonrSg11 value=UNDEFINED
+TENSOR variant=2D-basisFine_ALT orient=basis expr=solid.Dg11 value=UNDEFINED
+VARIANT_END variant=2D-basisFine
+VARIANT_BEGIN variant=2D-sys dim=2 setting=sys orient=sys
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 1155/1389 1175/1437
+           当前进度:   0 % - 矩形
+Memory: 1156/1389 1175/1437
+           当前进度:   8 % - 矩形 2
+-          当前进度:  15 % - 矩形 3
+Memory: 1156/1389 1176/1437
+--         当前进度:  23 % - 形成联合体
+---------- 当前进度: 100 % - 正在更新选择
+---------- 当前进度: 100 % - 正在创建可视化网格
+Memory: 1158/1389 1177/1437
+SYS2 Type: 旋转坐标系
+Tag: sys2
+Identifier: sys2
+Operation: Rotated
+DIAG_SYS2_PROPS = [name, coord, method, rotationSequence, angle, inPlaneAngle, outofplane, inPlaneBaseVectors, image, frametype, origin]
+DIAG_SYS2_VAL name = sys2
+DIAG_SYS2_VAL coord = ERR
+DIAG_SYS2_VAL method = inPlane
+DIAG_SYS2_VAL rotationSequence = ZXZ
+DIAG_SYS2_VAL angle = 0, 0, 0
+DIAG_SYS2_VAL inPlaneAngle = 0
+DIAG_SYS2_VAL outofplane = 2
+DIAG_SYS2_VAL inPlaneBaseVectors = ERR
+DIAG_SYS2_VAL image = coordsys_third_out_of_screen.png
+DIAG_SYS2_VAL frametype = spatial
+DIAG_SYS2_VAL origin = 0, 0, 0
+SYS2_SET angle=90[deg], 0, 0 seq=ZXZ
+COORD_SYS_SET variant=2D-sys pzm1=sys2 ccp1=sys2
+TYPE2D_READBACK variant=2D-sys value=PlaneStrain
+NUMELEM variant=2D-sys n_elem=2467
+----       当前进度:  47 % - 生成方程
+Memory: 1147/1389 1167/1437
+---        当前进度:  39 % - 生成方程
+Memory: 1157/1389 1176/1437
+BUILD_OK variant=2D-sys
+           当前进度:   1 % - 生成方程
+Memory: 1165/1389 1184/1437
+           当前进度:   3 % - 生成方程
+Memory: 1174/1389 1195/1437
+<---- 研究/解 1 (sol1) 中的“编译方程: 特征频率” ---------------------------------------------
+开始于 2026年10月21日 下午9:33:05。
+几何形函数: 二次巧凑边点单元
+在  上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 6 个内核）。
+可用内存：32.37 GB。
+           当前进度:   5 % - 编译方程: 特征频率
+Memory: 1175/1389 1196/1437
+           当前进度:   5 % - 正在创建可视化网格
+Memory: 1176/1389 1197/1437
+时间：1。
+物理内存: 1.18 GB
+虚拟内存: 1.2 GB
+结束时间：2026年10月21日 下午9:33:05。
+----- 研究/解 1 (sol1) 中的“编译方程: 特征频率” -------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“因变量 1” --------------------------------------------------
+开始于 2026年10月21日 下午9:33:05。
+           当前进度:   5 % - 因变量 1
+求解时间：0 s。
+物理内存: 1.18 GB
+虚拟内存: 1.2 GB
+结束时间：2026年10月21日 下午9:33:05。
+----- 研究/解 1 (sol1) 中的“因变量 1” ------------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“特征值求解器 1” -----------------------------------------------
+开始于 2026年10月21日 下午9:33:05。
+特征值求解器
+求解的自由度数：14984。
+找到对称矩阵。
+缩放因变量：
+位移场 (comp1.u): 6.6e-11
+电势 (comp1.V): 1
+已使用显式-正交零空间函数。
+非对称特征值求解器
+Iter      ErrEst  Nconv
+           当前进度:   8 % - 求解线性方程组
+Memory: 1225/1389 1248/1437
+   1      0.0033     18
+   2     8.2e-11     24
+---------- 当前进度: 100 % - 求解线性方程组
+62 线性方程组的解。
+62 矩阵乘法。
+55 重正交化。
+求解时间：1 s。
+物理内存: 1.23 GB
+虚拟内存: 1.25 GB
+结束时间：2026年10月21日 下午9:33:07。
+----- 研究/解 1 (sol1) 中的“特征值求解器 1” ---------------------------------------------->
+W_EXISTS variant=2D-sys
+NMODE variant=2D-sys n=24
+ROW variant=2D-sys dim=2 f_GHz=0.000000 fi_MHz=0.0024 fracLN=0.7042 fracAl=0.2958 pu=0.977 pv=0.023 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=0.000000 fi_MHz=-0.0023 fracLN=0.9145 fracAl=0.0855 pu=0.003 pv=0.997 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=0.621726 fi_MHz=0.1449 fracLN=0.9883 fracAl=0.0117 pu=0.064 pv=0.936 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=0.652347 fi_MHz=0.1355 fracLN=0.8851 fracAl=0.1149 pu=0.061 pv=0.939 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=1.910208 fi_MHz=0.4226 fracLN=0.9662 fracAl=0.0338 pu=0.097 pv=0.903 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=1.981614 fi_MHz=0.4154 fracLN=0.9126 fracAl=0.0874 pu=0.088 pv=0.912 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=2.182155 fi_MHz=0.5196 fracLN=0.9905 fracAl=0.0095 pu=0.990 pv=0.010 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=2.290990 fi_MHz=0.5415 fracLN=0.9713 fracAl=0.0287 pu=0.990 pv=0.010 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=3.352352 fi_MHz=0.7405 fracLN=0.9507 fracAl=0.0493 pu=0.076 pv=0.924 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=3.362354 fi_MHz=0.7249 fracLN=0.9274 fracAl=0.0726 pu=0.079 pv=0.921 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=4.017780 fi_MHz=0.7829 fracLN=0.9240 fracAl=0.0760 pu=0.975 pv=0.025 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=4.328075 fi_MHz=0.9323 fracLN=0.9108 fracAl=0.0892 pu=0.842 pv=0.158 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=4.500888 fi_MHz=1.0223 fracLN=0.9952 fracAl=0.0048 pu=0.875 pv=0.125 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=4.503927 fi_MHz=1.0103 fracLN=0.9749 fracAl=0.0251 pu=0.922 pv=0.078 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=4.657995 fi_MHz=1.0006 fracLN=0.9034 fracAl=0.0966 pu=0.061 pv=0.939 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=4.786722 fi_MHz=1.0519 fracLN=0.9508 fracAl=0.0492 pu=0.947 pv=0.053 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=4.818529 fi_MHz=1.0782 fracLN=0.9428 fracAl=0.0572 pu=0.130 pv=0.870 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=5.577643 fi_MHz=1.1583 fracLN=0.8566 fracAl=0.1434 pu=0.555 pv=0.445 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=5.654759 fi_MHz=1.1646 fracLN=0.8632 fracAl=0.1368 pu=0.203 pv=0.797 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=5.701382 fi_MHz=1.2394 fracLN=0.9327 fracAl=0.0673 pu=0.344 pv=0.656 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=5.750607 fi_MHz=1.1562 fracLN=0.8114 fracAl=0.1886 pu=0.451 pv=0.549 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=5.802165 fi_MHz=1.4099 fracLN=0.9768 fracAl=0.0232 pu=0.482 pv=0.518 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=5.904942 fi_MHz=1.3670 fracLN=0.9412 fracAl=0.0588 pu=0.098 pv=0.902 pw=0.000 orient=sys
+ROW variant=2D-sys dim=2 f_GHz=5.934957 fi_MHz=1.4351 fracLN=0.9830 fracAl=0.0170 pu=0.708 pv=0.292 pw=0.000 orient=sys
+TENSOR variant=2D-sys orient=sys expr=solid.cE11 value=2.02897000e+11
+TENSOR variant=2D-sys orient=sys expr=solid.cE22 value=2.02897000e+11
+TENSOR variant=2D-sys orient=sys expr=solid.cE33 value=2.43075000e+11
+TENSOR variant=2D-sys orient=sys expr=solid.cE12 value=5.29177000e+10
+TENSOR variant=2D-sys orient=sys expr=solid.cE13 value=7.49098000e+10
+TENSOR variant=2D-sys orient=sys expr=solid.cE23 value=7.49098000e+10
+TENSOR variant=2D-sys orient=sys expr=solid.cE44 value=5.99034000e+10
+TENSOR variant=2D-sys orient=sys expr=solid.cE55 value=5.99018000e+10
+TENSOR variant=2D-sys orient=sys expr=solid.cE66 value=7.48772000e+10
+TENSOR variant=2D-sys orient=sys expr=solid.cE14 value=8.99874000e+09
+TENSOR variant=2D-sys orient=sys expr=solid.cE15 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.cE16 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.cE24 value=-8.99874000e+09
+TENSOR variant=2D-sys orient=sys expr=solid.cE25 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.cE26 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.cE34 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.cE35 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.cE36 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.cE45 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.cE46 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.cE56 value=8.98526000e+09
+TENSOR variant=2D-sys orient=sys expr=solid.eES11 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.eES12 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.eES13 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.eES14 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.eES15 value=3.69594000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.eES16 value=-2.53384000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.eES21 value=-2.53764000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.eES22 value=2.53764000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.eES23 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.eES24 value=3.69548000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.eES25 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.eES26 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.eES31 value=1.93644000e-01
+TENSOR variant=2D-sys orient=sys expr=solid.eES32 value=1.93644000e-01
+TENSOR variant=2D-sys orient=sys expr=solid.eES33 value=1.30863000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.eES34 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.eES35 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.eES36 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.D11 value=2.02897000e+11
+TENSOR variant=2D-sys orient=sys expr=solid.D22 value=2.02897000e+11
+TENSOR variant=2D-sys orient=sys expr=solid.D33 value=2.43075000e+11
+TENSOR variant=2D-sys orient=sys expr=solid.D12 value=5.29177000e+10
+TENSOR variant=2D-sys orient=sys expr=solid.D44 value=7.48772000e+10
+TENSOR variant=2D-sys orient=sys expr=solid.D55 value=5.99034000e+10
+TENSOR variant=2D-sys orient=sys expr=solid.D66 value=5.99018000e+10
+TENSOR variant=2D-sys orient=sys expr=solid.cEg11 value=2.02897000e+11
+TENSOR variant=2D-sys orient=sys expr=solid.cEg22 value=2.02897000e+11
+TENSOR variant=2D-sys orient=sys expr=solid.cEg33 value=2.43075000e+11
+TENSOR variant=2D-sys orient=sys expr=solid.cEg12 value=5.29177000e+10
+TENSOR variant=2D-sys orient=sys expr=solid.cEg13 value=7.49098000e+10
+TENSOR variant=2D-sys orient=sys expr=solid.cEg23 value=7.49098000e+10
+TENSOR variant=2D-sys orient=sys expr=solid.cEg44 value=5.99018000e+10
+TENSOR variant=2D-sys orient=sys expr=solid.cEg55 value=5.99034000e+10
+TENSOR variant=2D-sys orient=sys expr=solid.cEg66 value=7.48772000e+10
+TENSOR variant=2D-sys orient=sys expr=solid.cEg14 value=-1.65139090e-06
+TENSOR variant=2D-sys orient=sys expr=solid.cEg15 value=8.99874000e+09
+TENSOR variant=2D-sys orient=sys expr=solid.cEg16 value=-1.37711533e-08
+TENSOR variant=2D-sys orient=sys expr=solid.cEg24 value=1.65139090e-06
+TENSOR variant=2D-sys orient=sys expr=solid.cEg25 value=-8.99874000e+09
+TENSOR variant=2D-sys orient=sys expr=solid.cEg26 value=1.37711533e-08
+TENSOR variant=2D-sys orient=sys expr=solid.cEg34 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.cEg35 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.cEg36 value=0.00000000e+00
+TENSOR variant=2D-sys orient=sys expr=solid.cEg45 value=-9.79717439e-11
+TENSOR variant=2D-sys orient=sys expr=solid.cEg46 value=-8.98526000e+09
+TENSOR variant=2D-sys orient=sys expr=solid.cEg56 value=-1.65221631e-06
+TENSOR_DEFINED_COUNT variant=2D-sys n=67/67
+TENSOR variant=2D-sys_ALT orient=sys expr=solid.eESg11 value=UNDEFINED
+TENSOR variant=2D-sys_ALT orient=sys expr=solid.eESg12 value=UNDEFINED
+TENSOR variant=2D-sys_ALT orient=sys expr=solid.eESg21 value=UNDEFINED
+TENSOR variant=2D-sys_ALT orient=sys expr=solid.eESg31 value=UNDEFINED
+TENSOR variant=2D-sys_ALT orient=sys expr=solid.dETg11 value=UNDEFINED
+TENSOR variant=2D-sys_ALT orient=sys expr=solid.epsilonrSg11 value=UNDEFINED
+TENSOR variant=2D-sys_ALT orient=sys expr=solid.Dg11 value=UNDEFINED
+VARIANT_END variant=2D-sys
+VARIANT_BEGIN variant=2D-norot dim=2 setting=norot orient=norot
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 1163/1389 1179/1437
+           当前进度:   0 % - 矩形
+           当前进度:   8 % - 矩形 2
+-          当前进度:  15 % - 矩形 3
+--         当前进度:  23 % - 形成联合体
+---------- 当前进度: 100 % - 正在更新选择
+---------- 当前进度: 100 % - 正在创建可视化网格
+NOROT_DEFAULT_COORD pzm1=comp1_xz_sys ccp1=comp1_xz_sys
+COORD_SYS_SET variant=2D-norot pzm1=GlobalSystem ccp1=GlobalSystem
+TYPE2D_READBACK variant=2D-norot value=PlaneStrain
+NUMELEM variant=2D-norot n_elem=2467
+----       当前进度:  47 % - 生成方程
+Memory: 1177/1389 1192/1437
+---        当前进度:  39 % - 生成方程
+Memory: 1181/1389 1195/1437
+BUILD_OK variant=2D-norot
+           当前进度:   1 % - 生成方程
+Memory: 1178/1389 1192/1437
+           当前进度:   3 % - 生成方程
+Memory: 1180/1389 1194/1437
+<---- 研究/解 1 (sol1) 中的“编译方程: 特征频率” ---------------------------------------------
+开始于 2026年10月21日 下午9:33:11。
+几何形函数: 二次巧凑边点单元
+在  上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 6 个内核）。
+可用内存：32.37 GB。
+           当前进度:   5 % - 编译方程: 特征频率
+Memory: 1179/1389 1193/1437
+           当前进度:   5 % - 正在创建可视化网格
+Memory: 1179/1389 1194/1437
+时间：1。
+物理内存: 1.18 GB
+虚拟内存: 1.2 GB
+结束时间：2026年10月21日 下午9:33:12。
+----- 研究/解 1 (sol1) 中的“编译方程: 特征频率” -------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“因变量 1” --------------------------------------------------
+开始于 2026年10月21日 下午9:33:12。
+           当前进度:   5 % - 因变量 1
+Memory: 1180/1389 1194/1437
+求解时间：0 s。
+物理内存: 1.18 GB
+虚拟内存: 1.2 GB
+结束时间：2026年10月21日 下午9:33:12。
+----- 研究/解 1 (sol1) 中的“因变量 1” ------------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“特征值求解器 1” -----------------------------------------------
+开始于 2026年10月21日 下午9:33:12。
+特征值求解器
+求解的自由度数：14984。
+找到对称矩阵。
+缩放因变量：
+位移场 (comp1.u): 6.6e-11
+电势 (comp1.V): 1
+已使用显式-正交零空间函数。
+非对称特征值求解器
+Iter      ErrEst  Nconv
+           当前进度:   8 % - 求解线性方程组
+Memory: 1221/1389 1241/1437
+   1       0.018     20
+   2     1.5e-07     24
+62 线性方程组的解。
+62 矩阵乘法。
+56 重正交化。
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 1194/1389 1210/1437
+求解时间：1 s。
+物理内存: 1.22 GB
+虚拟内存: 1.24 GB
+结束时间：2026年10月21日 下午9:33:13。
+----- 研究/解 1 (sol1) 中的“特征值求解器 1” ---------------------------------------------->
+W_EXISTS variant=2D-norot
+NMODE variant=2D-norot n=24
+ROW variant=2D-norot dim=2 f_GHz=0.000000 fi_MHz=-0.0023 fracLN=0.9504 fracAl=0.0496 pu=0.722 pv=0.278 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=0.000000 fi_MHz=0.0023 fracLN=0.9081 fracAl=0.0919 pu=0.039 pv=0.961 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=0.619800 fi_MHz=0.1454 fracLN=0.9891 fracAl=0.0109 pu=0.056 pv=0.944 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=0.646869 fi_MHz=0.1377 fracLN=0.8937 fracAl=0.1063 pu=0.053 pv=0.947 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=1.864056 fi_MHz=0.4318 fracLN=0.9665 fracAl=0.0335 pu=0.093 pv=0.907 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=1.936491 fi_MHz=0.4239 fracLN=0.9127 fracAl=0.0873 pu=0.085 pv=0.915 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=2.234753 fi_MHz=0.5082 fracLN=0.9885 fracAl=0.0115 pu=0.992 pv=0.008 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=2.357936 fi_MHz=0.5273 fracLN=0.9688 fracAl=0.0312 pu=0.992 pv=0.008 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=3.336264 fi_MHz=0.7415 fracLN=0.9476 fracAl=0.0524 pu=0.093 pv=0.907 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=3.341082 fi_MHz=0.7261 fracLN=0.9233 fracAl=0.0767 pu=0.095 pv=0.905 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=3.683037 fi_MHz=0.8779 fracLN=0.9569 fracAl=0.0431 pu=0.983 pv=0.017 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=4.363994 fi_MHz=0.9238 fracLN=0.9063 fracAl=0.0937 pu=0.860 pv=0.140 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=4.431769 fi_MHz=1.0334 fracLN=0.9909 fracAl=0.0091 pu=0.903 pv=0.097 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=4.452278 fi_MHz=1.0154 fracLN=0.9695 fracAl=0.0305 pu=0.916 pv=0.084 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=4.734710 fi_MHz=0.9768 fracLN=0.8945 fracAl=0.1055 pu=0.088 pv=0.912 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=4.850697 fi_MHz=1.0423 fracLN=0.9495 fracAl=0.0505 pu=0.955 pv=0.045 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=4.903397 fi_MHz=1.0543 fracLN=0.9359 fracAl=0.0641 pu=0.116 pv=0.884 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=5.604220 fi_MHz=1.2859 fracLN=0.9617 fracAl=0.0383 pu=0.342 pv=0.658 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=5.613662 fi_MHz=1.2165 fracLN=0.9066 fracAl=0.0934 pu=0.265 pv=0.735 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=5.629103 fi_MHz=1.0970 fracLN=0.8120 fracAl=0.1880 pu=0.439 pv=0.561 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=5.846666 fi_MHz=1.1791 fracLN=0.8377 fracAl=0.1623 pu=0.186 pv=0.814 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=6.049794 fi_MHz=1.3372 fracLN=0.9365 fracAl=0.0635 pu=0.079 pv=0.921 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=6.109165 fi_MHz=1.2879 fracLN=0.9166 fracAl=0.0834 pu=0.368 pv=0.632 pw=0.000 orient=norot
+ROW variant=2D-norot dim=2 f_GHz=6.152658 fi_MHz=1.1973 fracLN=0.8486 fracAl=0.1514 pu=0.472 pv=0.528 pw=0.000 orient=norot
+TENSOR variant=2D-norot orient=norot expr=solid.cE11 value=2.02897000e+11
+TENSOR variant=2D-norot orient=norot expr=solid.cE22 value=2.02897000e+11
+TENSOR variant=2D-norot orient=norot expr=solid.cE33 value=2.43075000e+11
+TENSOR variant=2D-norot orient=norot expr=solid.cE12 value=5.29177000e+10
+TENSOR variant=2D-norot orient=norot expr=solid.cE13 value=7.49098000e+10
+TENSOR variant=2D-norot orient=norot expr=solid.cE23 value=7.49098000e+10
+TENSOR variant=2D-norot orient=norot expr=solid.cE44 value=5.99034000e+10
+TENSOR variant=2D-norot orient=norot expr=solid.cE55 value=5.99018000e+10
+TENSOR variant=2D-norot orient=norot expr=solid.cE66 value=7.48772000e+10
+TENSOR variant=2D-norot orient=norot expr=solid.cE14 value=8.99874000e+09
+TENSOR variant=2D-norot orient=norot expr=solid.cE15 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cE16 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cE24 value=-8.99874000e+09
+TENSOR variant=2D-norot orient=norot expr=solid.cE25 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cE26 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cE34 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cE35 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cE36 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cE45 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cE46 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cE56 value=8.98526000e+09
+TENSOR variant=2D-norot orient=norot expr=solid.eES11 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.eES12 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.eES13 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.eES14 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.eES15 value=3.69594000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.eES16 value=-2.53384000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.eES21 value=-2.53764000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.eES22 value=2.53764000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.eES23 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.eES24 value=3.69548000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.eES25 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.eES26 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.eES31 value=1.93644000e-01
+TENSOR variant=2D-norot orient=norot expr=solid.eES32 value=1.93644000e-01
+TENSOR variant=2D-norot orient=norot expr=solid.eES33 value=1.30863000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.eES34 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.eES35 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.eES36 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.D11 value=2.02897000e+11
+TENSOR variant=2D-norot orient=norot expr=solid.D22 value=2.02897000e+11
+TENSOR variant=2D-norot orient=norot expr=solid.D33 value=2.43075000e+11
+TENSOR variant=2D-norot orient=norot expr=solid.D12 value=5.29177000e+10
+TENSOR variant=2D-norot orient=norot expr=solid.D44 value=7.48772000e+10
+TENSOR variant=2D-norot orient=norot expr=solid.D55 value=5.99034000e+10
+TENSOR variant=2D-norot orient=norot expr=solid.D66 value=5.99018000e+10
+TENSOR variant=2D-norot orient=norot expr=solid.cEg11 value=2.02897000e+11
+TENSOR variant=2D-norot orient=norot expr=solid.cEg22 value=2.02897000e+11
+TENSOR variant=2D-norot orient=norot expr=solid.cEg33 value=2.43075000e+11
+TENSOR variant=2D-norot orient=norot expr=solid.cEg12 value=5.29177000e+10
+TENSOR variant=2D-norot orient=norot expr=solid.cEg13 value=7.49098000e+10
+TENSOR variant=2D-norot orient=norot expr=solid.cEg23 value=7.49098000e+10
+TENSOR variant=2D-norot orient=norot expr=solid.cEg44 value=5.99034000e+10
+TENSOR variant=2D-norot orient=norot expr=solid.cEg55 value=5.99018000e+10
+TENSOR variant=2D-norot orient=norot expr=solid.cEg66 value=7.48772000e+10
+TENSOR variant=2D-norot orient=norot expr=solid.cEg14 value=8.99874000e+09
+TENSOR variant=2D-norot orient=norot expr=solid.cEg15 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cEg16 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cEg24 value=-8.99874000e+09
+TENSOR variant=2D-norot orient=norot expr=solid.cEg25 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cEg26 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cEg34 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cEg35 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cEg36 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cEg45 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cEg46 value=0.00000000e+00
+TENSOR variant=2D-norot orient=norot expr=solid.cEg56 value=8.98526000e+09
+TENSOR_DEFINED_COUNT variant=2D-norot n=67/67
+TENSOR variant=2D-norot_ALT orient=norot expr=solid.eESg11 value=UNDEFINED
+TENSOR variant=2D-norot_ALT orient=norot expr=solid.eESg12 value=UNDEFINED
+TENSOR variant=2D-norot_ALT orient=norot expr=solid.eESg21 value=UNDEFINED
+TENSOR variant=2D-norot_ALT orient=norot expr=solid.eESg31 value=UNDEFINED
+TENSOR variant=2D-norot_ALT orient=norot expr=solid.dETg11 value=UNDEFINED
+TENSOR variant=2D-norot_ALT orient=norot expr=solid.epsilonrSg11 value=UNDEFINED
+TENSOR variant=2D-norot_ALT orient=norot expr=solid.Dg11 value=UNDEFINED
+VARIANT_END variant=2D-norot
+VARIANT_BEGIN variant=2D-basisME dim=2 setting=basis;ModeExtension orient=basis
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 1140/1389 1157/1437
+           当前进度:   0 % - 矩形
+Memory: 1140/1389 1158/1437
+           当前进度:   8 % - 矩形 2
+-          当前进度:  15 % - 矩形 3
+--         当前进度:  23 % - 形成联合体
+---------- 当前进度: 100 % - 正在更新选择
+---------- 当前进度: 100 % - 正在创建可视化网格
+BASIS_DEFAULT_COORD pzm1=comp1_xz_sys ccp1=comp1_xz_sys
+TYPE2D_ME variant=2D-basisME ModeExtension=1 kz=0 Type2D=PlaneStrain
+TYPE2D_READBACK variant=2D-basisME value=PlaneStrain
+NUMELEM variant=2D-basisME n_elem=2467
+----       当前进度:  47 % - 生成方程
+Memory: 1172/1389 1187/1437
+---        当前进度:  39 % - 生成方程
+BUILD_OK variant=2D-basisME
+           当前进度:   1 % - 生成方程
+Memory: 1174/1389 1189/1437
+           当前进度:   3 % - 生成方程
+Memory: 1173/1389 1188/1437
+<---- 研究/解 1 (sol1) 中的“编译方程: 特征频率” ---------------------------------------------
+开始于 2026年10月21日 下午9:33:17。
+几何形函数: 二次巧凑边点单元
+在  上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 6 个内核）。
+可用内存：32.37 GB。
+           当前进度:   5 % - 编译方程: 特征频率
+Memory: 1177/1389 1193/1437
+           当前进度:   5 % - 正在创建可视化网格
+Memory: 1178/1389 1193/1437
+时间：1。
+物理内存: 1.18 GB
+虚拟内存: 1.19 GB
+结束时间：2026年10月21日 下午9:33:18。
+----- 研究/解 1 (sol1) 中的“编译方程: 特征频率” -------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“因变量 1” --------------------------------------------------
+开始于 2026年10月21日 下午9:33:18。
+           当前进度:   5 % - 因变量 1
+Memory: 1178/1389 1194/1437
+求解时间：0 s。
+物理内存: 1.18 GB
+虚拟内存: 1.19 GB
+结束时间：2026年10月21日 下午9:33:18。
+----- 研究/解 1 (sol1) 中的“因变量 1” ------------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“特征值求解器 1” -----------------------------------------------
+开始于 2026年10月21日 下午9:33:18。
+特征值求解器
+求解的自由度数：20080。
+找到对称矩阵。
+缩放因变量：
+位移场 (comp1.u): 7.8e-11
+电势 (comp1.V): 1
+已使用显式-正交零空间函数。
+           当前进度:   8 % - 矩阵分解
+Memory: 1200/1389 1214/1437
+非对称特征值求解器
+Iter      ErrEst  Nconv
+           当前进度:   8 % - 求解线性方程组
+Memory: 1256/1389 1279/1437
+   1     3.8e-08     24
+49 线性方程组的解。
+49 矩阵乘法。
+43 重正交化。
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 1204/1389 1219/1437
+求解时间：2 s。
+物理内存: 1.26 GB
+虚拟内存: 1.28 GB
+结束时间：2026年10月21日 下午9:33:20。
+----- 研究/解 1 (sol1) 中的“特征值求解器 1” ---------------------------------------------->
+W_EXISTS variant=2D-basisME
+NMODE variant=2D-basisME n=24
+ROW variant=2D-basisME dim=2 f_GHz=0.000001 fi_MHz=0.0034 fracLN=0.5723 fracAl=0.4277 pu=0.232 pv=0.173 pw=0.595 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=0.000045 fi_MHz=0.0001 fracLN=0.0557 fracAl=0.9443 pu=0.169 pv=0.019 pw=0.812 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=0.586670 fi_MHz=0.1400 fracLN=0.9886 fracAl=0.0114 pu=0.059 pv=0.941 pw=0.000 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=0.615186 fi_MHz=0.1318 fracLN=0.8893 fracAl=0.1107 pu=0.056 pv=0.944 pw=0.000 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=1.395802 fi_MHz=0.3229 fracLN=0.9904 fracAl=0.0096 pu=0.000 pv=0.000 pw=1.000 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=1.479947 fi_MHz=0.3301 fracLN=0.9552 fracAl=0.0448 pu=0.000 pv=0.000 pw=1.000 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=1.825208 fi_MHz=0.4000 fracLN=0.9643 fracAl=0.0357 pu=0.102 pv=0.895 pw=0.003 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=1.898564 fi_MHz=0.3905 fracLN=0.9064 fracAl=0.0936 pu=0.094 pv=0.903 pw=0.003 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=2.070343 fi_MHz=0.5122 fracLN=0.9900 fracAl=0.0100 pu=0.983 pv=0.014 pw=0.003 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=2.186758 fi_MHz=0.5282 fracLN=0.9669 fracAl=0.0331 pu=0.979 pv=0.015 pw=0.005 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=2.893166 fi_MHz=0.6378 fracLN=0.9620 fracAl=0.0380 pu=0.002 pv=0.001 pw=0.997 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=2.948168 fi_MHz=0.6348 fracLN=0.9492 fracAl=0.0508 pu=0.002 pv=0.001 pw=0.997 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=3.302855 fi_MHz=0.6846 fracLN=0.9435 fracAl=0.0565 pu=0.097 pv=0.886 pw=0.017 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=3.310585 fi_MHz=0.6704 fracLN=0.9188 fracAl=0.0812 pu=0.101 pv=0.884 pw=0.016 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=3.317351 fi_MHz=0.8027 fracLN=0.9705 fracAl=0.0295 pu=0.985 pv=0.014 pw=0.000 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=3.363324 fi_MHz=0.8150 fracLN=0.9824 fracAl=0.0176 pu=0.001 pv=0.000 pw=0.999 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=3.461880 fi_MHz=0.8224 fracLN=0.9566 fracAl=0.0434 pu=0.009 pv=0.000 pw=0.991 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=3.751980 fi_MHz=0.8908 fracLN=0.9570 fracAl=0.0430 pu=0.021 pv=0.006 pw=0.972 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=4.065512 fi_MHz=0.8609 fracLN=0.9283 fracAl=0.0717 pu=0.843 pv=0.112 pw=0.044 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=4.085690 fi_MHz=0.9939 fracLN=0.9780 fracAl=0.0220 pu=0.728 pv=0.084 pw=0.188 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=4.114928 fi_MHz=1.0016 fracLN=0.9764 fracAl=0.0236 pu=0.733 pv=0.085 pw=0.181 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=4.365566 fi_MHz=0.9112 fracLN=0.9287 fracAl=0.0713 pu=0.017 pv=0.010 pw=0.973 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=4.401031 fi_MHz=0.9981 fracLN=0.9299 fracAl=0.0701 pu=0.220 pv=0.022 pw=0.758 orient=basis
+ROW variant=2D-basisME dim=2 f_GHz=4.433942 fi_MHz=0.9613 fracLN=0.9558 fracAl=0.0442 pu=0.938 pv=0.047 pw=0.016 orient=basis
+TENSOR variant=2D-basisME orient=basis expr=solid.cE11 value=2.02897000e+11
+TENSOR variant=2D-basisME orient=basis expr=solid.cE22 value=2.02897000e+11
+TENSOR variant=2D-basisME orient=basis expr=solid.cE33 value=2.43075000e+11
+TENSOR variant=2D-basisME orient=basis expr=solid.cE12 value=5.29177000e+10
+TENSOR variant=2D-basisME orient=basis expr=solid.cE13 value=7.49098000e+10
+TENSOR variant=2D-basisME orient=basis expr=solid.cE23 value=7.49098000e+10
+TENSOR variant=2D-basisME orient=basis expr=solid.cE44 value=5.99034000e+10
+TENSOR variant=2D-basisME orient=basis expr=solid.cE55 value=5.99018000e+10
+TENSOR variant=2D-basisME orient=basis expr=solid.cE66 value=7.48772000e+10
+TENSOR variant=2D-basisME orient=basis expr=solid.cE14 value=8.99874000e+09
+TENSOR variant=2D-basisME orient=basis expr=solid.cE15 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cE16 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cE24 value=-8.99874000e+09
+TENSOR variant=2D-basisME orient=basis expr=solid.cE25 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cE26 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cE34 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cE35 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cE36 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cE45 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cE46 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cE56 value=8.98526000e+09
+TENSOR variant=2D-basisME orient=basis expr=solid.eES11 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.eES12 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.eES13 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.eES14 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.eES15 value=3.69594000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.eES16 value=-2.53384000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.eES21 value=-2.53764000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.eES22 value=2.53764000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.eES23 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.eES24 value=3.69548000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.eES25 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.eES26 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.eES31 value=1.93644000e-01
+TENSOR variant=2D-basisME orient=basis expr=solid.eES32 value=1.93644000e-01
+TENSOR variant=2D-basisME orient=basis expr=solid.eES33 value=1.30863000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.eES34 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.eES35 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.eES36 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.D11 value=2.02897000e+11
+TENSOR variant=2D-basisME orient=basis expr=solid.D22 value=2.02897000e+11
+TENSOR variant=2D-basisME orient=basis expr=solid.D33 value=2.43075000e+11
+TENSOR variant=2D-basisME orient=basis expr=solid.D12 value=5.29177000e+10
+TENSOR variant=2D-basisME orient=basis expr=solid.D44 value=7.48772000e+10
+TENSOR variant=2D-basisME orient=basis expr=solid.D55 value=5.99034000e+10
+TENSOR variant=2D-basisME orient=basis expr=solid.D66 value=5.99018000e+10
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg11 value=2.02897000e+11
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg22 value=2.43075000e+11
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg33 value=2.02897000e+11
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg12 value=7.49098000e+10
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg13 value=5.29177000e+10
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg23 value=7.49098000e+10
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg44 value=5.99034000e+10
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg55 value=7.48772000e+10
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg66 value=5.99018000e+10
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg14 value=-8.99874000e+09
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg15 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg16 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg24 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg25 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg26 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg34 value=8.99874000e+09
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg35 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg36 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg45 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg46 value=0.00000000e+00
+TENSOR variant=2D-basisME orient=basis expr=solid.cEg56 value=-8.98526000e+09
+TENSOR_DEFINED_COUNT variant=2D-basisME n=67/67
+TENSOR variant=2D-basisME_ALT orient=basis expr=solid.eESg11 value=UNDEFINED
+TENSOR variant=2D-basisME_ALT orient=basis expr=solid.eESg12 value=UNDEFINED
+TENSOR variant=2D-basisME_ALT orient=basis expr=solid.eESg21 value=UNDEFINED
+TENSOR variant=2D-basisME_ALT orient=basis expr=solid.eESg31 value=UNDEFINED
+TENSOR variant=2D-basisME_ALT orient=basis expr=solid.dETg11 value=UNDEFINED
+TENSOR variant=2D-basisME_ALT orient=basis expr=solid.epsilonrSg11 value=UNDEFINED
+TENSOR variant=2D-basisME_ALT orient=basis expr=solid.Dg11 value=UNDEFINED
+VARIANT_END variant=2D-basisME
+VARIANT_BEGIN variant=2D-sysME dim=2 setting=sys;ModeExtension orient=sys
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 1170/1389 1184/1437
+           当前进度:   0 % - 矩形
+           当前进度:   8 % - 矩形 2
+-          当前进度:  15 % - 矩形 3
+--         当前进度:  23 % - 形成联合体
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 1170/1389 1185/1437
+---------- 当前进度: 100 % - 正在创建可视化网格
+Memory: 1171/1389 1185/1437
+SYS2 Type: 旋转坐标系
+Tag: sys2
+Identifier: sys2
+Operation: Rotated
+DIAG_SYS2_PROPS = [name, coord, method, rotationSequence, angle, inPlaneAngle, outofplane, inPlaneBaseVectors, image, frametype, origin]
+DIAG_SYS2_VAL name = sys2
+DIAG_SYS2_VAL coord = ERR
+DIAG_SYS2_VAL method = inPlane
+DIAG_SYS2_VAL rotationSequence = ZXZ
+DIAG_SYS2_VAL angle = 0, 0, 0
+DIAG_SYS2_VAL inPlaneAngle = 0
+DIAG_SYS2_VAL outofplane = 2
+DIAG_SYS2_VAL inPlaneBaseVectors = ERR
+DIAG_SYS2_VAL image = coordsys_third_out_of_screen.png
+DIAG_SYS2_VAL frametype = spatial
+DIAG_SYS2_VAL origin = 0, 0, 0
+SYS2_SET angle=90[deg], 0, 0 seq=ZXZ
+COORD_SYS_SET variant=2D-sysME pzm1=sys2 ccp1=sys2
+TYPE2D_ME variant=2D-sysME ModeExtension=1 kz=0 Type2D=PlaneStrain
+TYPE2D_READBACK variant=2D-sysME value=PlaneStrain
+NUMELEM variant=2D-sysME n_elem=2467
+----       当前进度:  47 % - 生成方程
+Memory: 1182/1389 1195/1437
+---        当前进度:  39 % - 生成方程
+Memory: 1125/1389 1139/1437
+BUILD_OK variant=2D-sysME
+           当前进度:   1 % - 生成方程
+Memory: 1132/1389 1146/1437
+           当前进度:   3 % - 生成方程
+Memory: 1139/1389 1154/1437
+<---- 研究/解 1 (sol1) 中的“编译方程: 特征频率” ---------------------------------------------
+开始于 2026年10月21日 下午9:33:24。
+几何形函数: 二次巧凑边点单元
+在  上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 6 个内核）。
+可用内存：32.37 GB。
+           当前进度:   5 % - 编译方程: 特征频率
+Memory: 1154/1389 1169/1437
+           当前进度:   5 % - 正在创建可视化网格
+Memory: 1156/1389 1171/1437
+时间：1。
+物理内存: 1.17 GB
+虚拟内存: 1.18 GB
+结束时间：2026年10月21日 下午9:33:25。
+----- 研究/解 1 (sol1) 中的“编译方程: 特征频率” -------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“因变量 1” --------------------------------------------------
+开始于 2026年10月21日 下午9:33:25。
+           当前进度:   5 % - 因变量 1
+Memory: 1164/1389 1179/1437
+求解时间：0 s。
+物理内存: 1.17 GB
+虚拟内存: 1.18 GB
+结束时间：2026年10月21日 下午9:33:25。
+----- 研究/解 1 (sol1) 中的“因变量 1” ------------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“特征值求解器 1” -----------------------------------------------
+开始于 2026年10月21日 下午9:33:25。
+特征值求解器
+求解的自由度数：20080。
+找到对称矩阵。
+缩放因变量：
+位移场 (comp1.u): 8.8e-11
+电势 (comp1.V): 1
+已使用显式-正交零空间函数。
+           当前进度:   8 % - 矩阵分解
+Memory: 1194/1389 1260/1437
+非对称特征值求解器
+Iter      ErrEst  Nconv
+           当前进度:   8 % - 求解线性方程组
+Memory: 1247/1389 1273/1437
+   1     9.3e-09     24
+49 线性方程组的解。
+49 矩阵乘法。
+42 重正交化。
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 1195/1389 1213/1437
+求解时间：2 s。
+物理内存: 1.25 GB
+虚拟内存: 1.27 GB
+结束时间：2026年10月21日 下午9:33:26。
+----- 研究/解 1 (sol1) 中的“特征值求解器 1” ---------------------------------------------->
+W_EXISTS variant=2D-sysME
+NMODE variant=2D-sysME n=24
+ROW variant=2D-sysME dim=2 f_GHz=0.000000 fi_MHz=0.0017 fracLN=0.8226 fracAl=0.1774 pu=0.231 pv=0.145 pw=0.623 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=0.000006 fi_MHz=-0.0078 fracLN=0.8383 fracAl=0.1617 pu=0.081 pv=0.875 pw=0.044 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=0.618251 fi_MHz=0.1477 fracLN=0.9886 fracAl=0.0114 pu=0.063 pv=0.936 pw=0.002 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=0.648634 fi_MHz=0.1389 fracLN=0.8884 fracAl=0.1116 pu=0.060 pv=0.939 pw=0.002 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=1.249663 fi_MHz=0.2936 fracLN=0.9886 fracAl=0.0114 pu=0.003 pv=0.001 pw=0.995 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=1.346975 fi_MHz=0.2946 fracLN=0.9348 fracAl=0.0652 pu=0.003 pv=0.001 pw=0.996 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=1.886740 fi_MHz=0.4370 fracLN=0.9675 fracAl=0.0325 pu=0.094 pv=0.891 pw=0.015 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=1.956830 fi_MHz=0.4307 fracLN=0.9162 fracAl=0.0838 pu=0.085 pv=0.898 pw=0.017 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=2.168628 fi_MHz=0.5291 fracLN=0.9905 fracAl=0.0095 pu=0.983 pv=0.010 pw=0.006 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=2.279659 fi_MHz=0.5483 fracLN=0.9710 fracAl=0.0290 pu=0.984 pv=0.011 pw=0.005 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=2.709084 fi_MHz=0.5747 fracLN=0.9518 fracAl=0.0482 pu=0.003 pv=0.011 pw=0.986 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=2.753084 fi_MHz=0.5616 fracLN=0.9193 fracAl=0.0807 pu=0.003 pv=0.014 pw=0.983 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=3.310664 fi_MHz=0.7625 fracLN=0.9517 fracAl=0.0483 pu=0.075 pv=0.901 pw=0.024 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=3.316713 fi_MHz=0.7461 fracLN=0.9296 fracAl=0.0704 pu=0.077 pv=0.892 pw=0.032 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=3.758797 fi_MHz=0.8925 fracLN=0.9569 fracAl=0.0431 pu=0.578 pv=0.010 pw=0.412 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=3.992883 fi_MHz=0.7624 fracLN=0.9112 fracAl=0.0888 pu=0.110 pv=0.021 pw=0.869 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=4.002325 fi_MHz=0.7878 fracLN=0.8694 fracAl=0.1306 pu=0.011 pv=0.033 pw=0.956 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=4.279899 fi_MHz=0.9093 fracLN=0.9151 fracAl=0.0849 pu=0.351 pv=0.058 pw=0.591 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=4.346192 fi_MHz=1.0266 fracLN=0.9583 fracAl=0.0417 pu=0.717 pv=0.079 pw=0.204 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=4.352773 fi_MHz=0.8381 fracLN=0.9475 fracAl=0.0525 pu=0.578 pv=0.084 pw=0.337 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=4.379727 fi_MHz=0.7899 fracLN=0.9477 fracAl=0.0523 pu=0.565 pv=0.046 pw=0.389 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=4.444526 fi_MHz=0.7965 fracLN=0.9125 fracAl=0.0875 pu=0.294 pv=0.099 pw=0.606 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=4.448657 fi_MHz=0.9703 fracLN=0.9848 fracAl=0.0152 pu=0.233 pv=0.016 pw=0.751 orient=sys
+ROW variant=2D-sysME dim=2 f_GHz=4.610688 fi_MHz=1.0278 fracLN=0.9131 fracAl=0.0869 pu=0.068 pv=0.899 pw=0.032 orient=sys
+TENSOR variant=2D-sysME orient=sys expr=solid.cE11 value=2.02897000e+11
+TENSOR variant=2D-sysME orient=sys expr=solid.cE22 value=2.02897000e+11
+TENSOR variant=2D-sysME orient=sys expr=solid.cE33 value=2.43075000e+11
+TENSOR variant=2D-sysME orient=sys expr=solid.cE12 value=5.29177000e+10
+TENSOR variant=2D-sysME orient=sys expr=solid.cE13 value=7.49098000e+10
+TENSOR variant=2D-sysME orient=sys expr=solid.cE23 value=7.49098000e+10
+TENSOR variant=2D-sysME orient=sys expr=solid.cE44 value=5.99034000e+10
+TENSOR variant=2D-sysME orient=sys expr=solid.cE55 value=5.99018000e+10
+TENSOR variant=2D-sysME orient=sys expr=solid.cE66 value=7.48772000e+10
+TENSOR variant=2D-sysME orient=sys expr=solid.cE14 value=8.99874000e+09
+TENSOR variant=2D-sysME orient=sys expr=solid.cE15 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.cE16 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.cE24 value=-8.99874000e+09
+TENSOR variant=2D-sysME orient=sys expr=solid.cE25 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.cE26 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.cE34 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.cE35 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.cE36 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.cE45 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.cE46 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.cE56 value=8.98526000e+09
+TENSOR variant=2D-sysME orient=sys expr=solid.eES11 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.eES12 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.eES13 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.eES14 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.eES15 value=3.69594000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.eES16 value=-2.53384000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.eES21 value=-2.53764000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.eES22 value=2.53764000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.eES23 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.eES24 value=3.69548000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.eES25 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.eES26 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.eES31 value=1.93644000e-01
+TENSOR variant=2D-sysME orient=sys expr=solid.eES32 value=1.93644000e-01
+TENSOR variant=2D-sysME orient=sys expr=solid.eES33 value=1.30863000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.eES34 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.eES35 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.eES36 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.D11 value=2.02897000e+11
+TENSOR variant=2D-sysME orient=sys expr=solid.D22 value=2.02897000e+11
+TENSOR variant=2D-sysME orient=sys expr=solid.D33 value=2.43075000e+11
+TENSOR variant=2D-sysME orient=sys expr=solid.D12 value=5.29177000e+10
+TENSOR variant=2D-sysME orient=sys expr=solid.D44 value=7.48772000e+10
+TENSOR variant=2D-sysME orient=sys expr=solid.D55 value=5.99034000e+10
+TENSOR variant=2D-sysME orient=sys expr=solid.D66 value=5.99018000e+10
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg11 value=2.02897000e+11
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg22 value=2.02897000e+11
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg33 value=2.43075000e+11
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg12 value=5.29177000e+10
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg13 value=7.49098000e+10
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg23 value=7.49098000e+10
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg44 value=5.99018000e+10
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg55 value=5.99034000e+10
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg66 value=7.48772000e+10
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg14 value=-1.65139090e-06
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg15 value=8.99874000e+09
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg16 value=-1.37711533e-08
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg24 value=1.65139090e-06
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg25 value=-8.99874000e+09
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg26 value=1.37711533e-08
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg34 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg35 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg36 value=0.00000000e+00
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg45 value=-9.79717439e-11
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg46 value=-8.98526000e+09
+TENSOR variant=2D-sysME orient=sys expr=solid.cEg56 value=-1.65221631e-06
+TENSOR_DEFINED_COUNT variant=2D-sysME n=67/67
+TENSOR variant=2D-sysME_ALT orient=sys expr=solid.eESg11 value=UNDEFINED
+TENSOR variant=2D-sysME_ALT orient=sys expr=solid.eESg12 value=UNDEFINED
+TENSOR variant=2D-sysME_ALT orient=sys expr=solid.eESg21 value=UNDEFINED
+TENSOR variant=2D-sysME_ALT orient=sys expr=solid.eESg31 value=UNDEFINED
+TENSOR variant=2D-sysME_ALT orient=sys expr=solid.dETg11 value=UNDEFINED
+TENSOR variant=2D-sysME_ALT orient=sys expr=solid.epsilonrSg11 value=UNDEFINED
+TENSOR variant=2D-sysME_ALT orient=sys expr=solid.Dg11 value=UNDEFINED
+VARIANT_END variant=2D-sysME
+STEP3_2D_DONE
+类运行时: 56 s.
+总时间: 56 s.
+---------- 当前进度: 100 % - 完成
+Memory: 1184/1389 1197/1437
