@@ -126,16 +126,15 @@
 - N = core h/2+sin(kh)/(2k) plus one cladding term cos^2(kh/2)/gamma.
 - numbers only.
 
-## 8) sweep (w=0.8 / 1.0 um fixed windows, 131 freqs)
+## 8) sweep（w=0.8 / 1.0 um 固定窗口，131 频点）
 
-Status: FAILED at file write. COMSOL batch security policy denies writing sweep_step6b1.csv.
-Error: java.security.AccessControlException: access denied ("java.io.FilePermission" "sweep_step6b1.csv" "write").
-EvalGlobal succeeded (EXPR_N=9, NF=131); abort occurred when opening PrintWriter, so SWEEPB1 lines were not produced.
+| 窗口 | f_peak_GHz | abs_tot_peak | f_lo_GHz | f_hi_GHz | fwhm_MHz | Q |
+|---|---|---|---|---|---|---|
+| 0.8 um | 3.330000000 | 1.392202e-04 | 3.329284 | 3.330803 | 1.5190 | 2192.3 |
+| 1.0 um | 3.330050000 | 1.139962e-04 | 3.329339 | 3.330880 | 1.5410 | 2161.0 |
 
-3.20 GHz (off resonance) comparison (from bins window table):
+验收（3.3298 GHz 行）：w0.8_abs_tot=1.344987e-04（期望 1.344988e-04，相对差 7e-7）、w1.0_abs_tot=1.088174e-04（逐位一致），均 <1e-3。
 
-| w_um | j0 | x0_um | abs_tot_per_V | phiL_rad_per_mmV |
-|---|---|---|---|---|
-| 0.8 | 41 | 1.025940 | 1.339548e-05 | 0.054301 |
-| 1.0 | 37 | 0.925848 | 1.091525e-05 | 0.044247 |
+3.20 GHz（偏离共振）：w0.8_abs_tot=7.346385e-06、w1.0_abs_tot=1.087339e-05；因窗口位置与 win_step6b1.csv 不同，只报数不直接对比。
 
+说明：COMSOL 批处理禁止 Java 写文件，sweep_step6b1.csv 由 parse_sweep_step6b1.py 从 step6b1_sweep2.log 的 SWROW 行生成。
