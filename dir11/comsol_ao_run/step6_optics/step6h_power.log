@@ -1,0 +1,104 @@
+CFG6H rho=2.80e-08 ohm*m w_finger=0.6776 um; distributed opposite-end-fed RC line per segment; I_pi = pi|Y|/(k0|tot|); P = K*Re(Z_seg(L/K))*|I_pi/K|^2/2; lossless match to 50 ohm; bus bars and feed network ideal
+CASE6H T100 t_Al_nm=100 npairs=12 r_finger_ohm_per_mm=413.2 r_group_ohm_per_mm=34.43 npts=357
+PK6H case=T100 peak=LOW f_GHz=3.318700 abs_tot=8.2115e-05 Y_Spm=(9.2293e+00,9.0742e+01) I_pi_A=0.8608 region_GHz=[3.3160,3.3200] n=63
+OPT6H case=T100 peak=LOW K=1 L_opt_um=217.9 f_GHz=3.318700 P_source_W=3.7396 Zin_ohm=(10.093,-50.065) I_pi_A=0.8608 |V_in|_V=43.97 abs_tot=8.2115e-05 at_region_edge=False
+SEG6H case=T100 peak=LOW L_mm=0.2 K=1 seg_len_um=200.0 at_peak: P_source_W=3.7563 Zseg_ohm=(10.138,-54.542) Ztot_ohm=(10.138,-54.542) |gamma*L/K|=0.501 | f_opt_GHz=3.318700 P_source_opt_W=3.7563
+SEG6H case=T100 peak=LOW L_mm=0.2 K=2 seg_len_um=100.0 at_peak: P_source_W=2.4806 Zseg_ohm=(13.390,-109.075) Ztot_ohm=(6.695,-54.537) |gamma*L/K|=0.251 | f_opt_GHz=3.318500 P_source_opt_W=2.4488
+SEG6H case=T100 peak=LOW L_mm=0.2 K=4 seg_len_um=50.0 at_peak: P_source_W=2.1616 Zseg_ohm=(23.336,-218.149) Ztot_ohm=(5.834,-54.537) |gamma*L/K|=0.125 | f_opt_GHz=3.318150 P_source_opt_W=2.0546
+SEG6H case=T100 peak=LOW L_mm=0.2 K=8 seg_len_um=25.0 at_peak: P_source_W=2.0819 Zseg_ohm=(44.950,-436.297) Ztot_ohm=(5.619,-54.537) |gamma*L/K|=0.063 | f_opt_GHz=3.317750 P_source_opt_W=1.9058
+SEG6H case=T100 peak=LOW L_mm=1.0 K=1 seg_len_um=1000.0 at_peak: P_source_W=8.8641 Zseg_ohm=(23.923,-11.475) Ztot_ohm=(23.923,-11.475) |gamma*L/K|=2.506 | f_opt_GHz=3.318750 P_source_opt_W=8.8105
+SEG6H case=T100 peak=LOW L_mm=1.0 K=2 seg_len_um=500.0 at_peak: P_source_W=2.5356 Zseg_ohm=(13.687,-21.889) Ztot_ohm=(6.843,-10.944) |gamma*L/K|=1.253 | f_opt_GHz=3.318750 P_source_opt_W=2.5255
+SEG6H case=T100 peak=LOW L_mm=1.0 K=4 seg_len_um=250.0 at_peak: P_source_W=0.9426 Zseg_ohm=(10.176,-43.639) Ztot_ohm=(2.544,-10.910) |gamma*L/K|=0.627 | f_opt_GHz=3.318700 P_source_opt_W=0.9426
+SEG6H case=T100 peak=LOW L_mm=1.0 K=8 seg_len_um=125.0 at_peak: P_source_W=0.5440 Zseg_ohm=(11.745,-87.261) Ztot_ohm=(1.468,-10.908) |gamma*L/K|=0.313 | f_opt_GHz=3.318600 P_source_opt_W=0.5408
+OPTK6H case=T100 peak=LOW best_over_K<=8_L_f: K=8 L_um=1774.8 f_GHz=3.318700 P_source_W=0.4675
+PK6H case=T100 peak=MAIN f_GHz=3.338550 abs_tot=8.9087e-05 Y_Spm=(3.6074e+02,7.0251e+01) I_pi_A=3.1972 region_GHz=[3.3357,3.3445] n=130
+OPT6H case=T100 peak=MAIN K=1 L_opt_um=1642.1 f_GHz=3.342000 P_source_W=16.8547 Zin_ohm=(73.541,-7.192) I_pi_A=0.6770 |V_in|_V=50.03 abs_tot=1.8853e-05 at_region_edge=False
+SEG6H case=T100 peak=MAIN L_mm=0.2 K=1 seg_len_um=200.0 at_peak: P_source_W=91.6236 Zseg_ohm=(17.927,-2.604) Ztot_ohm=(17.927,-2.604) |gamma*L/K|=1.006 | f_opt_GHz=3.342000 P_source_opt_W=69.3312
+SEG6H case=T100 peak=MAIN L_mm=0.2 K=2 seg_len_um=100.0 at_peak: P_source_W=74.1127 Zseg_ohm=(29.001,-5.201) Ztot_ohm=(14.500,-2.601) |gamma*L/K|=0.503 | f_opt_GHz=3.341800 P_source_opt_W=68.5319
+SEG6H case=T100 peak=MAIN L_mm=0.2 K=4 seg_len_um=50.0 at_peak: P_source_W=69.7184 Zseg_ohm=(54.563,-10.402) Ztot_ohm=(13.641,-2.601) |gamma*L/K|=0.252 | f_opt_GHz=3.341300 P_source_opt_W=68.2881
+SEG6H case=T100 peak=MAIN L_mm=0.2 K=8 seg_len_um=25.0 at_peak: P_source_W=68.6188 Zseg_ohm=(107.405,-20.804) Ztot_ohm=(13.426,-2.601) |gamma*L/K|=0.126 | f_opt_GHz=3.340400 P_source_opt_W=68.1286
+SEG6H case=T100 peak=MAIN L_mm=1.0 K=1 seg_len_um=1000.0 at_peak: P_source_W=123.2131 Zseg_ohm=(24.107,-0.708) Ztot_ohm=(24.107,-0.708) |gamma*L/K|=5.031 | f_opt_GHz=3.342000 P_source_opt_W=18.8934
+SEG6H case=T100 peak=MAIN L_mm=1.0 K=2 seg_len_um=500.0 at_peak: P_source_W=42.3188 Zseg_ohm=(16.560,-1.084) Ztot_ohm=(8.280,-0.542) |gamma*L/K|=2.516 | f_opt_GHz=3.342000 P_source_opt_W=14.9696
+SEG6H case=T100 peak=MAIN L_mm=1.0 K=4 seg_len_um=250.0 at_peak: P_source_W=20.9379 Zseg_ohm=(16.386,-2.087) Ztot_ohm=(4.097,-0.522) |gamma*L/K|=1.258 | f_opt_GHz=3.342000 P_source_opt_W=13.9846
+SEG6H case=T100 peak=MAIN L_mm=1.0 K=8 seg_len_um=125.0 at_peak: P_source_W=15.4808 Zseg_ohm=(24.231,-4.162) Ztot_ohm=(3.029,-0.520) |gamma*L/K|=0.629 | f_opt_GHz=3.341900 P_source_opt_W=13.7368
+OPTK6H case=T100 peak=MAIN best_over_K<=8_L_f: K=8 L_um=5000.0 f_GHz=3.342000 P_source_W=3.1415
+CASE6H T200 t_Al_nm=200 npairs=12 r_finger_ohm_per_mm=206.6 r_group_ohm_per_mm=17.22 npts=214
+PK6H case=T200 peak=pk0_mixed f_GHz=3.260200 abs_tot=7.6294e-05 Y_Spm=(1.9778e+01,6.4380e+01) I_pi_A=0.6841 region_GHz=[3.2580,3.2660] n=72 eig_uvw=(0.460,0.425,0.115) fracAl=0.3695
+OPT6H case=T200 peak=pk0_mixed K=1 L_opt_um=630.0 f_GHz=3.260400 P_source_W=3.1657 Zin_ohm=(14.468,-25.305) I_pi_A=0.6615 |V_in|_V=19.28 abs_tot=7.0715e-05 at_region_edge=False
+SEG6H case=T200 peak=pk0_mixed L_mm=0.2 K=1 seg_len_um=200.0 at_peak: P_source_W=5.6393 Zseg_ohm=(24.097,-70.967) Ztot_ohm=(24.097,-70.967) |gamma*L/K|=0.305 | f_opt_GHz=3.260500 P_source_opt_W=5.4878
+SEG6H case=T200 peak=pk0_mixed L_mm=0.2 K=2 seg_len_um=100.0 at_peak: P_source_W=5.2364 Zseg_ohm=(44.750,-141.932) Ztot_ohm=(22.375,-70.966) |gamma*L/K|=0.152 | f_opt_GHz=3.260700 P_source_opt_W=5.0446
+SEG6H case=T200 peak=pk0_mixed L_mm=0.2 K=4 seg_len_um=50.0 at_peak: P_source_W=5.1357 Zseg_ohm=(87.779,-283.864) Ztot_ohm=(21.945,-70.966) |gamma*L/K|=0.076 | f_opt_GHz=3.261300 P_source_opt_W=4.8231
+SEG6H case=T200 peak=pk0_mixed L_mm=0.2 K=8 seg_len_um=25.0 at_peak: P_source_W=5.1105 Zseg_ohm=(174.697,-567.727) Ztot_ohm=(21.837,-70.966) |gamma*L/K|=0.038 | f_opt_GHz=3.261800 P_source_opt_W=4.6904
+SEG6H case=T200 peak=pk0_mixed L_mm=1.0 K=1 seg_len_um=1000.0 at_peak: P_source_W=3.6979 Zseg_ohm=(15.801,-14.296) Ztot_ohm=(15.801,-14.296) |gamma*L/K|=1.523 | f_opt_GHz=3.260300 P_source_opt_W=3.5007
+SEG6H case=T200 peak=pk0_mixed L_mm=1.0 K=2 seg_len_um=500.0 at_peak: P_source_W=1.6915 Zseg_ohm=(14.455,-28.400) Ztot_ohm=(7.228,-14.200) |gamma*L/K|=0.761 | f_opt_GHz=3.260400 P_source_opt_W=1.6261
+SEG6H case=T200 peak=pk0_mixed L_mm=1.0 K=4 seg_len_um=250.0 at_peak: P_source_W=1.1883 Zseg_ohm=(20.310,-56.774) Ztot_ohm=(5.078,-14.194) |gamma*L/K|=0.381 | f_opt_GHz=3.260400 P_source_opt_W=1.1555
+SEG6H case=T200 peak=pk0_mixed L_mm=1.0 K=8 seg_len_um=125.0 at_peak: P_source_W=1.0624 Zseg_ohm=(36.317,-113.546) Ztot_ohm=(4.540,-14.193) |gamma*L/K|=0.190 | f_opt_GHz=3.260600 P_source_opt_W=1.0287
+OPTK6H case=T200 peak=pk0_mixed best_over_K<=8_L_f: K=8 L_um=5000.0 f_GHz=3.260400 P_source_W=0.3957
+CASE6H T300 t_Al_nm=300 npairs=12 r_finger_ohm_per_mm=137.7 r_group_ohm_per_mm=11.48 npts=340
+PK6H case=T300 peak=pk0_u f_GHz=3.309600 abs_tot=1.2642e-04 Y_Spm=(2.2313e+01,8.1429e+01) I_pi_A=0.5176 region_GHz=[3.3070,3.3150] n=72 eig_uvw=(0.511,0.389,0.100) fracAl=0.3983
+OPT6H case=T300 peak=pk0_u K=1 L_opt_um=680.8 f_GHz=3.309700 P_source_W=1.2537 Zin_ohm=(10.310,-17.737) I_pi_A=0.4931 |V_in|_V=10.12 abs_tot=1.2517e-04 at_region_edge=False
+SEG6H case=T300 peak=pk0_u L_mm=0.2 K=1 seg_len_um=200.0 at_peak: P_source_W=2.3013 Zseg_ohm=(17.181,-57.115) Ztot_ohm=(17.181,-57.115) |gamma*L/K|=0.278 | f_opt_GHz=3.309700 P_source_opt_W=2.2996
+SEG6H case=T300 peak=pk0_u L_mm=0.2 K=2 seg_len_um=100.0 at_peak: P_source_W=2.1475 Zseg_ohm=(32.066,-114.230) Ztot_ohm=(16.033,-57.115) |gamma*L/K|=0.139 | f_opt_GHz=3.309400 P_source_opt_W=2.1381
+SEG6H case=T300 peak=pk0_u L_mm=0.2 K=4 seg_len_um=50.0 at_peak: P_source_W=2.1091 Zseg_ohm=(62.984,-228.460) Ztot_ohm=(15.746,-57.115) |gamma*L/K|=0.070 | f_opt_GHz=3.308800 P_source_opt_W=2.0490
+SEG6H case=T300 peak=pk0_u L_mm=0.2 K=8 seg_len_um=25.0 at_peak: P_source_W=2.0995 Zseg_ohm=(125.395,-456.920) Ztot_ohm=(15.674,-57.115) |gamma*L/K|=0.035 | f_opt_GHz=3.308300 P_source_opt_W=1.9827
+SEG6H case=T300 peak=pk0_u L_mm=1.0 K=1 seg_len_um=1000.0 at_peak: P_source_W=1.4417 Zseg_ohm=(10.764,-11.481) Ztot_ohm=(10.764,-11.481) |gamma*L/K|=1.392 | f_opt_GHz=3.309800 P_source_opt_W=1.3493
+SEG6H case=T300 peak=pk0_u L_mm=1.0 K=2 seg_len_um=500.0 at_peak: P_source_W=0.6754 Zseg_ohm=(10.084,-22.853) Ztot_ohm=(5.042,-11.427) |gamma*L/K|=0.696 | f_opt_GHz=3.309700 P_source_opt_W=0.6552
+SEG6H case=T300 peak=pk0_u L_mm=1.0 K=4 seg_len_um=250.0 at_peak: P_source_W=0.4833 Zseg_ohm=(14.433,-45.693) Ztot_ohm=(3.608,-11.423) |gamma*L/K|=0.348 | f_opt_GHz=3.309700 P_source_opt_W=0.4808
+SEG6H case=T300 peak=pk0_u L_mm=1.0 K=8 seg_len_um=125.0 at_peak: P_source_W=0.4353 Zseg_ohm=(25.997,-91.384) Ztot_ohm=(3.250,-11.423) |gamma*L/K|=0.174 | f_opt_GHz=3.309500 P_source_opt_W=0.4348
+OPTK6H case=T300 peak=pk0_u best_over_K<=8_L_f: K=8 L_um=5000.0 f_GHz=3.309700 P_source_W=0.1572
+PK6H case=T300 peak=pk1_u f_GHz=3.386100 abs_tot=7.3655e-05 Y_Spm=(9.4417e+00,9.1085e+01) I_pi_A=0.9635 region_GHz=[3.3840,3.3920] n=72 eig_uvw=(0.783,0.139,0.079) fracAl=0.3156
+OPT6H case=T300 peak=pk1_u K=1 L_opt_um=385.2 f_GHz=3.386200 P_source_W=2.6536 Zin_ohm=(5.930,-28.758) I_pi_A=0.9460 |V_in|_V=27.78 abs_tot=7.3574e-05 at_region_edge=False
+SEG6H case=T300 peak=pk1_u L_mm=0.2 K=1 seg_len_um=200.0 at_peak: P_source_W=3.3236 Zseg_ohm=(7.160,-54.311) Ztot_ohm=(7.160,-54.311) |gamma*L/K|=0.290 | f_opt_GHz=3.386300 P_source_opt_W=3.2430
+SEG6H case=T300 peak=pk1_u L_mm=0.2 K=2 seg_len_um=100.0 at_peak: P_source_W=2.7909 Zseg_ohm=(12.025,-108.621) Ztot_ohm=(6.012,-54.310) |gamma*L/K|=0.145 | f_opt_GHz=3.386500 P_source_opt_W=2.6930
+SEG6H case=T300 peak=pk1_u L_mm=0.2 K=4 seg_len_um=50.0 at_peak: P_source_W=2.6577 Zseg_ohm=(22.901,-217.241) Ztot_ohm=(5.725,-54.310) |gamma*L/K|=0.072 | f_opt_GHz=3.386900 P_source_opt_W=2.4877
+SEG6H case=T300 peak=pk1_u L_mm=0.2 K=8 seg_len_um=25.0 at_peak: P_source_W=2.6244 Zseg_ohm=(45.229,-434.482) Ztot_ohm=(5.654,-54.310) |gamma*L/K|=0.036 | f_opt_GHz=3.387300 P_source_opt_W=2.3803
+SEG6H case=T300 peak=pk1_u L_mm=1.0 K=1 seg_len_um=1000.0 at_peak: P_source_W=4.0700 Zseg_ohm=(8.768,-10.928) Ztot_ohm=(8.768,-10.928) |gamma*L/K|=1.450 | f_opt_GHz=3.386200 P_source_opt_W=3.9341
+SEG6H case=T300 peak=pk1_u L_mm=1.0 K=2 seg_len_um=500.0 at_peak: P_source_W=1.4104 Zseg_ohm=(6.077,-21.732) Ztot_ohm=(3.038,-10.866) |gamma*L/K|=0.725 | f_opt_GHz=3.386200 P_source_opt_W=1.3700
+SEG6H case=T300 peak=pk1_u L_mm=1.0 K=4 seg_len_um=250.0 at_peak: P_source_W=0.7446 Zseg_ohm=(6.417,-43.449) Ztot_ohm=(1.604,-10.862) |gamma*L/K|=0.362 | f_opt_GHz=3.386200 P_source_opt_W=0.7282
+SEG6H case=T300 peak=pk1_u L_mm=1.0 K=8 seg_len_um=125.0 at_peak: P_source_W=0.5782 Zseg_ohm=(9.964,-86.897) Ztot_ohm=(1.246,-10.862) |gamma*L/K|=0.181 | f_opt_GHz=3.386400 P_source_opt_W=0.5609
+OPTK6H case=T300 peak=pk1_u best_over_K<=8_L_f: K=8 L_um=3137.2 f_GHz=3.386200 P_source_W=0.3317
+PK6H case=T300 peak=pk2_mixed f_GHz=3.271900 abs_tot=4.0526e-05 Y_Spm=(6.6404e+00,7.7390e+01) I_pi_A=1.4854 region_GHz=[3.2690,3.2770] n=72 eig_uvw=(0.373,0.460,0.167) fracAl=0.5351
+OPT6H case=T300 peak=pk2_mixed K=1 L_opt_um=375.3 f_GHz=3.271900 P_source_W=6.4034 Zin_ohm=(5.804,-34.180) I_pi_A=1.4854 |V_in|_V=51.50 abs_tot=4.0526e-05 at_region_edge=False
+SEG6H case=T300 peak=pk2_mixed L_mm=0.2 K=1 seg_len_um=200.0 at_peak: P_source_W=7.7595 Zseg_ohm=(7.034,-64.136) Ztot_ohm=(7.034,-64.136) |gamma*L/K|=0.267 | f_opt_GHz=3.271800 P_source_opt_W=7.6672
+SEG6H case=T300 peak=pk2_mixed L_mm=0.2 K=2 seg_len_um=100.0 at_peak: P_source_W=6.4933 Zseg_ohm=(11.771,-128.271) Ztot_ohm=(5.886,-64.136) |gamma*L/K|=0.134 | f_opt_GHz=3.271500 P_source_opt_W=5.9449
+SEG6H case=T300 peak=pk2_mixed L_mm=0.2 K=4 seg_len_um=50.0 at_peak: P_source_W=6.1767 Zseg_ohm=(22.395,-256.543) Ztot_ohm=(5.599,-64.136) |gamma*L/K|=0.067 | f_opt_GHz=3.270600 P_source_opt_W=4.6400
+SEG6H case=T300 peak=pk2_mixed L_mm=0.2 K=8 seg_len_um=25.0 at_peak: P_source_W=6.0976 Zseg_ohm=(44.216,-513.085) Ztot_ohm=(5.527,-64.136) |gamma*L/K|=0.033 | f_opt_GHz=3.269000 P_source_opt_W=3.6056
+SEG6H case=T300 peak=pk2_mixed L_mm=1.0 K=1 seg_len_um=1000.0 at_peak: P_source_W=9.6483 Zseg_ohm=(8.746,-12.883) Ztot_ohm=(8.746,-12.883) |gamma*L/K|=1.335 | f_opt_GHz=3.271900 P_source_opt_W=9.6483
+SEG6H case=T300 peak=pk2_mixed L_mm=1.0 K=2 seg_len_um=500.0 at_peak: P_source_W=3.3244 Zseg_ohm=(6.027,-25.661) Ztot_ohm=(3.013,-12.831) |gamma*L/K|=0.668 | f_opt_GHz=3.271900 P_source_opt_W=3.3244
+SEG6H case=T300 peak=pk2_mixed L_mm=1.0 K=4 seg_len_um=250.0 at_peak: P_source_W=1.7418 Zseg_ohm=(6.315,-51.309) Ztot_ohm=(1.579,-12.827) |gamma*L/K|=0.334 | f_opt_GHz=3.271900 P_source_opt_W=1.7418
+SEG6H case=T300 peak=pk2_mixed L_mm=1.0 K=8 seg_len_um=125.0 at_peak: P_source_W=1.3461 Zseg_ohm=(9.762,-102.617) Ztot_ohm=(1.220,-12.827) |gamma*L/K|=0.167 | f_opt_GHz=3.271600 P_source_opt_W=1.2786
+OPTK6H case=T300 peak=pk2_mixed best_over_K<=8_L_f: K=8 L_um=3057.0 f_GHz=3.271900 P_source_W=0.8004
+CASE6H NP11 t_Al_nm=100 npairs=8 r_finger_ohm_per_mm=413.2 r_group_ohm_per_mm=51.65 npts=333
+PK6H case=NP11 peak=pk0_v f_GHz=3.341800 abs_tot=1.0340e-04 Y_Spm=(1.7643e+02,4.8886e+01) I_pi_A=1.3722 region_GHz=[3.3390,3.3478] n=80 eig_uvw=(0.083,0.791,0.127) fracAl=0.0453
+OPT6H case=NP11 peak=pk0_v K=1 L_opt_um=1172.8 f_GHz=3.344000 P_source_W=6.1427 Zin_ohm=(79.772,-16.370) I_pi_A=0.3924 |V_in|_V=31.96 abs_tot=3.9179e-05 at_region_edge=False
+SEG6H case=NP11 peak=pk0_v L_mm=0.2 K=1 seg_len_um=200.0 at_peak: P_source_W=31.2448 Zseg_ohm=(33.185,-7.298) Ztot_ohm=(33.185,-7.298) |gamma*L/K|=0.870 | f_opt_GHz=3.345500 P_source_opt_W=15.8426
+SEG6H case=NP11 peak=pk0_v L_mm=0.2 K=2 seg_len_um=100.0 at_peak: P_source_W=26.3998 Zseg_ohm=(56.079,-14.586) Ztot_ohm=(28.040,-7.293) |gamma*L/K|=0.435 | f_opt_GHz=3.345900 P_source_opt_W=14.0580
+SEG6H case=NP11 peak=pk0_v L_mm=0.2 K=4 seg_len_um=50.0 at_peak: P_source_W=25.1852 Zseg_ohm=(106.998,-29.171) Ztot_ohm=(26.749,-7.293) |gamma*L/K|=0.217 | f_opt_GHz=3.345900 P_source_opt_W=13.5657
+SEG6H case=NP11 peak=pk0_v L_mm=0.2 K=8 seg_len_um=25.0 at_peak: P_source_W=24.8813 Zseg_ohm=(211.414,-58.341) Ztot_ohm=(26.427,-7.293) |gamma*L/K|=0.109 | f_opt_GHz=3.345900 P_source_opt_W=13.4427
+SEG6H case=NP11 peak=pk0_v L_mm=1.0 K=1 seg_len_um=1000.0 at_peak: P_source_W=35.6232 Zseg_ohm=(37.836,-1.815) Ztot_ohm=(37.836,-1.815) |gamma*L/K|=4.349 | f_opt_GHz=3.344000 P_source_opt_W=6.2261
+SEG6H case=NP11 peak=pk0_v L_mm=1.0 K=2 seg_len_um=500.0 at_peak: P_source_W=12.9214 Zseg_ohm=(27.448,-2.991) Ztot_ohm=(13.724,-1.495) |gamma*L/K|=2.174 | f_opt_GHz=3.344300 P_source_opt_W=4.1770
+SEG6H case=NP11 peak=pk0_v L_mm=1.0 K=4 seg_len_um=250.0 at_peak: P_source_W=6.9729 Zseg_ohm=(29.624,-5.845) Ztot_ohm=(7.406,-1.461) |gamma*L/K|=1.087 | f_opt_GHz=3.345200 P_source_opt_W=3.3800
+SEG6H case=NP11 peak=pk0_v L_mm=1.0 K=8 seg_len_um=125.0 at_peak: P_source_W=5.4620 Zseg_ohm=(46.410,-11.670) Ztot_ohm=(5.801,-1.459) |gamma*L/K|=0.544 | f_opt_GHz=3.345800 P_source_opt_W=2.8829
+OPTK6H case=NP11 peak=pk0_v best_over_K<=8_L_f: K=8 L_um=5000.0 f_GHz=3.344200 P_source_W=0.9173
+PK6H case=NP11 peak=pk1_u f_GHz=3.250200 abs_tot=6.3248e-05 Y_Spm=(3.8031e+00,4.8902e+01) I_pi_A=0.6010 region_GHz=[3.2480,3.2560] n=72 eig_uvw=(0.952,0.012,0.036) fracAl=0.0296
+OPT6H case=NP11 peak=pk1_u K=1 L_opt_um=212.3 f_GHz=3.250200 P_source_W=2.6651 Zin_ohm=(14.756,-95.739) I_pi_A=0.6010 |V_in|_V=58.22 abs_tot=6.3248e-05 at_region_edge=False
+SEG6H case=NP11 peak=pk1_u L_mm=0.2 K=1 seg_len_um=200.0 at_peak: P_source_W=2.6713 Zseg_ohm=(14.790,-101.636) Ztot_ohm=(14.790,-101.636) |gamma*L/K|=0.450 | f_opt_GHz=3.250200 P_source_opt_W=2.6713
+SEG6H case=NP11 peak=pk1_u L_mm=0.2 K=2 seg_len_um=100.0 at_peak: P_source_W=1.7385 Zseg_ohm=(19.251,-203.260) Ztot_ohm=(9.625,-101.630) |gamma*L/K|=0.225 | f_opt_GHz=3.250000 P_source_opt_W=1.7045
+SEG6H case=NP11 peak=pk1_u L_mm=0.2 K=4 seg_len_um=50.0 at_peak: P_source_W=1.5053 Zseg_ohm=(33.336,-406.519) Ztot_ohm=(8.334,-101.630) |gamma*L/K|=0.113 | f_opt_GHz=3.249300 P_source_opt_W=1.3786
+SEG6H case=NP11 peak=pk1_u L_mm=0.2 K=8 seg_len_um=25.0 at_peak: P_source_W=1.4470 Zseg_ohm=(64.090,-813.038) Ztot_ohm=(8.011,-101.630) |gamma*L/K|=0.056 | f_opt_GHz=3.248200 P_source_opt_W=1.1769
+SEG6H case=NP11 peak=pk1_u L_mm=1.0 K=1 seg_len_um=1000.0 at_peak: P_source_W=6.4798 Zseg_ohm=(35.876,-21.027) Ztot_ohm=(35.876,-21.027) |gamma*L/K|=2.251 | f_opt_GHz=3.250200 P_source_opt_W=6.4798
+SEG6H case=NP11 peak=pk1_u L_mm=1.0 K=2 seg_len_um=500.0 at_peak: P_source_W=1.8395 Zseg_ohm=(20.369,-40.742) Ztot_ohm=(10.185,-20.371) |gamma*L/K|=1.126 | f_opt_GHz=3.250200 P_source_opt_W=1.8395
+SEG6H case=NP11 peak=pk1_u L_mm=1.0 K=4 seg_len_um=250.0 at_peak: P_source_W=0.6742 Zseg_ohm=(14.931,-81.315) Ztot_ohm=(3.733,-20.329) |gamma*L/K|=0.563 | f_opt_GHz=3.250200 P_source_opt_W=0.6742
+SEG6H case=NP11 peak=pk1_u L_mm=1.0 K=8 seg_len_um=125.0 at_peak: P_source_W=0.3827 Zseg_ohm=(16.950,-162.609) Ztot_ohm=(2.119,-20.326) |gamma*L/K|=0.281 | f_opt_GHz=3.250000 P_source_opt_W=0.3790
+OPTK6H case=NP11 peak=pk1_u best_over_K<=8_L_f: K=8 L_um=1729.4 f_GHz=3.250200 P_source_W=0.3331
+PK6H case=NP11 peak=pk2_w f_GHz=3.347600 abs_tot=6.4580e-05 Y_Spm=(5.6767e+01,3.6980e+01) I_pi_A=0.8130 region_GHz=[3.3446,3.3530] n=85 eig_uvw=(0.031,0.124,0.845) fracAl=0.0643
+OPT6H case=NP11 peak=pk2_w K=1 L_opt_um=859.5 f_GHz=3.344600 P_source_W=7.4969 Zin_ohm=(58.345,-42.286) I_pi_A=0.5069 |V_in|_V=36.53 abs_tot=3.4832e-05 at_region_edge=True
+SEG6H case=NP11 peak=pk2_w L_mm=0.2 K=1 seg_len_um=200.0 at_peak: P_source_W=22.7124 Zseg_ohm=(68.718,-40.288) Ztot_ohm=(68.718,-40.288) |gamma*L/K|=0.529 | f_opt_GHz=3.345500 P_source_opt_W=15.8426
+SEG6H case=NP11 peak=pk2_w L_mm=0.2 K=2 seg_len_um=100.0 at_peak: P_source_W=21.0072 Zseg_ohm=(127.118,-80.567) Ztot_ohm=(63.559,-40.284) |gamma*L/K|=0.265 | f_opt_GHz=3.345900 P_source_opt_W=14.0580
+SEG6H case=NP11 peak=pk2_w L_mm=0.2 K=4 seg_len_um=50.0 at_peak: P_source_W=20.5806 Zseg_ohm=(249.072,-161.134) Ztot_ohm=(62.268,-40.283) |gamma*L/K|=0.132 | f_opt_GHz=3.345900 P_source_opt_W=13.5657
+SEG6H case=NP11 peak=pk2_w L_mm=0.2 K=8 seg_len_um=25.0 at_peak: P_source_W=20.4739 Zseg_ohm=(495.561,-322.267) Ztot_ohm=(61.945,-40.283) |gamma*L/K|=0.066 | f_opt_GHz=3.345900 P_source_opt_W=13.4427
+SEG6H case=NP11 peak=pk2_w L_mm=1.0 K=1 seg_len_um=1000.0 at_peak: P_source_W=15.2138 Zseg_ohm=(46.031,-8.477) Ztot_ohm=(46.031,-8.477) |gamma*L/K|=2.646 | f_opt_GHz=3.344600 P_source_opt_W=7.5880
+SEG6H case=NP11 peak=pk2_w L_mm=1.0 K=2 seg_len_um=500.0 at_peak: P_source_W=6.9160 Zseg_ohm=(41.849,-16.177) Ztot_ohm=(20.925,-8.089) |gamma*L/K|=1.323 | f_opt_GHz=3.344600 P_source_opt_W=4.2933
+SEG6H case=NP11 peak=pk2_w L_mm=1.0 K=4 seg_len_um=250.0 at_peak: P_source_W=4.7979 Zseg_ohm=(58.066,-32.235) Ztot_ohm=(14.516,-8.059) |gamma*L/K|=0.661 | f_opt_GHz=3.345200 P_source_opt_W=3.3800
+SEG6H case=NP11 peak=pk2_w L_mm=1.0 K=8 seg_len_um=125.0 at_peak: P_source_W=4.2654 Zseg_ohm=(103.243,-64.454) Ztot_ohm=(12.905,-8.057) |gamma*L/K|=0.331 | f_opt_GHz=3.345800 P_source_opt_W=2.8829
+OPTK6H case=NP11 peak=pk2_w best_over_K<=8_L_f: K=8 L_um=5000.0 f_GHz=3.344600 P_source_W=0.9826
