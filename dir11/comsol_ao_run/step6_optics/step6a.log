@@ -1,0 +1,1145 @@
+*******************************************
+***COMSOL 6.3.0.290 progress output file***
+*******************************************
+Wed Oct 21 22:44:51 CST 2026
+COMSOL Multiphysics 6.3 (开发版本: 290) 在批处理模式下启动
+正在运行: D:\comsol_ao_run\step6_optics\Step6a.class
+STEP6A_START
+SELFCHECK phiL=0.405367 expect=0.4054
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 472/472 501/501
+           当前进度:   0 % - 矩形
+Memory: 480/480 509/509
+           当前进度:   8 % - 矩形 2
+Memory: 483/483 511/511
+-          当前进度:  15 % - 矩形 3
+--         当前进度:  23 % - 形成联合体
+--------   当前进度:  88 % - 解析域和空区域
+Memory: 484/484 511/511
+---------- 当前进度: 100 % - 正在更新选择
+---------- 当前进度: 100 % - 正在创建可视化网格
+Memory: 493/493 518/521
+GROUND_CHECK nTerm=1 nGn=1
+TERMINAL_CHECK nTerm=1 nGnd=1
+顶点单元数：12
+边界单元数：200
+单元数：2502
+最小单元质量：0.6738
+---------- 当前进度: 100 % - 正在定型网格
+Memory: 759/800 780/821
+NUMELEM n_elem=2502
+NFREQ 131 DX_um=0.02502292
+----       当前进度:  47 % - 生成方程
+Memory: 796/802 816/822
+------     当前进度:  60 % - 生成方程
+Memory: 784/807 803/826
+---        当前进度:  39 % - 生成方程
+Memory: 808/814 828/834
+-----      当前进度:  54 % - 生成方程
+Memory: 814/817 833/836
+           当前进度:   1 % - 生成方程
+Memory: 876/886 896/908
+           当前进度:   3 % - 生成方程
+Memory: 885/888 904/908
+<---- 研究/解 1 (sol1) 中的“编译方程: 频域” -----------------------------------------------
+开始于 2026年10月21日 下午10:45:08。
+几何形函数: 二次巧凑边点单元
+在 AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD 上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 6 个内核）。
+可用内存：32.37 GB。
+           当前进度:   4 % - 编译方程: 频域
+Memory: 905/905 924/924
+           当前进度:   4 % - 正在创建可视化网格
+Memory: 908/916 927/936
+时间：1。
+物理内存: 916 MB
+虚拟内存: 936 MB
+结束时间：2026年10月21日 下午10:45:09。
+----- 研究/解 1 (sol1) 中的“编译方程: 频域” ---------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“因变量 1” --------------------------------------------------
+开始于 2026年10月21日 下午10:45:09。
+           当前进度:   4 % - 因变量 1
+Memory: 908/916 925/936
+求解时间：0 s。
+物理内存: 908 MB
+虚拟内存: 928 MB
+结束时间：2026年10月21日 下午10:45:09。
+----- 研究/解 1 (sol1) 中的“因变量 1” ------------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“稳态求解器 1” ------------------------------------------------
+开始于 2026年10月21日 下午10:45:09。
+参数化求解器
+线性求解器 
+求解的自由度数：20326。
+    
+参数 freq = 3.2e+09。
+找到对称矩阵。
+缩放因变量：
+位移场 (comp1.u): 9.4e-11
+电势 (comp1.V): 1
+已使用显式-正交零空间函数。
+           当前进度:   5 % - 矩阵分解
+Memory: 974/984 993/1005
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96    1    1    1  1.9e-13  3.8e-14
+    
+参数 freq = 3.31e+09。
+           当前进度:   6 % - 矩阵分解
+Memory: 1024/1076 1038/1100
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.94   1.0000000        0.94    2    2    2  4.8e-13  1.4e-14
+    
+参数 freq = 3.311e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.94   1.0000000        0.94    3    3    3  1.7e-13  1.4e-14
+    
+参数 freq = 3.312e+09。
+           当前进度:   7 % - 约束处理
+Memory: 1067/1110 1090/1142
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.94   1.0000000        0.94    4    4    4    3e-13  2.9e-14
+    
+参数 freq = 3.313e+09。
+           当前进度:   8 % - 矩阵分解
+Memory: 1082/1110 1108/1142
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.94   1.0000000        0.94    5    5    5  3.8e-13  1.4e-14
+    
+参数 freq = 3.314e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.94   1.0000000        0.94    6    6    6  4.4e-13  1.3e-14
+    
+参数 freq = 3.315e+09。
+-          当前进度:  10 % - 矩阵分解
+Memory: 1076/1110 1122/1142
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.94   1.0000000        0.94    7    7    7  2.9e-13  1.2e-14
+    
+参数 freq = 3.316e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.94   1.0000000        0.94    8    8    8  1.8e-13  1.3e-14
+    
+参数 freq = 3.317e+09。
+-          当前进度:  11 % - 组装矩阵
+Memory: 1094/1110 1108/1142
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.94   1.0000000        0.94    9    9    9  8.4e-13  1.4e-14
+    
+参数 freq = 3.318e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-          当前进度:  12 % - 求解线性方程组
+Memory: 1099/1110 1114/1142
+   1        0.95   1.0000000        0.95   10   10   10  8.1e-13  1.7e-14
+    
+参数 freq = 3.319e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95   11   11   11  1.2e-12  1.5e-14
+    
+参数 freq = 3.32e+09。
+-          当前进度:  13 % - 矩阵分解
+Memory: 1081/1110 1103/1142
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95   12   12   12    8e-13  1.7e-14
+    
+参数 freq = 3.321e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95   13   13   13  2.5e-13  2.8e-14
+    
+参数 freq = 3.322e+09。
+-          当前进度:  15 % - 矩阵分解
+Memory: 1068/1110 1117/1142
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95   14   14   14    1e-12  2.6e-14
+    
+参数 freq = 3.323e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95   15   15   15  5.5e-13    3e-14
+    
+参数 freq = 3.324e+09。
+-          当前进度:  16 % - 
+Memory: 1092/1110 1131/1142
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   16   16   16  2.4e-12  3.9e-14
+    
+参数 freq = 3.325e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   17   17   17  9.9e-13  3.3e-14
+    
+参数 freq = 3.326e+09。
+-          当前进度:  17 % - 组装矩阵
+Memory: 1093/1110 1125/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   18   18   18  2.2e-12  6.2e-14
+    
+参数 freq = 3.327e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-          当前进度:  19 % - 求解线性方程组
+Memory: 1102/1110 1134/1145
+   1        0.96   1.0000000        0.96   19   19   19  8.4e-13  7.2e-14
+    
+参数 freq = 3.328e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   20   20   20  9.6e-13  8.2e-14
+    
+参数 freq = 3.32805e+09。
+--         当前进度:  20 % - 矩阵分解
+Memory: 1055/1110 1091/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   21   21   21  7.6e-12  9.6e-14
+    
+参数 freq = 3.3281e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   22   22   22  5.9e-12  7.7e-14
+    
+参数 freq = 3.32815e+09。
+--         当前进度:  21 % - 矩阵分解
+Memory: 1032/1110 1085/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   23   23   23    3e-12  9.5e-14
+    
+参数 freq = 3.3282e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   24   24   24  5.7e-12  9.2e-14
+    
+参数 freq = 3.32825e+09。
+--         当前进度:  23 % - 组装矩阵
+Memory: 1051/1110 1068/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   25   25   25  6.6e-12  9.4e-14
+    
+参数 freq = 3.3283e+09。
+--         当前进度:  24 % - 矩阵分解
+Memory: 1061/1110 1079/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   26   26   26  7.5e-13    9e-14
+    
+参数 freq = 3.32835e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   27   27   27  5.5e-12  9.6e-14
+    
+参数 freq = 3.3284e+09。
+--         当前进度:  25 % - 矩阵分解
+Memory: 1034/1110 1082/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   28   28   28  4.3e-12  1.2e-13
+    
+参数 freq = 3.32845e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   29   29   29  4.5e-12  9.6e-14
+    
+参数 freq = 3.3285e+09。
+--         当前进度:  26 % - 
+Memory: 1051/1110 1069/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   30   30   30  3.1e-12  9.6e-14
+    
+参数 freq = 3.32855e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+--         当前进度:  27 % - 求解线性方程组
+Memory: 1062/1110 1077/1145
+   1        0.96   1.0000000        0.96   31   31   31  6.5e-13  1.1e-13
+    
+参数 freq = 3.3286e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   32   32   32  5.5e-12  1.2e-13
+    
+参数 freq = 3.32865e+09。
+--         当前进度:  29 % - 矩阵分解
+Memory: 1056/1110 1082/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   33   33   33    4e-12  1.2e-13
+    
+参数 freq = 3.3287e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   34   34   34  3.4e-12    1e-13
+    
+参数 freq = 3.32875e+09。
+---        当前进度:  30 % - 矩阵分解
+Memory: 1032/1110 1094/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   35   35   35    3e-12  1.2e-13
+    
+参数 freq = 3.3288e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   36   36   36  6.4e-12  1.2e-13
+    
+参数 freq = 3.32885e+09。
+---        当前进度:  31 % - 
+Memory: 1051/1110 1078/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   37   37   37    4e-12  1.3e-13
+    
+参数 freq = 3.3289e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---        当前进度:  32 % - 求解线性方程组
+Memory: 1062/1110 1083/1145
+   1        0.96   1.0000000        0.96   38   38   38  3.1e-12  1.2e-13
+    
+参数 freq = 3.32895e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   39   39   39  1.1e-12  1.5e-13
+    
+参数 freq = 3.329e+09。
+---        当前进度:  34 % - 矩阵分解
+Memory: 1053/1110 1088/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   40   40   40  6.4e-12  1.7e-13
+    
+参数 freq = 3.329e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   41   41   41  6.4e-12  1.7e-13
+    
+参数 freq = 3.32905e+09。
+---        当前进度:  35 % - 矩阵分解
+Memory: 1032/1110 1088/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   42   42   42  2.2e-12  1.3e-13
+    
+参数 freq = 3.3291e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   43   43   43  6.7e-12  1.4e-13
+    
+参数 freq = 3.32915e+09。
+---        当前进度:  36 % - 矩阵分解
+Memory: 1019/1110 1029/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   44   44   44  2.8e-12  1.4e-13
+    
+参数 freq = 3.3292e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   45   45   45  1.4e-11  1.5e-13
+    
+参数 freq = 3.32925e+09。
+---        当前进度:  38 % - 组装矩阵
+Memory: 1052/1110 1069/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   46   46   46  1.5e-11  1.6e-13
+    
+参数 freq = 3.3293e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---        当前进度:  39 % - 求解线性方程组
+Memory: 1063/1110 1080/1145
+   1        0.96   1.0000000        0.96   47   47   47  7.9e-12  1.6e-13
+    
+参数 freq = 3.32935e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   48   48   48  1.2e-11  1.6e-13
+    
+参数 freq = 3.3294e+09。
+----       当前进度:  40 % - 矩阵分解
+Memory: 1063/1110 1085/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   49   49   49    3e-12  1.7e-13
+    
+参数 freq = 3.32945e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   50   50   50  1.1e-11  1.8e-13
+    
+参数 freq = 3.3295e+09。
+----       当前进度:  42 % - 矩阵分解
+Memory: 1041/1110 1085/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   51   51   51  6.3e-12  1.8e-13
+    
+参数 freq = 3.32955e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   52   52   52  4.5e-12  1.8e-13
+    
+参数 freq = 3.3296e+09。
+----       当前进度:  43 % - 
+Memory: 1056/1110 1071/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   53   53   53  1.1e-11  1.8e-13
+    
+参数 freq = 3.32965e+09。
+----       当前进度:  44 % - 矩阵分解
+Memory: 1100/1110 1129/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   54   54   54  1.1e-11  2.1e-13
+    
+参数 freq = 3.3297e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   55   55   55  5.3e-12  2.1e-13
+    
+参数 freq = 3.32975e+09。
+----       当前进度:  45 % - 矩阵分解
+Memory: 1063/1118 1070/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   56   56   56  3.9e-12  1.9e-13
+    
+参数 freq = 3.3298e+09。
+----       当前进度:  46 % - 矩阵分解
+Memory: 1102/1118 1127/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   57   57   57  7.4e-12  2.1e-13
+    
+参数 freq = 3.32985e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   58   58   58  1.5e-11  2.4e-13
+    
+参数 freq = 3.3299e+09。
+----       当前进度:  47 % - 矩阵分解
+Memory: 1077/1118 1142/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   59   59   59  8.4e-12  2.1e-13
+    
+参数 freq = 3.32995e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   60   60   60  5.5e-12    2e-13
+    
+参数 freq = 3.33e+09。
+----       当前进度:  49 % - 约束处理
+Memory: 1096/1118 1119/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   61   61   61  9.5e-12    2e-13
+    
+参数 freq = 3.33e+09。
+-----      当前进度:  50 % - 矩阵分解
+Memory: 1109/1118 1135/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   62   62   62  9.5e-12    2e-13
+    
+参数 freq = 3.33005e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   63   63   63  1.5e-11  2.1e-13
+    
+参数 freq = 3.3301e+09。
+-----      当前进度:  51 % - 矩阵分解
+Memory: 1099/1118 1132/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   64   64   64  1.7e-11  2.1e-13
+    
+参数 freq = 3.33015e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   65   65   65  1.6e-11  2.1e-13
+    
+参数 freq = 3.3302e+09。
+-----      当前进度:  52 % - 矩阵分解
+Memory: 1076/1118 1129/1145
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   66   66   66  4.4e-12    2e-13
+    
+参数 freq = 3.33025e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-----      当前进度:  54 % - 求解线性方程组
+Memory: 1106/1118 1121/1145
+   1        0.96   1.0000000        0.96   67   67   67  1.3e-11  1.9e-13
+    
+参数 freq = 3.3303e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   68   68   68  4.9e-12  1.8e-13
+    
+参数 freq = 3.33035e+09。
+-----      当前进度:  55 % - 矩阵分解
+Memory: 1087/1118 1151/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   69   69   69  3.3e-12  1.7e-13
+    
+参数 freq = 3.3304e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   70   70   70  7.8e-12  1.7e-13
+    
+参数 freq = 3.33045e+09。
+-----      当前进度:  56 % - 矩阵分解
+Memory: 1064/1118 1094/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   71   71   71  1.4e-11  1.7e-13
+    
+参数 freq = 3.3305e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-----      当前进度:  57 % - 求解线性方程组
+Memory: 1107/1118 1145/1156
+   1        0.96   1.0000000        0.96   72   72   72  5.8e-12  1.6e-13
+    
+参数 freq = 3.33055e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   73   73   73  2.8e-12  1.6e-13
+    
+参数 freq = 3.3306e+09。
+-----      当前进度:  59 % - 矩阵分解
+Memory: 1111/1118 1151/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   74   74   74  1.8e-12  1.5e-13
+    
+参数 freq = 3.33065e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   75   75   75  6.2e-12  1.5e-13
+    
+参数 freq = 3.3307e+09。
+------     当前进度:  60 % - 矩阵分解
+Memory: 1103/1118 1151/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   76   76   76  7.4e-12  1.5e-13
+    
+参数 freq = 3.33075e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   77   77   77  1.2e-11  1.4e-13
+    
+参数 freq = 3.3308e+09。
+------     当前进度:  61 % - 矩阵分解
+Memory: 1076/1118 1145/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   78   78   78  6.5e-12  1.4e-13
+    
+参数 freq = 3.33085e+09。
+------     当前进度:  62 % - 矩阵分解
+Memory: 1112/1118 1145/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   79   79   79  7.6e-12  1.2e-13
+    
+参数 freq = 3.3309e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   80   80   80  2.5e-12  1.2e-13
+    
+参数 freq = 3.33095e+09。
+------     当前进度:  63 % - 矩阵分解
+Memory: 1088/1118 1139/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   81   81   81  3.7e-12  1.2e-13
+    
+参数 freq = 3.331e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   82   82   82  7.7e-13  1.2e-13
+    
+参数 freq = 3.33105e+09。
+------     当前进度:  65 % - 矩阵分解
+Memory: 1080/1118 1130/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   83   83   83    6e-12  1.1e-13
+    
+参数 freq = 3.3311e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   84   84   84  4.9e-12  1.1e-13
+    
+参数 freq = 3.33115e+09。
+------     当前进度:  66 % - 矩阵分解
+Memory: 1083/1118 1130/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   85   85   85  3.6e-12  1.1e-13
+    
+参数 freq = 3.3312e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   86   86   86  4.7e-12    1e-13
+    
+参数 freq = 3.33125e+09。
+------     当前进度:  68 % - 矩阵分解
+Memory: 1064/1118 1073/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   87   87   87  1.8e-12    1e-13
+    
+参数 freq = 3.3313e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   88   88   88    7e-12  9.7e-14
+    
+参数 freq = 3.33135e+09。
+------     当前进度:  69 % - 组装矩阵
+Memory: 1061/1118 1082/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   89   89   89  7.8e-12  9.6e-14
+    
+参数 freq = 3.3314e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-------    当前进度:  70 % - 求解线性方程组
+Memory: 1072/1118 1093/1156
+   1        0.96   1.0000000        0.96   90   90   90  2.2e-12  9.2e-14
+    
+参数 freq = 3.33145e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   91   91   91    3e-12  8.8e-14
+    
+参数 freq = 3.3315e+09。
+-------    当前进度:  72 % - 矩阵分解
+Memory: 1066/1118 1096/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   92   92   92  5.5e-12  8.4e-14
+    
+参数 freq = 3.33155e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   93   93   93  3.1e-12  8.3e-14
+    
+参数 freq = 3.3316e+09。
+-------    当前进度:  73 % - 矩阵分解
+Memory: 1052/1118 1123/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   94   94   94  1.1e-11  8.4e-14
+    
+参数 freq = 3.33165e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   95   95   95    6e-12    8e-14
+    
+参数 freq = 3.3317e+09。
+-------    当前进度:  74 % - 矩阵分解
+Memory: 1035/1118 1123/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   96   96   96  2.8e-12  7.6e-14
+    
+参数 freq = 3.33175e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   97   97   97  1.3e-11  8.3e-14
+    
+参数 freq = 3.3318e+09。
+-------    当前进度:  75 % - 组装矩阵
+Memory: 1061/1118 1098/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96   98   98   98  1.5e-12  7.6e-14
+    
+参数 freq = 3.33185e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-------    当前进度:  77 % - 求解线性方程组
+Memory: 1072/1118 1106/1156
+   1        0.96   1.0000000        0.96   99   99   99  1.7e-12  7.2e-14
+    
+参数 freq = 3.3319e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96  100  100  100  3.3e-12  7.1e-14
+    
+参数 freq = 3.33195e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-------    当前进度:  78 % - 求解线性方程组
+Memory: 1072/1118 1100/1156
+   1        0.96   1.0000000        0.96  101  101  101  4.8e-12  7.1e-14
+    
+参数 freq = 3.332e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96  102  102  102  2.2e-12  6.7e-14
+    
+参数 freq = 3.333e+09。
+--------   当前进度:  80 % - 矩阵分解
+Memory: 1082/1118 1106/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96  103  103  103  1.4e-12  4.8e-14
+    
+参数 freq = 3.334e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.96   1.0000000        0.96  104  104  104    2e-12  3.6e-14
+    
+参数 freq = 3.335e+09。
+--------   当前进度:  81 % - 矩阵分解
+Memory: 1057/1118 1106/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95  105  105  105  1.4e-12    3e-14
+    
+参数 freq = 3.336e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95  106  106  106  2.8e-12  2.8e-14
+    
+参数 freq = 3.337e+09。
+--------   当前进度:  82 % - 矩阵分解
+Memory: 1050/1118 1106/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.94   1.0000000        0.94  107  107  107  3.2e-13  2.4e-14
+    
+参数 freq = 3.338e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.94   1.0000000        0.94  108  108  108  5.2e-13  2.7e-14
+    
+参数 freq = 3.339e+09。
+--------   当前进度:  84 % - 矩阵分解
+Memory: 1042/1118 1106/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.94   1.0000000        0.94  109  109  109  6.1e-13    2e-14
+    
+参数 freq = 3.34e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.94   1.0000000        0.94  110  110  110  2.9e-13  1.6e-14
+    
+参数 freq = 3.341e+09。
+--------   当前进度:  85 % - 矩阵分解
+Memory: 1087/1118 1109/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.93   1.0000000        0.93  111  111  111  6.2e-13  1.5e-14
+    
+参数 freq = 3.342e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.93   1.0000000        0.93  112  112  112  1.2e-12  1.4e-14
+    
+参数 freq = 3.343e+09。
+--------   当前进度:  86 % - 矩阵分解
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.93   1.0000000        0.93  113  113  113  1.7e-12  1.3e-14
+    
+参数 freq = 3.344e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.94   1.0000000        0.94  114  114  114  3.3e-13  1.2e-14
+    
+参数 freq = 3.345e+09。
+--------   当前进度:  88 % - 组装矩阵
+Memory: 1068/1118 1090/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.94   1.0000000        0.94  115  115  115  2.1e-12  1.1e-14
+    
+参数 freq = 3.346e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+--------   当前进度:  89 % - 求解线性方程组
+Memory: 1078/1118 1101/1156
+   1        0.94   1.0000000        0.94  116  116  116  5.1e-13  1.1e-14
+    
+参数 freq = 3.347e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.94   1.0000000        0.94  117  117  117  2.3e-12  1.1e-14
+    
+参数 freq = 3.348e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---------  当前进度:  91 % - 求解线性方程组
+Memory: 1079/1118 1101/1156
+   1        0.94   1.0000000        0.94  118  118  118  2.5e-12  1.1e-14
+    
+参数 freq = 3.349e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.94   1.0000000        0.94  119  119  119  8.9e-13  9.9e-15
+    
+参数 freq = 3.35e+09。
+---------  当前进度:  92 % - 矩阵分解
+Memory: 1084/1118 1106/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.94   1.0000000        0.94  120  120  120  4.9e-13  1.1e-14
+    
+参数 freq = 3.351e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95  121  121  121  7.3e-13  9.6e-15
+    
+参数 freq = 3.352e+09。
+---------  当前进度:  93 % - 矩阵分解
+Memory: 1076/1118 1106/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95  122  122  122  4.4e-13  9.4e-15
+    
+参数 freq = 3.353e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95  123  123  123  1.1e-12    9e-15
+    
+参数 freq = 3.354e+09。
+---------  当前进度:  95 % - 矩阵分解
+Memory: 1065/1118 1107/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95  124  124  124    5e-13  8.7e-15
+    
+参数 freq = 3.355e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95  125  125  125  5.1e-13  8.4e-15
+    
+参数 freq = 3.356e+09。
+---------  当前进度:  96 % - 矩阵分解
+Memory: 1044/1118 1107/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95  126  126  126  5.1e-13  8.2e-15
+    
+参数 freq = 3.357e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95  127  127  127  6.1e-13  9.4e-15
+    
+参数 freq = 3.358e+09。
+---------  当前进度:  97 % - 矩阵分解
+Memory: 1078/1118 1113/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95  128  128  128  6.2e-13  1.1e-14
+    
+参数 freq = 3.359e+09。
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95  129  129  129    3e-13  9.1e-15
+    
+参数 freq = 3.36e+09。
+---------  当前进度:  99 % - 组装矩阵
+Memory: 1067/1118 1093/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95  130  130  130  1.3e-13  8.3e-15
+    
+参数 freq = 3.45e+09。
+---------- 当前进度: 100 % - 矩阵分解
+Memory: 1084/1118 1107/1156
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.95   1.0000000        0.95  131  131  131  7.7e-14  1.8e-14
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 1018/1118 1035/1156
+求解时间：20 s。
+物理内存: 1.12 GB
+虚拟内存: 1.16 GB
+结束时间：2026年10月21日 下午10:45:29。
+----- 研究/解 1 (sol1) 中的“稳态求解器 1” ----------------------------------------------->
+DATASET dset1
+TENSOR_CHECK i=0 value=2.02897000e+11
+TENSOR_CHECK i=1 value=2.43075000e+11
+TENSOR_CHECK i=2 value=8.99874000e+09
+TENSOR_CHECK i=3 value=-8.99874000e+09
+TENSOR_CHECK i=4 value=-8.98526000e+09
+PEAK_INDEX 56 PEAK_F_GHz=3.329800000 PEAK_ABS_Y=4.580679652e+01
+REF320_INDEX 0 F=3.200000000
+SWA6 f_GHz=3.200000000 ReY=3.186464984e-03 ImY=7.828674842e+00 int_u2=1.419596423e-34 max_v=1.443793725e-11 PE_avgRe=5.769465e-19 PE_avgIm=-2.010815e-21 PE_avgAbs=5.769500e-19 PE_KRe=8.519983e-12 PE_KIm=-4.830147e-15 PE_KAbs=8.519984e-12 EO_avgRe=-6.825741e-18 EO_avgIm=-2.709913e-20 EO_avgAbs=6.825795e-18 EO_KRe=-1.680043e-11 EO_KIm=-1.102352e-12 EO_KAbs=1.683655e-11 MB_avgRe=-7.238898e-19 MB_avgIm=2.578582e-21 MB_avgAbs=7.238944e-19 MB_KRe=-7.926872e-12 MB_KIm=1.243830e-14 MB_KAbs=7.926882e-12
+SWA6 f_GHz=3.310000000 ReY=6.512372490e-02 ImY=9.767191911e+00 int_u2=3.024556522e-33 max_v=7.202989760e-11 PE_avgRe=1.883517e-18 PE_avgIm=-5.684997e-20 PE_avgAbs=1.884375e-18 PE_KRe=9.505443e-12 PE_KIm=-5.173645e-14 PE_KAbs=9.505584e-12 EO_avgRe=-1.164148e-19 EO_avgIm=-1.482723e-19 EO_avgAbs=1.885128e-19 EO_KRe=-1.598258e-11 EO_KIm=-2.960493e-14 EO_KAbs=1.598261e-11 MB_avgRe=-2.375569e-18 MB_avgIm=7.180231e-20 MB_avgAbs=2.376654e-18 MB_KRe=-1.305356e-11 MB_KIm=2.113037e-13 MB_KAbs=1.305527e-11
+SWA6 f_GHz=3.311000000 ReY=7.196198924e-02 ImY=9.860134723e+00 int_u2=3.345583507e-33 max_v=7.561773626e-11 PE_avgRe=1.961388e-18 PE_avgIm=-6.288660e-20 PE_avgAbs=1.962396e-18 PE_KRe=9.570692e-12 PE_KIm=-5.683839e-14 PE_KAbs=9.570860e-12 EO_avgRe=1.007063e-19 EO_avgIm=-1.627818e-19 EO_avgAbs=1.914149e-19 EO_KRe=-1.591749e-11 EO_KIm=9.599520e-15 EO_KAbs=1.591749e-11 MB_avgRe=-2.473885e-18 MB_avgIm=7.942238e-20 MB_avgAbs=2.475160e-18 MB_KRe=-1.334119e-11 MB_KIm=2.332519e-13 MB_KAbs=1.334323e-11
+SWA6 f_GHz=3.312000000 ReY=7.997154881e-02 ImY=9.962838802e+00 int_u2=3.721742612e-33 max_v=7.960391329e-11 PE_avgRe=2.047821e-18 PE_avgIm=-6.995567e-20 PE_avgAbs=2.049016e-18 PE_KRe=9.643187e-12 PE_KIm=-6.281178e-14 PE_KAbs=9.643391e-12 EO_avgRe=3.388623e-19 EO_avgIm=-1.797987e-19 EO_avgAbs=3.836081e-19 EO_KRe=-1.584471e-11 EO_KIm=5.228639e-14 EO_KAbs=1.584480e-11 MB_avgRe=-2.583010e-18 MB_avgIm=8.834581e-20 MB_avgAbs=2.584520e-18 MB_KRe=-1.366010e-11 MB_KIm=2.589577e-13 MB_KAbs=1.366255e-11
+SWA6 f_GHz=3.313000000 ReY=8.943588933e-02 ImY=1.007701811e+01 int_u2=4.166392823e-33 max_v=8.405864899e-11 PE_avgRe=2.144321e-18 PE_avgIm=-7.830532e-20 PE_avgAbs=2.145750e-18 PE_KRe=9.724200e-12 PE_KIm=-6.986735e-14 PE_KAbs=9.724451e-12 EO_avgRe=6.017613e-19 EO_avgIm=-1.999310e-19 EO_avgAbs=6.341049e-19 EO_KRe=-1.576286e-11 EO_KIm=9.900764e-14 EO_KAbs=1.576317e-11 MB_avgRe=-2.704842e-18 MB_avgIm=9.888553e-20 MB_avgAbs=2.706649e-18 MB_KRe=-1.401577e-11 MB_KIm=2.893300e-13 MB_KAbs=1.401876e-11
+SWA6 f_GHz=3.314000000 ReY=1.007296754e-01 ImY=1.020481199e+01 int_u2=4.697192854e-33 max_v=8.906967937e-11 PE_avgRe=2.252763e-18 PE_avgIm=-8.826654e-20 PE_avgAbs=2.254492e-18 PE_KRe=9.815316e-12 PE_KIm=-7.828357e-14 PE_KAbs=9.815628e-12 EO_avgRe=8.940320e-19 EO_avgIm=-2.239833e-19 EO_avgAbs=9.216625e-19 EO_KRe=-1.567019e-11 EO_KIm=1.504369e-13 EO_KAbs=1.567091e-11 MB_avgRe=-2.841749e-18 MB_avgIm=1.114597e-19 MB_avgAbs=2.843934e-18 MB_KRe=-1.441506e-11 MB_KIm=3.255706e-13 MB_KAbs=1.441873e-11
+SWA6 f_GHz=3.315000000 ReY=1.143563118e-01 ImY=1.034892548e+01 int_u2=5.337873249e-33 max_v=9.474807322e-11 PE_avgRe=2.375522e-18 PE_avgIm=-1.002817e-19 PE_avgAbs=2.377638e-18 PE_KRe=9.918543e-12 PE_KIm=-8.843455e-14 PE_KAbs=9.918937e-12 EO_avgRe=1.221527e-18 EO_avgIm=-2.530371e-19 EO_avgAbs=1.247459e-18 EO_KRe=-1.556449e-11 EO_KIm=2.074040e-13 EO_KAbs=1.556588e-11 MB_avgRe=-2.996728e-18 MB_avgIm=1.266264e-19 MB_avgAbs=2.999402e-18 MB_KRe=-1.486664e-11 MB_KIm=3.692936e-13 MB_KAbs=1.487122e-11
+SWA6 f_GHz=3.316000000 ReY=1.310048578e-01 ImY=1.051282897e+01 int_u2=6.120921882e-33 max_v=1.012365288e-10 PE_avgRe=2.515642e-18 PE_avgIm=-1.149568e-19 PE_avgAbs=2.518267e-18 PE_KRe=1.003645e-11 PE_KIm=-1.008323e-13 PE_KAbs=1.003696e-11 EO_avgRe=1.591753e-18 EO_avgIm=-2.885730e-19 EO_avgAbs=1.617700e-18 EO_KRe=-1.544291e-11 EO_KIm=2.709419e-13 EO_KAbs=1.544529e-11 MB_avgRe=-3.173621e-18 MB_avgIm=1.451510e-19 MB_avgAbs=3.176939e-18 MB_KRe=-1.538162e-11 MB_KIm=4.227086e-13 MB_KAbs=1.538743e-11
+SWA6 f_GHz=3.317000000 ReY=1.516385761e-01 ImY=1.070104836e+01 int_u2=7.091762594e-33 max_v=1.087214749e-10 PE_avgRe=2.677094e-18 PE_avgIm=-1.331391e-19 PE_avgAbs=2.680402e-18 PE_KRe=1.017240e-11 PE_KIm=-1.161925e-13 PE_KAbs=1.017307e-11 EO_avgRe=2.014503e-18 EO_avgIm=-3.326620e-19 EO_avgAbs=2.041785e-18 EO_KRe=-1.530169e-11 EO_KIm=3.423501e-13 EO_KAbs=1.530552e-11 MB_avgRe=-3.377443e-18 MB_avgIm=1.681026e-19 MB_avgAbs=3.381624e-18 MB_KRe=-1.597451e-11 MB_KIm=4.889042e-13 MB_KAbs=1.598199e-11
+SWA6 f_GHz=3.318000000 ReY=1.776368990e-01 ImY=1.091959760e+01 int_u2=8.315455369e-33 max_v=1.174511762e-10 PE_avgRe=2.865153e-18 PE_avgIm=-1.560415e-19 PE_avgAbs=2.869399e-18 PE_KRe=1.033085e-11 PE_KIm=-1.355398e-13 PE_KAbs=1.033174e-11 EO_avgRe=2.502786e-18 EO_avgIm=-3.882711e-19 EO_avgAbs=2.532725e-18 EO_KRe=-1.513579e-11 EO_KIm=4.232821e-13 EO_KAbs=1.514170e-11 MB_avgRe=-3.614851e-18 MB_avgIm=1.970124e-19 MB_avgAbs=3.620215e-18 MB_KRe=-1.666458e-11 MB_KIm=5.723033e-13 MB_KAbs=1.667441e-11
+SWA6 f_GHz=3.319000000 ReY=2.110310111e-01 ImY=1.117664163e+01 int_u2=9.887816166e-33 max_v=1.277636211e-10 PE_avgRe=3.086984e-18 PE_avgIm=-1.854498e-19 PE_avgAbs=3.092550e-18 PE_KRe=1.051786e-11 PE_KIm=-1.603830e-13 PE_KAbs=1.051908e-11 EO_avgRe=3.074268e-18 EO_avgIm=-4.597708e-19 EO_avgAbs=3.108458e-18 EO_KRe=-1.493830e-11 EO_KIm=5.158665e-13 EO_KAbs=1.494720e-11 MB_avgRe=-3.894889e-18 MB_avgIm=2.341346e-19 MB_avgAbs=3.901920e-18 MB_KRe=-1.747800e-11 MB_KIm=6.794181e-13 MB_KAbs=1.749120e-11
+SWA6 f_GHz=3.320000000 ReY=2.549107082e-01 ImY=1.148354587e+01 int_u2=1.195462344e-32 max_v=1.401309506e-10 PE_avgRe=3.352558e-18 PE_avgIm=-2.240800e-19 PE_avgAbs=3.360038e-18 PE_KRe=1.074185e-11 PE_KIm=-1.930168e-13 PE_KAbs=1.074358e-11 EO_avgRe=3.753536e-18 EO_avgIm=-5.538125e-19 EO_avgAbs=3.794172e-18 EO_KRe=-1.469950e-11 EO_KIm=6.228729e-13 EO_KAbs=1.471269e-11 MB_avgRe=-4.230144e-18 MB_avgIm=2.828977e-19 MB_avgAbs=4.239593e-18 MB_KRe=-1.845118e-11 MB_KIm=8.201545e-13 MB_KAbs=1.846940e-11
+SWA6 f_GHz=3.321000000 ReY=3.141607409e-01 ImY=1.185660119e+01 int_u2=1.474638278e-32 max_v=1.552330803e-10 PE_avgRe=3.676166e-18 PE_avgIm=-2.762251e-19 PE_avgAbs=3.686529e-18 PE_KRe=1.101490e-11 PE_KIm=-2.370684e-13 PE_KAbs=1.101745e-11 EO_avgRe=4.575836e-18 EO_avgIm=-6.809163e-19 EO_avgAbs=4.626221e-18 EO_KRe=-1.440523e-11 EO_KIm=7.479359e-13 EO_KAbs=1.442463e-11 MB_avgRe=-4.638656e-18 MB_avgIm=3.487206e-19 MB_avgAbs=4.651745e-18 MB_KRe=-1.963632e-11 MB_KIm=1.010172e-12 MB_KAbs=1.966228e-11
+SWA6 f_GHz=3.322000000 ReY=3.968698332e-01 ImY=1.231998612e+01 int_u2=1.864485836e-32 max_v=1.740855297e-10 PE_avgRe=4.079018e-18 PE_avgIm=-3.489927e-19 PE_avgAbs=4.093921e-18 PE_KRe=1.135494e-11 PE_KIm=-2.985436e-13 PE_KAbs=1.135886e-11 EO_avgRe=5.593481e-18 EO_avgIm=-8.585090e-19 EO_avgAbs=5.658981e-18 EO_KRe=-1.403413e-11 EO_KIm=8.958331e-13 EO_KAbs=1.406269e-11 MB_avgRe=-5.147198e-18 MB_avgIm=4.405755e-19 MB_avgAbs=5.166019e-18 MB_KRe=-2.111089e-11 MB_KIm=1.275402e-12 MB_KAbs=2.114938e-11
+SWA6 f_GHz=3.323000000 ReY=5.172149890e-01 ImY=1.291112446e+01 int_u2=2.431928180e-32 max_v=1.982742001e-10 PE_avgRe=4.593950e-18 PE_avgIm=-4.548385e-19 PE_avgAbs=4.616412e-18 PE_KRe=1.178973e-11 PE_KIm=-3.879671e-13 PE_KAbs=1.179611e-11 EO_avgRe=6.887444e-18 EO_avgIm=-1.117150e-18 EO_avgAbs=6.977457e-18 EO_KRe=-1.355237e-11 EO_KIm=1.072740e-12 EO_KAbs=1.359476e-11 MB_avgRe=-5.797219e-18 MB_avgIm=5.741850e-19 MB_avgAbs=5.825585e-18 MB_KRe=-2.299482e-11 MB_KIm=1.661287e-12 MB_KAbs=2.305475e-11
+SWA6 f_GHz=3.324000000 ReY=7.018788378e-01 ImY=1.369099345e+01 int_u2=3.302944427e-32 max_v=2.304173521e-10 PE_avgRe=5.274448e-18 PE_avgIm=-6.172006e-19 PE_avgAbs=5.310437e-18 PE_KRe=1.236447e-11 PE_KIm=-5.251449e-13 PE_KAbs=1.237562e-11 EO_avgRe=8.589670e-18 EO_avgIm=-1.514378e-18 EO_avgAbs=8.722142e-18 EO_KRe=-1.290327e-11 EO_KIm=1.286083e-12 EO_KAbs=1.296721e-11 MB_avgRe=-6.656235e-18 MB_avgIm=7.791353e-19 MB_avgAbs=6.701680e-18 MB_KRe=-2.548348e-11 MB_KIm=2.253358e-12 MB_KAbs=2.558291e-11
+SWA6 f_GHz=3.325000000 ReY=1.005918467e+00 ImY=1.476547539e+01 int_u2=4.737528242e-32 max_v=2.751567042e-10 PE_avgRe=6.213398e-18 PE_avgIm=-8.844345e-19 PE_avgAbs=6.276029e-18 PE_KRe=1.315769e-11 PE_KIm=-7.509391e-13 PE_KAbs=1.317910e-11 EO_avgRe=1.092930e-17 EO_avgIm=-2.168976e-18 EO_avgAbs=1.114244e-17 EO_KRe=-1.198453e-11 EO_KIm=1.542340e-12 EO_KAbs=1.208336e-11 MB_avgRe=-7.841496e-18 MB_avgIm=1.116466e-18 MB_avgAbs=7.920578e-18 MB_KRe=-2.891614e-11 MB_KIm=3.228084e-12 MB_KAbs=2.909577e-11
+SWA6 f_GHz=3.326000000 ReY=1.557823028e+00 ImY=1.633353391e+01 int_u2=7.342553362e-32 max_v=3.415334568e-10 PE_avgRe=7.585320e-18 PE_avgIm=-1.369367e-18 PE_avgAbs=7.707934e-18 PE_KRe=1.431691e-11 PE_KIm=-1.160698e-12 PE_KAbs=1.436388e-11 EO_avgRe=1.433696e-17 EO_avgIm=-3.358282e-18 EO_avgAbs=1.472503e-17 EO_KRe=-1.059278e-11 EO_KIm=1.835274e-12 EO_KAbs=1.075059e-11 MB_avgRe=-9.573299e-18 MB_avgIm=1.728598e-18 MB_avgAbs=9.728109e-18 MB_KRe=-3.393030e-11 MB_KIm=4.997284e-12 MB_KAbs=3.429633e-11
+SWA6 f_GHz=3.327000000 ReY=2.713899387e+00 ImY=1.880530413e+01 int_u2=1.280124954e-31 max_v=4.496615826e-10 PE_avgRe=9.749926e-18 PE_avgIm=-2.384807e-18 PE_avgAbs=1.003735e-17 PE_KRe=1.614619e-11 PE_KIm=-2.018789e-12 PE_KAbs=1.627190e-11 EO_avgRe=1.970060e-17 EO_avgIm=-5.851748e-18 EO_avgAbs=2.055132e-17 EO_KRe=-8.268294e-12 EO_KIm=2.084764e-12 EO_KAbs=8.527070e-12 MB_avgRe=-1.230571e-17 MB_avgIm=3.010391e-18 MB_avgAbs=1.266858e-17 MB_KRe=-4.184006e-11 MB_KIm=8.702886e-12 MB_KAbs=4.273560e-11
+SWA6 f_GHz=3.328000000 ReY=5.746771546e+00 ImY=2.307654708e+01 int_u2=2.712698181e-31 max_v=6.526543624e-10 PE_avgRe=1.349264e-17 PE_avgIm=-5.047788e-18 PE_avgAbs=1.440595e-17 PE_KRe=1.930951e-11 PE_KIm=-4.269292e-12 PE_KAbs=1.977585e-11 EO_avgRe=2.896089e-17 EO_avgIm=-1.239919e-17 EO_avgAbs=3.150353e-17 EO_KRe=-3.787600e-12 EO_KIm=1.752153e-12 EO_KAbs=4.173243e-12 MB_avgRe=-1.703018e-17 MB_avgIm=6.371885e-18 MB_avgAbs=1.818318e-17 MB_KRe=-5.551524e-11 MB_KIm=1.842328e-11 MB_KAbs=5.849239e-11
+SWA6 f_GHz=3.328050000 ReY=6.010907323e+00 ImY=2.336314362e+01 int_u2=2.837482776e-31 max_v=6.673972081e-10 PE_avgRe=1.374381e-17 PE_avgIm=-5.279673e-18 PE_avgAbs=1.472302e-17 PE_KRe=1.952181e-11 PE_KIm=-4.465266e-12 PE_KAbs=2.002598e-11 EO_avgRe=2.958215e-17 EO_avgIm=-1.296964e-17 EO_avgAbs=3.230039e-17 EO_KRe=-3.459939e-12 EO_KIm=1.685182e-12 EO_KAbs=3.848508e-12 MB_avgRe=-1.734723e-17 MB_avgIm=6.664594e-18 MB_avgAbs=1.858341e-17 MB_KRe=-5.643299e-11 MB_KIm=1.926980e-11 MB_KAbs=5.963227e-11
+SWA6 f_GHz=3.328100000 ReY=6.292647220e+00 ImY=2.365801880e+01 int_u2=2.970586600e-31 max_v=6.827694091e-10 PE_avgRe=1.400224e-17 PE_avgIm=-5.527008e-18 PE_avgAbs=1.505359e-17 PE_KRe=1.974025e-11 PE_KIm=-4.674299e-12 PE_KAbs=2.028612e-11 EO_avgRe=3.022137e-17 EO_avgIm=-1.357814e-17 EO_avgAbs=3.313151e-17 EO_KRe=-3.118379e-12 EO_KIm=1.608936e-12 EO_KAbs=3.508983e-12 MB_avgRe=-1.767345e-17 MB_avgIm=6.976806e-18 MB_avgAbs=1.900070e-17 MB_KRe=-5.737725e-11 MB_KIm=2.017274e-11 MB_KAbs=6.082013e-11
+SWA6 f_GHz=3.328150000 ReY=6.593481394e+00 ImY=2.396123795e+01 int_u2=3.112714013e-31 max_v=6.988076479e-10 PE_avgRe=1.426798e-17 PE_avgIm=-5.791100e-18 PE_avgAbs=1.539844e-17 PE_KRe=1.996487e-11 PE_KIm=-4.897495e-12 PE_KAbs=2.055678e-11 EO_avgRe=3.087868e-17 EO_avgIm=-1.422792e-17 EO_avgAbs=3.399892e-17 EO_KRe=-2.762210e-12 EO_KIm=1.522347e-12 EO_KAbs=3.153941e-12 MB_avgRe=-1.800889e-17 MB_avgIm=7.310171e-18 MB_avgAbs=1.943602e-17 MB_KRe=-5.834824e-11 MB_KIm=2.113687e-11 MB_KAbs=6.205872e-11
+SWA6 f_GHz=3.328200000 ReY=6.915046042e+00 ImY=2.427281107e+01 int_u2=3.264638419e-31 max_v=7.155509974e-10 PE_avgRe=1.454104e-17 PE_avgIm=-6.073385e-18 PE_avgAbs=1.575842e-17 PE_KRe=2.019568e-11 PE_KIm=-5.136068e-12 PE_KAbs=2.083853e-11 EO_avgRe=3.155411e-17 EO_avgIm=-1.492250e-17 EO_avgAbs=3.490478e-17 EO_KRe=-2.390700e-12 EO_KIm=1.424216e-12 EO_KAbs=2.782775e-12 MB_avgRe=-1.835358e-17 MB_avgIm=7.666500e-18 MB_avgAbs=1.989043e-17 MB_KRe=-5.934599e-11 MB_KIm=2.216742e-11 MB_KAbs=6.335094e-11
+SWA6 f_GHz=3.328250000 ReY=7.259138311e+00 ImY=2.459267815e+01 int_u2=3.427209315e-31 max_v=7.330410360e-10 PE_avgRe=1.482137e-17 PE_avgIm=-6.375441e-18 PE_avgAbs=1.613441e-17 PE_KRe=2.043263e-11 PE_KIm=-5.391351e-12 PE_KAbs=2.113194e-11 EO_avgRe=3.224755e-17 EO_avgIm=-1.566579e-17 EO_avgAbs=3.585138e-17 EO_KRe=-2.003095e-12 EO_KIm=1.313195e-12 EO_KAbs=2.395176e-12 MB_avgRe=-1.870744e-17 MB_avgIm=8.047787e-18 MB_avgAbs=2.036505e-17 MB_KRe=-6.037031e-11 MB_KIm=2.327017e-11 MB_KAbs=6.469989e-11
+SWA6 f_GHz=3.328300000 ReY=7.627732431e+00 ImY=2.492069123e+01 int_u2=3.601359929e-31 max_v=7.513219501e-10 PE_avgRe=1.510883e-17 PE_avgIm=-6.698999e-18 PE_avgAbs=1.652735e-17 PE_KRe=2.067562e-11 PE_KIm=-5.664807e-12 PE_KAbs=2.143761e-11 EO_avgRe=3.295867e-17 EO_avgIm=-1.646204e-17 EO_avgAbs=3.684118e-17 EO_KRe=-1.598627e-12 EO_KIm=1.187767e-12 EO_KAbs=1.991582e-12 MB_avgRe=-1.907031e-17 MB_avgIm=8.456215e-18 MB_avgAbs=2.086107e-17 MB_KRe=-6.142073e-11 MB_KIm=2.445144e-11 MB_KAbs=6.610884e-11
+SWA6 f_GHz=3.328350000 ReY=8.022997044e+00 ImY=2.525659256e+01 int_u2=3.788115407e-31 max_v=7.704406165e-10 PE_avgRe=1.540321e-17 PE_avgIm=-7.045962e-18 PE_avgAbs=1.693825e-17 PE_KRe=2.092445e-11 PE_KIm=-5.958046e-12 PE_KAbs=2.175617e-11 EO_avgRe=3.368691e-17 EO_avgIm=-1.731594e-17 EO_avgAbs=3.787677e-17 EO_KRe=-1.176526e-12 EO_KIm=1.046220e-12 EO_KAbs=1.574417e-12 MB_avgRe=-1.944190e-17 MB_avgIm=8.894188e-18 MB_avgAbs=2.137976e-17 MB_KRe=-6.249640e-11 MB_KIm=2.571817e-11 MB_KAbs=6.758125e-11
+SWA6 f_GHz=3.328400000 ReY=8.447313574e+00 ImY=2.559998805e+01 int_u2=3.988601505e-31 max_v=7.904466548e-10 PE_avgRe=1.570414e-17 PE_avgIm=-7.418420e-18 PE_avgAbs=1.736816e-17 PE_KRe=2.117883e-11 PE_KIm=-6.272833e-12 PE_KAbs=2.208826e-11 EO_avgRe=3.443145e-17 EO_avgIm=-1.823266e-17 EO_avgAbs=3.896093e-17 EO_KRe=-7.360233e-13 EO_KIm=8.866298e-13 EO_KAbs=1.152321e-12 MB_avgRe=-1.982178e-17 MB_avgIm=9.364343e-18 MB_avgAbs=2.192245e-17 MB_KRe=-6.359608e-11 MB_KIm=2.707801e-11 MB_KAbs=6.912077e-11
+SWA6 f_GHz=3.328450000 ReY=8.903295401e+00 ImY=2.595031502e+01 int_u2=4.204053666e-31 max_v=8.113924363e-10 PE_avgRe=1.601115e-17 PE_avgIm=-7.818664e-18 PE_avgAbs=1.781820e-17 PE_KRe=2.143834e-11 PE_KIm=-6.611106e-12 PE_KAbs=2.243455e-11 EO_avgRe=3.519106e-17 EO_avgIm=-1.921784e-17 EO_avgAbs=4.009658e-17 EO_KRe=-2.763741e-13 EO_KIm=7.068237e-13 EO_KAbs=7.589350e-13 MB_avgRe=-2.020931e-17 MB_avgIm=9.869573e-18 MB_avgAbs=2.249055e-17 MB_KRe=-6.471796e-11 MB_KIm=2.853931e-11 MB_KAbs=7.073123e-11
+SWA6 f_GHz=3.328500000 ReY=9.393807448e+00 ImY=2.630680303e+01 int_u2=4.435826280e-31 max_v=8.333330336e-10 PE_avgRe=1.632355e-17 PE_avgIm=-8.249211e-18 PE_avgAbs=1.828955e-17 PE_KRe=2.170241e-11 PE_KIm=-6.974990e-12 PE_KAbs=2.279572e-11 EO_avgRe=3.596408e-17 EO_avgIm=-2.027767e-17 EO_avgAbs=4.128679e-17 EO_KRe=2.031261e-13 EO_KIm=5.043527e-13 EO_KAbs=5.437203e-13 MB_avgRe=-2.060366e-17 MB_avgIm=1.041305e-17 MB_avgAbs=2.308555e-17 MB_KRe=-6.585957e-11 MB_KIm=3.011126e-11 MB_KAbs=7.241665e-11
+SWA6 f_GHz=3.328550000 ReY=9.921985517e+00 ImY=2.666842662e+01 int_u2=4.685401840e-31 max_v=8.563260865e-10 PE_avgRe=1.664044e-17 PE_avgIm=-8.712807e-18 PE_avgAbs=1.878343e-17 PE_KRe=2.197028e-11 PE_KIm=-7.366810e-12 PE_KAbs=2.317246e-11 EO_avgRe=3.674832e-17 EO_avgIm=-2.141895e-17 EO_avgAbs=4.253482e-17 EO_KRe=7.031141e-13 EO_KIm=2.764554e-13 EO_KAbs=7.555111e-13 MB_avgRe=-2.100367e-17 MB_avgIm=1.099825e-17 MB_avgAbs=2.370898e-17 MB_KRe=-6.701761e-11 MB_KIm=3.180391e-11 MB_KAbs=7.418119e-11
+SWA6 f_GHz=3.328600000 ReY=1.049125445e+01 ImY=2.703384810e+01 int_u2=4.954399538e-31 max_v=8.804315578e-10 PE_avgRe=1.696064e-17 PE_avgIm=-9.212459e-18 PE_avgAbs=1.930110e-17 PE_KRe=2.224095e-11 PE_KIm=-7.789105e-12 PE_KAbs=2.356545e-11 EO_avgRe=3.754088e-17 EO_avgIm=-2.264909e-17 EO_avgAbs=4.384403e-17 EO_KRe=1.224126e-12 EO_KIm=2.001919e-14 EO_KAbs=1.224289e-12 MB_avgRe=-2.140786e-17 MB_avgIm=1.162897e-17 MB_avgAbs=2.436246e-17 MB_KRe=-6.818781e-11 MB_KIm=3.362824e-11 MB_KAbs=7.602918e-11
+SWA6 f_GHz=3.328650000 ReY=1.110534374e+01 ImY=2.740134872e+01 int_u2=5.244582657e-31 max_v=9.057113409e-10 PE_avgRe=1.728265e-17 PE_avgIm=-9.751441e-18 PE_avgAbs=1.984390e-17 PE_KRe=2.251316e-11 PE_KIm=-8.244642e-12 PE_KAbs=2.397533e-11 EO_avgRe=3.833806e-17 EO_avgIm=-2.397615e-17 EO_avgAbs=4.521795e-17 EO_KRe=1.766551e-12 EO_KIm=-2.684616e-13 EO_KAbs=1.786833e-12 MB_avgRe=-2.181434e-17 MB_avgIm=1.230933e-17 MB_avgAbs=2.504765e-17 MB_KRe=-6.936465e-11 MB_KIm=3.559619e-11 MB_KAbs=7.796501e-11
+SWA6 f_GHz=3.328700000 ReY=1.176829857e+01 ImY=2.776874615e+01 int_u2=5.557863822e-31 max_v=9.322286719e-10 PE_avgRe=1.760454e-17 PE_avgIm=-1.033330e-17 PE_avgAbs=2.041316e-17 PE_KRe=2.278527e-11 PE_KIm=-8.736420e-12 PE_KAbs=2.440274e-11 EO_avgRe=3.913515e-17 EO_avgIm=-2.540889e-17 EO_avgAbs=4.666017e-17 EO_KRe=2.330579e-12 EO_KIm=-5.929304e-13 EO_KAbs=2.404822e-12 MB_avgRe=-2.222067e-17 MB_avgIm=1.304381e-17 MB_avgAbs=2.576624e-17 MB_KRe=-7.054114e-11 MB_KIm=3.772073e-11 MB_KAbs=7.999316e-11
+SWA6 f_GHz=3.328750000 ReY=1.248448365e+01 ImY=2.813329590e+01 int_u2=5.896306826e-31 max_v=9.600472883e-10 PE_avgRe=1.792392e-17 PE_avgIm=-1.096186e-17 PE_avgAbs=2.101022e-17 PE_KRe=2.305526e-11 PE_KIm=-9.267674e-12 PE_KAbs=2.484824e-11 EO_avgRe=3.992622e-17 EO_avgIm=-2.695676e-17 EO_avgAbs=4.817437e-17 EO_KRe=2.916129e-12 EO_KIm=-9.578155e-13 EO_KAbs=3.069400e-12 MB_avgRe=-2.262381e-17 MB_avgIm=1.383724e-17 MB_avgAbs=2.651992e-17 MB_KRe=-7.170848e-11 MB_KIm=4.001583e-11 MB_KAbs=8.211804e-11
+SWA6 f_GHz=3.328800000 ReY=1.325857602e+01 ImY=2.849157436e+01 int_u2=6.262123248e-31 max_v=9.892302574e-10 PE_avgRe=1.823776e-17 PE_avgIm=-1.164123e-17 PE_avgAbs=2.163641e-17 PE_KRe=2.332058e-11 PE_KIm=-9.841874e-12 PE_KAbs=2.531229e-11 EO_avgRe=4.070389e-17 EO_avgIm=-2.862988e-17 EO_avgAbs=4.976421e-17 EO_KRe=3.522756e-12 EO_KIm=-1.368076e-12 EO_KAbs=3.779079e-12 MB_avgRe=-2.301999e-17 MB_avgIm=1.469481e-17 MB_avgAbs=2.731039e-17 MB_KRe=-7.285570e-11 MB_KIm=4.249649e-11 MB_KAbs=8.434397e-11
+SWA6 f_GHz=3.328850000 ReY=1.409554168e+01 ImY=2.883934110e+01 int_u2=6.657661458e-31 max_v=1.019838385e-09 PE_avgRe=1.854236e-17 PE_avgIm=-1.237576e-17 PE_avgAbs=2.229301e-17 PE_KRe=2.357809e-11 PE_KIm=-1.046270e-11 PE_KAbs=2.579524e-11 EO_avgRe=4.145899e-17 EO_avgIm=-3.043899e-17 EO_avgAbs=5.143326e-17 EO_KRe=4.149545e-12 EO_KIm=-1.829245e-12 EO_KAbs=4.534850e-12 MB_avgRe=-2.340448e-17 MB_avgIm=1.562201e-17 MB_avgAbs=2.813924e-17 MB_KRe=-7.396921e-11 MB_KIm=4.517862e-11 MB_KAbs=8.667497e-11
+SWA6 f_GHz=3.328900000 ReY=1.500058937e+01 ImY=2.917137837e+01 int_u2=7.085384797e-31 max_v=1.051928086e-09 PE_avgRe=1.883312e-17 PE_avgIm=-1.317002e-17 PE_avgAbs=2.298121e-17 PE_KRe=2.382391e-11 PE_KIm=-1.113401e-11 PE_KAbs=2.629724e-11 EO_avgRe=4.218026e-17 EO_avgIm=-3.239539e-17 EO_avgAbs=5.318492e-17 EO_KRe=4.794969e-12 EO_KIm=-2.347469e-12 EO_KAbs=5.338758e-12 MB_avgRe=-2.377152e-17 MB_avgIm=1.662462e-17 MB_avgAbs=2.900798e-17 MB_KRe=-7.503228e-11 MB_KIm=4.807890e-11 MB_KAbs=8.911467e-11
+SWA6 f_GHz=3.328950000 ReY=1.597909247e+01 ImY=2.948130663e+01 int_u2=7.547834715e-31 max_v=1.085548587e-09 PE_avgRe=1.910446e-17 PE_avgIm=-1.402873e-17 PE_avgAbs=2.370202e-17 PE_KRe=2.405332e-11 PE_KIm=-1.185980e-11 PE_KAbs=2.681822e-11 EO_avgRe=4.285392e-17 EO_avgIm=-3.451070e-17 EO_avgAbs=5.502224e-17 EO_KRe=5.456720e-12 EO_KIm=-2.929532e-12 EO_KAbs=6.193379e-12 MB_avgRe=-2.411402e-17 MB_avgIm=1.770856e-17 MB_avgAbs=2.991788e-17 MB_KRe=-7.602448e-11 MB_KIm=5.121456e-11 MB_KAbs=9.166598e-11
+SWA6 f_GHz=3.329000000 ReY=1.703646770e+01 ImY=2.976137623e+01 int_u2=8.047573454e-31 max_v=1.120738295e-09 PE_avgRe=1.934956e-17 PE_avgIm=-1.495663e-17 PE_avgAbs=2.445621e-17 PE_KRe=2.426055e-11 PE_KIm=-1.264407e-11 PE_KAbs=2.735776e-11 EO_avgRe=4.346322e-17 EO_avgIm=-3.679667e-17 EO_avgAbs=5.694775e-17 EO_KRe=6.131500e-12 EO_KIm=-3.582854e-12 EO_KAbs=7.101558e-12 MB_avgRe=-2.442342e-17 MB_avgIm=1.887985e-17 MB_avgAbs=3.086992e-17 MB_KRe=-7.692096e-11 MB_KIm=5.460294e-11 MB_KAbs=9.433088e-11
+SWA6 f_GHz=3.329000000 ReY=1.703646770e+01 ImY=2.976137623e+01 int_u2=8.047573454e-31 max_v=1.120738295e-09 PE_avgRe=1.934956e-17 PE_avgIm=-1.495663e-17 PE_avgAbs=2.445621e-17 PE_KRe=2.426055e-11 PE_KIm=-1.264407e-11 PE_KAbs=2.735776e-11 EO_avgRe=4.346322e-17 EO_avgIm=-3.679667e-17 EO_avgAbs=5.694775e-17 EO_KRe=6.131500e-12 EO_KIm=-3.582854e-12 EO_KAbs=7.101558e-12 MB_avgRe=-2.442342e-17 MB_avgIm=1.887985e-17 MB_avgAbs=3.086992e-17 MB_KRe=-7.692096e-11 MB_KIm=5.460294e-11 MB_KAbs=9.433088e-11
+SWA6 f_GHz=3.329050000 ReY=1.817799597e+01 ImY=3.000223824e+01 int_u2=8.587099468e-31 max_v=1.157520152e-09 PE_avgRe=1.956023e-17 PE_avgIm=-1.595835e-17 PE_avgAbs=2.524423e-17 PE_KRe=2.443869e-11 PE_KIm=-1.349074e-11 PE_KAbs=2.791504e-11 EO_avgRe=4.398795e-17 EO_avgIm=-3.926474e-17 EO_avgAbs=5.896320e-17 EO_KRe=6.814775e-12 EO_KIm=-4.315468e-12 EO_KAbs=8.066252e-12 MB_avgRe=-2.468934e-17 MB_avgIm=2.014433e-17 MB_avgAbs=3.186468e-17 MB_KRe=-7.769177e-11 MB_KIm=5.826097e-11 MB_KAbs=9.711000e-11
+SWA6 f_GHz=3.329100000 ReY=1.940856817e+01 ImY=3.019270110e+01 int_u2=9.168727283e-31 max_v=1.195895783e-09 PE_avgRe=1.972663e-17 PE_avgIm=-1.703817e-17 PE_avgAbs=2.606605e-17 PE_KRe=2.457942e-11 PE_KIm=-1.440344e-11 PE_KAbs=2.848872e-11 EO_avgRe=4.440392e-17 EO_avgIm=-4.192552e-17 EO_avgAbs=6.106928e-17 EO_KRe=7.500485e-12 EO_KIm=-5.135937e-12 EO_KAbs=9.090386e-12 MB_avgRe=-2.489939e-17 MB_avgIm=2.150740e-17 MB_avgAbs=3.290210e-17 MB_KRe=-7.830105e-11 MB_KIm=6.220430e-11 MB_KAbs=1.000021e-10
+SWA6 f_GHz=3.329150000 ReY=2.073233518e+01 ImY=3.031948631e+01 int_u2=9.794422124e-31 max_v=1.235838226e-09 PE_avgRe=1.983712e-17 PE_avgIm=-1.819975e-17 PE_avgAbs=2.692103e-17 PE_KRe=2.467291e-11 PE_KIm=-1.538523e-11 PE_KAbs=2.907676e-11 EO_avgRe=4.468244e-17 EO_avgIm=-4.478801e-17 EO_avgAbs=6.326521e-17 EO_KRe=8.180703e-12 EO_KIm=-6.053205e-12 EO_KAbs=1.017670e-11 MB_avgRe=-2.503887e-17 MB_avgIm=2.297366e-17 MB_avgAbs=3.398138e-17 MB_KRe=-7.870623e-11 MB_KIm=6.644624e-11 MB_KAbs=1.030038e-10
+SWA6 f_GHz=3.329200000 ReY=2.215223969e+01 ImY=3.036700510e+01 int_u2=1.046557869e-30 max_v=1.277283093e-09 PE_avgRe=1.987802e-17 PE_avgIm=-1.944564e-17 PE_avgAbs=2.780771e-17 PE_KRe=2.470757e-11 PE_KIm=-1.643831e-11 PE_KAbs=2.967629e-11 EO_avgRe=4.478979e-17 EO_avgIm=-4.785864e-17 EO_avgAbs=6.554826e-17 EO_KRe=8.845269e-12 EO_KIm=-7.076352e-12 EO_KAbs=1.132756e-11 MB_avgRe=-2.509050e-17 MB_avgIm=2.454636e-17 MB_avgAbs=3.510067e-17 MB_KRe=-7.885737e-11 MB_KIm=7.099621e-11 MB_KAbs=1.061082e-10
+SWA6 f_GHz=3.329250000 ReY=2.366940785e+01 ImY=3.031719007e+01 int_u2=1.118273362e-30 max_v=1.320118052e-09 PE_avgRe=1.983347e-17 PE_avgIm=-2.077684e-17 PE_avgAbs=2.872357e-17 PE_KRe=2.467003e-11 PE_KIm=-1.756349e-11 PE_KAbs=3.028343e-11 EO_avgRe=4.468691e-17 EO_avgIm=-5.113987e-17 EO_avgAbs=6.791322e-17 EO_KRe=9.481393e-12 EO_KIm=-8.214222e-12 EO_KAbs=1.254473e-11 MB_avgRe=-2.503426e-17 MB_avgIm=2.622673e-17 MB_avgAbs=3.625680e-17 MB_KRe=-7.869657e-11 MB_KIm=7.585782e-11 MB_KAbs=1.093049e-10
+SWA6 f_GHz=3.329300000 ReY=2.528238283e+01 ImY=3.014943163e+01 int_u2=1.194520320e-30 max_v=1.364170666e-09 PE_avgRe=1.968539e-17 PE_avgIm=-2.219204e-17 PE_avgAbs=2.966482e-17 PE_KRe=2.454498e-11 PE_KIm=-1.875969e-11 PE_KAbs=3.089308e-11 EO_avgRe=4.432922e-17 EO_avgIm=-5.462862e-17 EO_avgAbs=7.035172e-17 EO_KRe=1.007327e-11 EO_KIm=-9.474886e-12 EO_KAbs=1.382911e-11 MB_avgRe=-2.484735e-17 MB_avgIm=2.801316e-17 MB_avgAbs=3.744499e-17 MB_KRe=-7.815779e-11 MB_KIm=8.102637e-11 MB_KAbs=1.125785e-10
+SWA6 f_GHz=3.329350000 ReY=2.698619422e+01 ImY=2.984068757e+01 int_u2=1.275064350e-30 max_v=1.409194888e-09 PE_avgRe=1.941357e-17 PE_avgIm=-2.368689e-17 PE_avgAbs=3.062606e-17 PE_KRe=2.431535e-11 PE_KIm=-2.002322e-11 PE_KAbs=3.149866e-11 EO_avgRe=4.366687e-17 EO_avgIm=-5.831419e-17 EO_avgAbs=7.285150e-17 EO_KRe=1.060175e-11 EO_KIm=-1.086491e-11 EO_KAbs=1.518036e-11 MB_avgRe=-2.450422e-17 MB_avgIm=2.990011e-17 MB_avgAbs=3.865842e-17 MB_KRe=-7.716720e-11 MB_KIm=8.648594e-11 MB_KAbs=1.159077e-10
+SWA6 f_GHz=3.329400000 ReY=2.877127904e+01 ImY=2.936585361e+01 int_u2=1.359454026e-30 max_v=1.454856830e-09 PE_avgRe=1.899598e-17 PE_avgIm=-2.525298e-17 PE_avgAbs=3.160000e-17 PE_KRe=2.396252e-11 PE_KIm=-2.134698e-11 PE_KAbs=3.209199e-11 EO_avgRe=4.264554e-17 EO_avgIm=-6.217599e-17 EO_avgAbs=7.539559e-17 EO_KRe=1.104412e-11 EO_KIm=-1.238840e-11 EO_KAbs=1.659654e-11 MB_avgRe=-2.397710e-17 MB_avgIm=3.187699e-17 MB_avgAbs=3.988789e-17 MB_KRe=-7.564435e-11 MB_KIm=9.220587e-11 MB_KAbs=1.192644e-10
+SWA6 f_GHz=3.329450000 ReY=3.062230600e+01 ImY=2.869849828e+01 int_u2=1.446965291e-30 max_v=1.500720982e-09 PE_avgRe=1.840944e-17 PE_avgIm=-2.687685e-17 PE_avgAbs=3.257718e-17 PE_KRe=2.346689e-11 PE_KIm=-2.271959e-11 PE_KAbs=3.266305e-11 EO_avgRe=4.120805e-17 EO_avgIm=-6.618091e-17 EO_avgAbs=7.796163e-17 EO_KRe=1.137413e-11 EO_KIm=-1.404581e-11 EO_KAbs=1.807362e-11 MB_avgRe=-2.323671e-17 MB_avgIm=3.392681e-17 MB_avgAbs=4.112144e-17 MB_KRe=-7.350455e-11 MB_KIm=9.813703e-11 MB_KAbs=1.226124e-10
+SWA6 f_GHz=3.329500000 ReY=3.251700720e+01 ImY=2.781206999e+01 int_u2=1.536546208e-30 max_v=1.546238666e-09 PE_avgRe=1.763065e-17 PE_avgIm=-2.853894e-17 PE_avgAbs=3.354566e-17 PE_KRe=2.280877e-11 PE_KIm=-2.412453e-11 PE_KAbs=3.319990e-11 EO_avgRe=3.929689e-17 EO_avgIm=-7.028088e-17 EO_avgAbs=8.052110e-17 EO_KRe=1.156239e-11 EO_KIm=-1.583253e-11 EO_KAbs=1.960505e-11 MB_avgRe=-2.225364e-17 MB_avgIm=3.602487e-17 MB_avgAbs=4.234402e-17 MB_KRe=-7.066274e-11 MB_KIm=1.042080e-10 MB_KAbs=1.259069e-10
+SWA6 f_GHz=3.329550000 ReY=3.442518879e+01 ImY=2.668166498e+01 int_u2=1.626770155e-30 max_v=1.590741272e-09 PE_avgRe=1.663779e-17 PE_avgIm=-3.021275e-17 PE_avgAbs=3.449096e-17 PE_KRe=2.196971e-11 PE_KIm=-2.553940e-11 PE_KAbs=3.368871e-11 EO_avgRe=3.685813e-17 EO_avgIm=-7.441066e-17 EO_avgAbs=8.303896e-17 EO_KRe=1.157717e-11 EO_KIm=-1.773741e-11 EO_KAbs=2.118128e-11 MB_avgRe=-2.100035e-17 MB_avgIm=3.813774e-17 MB_avgAbs=4.353736e-17 MB_KRe=-6.703913e-11 MB_KIm=1.103221e-10 MB_KAbs=1.290938e-10
+SWA6 f_GHz=3.329600000 ReY=3.630816549e+01 ImY=2.528638829e+01 int_u2=1.715809034e-30 max_v=1.633441467e-09 PE_avgRe=1.541253e-17 PE_avgIm=-3.186434e-17 PE_avgAbs=3.539608e-17 PE_KRe=2.093421e-11 PE_KIm=-2.693551e-11 PE_KAbs=3.411396e-11 EO_avgRe=3.384648e-17 EO_avgIm=-7.848666e-17 EO_avgAbs=8.547362e-17 EO_KRe=1.138595e-11 EO_KIm=-1.974126e-11 EO_KAbs=2.278941e-11 MB_avgRe=-1.945370e-17 MB_avgIm=4.022254e-17 MB_avgAbs=4.467997e-17 MB_KRe=-6.256676e-11 MB_KIm=1.163554e-10 MB_KAbs=1.321104e-10
+SWA6 f_GHz=3.329650000 ReY=3.811892411e+01 ImY=2.361223457e+01 int_u2=1.801440936e-30 max_v=1.673445917e-09 PE_avgRe=1.394260e-17 PE_avgIm=-3.345245e-17 PE_avgAbs=3.624172e-17 PE_KRe=1.969190e-11 PE_KIm=-2.827797e-11 PE_KAbs=3.445888e-11 EO_avgRe=3.023152e-17 EO_avgIm=-8.240722e-17 EO_avgAbs=8.777753e-17 EO_KRe=1.095757e-11 EO_KIm=-2.181571e-11 EO_KAbs=2.441298e-11 MB_avgRe=-1.759821e-17 MB_avgIm=4.222722e-17 MB_avgAbs=4.574751e-17 MB_KRe=-5.720079e-11 MB_KIm=1.221570e-10 MB_KAbs=1.348861e-10
+SWA6 f_GHz=3.329700000 ReY=3.980333491e+01 ImY=2.165525836e+01 int_u2=1.881107323e-30 max_v=1.709782770e-09 PE_avgRe=1.222457e-17 PE_avgIm=-3.492956e-17 PE_avgAbs=3.700695e-17 PE_KRe=1.823988e-11 PE_KIm=-2.952665e-11 PE_KAbs=3.470615e-11 EO_avgRe=2.600457e-17 EO_avgIm=-8.605531e-17 EO_avgAbs=8.989858e-17 EO_KRe=1.026510e-11 EO_KIm=-2.392271e-11 EO_KAbs=2.603206e-11 MB_avgRe=-1.542953e-17 MB_avgIm=4.409179e-17 MB_avgAbs=4.671356e-17 MB_KRe=-5.092860e-11 MB_KIm=1.275537e-10 MB_KAbs=1.373451e-10
+SWA6 f_GHz=3.329750000 ReY=4.130265932e+01 ImY=1.942461490e+01 int_u2=1.952031491e-30 max_v=1.741445777e-09 PE_avgRe=1.026650e-17 PE_avgIm=-3.624416e-17 PE_avgAbs=3.767015e-17 PE_KRe=1.658495e-11 PE_KIm=-3.063799e-11 PE_KAbs=3.483887e-11 EO_avgRe=2.118528e-17 EO_avgIm=-8.930386e-17 EO_avgAbs=9.178233e-17 EO_KRe=9.289228e-12 EO_KIm=-2.601497e-11 EO_KAbs=2.762370e-11 MB_avgRe=-1.295785e-17 MB_avgIm=4.575121e-17 MB_avgAbs=4.755081e-17 MB_KRe=-4.377955e-11 MB_KIm=1.323572e-10 MB_KAbs=1.394098e-10
+SWA6 f_GHz=3.329800000 ReY=4.255741484e+01 ImY=1.694488270e+01 int_u2=2.011401201e-30 max_v=1.767454377e-09 PE_avgRe=8.089971e-18 PE_avgIm=-3.734406e-17 PE_avgAbs=3.821029e-17 PE_KRe=1.474535e-11 PE_KIm=-3.156788e-11 PE_KAbs=3.484187e-11 EO_avgRe=1.582663e-17 EO_avgIm=-9.202417e-17 EO_avgAbs=9.337521e-17 EO_KRe=8.021639e-12 EO_KIm=-2.803786e-11 EO_KAbs=2.916279e-11 MB_avgRe=-1.021041e-17 MB_avgIm=4.713962e-17 MB_avgAbs=4.823273e-17 MB_KRe=-3.583242e-11 MB_KIm=1.363769e-10 MB_KAbs=1.410057e-10
+SWA6 f_GHz=3.329850000 ReY=4.351235636e+01 ImY=1.425700423e+01 int_u2=2.056604119e-30 max_v=1.786925471e-09 PE_avgRe=5.730938e-18 PE_avgIm=-3.818081e-17 PE_avgAbs=3.860852e-17 PE_KRe=1.275146e-11 PE_KIm=-3.227535e-11 PE_KAbs=3.470300e-11 EO_avgRe=1.001703e-17 EO_avgIm=-9.409666e-17 EO_avgAbs=9.462834e-17 EO_KRe=6.467939e-12 EO_KIm=-2.993257e-11 EO_KAbs=3.062340e-11 MB_avgRe=-7.232592e-18 MB_avgIm=4.819585e-17 MB_avgAbs=4.873551e-17 MB_KRe=-2.721844e-11 MB_KIm=1.394357e-10 MB_KAbs=1.420675e-10
+SWA6 f_GHz=3.329900000 ReY=4.412197362e+01 ImY=1.141728297e+01 int_u2=2.085487699e-30 max_v=1.799148660e-09 PE_avgRe=3.238820e-18 PE_avgIm=-3.871447e-17 PE_avgAbs=3.884972e-17 PE_KRe=1.064506e-11 PE_KIm=-3.272667e-11 PE_KAbs=3.441442e-11 EO_avgRe=3.878102e-18 EO_avgIm=-9.542274e-17 EO_avgAbs=9.550151e-17 EO_KRe=4.649350e-12 EO_KIm=-3.164064e-11 EO_KAbs=3.198041e-11 MB_avgRe=-4.086781e-18 MB_avgIm=4.886950e-17 MB_avgAbs=4.904008e-17 MB_KRe=-1.811804e-11 MB_KIm=1.413880e-10 MB_KAbs=1.425441e-10
+SWA6 f_GHz=3.329950000 ReY=4.435560462e+01 ImY=8.494191152e+00 int_u2=2.096600956e-30 max_v=1.803653810e-09 PE_avgRe=6.737128e-19 PE_avgIm=-3.891821e-17 PE_avgAbs=3.892404e-17 PE_KRe=8.476936e-12 PE_KIm=-3.289913e-11 PE_KAbs=3.397368e-11 EO_avgRe=-2.442143e-18 EO_avgIm=-9.593592e-17 EO_avgAbs=9.596699e-17 EO_KRe=2.602632e-12 EO_KIm=-3.310915e-11 EO_KAbs=3.321128e-11 MB_avgRe=-8.488355e-19 MB_avgIm=4.912668e-17 MB_avgAbs=4.913401e-17 MB_KRe=-8.750649e-12 MB_KIm=1.421354e-10 MB_KAbs=1.424045e-10
+SWA6 f_GHz=3.330000000 ReY=4.420116295e+01 ImY=5.563226024e+00 int_u2=2.089370778e-30 max_v=1.800259155e-09 PE_avgRe=-1.898135e-18 PE_avgIm=-3.878144e-17 PE_avgAbs=3.882786e-17 PE_KRe=6.303078e-12 PE_KIm=-3.278377e-11 PE_KAbs=3.338419e-11 EO_avgRe=-8.780466e-18 EO_avgIm=-9.560986e-17 EO_avgAbs=9.601219e-17 EO_KRe=3.779555e-13 EO_KIm=-3.429571e-11 EO_KAbs=3.429779e-11 MB_avgRe=2.397619e-18 MB_avgIm=4.895403e-17 MB_avgAbs=4.901271e-17 MB_KRe=6.418033e-13 MB_KIm=1.416392e-10 MB_KAbs=1.416407e-10
+SWA6 f_GHz=3.330000000 ReY=4.420116295e+01 ImY=5.563226024e+00 int_u2=2.089370778e-30 max_v=1.800259155e-09 PE_avgRe=-1.898135e-18 PE_avgIm=-3.878144e-17 PE_avgAbs=3.882786e-17 PE_KRe=6.303078e-12 PE_KIm=-3.278377e-11 PE_KAbs=3.338419e-11 EO_avgRe=-8.780466e-18 EO_avgIm=-9.560986e-17 EO_avgAbs=9.601219e-17 EO_KRe=3.779555e-13 EO_KIm=-3.429571e-11 EO_KAbs=3.429779e-11 MB_avgRe=2.397619e-18 MB_avgIm=4.895403e-17 MB_avgAbs=4.901271e-17 MB_KRe=6.418033e-13 MB_KIm=1.416392e-10 MB_KAbs=1.416407e-10
+SWA6 f_GHz=3.330050000 ReY=4.366666746e+01 ImY=2.700560075e+00 int_u2=2.064174384e-30 max_v=1.789090682e-09 PE_avgRe=-4.409893e-18 PE_avgIm=-3.831123e-17 PE_avgAbs=3.856420e-17 PE_KRe=4.179980e-12 PE_KIm=-3.238656e-11 PE_KAbs=3.265520e-11 EO_avgRe=-1.497211e-17 EO_avgIm=-9.446169e-17 EO_avgAbs=9.564086e-17 EO_KRe=-1.965095e-12 EO_KIm=-3.517242e-11 EO_KAbs=3.522728e-11 MB_avgRe=5.568221e-18 MB_avgIm=4.836048e-17 MB_avgAbs=4.867999e-17 MB_KRe=9.815233e-12 MB_KIm=1.399252e-10 MB_KAbs=1.402690e-10
+SWA6 f_GHz=3.330100000 ReY=4.277922325e+01 ImY=-2.342756903e-02 int_u2=2.022291310e-30 max_v=1.770568882e-09 PE_avgRe=-6.799817e-18 PE_avgIm=-3.753138e-17 PE_avgAbs=3.814239e-17 PE_KRe=2.159830e-12 PE_KIm=-3.172764e-11 PE_KAbs=3.180107e-11 EO_avgRe=-2.086480e-17 EO_avgIm=-9.254984e-17 EO_avgAbs=9.487261e-17 EO_KRe=-4.362729e-12 EO_KIm=-3.572801e-11 EO_KAbs=3.599339e-11 MB_avgRe=8.585032e-18 MB_avgIm=4.737607e-17 MB_avgAbs=4.814764e-17 MB_KRe=1.854413e-11 MB_KIm=1.370803e-10 MB_KAbs=1.383289e-10
+SWA6 f_GHz=3.330150000 ReY=4.158168905e+01 ImY=-2.549616498e+00 int_u2=1.965746012e-30 max_v=1.745365529e-09 PE_avgRe=-9.016052e-18 PE_avgIm=-3.647953e-17 PE_avgAbs=3.757719e-17 PE_KRe=2.864624e-13 PE_KIm=-3.083879e-11 PE_KAbs=3.084012e-11 EO_avgRe=-2.633057e-17 EO_avgIm=-8.996684e-17 EO_avgAbs=9.374076e-17 EO_KRe=-6.752446e-12 EO_KIm=-3.596775e-11 EO_KAbs=3.659610e-11 MB_avgRe=1.138260e-17 MB_avgIm=4.604832e-17 MB_avgAbs=4.743429e-17 MB_KRe=2.663906e-11 MB_KIm=1.332418e-10 MB_KAbs=1.358787e-10
+SWA6 f_GHz=3.330200000 ReY=4.012776727e+01 ImY=-4.833772620e+00 int_u2=1.897075867e-30 max_v=1.714338906e-09 PE_avgRe=-1.101981e-17 PE_avgIm=-3.520282e-17 PE_avgAbs=3.688733e-17 PE_KRe=-1.407332e-12 PE_KIm=-2.975987e-11 PE_KAbs=2.979312e-11 EO_avgRe=-3.127359e-17 EO_avgIm=-8.682871e-17 EO_avgAbs=9.228901e-17 EO_KRe=-9.077884e-12 EO_KIm=-3.591154e-11 EO_KAbs=3.704115e-11 MB_avgRe=1.391194e-17 MB_avgIm=4.443673e-17 MB_avgAbs=4.656356e-17 MB_KRe=3.395832e-11 MB_KIm=1.285819e-10 MB_KAbs=1.329905e-10
+SWA6 f_GHz=3.330250000 ReY=3.847650490e+01 ImY=-6.847992360e+00 int_u2=1.819071273e-30 max_v=1.678459027e-09 PE_avgRe=-1.278663e-17 PE_avgIm=-3.375309e-17 PE_avgAbs=3.609389e-17 PE_KRe=-2.900876e-12 PE_KIm=-2.853466e-11 PE_KAbs=2.868173e-11 EO_avgRe=-3.563338e-17 EO_avgIm=-8.326307e-17 EO_avgAbs=9.056752e-17 EO_KRe=-1.129233e-11 EO_KIm=-3.559042e-11 EO_KAbs=3.733892e-11 MB_avgRe=1.614221e-17 MB_avgIm=4.260672e-17 MB_avgAbs=4.556208e-17 MB_KRe=4.041250e-11 MB_KIm=1.232897e-10 MB_KAbs=1.297441e-10
+SWA6 f_GHz=3.330300000 ReY=3.668714660e+01 ImY=-8.580120542e+00 int_u2=1.734532345e-30 max_v=1.638734354e-09 PE_avgRe=-1.430587e-17 PE_avgIm=-3.218230e-17 PE_avgAbs=3.521872e-17 PE_KRe=-4.185170e-12 PE_KIm=-2.720711e-11 PE_KAbs=2.752713e-11 EO_avgRe=-3.938347e-17 EO_avgIm=-7.939802e-17 EO_avgAbs=8.862902e-17 EO_KRe=-1.336054e-11 EO_KIm=-3.504257e-11 EO_KAbs=3.750315e-11 MB_avgRe=1.805996e-17 MB_avgIm=4.062390e-17 MB_avgAbs=4.445744e-17 MB_KRe=4.596268e-11 MB_KIm=1.175551e-10 MB_KAbs=1.262211e-10
+SWA6 f_GHz=3.330350000 ReY=3.481501078e+01 ImY=-1.003165665e+01 int_u2=1.646073939e-30 max_v=1.596148936e-09 PE_avgRe=-1.557888e-17 PE_avgIm=-3.053900e-17 PE_avgAbs=3.428312e-17 PE_KRe=-5.261342e-12 PE_KIm=-2.581826e-11 PE_KAbs=2.634889e-11 EO_avgRe=-4.252697e-17 EO_avgIm=-7.535318e-17 EO_avgAbs=8.652540e-17 EO_KRe=-1.525910e-11 EO_KIm=-3.430936e-11 EO_KAbs=3.754960e-11 MB_avgRe=1.966688e-17 MB_avgIm=3.854956e-17 MB_avgAbs=4.327650e-17 MB_KRe=5.061370e-11 MB_KIm=1.115554e-10 MB_KAbs=1.225004e-10
+SWA6 f_GHz=3.330400000 ReY=3.290870136e+01 ImY=-1.121480861e+01 int_u2=1.555993783e-30 max_v=1.551615015e-09 PE_avgRe=-1.661639e-17 PE_avgIm=-2.886583e-17 PE_avgAbs=3.330676e-17 PE_KRe=-6.138460e-12 PE_KIm=-2.440413e-11 PE_KAbs=2.516430e-11 EO_avgRe=-4.509014e-17 EO_avgIm=-7.123371e-17 EO_avgAbs=8.430517e-17 EO_KRe=-1.697541e-11 EO_KIm=-3.343194e-11 EO_KAbs=3.749479e-11 MB_avgRe=2.097653e-17 MB_avgIm=3.643751e-17 MB_avgAbs=4.204411e-17 MB_KRe=5.440469e-11 MB_KIm=1.054463e-10 MB_KAbs=1.186541e-10
+SWA6 f_GHz=3.330450000 ReY=3.100864750e+01 ImY=-1.214930892e+01 int_u2=1.466203375e-30 max_v=1.505942431e-09 PE_avgRe=-1.743572e-17 PE_avgIm=-2.719825e-17 PE_avgAbs=3.230710e-17 PE_KRe=-6.831169e-12 PE_KIm=-2.299471e-11 PE_KAbs=2.398795e-11 EO_avgRe=-4.711554e-17 EO_avgIm=-6.712710e-17 EO_avgAbs=8.201172e-17 EO_KRe=-1.850605e-11 EO_KIm=-3.244880e-11 EO_KAbs=3.735504e-11 MB_avgRe=2.201077e-17 MB_avgIm=3.433252e-17 MB_avgAbs=4.078230e-17 MB_KRe=5.739891e-11 MB_KIm=9.935736e-11 MB_KAbs=1.147455e-10
+SWA6 f_GHz=3.330500000 ReY=2.914675107e+01 ImY=-1.285945022e+01 int_u2=1.378211251e-30 max_v=1.459823301e-09 PE_avgRe=-1.805820e-17 PE_avgIm=-2.556425e-17 PE_avgAbs=3.129903e-17 PE_KRe=-7.357496e-12 PE_KIm=-2.161365e-11 PE_KAbs=2.283162e-11 EO_avgRe=-4.865564e-17 EO_avgIm=-6.310240e-17 EO_avgAbs=7.968239e-17 EO_KRe=-1.985475e-11 EO_KIm=-3.139420e-11 EO_KAbs=3.714575e-11 MB_avgRe=2.279654e-17 MB_avgIm=3.226992e-17 MB_avgAbs=3.950987e-17 MB_KRe=5.967420e-11 MB_KIm=9.339078e-11 MB_KAbs=1.108280e-10
+SWA6 f_GHz=3.330550000 ReY=2.734682927e+01 ImY=-1.337160785e+01 int_u2=1.293143844e-30 max_v=1.413828928e-09 PE_avgRe=-1.850700e-17 PE_avgIm=-2.398472e-17 PE_avgAbs=3.029481e-17 PE_KRe=-7.737006e-12 PE_KIm=-2.027861e-11 PE_KAbs=2.170446e-11 EO_avgRe=-4.976740e-17 EO_avgIm=-5.921119e-17 EO_avgAbs=7.734830e-17 EO_KRe=-2.103032e-11 EO_KIm=-3.029735e-11 EO_KAbs=3.688094e-11 MB_avgRe=2.336306e-17 MB_avgIm=3.027607e-17 MB_avgAbs=3.824229e-17 MB_KRe=6.131510e-11 MB_KIm=8.762288e-11 MB_KAbs=1.069454e-10
+SWA6 f_GHz=3.330600000 ReY=2.562553952e+01 ImY=-1.371235084e+01 int_u2=1.211789161e-30 max_v=1.368415364e-09 PE_avgRe=-1.880542e-17 PE_avgIm=-2.247425e-17 PE_avgAbs=2.930420e-17 PE_KRe=-7.989411e-12 PE_KIm=-1.900194e-11 PE_KAbs=2.061321e-11 EO_avgRe=-5.050823e-17 EO_avgIm=-5.548957e-17 EO_avgAbs=7.503449e-17 EO_KRe=-2.204492e-11 EO_KIm=-2.918228e-11 EO_KAbs=3.657300e-11 MB_avgRe=2.373976e-17 MB_avgIm=2.836940e-17 MB_avgAbs=3.699188e-17 MB_KRe=6.240675e-11 MB_KIm=8.210702e-11 MB_KAbs=1.031318e-10
+SWA6 f_GHz=3.330650000 ReY=2.399352735e+01 ImY=-1.390712631e+01 int_u2=1.134651010e-30 max_v=1.323934326e-09 PE_avgRe=-1.897581e-17 PE_avgIm=-2.104219e-17 PE_avgAbs=2.833469e-17 PE_KRe=-8.133585e-12 PE_KIm=-1.779152e-11 PE_KAbs=1.956255e-11 EO_avgRe=-5.093315e-17 EO_avgIm=-5.196063e-17 EO_avgAbs=7.276052e-17 EO_KRe=-2.291255e-11 EO_KIm=-2.806812e-11 EO_KAbs=3.623265e-11 MB_avgRe=2.395484e-17 MB_avgIm=2.656169e-17 MB_avgAbs=3.576811e-17 MB_KRe=6.303070e-11 MB_KIm=7.687731e-11 MB_KAbs=9.941322e-11
+SWA6 f_GHz=3.330700000 ReY=2.245661104e+01 ImY=-1.397943662e+01 int_u2=1.062004972e-30 max_v=1.280646779e-09 PE_avgRe=-1.903878e-17 PE_avgIm=-1.969361e-17 PE_avgAbs=2.739185e-17 PE_KRe=-8.186960e-12 PE_KIm=-1.665166e-11 PE_KAbs=1.855543e-11 EO_avgRe=-5.109296e-17 EO_avgIm=-4.863702e-17 EO_avgAbs=7.054113e-17 EO_KRe=-2.364792e-11 EO_KIm=-2.696958e-11 EO_KAbs=3.586896e-11 MB_avgRe=2.403433e-17 MB_avgIm=2.485938e-17 MB_avgAbs=3.457800e-17 MB_KRe=6.326226e-11 MB_KIm=7.195237e-11 MB_KAbs=9.580844e-11
+SWA6 f_GHz=3.330750000 ReY=2.101688593e+01 ImY=-1.395040321e+01 int_u2=9.939505961e-31 max_v=1.238737251e-09 PE_avgRe=-1.901287e-17 PE_avgIm=-1.843036e-17 PE_avgAbs=2.647957e-17 PE_KRe=-8.165202e-12 PE_KIm=-1.558391e-11 PE_KAbs=1.759343e-11 EO_avgRe=-5.103334e-17 EO_avgIm=-4.552333e-17 EO_avgAbs=6.838695e-17 EO_KRe=-2.426562e-11 EO_KIm=-2.589756e-11 EO_KAbs=3.548950e-11 MB_avgRe=2.400162e-17 MB_avgIm=2.326477e-17 MB_avgAbs=3.342645e-17 MB_KRe=6.316912e-11 MB_KIm=6.733892e-11 MB_KAbs=9.233021e-11
+SWA6 f_GHz=3.330800000 ReY=1.967368745e+01 ImY=-1.383861141e+01 int_u2=9.304569144e-31 max_v=1.198327594e-09 PE_avgRe=-1.891439e-17 PE_avgIm=-1.725184e-17 PE_avgAbs=2.560039e-17 PE_KRe=-8.082094e-12 PE_KIm=-1.458777e-11 PE_KAbs=1.667703e-11 EO_avgRe=-5.079448e-17 EO_avgIm=-4.261816e-17 EO_avgAbs=6.630526e-17 EO_KRe=-2.477963e-11 EO_KIm=-2.485983e-11 EO_KAbs=3.510045e-11 MB_avgRe=2.387730e-17 MB_avgIm=2.177712e-17 MB_avgAbs=3.231669e-17 MB_KRe=6.281083e-11 MB_KIm=6.303481e-11 MB_KAbs=8.898645e-11
+SWA6 f_GHz=3.330850000 ReY=1.842439112e+01 ImY=-1.366014474e+01 int_u2=8.714002549e-31 max_v=1.159489475e-09 PE_avgRe=-1.875745e-17 PE_avgIm=-1.615574e-17 PE_avgAbs=2.475580e-17 PE_KRe=-7.949563e-12 PE_KIm=-1.366129e-11 PE_KAbs=1.580590e-11 EO_avgRe=-5.041118e-17 EO_avgIm=-3.991589e-17 EO_avgAbs=6.430058e-17 EO_KRe=-2.520294e-11 EO_KIm=-2.386158e-11 EO_KAbs=3.470682e-11 MB_avgRe=2.367919e-17 MB_avgIm=2.039351e-17 MB_avgAbs=3.125059e-17 MB_KRe=6.223893e-11 MB_KIm=5.903164e-11 MB_KAbs=8.578122e-11
+SWA6 f_GHz=3.330900000 ReY=1.726505196e+01 ImY=-1.342873644e+01 int_u2=8.165944732e-31 max_v=1.122255253e-09 PE_avgRe=-1.855409e-17 PE_avgIm=-1.513860e-17 PE_avgAbs=2.394643e-17 PE_KRe=-7.777794e-12 PE_KIm=-1.280154e-11 PE_KAbs=1.497910e-11 EO_avgRe=-4.991313e-17 EO_avgIm=-3.740802e-17 EO_avgAbs=6.237532e-17 EO_KRe=-2.554740e-11 EO_KIm=-2.290602e-11 EO_KAbs=3.431261e-11 MB_avgRe=2.342250e-17 MB_avgIm=1.910957e-17 MB_avgAbs=3.022894e-17 MB_KRe=6.149742e-11 MB_KIm=5.531674e-11 MB_KAbs=8.271562e-11
+SWA6 f_GHz=3.330950000 ReY=1.619089958e+01 ImY=-1.315598477e+01 int_u2=7.658143566e-31 max_v=1.086627159e-09 PE_avgRe=-1.831449e-17 PE_avgIm=-1.419622e-17 PE_avgAbs=2.317225e-17 PE_KRe=-7.575386e-12 PE_KIm=-1.200498e-11 PE_KAbs=1.419528e-11 EO_avgRe=-4.932544e-17 EO_avgIm=-3.508427e-17 EO_avgAbs=6.053020e-17 EO_KRe=-2.582365e-11 EO_KIm=-2.199477e-11 EO_KAbs=3.392095e-11 MB_avgRe=2.312005e-17 MB_avgIm=1.792000e-17 MB_avgAbs=2.925171e-17 MB_KRe=6.062346e-11 MB_KIm=5.187484e-11 MB_KAbs=7.978849e-11
+SWA6 f_GHz=3.331000000 ReY=1.519671039e+01 ImY=-1.285159511e+01 int_u2=7.188132258e-31 max_v=1.052584871e-09 PE_avgRe=-1.804717e-17 PE_avgIm=-1.332401e-17 PE_avgAbs=2.243278e-17 PE_KRe=-7.349537e-12 PE_KIm=-1.126773e-11 PE_KAbs=1.345279e-11 EO_avgRe=-4.866911e-17 EO_avgIm=-3.293336e-17 EO_avgAbs=5.876469e-17 EO_KRe=-2.604116e-11 EO_KIm=-2.112830e-11 EO_KAbs=3.353427e-11 MB_avgRe=2.278260e-17 MB_avgIm=1.681901e-17 MB_avgAbs=2.831830e-17 MB_KRe=5.964816e-11 MB_KIm=4.868918e-11 MB_KAbs=7.699701e-11
+SWA6 f_GHz=3.331050000 ReY=1.427707971e+01 ImY=-1.252362479e+01 int_u2=6.753358019e-31 max_v=1.020091637e-09 PE_avgRe=-1.775919e-17 PE_avgIm=-1.251724e-17 PE_avgAbs=2.172717e-17 PE_KRe=-7.106220e-12 PE_KIm=-1.058579e-11 PE_KAbs=1.274980e-11 EO_avgRe=-4.796159e-17 EO_avgIm=-3.094364e-17 EO_avgAbs=5.707734e-17 EO_KRe=-2.620825e-11 EO_KIm=-2.030621e-11 EO_KAbs=3.315440e-11 MB_avgRe=2.241908e-17 MB_avgIm=1.580061e-17 MB_avgAbs=2.742762e-17 MB_KRe=5.859733e-11 MB_KIm=4.574246e-11 MB_KAbs=7.433720e-11
+SWA6 f_GHz=3.331100000 ReY=1.342661465e+01 ImY=-1.217871579e+01 int_u2=6.351273304e-31 max_v=9.890991371e-10 PE_avgRe=-1.745637e-17 PE_avgIm=-1.177116e-17 PE_avgAbs=2.105434e-17 PE_KRe=-6.850360e-12 PE_KIm=-9.955147e-12 PE_KAbs=1.208439e-11 EO_avgRe=-4.721725e-17 EO_avgIm=-2.910345e-17 EO_avgAbs=5.546602e-17 EO_KRe=-2.633219e-11 EO_KIm=-1.952748e-11 EO_KAbs=3.278272e-11 MB_avgRe=2.203684e-17 MB_avgIm=1.485883e-17 MB_avgAbs=2.657832e-17 MB_KRe=5.749225e-11 MB_KIm=4.301737e-11 MB_KAbs=7.180427e-11
+SWA6 f_GHz=3.331150000 ReY=1.264006603e+01 ImY=-1.182230773e+01 int_u2=5.979398199e-31 max_v=9.595512999e-10 PE_avgRe=-1.714349e-17 PE_avgIm=-1.108117e-17 PE_avgAbs=2.041303e-17 PE_KRe=-6.585990e-12 PE_KIm=-9.371911e-12 PE_KAbs=1.145460e-11 EO_avgRe=-4.644786e-17 EO_avgIm=-2.740145e-17 EO_avgAbs=5.392813e-17 EO_KRe=-2.641932e-11 EO_KIm=-1.879065e-11 EO_KAbs=3.242020e-11 MB_avgRe=2.164189e-17 MB_avgIm=1.398785e-17 MB_avgAbs=2.576881e-17 MB_KRe=5.635035e-11 MB_KIm=4.049710e-11 MB_KAbs=6.939292e-11
+SWA6 f_GHz=3.331200000 ReY=1.191241426e+01 ImY=-1.145882720e+01 int_u2=5.635361076e-31 max_v=9.313872476e-10 PE_avgRe=-1.682444e-17 PE_avgIm=-1.044286e-17 PE_avgAbs=1.980189e-17 PE_KRe=-6.316391e-12 PE_KIm=-8.832356e-12 PE_KAbs=1.085851e-11 EO_avgRe=-4.566302e-17 EO_avgIm=-2.582681e-17 EO_avgAbs=5.246080e-17 EO_KRe=-2.647511e-11 EO_KIm=-1.809402e-11 EO_KAbs=3.206751e-11 MB_avgRe=2.123914e-17 MB_avgIm=1.318211e-17 MB_avgAbs=2.499738e-17 MB_KRe=5.518581e-11 MB_KIm=3.816557e-11 MB_KAbs=6.709758e-11
+SWA6 f_GHz=3.331250000 ReY=1.123892131e+01 ImY=-1.109185310e+01 int_u2=5.316923192e-31 max_v=9.045435389e-10 PE_avgRe=-1.650234e-17 PE_avgIm=-9.852067e-18 PE_avgAbs=1.921953e-17 PE_KRe=-6.044216e-12 PE_KIm=-8.332969e-12 PE_KAbs=1.029422e-11 EO_avgRe=-4.487048e-17 EO_avgIm=-2.436929e-17 EO_avgAbs=5.106096e-17 EO_KRe=-2.650431e-11 EO_KIm=-1.743566e-11 EO_KAbs=3.172508e-11 MB_avgRe=2.083255e-17 MB_avgIm=1.243636e-17 MB_avgAbs=2.426228e-17 MB_KRe=5.401011e-11 MB_KIm=3.600758e-11 MB_KAbs=6.491254e-11
+SWA6 f_GHz=3.331300000 ReY=1.061515811e+01 ImY=-1.072425886e+01 int_u2=5.021991678e-31 max_v=8.789558516e-10 PE_avgRe=-1.617971e-17 PE_avgIm=-9.304913e-18 PE_avgAbs=1.866453e-17 PE_KRe=-5.771595e-12 PE_KIm=-7.870464e-12 PE_KAbs=9.759893e-12 EO_avgRe=-4.407646e-17 EO_avgIm=-2.301932e-17 EO_avgAbs=4.972548e-17 EO_KRe=-2.651099e-11 EO_KIm=-1.681362e-11 EO_KAbs=3.139316e-11 MB_avgRe=2.042530e-17 MB_avgIm=1.174568e-17 MB_avgAbs=2.356171e-17 MB_KRe=5.283243e-11 MB_KIm=3.400895e-11 MB_KAbs=6.283211e-11
+SWA6 f_GHz=3.331350000 ReY=1.003701460e+01 ImY=-1.035833342e+01 int_u2=4.748624320e-31 max_v=8.545602235e-10 PE_avgRe=-1.585858e-17 PE_avgIm=-8.797790e-18 PE_avgAbs=1.813548e-17 PE_KRe=-5.500224e-12 PE_KIm=-7.441791e-12 PE_KAbs=9.253795e-12 EO_avgRe=-4.328592e-17 EO_avgIm=-2.176800e-17 EO_avgAbs=4.845118e-17 EO_KRe=-2.649866e-11 EO_KIm=-1.622586e-11 EO_KAbs=3.107181e-11 MB_avgRe=2.001993e-17 MB_avgIm=1.110554e-17 MB_avgAbs=2.289390e-17 MB_KRe=5.166012e-11 MB_KIm=3.215650e-11 MB_KAbs=6.085071e-11
+SWA6 f_GHz=3.331400000 ReY=9.500697856e+00 ImY=-9.995883382e+00 int_u2=4.495028684e-31 max_v=8.312939467e-10 PE_avgRe=-1.554051e-17 PE_avgIm=-8.327361e-18 PE_avgAbs=1.763100e-17 PE_KRe=-5.231443e-12 PE_KIm=-7.044138e-12 PE_KAbs=8.774274e-12 EO_avgRe=-4.250280e-17 EO_avgIm=-2.060716e-17 EO_avgAbs=4.723497e-17 EO_KRe=-2.647033e-11 EO_KIm=-1.567041e-11 EO_KAbs=3.076102e-11 MB_avgRe=1.961842e-17 MB_avgIm=1.051171e-17 MB_avgAbs=2.225710e-17 MB_KRe=5.049897e-11 MB_KIm=3.043808e-11 MB_KAbs=5.896289e-11
+SWA6 f_GHz=3.331450000 ReY=9.002722227e+00 ImY=-9.638318585e+00 int_u2=4.259557498e-31 max_v=8.090961951e-10 PE_avgRe=-1.522674e-17 PE_avgIm=-7.890577e-18 PE_avgAbs=1.714978e-17 PE_KRe=-4.966295e-12 PE_KIm=-6.674920e-12 PE_KAbs=8.319774e-12 EO_avgRe=-4.173013e-17 EO_avgIm=-1.952924e-17 EO_avgAbs=4.607380e-17 EO_KRe=-2.642858e-11 EO_KIm=-1.514534e-11 EO_KAbs=3.046065e-11 MB_avgRe=1.922236e-17 MB_avgIm=9.960357e-18 MB_avgAbs=2.164966e-17 MB_KRe=4.935349e-11 MB_KIm=2.884252e-11 MB_KAbs=5.716343e-11
+SWA6 f_GHz=3.331500000 ReY=8.539894516e+00 ImY=-9.286723599e+00 int_u2=4.040701641e-31 max_v=7.879084464e-10 PE_avgRe=-1.491823e-17 PE_avgIm=-7.484627e-18 PE_avgAbs=1.669051e-17 PE_KRe=-4.705585e-12 PE_KIm=-6.331766e-12 PE_KAbs=7.888840e-12 EO_avgRe=-4.097027e-17 EO_avgIm=-1.852736e-17 EO_avgAbs=4.496472e-17 EO_KRe=-2.637563e-11 EO_KIm=-1.464876e-11 EO_KAbs=3.017052e-11 MB_avgRe=1.883292e-17 MB_avgIm=9.447925e-18 MB_avgAbs=2.106993e-17 MB_KRe=4.822715e-11 MB_KIm=2.735958e-11 MB_KAbs=5.544732e-11
+SWA6 f_GHz=3.331550000 ReY=8.109296209e+00 ImY=-8.941917092e+00 int_u2=3.837081770e-31 max_v=7.676747475e-10 PE_avgRe=-1.461568e-17 PE_avgIm=-7.106952e-18 PE_avgAbs=1.625198e-17 PE_KRe=-4.449918e-12 PE_KIm=-6.012514e-12 PE_KAbs=7.480113e-12 EO_avgRe=-4.022501e-17 EO_avgIm=-1.759519e-17 EO_avgAbs=4.390493e-17 EO_KRe=-2.631337e-11 EO_KIm=-1.417890e-11 EO_KAbs=2.989038e-11 MB_avgRe=1.845101e-17 MB_avgIm=8.971184e-18 MB_avgAbs=2.051638e-17 MB_KRe=4.712258e-11 MB_KIm=2.597992e-11 MB_KAbs=5.380980e-11
+SWA6 f_GHz=3.331600000 ReY=7.708264293e+00 ImY=-8.604501041e+00 int_u2=3.647439262e-31 max_v=7.483418638e-10 PE_avgRe=-1.431963e-17 PE_avgIm=-6.755218e-18 PE_avgAbs=1.583303e-17 PE_KRe=-4.199741e-12 PE_KIm=-5.715186e-12 PE_KAbs=7.092332e-12 EO_avgRe=-3.949566e-17 EO_avgIm=-1.672698e-17 EO_avgAbs=4.289171e-17 EO_KRe=-2.624344e-11 EO_KIm=-1.373407e-11 EO_KAbs=2.961997e-11 MB_avgRe=1.807731e-17 MB_avgIm=8.527189e-18 MB_avgAbs=1.998755e-17 MB_KRe=4.604171e-11 MB_KIm=2.469499e-11 MB_KAbs=5.224636e-11
+SWA6 f_GHz=3.331650000 ReY=7.334371669e+00 ImY=-8.274901411e+00 int_u2=3.470626965e-31 max_v=7.298593403e-10 PE_avgRe=-1.403046e-17 PE_avgIm=-6.427293e-18 PE_avgAbs=1.543256e-17 PE_KRe=-3.955368e-12 PE_KIm=-5.437985e-12 PE_KAbs=6.724330e-12 EO_avgRe=-3.878313e-17 EO_avgIm=-1.591749e-17 EO_avgAbs=4.192252e-17 EO_KRe=-2.616721e-11 EO_KIm=-1.331266e-11 EO_KAbs=2.935898e-11 MB_avgRe=1.771228e-17 MB_avgIm=8.113247e-18 MB_avgAbs=1.948203e-17 MB_KRe=4.498589e-11 MB_KIm=2.349703e-11 MB_KAbs=5.075275e-11
+SWA6 f_GHz=3.331700000 ReY=6.985407857e+00 ImY=-7.953401711e+00 int_u2=3.305600086e-31 max_v=7.121794995e-10 PE_avgRe=-1.374840e-17 PE_avgIm=-6.121238e-18 PE_avgAbs=1.504952e-17 PE_KRe=-3.717009e-12 PE_KIm=-5.179269e-12 PE_KAbs=6.375028e-12 EO_avgRe=-3.808806e-17 EO_avgIm=-1.516194e-17 EO_avgAbs=4.099493e-17 EO_KRe=-2.608588e-11 EO_KIm=-1.291319e-11 EO_KAbs=2.910710e-11 MB_avgRe=1.735623e-17 MB_avgIm=7.726913e-18 MB_avgAbs=1.899853e-17 MB_KRe=4.395604e-11 MB_KIm=2.237895e-11 MB_KAbs=4.932495e-11
+SWA6 f_GHz=3.331750000 ReY=6.659360440e+00 ImY=-7.640170637e+00 int_u2=3.151407426e-31 max_v=6.952573935e-10 PE_avgRe=-1.347361e-17 PE_avgIm=-5.835288e-18 PE_avgAbs=1.468294e-17 PE_KRe=-3.484789e-12 PE_KIm=-4.937547e-12 PE_KAbs=6.043437e-12 EO_avgRe=-3.741080e-17 EO_avgIm=-1.445596e-17 EO_avgAbs=4.010665e-17 EO_KRe=-2.600046e-11 EO_KIm=-1.253424e-11 EO_KAbs=2.886401e-11 MB_avgRe=1.700936e-17 MB_avgIm=7.365956e-18 MB_avgAbs=1.853579e-17 MB_KRe=4.295270e-11 MB_KIm=2.133430e-11 MB_KAbs=4.795922e-11
+SWA6 f_GHz=3.331800000 ReY=6.354397515e+00 ImY=-7.335284800e+00 int_u2=3.007183088e-31 max_v=6.790507235e-10 PE_avgRe=-1.320614e-17 PE_avgIm=-5.567834e-18 PE_avgAbs=1.433189e-17 PE_KRe=-3.258764e-12 PE_KIm=-4.711460e-12 PE_KAbs=5.728647e-12 EO_avgRe=-3.675154e-17 EO_avgIm=-1.379561e-17 EO_avgAbs=3.925550e-17 EO_KRe=-2.591183e-11 EO_KIm=-1.217450e-11 EO_KAbs=2.862938e-11 MB_avgRe=1.667174e-17 MB_avgIm=7.028349e-18 MB_avgAbs=1.809267e-17 MB_KRe=4.197611e-11 MB_KIm=2.035720e-11 MB_KAbs=4.665200e-11
+SWA6 f_GHz=3.331850000 ReY=6.068851313e+00 ImY=-7.038747396e+00 int_u2=2.872138744e-31 max_v=6.635197383e-10 PE_avgRe=-1.294602e-17 PE_avgIm=-5.317414e-18 PE_avgAbs=1.399551e-17 PE_KRe=-3.038936e-12 PE_KIm=-4.499770e-12 PE_KAbs=5.429831e-12 EO_avgRe=-3.611028e-17 EO_avgIm=-1.317727e-17 EO_avgAbs=3.843946e-17 EO_KRe=-2.582073e-11 EO_KIm=-1.183274e-11 EO_KAbs=2.840288e-11 MB_avgRe=1.634338e-17 MB_avgIm=6.712242e-18 MB_avgAbs=1.766806e-17 MB_KRe=4.102627e-11 MB_KIm=1.944232e-11 MB_KAbs=4.539999e-11
+SWA6 f_GHz=3.331900000 ReY=5.801203032e+00 ImY=-6.750503527e+00 int_u2=2.745556465e-31 max_v=6.486271191e-10 PE_avgRe=-1.269317e-17 PE_avgIm=-5.082694e-18 PE_avgAbs=1.367298e-17 PE_KRe=-2.825264e-12 PE_KIm=-4.301352e-12 PE_KAbs=5.146236e-12 EO_avgRe=-3.548690e-17 EO_avgIm=-1.259766e-17 EO_avgAbs=3.765662e-17 EO_KRe=-2.572778e-11 EO_KIm=-1.150783e-11 EO_KAbs=2.818420e-11 MB_avgRe=1.602421e-17 MB_avgIm=6.415953e-18 MB_avgAbs=1.726093e-17 MB_KRe=4.010303e-11 MB_KIm=1.858479e-11 MB_KAbs=4.420008e-11
+SWA6 f_GHz=3.331950000 ReY=5.550068921e+00 ImY=-6.470452739e+00 int_u2=2.626782149e-31 max_v=6.343378562e-10 PE_avgRe=-1.244752e-17 PE_avgIm=-4.862460e-18 PE_avgAbs=1.336354e-17 PE_KRe=-2.617673e-12 PE_KIm=-4.115179e-12 PE_KAbs=4.877183e-12 EO_avgRe=-3.488120e-17 EO_avgIm=-1.205378e-17 EO_avgAbs=3.690517e-17 EO_KRe=-2.563354e-11 EO_KIm=-1.119870e-11 EO_KAbs=2.797301e-11 MB_avgRe=1.571413e-17 MB_avgIm=6.137950e-18 MB_avgAbs=1.687033e-17 MB_KRe=3.920604e-11 MB_KIm=1.778018e-11 MB_KAbs=4.304937e-11
+SWA6 f_GHz=3.332000000 ReY=5.314187547e+00 ImY=-6.198459289e+00 int_u2=2.515219503e-31 max_v=6.206191226e-10 PE_avgRe=-1.220895e-17 PE_avgIm=-4.655606e-18 PE_avgAbs=1.306649e-17 PE_KRe=-2.416062e-12 PE_KIm=-3.940316e-12 PE_KAbs=4.622061e-12 EO_avgRe=-3.429288e-17 EO_avgIm=-1.154292e-17 EO_avgAbs=3.618343e-17 EO_KRe=-2.553845e-11 EO_KIm=-1.090437e-11 EO_KAbs=2.776901e-11 MB_avgRe=1.541298e-17 MB_avgIm=5.876838e-18 MB_avgAbs=1.649536e-17 MB_KRe=3.833487e-11 MB_KIm=1.702444e-11 MB_KAbs=4.194513e-11
+SWA6 f_GHz=3.333000000 ReY=2.566727756e+00 ImY=-2.144749848e+00 int_u2=1.215567076e-31 max_v=4.300125014e-10 PE_avgRe=-8.654634e-18 PE_avgIm=-2.246632e-18 PE_avgAbs=8.941479e-18 PE_KRe=5.875847e-13 PE_KIm=-1.903829e-12 PE_KAbs=1.992441e-12 EO_avgRe=-2.551902e-17 EO_avgIm=-5.590133e-18 EO_avgAbs=2.612413e-17 EO_KRe=-2.378226e-11 EO_KIm=-7.081754e-12 EO_KAbs=2.481425e-11 MB_avgRe=1.092633e-17 MB_avgIm=2.835979e-18 MB_avgAbs=1.128837e-17 MB_KRe=2.535430e-11 MB_KIm=8.222207e-12 MB_KAbs=2.665417e-11
+SWA6 f_GHz=3.334000000 ReY=1.492836450e+00 ImY=2.191195394e-01 int_u2=7.073896631e-32 max_v=3.269201562e-10 PE_avgRe=-6.583764e-18 PE_avgIm=-1.305376e-18 PE_avgAbs=6.711927e-18 PE_KRe=2.337516e-12 PE_KIm=-1.108057e-12 PE_KAbs=2.586846e-12 EO_avgRe=-2.039521e-17 EO_avgIm=-3.261266e-18 EO_avgAbs=2.065430e-17 EO_KRe=-2.252654e-11 EO_KIm=-5.239787e-12 EO_KAbs=2.312791e-11 MB_avgRe=8.312239e-18 MB_avgIm=1.647826e-18 MB_avgAbs=8.473998e-18 MB_KRe=1.778938e-11 MB_KIm=4.782041e-12 MB_KAbs=1.842091e-11
+SWA6 f_GHz=3.335000000 ReY=9.721215232e-01 ImY=1.730533430e+00 int_u2=4.608943046e-32 max_v=2.629662925e-10 PE_avgRe=-5.261110e-18 PE_avgIm=-8.491285e-19 PE_avgAbs=5.329193e-18 PE_KRe=3.455083e-12 PE_KIm=-7.223060e-13 PE_KAbs=3.529777e-12 EO_avgRe=-1.711351e-17 EO_avgIm=-2.131035e-18 EO_avgAbs=1.724568e-17 EO_KRe=-2.165243e-11 EO_KIm=-4.182872e-12 EO_KAbs=2.205276e-11 MB_avgRe=6.642625e-18 MB_avgIm=1.071903e-18 MB_avgAbs=6.728554e-18 MB_KRe=1.295633e-11 MB_KIm=3.114108e-12 MB_KAbs=1.332532e-11
+SWA6 f_GHz=3.336000000 ReY=6.822818857e-01 ImY=2.772342657e+00 int_u2=3.236425271e-32 max_v=2.198028644e-10 PE_avgRe=-4.350606e-18 PE_avgIm=-5.952564e-19 PE_avgAbs=4.391139e-18 PE_KRe=4.224315e-12 PE_KIm=-5.076517e-13 PE_KAbs=4.254709e-12 EO_avgRe=-1.484683e-17 EO_avgIm=-1.501380e-18 EO_avgAbs=1.492255e-17 EO_KRe=-2.102131e-11 EO_KIm=-3.504090e-12 EO_KAbs=2.131136e-11 MB_avgRe=5.493272e-18 MB_avgIm=7.514386e-19 MB_avgAbs=5.544429e-18 MB_KRe=9.628183e-12 MB_KIm=2.185790e-12 MB_KAbs=9.873175e-12
+SWA6 f_GHz=3.337000000 ReY=5.049491857e-01 ImY=3.531853008e+00 int_u2=2.396385899e-32 max_v=1.893415998e-10 PE_avgRe=-3.687854e-18 PE_avgIm=-4.399798e-19 PE_avgAbs=3.714008e-18 PE_KRe=4.784158e-12 PE_KIm=-3.763598e-13 PE_KAbs=4.798939e-12 EO_avgRe=-1.319041e-17 EO_avgIm=-1.115804e-18 EO_avgAbs=1.323752e-17 EO_KRe=-2.054793e-11 EO_KIm=-3.033275e-12 EO_KAbs=2.077061e-11 MB_avgRe=4.656656e-18 MB_avgIm=5.554323e-19 MB_avgAbs=4.689664e-18 MB_KRe=7.204696e-12 MB_KIm=1.617869e-12 MB_KAbs=7.384114e-12
+SWA6 f_GHz=3.338000000 ReY=3.887510287e-01 ImY=4.109520953e+00 int_u2=1.845755104e-32 max_v=1.663386226e-10 PE_avgRe=-3.184691e-18 PE_avgIm=-3.382657e-19 PE_avgAbs=3.202605e-18 PE_KRe=5.209128e-12 PE_KIm=-2.903591e-13 PE_KAbs=5.217214e-12 EO_avgRe=-1.192714e-17 EO_avgIm=-8.629360e-19 EO_avgAbs=1.195832e-17 EO_KRe=-2.018119e-11 EO_KIm=-2.688069e-12 EO_KAbs=2.035942e-11 MB_avgRe=4.021489e-18 MB_avgIm=4.270383e-19 MB_avgAbs=4.044099e-18 MB_KRe=5.363940e-12 MB_KIm=1.245769e-12 MB_KAbs=5.506704e-12
+SWA6 f_GHz=3.339000000 ReY=3.085558264e-01 ImY=4.563565375e+00 int_u2=1.465600430e-32 max_v=1.483623294e-10 PE_avgRe=-2.790020e-18 PE_avgIm=-2.680864e-19 PE_avgAbs=2.802870e-18 PE_KRe=5.542411e-12 PE_KIm=-2.310282e-13 PE_KAbs=5.547224e-12 EO_avgRe=-1.093117e-17 EO_avgIm=-6.882679e-19 EO_avgAbs=1.095281e-17 EO_KRe=-1.988941e-11 EO_KIm=-2.424152e-12 EO_KAbs=2.003659e-11 MB_avgRe=3.523274e-18 MB_avgIm=3.384507e-19 MB_avgAbs=3.539493e-18 MB_KRe=3.919347e-12 MB_KIm=9.889842e-13 MB_KAbs=4.042198e-12
+SWA6 f_GHz=3.340000000 ReY=2.509145278e-01 ImY=4.929898878e+00 int_u2=1.192264365e-32 max_v=1.339317147e-10 PE_avgRe=-2.472330e-18 PE_avgIm=-2.176573e-19 PE_avgAbs=2.481893e-18 PE_KRe=5.810643e-12 PE_KIm=-1.884038e-13 PE_KAbs=5.813697e-12 EO_avgRe=-1.012486e-17 EO_avgIm=-5.626207e-19 EO_avgAbs=1.014048e-17 EO_KRe=-1.965214e-11 EO_KIm=-2.215687e-12 EO_KAbs=1.977665e-11 MB_avgRe=3.122231e-18 MB_avgIm=2.747941e-19 MB_avgAbs=3.134300e-18 MB_KRe=2.755832e-12 MB_KIm=8.044341e-13 MB_KAbs=2.870840e-12
+SWA6 f_GHz=3.341000000 ReY=2.081101610e-01 ImY=5.231819450e+00 int_u2=9.892142375e-33 max_v=1.220942612e-10 PE_avgRe=-2.211178e-18 PE_avgIm=-1.802148e-19 PE_avgAbs=2.218510e-18 PE_KRe=6.031105e-12 PE_KIm=-1.567716e-13 PE_KAbs=6.033142e-12 EO_avgRe=-9.457844e-18 EO_avgIm=-4.692456e-19 EO_avgAbs=9.469477e-18 EO_KRe=-1.945566e-11 EO_KIm=-2.046644e-12 EO_KAbs=1.956302e-11 MB_avgRe=2.792556e-18 MB_avgIm=2.275305e-19 MB_avgAbs=2.801810e-18 MB_KRe=1.798737e-12 MB_KIm=6.674005e-13 MB_KAbs=1.918561e-12
+SWA6 f_GHz=3.342000000 ReY=1.754610536e-01 ImY=5.485078101e+00 int_u2=8.342828269e-33 max_v=1.122099607e-10 PE_avgRe=-1.992748e-18 PE_avgIm=-1.516541e-19 PE_avgAbs=1.998511e-18 PE_KRe=6.215477e-12 PE_KIm=-1.326677e-13 PE_KAbs=6.216892e-12 EO_avgRe=-8.896048e-18 EO_avgIm=-3.979847e-19 EO_avgAbs=8.904946e-18 EO_KRe=-1.929046e-11 EO_KIm=-1.906559e-12 EO_KAbs=1.938444e-11 MB_avgRe=2.516809e-18 MB_avgIm=1.914788e-19 MB_avgAbs=2.524082e-18 MB_KRe=9.975863e-13 MB_KIm=5.628891e-13 MB_KAbs=1.145436e-12
+SWA6 f_GHz=3.343000000 ReY=1.499946168e-01 ImY=5.700694873e+00 int_u2=7.133928065e-33 max_v=1.038402007e-10 PE_avgRe=-1.807384e-18 PE_avgIm=-1.293623e-19 PE_avgAbs=1.812008e-18 PE_KRe=6.371927e-12 PE_KIm=-1.138981e-13 PE_KAbs=6.372945e-12 EO_avgRe=-8.415613e-18 EO_avgIm=-3.424045e-19 EO_avgAbs=8.422576e-18 EO_KRe=-1.914969e-11 EO_KIm=-1.788292e-12 EO_KAbs=1.923301e-11 MB_avgRe=2.282800e-18 MB_avgIm=1.633411e-19 MB_avgAbs=2.288636e-18 MB_KRe=3.170679e-13 MB_KIm=4.813801e-13 MB_KAbs=5.764190e-13
+SWA6 f_GHz=3.344000000 ReY=1.297504779e-01 ImY=5.886605658e+00 int_u2=6.172588162e-33 max_v=9.666423420e-11 PE_avgRe=-1.648150e-18 PE_avgIm=-1.115942e-19 PE_avgAbs=1.651924e-18 PE_KRe=6.506327e-12 PE_KIm=-9.902770e-14 PE_KAbs=6.507080e-12 EO_avgRe=-7.999306e-18 EO_avgIm=-2.983167e-19 EO_avgAbs=8.004866e-18 EO_KRe=-1.902827e-11 EO_KIm=-1.686739e-12 EO_KAbs=1.910289e-11 MB_avgRe=2.081772e-18 MB_avgIm=1.409151e-19 MB_avgAbs=2.086535e-18 MB_KRe=-2.682470e-13 MB_KIm=4.165976e-13 MB_KAbs=4.954896e-13
+SWA6 f_GHz=3.345000000 ReY=1.133936760e-01 ImY=6.048667781e+00 int_u2=5.395566945e-33 max_v=9.043857675e-11 PE_avgRe=-1.509968e-18 PE_avgIm=-9.706322e-20 PE_avgAbs=1.513084e-18 PE_KRe=6.622952e-12 PE_KIm=-8.710277e-14 PE_KAbs=6.623525e-12 EO_avgRe=-7.634304e-18 EO_avgIm=-2.631224e-19 EO_avgAbs=7.638837e-18 EO_KRe=-1.892196e-11 EO_KIm=-1.598007e-12 EO_KAbs=1.898932e-11 MB_avgRe=1.907314e-18 MB_avgIm=1.225807e-19 MB_avgAbs=1.911249e-18 MB_KRe=-7.771182e-13 MB_KIm=3.642713e-13 MB_KAbs=8.582577e-13
+SWA6 f_GHz=3.346000000 ReY=9.998984962e-02 ImY=6.191297153e+00 int_u2=4.758592998e-33 max_v=8.498642141e-11 PE_avgRe=-1.388773e-18 PE_avgIm=-8.431311e-20 PE_avgAbs=1.391330e-18 PE_KRe=6.724717e-12 PE_KIm=-7.732383e-14 PE_KAbs=6.725162e-12 EO_avgRe=-7.311549e-18 EO_avgIm=-2.364336e-19 EO_avgAbs=7.315371e-18 EO_KRe=-1.882493e-11 EO_KIm=-1.520161e-12 EO_KAbs=1.888621e-11 MB_avgRe=1.754302e-18 MB_avgIm=1.065208e-19 MB_avgAbs=1.757533e-18 MB_KRe=-1.223644e-12 MB_KIm=3.213924e-13 MB_KAbs=1.265147e-12
+SWA6 f_GHz=3.347000000 ReY=8.886909524e-02 ImY=6.317884948e+00 int_u2=4.229919856e-33 max_v=8.017222799e-11 PE_avgRe=-1.279334e-18 PE_avgIm=-7.440733e-20 PE_avgAbs=1.281496e-18 PE_KRe=6.815074e-12 PE_KIm=-6.791916e-14 PE_KAbs=6.815413e-12 EO_avgRe=-7.029515e-18 EO_avgIm=-2.125411e-19 EO_avgAbs=7.032727e-18 EO_KRe=-1.874202e-11 EO_KIm=-1.462021e-12 EO_KAbs=1.879896e-11 MB_avgRe=1.616206e-18 MB_avgIm=9.402300e-20 MB_avgAbs=1.618939e-18 MB_KRe=-1.618831e-12 MB_KIm=2.856317e-13 MB_KAbs=1.643837e-12
+SWA6 f_GHz=3.348000000 ReY=7.954116384e-02 ImY=6.431078570e+00 int_u2=3.786310900e-33 max_v=7.589032592e-11 PE_avgRe=-1.183855e-18 PE_avgIm=-6.746348e-20 PE_avgAbs=1.185775e-18 PE_KRe=6.896293e-12 PE_KIm=-6.108878e-14 PE_KAbs=6.896563e-12 EO_avgRe=-6.770820e-18 EO_avgIm=-1.889681e-19 EO_avgAbs=6.773457e-18 EO_KRe=-1.867518e-11 EO_KIm=-1.401318e-12 EO_KAbs=1.872768e-11 MB_avgRe=1.495658e-18 MB_avgIm=8.521838e-20 MB_avgAbs=1.498084e-18 MB_KRe=-1.971201e-12 MB_KIm=2.557941e-13 MB_KAbs=1.987729e-12
+SWA6 f_GHz=3.349000000 ReY=7.164078655e-02 ImY=6.532973947e+00 int_u2=3.410450379e-33 max_v=7.205716351e-11 PE_avgRe=-1.098492e-18 PE_avgIm=-6.085202e-20 PE_avgAbs=1.100177e-18 PE_KRe=6.968620e-12 PE_KIm=-5.542752e-14 PE_KAbs=6.968840e-12 EO_avgRe=-6.536089e-18 EO_avgIm=-1.708720e-19 EO_avgAbs=6.538322e-18 EO_KRe=-1.861185e-11 EO_KIm=-1.345502e-12 EO_KAbs=1.866042e-11 MB_avgRe=1.387875e-18 MB_avgIm=7.686355e-20 MB_avgAbs=1.390002e-18 MB_KRe=-2.287283e-12 MB_KIm=2.305415e-13 MB_KAbs=2.298873e-12
+SWA6 f_GHz=3.350000000 ReY=6.489101738e-02 ImY=6.625252179e+00 int_u2=3.089207262e-33 max_v=6.860578983e-11 PE_avgRe=-1.021442e-18 PE_avgIm=-5.505598e-20 PE_avgAbs=1.022925e-18 PE_KRe=7.033714e-12 PE_KIm=-5.054384e-14 PE_KAbs=7.033896e-12 EO_avgRe=-6.322536e-18 EO_avgIm=-1.557807e-19 EO_avgAbs=6.324455e-18 EO_KRe=-1.855418e-11 EO_KIm=-1.295331e-12 EO_KAbs=1.859934e-11 MB_avgRe=1.290588e-18 MB_avgIm=6.954429e-20 MB_avgAbs=1.292461e-18 MB_KRe=-2.572525e-12 MB_KIm=2.089608e-13 MB_KAbs=2.580998e-12
+SWA6 f_GHz=3.351000000 ReY=5.907894980e-02 ImY=6.709277165e+00 int_u2=2.812485167e-33 max_v=6.548193226e-11 PE_avgRe=-9.515719e-19 PE_avgIm=-5.002779e-20 PE_avgAbs=9.528861e-19 PE_KRe=7.092665e-12 PE_KIm=-4.631647e-14 PE_KAbs=7.092816e-12 EO_avgRe=-6.127049e-18 EO_avgIm=-1.428722e-19 EO_avgAbs=6.128714e-18 EO_KRe=-1.850193e-11 EO_KIm=-1.249783e-12 EO_KAbs=1.854409e-11 MB_avgRe=1.202366e-18 MB_avgIm=6.319596e-20 MB_avgAbs=1.204026e-18 MB_KRe=-2.831307e-12 MB_KIm=1.903758e-13 MB_KAbs=2.837700e-12
+SWA6 f_GHz=3.352000000 ReY=5.403872587e-02 ImY=6.786166935e+00 int_u2=2.572417513e-33 max_v=6.264113383e-11 PE_avgRe=-8.879311e-19 PE_avgIm=-4.565495e-20 PE_avgAbs=8.891040e-19 PE_KRe=7.146320e-12 PE_KIm=-4.264049e-14 PE_KAbs=7.146448e-12 EO_avgRe=-5.947127e-18 EO_avgIm=-1.317010e-19 EO_avgAbs=5.948585e-18 EO_KRe=-1.845450e-11 EO_KIm=-1.208104e-12 EO_KAbs=1.849401e-11 MB_avgRe=1.122009e-18 MB_avgIm=5.767552e-20 MB_avgAbs=1.123491e-18 MB_KRe=-3.067216e-12 MB_KIm=1.742583e-13 MB_KAbs=3.072162e-12
+SWA6 f_GHz=3.353000000 ReY=4.963959099e-02 ImY=6.856846612e+00 int_u2=2.362801609e-33 max_v=6.004663126e-11 PE_avgRe=-8.297228e-19 PE_avgIm=-4.183352e-20 PE_avgAbs=8.307767e-19 PE_KRe=7.195373e-12 PE_KIm=-3.942737e-14 PE_KAbs=7.195481e-12 EO_avgRe=-5.780733e-18 EO_avgIm=-1.219554e-19 EO_avgAbs=5.782019e-18 EO_KRe=-1.841133e-11 EO_KIm=-1.169723e-12 EO_KAbs=1.844845e-11 MB_avgRe=1.048511e-18 MB_avgIm=5.285139e-20 MB_avgAbs=1.049842e-18 MB_KRe=-3.283216e-12 MB_KIm=1.601908e-13 MB_KAbs=3.287122e-12
+SWA6 f_GHz=3.354000000 ReY=4.577734367e-02 ImY=6.922088252e+00 int_u2=2.178693553e-33 max_v=5.766776046e-11 PE_avgRe=-7.762766e-19 PE_avgIm=-3.847649e-20 PE_avgAbs=7.772296e-19 PE_KRe=7.240396e-12 PE_KIm=-3.660420e-14 PE_KAbs=7.240489e-12 EO_avgRe=-5.626177e-18 EO_avgIm=-1.133971e-19 EO_avgAbs=5.627320e-18 EO_KRe=-1.837190e-11 EO_KIm=-1.134187e-12 EO_KAbs=1.840688e-11 MB_avgRe=9.810233e-19 MB_avgIm=4.861362e-20 MB_avgAbs=9.822271e-19 MB_KRe=-3.481783e-12 MB_KIm=1.478403e-13 MB_KAbs=3.484920e-12
+SWA6 f_GHz=3.355000000 ReY=4.236811969e-02 ImY=6.982541222e+00 int_u2=2.016113684e-33 max_v=5.547874258e-11 PE_avgRe=-7.270268e-19 PE_avgIm=-3.551249e-20 PE_avgAbs=7.278936e-19 PE_KRe=7.281874e-12 PE_KIm=-3.411124e-14 PE_KAbs=7.281954e-12 EO_avgRe=-5.482046e-18 EO_avgIm=-1.058379e-19 EO_avgAbs=5.483067e-18 EO_KRe=-1.833580e-11 EO_KIm=-1.101130e-12 EO_KAbs=1.836884e-11 MB_avgRe=9.188334e-19 MB_avgIm=4.487206e-20 MB_avgAbs=9.199284e-19 MB_KRe=-3.664996e-12 MB_KIm=1.369388e-13 MB_KAbs=3.667554e-12
+SWA6 f_GHz=3.356000000 ReY=3.934380951e-02 ImY=7.038755615e+00 int_u2=1.871829419e-33 max_v=5.345774880e-11 PE_avgRe=-6.814932e-19 PE_avgIm=-3.288290e-20 PE_avgAbs=6.822861e-19 PE_KRe=7.320214e-12 PE_KIm=-3.189951e-14 PE_KAbs=7.320284e-12 EO_avgRe=-5.347142e-18 EO_avgIm=-9.912692e-20 EO_avgAbs=5.348061e-18 EO_KRe=-1.830265e-11 EO_KIm=-1.070246e-12 EO_KAbs=1.833391e-11 MB_avgRe=8.613347e-19 MB_avgIm=4.155268e-20 MB_avgAbs=8.623364e-19 MB_KRe=-3.834620e-12 MB_KIm=1.272683e-13 MB_KAbs=3.836731e-12
+SWA6 f_GHz=3.357000000 ReY=3.664863642e-02 ImY=7.091200513e+00 int_u2=1.743193061e-33 max_v=5.158617198e-11 PE_avgRe=-6.392656e-19 PE_avgIm=-3.053951e-20 PE_avgAbs=6.399947e-19 PE_KRe=7.355765e-12 PE_KIm=-2.992862e-14 PE_KAbs=7.355826e-12 EO_avgRe=-5.220446e-18 EO_avgIm=-9.314066e-20 EO_avgAbs=5.221277e-18 EO_KRe=-1.827213e-11 EO_KIm=-1.041279e-12 EO_KAbs=1.830178e-11 MB_avgRe=8.080090e-19 MB_avgIm=3.859460e-20 MB_avgAbs=8.089302e-19 MB_KRe=-3.992156e-12 MB_KIm=1.186507e-13 MB_KAbs=3.993919e-12
+SWA6 f_GHz=3.358000000 ReY=3.423657118e-02 ImY=7.140278357e+00 int_u2=1.628019258e-33 max_v=4.984805363e-11 PE_avgRe=-5.999924e-19 PE_avgIm=-2.844260e-20 PE_avgAbs=6.006662e-19 PE_KRe=7.388826e-12 PE_KIm=-2.816513e-14 PE_KAbs=7.388880e-12 EO_avgRe=-5.101086e-18 EO_avgIm=-8.777782e-20 EO_avgAbs=5.101841e-18 EO_KRe=-1.824397e-11 EO_KIm=-1.014012e-12 EO_KAbs=1.827213e-11 MB_avgRe=7.584129e-19 MB_avgIm=3.594768e-20 MB_avgAbs=7.592644e-19 MB_KRe=-4.138895e-12 MB_KIm=1.109384e-13 MB_KAbs=4.140381e-12
+SWA6 f_GHz=3.359000000 ReY=3.206935751e-02 ImY=7.186336369e+00 int_u2=1.524491391e-33 max_v=4.822962902e-11 PE_avgRe=-5.633688e-19 PE_avgIm=-2.655867e-20 PE_avgAbs=5.639945e-19 PE_KRe=7.419654e-12 PE_KIm=-2.658113e-14 PE_KAbs=7.419702e-12 EO_avgRe=-4.988309e-18 EO_avgIm=-8.295400e-20 EO_avgAbs=4.988998e-18 EO_KRe=-1.821794e-11 EO_KIm=-9.882590e-13 EO_KAbs=1.824472e-11 MB_avgRe=7.121614e-19 MB_avgIm=3.356962e-20 MB_avgAbs=7.129521e-19 MB_KRe=-4.275949e-12 MB_KIm=1.040093e-13 MB_KAbs=4.277214e-12
+SWA6 f_GHz=3.360000000 ReY=3.011498875e-02 ImY=7.229675704e+00 int_u2=1.431089356e-33 max_v=4.671896282e-11 PE_avgRe=-5.291315e-19 PE_avgIm=-2.486002e-20 PE_avgAbs=5.297151e-19 PE_KRe=7.448472e-12 PE_KIm=-2.515326e-14 PE_KAbs=7.448515e-12 EO_avgRe=-4.881460e-18 EO_avgIm=-7.859908e-20 EO_avgAbs=4.882093e-18 EO_KRe=-1.819382e-11 EO_KIm=-9.638616e-13 EO_KAbs=1.821933e-11 MB_avgRe=6.689221e-19 MB_avgIm=3.142545e-20 MB_avgAbs=6.696599e-19 MB_KRe=-4.404283e-12 MB_KIm=9.776091e-14 MB_KAbs=4.405368e-12
+SWA6 f_GHz=3.450000000 ReY=4.233801113e-03 ImY=8.540266988e+00 int_u2=1.775080962e-34 max_v=1.407487175e-11 PE_avgRe=2.689776e-19 PE_avgIm=-2.355830e-21 PE_avgAbs=2.689879e-19 PE_KRe=8.150069e-12 PE_KIm=-6.751841e-15 PE_KAbs=8.150072e-12 EO_avgRe=-9.931461e-19 EO_avgIm=-1.955972e-20 EO_avgAbs=9.933387e-19 EO_KRe=-1.792075e-11 EO_KIm=3.982632e-14 EO_KAbs=1.792079e-11 MB_avgRe=-3.407170e-19 MB_avgIm=3.028868e-21 MB_avgAbs=3.407304e-19 MB_KRe=-7.618283e-12 MB_KIm=1.483274e-14 MB_KAbs=7.618297e-12
+BIN_FREQ f_bin_GHz=3.329800000 refRep_Re=2.266322e-11 refRep_Im=-1.046155e-10 refK_Re=4.149685e-05 refK_Im=-8.847203e-05 x_first=0 last=p
+BIN_REF f_GHz=3.329800000 sumAvgPE=(2.266322e-11,-1.046155e-10) refAvgPE=(2.266322e-11,-1.046155e-10) sumAvgEO=(4.433668e-11,-2.577962e-10) refAvgEO=(4.433668e-11,-2.577962e-10) sumAvgMB=(-6.687842e-12,3.087656e-11) refAvgMB=(-6.687842e-12,3.087656e-11)
+BINCHECK f_GHz=3.329800000 avgPE_rel=9.8313e-10 avgEO_rel=2.4505e-10 avgMB_rel=6.0143e-10 KPE_rel=1.9776e-03 KEO_rel=1.1893e-03 KMB_rel=3.4233e-03
+BIN6 f_GHz=3.329800000 j=0 xc_um=0.012511 PE_Re=2.247350e-05 PE_Im=-8.628922e-06 EO_Re=-4.854059e-05 EO_Im=1.979983e-05 MB_Re=-1.357220e-05 MB_Im=3.857558e-05
+BIN6 f_GHz=3.329800000 j=1 xc_um=0.037534 PE_Re=3.528791e-05 PE_Im=-4.042654e-05 EO_Re=-1.073226e-04 EO_Im=2.394822e-04 MB_Re=-1.059989e-05 MB_Im=3.048873e-05
+BIN6 f_GHz=3.329800000 j=2 xc_um=0.062557 PE_Re=9.371384e-06 PE_Im=3.715485e-05 EO_Re=-8.271387e-05 EO_Im=2.245073e-04 MB_Re=-1.420002e-05 MB_Im=4.178127e-05
+BIN6 f_GHz=3.329800000 j=3 xc_um=0.087580 PE_Re=3.110515e-05 PE_Im=-2.603569e-05 EO_Re=-1.684331e-04 EO_Im=5.482623e-04 MB_Re=-1.491037e-05 MB_Im=4.540623e-05
+BIN6 f_GHz=3.329800000 j=4 xc_um=0.112603 PE_Re=2.489052e-05 PE_Im=-2.502538e-05 EO_Re=-1.532370e-04 EO_Im=5.365095e-04 MB_Re=-1.214499e-05 MB_Im=3.837950e-05
+BIN6 f_GHz=3.329800000 j=5 xc_um=0.137626 PE_Re=2.773003e-05 PE_Im=-3.708742e-05 EO_Re=-1.769589e-04 EO_Im=6.467504e-04 MB_Re=-1.023806e-05 MB_Im=3.337061e-05
+BIN6 f_GHz=3.329800000 j=6 xc_um=0.162649 PE_Re=3.206263e-05 PE_Im=-4.653632e-05 EO_Re=-2.212113e-04 EO_Im=8.351434e-04 MB_Re=-1.357853e-05 MB_Im=4.570459e-05
+BIN6 f_GHz=3.329800000 j=7 xc_um=0.187672 PE_Re=3.290608e-05 PE_Im=-6.059135e-05 EO_Re=-2.177935e-04 EO_Im=8.386536e-04 MB_Re=-1.925722e-05 MB_Im=6.760775e-05
+BIN6 f_GHz=3.329800000 j=8 xc_um=0.212695 PE_Re=3.530498e-05 PE_Im=-7.465972e-05 EO_Re=-2.243257e-04 EO_Im=8.744276e-04 MB_Re=-2.140591e-05 MB_Im=7.855108e-05
+BIN6 f_GHz=3.329800000 j=9 xc_um=0.237718 PE_Re=3.462475e-05 PE_Im=-8.144839e-05 EO_Re=-2.097551e-04 EO_Im=8.242355e-04 MB_Re=-1.835637e-05 MB_Im=7.002064e-05
+BIN6 f_GHz=3.329800000 j=10 xc_um=0.262741 PE_Re=4.400751e-05 PE_Im=-1.249529e-04 EO_Re=-2.130591e-04 EO_Im=8.357225e-04 MB_Re=-2.705043e-05 MB_Im=1.070942e-04
+BIN6 f_GHz=3.329800000 j=11 xc_um=0.287764 PE_Re=5.012637e-05 PE_Im=-1.533781e-04 EO_Re=-2.091765e-04 EO_Im=8.138896e-04 MB_Re=-3.170558e-05 MB_Im=1.303472e-04
+BIN6 f_GHz=3.329800000 j=12 xc_um=0.312787 PE_Re=5.896731e-05 PE_Im=-1.997730e-04 EO_Re=-1.825428e-04 EO_Im=6.963863e-04 MB_Re=-2.931767e-05 MB_Im=1.245886e-04
+BIN6 f_GHz=3.329800000 j=13 xc_um=0.337809 PE_Re=6.587511e-05 PE_Im=-2.435138e-04 EO_Re=-1.304604e-04 EO_Im=4.751561e-04 MB_Re=-2.810412e-05 MB_Im=1.225845e-04
+BIN6 f_GHz=3.329800000 j=14 xc_um=0.362832 PE_Re=6.911493e-05 PE_Im=-2.641043e-04 EO_Re=-6.950463e-05 EO_Im=2.180557e-04 MB_Re=-4.488092e-05 MB_Im=2.005739e-04
+BIN6 f_GHz=3.329800000 j=15 xc_um=0.387855 PE_Re=6.933069e-05 PE_Im=-2.504684e-04 EO_Re=-4.529953e-05 EO_Im=9.567328e-05 MB_Re=-4.812005e-05 MB_Im=2.129102e-04
+BIN6 f_GHz=3.329800000 j=16 xc_um=0.412878 PE_Re=5.082534e-05 PE_Im=-1.629517e-04 EO_Re=-1.596761e-05 EO_Im=-3.401386e-05 MB_Re=-3.274569e-05 MB_Im=1.408012e-04
+BIN6 f_GHz=3.329800000 j=17 xc_um=0.437901 PE_Re=3.360490e-05 PE_Im=-8.353095e-05 EO_Re=1.002380e-05 EO_Im=-1.506507e-04 MB_Re=-1.672245e-05 MB_Im=6.886581e-05
+BIN6 f_GHz=3.329800000 j=18 xc_um=0.462924 PE_Re=5.947641e-05 PE_Im=-2.195586e-04 EO_Re=2.030877e-05 EO_Im=-1.824452e-04 MB_Re=-1.358442e-05 MB_Im=5.192854e-05
+BIN6 f_GHz=3.329800000 j=19 xc_um=0.487947 PE_Re=-2.724856e-05 PE_Im=1.907949e-04 EO_Re=5.352824e-05 EO_Im=-3.374143e-04 MB_Re=-7.113297e-06 MB_Im=2.252873e-05
+BIN6 f_GHz=3.329800000 j=20 xc_um=0.512970 PE_Re=-4.583204e-06 PE_Im=8.311259e-05 EO_Re=7.240162e-05 EO_Im=-4.300215e-04 MB_Re=-2.244940e-06 MB_Im=2.997271e-06
+BIN6 f_GHz=3.329800000 j=21 xc_um=0.537993 PE_Re=-4.911542e-06 PE_Im=7.920151e-05 EO_Re=9.011062e-05 EO_Im=-5.106920e-04 MB_Re=-2.346182e-07 MB_Im=-7.526132e-06
+BIN6 f_GHz=3.329800000 j=22 xc_um=0.563016 PE_Re=-8.520673e-06 PE_Im=8.896521e-05 EO_Re=1.051404e-04 EO_Im=-5.759640e-04 MB_Re=1.507663e-06 MB_Im=-1.436486e-05
+BIN6 f_GHz=3.329800000 j=23 xc_um=0.588039 PE_Re=-8.434359e-06 PE_Im=7.438698e-05 EO_Re=9.668174e-05 EO_Im=-5.176957e-04 MB_Re=1.764991e-06 MB_Im=-1.291188e-05
+BIN6 f_GHz=3.329800000 j=24 xc_um=0.613062 PE_Re=-9.247657e-06 PE_Im=7.518003e-05 EO_Re=1.133220e-04 EO_Im=-5.966002e-04 MB_Re=1.491483e-06 MB_Im=-1.008751e-05
+BIN6 f_GHz=3.329800000 j=25 xc_um=0.638085 PE_Re=-8.732977e-06 PE_Im=6.721609e-05 EO_Re=1.284628e-04 EO_Im=-6.654121e-04 MB_Re=1.758845e-06 MB_Im=-1.134589e-05
+BIN6 f_GHz=3.329800000 j=26 xc_um=0.663107 PE_Re=-6.179774e-06 PE_Im=4.627970e-05 EO_Re=1.298470e-04 EO_Im=-6.623754e-04 MB_Re=1.746490e-06 MB_Im=-1.091050e-05
+BIN6 f_GHz=3.329800000 j=27 xc_um=0.688130 PE_Re=-3.011115e-06 PE_Im=2.228227e-05 EO_Re=1.276554e-04 EO_Im=-6.413157e-04 MB_Re=9.060582e-07 MB_Im=-5.556084e-06
+BIN6 f_GHz=3.329800000 j=28 xc_um=0.713153 PE_Re=8.594550e-08 PE_Im=-3.801201e-07 EO_Re=9.222887e-05 EO_Im=-4.566259e-04 MB_Re=-2.244769e-11 MB_Im=1.805143e-10
+BIN6 f_GHz=3.329800000 j=29 xc_um=0.738176 PE_Re=3.254557e-06 PE_Im=-2.336759e-05 EO_Re=1.156791e-04 EO_Im=-5.631107e-04 MB_Re=-9.053130e-07 MB_Im=5.552695e-06
+BIN6 f_GHz=3.329800000 j=30 xc_um=0.763199 PE_Re=6.466303e-06 PE_Im=-4.758156e-05 EO_Re=1.048716e-04 EO_Im=-4.982564e-04 MB_Re=-1.745872e-06 MB_Im=1.090778e-05
+BIN6 f_GHz=3.329800000 j=31 xc_um=0.788222 PE_Re=9.076646e-06 PE_Im=-6.880458e-05 EO_Re=9.146907e-05 EO_Im=-4.200988e-04 MB_Re=-1.758779e-06 MB_Im=1.134574e-05
+BIN6 f_GHz=3.329800000 j=32 xc_um=0.813245 PE_Re=9.612193e-06 PE_Im=-7.688326e-05 EO_Re=7.021625e-05 EO_Im=-3.065777e-04 MB_Re=-1.491871e-06 MB_Im=1.008952e-05
+BIN6 f_GHz=3.329800000 j=33 xc_um=0.838268 PE_Re=8.798447e-06 PE_Im=-7.609815e-05 EO_Re=5.163869e-05 EO_Im=-2.091484e-04 MB_Re=-1.766754e-06 MB_Im=1.292058e-05
+BIN6 f_GHz=3.329800000 j=34 xc_um=0.863291 PE_Re=8.985428e-06 PE_Im=-9.115546e-05 EO_Re=4.560899e-05 EO_Im=-1.575460e-04 MB_Re=-1.512110e-06 MB_Im=1.438669e-05
+BIN6 f_GHz=3.329800000 j=35 xc_um=0.888314 PE_Re=5.374562e-06 PE_Im=-8.138522e-05 EO_Re=2.707653e-05 EO_Im=-5.175039e-05 MB_Re=2.321597e-07 MB_Im=7.538429e-06
+BIN6 f_GHz=3.329800000 j=36 xc_um=0.913337 PE_Re=-9.663516e-07 PE_Im=-5.804457e-05 EO_Re=8.245405e-06 EO_Im=5.649183e-05 MB_Re=2.240874e-06 MB_Im=-2.977072e-06
+BIN6 f_GHz=3.329800000 j=37 xc_um=0.938360 PE_Re=-5.157599e-05 PE_Im=1.863494e-04 EO_Re=5.182196e-06 EO_Im=7.924767e-05 MB_Re=7.113494e-06 MB_Im=-2.252933e-05
+BIN6 f_GHz=3.329800000 j=38 xc_um=0.963383 PE_Re=1.557039e-05 PE_Im=-1.391991e-04 EO_Re=-3.161063e-05 EO_Im=2.640032e-04 MB_Re=1.358591e-05 MB_Im=-5.193476e-05
+BIN6 f_GHz=3.329800000 j=39 xc_um=0.988405 PE_Re=-2.359036e-05 PE_Im=3.687931e-05 EO_Re=-4.341570e-05 EO_Im=3.544450e-04 MB_Re=1.673035e-05 MB_Im=-6.890319e-05
+BIN6 f_GHz=3.329800000 j=40 xc_um=1.013428 PE_Re=-5.117563e-05 PE_Im=1.646230e-04 EO_Re=-5.516615e-05 EO_Im=4.356533e-04 MB_Re=3.275410e-05 MB_Im=-1.408412e-04
+BIN6 f_GHz=3.329800000 j=41 xc_um=1.038451 PE_Re=-6.993705e-05 PE_Im=2.533226e-04 EO_Re=-6.475347e-05 EO_Im=5.052699e-04 MB_Re=4.813175e-05 MB_Im=-2.129673e-04
+BIN6 f_GHz=3.329800000 j=42 xc_um=1.063474 PE_Re=-6.976640e-05 PE_Im=2.671522e-04 EO_Re=-5.445024e-05 EO_Im=4.435738e-04 MB_Re=4.488021e-05 MB_Im=-2.005712e-04
+BIN6 f_GHz=3.329800000 j=43 xc_um=1.088497 PE_Re=-6.659358e-05 PE_Im=2.468710e-04 EO_Re=-6.657119e-05 EO_Im=5.305652e-04 MB_Re=2.810328e-05 MB_Im=-1.225814e-04
+BIN6 f_GHz=3.329800000 j=44 xc_um=1.113520 PE_Re=-5.979903e-05 PE_Im=2.035677e-04 EO_Re=-9.691345e-05 EO_Im=6.951024e-04 MB_Re=2.931647e-05 MB_Im=-1.245828e-04
+BIN6 f_GHz=3.329800000 j=45 xc_um=1.138543 PE_Re=-5.097527e-05 PE_Im=1.572081e-04 EO_Re=-1.143574e-04 EO_Im=7.814933e-04 MB_Re=3.170373e-05 MB_Im=-1.303394e-04
+BIN6 f_GHz=3.329800000 j=46 xc_um=1.163566 PE_Re=-4.479480e-05 PE_Im=1.232530e-04 EO_Re=-1.273648e-04 EO_Im=8.468018e-04 MB_Re=2.705015e-05 MB_Im=-1.070936e-04
+BIN6 f_GHz=3.329800000 j=47 xc_um=1.188589 PE_Re=-3.051703e-05 PE_Im=7.496470e-05 EO_Re=-1.005741e-04 EO_Im=6.612424e-04 MB_Re=1.835612e-05 MB_Im=-7.001983e-05
+BIN6 f_GHz=3.329800000 j=48 xc_um=1.213612 PE_Re=-3.739041e-05 PE_Im=8.077930e-05 EO_Re=-1.358202e-04 EO_Im=8.923318e-04 MB_Re=2.140590e-05 MB_Im=-7.855146e-05
+BIN6 f_GHz=3.329800000 j=49 xc_um=1.238635 PE_Re=-3.432967e-05 PE_Im=6.269727e-05 EO_Re=-1.319649e-04 EO_Im=8.762614e-04 MB_Re=1.925764e-05 MB_Im=-6.761017e-05
+BIN6 f_GHz=3.329800000 j=50 xc_um=1.263658 PE_Re=-3.181133e-05 PE_Im=4.760212e-05 EO_Re=-1.220649e-04 EO_Im=8.308470e-04 MB_Re=1.357804e-05 MB_Im=-4.570246e-05
+BIN6 f_GHz=3.329800000 j=51 xc_um=1.288681 PE_Re=-2.734409e-05 PE_Im=3.257821e-05 EO_Re=-9.798441e-05 EO_Im=6.964250e-04 MB_Re=1.023843e-05 MB_Im=-3.337258e-05
+BIN6 f_GHz=3.329800000 j=52 xc_um=1.313703 PE_Re=-2.357842e-05 PE_Im=2.217383e-05 EO_Re=-7.405031e-05 EO_Im=5.611867e-04 MB_Re=1.214314e-05 MB_Im=-3.837063e-05
+BIN6 f_GHz=3.329800000 j=53 xc_um=1.338726 PE_Re=-2.705203e-05 PE_Im=1.901665e-05 EO_Re=-6.597848e-05 EO_Im=5.641313e-04 MB_Re=1.490863e-05 MB_Im=-4.539778e-05
+BIN6 f_GHz=3.329800000 j=54 xc_um=1.363749 PE_Re=-2.598727e-05 PE_Im=1.265228e-05 EO_Re=-3.748592e-05 EO_Im=4.271183e-04 MB_Re=1.420823e-05 MB_Im=-4.182126e-05
+BIN6 f_GHz=3.329800000 j=55 xc_um=1.388772 PE_Re=-2.531177e-05 PE_Im=8.564237e-06 EO_Re=-5.714244e-06 EO_Im=2.737694e-04 MB_Re=1.059905e-05 MB_Im=-3.048471e-05
+BIN6 f_GHz=3.329800000 j=56 xc_um=1.413795 PE_Re=4.226887e-06 PE_Im=-1.323475e-04 EO_Re=1.604674e-05 EO_Im=1.583760e-04 MB_Re=1.357205e-05 MB_Im=-3.857467e-05
+BIN6 f_GHz=3.329800000 j=57 xc_um=1.438818 PE_Re=-4.478544e-05 PE_Im=1.270027e-04 EO_Re=5.441606e-05 EO_Im=-6.673290e-05 MB_Re=1.357210e-05 MB_Im=-3.857482e-05
+BIN6 f_GHz=3.329800000 j=58 xc_um=1.463841 PE_Re=-2.853878e-05 PE_Im=2.596951e-05 EO_Re=8.822819e-05 EO_Im=-1.859527e-04 MB_Re=1.059916e-05 MB_Im=-3.048512e-05
+BIN6 f_GHz=3.329800000 j=59 xc_um=1.488864 PE_Re=-2.595530e-05 PE_Im=1.254267e-05 EO_Re=1.208573e-04 EO_Im=-3.426676e-04 MB_Re=1.420841e-05 MB_Im=-4.182187e-05
+BIN6 f_GHz=3.329800000 j=60 xc_um=1.513887 PE_Re=-2.691362e-05 PE_Im=1.839675e-05 EO_Re=1.515003e-04 EO_Im=-4.933443e-04 MB_Re=1.490882e-05 MB_Im=-4.539835e-05
+BIN6 f_GHz=3.329800000 j=61 xc_um=1.538910 PE_Re=-2.335338e-05 PE_Im=2.111948e-05 EO_Re=1.472898e-04 EO_Im=-5.153370e-04 MB_Re=1.214335e-05 MB_Im=-3.837129e-05
+BIN6 f_GHz=3.329800000 j=62 xc_um=1.563933 PE_Re=-2.699630e-05 PE_Im=3.091372e-05 EO_Re=1.811367e-04 EO_Im=-6.615944e-04 MB_Re=1.023855e-05 MB_Im=-3.337282e-05
+BIN6 f_GHz=3.329800000 j=63 xc_um=1.588956 PE_Re=-3.133389e-05 PE_Im=4.527491e-05 EO_Re=2.157872e-04 EO_Im=-8.138451e-04 MB_Re=1.357831e-05 MB_Im=-4.570328e-05
+BIN6 f_GHz=3.329800000 j=64 xc_um=1.613978 PE_Re=-3.380713e-05 PE_Im=6.011156e-05 EO_Re=2.286821e-04 EO_Im=-8.809777e-04 MB_Re=1.925797e-05 MB_Im=-6.761109e-05
+BIN6 f_GHz=3.329800000 j=65 xc_um=1.639001 PE_Re=-3.687440e-05 PE_Im=7.818764e-05 EO_Re=2.349820e-04 EO_Im=-9.168463e-04 MB_Re=2.140628e-05 MB_Im=-7.855251e-05
+BIN6 f_GHz=3.329800000 j=66 xc_um=1.664024 PE_Re=-3.014854e-05 PE_Im=7.309013e-05 EO_Re=1.758139e-04 EO_Im=-6.897496e-04 MB_Re=1.835660e-05 MB_Im=-7.002147e-05
+BIN6 f_GHz=3.329800000 j=67 xc_um=1.689047 PE_Re=-4.431549e-05 PE_Im=1.207910e-04 EO_Re=2.271513e-04 EO_Im=-8.910225e-04 MB_Re=2.705084e-05 MB_Im=-1.070959e-04
+BIN6 f_GHz=3.329800000 j=68 xc_um=1.714070 PE_Re=-5.046520e-05 PE_Im=1.545831e-04 EO_Re=2.104715e-04 EO_Im=-8.192718e-04 MB_Re=3.170455e-05 MB_Im=-1.303421e-04
+BIN6 f_GHz=3.329800000 j=69 xc_um=1.739093 PE_Re=-5.920995e-05 PE_Im=2.005596e-04 EO_Re=1.836636e-04 EO_Im=-7.009340e-04 MB_Re=2.931704e-05 MB_Im=-1.245855e-04
+BIN6 f_GHz=3.329800000 j=70 xc_um=1.764116 PE_Re=-6.597608e-05 PE_Im=2.437818e-04 EO_Re=1.311080e-04 EO_Im=-4.777375e-04 MB_Re=2.810559e-05 MB_Im=-1.225902e-04
+BIN6 f_GHz=3.329800000 j=71 xc_um=1.789139 PE_Re=-6.924871e-05 PE_Im=2.646115e-04 EO_Re=6.984790e-05 EO_Im=-2.193604e-04 MB_Re=4.488363e-05 MB_Im=-2.005865e-04
+BIN6 f_GHz=3.329800000 j=72 xc_um=1.814162 PE_Re=-6.952047e-05 PE_Im=2.512550e-04 EO_Re=4.546701e-05 EO_Im=-9.623473e-05 MB_Re=4.812096e-05 MB_Im=-2.129145e-04
+BIN6 f_GHz=3.329800000 j=73 xc_um=1.839185 PE_Re=-5.096267e-05 PE_Im=1.635464e-04 EO_Re=1.599013e-05 EO_Im=3.399988e-05 MB_Re=3.274652e-05 MB_Im=-1.408050e-04
+BIN6 f_GHz=3.329800000 j=74 xc_um=1.864208 PE_Re=-3.368176e-05 PE_Im=8.388142e-05 EO_Re=-1.005346e-05 EO_Im=1.508096e-04 MB_Re=1.672316e-05 MB_Im=-6.886893e-05
+BIN6 f_GHz=3.329800000 j=75 xc_um=1.889231 PE_Re=-6.162762e-05 PE_Im=2.309312e-04 EO_Re=-1.939753e-05 EO_Im=1.763096e-04 MB_Re=1.358517e-05 MB_Im=-5.193183e-05
+BIN6 f_GHz=3.329800000 j=76 xc_um=1.914254 PE_Re=2.435152e-05 PE_Im=-1.782829e-04 EO_Re=-5.408850e-05 EO_Im=3.419084e-04 MB_Re=7.113901e-06 MB_Im=-2.253134e-05
+BIN6 f_GHz=3.329800000 j=77 xc_um=1.939276 PE_Re=9.573324e-06 PE_Im=-1.065961e-04 EO_Re=-7.274562e-05 EO_Im=4.314325e-04 MB_Re=2.245299e-06 MB_Im=-2.998801e-06
+BIN6 f_GHz=3.329800000 j=78 xc_um=1.964299 PE_Re=4.861560e-06 PE_Im=-7.892202e-05 EO_Re=-9.003288e-05 EO_Im=5.102499e-04 MB_Re=2.350110e-07 MB_Im=7.524463e-06
+BIN6 f_GHz=3.329800000 j=79 xc_um=1.989322 PE_Re=8.441503e-06 PE_Im=-8.857154e-05 EO_Re=-1.050640e-04 EO_Im=5.755640e-04 MB_Re=-1.507352e-06 MB_Im=1.436353e-05
+BIN6 f_GHz=3.329800000 j=80 xc_um=2.014345 PE_Re=8.359233e-06 PE_Im=-7.403496e-05 EO_Re=-9.665353e-05 EO_Im=5.175647e-04 MB_Re=-1.764825e-06 MB_Im=1.291118e-05
+BIN6 f_GHz=3.329800000 j=81 xc_um=2.039368 PE_Re=9.163685e-06 PE_Im=-7.479576e-05 EO_Re=-1.133358e-04 EO_Im=5.966907e-04 MB_Re=-1.491341e-06 MB_Im=1.008688e-05
+BIN6 f_GHz=3.329800000 j=82 xc_um=2.064391 PE_Re=8.640971e-06 PE_Im=-6.679639e-05 EO_Re=-1.285383e-04 EO_Im=6.658131e-04 MB_Re=-1.758755e-06 MB_Im=1.134550e-05
+BIN6 f_GHz=3.329800000 j=83 xc_um=2.089414 PE_Re=6.067831e-06 PE_Im=-4.575283e-05 EO_Re=-1.299478e-04 EO_Im=6.628893e-04 MB_Re=-1.746392e-06 MB_Im=1.091003e-05
+BIN6 f_GHz=3.329800000 j=84 xc_um=2.114437 PE_Re=2.857101e-06 PE_Im=-2.153678e-05 EO_Re=-1.277365e-04 EO_Im=6.417147e-04 MB_Re=-9.060254e-07 MB_Im=5.555875e-06
+BIN6 f_GHz=3.329800000 j=85 xc_um=2.139460 PE_Re=-2.347156e-07 PE_Im=1.108573e-06 EO_Re=-9.224966e-05 EO_Im=4.567180e-04 MB_Re=-6.635813e-11 MB_Im=1.721143e-10
+BIN6 f_GHz=3.329800000 j=86 xc_um=2.164483 PE_Re=-3.479693e-06 PE_Im=2.447431e-05 EO_Re=-1.156497e-04 EO_Im=5.629453e-04 MB_Re=9.052196e-07 MB_Im=-5.552398e-06
+BIN6 f_GHz=3.329800000 j=87 xc_um=2.189506 PE_Re=-6.672523e-06 PE_Im=4.859664e-05 EO_Re=-1.047835e-04 EO_Im=4.978025e-04 MB_Re=1.745711e-06 MB_Im=-1.090721e-05
+BIN6 f_GHz=3.329800000 j=88 xc_um=2.214529 PE_Re=-9.192918e-06 PE_Im=6.937790e-05 EO_Re=-9.135450e-05 EO_Im=4.195216e-04 MB_Re=1.758577e-06 MB_Im=-1.134495e-05
+BIN6 f_GHz=3.329800000 j=89 xc_um=2.239552 PE_Re=-9.585213e-06 PE_Im=7.675431e-05 EO_Re=-7.012986e-05 EO_Im=3.061477e-04 MB_Re=1.491719e-06 MB_Im=-1.008897e-05
+BIN6 f_GHz=3.329800000 j=90 xc_um=2.264574 PE_Re=-8.644239e-06 PE_Im=7.534601e-05 EO_Re=-5.160286e-05 EO_Im=2.089731e-04 MB_Re=1.766481e-06 MB_Im=-1.291951e-05
+BIN6 f_GHz=3.329800000 j=91 xc_um=2.289597 PE_Re=-8.636610e-06 PE_Im=8.945223e-05 EO_Re=-4.564527e-05 EO_Im=1.577300e-04 MB_Re=1.511677e-06 MB_Im=-1.438497e-05
+BIN6 f_GHz=3.329800000 j=92 xc_um=2.314620 PE_Re=-4.898748e-06 PE_Im=7.905109e-05 EO_Re=-2.719873e-05 EO_Im=5.237332e-05 MB_Re=-2.327541e-07 MB_Im=-7.535965e-06
+BIN6 f_GHz=3.329800000 j=93 xc_um=2.339643 PE_Re=1.498897e-06 PE_Im=5.541644e-05 EO_Re=-8.453583e-06 EO_Im=-5.542083e-05 MB_Re=-2.241426e-06 MB_Im=2.979404e-06
+BIN6 f_GHz=3.329800000 j=94 xc_um=2.364666 PE_Re=1.358700e-05 PE_Im=1.956113e-06 EO_Re=7.732880e-06 EO_Im=-1.479785e-04 MB_Re=-7.114479e-06 MB_Im=2.253362e-05
+BIN6 f_GHz=3.329800000 j=95 xc_um=2.389689 PE_Re=1.505478e-05 PE_Im=-1.427880e-05 EO_Re=2.131143e-05 EO_Im=-2.062396e-04 MB_Re=-1.358721e-05 MB_Im=5.194052e-05
+BIN6 f_GHz=3.329800000 j=96 xc_um=2.414712 PE_Re=3.184319e-05 PE_Im=-7.609747e-05 EO_Re=4.016724e-05 EO_Im=-3.402920e-04 MB_Re=-1.673145e-05 MB_Im=6.890814e-05
+BIN6 f_GHz=3.329800000 j=97 xc_um=2.439735 PE_Re=5.114830e-05 PE_Im=-1.644690e-04 EO_Re=5.510700e-05 EO_Im=-4.354316e-04 MB_Re=-3.275489e-05 MB_Im=1.408449e-04
+BIN6 f_GHz=3.329800000 j=98 xc_um=2.464758 PE_Re=6.973856e-05 PE_Im=-2.523021e-04 EO_Re=6.485334e-05 EO_Im=-5.059494e-04 MB_Re=-4.813325e-05 MB_Im=2.129747e-04
+BIN6 f_GHz=3.329800000 j=99 xc_um=2.489781 PE_Re=7.276425e-05 PE_Im=-2.793487e-04 EO_Re=5.719794e-05 EO_Im=-4.624388e-04 MB_Re=-4.488597e-05 MB_Im=2.005985e-04
+BIN6 f_GHz=3.329800000 j=100 xc_um=2.514804 PE_Re=6.295144e-05 PE_Im=-2.313087e-04 EO_Re=6.442557e-05 EO_Im=-5.153120e-04 MB_Re=-2.810573e-05 MB_Im=1.225908e-04
+BIN6 f_GHz=3.329800000 j=101 xc_um=2.539827 PE_Re=5.959060e-05 PE_Im=-2.021594e-04 EO_Re=9.776764e-05 EO_Im=-7.001443e-04 MB_Re=-2.931472e-05 MB_Im=1.245744e-04
+BIN6 f_GHz=3.329800000 j=102 xc_um=2.564850 PE_Re=5.070067e-05 PE_Im=-1.582709e-04 EO_Re=1.096337e-04 EO_Im=-7.528529e-04 MB_Re=-3.170233e-05 MB_Im=1.303328e-04
+BIN6 f_GHz=3.329800000 j=103 xc_um=2.589872 PE_Re=4.138530e-05 PE_Im=-1.114555e-04 EO_Re=1.209869e-04 EO_Im=-8.041564e-04 MB_Re=-2.705063e-05 MB_Im=1.070958e-04
+BIN6 f_GHz=3.329800000 j=104 xc_um=2.614895 PE_Re=3.586401e-05 PE_Im=-8.790706e-05 EO_Re=1.213021e-04 EO_Im=-7.929026e-04 MB_Re=-1.835597e-05 MB_Im=7.001887e-05
+BIN6 f_GHz=3.329800000 j=105 xc_um=2.639918 PE_Re=3.636036e-05 PE_Im=-7.870263e-05 EO_Re=1.311019e-04 EO_Im=-8.623738e-04 MB_Re=-2.140605e-05 MB_Im=7.855195e-05
+BIN6 f_GHz=3.329800000 j=106 xc_um=2.664941 PE_Re=3.542479e-05 PE_Im=-6.991873e-05 EO_Re=1.283419e-04 EO_Im=-8.545658e-04 MB_Re=-1.925786e-05 MB_Im=6.761102e-05
+BIN6 f_GHz=3.329800000 j=107 xc_um=2.689964 PE_Re=2.673336e-05 PE_Im=-2.656480e-05 EO_Re=1.187611e-04 EO_Im=-8.058390e-04 MB_Re=-1.357715e-05 MB_Im=4.569799e-05
+BIN6 f_GHz=3.329800000 j=108 xc_um=2.714987 PE_Re=2.705640e-05 PE_Im=-3.290540e-05 EO_Re=9.645925e-05 EO_Im=-6.853552e-04 MB_Re=-1.023839e-05 MB_Im=3.337235e-05
+BIN6 f_GHz=3.329800000 j=109 xc_um=2.740010 PE_Re=2.325665e-05 PE_Im=-1.298289e-05 EO_Re=8.122463e-05 EO_Im=-6.124178e-04 MB_Re=-1.214117e-05 MB_Im=3.836095e-05
+BIN6 f_GHz=3.329800000 j=110 xc_um=2.765033 PE_Re=3.123770e-05 PE_Im=-2.940954e-05 EO_Re=6.991741e-05 EO_Im=-6.047341e-04 MB_Re=-1.490758e-05 MB_Im=4.539267e-05
+BIN6 f_GHz=3.329800000 j=111 xc_um=2.790056 PE_Re=2.738155e-05 PE_Im=-5.081836e-05 EO_Re=2.280237e-05 EO_Im=-2.897466e-04 MB_Re=-1.421577e-05 MB_Im=4.185786e-05
+BIN6 f_GHz=3.329800000 j=112 xc_um=2.815079 PE_Re=2.374794e-05 PE_Im=1.685549e-05 EO_Re=1.263603e-05 EO_Im=-3.445651e-04 MB_Re=-1.059747e-05 MB_Im=3.047702e-05
+BIN6 f_GHz=3.329800000 j=113 xc_um=2.840102 PE_Re=2.024897e-05 PE_Im=2.327811e-06 EO_Re=-2.266004e-05 EO_Im=-1.061390e-04 MB_Re=-1.357115e-05 MB_Im=3.857061e-05
+WIN6 f_GHz=3.329800000 w_um=0.30 j0=99 x0_um=2.477269 Tot_Re=1.191252e-04 Tot_Im=-7.258191e-04 Tot_Abs=7.355299e-04
+WIN6 f_GHz=3.329800000 w_um=0.50 j0=94 x0_um=2.352155 Tot_Re=8.637485e-05 Tot_Im=-5.507445e-04 Tot_Abs=5.574766e-04
+WIN6 f_GHz=3.329800000 w_um=0.80 j0=85 x0_um=2.126948 Tot_Re=2.710851e-05 Tot_Im=-2.304857e-04 Tot_Abs=2.320744e-04
+BIN_FREQ f_bin_GHz=3.200000000 refRep_Re=1.616256e-12 refRep_Im=-5.633090e-15 refK_Re=2.386584e-05 refK_Im=-1.273948e-08 x_first=0 last=p
+BIN_REF f_GHz=3.200000000 sumAvgPE=(1.616256e-12,-5.633090e-15) refAvgPE=(1.616256e-12,-5.633090e-15) sumAvgEO=(-1.912161e-11,-7.591543e-14) refAvgEO=(-1.912161e-11,-7.591543e-14) sumAvgMB=(-4.741495e-13,1.688977e-15) refAvgMB=(-4.741495e-13,1.688977e-15)
+BINCHECK f_GHz=3.200000000 avgPE_rel=9.6070e-09 avgEO_rel=8.7099e-10 avgMB_rel=5.3016e-10 KPE_rel=9.0739e-05 KEO_rel=1.3990e-04 KMB_rel=7.2409e-04
+BIN6 f_GHz=3.200000000 j=0 xc_um=0.012511 PE_Re=2.111624e-05 PE_Im=-9.403456e-09 EO_Re=-4.369089e-05 EO_Im=6.138314e-09 MB_Re=-5.398968e-06 MB_Im=6.862722e-09
+BIN6 f_GHz=3.200000000 j=1 xc_um=0.037534 PE_Re=2.768210e-05 PE_Im=-1.344106e-08 EO_Re=-5.822318e-05 EO_Im=1.600446e-08 MB_Re=-4.151200e-06 MB_Im=5.299808e-09
+BIN6 f_GHz=3.200000000 j=2 xc_um=0.062557 PE_Re=1.708089e-05 PE_Im=-6.038675e-09 EO_Re=-3.705348e-05 EO_Im=1.276437e-08 MB_Re=-5.391339e-06 MB_Im=6.944324e-09
+BIN6 f_GHz=3.200000000 j=3 xc_um=0.087580 PE_Re=2.632886e-05 PE_Im=-1.241852e-08 EO_Re=-5.756893e-05 EO_Im=2.723452e-08 MB_Re=-5.382867e-06 MB_Im=7.038125e-09
+BIN6 f_GHz=3.200000000 j=4 xc_um=0.112603 PE_Re=2.021938e-05 PE_Im=-9.675934e-09 EO_Re=-4.498278e-05 EO_Im=2.524002e-08 MB_Re=-4.131569e-06 MB_Im=5.503351e-09
+BIN6 f_GHz=3.200000000 j=5 xc_um=0.137626 PE_Re=2.065366e-05 PE_Im=-1.028790e-08 EO_Re=-4.660828e-05 EO_Im=2.952736e-08 MB_Re=-3.298199e-06 MB_Im=4.472638e-09
+BIN6 f_GHz=3.200000000 j=6 xc_um=0.162649 PE_Re=2.311179e-05 PE_Im=-1.179515e-08 EO_Re=-5.299893e-05 EO_Im=3.742519e-08 MB_Re=-4.111608e-06 MB_Im=5.696401e-09
+BIN6 f_GHz=3.200000000 j=7 xc_um=0.187672 PE_Re=2.111331e-05 PE_Im=-1.140752e-08 EO_Re=-4.893702e-05 EO_Im=3.720502e-08 MB_Re=-5.323787e-06 MB_Im=7.626883e-09
+BIN6 f_GHz=3.200000000 j=8 xc_um=0.212695 PE_Re=2.067564e-05 PE_Im=-1.176957e-08 EO_Re=-4.826993e-05 EO_Im=3.873521e-08 MB_Re=-5.298593e-06 MB_Im=7.930819e-09
+BIN6 f_GHz=3.200000000 j=9 xc_um=0.237718 PE_Re=1.857960e-05 PE_Im=-1.120878e-08 EO_Re=-4.373346e-05 EO_Im=3.684314e-08 MB_Re=-4.058655e-06 MB_Im=6.375546e-09
+BIN6 f_GHz=3.200000000 j=10 xc_um=0.262741 PE_Re=1.928015e-05 PE_Im=-1.300481e-08 EO_Re=-4.466569e-05 EO_Im=3.772521e-08 MB_Re=-5.267605e-06 MB_Im=8.771908e-09
+BIN6 f_GHz=3.200000000 j=11 xc_um=0.287764 PE_Re=1.969880e-05 PE_Im=-1.429425e-08 EO_Re=-4.497390e-05 EO_Im=3.789431e-08 MB_Re=-5.294609e-06 MB_Im=9.513990e-09
+BIN6 f_GHz=3.200000000 j=12 xc_um=0.312787 PE_Re=1.924443e-05 PE_Im=-1.579995e-08 EO_Re=-4.174619e-05 EO_Im=3.412221e-08 MB_Re=-4.157702e-06 MB_Im=8.151779e-09
+BIN6 f_GHz=3.200000000 j=13 xc_um=0.337809 PE_Re=1.737682e-05 PE_Im=-1.656084e-08 EO_Re=-3.392943e-05 EO_Im=2.594031e-08 MB_Re=-3.409638e-06 MB_Im=7.326508e-09
+BIN6 f_GHz=3.200000000 j=14 xc_um=0.362832 PE_Re=1.646062e-05 PE_Im=-1.686579e-08 EO_Re=-2.442465e-05 EO_Im=1.637553e-08 MB_Re=-4.571783e-06 MB_Im=1.090777e-08
+BIN6 f_GHz=3.200000000 j=15 xc_um=0.387855 PE_Re=1.933199e-05 PE_Im=-1.761937e-08 EO_Re=-2.431071e-05 EO_Im=1.431366e-08 MB_Re=-5.248603e-06 MB_Im=1.195702e-08
+BIN6 f_GHz=3.200000000 j=16 xc_um=0.412878 PE_Re=1.822411e-05 PE_Im=-1.396874e-08 EO_Re=-2.083853e-05 EO_Im=1.022041e-08 MB_Re=-4.261821e-06 MB_Im=8.770784e-09
+BIN6 f_GHz=3.200000000 j=17 xc_um=0.437901 PE_Re=1.680034e-05 PE_Im=-1.046499e-08 EO_Re=-1.810643e-05 EO_Im=6.514591e-09 MB_Re=-2.689069e-06 MB_Im=4.952385e-09
+BIN6 f_GHz=3.200000000 j=18 xc_um=0.462924 PE_Re=1.552738e-05 PE_Im=-1.430945e-08 EO_Re=-1.428785e-05 EO_Im=4.847848e-09 MB_Re=-2.859618e-06 MB_Im=4.646323e-09
+BIN6 f_GHz=3.200000000 j=19 xc_um=0.487947 PE_Re=1.064249e-05 PE_Im=1.743706e-09 EO_Re=-1.215405e-05 EO_Im=-1.437985e-09 MB_Re=-2.279168e-06 MB_Im=3.157588e-09
+BIN6 f_GHz=3.200000000 j=20 xc_um=0.512970 PE_Re=1.179881e-05 PE_Im=-2.258509e-09 EO_Re=-1.153170e-05 EO_Im=-3.109103e-09 MB_Re=-1.407442e-06 MB_Im=1.635813e-09
+BIN6 f_GHz=3.200000000 j=21 xc_um=0.537993 PE_Re=1.068875e-05 PE_Im=-1.845747e-09 EO_Re=-9.871507e-06 EO_Im=-5.554595e-09 MB_Re=-1.457210e-06 MB_Im=1.389756e-09
+BIN6 f_GHz=3.200000000 j=22 xc_um=0.563016 PE_Re=9.038876e-06 PE_Im=-7.579215e-10 EO_Re=-7.885706e-06 EO_Im=-7.925582e-09 MB_Re=-1.118136e-06 MB_Im=8.221626e-10
+BIN6 f_GHz=3.200000000 j=23 xc_um=0.588039 PE_Re=6.263423e-06 PE_Im=-5.917902e-11 EO_Re=-5.056527e-06 EO_Im=-8.066624e-09 MB_Re=-6.561329e-07 MB_Im=3.555055e-10
+BIN6 f_GHz=3.200000000 j=24 xc_um=0.613062 PE_Re=5.615299e-06 PE_Im=2.588375e-10 EO_Re=-4.027008e-06 EO_Im=-9.997840e-09 MB_Re=-4.165426e-07 MB_Im=1.725058e-10
+BIN6 f_GHz=3.200000000 j=25 xc_um=0.638085 PE_Re=4.560737e-06 PE_Im=4.361415e-10 EO_Re=-2.500797e-06 EO_Im=-1.173648e-08 MB_Re=-3.992173e-07 MB_Im=1.180407e-10
+BIN6 f_GHz=3.200000000 j=26 xc_um=0.663107 PE_Re=2.974839e-06 PE_Im=3.743667e-10 EO_Re=-5.527330e-07 EO_Im=-1.201551e-08 MB_Re=-3.367332e-07 MB_Im=6.199015e-11
+BIN6 f_GHz=3.200000000 j=27 xc_um=0.688130 PE_Re=1.396681e-06 PE_Im=1.971106e-10 EO_Re=1.411117e-06 EO_Im=-1.172400e-08 MB_Re=-1.572526e-07 MB_Im=1.599751e-11
+BIN6 f_GHz=3.200000000 j=28 xc_um=0.713153 PE_Re=9.888204e-09 PE_Im=-1.712775e-11 EO_Re=2.373910e-06 EO_Im=-8.264307e-09 MB_Re=1.552696e-12 MB_Im=-1.533813e-14
+BIN6 f_GHz=3.200000000 j=29 xc_um=0.738176 PE_Re=-1.370335e-06 PE_Im=-2.451554e-10 EO_Re=4.949927e-06 EO_Im=-9.885910e-09 MB_Re=1.572897e-07 MB_Im=-1.619007e-11
+BIN6 f_GHz=3.200000000 j=30 xc_um=0.763199 PE_Re=-2.948534e-06 PE_Im=-4.296310e-10 EO_Re=7.029072e-06 EO_Im=-8.173260e-09 MB_Re=3.367692e-07 MB_Im=-6.216342e-11
+BIN6 f_GHz=3.200000000 j=31 xc_um=0.788222 PE_Re=-4.534368e-06 PE_Im=-5.010818e-10 EO_Re=9.165049e-06 EO_Im=-6.019697e-09 MB_Re=3.992155e-07 MB_Im=-1.180909e-10
+BIN6 f_GHz=3.200000000 j=32 xc_um=0.813245 PE_Re=-5.590814e-06 PE_Im=-3.269178e-10 EO_Re=1.038614e-05 EO_Im=-3.291730e-09 MB_Re=4.165232e-07 MB_Im=-1.724688e-10
+BIN6 f_GHz=3.200000000 j=33 xc_um=0.838268 PE_Re=-6.240857e-06 PE_Im=-8.445607e-12 EO_Re=1.108169e-05 EO_Im=-9.999124e-10 MB_Re=6.560547e-07 MB_Im=-3.552178e-10
+BIN6 f_GHz=3.200000000 j=34 xc_um=0.863291 PE_Re=-9.011141e-06 PE_Im=6.716631e-10 EO_Re=1.552835e-05 EO_Im=1.536890e-09 MB_Re=1.117965e-06 MB_Im=-8.213937e-10
+BIN6 f_GHz=3.200000000 j=35 xc_um=0.888314 PE_Re=-1.066135e-05 PE_Im=1.759631e-09 EO_Re=1.804201e-05 EO_Im=4.666050e-09 MB_Re=1.457117e-06 MB_Im=-1.389360e-09
+BIN6 f_GHz=3.200000000 j=36 xc_um=0.913337 PE_Re=-1.234493e-05 PE_Im=3.355258e-09 EO_Re=2.074284e-05 EO_Im=7.904738e-09 MB_Re=1.407330e-06 MB_Im=-1.635127e-09
+BIN6 f_GHz=3.200000000 j=37 xc_um=0.938360 PE_Re=-1.423677e-05 PE_Im=1.251179e-08 EO_Re=2.210709e-05 EO_Im=8.148575e-09 MB_Re=2.279165e-06 MB_Im=-3.157687e-09
+BIN6 f_GHz=3.200000000 j=38 xc_um=0.963383 PE_Re=-1.204447e-05 PE_Im=7.085797e-10 EO_Re=2.196209e-05 EO_Im=1.319172e-08 MB_Re=2.859796e-06 MB_Im=-4.646727e-09
+BIN6 f_GHz=3.200000000 j=39 xc_um=0.988405 PE_Re=-1.609281e-05 PE_Im=8.579067e-09 EO_Re=2.830040e-05 EO_Im=1.679861e-08 MB_Re=2.689490e-06 MB_Im=-4.953955e-09
+BIN6 f_GHz=3.200000000 j=40 xc_um=1.013428 PE_Re=-1.824092e-05 PE_Im=1.403086e-08 EO_Re=3.269989e-05 EO_Im=1.936852e-08 MB_Re=4.262298e-06 MB_Im=-8.772450e-09
+BIN6 f_GHz=3.200000000 j=41 xc_um=1.038451 PE_Re=-1.936904e-05 PE_Im=1.773143e-08 EO_Re=3.690958e-05 EO_Im=2.133797e-08 MB_Re=5.249050e-06 MB_Im=-1.195913e-08
+BIN6 f_GHz=3.200000000 j=42 xc_um=1.063474 PE_Re=-1.650442e-05 PE_Im=1.698926e-08 EO_Re=3.467758e-05 EO_Im=1.817650e-08 MB_Re=4.571828e-06 MB_Im=-1.090760e-08
+BIN6 f_GHz=3.200000000 j=43 xc_um=1.088497 PE_Re=-1.742607e-05 PE_Im=1.669821e-08 EO_Re=3.989221e-05 EO_Im=2.083376e-08 MB_Re=3.409557e-06 MB_Im=-7.326290e-09
+BIN6 f_GHz=3.200000000 j=44 xc_um=1.113520 PE_Re=-1.931971e-05 PE_Im=1.596420e-08 EO_Re=4.233158e-05 EO_Im=2.596848e-08 MB_Re=4.157792e-06 MB_Im=-8.151516e-09
+BIN6 f_GHz=3.200000000 j=45 xc_um=1.138543 PE_Re=-1.978416e-05 PE_Im=1.446306e-08 EO_Re=4.200949e-05 EO_Im=2.816586e-08 MB_Re=5.294465e-06 MB_Im=-9.513549e-09
+BIN6 f_GHz=3.200000000 j=46 xc_um=1.163566 PE_Re=-2.041659e-05 PE_Im=1.348371e-08 EO_Re=4.190864e-05 EO_Im=2.965511e-08 MB_Re=5.267560e-06 MB_Im=-8.771794e-09
+BIN6 f_GHz=3.200000000 j=47 xc_um=1.188589 PE_Re=-1.574369e-05 PE_Im=9.650172e-09 EO_Re=3.151110e-05 EO_Im=2.264299e-08 MB_Re=4.058649e-06 MB_Im=-6.375470e-09
+BIN6 f_GHz=3.200000000 j=48 xc_um=1.213612 PE_Re=-2.154759e-05 PE_Im=1.238791e-08 EO_Re=4.230510e-05 EO_Im=2.989806e-08 MB_Re=5.298599e-06 MB_Im=-7.930782e-09
+BIN6 f_GHz=3.200000000 j=49 xc_um=1.238635 PE_Re=-2.212475e-05 PE_Im=1.195445e-08 EO_Re=4.281733e-05 EO_Im=2.860813e-08 MB_Re=5.323804e-06 MB_Im=-7.626927e-09
+BIN6 f_GHz=3.200000000 j=50 xc_um=1.263658 PE_Re=-2.264559e-05 PE_Im=1.160293e-08 EO_Re=4.351751e-05 EO_Im=2.632205e-08 MB_Re=4.111595e-06 MB_Im=-5.696295e-09
+BIN6 f_GHz=3.200000000 j=51 xc_um=1.288681 PE_Re=-2.116952e-05 PE_Im=1.038884e-08 EO_Re=4.067054e-05 EO_Im=2.126102e-08 MB_Re=3.298212e-06 MB_Im=-4.472692e-09
+BIN6 f_GHz=3.200000000 j=52 xc_um=1.313703 PE_Re=-1.946348e-05 PE_Im=9.253436e-09 EO_Re=3.755129e-05 EO_Im=1.637552e-08 MB_Re=4.131526e-06 MB_Im=-5.503018e-09
+BIN6 f_GHz=3.200000000 j=53 xc_um=1.338726 PE_Re=-2.364390e-05 PE_Im=1.093538e-08 EO_Re=4.601405e-05 EO_Im=1.529615e-08 MB_Re=5.382849e-06 MB_Im=-7.037821e-09
+BIN6 f_GHz=3.200000000 j=54 xc_um=1.363749 PE_Re=-2.386138e-05 PE_Im=1.078228e-08 EO_Re=4.704032e-05 EO_Im=9.973815e-09 MB_Re=5.391607e-06 MB_Im=-6.945778e-09
+BIN6 f_GHz=3.200000000 j=55 xc_um=1.388772 PE_Re=-2.400972e-05 PE_Im=1.068756e-08 EO_Re=4.809045e-05 EO_Im=4.121802e-09 MB_Re=4.151175e-06 MB_Im=-5.299647e-09
+BIN6 f_GHz=3.200000000 j=56 xc_um=1.413795 PE_Re=-2.252804e-05 PE_Im=5.337891e-09 EO_Re=4.678311e-05 EO_Im=7.895433e-12 MB_Re=5.399013e-06 MB_Im=-6.862721e-09
+BIN6 f_GHz=3.200000000 j=57 xc_um=1.438818 PE_Re=-1.981410e-05 PE_Im=1.281096e-08 EO_Re=4.024614e-05 EO_Im=-7.431269e-09 MB_Re=5.399021e-06 MB_Im=-6.862729e-09
+BIN6 f_GHz=3.200000000 j=58 xc_um=1.463841 PE_Re=-2.376401e-05 PE_Im=1.116370e-08 EO_Re=5.000772e-05 EO_Im=-1.300789e-08 MB_Re=4.151192e-06 MB_Im=-5.299667e-09
+BIN6 f_GHz=3.200000000 j=59 xc_um=1.488864 PE_Re=-2.385114e-05 PE_Im=1.077410e-08 EO_Re=5.126130e-05 EO_Im=-1.888825e-08 MB_Re=5.391642e-06 MB_Im=-6.945812e-09
+BIN6 f_GHz=3.200000000 j=60 xc_um=1.513887 PE_Re=-2.362891e-05 PE_Im=1.090781e-08 EO_Re=5.174876e-05 EO_Im=-2.447047e-08 MB_Re=5.382897e-06 MB_Im=-7.037859e-09
+BIN6 f_GHz=3.200000000 j=61 xc_um=1.538910 PE_Re=-1.944848e-05 PE_Im=9.211075e-09 EO_Re=4.330484e-05 EO_Im=-2.425799e-08 MB_Re=4.131574e-06 MB_Im=-5.503060e-09
+BIN6 f_GHz=3.200000000 j=62 xc_um=1.563933 PE_Re=-2.115343e-05 PE_Im=1.032527e-08 EO_Re=4.778730e-05 EO_Im=-3.023720e-08 MB_Re=3.298254e-06 MB_Im=-4.472718e-09
+BIN6 f_GHz=3.200000000 j=63 xc_um=1.588956 PE_Re=-2.263204e-05 PE_Im=1.151798e-08 EO_Re=5.186699e-05 EO_Im=-3.647087e-08 MB_Re=4.111656e-06 MB_Im=-5.696350e-09
+BIN6 f_GHz=3.200000000 j=64 xc_um=1.613978 PE_Re=-2.211774e-05 PE_Im=1.186362e-08 EO_Re=5.129861e-05 EO_Im=-3.909897e-08 MB_Re=5.323893e-06 MB_Im=-7.627001e-09
+BIN6 f_GHz=3.200000000 j=65 xc_um=1.639001 PE_Re=-2.154839e-05 PE_Im=1.230041e-08 EO_Re=5.037858e-05 EO_Im=-4.064112e-08 MB_Re=5.298698e-06 MB_Im=-7.930870e-09
+BIN6 f_GHz=3.200000000 j=66 xc_um=1.664024 PE_Re=-1.574907e-05 PE_Im=9.589091e-09 EO_Re=3.690070e-05 EO_Im=-3.075416e-08 MB_Re=4.058739e-06 MB_Im=-6.375577e-09
+BIN6 f_GHz=3.200000000 j=67 xc_um=1.689047 PE_Re=-2.042832e-05 PE_Im=1.340577e-08 EO_Re=4.760171e-05 EO_Im=-4.028083e-08 MB_Re=5.267691e-06 MB_Im=-8.771957e-09
+BIN6 f_GHz=3.200000000 j=68 xc_um=1.714070 PE_Re=-1.979762e-05 PE_Im=1.438054e-08 EO_Re=4.518945e-05 EO_Im=-3.810873e-08 MB_Re=5.294601e-06 MB_Im=-9.513743e-09
+BIN6 f_GHz=3.200000000 j=69 xc_um=1.739093 PE_Re=-1.933046e-05 PE_Im=1.586778e-08 EO_Re=4.195166e-05 EO_Im=-3.432034e-08 MB_Re=4.157722e-06 MB_Im=-8.151623e-09
+BIN6 f_GHz=3.200000000 j=70 xc_um=1.764116 PE_Re=-1.742449e-05 PE_Im=1.659339e-08 EO_Re=3.405672e-05 EO_Im=-2.605712e-08 MB_Re=3.409988e-06 MB_Im=-7.326844e-09
+BIN6 f_GHz=3.200000000 j=71 xc_um=1.789139 PE_Re=-1.649328e-05 PE_Im=1.689943e-08 EO_Re=2.450374e-05 EO_Im=-1.644085e-08 MB_Re=4.571992e-06 MB_Im=-1.090829e-08
+BIN6 f_GHz=3.200000000 j=72 xc_um=1.814162 PE_Re=-1.936487e-05 PE_Im=1.766261e-08 EO_Re=2.436280e-05 EO_Im=-1.435113e-08 MB_Re=5.248684e-06 MB_Im=-1.195718e-08
+BIN6 f_GHz=3.200000000 j=73 xc_um=1.839185 PE_Re=-1.824278e-05 PE_Im=1.399810e-08 EO_Re=2.085660e-05 EO_Im=-1.023033e-08 MB_Re=4.261923e-06 MB_Im=-8.770931e-09
+BIN6 f_GHz=3.200000000 j=74 xc_um=1.864208 PE_Re=-1.680725e-05 PE_Im=1.048023e-08 EO_Re=1.810797e-05 EO_Im=-6.512149e-09 MB_Re=2.689164e-06 MB_Im=-4.952510e-09
+BIN6 f_GHz=3.200000000 j=75 xc_um=1.889231 PE_Re=-1.541243e-05 PE_Im=1.463079e-08 EO_Re=1.400561e-05 EO_Im=-4.878741e-09 MB_Re=2.859728e-06 MB_Im=-4.646453e-09
+BIN6 f_GHz=3.200000000 j=76 xc_um=1.914254 PE_Re=-1.103999e-05 PE_Im=-1.146721e-09 EO_Re=1.244616e-05 EO_Im=1.318921e-09 MB_Re=2.279264e-06 MB_Im=-3.157690e-09
+BIN6 f_GHz=3.200000000 j=77 xc_um=1.939276 PE_Re=-1.149468e-05 PE_Im=1.343672e-09 EO_Re=1.148691e-05 EO_Im=3.275992e-09 MB_Re=1.407505e-06 MB_Im=-1.635871e-09
+BIN6 f_GHz=3.200000000 j=78 xc_um=1.964299 PE_Re=-1.068311e-05 PE_Im=1.852469e-09 EO_Re=9.862849e-06 EO_Im=5.550538e-09 MB_Re=1.457279e-06 MB_Im=-1.389817e-09
+BIN6 f_GHz=3.200000000 j=79 xc_um=1.989322 PE_Re=-9.039578e-06 PE_Im=7.713638e-10 EO_Re=7.883411e-06 EO_Im=7.918342e-09 MB_Re=1.118191e-06 MB_Im=-8.222072e-10
+BIN6 f_GHz=3.200000000 j=80 xc_um=2.014345 PE_Re=-6.268314e-06 PE_Im=7.316944e-11 EO_Re=5.058672e-06 EO_Im=8.062513e-09 MB_Re=6.561647e-07 MB_Im=-3.555258e-10
+BIN6 f_GHz=3.200000000 j=81 xc_um=2.039368 PE_Re=-5.622562e-06 PE_Im=-2.426851e-10 EO_Re=4.030709e-06 EO_Im=9.997612e-09 MB_Re=4.165629e-07 MB_Im=-1.725227e-10
+BIN6 f_GHz=3.200000000 j=82 xc_um=2.064391 PE_Re=-4.568948e-06 PE_Im=-4.183459e-10 EO_Re=2.504042e-06 EO_Im=1.174307e-08 MB_Re=3.992331e-07 MB_Im=-1.180457e-10
+BIN6 f_GHz=3.200000000 j=83 xc_um=2.089414 PE_Re=-2.981644e-06 PE_Im=-3.536456e-10 EO_Re=5.530583e-07 EO_Im=1.202538e-08 MB_Re=3.367413e-07 MB_Im=-6.199189e-11
+BIN6 f_GHz=3.200000000 j=84 xc_um=2.114437 PE_Re=-1.402003e-06 PE_Im=-1.697925e-10 EO_Re=-1.413787e-06 EO_Im=1.173159e-08 MB_Re=1.572457e-07 MB_Im=-1.598635e-11
+BIN6 f_GHz=3.200000000 j=85 xc_um=2.139460 PE_Re=-1.339445e-08 PE_Im=4.304090e-11 EO_Re=-2.376928e-06 EO_Im=8.264712e-09 MB_Re=-1.942078e-11 MB_Im=4.466374e-14
+BIN6 f_GHz=3.200000000 j=86 xc_um=2.164483 PE_Re=1.365877e-06 PE_Im=2.841625e-10 EO_Re=-4.953934e-06 EO_Im=9.878448e-09 MB_Re=-1.573244e-07 MB_Im=1.622555e-11
+BIN6 f_GHz=3.200000000 j=87 xc_um=2.189506 PE_Re=2.944706e-06 PE_Im=4.653902e-10 EO_Re=-7.031610e-06 EO_Im=8.157448e-09 MB_Re=-3.368188e-07 MB_Im=6.221151e-11
+BIN6 f_GHz=3.200000000 j=88 xc_um=2.214529 PE_Re=4.532394e-06 PE_Im=5.213891e-10 EO_Re=-9.165467e-06 EO_Im=6.000299e-09 MB_Re=-3.992647e-07 MB_Im=1.181419e-10
+BIN6 f_GHz=3.200000000 j=89 xc_um=2.239552 PE_Re=5.592052e-06 PE_Im=3.224101e-10 EO_Re=-1.038531e-05 EO_Im=3.277120e-09 MB_Re=-4.165678e-07 MB_Im=1.725080e-10
+BIN6 f_GHz=3.200000000 j=90 xc_um=2.264574 PE_Re=6.245055e-06 PE_Im=-1.821700e-11 EO_Re=-1.108060e-05 EO_Im=9.936936e-10 MB_Re=-6.561191e-07 MB_Im=3.552813e-10
+BIN6 f_GHz=3.200000000 j=91 xc_um=2.289597 PE_Re=9.020294e-06 PE_Im=-7.323097e-10 EO_Re=-1.552770e-05 EO_Im=-1.531353e-09 MB_Re=-1.118061e-06 MB_Im=8.214898e-10
+BIN6 f_GHz=3.200000000 j=92 xc_um=2.314620 PE_Re=1.067173e-05 PE_Im=-1.842008e-09 EO_Re=-1.803953e-05 EO_Im=-4.644696e-09 MB_Re=-1.457229e-06 MB_Im=1.389484e-09
+BIN6 f_GHz=3.200000000 j=93 xc_um=2.339643 PE_Re=1.235346e-05 PE_Im=-3.446683e-09 EO_Re=-2.073675e-05 EO_Im=-7.867113e-09 MB_Re=-1.407425e-06 MB_Im=1.635239e-09
+BIN6 f_GHz=3.200000000 j=94 xc_um=2.364666 PE_Re=1.379805e-05 PE_Im=-6.061724e-09 EO_Re=-2.295008e-05 EO_Im=-1.056377e-08 MB_Re=-2.279306e-06 MB_Im=3.157880e-09
+BIN6 f_GHz=3.200000000 j=95 xc_um=2.389689 PE_Re=1.206696e-05 PE_Im=-5.812692e-09 EO_Re=-2.068227e-05 EO_Im=-1.108884e-08 MB_Re=-2.859957e-06 MB_Im=4.646975e-09
+BIN6 f_GHz=3.200000000 j=96 xc_um=2.414712 PE_Re=1.652266e-05 PE_Im=-1.007853e-08 EO_Re=-2.873429e-05 EO_Im=-1.638095e-08 MB_Re=-2.689616e-06 MB_Im=4.954166e-09
+BIN6 f_GHz=3.200000000 j=97 xc_um=2.439735 PE_Re=1.824432e-05 PE_Im=-1.402824e-08 EO_Re=-3.271554e-05 EO_Im=-1.936529e-08 MB_Re=-4.262364e-06 MB_Im=8.772607e-09
+BIN6 f_GHz=3.200000000 j=98 xc_um=2.464758 PE_Re=1.937415e-05 PE_Im=-1.770114e-08 EO_Re=-3.694629e-05 EO_Im=-2.136648e-08 MB_Re=-5.249109e-06 MB_Im=1.195940e-08
+BIN6 f_GHz=3.200000000 j=99 xc_um=2.489781 PE_Re=1.706933e-05 PE_Im=-1.767788e-08 EO_Re=-3.572883e-05 EO_Im=-1.897905e-08 MB_Re=-4.572158e-06 MB_Im=1.090870e-08
+BIN6 f_GHz=3.200000000 j=100 xc_um=2.514804 PE_Re=1.688846e-05 PE_Im=-1.591068e-08 EO_Re=-3.896139e-05 EO_Im=-2.015951e-08 MB_Re=-3.410145e-06 MB_Im=7.326864e-09
+BIN6 f_GHz=3.200000000 j=101 xc_um=2.539827 PE_Re=1.939273e-05 PE_Im=-1.595184e-08 EO_Re=-4.248514e-05 EO_Im=-2.614399e-08 MB_Re=-4.157740e-06 MB_Im=8.151121e-09
+BIN6 f_GHz=3.200000000 j=102 xc_um=2.564850 PE_Re=1.929644e-05 PE_Im=-1.425474e-08 EO_Re=-4.100275e-05 EO_Im=-2.714328e-08 MB_Re=-5.294384e-06 MB_Im=9.513197e-09
+BIN6 f_GHz=3.200000000 j=103 xc_um=2.589872 PE_Re=1.935174e-05 PE_Im=-1.259365e-08 EO_Re=-3.975506e-05 EO_Im=-2.812817e-08 MB_Re=-5.267625e-06 MB_Im=8.771835e-09
+BIN6 f_GHz=3.200000000 j=104 xc_um=2.614895 PE_Re=1.852881e-05 PE_Im=-1.139720e-08 EO_Re=-3.711030e-05 EO_Im=-2.727988e-08 MB_Re=-4.058697e-06 MB_Im=6.375410e-09
+BIN6 f_GHz=3.200000000 j=105 xc_um=2.639918 PE_Re=2.092686e-05 PE_Im=-1.203406e-08 EO_Re=-4.102976e-05 EO_Im=-2.882258e-08 MB_Re=-5.298670e-06 MB_Im=7.930769e-09
+BIN6 f_GHz=3.200000000 j=106 xc_um=2.664941 PE_Re=2.177890e-05 PE_Im=-1.203456e-08 EO_Re=-4.209784e-05 EO_Im=-2.782023e-08 MB_Re=-5.323868e-06 MB_Im=7.626926e-09
+BIN6 f_GHz=3.200000000 j=107 xc_um=2.689964 PE_Re=2.174989e-05 PE_Im=-1.047700e-08 EO_Re=-4.185366e-05 EO_Im=-2.562748e-08 MB_Re=-4.111603e-06 MB_Im=5.696108e-09
+BIN6 f_GHz=3.200000000 j=108 xc_um=2.714987 PE_Re=2.081475e-05 PE_Im=-1.022497e-08 EO_Re=-3.998901e-05 EO_Im=-2.091698e-08 MB_Re=-3.298229e-06 MB_Im=4.472662e-09
+BIN6 f_GHz=3.200000000 j=109 xc_um=2.740010 PE_Re=2.099368e-05 PE_Im=-9.635592e-09 EO_Re=-4.057461e-05 EO_Im=-1.792033e-08 MB_Re=-4.131488e-06 MB_Im=5.502646e-09
+BIN6 f_GHz=3.200000000 j=110 xc_um=2.765033 PE_Re=2.578353e-05 PE_Im=-1.227459e-08 EO_Re=-5.011943e-05 EO_Im=-1.628646e-08 MB_Re=-5.382827e-06 MB_Im=7.037599e-09
+BIN6 f_GHz=3.200000000 j=111 xc_um=2.790056 PE_Re=1.756365e-05 PE_Im=-9.217516e-09 EO_Re=-3.448186e-05 EO_Im=-6.442574e-09 MB_Re=-5.391856e-06 MB_Im=6.947090e-09
+BIN6 f_GHz=3.200000000 j=112 xc_um=2.815079 PE_Re=2.755737e-05 PE_Im=-1.145499e-08 EO_Re=-5.519396e-05 EO_Im=-5.854694e-09 MB_Re=-4.151130e-06 MB_Im=5.299339e-09
+BIN6 f_GHz=3.200000000 j=113 xc_um=2.840102 PE_Re=2.107447e-05 PE_Im=-9.021609e-09 EO_Re=-4.302065e-05 EO_Im=1.438370e-09 MB_Re=-5.398923e-06 MB_Im=6.862534e-09
+WIN6 f_GHz=3.200000000 w_um=0.30 j0=0 x0_um=0.000000 Tot_Re=-3.110626e-05 Tot_Im=2.416900e-08 Tot_Abs=3.110627e-05
+WIN6 f_GHz=3.200000000 w_um=0.50 j0=50 x0_um=1.251146 Tot_Re=2.908796e-05 Tot_Im=-9.675518e-09 Tot_Abs=2.908796e-05
+WIN6 f_GHz=3.200000000 w_um=0.80 j0=96 x0_um=2.402201 Tot_Re=-2.688237e-05 Tot_Im=-3.495354e-09 Tot_Abs=2.688237e-05
+POINT6 Ex=1.009397e+06/5.966174e+05 Ey=2.264901e+02/-1.403169e+03 exx=-1.923036e-05/1.288038e-04 eyy=5.405330e-05/-1.735743e-04 v=-3.361026e-10/1.633777e-09
+RES6 fr_GHz=3.329800000 Yr=4.580679652e+01 fa_GHz=3.334000000 Ya=1.508832012e+00 k2=2.517909e-03
+STEP6A_DONE
+类运行时: 41 s.
+正在保存模型: D:\comsol_ao_run\step6_optics\Step6a_basic.mph
+保存时间: 0 s.
+总时间: 42 s.
+---------- 当前进度: 100 % - 完成
+Memory: 1063/1118 1072/1156
