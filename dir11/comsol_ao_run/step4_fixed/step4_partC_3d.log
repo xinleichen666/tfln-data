@@ -1,0 +1,149 @@
+*******************************************
+***COMSOL 6.3.0.290 progress output file***
+*******************************************
+Wed Oct 21 22:05:42 CST 2026
+COMSOL Multiphysics 6.3 (开发版本: 290) 在批处理模式下启动
+正在运行: D:\comsol_ao_run\step4_fixed\Step4PartC3D.class
+STEP4_C3D_START
+PNEW_INPUT p_um=2.8526131500 f_2D_GHz=3.329955
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 444/444 471/471
+           当前进度:   0 % - 长方体
+Memory: 453/453 479/479
+           当前进度:   8 % - 长方体 2
+Memory: 461/461 483/487
+-          当前进度:  15 % - 长方体 3
+--         当前进度:  23 % - 形成联合体
+Memory: 462/462 483/487
+--         当前进度:  23 % - 执行布尔操作
+Memory: 466/467 485/487
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 467/467 486/487
+---------- 当前进度: 100 % - 正在创建可视化网格
+Memory: 472/473 489/491
+GROUND_CHECK selGp=1 selGn=1
+COORD_SYS_SET pzm1=sys2 ccp1=sys2
+ORDER_READBACK order=2
+顶点单元数：24
+边单元数：446
+边界单元数：6128
+----       当前进度:  49 % - 正在创建初始四面体网格
+Memory: 843/857 858/871
+单元数：49323
+---------- 当前进度: 100 % - 正在定型网格
+Memory: 852/857 864/871
+最小单元质量：0.2349
+NUMELEM n_elem=49323
+----       当前进度:  47 % - 生成方程
+Memory: 853/863 872/882
+------     当前进度:  60 % - 生成方程
+Memory: 867/869 884/886
+---        当前进度:  39 % - 生成方程
+Memory: 869/877 887/895
+-------    当前进度:  72 % - 生成方程
+Memory: 874/879 893/897
+BUILD_OK
+           当前进度:   1 % - 生成方程
+Memory: 880/880 897/898
+           当前进度:   3 % - 生成方程
+Memory: 878/883 896/900
+<---- 研究/解 1 (sol1) 中的“编译方程: 特征频率” ---------------------------------------------
+开始于 2026年10月21日 下午10:06:06。
+几何形函数: 二次拉格朗日单元
+在 AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD 上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 6 个内核）。
+可用内存：32.37 GB。
+           当前进度:   5 % - 编译方程: 特征频率
+Memory: 896/907 908/920
+           当前进度:   5 % - 正在创建可视化网格
+Memory: 908/911 919/923
+时间：2。
+物理内存: 911 MB
+虚拟内存: 923 MB
+结束时间：2026年10月21日 下午10:06:08。
+----- 研究/解 1 (sol1) 中的“编译方程: 特征频率” -------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“因变量 1” --------------------------------------------------
+开始于 2026年10月21日 下午10:06:08。
+           当前进度:   5 % - 因变量 1
+Memory: 925/956 937/968
+求解时间：0 s。
+物理内存: 956 MB
+虚拟内存: 968 MB
+结束时间：2026年10月21日 下午10:06:08。
+----- 研究/解 1 (sol1) 中的“因变量 1” ------------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“特征值求解器 1” -----------------------------------------------
+开始于 2026年10月21日 下午10:06:08。
+特征值求解器
+求解的自由度数：259638。
+           当前进度:   8 % - 组装稀疏模式
+Memory: 1177/1217 1192/1232
+           当前进度:   8 % - 组装矩阵
+Memory: 1987/2209 2053/2278
+           当前进度:   8 % - 
+Memory: 1991/2362 2048/2443
+找到对称矩阵。
+缩放因变量：
+位移场 (comp1.u): 8.4e-11
+电势 (comp1.V): 1
+已使用显式-正交零空间函数。
+           当前进度:   8 % - 约束处理
+Memory: 2074/2362 2132/2443
+           当前进度:   8 % - 矩阵分解
+Memory: 1619/2362 1654/2443
+非对称特征值求解器
+Iter      ErrEst  Nconv
+           当前进度:   8 % - 求解线性方程组
+Memory: 8704/8736 9766/9837
+           当前进度:   8 % - 矩阵乘法
+Memory: 8691/8736 9746/9837
+           当前进度:   8 % - 求解线性方程组
+Memory: 8697/8736 9758/9837
+           当前进度:   8 % - 矩阵乘法
+Memory: 8691/8736 9746/9837
+           当前进度:   8 % - 求解线性方程组
+Memory: 8697/8736 9758/9837
+           当前进度:   8 % - 矩阵乘法
+Memory: 8676/8736 9730/9837
+           当前进度:   8 % - 求解线性方程组
+Memory: 8682/8736 9742/9837
+   1     2.2e-07     24
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 8328/8736 9369/9837
+49 线性方程组的解。
+49 矩阵乘法。
+48 重正交化。
+求解时间：115 s。 （1 分钟，55 秒）
+物理内存: 8.74 GB
+虚拟内存: 9.84 GB
+结束时间：2026年10月21日 下午10:08:02。
+----- 研究/解 1 (sol1) 中的“特征值求解器 1” ---------------------------------------------->
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=0.000004 fi_MHz=0.0052 fracLN=0.9801 fracAl=0.0199 pu=0.445 pv=0.453 pw=0.103 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=0.000005 fi_MHz=0.0014 fracLN=0.9998 fracAl=0.0002 pu=0.169 pv=0.345 pw=0.486 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=0.610878 fi_MHz=0.1459 fracLN=0.9885 fracAl=0.0115 pu=0.062 pv=0.936 pw=0.001 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=0.642578 fi_MHz=0.1371 fracLN=0.8880 fracAl=0.1120 pu=0.060 pv=0.940 pw=0.001 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=1.245539 fi_MHz=0.2913 fracLN=0.9882 fracAl=0.0118 pu=0.003 pv=0.001 pw=0.996 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=1.435424 fi_MHz=0.2807 fracLN=0.9162 fracAl=0.0838 pu=0.001 pv=0.001 pw=0.998 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=1.902996 fi_MHz=0.4301 fracLN=0.9659 fracAl=0.0341 pu=0.097 pv=0.899 pw=0.003 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=1.950491 fi_MHz=0.4244 fracLN=0.9143 fracAl=0.0857 pu=0.087 pv=0.903 pw=0.010 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=2.154832 fi_MHz=0.5252 fracLN=0.9904 fracAl=0.0096 pu=0.984 pv=0.010 pw=0.006 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=2.303964 fi_MHz=0.5354 fracLN=0.9654 fracAl=0.0346 pu=0.988 pv=0.008 pw=0.004 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=2.785315 fi_MHz=0.5520 fracLN=0.9128 fracAl=0.0872 pu=0.002 pv=0.009 pw=0.988 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=2.940541 fi_MHz=0.5404 fracLN=0.9378 fracAl=0.0622 pu=0.012 pv=0.005 pw=0.983 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=3.330202 fi_MHz=0.7542 fracLN=0.9499 fracAl=0.0501 pu=0.076 pv=0.915 pw=0.009 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=3.346642 fi_MHz=0.7377 fracLN=0.9307 fracAl=0.0693 pu=0.079 pv=0.912 pw=0.010 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=3.758599 fi_MHz=0.8921 fracLN=0.9563 fracAl=0.0437 pu=0.583 pv=0.010 pw=0.407 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=4.014008 fi_MHz=0.7680 fracLN=0.9190 fracAl=0.0810 pu=0.144 pv=0.014 pw=0.842 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=4.126405 fi_MHz=0.7449 fracLN=0.8709 fracAl=0.1291 pu=0.027 pv=0.010 pw=0.962 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=4.327075 fi_MHz=0.8588 fracLN=0.8958 fracAl=0.1042 pu=0.536 pv=0.101 pw=0.363 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=4.336078 fi_MHz=1.0067 fracLN=0.9447 fracAl=0.0553 pu=0.708 pv=0.085 pw=0.207 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=4.367894 fi_MHz=0.5714 fracLN=0.8806 fracAl=0.1194 pu=0.360 pv=0.017 pw=0.623 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=4.496985 fi_MHz=0.8113 fracLN=0.9131 fracAl=0.0869 pu=0.126 pv=0.057 pw=0.817 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=4.522593 fi_MHz=1.0051 fracLN=0.9796 fracAl=0.0204 pu=0.352 pv=0.021 pw=0.627 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=4.543832 fi_MHz=0.9816 fracLN=0.9679 fracAl=0.0321 pu=0.868 pv=0.058 pw=0.075 orient=sys
+ROW variant=3D-B-pnew p_um=2.8526131500 dim=3 part=C f_GHz=4.642650 fi_MHz=1.0245 fracLN=0.9121 fracAl=0.0879 pu=0.071 pv=0.914 pw=0.015 orient=sys
+C3D_TARGET f_target_GHz=3.330202 pv=0.915 pw=0.009 fracAl=0.0501 f_partner_GHz=3.346642 f_2D_GHz=3.329955 rel_diff_%=0.007406 <0.3%=true
+STEP4_C3D_DONE
+类运行时: 142 s.
+总时间: 142 s.
+---------- 当前进度: 100 % - 完成
+Memory: 1181/8736 1194/9837
