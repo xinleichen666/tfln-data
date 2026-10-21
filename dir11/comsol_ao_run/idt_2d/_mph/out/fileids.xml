@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FileIDs>
+  <BinaryResource file="geometry5.mphbin" fileid="3d378f0cd0110731" binarytype="GEOMETRY" purgeable="true"/>
+  <BinaryResource file="geometry1.mphbin" fileid="725e58c0bf66e620" binarytype="GEOMETRY" purgeable="false"/>
+  <BinaryResource file="geometry6.mphbin" fileid="1f5d6355cfa8e31f" binarytype="GEOMETRY" purgeable="true"/>
+  <BinaryResource file="geometry4.mphbin" fileid="5eaeb7f5d4d0b1b3" binarytype="GEOMETRY" purgeable="true"/>
+  <BinaryResource file="geometry3.mphbin" fileid="cf8d5cfdb2fccbb2" binarytype="GEOMETRY" purgeable="true"/>
+  <BinaryResource file="geometry2.mphbin" fileid="4706bc54e0782699" binarytype="GEOMETRY" purgeable="true"/>
+  <BinaryResource file="geommanager1.mphbin" fileid="f34fc36e8d178b94" binarytype="GEOMMANAGER" purgeable="false"/>
+</FileIDs>
+

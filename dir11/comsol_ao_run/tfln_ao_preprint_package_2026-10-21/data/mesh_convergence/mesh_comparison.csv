@@ -1,0 +1,3 @@
+aperture_um,base_best_mode,base_best_freq_GHz,base_best_g_int_Jmhalf,base_edge_Jmhalf,fine_best_mode,fine_best_freq_GHz,fine_best_g_int_Jmhalf,fine_edge_Jmhalf,matched_fine_mode,matched_fine_freq_GHz,abs_PE_shape_correlation,matched_fine_g_int_Jmhalf,matched_fine_edge_Jmhalf,matched_fine_edge_to_int
+6,6,3.304065579,39.54255,66.76953,6,3.311762107,42.69595,62.18085,2,3.291194264,0.915372082897313,35.41651,63.01581,1.77928
+10,5,3.302075401,34.05262,59.34961,11,3.364041514,111.8192,55.18075,6,3.291775731,0.419696835375,38.18433,46.13422,1.2082

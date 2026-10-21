@@ -1,0 +1,13 @@
+quantity,value,note
+plain_one_period_average,3.0023591978420665e-08,unweighted nodal sum
+K_component_amplitude,1.2621971624033296e-08,phase-matched component
+plain_over_K,2.378676871785484,aliasing inflation factor
+z_bin_sign_changes,9,of 20 bins
+wmean_dn_gaussian_1um,5.625194083756152e-07,"proxy level, see Q0"
+wmean_dn_supported_mode,5.595669747992038e-08,"proxy level, see Q0"
+coherence_gaussian,0.2561844608746999,
+coherence_supported,0.030616164875928744,
+ratio_supported_over_gaussian,0.09947514102936694,
+dn_per_V_rescaled,1.5368909289037193e-08,ratio applied to the reported value
+beta_per_V_L100um,6.230045485951893e-06,rad/V
+MB_over_PE,181.6038108625537,"10 um export, order of magnitude"

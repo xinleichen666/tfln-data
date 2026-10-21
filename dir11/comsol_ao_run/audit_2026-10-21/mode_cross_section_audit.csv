@@ -1,0 +1,5 @@
+etch_nm,width_um,neff_no_metal,neff_real_metal,neff_imag_metal,Gamma_metal,dB_per_cm,dB_per_cm_perturbative,MAC_vs_lossless,residual,validated
+250,0.645,1.83863,1.72292,2.342e-03,2.836e-02,8.246e+02,1.558e+05,0.9536,4.9e-14,True
+400,0.645,1.78791,1.70627,1.820e-03,1.726e-02,6.409e+02,9.481e+04,0.9759,5.1e-14,True
+eim_vs_2d_worst_diff_percent,0.605
+mesh_spread_percent,0.25

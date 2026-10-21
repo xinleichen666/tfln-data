@@ -1,0 +1,12 @@
+quantity,value
+period_p_um,2.58
+finger_width_x_um,0.645
+finger1_x_range_um,"(0.3225, 0.9675)"
+finger2_x_range_um,"(1.6124999999999998, 2.2575)"
+metal_length_per_period_x_um,1.29
+metal_fraction_along_x,0.5
+free_gap_between_fingers_x_um,0.6449999999999998
+film_thickness_y_nm,500.0
+film_total_width_z_um,10.0
+aperture_z_um,6.0
+film_width_scales_with_aperture,True

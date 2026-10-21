@@ -1,0 +1,5 @@
+source=D:\comsol_ao_run\comsol_vector_optical_baseline\v2\mode_tracking\material_tracking\out\track_t8e-4.mph
+t=0.0016
+eps=(1+0.0016*((1.44-15.6*i)^2-1))
+output=D:\comsol_ao_run\comsol_vector_optical_baseline\v2\mode_tracking\material_tracking\out\track_t16e-4.mph
+nmode=40

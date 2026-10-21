@@ -1,0 +1,14 @@
+*******************************************
+***COMSOL 6.3.0.290 progress output file***
+*******************************************
+Tue Oct 20 23:47:07 CST 2026
+COMSOL Multiphysics 6.3 (开发版本: 290) 在批处理模式下启动
+正在运行: D:\comsol_ao_run\convergence\CheckSelections.class
+---------- 当前进度: 100 % - 正在创建可视化网格
+Memory: 847/848 921/924
+类运行时: 9 s.
+正在保存模型: D:\comsol_ao_run\convergence\CheckSelections_m.mph
+保存时间: 0 s.
+总时间: 9 s.
+---------- 当前进度: 100 % - 完成
+Memory: 855/866 928/939

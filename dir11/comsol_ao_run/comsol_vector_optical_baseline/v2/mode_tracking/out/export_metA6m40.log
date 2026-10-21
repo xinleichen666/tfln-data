@@ -1,0 +1,35 @@
+*******************************************
+***COMSOL 6.3.0.290 progress output file***
+*******************************************
+Wed Oct 21 16:02:48 CST 2026
+COMSOL Multiphysics 6.3 (开发版本: 290) 在批处理模式下启动
+正在运行: D:\comsol_ao_run\comsol_vector_optical_baseline\v2\mode_tracking\gen_export.class
+LOADED D:/comsol_ao_run/comsol_vector_optical_baseline/v2/out/final_metA6.mph
+SELMAP selRidge=[4]
+SELMAP selSlabL=[2]
+SELMAP selSlabR=[5]
+SELMAP selAir=[1]
+SELMAP selSolid=[2, 3, 4, 5, 6]
+SELMAP selMetal=[3, 6]
+SELMAP selAlL=[3]
+SELMAP selAlR=[6]
+NDOM 6
+MODES_TOTAL 40
+           当前进度:   0 % - 
+Memory: 875/879 923/929
+---        当前进度:  31 % - 计算
+Memory: 934/934 973/973
+---        当前进度:  34 % - 计算
+Memory: 923/969 962/1009
+----       当前进度:  41 % - 计算
+Memory: 896/969 934/1009
+---------  当前进度:  98 % - 正在写入文件
+Memory: 905/969 942/1009
+EXPORTED D:/comsol_ao_run/comsol_vector_optical_baseline/v2/mode_tracking/out/dom_metA6m40.csv
+MODENEFF mode=40 re=2.154847 im=-1.587028e-02
+类运行时: 6 s.
+正在保存模型: D:\comsol_ao_run\comsol_vector_optical_baseline\v2\mode_tracking\gen_export_m.mph
+保存时间: 1 s.
+总时间: 7 s.
+---------- 当前进度: 100 % - 完成
+Memory: 901/969 938/1009

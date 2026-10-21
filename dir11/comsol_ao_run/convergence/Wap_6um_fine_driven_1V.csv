@@ -1,0 +1,10 @@
+% Model,Wap_6um_fine_Model.mph
+% Version,COMSOL 6.3.0.290
+% Date,"Oct 20 2026, 23:22"
+% Table,表格 2 - 
+% freq (Hz),频率 (Hz),最大值 (m),最大值 (1),real(intLN(dnPE))/intLN(1) (1),imag(intLN(dnPE))/intLN(1) (1),real(intLN(solid.eXX))/intLN(1) (1),imag(intLN(solid.eXX))/intLN(1) (1),real(intLN(solid.eYY))/intLN(1) (1),imag(intLN(solid.eYY))/intLN(1) (1),real(intLN(solid.eZZ))/intLN(1) (1),imag(intLN(solid.eZZ))/intLN(1) (1)
+3.283779E9,3.283779E9,0,0,0,0,0,0,0,0,0,0
+3.28872E9,3.28872E9,0,0,0,0,0,0,0,0,0,0
+3.291194E9,3.291194E9,0,0,0,0,0,0,0,0,0,0
+3.293668E9,3.293668E9,0,0,0,0,0,0,0,0,0,0
+3.298609E9,3.298609E9,0,0,0,0,0,0,0,0,0,0

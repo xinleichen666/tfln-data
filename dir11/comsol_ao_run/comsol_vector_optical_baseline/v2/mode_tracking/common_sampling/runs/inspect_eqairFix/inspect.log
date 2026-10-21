@@ -1,0 +1,56 @@
+*******************************************
+***COMSOL 6.3.0.290 progress output file***
+*******************************************
+Wed Oct 21 16:59:30 CST 2026
+COMSOL Multiphysics 6.3 (开发版本: 290) 在批处理模式下启动
+正在运行: D:\comsol_ao_run\comsol_vector_optical_baseline\v2\mode_tracking\common_sampling\runs\inspect_eqairFix\gen_inspect.class
+CHK FILE = D:/comsol_ao_run/comsol_vector_optical_baseline/v2/out/final_eqairFix.mph
+CHK GEOM_ndomains = 6
+CHK GEOM_lengthUnit = ?m
+CHK MAT_list = [matAir, matRidge, matSlabL, matSlabR, matAlL, matAlR]
+CHK MAT_matAir_entities = [1]
+CHK MAT_matAir_relpermittivity = [1]
+CHK MAT_matAir_electricconductivity = [0]
+CHK MAT_matAir_relpermeability = [1]
+CHK MAT_matRidge_entities = [4]
+CHK MAT_matRidge_relpermittivity = [4.888520999999999, 4.888520999999999, 4.571044]
+CHK MAT_matRidge_electricconductivity = [0]
+CHK MAT_matRidge_relpermeability = [1]
+CHK MAT_matSlabL_entities = [2]
+CHK MAT_matSlabL_relpermittivity = [4.888520999999999, 4.888520999999999, 4.571044]
+CHK MAT_matSlabL_electricconductivity = [0]
+CHK MAT_matSlabL_relpermeability = [1]
+CHK MAT_matSlabR_entities = [5]
+CHK MAT_matSlabR_relpermittivity = [4.888520999999999, 4.888520999999999, 4.571044]
+CHK MAT_matSlabR_electricconductivity = [0]
+CHK MAT_matSlabR_relpermeability = [1]
+CHK MAT_matAlL_entities = [3]
+CHK MAT_matAlL_relpermittivity = [1]
+CHK MAT_matAlL_electricconductivity = [0]
+CHK MAT_matAlL_relpermeability = [1]
+CHK MAT_matAlR_entities = [6]
+CHK MAT_matAlR_relpermittivity = [1]
+CHK MAT_matAlR_electricconductivity = [0]
+CHK MAT_matAlR_relpermeability = [1]
+CHK PHYS_list = [ewfd]
+CHK PHYS_DisplacementFieldModel = RelativePermittivity
+CHK MESH_tri = 63106
+CHK MESH_hmax = 25.0[nm]
+CHK MESH_hmin = 2[nm]
+CHK MESH_hauto = 5
+CHK STUDY_list = [std1]
+CHK STUDY_modeFreq = c_const/1.55[um]
+CHK STUDY_neigs = 40
+CHK STUDY_shift = 1.78
+CHK STUDY_neigsactive = on
+CHK STUDY_shiftactive = on
+CHK SOL_list = [sol1]
+CHK SOL_sol1_size = [443087, 40]
+CHK DSET_list = [dset1]
+INSPECT_DONE
+类运行时: 6 s.
+正在保存模型: D:\comsol_ao_run\comsol_vector_optical_baseline\v2\mode_tracking\common_sampling\runs\inspect_eqairFix\gen_inspect_m.mph
+保存时间: 1 s.
+总时间: 7 s.
+---------- 当前进度: 100 % - 完成
+Memory: 562/564 586/589

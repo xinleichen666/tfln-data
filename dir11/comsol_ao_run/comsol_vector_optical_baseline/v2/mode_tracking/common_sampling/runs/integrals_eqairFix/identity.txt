@@ -1,0 +1,5 @@
+model=D:\comsol_ao_run\comsol_vector_optical_baseline\v2\out\final_eqairFix.mph
+solnum=40
+neff_re=1.7818934544410234
+neff_im=2.9091235775608018e-18
+area_total=15.028000000004

@@ -1,0 +1,4 @@
+pol,waveguide_FWHM_um,best_aperture_um,mode,freq_GHz,g_interior_Jmhalf,g_edge_same_mode_Jmhalf,edge_to_interior
+TE,0.5,6.0,6,3.304065579,75.71168,90.71051,1.1981
+TE,1.0,6.0,6,3.304065579,39.54255,66.76953,1.68855
+TE,1.5,6.0,8,3.349175224,18.18123,31.71914,1.74461

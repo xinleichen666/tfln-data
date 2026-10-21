@@ -1,0 +1,1321 @@
+===== PAGE 1
+Resonant acousto-optic frequency shifting in a thin-film lithium niobate photonic
+molecule: design, tolerances, and a measurement plan
+Xinlei Chen1 and Yuanhua Li1
+1Shanghai University of Electric Power, Shanghai, China
+(Dated: October 14, 2026)
+We present a design and measurement plan for a thin-film lithium niobate (TFLN) frequency
+shifter in which a suspended interdigital-transducer (IDT) acoustic resonator drives one ring of a
+dual-ring photonic molecule in a forward, single-bus geometry at a fixed shift of 3.33 GHz, intended
+for fabrication. All device numbers below are simulation predictions. Against an electro-optic (EO)
+drive of the same optics, the Shao-calibrated IDT needs ≈6.7 µW while a matched EO feed needs 1.2–
+13 µW: we do not claim an acousto-optic (AO) power advantage; the AO RF bandwidth is ∼1 MHz.
+Versus the measured traveling-wave AO shifter of Shao et al. (3.5% on-chip absolute efficiency at
+1 W, 70 MHz bandwidth), we compare absolute efficiency only and state in the same sentence that
+our result is simulated at ∼1 MHz bandwidth. With a self-labeled thermo-optic Mach–Zehnder
+(MZI) ring–ring coupler that tunes the supermode splitting 2µ (heater on; Pπ = 44.4 mW as a
+Maeder geometric assumption), a 1000-sample Monte Carlo under conservative extra loss (κi×2) and
+10% IDT efficiency predicts a median ηshift = 96.4% (10th–90th percentile 91.7–98.3%); the heater-
+off fixed-gap case (median 94.5%; 74.2% of samples at ηshift ≥90%) is retained only as a comparison.
+Insertion loss is reported in two columns: Shao 2019 suspended-racetrack Qi as measured (heater-on
+median 2.48 dB) and assumed extra κi × 2 (median 4.72 dB). A partial-coverage factor ξ multiplies
+the extrapolated δω/2π = 21.3 GHz/V (ξ = 1); at ηIDT = 10% and Qm = 1570, source power is
+478/172/43/11 µW for ξ = 0.3/0.5/1/2. For stage-1 spectral tests, unfiltered 1 −V ≈1 −ηshift
+(ideal ≈1.7 × 10−2). Thermal phonons give a drive jitter nth/Ncoh ≈1.07 × 10−8 and an upper
+bound nthC0 ≈8.0×10−6 for spontaneous scattering on the same acoustic mode (g0/2π = 1.1 kHz),
+below the unfiltered sideband error.
+I.
+INTRODUCTION
+Photonic qubits encoded in discrete frequency bins
+need low-loss, coherent devices that move light—and, in
+quantum networks, single photons—between bins [1–3].
+Single-photon frequency shifting is a motivating appli-
+cation of this design, not a claim of a completed ex-
+periment. TFLN combines strong Pockels, piezoelectric,
+and photoelastic responses with low-loss resonators [4, 5],
+and has been used for single-photon spectral shearing
+over ±641 GHz [6], an integrated quantum frequency
+processor [7], and coupled-cavity frequency beam split-
+ters [8]. For single-tone shifting, the benchmark is the
+EO coupled-ring shifter of Hu et al. [9]: a microwave
+drive couples the symmetric (S) and antisymmetric (AS)
+supermodes of a photonic molecule [10] and, at a gen-
+eralized critical-coupling condition, transfers light uni-
+directionally from one supermode to the other.
+The
+measured device shifts 98.7% of the output light by
+28.2 GHz with 0.45 dB insertion loss (IL), and 99.1%
+(up) and 99.4% (down) at 12.5 GHz, using 96 mW of mi-
+crowave power [9]. A different EO approach, serrodyne
+driving of cascaded traveling-wave TFLN phase mod-
+ulators, reports a shifting efficiency above 98.8% with
+Vπ ≈2.3 V [11].
+Acoustic frequency shifting on TFLN is much less
+mature.
+The best published TFLN acousto-optic fre-
+quency shifter, a traveling-wave Bragg-deflection device
+at ∼3 GHz, reaches an on-chip efficiency of 3.5% at
+30 dBm (1 W) applied to the IDT pads, with >30 dB
+carrier suppression and a 70-MHz microwave band-
+width [12].
+Resonant acoustics improves the per-volt
+modulation strongly: a suspended 100-µm acoustic res-
+onator at 3.33 GHz gives Vπ = 4.6 V (VπL = 0.046 V cm)
+on one arm of a Mach–Zehnder interferometer (MZI) [13].
+Acoustic waves have long been used to modulate inte-
+grated resonators [14] and to control photonic molecules
+dynamically [15].
+Most relevant here, Zhu et al. [16] have already driven
+a lithium niobate (LN-on-sapphire) coupled-microring
+photonic molecule acoustically. In their device an IDT-
+launched 8.54-GHz acoustic wave forms a backward-
+Brillouin dynamic Bragg mirror that couples forward-
+and backward-propagating light, reaching strong super-
+mode coupling at milliwatt-level acoustic power (cooper-
+ativity 2.46 mW−1) and Bragg reflectivities up to 24%.
+Acoustic driving of an LN photonic molecule is there-
+fore not new.
+The distinction of the present design is
+its operating point: a forward (co-directional), single-
+bus frequency shifter that sends ≈98% of the output into
+one sideband, analyzed in terms of shift efficiency, in-
+sertion loss, spurious orders, and the RF power at the
+source. We also considered an all-optical, IDT-free alter-
+native in which backward stimulated Brillouin scatter-
+ing in TFLN, pumped by an EO frequency comb, writes
+the phonon; in our (unpublished) analysis it is not vi-
+able for multi-bin frequency operations, whereas forward-
+Brillouin frequency-bin swaps have been proposed theo-
+retically [17].[18]
+In this paper we (i) define the device (Fig. 1) and cali-
+brate its drive to measured data [Sec. II]; (ii) compute its
+operating point and compare its source power with an EO
+
+===== PAGE 2
+2
+Ring 1
+Ring 2
+μ
+IDT
+RF drive
+Ω/2π = 3.33 GHz
+Suspended LN acoustic resonator
+Input  ω
+Output  ω+Ω
+Bus waveguide
+TFLN chip
+Supermodes
+Ring 1
+Ring 2
+ω0
+ω0
+ω+
+ω−
+2μ=Ω
+FIG. 1. Device concept. An RF-driven interdigital transducer (IDT; Ω/2π = 3.33 GHz) excites a suspended LN acoustic
+resonator that covers only a segment of ring 1. Ring 2 is coupled only to ring 1 (coupling rate µ), and a single bus waveguide
+is coupled only to ring 1. Light enters in the forward direction at ω and leaves the same bus at the shifted frequency ω + Ω.
+Inset: the ring–ring coupling splits the two degenerate ring modes (ω0) into supermodes ω± separated by 2µ = Ω, which the
+acoustic drive couples. Schematic, not to scale.
+drive of identical optics, including impedance matching
+on both sides [Sec. III]; (iii) quantify tolerances and eval-
+uate a heater-tunable coupler under realistic Monte Carlo
+conditions [Secs. IV and V]; (iv) give a five-step measure-
+ment plan with pass criteria for tape-out [Sec. VI]; and
+(v) report stage-2 HOM predictions and thermal-phonon
+bounds [Sec. VII]. Limitations are collected in Sec. VIII.
+All device numbers are simulation predictions until mea-
+sured.
+II.
+DEVICE AND MODEL
+Structure.—The device (Fig. 1) is the coupled-ring
+photonic molecule of Ref. [9], with only ring 1 coupled
+to the bus waveguide. A 100-µm section of ring 1 passes
+through a suspended LN acoustic resonator driven by
+an IDT, with the geometry and calibration of Ref. [13].
+The ring length is Lring = 0.667 mm, so the acoustic
+field covers 15% of the ring.
+This is the same cover-
+age ratio, ηcav = 0.15, as the suspended racetrack of
+Ref. [13]. We take ng = 2.3. The ring–ring coupler is a
+self-labeled thermo-optic MZI with µ = µgap sin(∆ϕ/2),
+∆ϕ ∈[0, π], designed with µgap = µ
+√
+2 at the nominal
+gap so that a heater bias near Pπ/2 can null |2µ −Ωm|
+after fabrication (Ωm = 2π × 3.33 GHz).
+We do not
+take µ(ϕ) from Ref. [10] (that work sets 2µ by the gap
+and uses electrodes for DC detuning). The coupler-arm
+Pπ = 44.4 mW is a Maeder geometric assumption (NOI
+MZI heater arm [19]), not a calibration of this layout.
+Heater-induced differential and common-mode ring heat-
+ing are folded into the existing δr and ∆model with as-
+sumed crosstalk after a coupler-isolation redesign (2 mK
+differential and 3 mK common at Pπ; must be verified by
+heater calibration, not a measured result).
+Equations of motion.—We use Eq. (S2) of Ref. [9], with
+ring 1 coupled to the bus at rate γ and both rings having
+intrinsic loss rate κi:
+˙a1 =
+h
+−i
+ ∆+ δω cos Ωmt
+
+−γ+κi
+2
+i
+a1 −iµa2 −√γ αin,
+˙a2 =
+h
+−i
+ ∆+ s δω cos Ωmt
+
+−κi
+2
+i
+a2 −iµa1,
+aout = αin + √γ a1.
+(1)
+For the acoustic (AO) drive only ring 1 is modulated
+(s = 0); for the EO reference we use Hu’s push-pull
+drive (s = −1).
+The laser is tuned to the S super-
+mode (∆= µ). We integrate Eq. (1) with a fourth-order
+Runge–Kutta scheme (80 steps per modulation period,
+40 ns total) without the rotating-wave approximation,
+and project aout, averaged over the final 20 ns, onto
+the frequencies ωL + qΩm (|q| ≤3). In the S/AS ba-
+sis the single-ring term contains δω
+2 cos Ωmt (c†
+ScA + h.c.)
+plus a common-mode phase modulation of both super-
+modes, so the supermode coupling is δω/2. As in Ref. [9],
+we define ηshift = Pshift/Pout, the absolute efficiency
+ηabs = Pshift/Pin, and IL = −10 log10(Pout/Pin).
+Drive calibration.—A peak voltage V from a 50-Ω
+source (PRF = V 2/2R, R = 50 Ω) produces the phase
+∆ϕ = πV La/(VπL) over the covered length La
+=
+100 µm, which shifts the ring resonance by
+δω = ∆ϕ
+c
+ngLring
+.
+(2)
+With VπL
+=
+0.046 V cm [13] this gives δω/2π
+=
+21.3 GHz/V when the acoustic field covers the waveguide
+as in that MZI. We define a partial-coverage factor ξ so
+that the ring resonance shift is ξ × 21.3 GHz/V; ξ = 1
+is this straight-waveguide extrapolation at the acoustic
+Q used in the Shao 2019 modeling (typically 2000; mea-
+sured up to 3600). Source power at fixed δω then scales
+as 1/ξ2. We sweep ξ = 0.3, 0.5, 1, 2 and quote a conserva-
+tive lab margin at ξ = 0.5 together with ηIDT = 10% and
+
+===== PAGE 3
+3
+Qm = 1570. Reference [13] extracts Vπ from the mea-
+sured S21 referenced to the power of a 50-Ωsource, so the
+ξ = 1 calibration already contains the measured ≈50%
+electrical-to-acoustic coupling of that IDT (a −3 dB dip
+in S11). We refer to this case as the “Shao IDT”; an ide-
+ally matched IDT would need half the power, and an IDT
+of efficiency ηIDT needs 0.5/ηIDT times the Shao-IDT
+power. For the acoustic resonance we use Qm = 2000
+and γe/γ = 0.15, the values used to model the measured
+devices in Ref. [13] (measured acoustic Q up to 3600,
+Fig. 3(c) of Ref. [13]).
+Optical parameters.—We take γ/2π = 0.6 GHz and
+the intrinsic loss implied by the suspended racetrack of
+Ref. [13]: from its Table S2, κ/2π = 95 MHz and 2κe/κ =
+0.3, so κi/2π = 0.85 × 95 MHz = 80.75 MHz, i.e. Qi ≈
+2.4 × 106 (at 193.4 THz).
+The main text of Ref. [13]
+quotes a loaded Q of 2.2 × 106 for the same linewidth.
+EO reference with identical optics.—The EO drive uses
+the same optical parameters, push-pull modulation, and
+Hu’s EO coefficient of ≈0.5 GHz/V referred to the volt-
+age Vc on the electrode capacitor [9]. We model the elec-
+trode as Hu’s lumped circuit, C = 0.11 pF, L = 0.12 nH,
+R = 1.5 Ω[9], whose reactance at 3.33 GHz is XC =
+434 Ω. We consider four feeds: (a) Vc = V0, the con-
+vention of Ref. [9], with V0 the source peak voltage; (b)
+an open-circuited capacitor, Vc = 2V0; (c) a lumped LC
+match with inductor quality factor QL = 30 or 100, for
+which PRF = V 2
+c (R + XC/QL)/(2X2
+C); and (d) an ideal
+inductor, PRF = V 2
+c R/(2X2
+C). The QL = 30 match has
+an RF bandwidth of ≈122 MHz.
+III.
+OPERATING POINT AND DRIVE POWER
+Ideal operating point (upper bound).—Sections III and
+IV use nominal, idealized parameters (identical rings, no
+fabrication error, no extra loss, perfect temperature con-
+trol); the realistic-condition results that we regard as the
+main prediction are given in Sec. V. At γ/2π = 0.6 GHz
+the acoustic drive reaches its maximum ηshift = 98.3% at
+δω/2π = 0.55 GHz, i.e. a source peak voltage of 26 mV
+and PRF = 6.7 µW with the Shao IDT (Table I, Fig. 2).
+The absolute efficiency is 55% and the IL is 2.5 dB; both
+are set by the intrinsic loss rather than by the drive. The
+shifted line is the q = +1 order. Relative to it, the carrier
+is at −23.2 dB and the largest spurious order is q = −1
+at −21.2 dB (q = +2 at −23.6 dB). These spurs come
+from the common-mode phase modulation of single-ring
+driving. The push-pull EO drive cancels this term and
+reaches ηshift = 99.6%, with the carrier at −26.0 dB and
+the q = −1 order at −30.6 dB [Fig. 2(b)], and the same
+2.5 dB IL.
+Comparison with EO driving.—Table II lists the source
+power at the respective optima for each feed. Without
+any matching on the EO side (Vc = V0) the EO drive
+needs 3.1 mW, ≈460 times the 6.7 µW of the acoustic
+drive, and the measured device of Ref. [9] used 96 mW.
+These factors, however, compare a resonantly enhanced
+acoustic drive with a non-resonant electrode, and they
+do not survive a like-for-like comparison. With an LC
+match the EO power falls to 13 µW (QL = 30), 4.8 µW
+(QL = 100), or 1.2 µW (ideal inductor).
+Against the
+ideally matched IDT (3.4 µW), the two drives therefore
+differ only by a factor of 0.36–3.9, and the EO drive is
+the more power-efficient one when the inductor loss is
+low. Against the as-measured Shao IDT (6.7 µW) the
+range is 0.18–1.9. We therefore make no claim of a power
+advantage over EO driving. The remaining differences
+are qualitative: the acoustic resonator provides voltage
+gain without an external matching network, but at the
+cost of a ∼100-fold narrower RF bandwidth (Sec. IV) and
+a fixed shift frequency.
+Comparison with acousto-optic shifters.—The best
+measured TFLN acousto-optic shifter reaches 3.5% on-
+chip efficiency at 30 dBm (1 W) [12]. The present de-
+sign reaches, in simulation, ηabs = 55% (ηshift = 98.3%)
+at 6.7 µW under ideal conditions and a median on-chip
+ηabs = 32.3% at 33.7 µW (Qm = 2000, 10% IDT effi-
+ciency; heater-on κi × 2 Monte Carlo) under the realistic
+conditions of Sec. V. The comparison is not like for like:
+Ref. [12] is a broadband, non-resonant traveling-wave de-
+flector with a 70-MHz microwave bandwidth, whereas our
+design is a simulated, doubly resonant (optical and acous-
+tic) device with a ∼1-MHz RF bandwidth and a single
+fixed shift frequency; a measured device will also face
+the fabrication and locking requirements of Sec. V. Zhu
+et al. [16] operate an acoustic photonic molecule at mil-
+liwatt acoustic power in a backward, reflective geometry
+and do not report a forward shift efficiency or insertion
+loss. Table III summarizes these benchmarks.
+TABLE I. Simulated ideal operating points (upper bounds;
+see Table IV and Sec. V for realistic conditions) at γ/2π =
+0.6 GHz, κi/2π = 80.75 MHz (data/results B.json) and the
+measured EO shifter of Ref. [9].
+AO
+EOa
+Hu [9]
+(sim.)
+(sim.)
+(meas.)
+Ωm/2π (GHz)
+3.33
+3.33
+28.2
+γ/2π (GHz)
+0.60
+0.60
+5.31
+κi/2π (MHz)
+80.75
+80.75
+170
+ηshift
+98.3%
+99.6%
+98.7%
+ηabs
+55%
+56%
+—
+IL (dB)
+2.5
+2.5
+0.45
+Carrier (dB)g
+−23.2
+−26.0
+—
+Largest spur (dB)g
+−21.2
+−30.6
+—
+PRF, as-built feed
+6.7 µWb
+3.1 mWc
+96 mW
+PRF, matched feed
+3.4 µWd
+1.2–13 µWe
+—
+RF bandwidth
+∼1 MHz
+≈122 MHzf
+>3 GHz
+aPush-pull, same optics. bShao IDT (≈50% coupling). cVc = V0.
+dIdeal IDT. eLC match, ideal inductor to QL = 30. fLC match
+with QL = 30; the unmatched electrode is broadband. gRelative
+to the shifted line.
+
+===== PAGE 4
+4
+10−6
+10−4
+10−2
+100
+102
+source RF power (mW)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+ηshift
+(a)
+AO, Shao IDT (50%)
+AO, ideal IDT
+AO, 10% IDT
+EO unmatched (Vc=V0)
+EO open (Vc=2V0)
+EO LC-matched, QL=30
+EO LC-matched, QL=100
+EO LC, ideal L
+Hu 2021 EO meas. (28.2 GHz)
+Shao 2020 AO, meas. (abs.)
+−2
+0
+2
+order q (ωL + qΩm)
+−80
+−60
+−40
+−20
+0
+output (dB rel. input)
+(b)
+AO
+EO
+FIG. 2. Simulated operating point (γ/2π = 0.6 GHz, κi/2π = 80.75 MHz). (a) ηshift versus source RF power for the acoustic
+drive (blue: Shao IDT with ≈50% coupling, ideal IDT, 10% IDT) and for the EO drive with identical optics (red: unmatched,
+Vc = V0, and open capacitor, Vc = 2V0; orange: LC matched with inductor QL = 30, QL = 100, and an ideal inductor).
+Symbols mark measured devices: the EO shifter of Ref. [9] (star; 98.7% ηshift at 96 mW and 28.2 GHz). The Shao 2020
+traveling-wave AO result (3.5% on-chip absolute efficiency at 1 W, 70 MHz bandwidth; this work is simulated at ∼1 MHz) is
+not placed on the ηshift axis; it is compared only under absolute efficiency. (b) Output power in each order q relative to the
+input at the respective optima of the AO and EO drives. The largest AO spur remains q = −1.
+TABLE II. Source RF power at the optimum ηshift (simula-
+tion; data/results B.json, data/eff vs power.csv).
+Drive and feed
+PRF
+AO, Shao IDT (≈50%)
+6.7 µW
+AO, ideal IDT (100%)
+3.4 µW
+AO, 10% IDT
+34 µW
+EO, unmatched (Vc = V0)
+3.1 mW
+EO, open capacitor (Vc = 2V0)
+0.77 mW
+EO, LC match, QL = 30
+13 µW
+EO, LC match, QL = 100
+4.8 µW
+EO, LC match, ideal inductor
+1.2 µW
+Hu et al. [9] (meas., 28.2 GHz)
+96 mW
+IV.
+TOLERANCES
+Optical quality factor.—Because the coupling γ is fixed
+while κi varies, the shift ratio is robust but the loss is not
+[Fig. 3(a)]. For Qi ≳1.3 × 106 we find ηshift ≈98%; at
+Qi = 6.4 × 105 it drops to 82%. The absolute efficiency
+rises from 33% at Qi = 1.3×106 through 55% at 2.4×106
+to 87% at 9.7 × 106 (IL 0.56 dB). The required source
+power stays between 6.1 and 8.5 µW over this range.
+RF detuning.—The acoustic resonance filters the drive.
+With Qm = 2000 (FWHM 1.67 MHz) we find ηshift ≥
+96.7% within ±0.4 MHz of the doublet splitting, 80% at
+1 MHz, 44% at 2 MHz, and 10% at 5 MHz [Fig. 3(b)].
+The usable RF bandwidth is thus ∼1 MHz. Under the
+flat-drive assumption, the LC-matched EO drive keeps
+ηshift = 99.6% over the full ±5 MHz range.
+IDT efficiency.—The acoustic source power scales as
+1/ηIDT [Fig. 3(c)]: 3.4 µW at 100%, 6.7 µW at the Shao
+IDT’s ≈50%, and 34 µW at 10%, a value reported for
+other LN acousto-optic microrings [20].
+The acoustic
+drive needs more power than the QL = 30 LC-matched
+EO drive (13 µW) once ηIDT ≲25%, more than the
+QL = 100 match (4.8 µW) below ≈70%, and more
+than the ideal-inductor match (1.2 µW) for any physi-
+cal ηIDT ≤100%.
+Thermal drift and ring mismatch.—We extend Eq. (1)
+with a common laser–ring detuning ∆, a resonance mis-
+match δr of ring 2 relative to ring 1, and a split-
+ting error 2µ −Ωm, keeping the drive at the operating
+point (Fig. 4); at zero offset we recover ηshift = 98.3%.
+We find ηshift ≥95% for −72 ≤∆/2π ≤+55 MHz
+(≥90% for −97 to +85 MHz), for −104 ≤δr/2π ≤
++145 MHz, and for −96 ≤(2µ −Ωm)/2π ≤+53 MHz.
+Within the ≥95% region the IL stays between 2.50 and
+2.66 dB. To convert to temperature we use |df/dT| ≈
+f (dne/dT)/ng ≈2.8 GHz/K, with f = 193.4 THz and
+dne/dT = 3.34 × 10−5 K−1 at 1523 nm [21].
+With
+the thermo-optic effect alone, a common drift must be
+held within ≈±20 mK (±30 mK for ηshift ≥90%)
+and the differential ring temperature within ±37 mK.
+Thermal expansion, αa ≈1.54 × 10−5 K−1 [22], shifts
+the resonances in the same direction; with |df/dT| ≈
+f (dne/dT + neffαa)/ng ≈5.6 GHz/K (neff = 2.14 as-
+sumed), consistent with the 5.6 GHz/K predicted for e-
+polarized modes of a bulk LN resonator [23], the windows
+shrink to ±9.8 mK (±15 mK for ηshift ≥90%) for com-
+mon drift and ±18.6 mK for the differential temperature.
+A bonded thin film is partly clamped by the substrate, so
+the bulk expansion makes these narrower windows con-
+
+===== PAGE 5
+5
+TABLE III. Benchmarks. “Meas.” denotes measured devices, “sim.” this work; LNOS, LN-on-sapphire; BW, RF bandwidth.
+All except Ref. [16] are on TFLN. The efficiencies are not all defined identically (see notes).
+Work
+Mechanism
+Shift
+Efficiency
+Drive
+Note
+Shao et al. [12] (meas.) AO traveling wave
+∼3 GHz
+3.5% on-chipa
+1 W (30 dBm) 70 MHz BW
+Zhu et al. [16] (meas.)
+AO backward Brillouin (LNOS) 8.54 GHz reflectivity ≤24%
+mW (acoustic) no forward ηshift
+Hu et al. [9] (meas.)
+EO photonic molecule
+28.2 GHz ηshift = 98.7%
+96 mW
+IL 0.45 dB, >3 GHz BW
+Qiu et al. [11] (meas.)
+EO serrodyne
+—
+>98.8%
+Vπ ≈2.3 V
+broadbandb
+This work (sim.)c
+AO photonic molecule
+3.33 GHz ηshift = 96.4%, ηabs = 32.3% 33.7 µW
+IL 4.72 dB, ∼1 MHz BW
+This work, ideal
+upper bound
+3.33 GHz ηshift = 98.3%, ηabs = 55%
+6.7 µW
+IL 2.5 dB
+EO ref. (sim.)
+EO molecule, LC matched
+3.33 GHz ηshift = 99.6%
+1.2–13 µW
+122 MHz BW (QL = 30)
+aDeflected power divided by transmitted power with the microwave off [12]. bValues taken from the published abstract of Ref. [11].
+cHeater-on, κi × 2 Monte Carlo medians (Sec. V; v2).
+106
+107
+intrinsic Qi
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+efficiency
+Shao 2019
+(a)
+ηshift
+absolute
+0
+2
+4
+RF detuning (MHz)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+ηshift
+(b)
+AO
+EO (LC, 122 MHz BW)
+100
+101
+102
+IDT RF→acoustic efficiency (%)
+100
+101
+102
+source power (μW)
+(c)
+AO vs IDT eff.
+EO LC-matched, QL=30
+EO LC-matched, QL=100
+EO LC, ideal L
+FIG. 3.
+Tolerances of the acoustic design (simulation).
+(a) ηshift (circles) and ηabs (squares) versus intrinsic Qi, with δω
+re-optimized at each point; the dotted line marks the Qi implied by Ref. [13]. (b) ηshift versus RF detuning of the drive from
+the doublet splitting. For AO the drive amplitude follows the acoustic Lorentzian (Qm = 2000, FWHM 1.67 MHz); the EO
+curve assumes a flat drive within the 122-MHz bandwidth of the QL = 30 LC match. (c) Source power of the acoustic drive
+versus IDT RF-to-acoustic efficiency, compared with the LC-matched EO drive (horizontal lines). Dotted vertical lines mark
+10% and 50%.
+servative; the true values lie between the two estimates.
+The mismatch is partly absorbed by retuning the laser
+along the ridge ∆≈δr/2, and can be removed with a
+heater on ring 2. The splitting error, ≈±1.6% of Ωm,
+is set by the coupling gap and is thus a fabrication tol-
+erance; the RF frequency can track the actual 2µ only
+within the IDT and acoustic-resonance bandwidth.
+V.
+REALISTIC CONDITIONS: MONTE CARLO
+ANALYSIS
+Each sample draws the ring–ring gap first, forms µgap,
+then (heater on) minimizes |2µ −Ωm| within ∆ϕ ∈[0, π]
+before lock jitter and the two IL columns. With µgap =
+µ
+√
+2 at the design gap, the heater hits the RF retuning
+window for 100% of the N = 1000 heater-on samples.
+Median heater power is ≈22 mW; crosstalk enters δr and
+∆.
+Heater on (main prediction).—Under IL column B and
+10% IDT efficiency, the median ηshift = 96.4% (10th–90th
+percentile 91.7–98.3%); 94.0% of samples reach ηshift ≥
+90% and 67.8% reach ≥95%. Median on-chip absolute
+efficiency is 32.3% with median IL 4.72 dB; fiber-to-fiber
+(1.5 dB/facet) is 16.2%. IL column A (Shao Qi only)
+gives median IL 2.48 dB and on-chip absolute efficiency
+55.0%.
+At ξ = 1, 10% IDT, Qm = 1570, the source
+power is 43 µW; the ξ sweep at the same IDT and Qm
+gives 478/172/43/11 µW for ξ = 0.3/0.5/1/2 (Fig. 6).
+The largest spurious sideband remains q = −1 in 100% of
+samples (Fig. 7). The heater crosstalk (2 mK differential
+/ 3 mK common at Pπ) remains an assumption pending
+calibration.
+Heater off (comparison only).—With the coupler fixed,
+median ηshift = 94.5% (82.5–97.9%) and only 74.2% of
+samples at ηshift ≥90%. That case is not the fab pre-
+diction; it shows why a tunable coupler is required when
+the raw 2µ −Ωm scatter is ∼100 MHz rms.
+
+===== PAGE 6
+6
+−100
+0
+100
+ΔT (mK)
+−200
+0
+200
+offset (MHz)
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+ηshift
+(a)
+Δ (common mode)
+δr (ring mismatch)
+2μ −Ω
+−200
+0
+200
+offset (MHz)
+1.5
+2.0
+2.5
+3.0
+3.5
+insertion loss (dB)
+(b)
+−200
+0
+200
+δr (MHz)
+−300
+−200
+−100
+0
+100
+200
+300
+Δ (MHz)
+(c)
+0.50
+0.70
+0.80
+0.90
+0.95
+0.97
+1.00
+ηshift
+FIG. 4. Thermal-drift, ring-mismatch, and splitting tolerances of the acoustic design at the AO operating point (simulation;
+data/tol scan.csv). ηshift versus the common detuning ∆of the laser from both rings, the ring-2–ring-1 resonance mismatch
+δr, and the splitting error 2µ −Ωm; the two-dimensional map shows the ridge along ∆≈δr/2.
+Temperature axes use
+|df/dT| ≈2.8 GHz/K (thermo-optic effect only); including thermal expansion (≈5.6 GHz/K) halves all temperature windows
+(see text).
+0.6
+0.8
+1.0
+ηshift
+0
+50
+100
+150
+200
+count
+(a)
+κi × 2 MC
+heater OFF
+heater ON
+Shao Qi
+OFF
+Shao Qi
+ON
+κi × 2
+OFF
+κi × 2
+ON
+0
+1
+2
+3
+4
+5
+6
+on-chip IL (dB)
+(b)
+IL two columns
+Shao Qi
+OFF
+Shao Qi
+ON
+κi × 2
+OFF
+κi × 2
+ON
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+fraction η ≥0.90
+(c)
+yield (primary=ON+κi × 2)
+fab ≥90%
+FIG. 5. Heater-on versus heater-off Monte Carlo (simulation, N = 1000; data/summary heater xi.json). Main prediction is
+heater on with conservative κi × 2. Heater-off medians are comparison only. Shao 2020’s 3.5% is an absolute efficiency and is
+not plotted on an ηshift axis.
+0.5
+1.0
+1.5
+2.0
+coverage ξ
+101
+102
+RF power (µW)
+power ∝1/ξ2
+IDT10_Qa2000
+IDT10_Qa1570
+IDT50_Qa2000
+cons.
+ξ=0.5×IDT10%
+Qa=1570
+Shao 2020
+30 dBm
+103
+104
+105
+106
+RF power (µW)
+crit.2: cons. << Shao drive
+FIG. 6. Source RF power versus partial-coverage ξ at ηIDT =
+10% and Qm = 1570 (simulation; power ∝1/ξ2). Conserva-
+tive lab margin: ξ = 0.5 gives ≈172 µW.
+0
+100
+200
+300
+400
+|2μ −Ω| residual (MHz)
+0
+200
+400
+600
+800
+1000
+count
+match residual
+OFF
+ON
+−1.2
+−1.0
+−0.8
+worst-spur order q
+0
+200
+400
+600
+800
+1000
+count
+worst spur (crit.3)
+OFF
+ON
+FIG. 7. Residual splitting after heater tuning and worst spu-
+rious order (simulation). Heater on: |2µ −Ωm| inside the RF
+window for all samples; worst spur is q = −1 throughout.
+
+===== PAGE 7
+7
+TABLE
+IV.
+Parameters
+of
+the
+heater/ξ
+Monte
+Carlo
+(data/summary heater xi.json).
+“Assumed” marks values
+without a direct measurement on this coupler geometry.
+Parameter
+Value
+Source
+IDT efficiency
+10% (50% ref.)
+Shao 2019 cal.; 10%
+conservative
+Acoustic Qm
+2000 (3600 upper;
+1570 cons.)
+[13]; 1570 assumed
+IL column A
+Shao 2019 Qi as
+measured
+suspended
+racetrack
+with IDT
+IL column B
+extra κi × 2
+assumed
+(possible
+double count)
+Partial coverage ξ
+1 (sweep 0.3–2)
+ξ = 1: Shao VπL ex-
+trapolation
+MZI coupler
+µ
+=
+µgap sin(∆ϕ/2)
+self-labeled; not [10]
+Design µgap
+µ
+√
+2
+assumed headroom
+Coupler Pπ
+44.4 mW
+Maeder geometric as-
+sumption [19]
+Heater crosstalk
+2 mK diff. / 3 mK
+CM at Pπ
+assumed (v2 isolation;
+calibrate)
+Residual lock jitter
+5 mK rms
+assumed
+Coupling-gap error σ
+5 nm
+assumed
+RF retuning
+±1 MHz
+∼half
+acoustic
+FWHM
+VI.
+MEASUREMENT PLAN
+Table V is the experimental interface for the tape-out.
+Predictions are from data/summary heater xi.json (v2
+heater/ξ Monte Carlo; seed master 20261114) and related
+sims; the Measurement column is left blank.
+Stage-2
+narrowband HOM is attempted only if step 4 matches
+prediction.
+Internal tape-out gates (yield ≥90% at
+ηshift ≥90%; conservative RF ≪1 W Shao drive; spur
+q = −1) are checked in Notes under the assumed coupler-
+isolation crosstalk (2/3 mK at Pπ) and are not claimed
+as abstract achievements or measured results: under that
+assumption all three gates pass (yield 94.0%; ≈172 µW;
+spur q = −1), but step 1 must calibrate heater power ver-
+sus splitting/detuning before treating the crosstalk model
+as validated.
+VII.
+STAGE-2 PREDICTIONS: HOM AND
+THERMAL PHONONS
+HOM visibility (stage 2).—Narrowband HOM is a
+second-stage prediction, not a first-sample deliverable.
+A frequency shifter for quantum networks must preserve
+the spectral-temporal mode of the photon.
+We model
+an input photon with a Gaussian spectral amplitude
+ψ(∆) ∝exp(−∆2/4σ2), where σ is the rms width of |ψ|2,
+and compute the complex transfer function H(∆) of the
+shifted (q = +1) channel from the full time-domain solu-
+tion of Eq. (1) at the AO operating point, evaluated on 41
+points over ±4σ (data/H shift.csv). The shifted pho-
+101
+102
+photon rms bandwidth (MHz)
+10−7
+10−6
+10−5
+10−4
+10−3
+10−2
+10−1
+1 −VHOM
+target bin filtered, delay-matched
+unfiltered
+FIG. 8. HOM infidelity 1−V versus photon rms bandwidth σ
+(simulation; data/HOM.csv). Circles: shifted photon filtered
+to the target bin, reference photon delay-matched [Eq. (3)].
+Squares: unfiltered, where the residual unshifted and spurious
+orders limit V to ≈ηshift.
+ton, filtered to its target frequency bin, interferes with a
+reference photon of the same spectrum at the target fre-
+quency. Because a fixed delay of the reference can always
+be added, we maximize over the delay τ:
+V = max
+τ
+ R
+ψ∗(∆)H(∆)ψ(∆)e−2πi∆τd∆
+2
+R
+|ψ|2d∆
+R
+|Hψ|2d∆
+.
+(3)
+The normalization by
+R
+|Hψ|2 assumes that the loss is
+balanced, e.g. by attenuating the reference arm, so V
+measures mode distinguishability only. The optimum de-
+lay is 1.0–1.1 ns, i.e. the group delay of the device.
+The results are shown in Fig. 8. With filtering, 1−V =
+8×10−7 at σ = 10 MHz, 3×10−5 at 25 MHz, 6×10−4 at
+50 MHz, 1.1×10−2 at 100 MHz, and 9×10−2 at 200 MHz.
+The residual distinguishability comes from the curvature
+of H(∆) beyond linear phase across the photon spectrum,
+which grows rapidly as σ becomes a sizable fraction of the
+optical linewidths (γ/2π = 0.6 GHz). Without filtering,
+the residual carrier and spurious orders limit the visi-
+bility to V ≈ηshift: V = 0.9835 at σ = 10 MHz and
+0.9829 at 50 MHz, i.e. 1 −V ≈1.7 × 10−2, more than
+four orders of magnitude worse than the filtered value at
+10 MHz (V = 0.9999992). A spectral filter on the tar-
+get bin is therefore required for high-visibility operation.
+The device is therefore suited to narrowband photons
+with σ ≲50 MHz, such as cavity-enhanced parametric
+sources or atom- and quantum-dot-like emitters, together
+with a spectral filter on the target bin. Broadband pho-
+tons require a wider optical linewidth, i.e. a larger γ and
+correspondingly larger drive.
+Thermal phonons.—The shift is a pump-free, number-
+conserving, beam-splitter-type process: the acoustic field
+scatters a photon from the S to the AS supermode,
+and no photon is created without an input photon.
+Thermal occupation nth of the acoustic mode therefore
+
+===== PAGE 8
+8
+TABLE V. Five-step measurement plan. Prediction = simulation; Measurement blank. Pass criteria gate the next step; they
+are not abstract claims of success.
+Step What to measure
+Pass criteria
+Prediction (sim.) / Measurement
+1
+Heater power vs. supermode splitting 2µ
+Can pull 2µ into the acoustic FWHM
+(≈1.7 MHz at Qm = 2000)
+Pred.: 100% of samples hit |2µ−Ω| window
+with µgap = µ
+√
+2, Pπ = 44.4 mW (Maeder
+geom. assump.); Meas.:
+2
+IDT S11, acoustic Q
+Qm in 1570–3600; record ηIDT separately
+Pred.: Qm = 2000 typical, 3600 max [13];
+Meas.:
+3
+RF voltage vs. optical sidebands; extract ξ If ξ ≥0.5, conservative power stays on the
+1/ξ2 curve and the device remains measur-
+able
+Pred.:
+ξ
+=
+0.3/0.5/1/2
+→
+478/172/43/11
+µW
+(IDT
+10%,
+Qm = 1570); Meas.:
+4
+ηshift, carrier, q = −1, on-chip IL
+Use MC 10th percentile as lower accept
+limit; do not treat the median as guaran-
+teed
+Pred. (heater on, κi×2): ηshift p10= 91.7%,
+median 96.4%; IL median 4.72 dB (Shao
+Qi: 2.48 dB); worst spur q = −1; Meas.:
+5
+Narrowband quantum HOM
+Only if step 4 matches prediction; unfil-
+tered V should be close to ηshift
+Pred.: unfiltered 1 −V ≈1 −ηshift; filtered
+1 −V = 8 × 10−7 at 10 MHz (Sec. VII);
+Meas.:
+adds an incoherent fluctuation of the coupling of rel-
+ative size nth/Ncoh, where Ncoh = (4γe/γ2) PRF/ℏΩm
+is the coherently driven phonon number.
+With γ =
+Ωm/Qm, Qm = 2000, and γe/γ = 0.15 [13], we find
+Ncoh ≈1.75 × 1011 at the operating point. At 3.33 GHz,
+nth = 1877 at 300 K, 24.5 at 4 K, and 1.1 × 10−7 at
+10 mK, so nth/Ncoh = 1.1 × 10−8, 1.4 × 10−10, and
+7×10−19, respectively. As a second term we bound spon-
+taneous scattering mediated by the same acoustic mode
+by the single-photon cooperativity C0 = 4g2
+0/(κγm), with
+g0/2π = 1.1 kHz [13], κ/2π = (γ+κi)/2π = 680.75 MHz,
+and γm
+= Ωm/Qm (γm/2π
+= 1.665 MHz), giving
+C0 = 4.27 × 10−9 and nthC0 = 8.0 × 10−6 at 300 K
+(data/tapeout summary.json).
+This is still ∼2000×
+smaller than the unfiltered sideband error 1 −ηshift =
+0.0165 at the ideal point, so neither term dominates the
+residual carrier/spur budget. Scattering into other op-
+tical modes is a different channel and is not claimed to
+be covered by nthC0; that multimode estimate remains
+open.
+Unlike microwave-to-optical transduction, ther-
+mal phonons are not converted into noise photons by the
+beam-splitter interaction itself.
+VIII.
+LIMITATIONS
+The results above are design predictions subject to the
+following limitations.
+(i) No power advantage over matched EO. With
+impedance matching on both sides the acoustic and EO
+source powers differ only by a factor of 0.36–3.9, and the
+LC-matched EO drive is more power-efficient with a low-
+loss inductor (Sec. III). The advantage claimed here is
+restricted to the class of acousto-optic frequency shifters.
+(ii) Narrow RF bandwidth and fixed shift frequency.
+The usable RF bandwidth is ∼1 MHz, set by the acous-
+tic Qm = 2000, versus ≈122 MHz for a QL = 30 LC-
+matched EO electrode and >3 GHz for the unmatched
+device of Ref. [9].
+The shift is fixed at the 3.33-GHz
+acoustic resonance, whereas EO photonic molecules have
+been operated at 12.5–28.2 GHz [9]. The RF source must
+be frequency-stabilized, and the doublet splitting must
+be thermally tuned to match Ωm to well within the op-
+tical linewidth. Maintaining ηshift ≥95% requires active
+stabilization of the common resonance at the ±9.8 mK
+level when thermal expansion is included (±20 mK for
+the thermo-optic effect alone; Sec. IV), e.g. with heater
+electrodes or by locking the laser to the resonance; pas-
+sive temperature control is insufficient.
+The ring–ring
+mismatch, in contrast, can be corrected with a heater
+and is not a fundamental limit.
+(iii) Insertion loss. The ideal IL is 2.5 dB (ηabs = 55%),
+limited by the measured Qi ≈2.4×106 of the suspended
+platform [13]; under realistic heater-on κi × 2 conditions
+the median is 4.72 dB, compared with 0.45 dB for the
+measured EO device [9]. The fiber-to-fiber estimate as-
+sumes 1.5 dB per facet, which requires an optimized edge
+coupler [24]; the suspended chip of Ref. [13] had ≲5 dB
+per facet.
+(iv) IDT efficiency. The acoustic drive loses to a QL =
+30 LC-matched EO drive if the IDT efficiency is below
+≈25%; IDT efficiencies of ≈10% have been reported in
+related LN microring devices [20].
+(v) Drive extrapolation and ξ. We obtain δω by extrap-
+olating the measured MZI VπL of Ref. [13] linearly to a
+ring that the acoustic field covers only partially (15%),
+encoded as ξ = 1. Smaller ξ raises the required source
+power as 1/ξ2; step 3 of Table V extracts ξ from RF
+voltage versus optical sidebands. We assume the same
+IDT efficiency, mode overlap, and uniform acoustic phase
+along the covered section as in the MZI; ng = 2.3 is as-
+sumed.
+(vi) Heater residual and lock jitter (Sec. V). With the
+MZI coupler heater on and µgap = µ
+√
+2, the Monte Carlo
+predicts that |2µ −Ωm| falls inside the ±1 MHz RF
+window for all samples at 5 nm gap σ; the heater-off
+
+===== PAGE 9
+9
+comparison retains ∼100 MHz rms splitting error (me-
+dian ηshift = 94.5%, 74.2% at ηshift ≥90%).
+Resid-
+ual risks are the assumed heater crosstalk into δr and
+∆(2 mK differential / 3 mK common at Pπ after a
+coupler-isolation redesign; v1 used 5/10 mK), the 5 mK
+lock jitter, and whether the fabricated coupler provides
+the assumed headroom. Under conservative κi × 2 the
+heater-on yield at ηshift ≥90% is 94.0% (above the in-
+ternal 90% fab gate) together with the power and spur
+gates, so simulation supports proceeding to layout with
+measurement hooks—provided step 1 of Table V cali-
+brates heater power versus splitting/detuning and does
+not treat the crosstalk numbers as measured. These are
+predictions for steps 1 and 4, not a stop at “5 nm, un-
+modeled.”
+(vii) Assumed values. The extra optical loss, residual
+lock jitter, gap error, coupling decay length, Qi spread,
+and the conservative acoustic Qm = 1570 (no literature
+source) are assumptions without direct measurements on
+this platform (Table IV); we report sensitivity scans for
+each.
+The extra-loss term is possibly double counted,
+because the measured Qi of Ref. [13] already comes from
+a suspended device with an IDT, so the realistic IL is
+likely pessimistic. The bulk thermal-expansion coefficient
+likely overestimates the expansion of a bonded film.
+(viii) Not modeled. We did not model ohmic and acous-
+tic heating of the IDT and resonator, the resulting drive-
+dependent drift of the ring resonances beyond the lock jit-
+ter above (Ref. [13] observed a heating-induced red shift
+with increasing microwave power), or the mechanical sta-
+bility of the suspended structure.
+(ix) Model provenance. Our implementation of Eq. (1)
+is reconstructed from the published equations of Ref. [9],
+not from the authors’ code, and the design combines pa-
+rameters of two different devices (optics and electrodes
+from Ref. [9], acoustics and loss from Ref. [13]).
+Any
+extension that routes the acoustic drive through on-chip
+phononic circuits (for example, to feed several shifters)
+would at present rely on acoustic-circuit parameters bor-
+rowed from GaN-on-sapphire [25] and on our reconstruc-
+tion of that model from its equations; none of the num-
+bers reported here depend on it.
+(x) Simulation only. No device has been fabricated;
+every number in this paper, including the realistic Monte
+Carlo, is a model prediction.
+IX.
+CONCLUSION
+We have given a fabrication-oriented design for a
+suspended-IDT acoustic resonator driving one ring of a
+TFLN photonic molecule as a forward, single-bus fre-
+quency shifter at 3.33 GHz, together with tolerances and
+a five-step measurement plan. All numbers are predic-
+tions. Relative to an EO drive of the same optics, the
+Shao IDT needs ≈6.7 µW versus 1.2–13 µW when the
+EO feed is matched: there is no claimed AO power ad-
+vantage, and the AO bandwidth is ∼1 MHz. Relative
+to Shao 2020, we compare absolute efficiency only (sim-
+ulation, ∼1 MHz versus measured 3.5% at 1 W with
+70 MHz). With the heater-on self-labeled MZI coupler,
+conservative loss, and 10% IDT, the Monte Carlo median
+ηshift is 96.4% (p10 91.7%); heater-off 94.5% is a compar-
+ison only. IL is quoted both with Shao 2019 Qi (median
+2.48 dB) and with assumed extra κi×2 (median 4.72 dB).
+Conservative RF power at ξ = 0.5, Qm = 1570, and 10%
+IDT is ≈172 µW. Unfiltered stage-1 spectroscopy should
+track 1 −V ≈1 −ηshift; filtered HOM (1 −V = 8 × 10−7
+at 10 MHz) is stage 2.
+Thermal phonons contribute
+nth/Ncoh ≈1.07 × 10−8 and nthC0 ≈8.0 × 10−6. Unlike
+the backward-Brillouin photonic molecule of Ref. [16],
+the present design is a forward, single-bus shifter and
+reports ηshift explicitly. The five measurement steps of
+Table V—heater tuning of 2µ, IDT S11/Qm, extrac-
+tion of ξ, ηshift/IL/spurs, then narrowband HOM—are
+the path from this prediction to data.
+Under the as-
+sumed coupler-isolation crosstalk, an internal tape-out
+check on the conservative-loss Monte Carlo passes all
+three gates (yield 94.0% at ηshift ≥90%; ≈172 µW; spur
+q = −1): keep the AO device concept and proceed to
+layout with those measurement hooks, but calibrate the
+heater crosstalk before treating the yield gate as vali-
+dated.
+Data
+availability.—Simulation
+scripts
+(core.py,
+make all.py,
+hom post.py) and data under data/
+(including summary heater xi.json) are available from
+the author.
+[1] J. M. Lukens and P. Lougovski, Frequency-encoded pho-
+tonic qubits for scalable quantum information processing,
+Optica 4, 8 (2017).
+[2] M. Kues, C. Reimer, P. Roztocki, L. R. Cort´es, S. Sciara,
+B. Wetzel, Y. Zhang, A. Cino, S. T. Chu, B. E. Little,
+D. J. Moss, L. Caspani, J. Aza˜na, and R. Morandotti,
+On-chip generation of high-dimensional entangled quan-
+tum states and their coherent control, Nature 546, 622
+(2017).
+[3] H.-H. Lu, J. M. Lukens, N. A. Peters, O. D. Odele, D. E.
+Leaird, A. M. Weiner, and P. Lougovski, Electro-optic
+frequency beam splitters and tritters for high-fidelity
+photonic quantum information processing, Phys. Rev.
+Lett. 120, 030502 (2018).
+[4] C. Wang, M. Zhang, X. Chen, M. Bertrand, A. Shams-
+Ansari, S. Chandrasekhar, P. Winzer, and M. Lonˇcar,
+Integrated lithium niobate electro-optic modulators op-
+erating at CMOS-compatible voltages, Nature 562, 101
+(2018).
+[5] M. Zhang, C. Wang, R. Cheng, A. Shams-Ansari, and
+M. Lonˇcar, Monolithic ultra-high-Q lithium niobate mi-
+croring resonator, Optica 4, 1536 (2017).
+
+===== PAGE 10
+10
+[6] D. Zhu, C. Chen, M. Yu, L. Shao, Y. Hu, C. J. Xin,
+M. Yeh, S. Ghosh, L. He, C. Reimer, N. Sinclair, F. N. C.
+Wong, M. Zhang, and M. Lonˇcar, Spectral control of non-
+classical light pulses using an integrated thin-film lithium
+niobate modulator, Light Sci. Appl. 11, 327 (2022).
+[7] R. Yang, W. Zhou, D.-J. Guo, H.-M. Ke, L. Tao, Y. Wei,
+et al., Quantum photonic frequency processor on thin-
+film lithium niobate (2026), arXiv:2603.11471.
+[8] L. M. Cohen, M. H. Mu˜noz-Arias, M. Sarovar, N. A.
+Boynton, S. C. Arterburn, T. A. Friedmann, N. T. Ot-
+terstrom, P. S. Davids, and M. Gehl, A heterogeneously
+integrated coupled-cavity frequency beam splitter (2026),
+arXiv:2608.26028.
+[9] Y. Hu, M. Yu, D. Zhu, N. Sinclair, A. Shams-Ansari,
+L. Shao,
+J. Holzgrafe,
+E. Puma,
+M. Zhang, and
+M. Lonˇcar, On-chip electro-optic frequency shifters and
+beam splitters, Nature 599, 587 (2021).
+[10] M. Zhang, C. Wang, Y. Hu, A. Shams-Ansari, T. Ren,
+S. Fan, and M. Lonˇcar, Electronically programmable pho-
+tonic molecule, Nat. Photonics 13, 36 (2019).
+[11] Z. Qiu, Z. Zhou, H. Zhong, L. Zhao, H. Zhang, L. Hu,
+G. Wu, and J. Chen, On-chip bidirectional optical fre-
+quency shifter for optical frequency transfer, Opt. Lett.
+50, 1132 (2025).
+[12] L. Shao, N. Sinclair, J. Leatham, Y. Hu, M. Yu,
+T. Turpin, D. Crowe, and M. Lonˇcar, Integrated mi-
+crowave acousto-optic frequency shifter on thin-film
+lithium niobate, Opt. Express 28, 23728 (2020).
+[13] L. Shao,
+M. Yu,
+S. Maity,
+N. Sinclair,
+L. Zheng,
+C. Chia, A. Shams-Ansari, C. Wang, M. Zhang, K. Lai,
+and M. Lonˇcar, Microwave-to-optical conversion using
+lithium niobate thin-film acoustic resonators, Optica 6,
+1498 (2019).
+[14] S. A. Tadesse and M. Li, Sub-optical wavelength acous-
+tic wave modulation of integrated photonic resonators at
+microwave frequencies, Nat. Commun. 5, 5402 (2014).
+[15] S. Kapfinger, T. Reichert, S. Lichtmannecker, K. M¨uller,
+J. J. Finley, A. Wixforth, M. Kaniber, and H. J. Kren-
+ner, Dynamic acousto-optic control of a strongly coupled
+photonic molecule, Nat. Commun. 6, 8540 (2015).
+[16] Z.-X. Zhu, Y.-H. Yang, X.-B. Xu, J.-Q. Wang, Y. Zeng,
+J.-H. Zou, J. Lu, W. Wang, M. Li, Y.-L. Zhang, G.-
+C. Guo, L. Sun, and C.-L. Zou, Acoustically control of
+integrated optical microrings: from photonic molecule to
+Mobius strip (2025), arXiv:2511.22585 [physics.optics].
+[17] A. J. Shepherd and R. O. Behunin, Frequency-entangled
+W states and quantum frequency translation protocols
+via forward Brillouin interactions, Phys. Rev. A 111,
+042407 (2025).
+[18] In backward SBS the written phonon grating extends
+over the signal–pump collision length, Lc ≈0.26 m for
+3-ns signal and 1-ns pump pulses, not over an acoustic
+wavelength. For a 10-GHz bin spacing the phase mis-
+match between bins is ∆q ≈964 rad/m, so ∆q Lc ≈251
+and different bins write mutually orthogonal gratings. In
+our one-dimensional space–time simulation of a two-bin,
+mode-selective write, the selectivity between the targeted
+and the orthogonal bin superposition drops to 0.5, i.e. no
+selectivity. The scheme would also need meter-scale inter-
+action lengths (≈1.3 m for 100-MHz photons) and watt-
+level pump power (Pπ ≈1.55 W at 100 MHz). These are
+our estimates from TFLN literature parameters and have
+not been tested experimentally.
+[19] A. Maeder, G. Finco, F. Kaufmann, A. Sabatti, J. Kell-
+ner, R. J. Chapman, and R. Grange, On-chip tunable
+quantum interference in a lithium-niobate-on-insulator
+photonic circuit, Quantum Sci. Technol. 9, 035040
+(2024), pπ = 44.4 mW for ≈1 mm Au heater arm; geo-
+metric reference only, not this coupler layout.
+[20] X.-B. Xu, Z.-X. Zhu, Y.-H. Yang, J.-Q. Wang, Y. Zeng,
+J.-H. Zou, J. Lu, Y.-L. Zhang, W. Wang, G.-C. Guo,
+L. Sun, and C.-L. Zou, Magnetic-free optical mode de-
+generacy lifting in lithium niobate microring resonators
+(2025), arXiv:2509.01940.
+[21] L. Moretti, M. Iodice, F. G. Della Corte, and I. Rendina,
+Temperature dependence of the thermo-optic coefficient
+of lithium niobate, from 300 to 515 K in the visible and
+infrared regions, J. Appl. Phys. 98, 036101 (2005).
+[22] Y. S. Kim and R. T. Smith, Thermal expansion of lithium
+tantalate and lithium niobate single crystals, J. Appl.
+Phys. 40, 4637 (1969).
+[23] W. Weng, P. S. Light, and A. N. Luiten, Ultra-sensitive
+lithium niobate thermometer based on a dual-resonant
+whispering-gallery-mode cavity, Opt. Lett. 43, 1415
+(2018).
+[24] D. Jia, Q. Luo, C. Yang, R. Ma, X. Yu, F. Gao, Q. Yang,
+F. Bo, G. Zhang, and J. Xu, High-efficiency edge cou-
+plers enabled by vertically tapering on lithium-niobate
+photonic chips, Appl. Phys. Lett. 123, 263502 (2023).
+[25] X.-B. Xu, Y. Zeng, J.-Q. Wang, Z.-H. Tian, J.-Z. Zhang,
+Y.-H. Yang, Z.-X. Zhu, J.-H. Zou, L. Xiao, W. Wang,
+B.-Z. Wang, G.-C. Guo, L. Sun, and C.-L. Zou, Large-
+scale programmable phononic integrated circuits (2025),
+arXiv:2510.26596.
+
