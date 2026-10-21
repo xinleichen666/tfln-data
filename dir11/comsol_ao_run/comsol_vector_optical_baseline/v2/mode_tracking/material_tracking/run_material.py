@@ -56,6 +56,25 @@ def check_mode_list(modes, expected):
     return problems
 
 
+def norm_expr(s):
+    """Normalise an echoed COMSOL expression for comparison."""
+    return "".join(s.split()).replace("[", "").replace("]", "")
+
+
+def check_readback(lines, expected):
+    """The model must hold the requested permittivity, not merely some value."""
+    problems = []
+    want = norm_expr(expected)
+    if len(lines) < 2:
+        return ["material readback incomplete"]
+    for ln in lines:
+        got = norm_expr(ln.split(" ", 2)[-1])
+        if got != want:
+            problems.append(f"readback mismatch: {got!r} != {want!r}")
+            break
+    return problems
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--t", required=True, type=float)
@@ -80,6 +99,7 @@ def main():
                .replace("__CLASS__", src.stem)
                .replace("__MODEL__", str(src_model).replace("\\", "/"))
                .replace("__ALEPS__", eps_expr(a.t))
+               .replace("__NMODE__", str(a.nmode))
                .replace("__OUT__", str(out_model).replace("\\", "/")))
     if "__" in text:
         raise SystemExit("unsubstituted placeholder")
@@ -102,10 +122,13 @@ def main():
 
     log = run / "solve.log"
     with log.open("w", encoding="utf-8", errors="replace") as fh:
-        subprocess.run([str(BIN / "comsolbatch.exe"), "-inputfile", cls.name],
-                       cwd=run, stdout=fh, stderr=subprocess.STDOUT)
+        proc = subprocess.run([str(BIN / "comsolbatch.exe"),
+                               "-inputfile", cls.name],
+                              cwd=run, stdout=fh, stderr=subprocess.STDOUT)
     txt = log.read_text(encoding="utf-8", errors="replace")
     problems = []
+    if proc.returncode != 0:
+        problems.append(f"batch exit code {proc.returncode}")
     if "SOLVE_DONE" not in txt:
         problems.append("solve did not finish")
     if "SAVED" not in txt:
@@ -113,6 +136,10 @@ def main():
     rb = [ln for ln in txt.splitlines() if ln.startswith("READBACK ")]
     if not rb:
         problems.append("material readback missing")
+    else:
+        problems += check_readback(rb, eps_expr(a.t))
+    if f"NEIGS_SET {a.nmode}" not in txt:
+        problems.append(f"study did not accept neigs={a.nmode}")
     if not out_model.exists() or out_model.stat().st_size < 1_000_000:
         problems.append("output model missing or too small")
 

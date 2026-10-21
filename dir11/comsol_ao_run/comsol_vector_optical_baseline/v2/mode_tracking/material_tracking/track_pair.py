@@ -127,6 +127,9 @@ def main():
                       txt, re.M)
     data = sorted([(int(m), float(s), float(zr), float(zi), float(nn))
                    for m, s, zr, zi, nn in rows], key=lambda t: -t[1])
+    if not data:
+        print("FAIL no modes parsed")
+        return 1
     (run / "ranking.csv").write_text(
         "mode,S,zre,zim,norm\n" + "\n".join(
             f"{m},{s:.9f},{zr:.9f},{zi:.9f},{nn:.12g}"

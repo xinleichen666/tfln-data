@@ -19,6 +19,11 @@ public class __CLASS__ {
     String al = "__ALEPS__";
     System.out.println("EPS_EXPR " + al);
 
+    // the requested mode count must reach the study, otherwise a smaller
+    // default silently truncates the spectrum that the ranking relies on
+    m.study("std1").feature("mode").set("neigs", __NMODE__);
+    System.out.println("NEIGS_SET __NMODE__");
+
     String[] tags = new String[]{"matAlL", "matAlR"};
     for (String t : tags) {
       m.component("comp1").material(t).propertyGroup("def")

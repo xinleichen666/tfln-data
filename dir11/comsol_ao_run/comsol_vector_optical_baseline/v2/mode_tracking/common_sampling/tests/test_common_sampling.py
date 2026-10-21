@@ -432,6 +432,24 @@ check("eps expression at t=0 is exactly 1", RM.eps_expr(0.0) == "1",
 check("eps expression keeps t", "0.0004" in RM.eps_expr(4e-4),
       RM.eps_expr(4e-4))
 
+# readback must match the request, not merely exist
+ok_rb = ["READBACK matAlL [(1+0.0008*((1.44-15.6*i)^2-1))]",
+         "READBACK matAlR [(1+0.0008*((1.44-15.6*i)^2-1))]"]
+check("matching readback accepted",
+      not RM.check_readback(ok_rb, RM.eps_expr(8e-4)),
+      RM.check_readback(ok_rb, RM.eps_expr(8e-4)))
+
+bad_rb = ["READBACK matAlL [1]",
+          "READBACK matAlR [1]"]
+check("stale readback rejected",
+      any("mismatch" in p for p in RM.check_readback(bad_rb, RM.eps_expr(8e-4))),
+      RM.check_readback(bad_rb, RM.eps_expr(8e-4)))
+
+check("incomplete readback rejected",
+      RM.check_readback(ok_rb[:1], RM.eps_expr(8e-4)) ==
+      ["material readback incomplete"],
+      RM.check_readback(ok_rb[:1], RM.eps_expr(8e-4)))
+
 # ------------------------------------------------- pairing guards
 print("pairing guards")
 rank = [(str(i), "0.02", "0.02", "0.0") for i in range(1, 41)]
