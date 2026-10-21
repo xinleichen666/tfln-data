@@ -5,13 +5,13 @@
 
 ## 收录规则
 
-- 收录：脚本（`.java` `.py` `.tpl`）、日志、记录与报告（`.md` `.txt` `.docx` `.pdf`）、
-  不超过 1 MB 的 CSV（汇总表、扫频表、审计表）、不超过 5 MB 的其他文本。
-- 不收录（留在本地，清单见 `local_only_large_files.csv`）：
-  - 全部 `.mph` 模型；
-  - 超过 1 MB 的逐节点场 CSV（孔径扫描 `Wap_*_mode_*`、`convergence/` 网格与受驱场、
-    光学基线中间场等）；
+- 收录：除 `.mph` 外的全部文件，按原文件存放，不压缩。包括脚本、日志、记录与报告、汇总表，
+  以及逐节点场 CSV（孔径扫描 `_root/Wap_*_mode_*`、`convergence/` 网格追踪与受驱场、
+  光学基线中间场）。单个文件最大约 40 MB。
+- 不收录：
+  - 全部 `.mph` 模型（留在本地，清单见 `local_only_large_files.csv`）；
   - COMSOL 编译与状态文件（`.class` `.recovery` `.status`）。
+- 光学基线 `comsol_vector_optical_baseline/` 是 2026-10-21 19:16 的快照，之后仍在更新。
 - 已在仓库其他位置的不重复放：`photoelastic` → `dir11/photoelastic_p283/`；
   悬空三维 10 µm 场 → `dir11/idt_3d_sus/`。
 
