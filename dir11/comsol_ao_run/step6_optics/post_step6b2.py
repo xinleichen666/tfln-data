@@ -10,7 +10,7 @@ pat = re.compile(r"BINB2 f_GHz=(\S+) item=(\S+) j=(\d+) xc_um=(\S+) Re=(\S+) Im=
 
 bins = {}
 raw = []
-for line in open("step6b2.log", encoding="utf-8", errors="ignore"):
+for line in open("step6b2_aniso.log", encoding="utf-8", errors="ignore"):
     mt = pat.search(line)
     if not mt:
         continue
@@ -19,7 +19,7 @@ for line in open("step6b2.log", encoding="utf-8", errors="ignore"):
     bins.setdefault(f, {}).setdefault(it, np.zeros(NB, complex))[int(j)] = float(re_) + 1j * float(im_)
 assert len(raw) == 2 * 5 * NB, len(raw)
 
-with open("bins_step6b2.csv", "w", newline="\n") as fh:
+with open("bins_step6b2_aniso.csv", "w", newline="\n") as fh:
     fh.write("f_GHz,item,j,xc_um,Re,Im\n")
     for r in raw:
         fh.write(",".join(r) + "\n")
@@ -57,11 +57,11 @@ for f, D in bins.items():
         win_rows.append(row)
         print(f"WIN2 f={f} w={w} m={m} j0={j0} x0_um={j0 * DX:.6f} abs_tot={a:.6e} phiL_rad_per_mmV={phiL:.4f} VpiL_Vcm={vpil:.4f}")
 
-with open("harm_step6b2.csv", "w", newline="\n") as fh:
+with open("harm_step6b2_aniso.csv", "w", newline="\n") as fh:
     wr = csv.writer(fh, lineterminator="\n")
     wr.writerow(["f_GHz", "group", "n", "amp_per_V"])
     wr.writerows(harm_rows)
-with open("win_step6b2.csv", "w", newline="\n") as fh:
+with open("win_step6b2_aniso.csv", "w", newline="\n") as fh:
     wr = csv.writer(fh, lineterminator="\n")
     hdr = ["f_GHz", "w_um", "m_bins", "j0", "x0_um"]
     for k in ITEMS:

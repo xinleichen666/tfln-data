@@ -7,7 +7,7 @@ public class Step6c2 {
   static final int NP=7, ID=3;
   static final double HLN=0.5, HAL=0.1, WR=1.0, WT=0.9, HAIR=2.0, HW=6.0, LAM_UM=1.55;
   static final double NO=2.211, NE=2.138, N_AL=1.44, K_AL=16.0;
-  static final double TE_REF=1.9638, TM_REF=1.7432;
+  static final double TE_REF=1.9638, TM_REF=1.718502;
   static final double XC=(ID+0.5)*P;
   static final double K0=2*Math.PI/(LAM_UM*1e-6);
   static final double[] SHIFTS={1.9,1.7};
