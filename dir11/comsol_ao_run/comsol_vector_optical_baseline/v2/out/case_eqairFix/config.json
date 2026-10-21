@@ -1,0 +1,14 @@
+{
+  "metal": "1",
+  "hmax_nm": "25",
+  "xw": "1.6",
+  "neff_shift": "1.78",
+  "neigs": "40",
+  "nexport": "2",
+  "tag": "eqairFix",
+  "aniso": "true",
+  "al_eps": "1",
+  "ln_no": 2.211,
+  "ln_ne": 2.138,
+  "created": "2026-10-21 16:52:48"
+}

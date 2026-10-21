@@ -1,0 +1,6 @@
+air,3744
+metalL,144
+metalR,144
+ridge,432
+slabL,288
+slabR,288

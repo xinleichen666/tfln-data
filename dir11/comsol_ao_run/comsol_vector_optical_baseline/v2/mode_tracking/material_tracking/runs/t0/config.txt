@@ -1,0 +1,4 @@
+source=D:\comsol_ao_run\comsol_vector_optical_baseline\v2\out\final_eqairFix.mph
+t=0.0
+eps=1
+output=D:\comsol_ao_run\comsol_vector_optical_baseline\v2\mode_tracking\material_tracking\out\track_t0.mph

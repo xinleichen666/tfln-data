@@ -1,0 +1,3 @@
+aperture_um,interior_span_um,target_band_GHz,mode,freq_GHz,g_interior_best,z_interior_um,g_edge_same_mode,z_edge_same_mode_um,edge_to_interior_same_mode,g_edge_peak_any_mode,edge_peak_mode,edge_peak_freq_GHz,edge_peak_z_um
+6,2,3.280-3.380,6,3.311762107,4.269595e+01,4.50,6.218085e+01,2.00,1.45636,6.301581e+01,2,3.291194264,7.70
+10,6,3.280-3.380,11,3.364041514,1.118192e+02,6.60,5.518075e+01,3.00,0.49348,5.518075e+01,11,3.364041514,3.00

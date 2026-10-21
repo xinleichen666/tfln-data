@@ -1,0 +1,5 @@
+model=D:\comsol_ao_run\comsol_vector_optical_baseline\v2\mode_tracking\material_tracking\out\track_t2e-4.mph
+solnum=40
+neff_re=1.7809627656839155
+neff_im=-0.00017282633856887960
+area_total=15.028000000004

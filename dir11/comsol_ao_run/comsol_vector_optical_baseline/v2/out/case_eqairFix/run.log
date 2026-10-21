@@ -1,0 +1,257 @@
+*******************************************
+***COMSOL 6.3.0.290 progress output file***
+*******************************************
+Wed Oct 21 16:52:56 CST 2026
+COMSOL Multiphysics 6.3 (开发版本: 290) 在批处理模式下启动
+正在运行: D:\comsol_ao_run\comsol_vector_optical_baseline\v2\out\case_eqairFix\gen_v2.class
+CONFIG metal=true hmax=25.0 xw=1.6 shift=1.78 tag=eqairFix
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 421/423 447/450
+           当前进度:   0 % - 矩形
+Memory: 436/437 462/464
+           当前进度:   6 % - 矩形 2
+Memory: 442/442 467/467
+-          当前进度:  13 % - 矩形 3
+-          当前进度:  19 % - 矩形 4
+--         当前进度:  25 % - 矩形 5
+Memory: 437/442 463/467
+---        当前进度:  31 % - 矩形 6
+Memory: 439/442 464/467
+---        当前进度:  38 % - 形成联合体
+---------  当前进度:  90 % - 解析域和空区域
+Memory: 443/444 468/469
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 444/444 468/469
+GEOM domains 6
+---------- 当前进度: 100 % - 正在创建可视化网格
+Memory: 447/447 473/473
+SEL solid=[2, 3, 4, 5, 6] air=[1]
+EWFD model = RelativePermittivity
+顶点单元数：20
+边界单元数：1000
+---------  当前进度:  95 % - 提高单元质量
+Memory: 550/550 576/576
+单元数：63106
+最小单元质量：0.6612
+---------- 当前进度: 100 % - 正在定型网格
+Memory: 503/555 534/581
+MESH tri 63106
+----       当前进度:  47 % - 生成方程
+Memory: 569/569 593/593
+------     当前进度:  60 % - 生成方程
+Memory: 568/569 591/593
+-----      当前进度:  54 % - 生成方程
+Memory: 574/581 596/605
+SOLVE_BEGIN
+           当前进度:   2 % - 生成方程
+Memory: 648/648 680/680
+           当前进度:   3 % - 研究 1
+Memory: 659/669 682/694
+<---- 研究 1/解 1 (sol1) 中的“编译方程: 模式分析” -------------------------------------------
+开始于 2026年10月21日 下午4:53:04。
+几何形函数: 二次拉格朗日单元
+在 AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD 上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 6 个内核）。
+可用内存：32.37 GB。
+           当前进度:   3 % - 生成方程
+Memory: 665/670 688/694
+           当前进度:   5 % - 编译方程: 模式分析
+Memory: 691/705 709/725
+           当前进度:   5 % - 正在创建可视化网格
+Memory: 696/705 713/725
+时间：1。
+物理内存: 705 MB
+虚拟内存: 725 MB
+结束时间：2026年10月21日 下午4:53:05。
+----- 研究 1/解 1 (sol1) 中的“编译方程: 模式分析” ------------------------------------------>
+<---- 研究 1/解 1 (sol1) 中的“因变量 1” ------------------------------------------------
+开始于 2026年10月21日 下午4:53:05。
+           当前进度:   5 % - 因变量 1
+Memory: 724/755 739/772
+求解时间：0 s。
+物理内存: 755 MB
+虚拟内存: 772 MB
+结束时间：2026年10月21日 下午4:53:05。
+----- 研究 1/解 1 (sol1) 中的“因变量 1” ----------------------------------------------->
+<---- 研究 1/解 1 (sol1) 中的“特征值求解器 1” ---------------------------------------------
+开始于 2026年10月21日 下午4:53:05。
+特征值求解器
+求解的自由度数：443087。
+           当前进度:   8 % - 组装稀疏模式
+Memory: 981/992 999/1010
+找到非对称矩阵。
+缩放因变量：
+电场 (comp1.E): 1
+           当前进度:   8 % - 
+Memory: 1183/1288 1224/1337
+已使用正交零空间函数。
+           当前进度:   8 % - 矩阵分解
+Memory: 1528/1676 1772/1772
+非对称特征值求解器
+Iter      ErrEst  Nconv
+           当前进度:   8 % - 求解线性方程组
+Memory: 3659/3704 3985/4029
+           当前进度:   8 % - 矩阵乘法
+Memory: 3556/3704 3876/4029
+           当前进度:   8 % - 求解线性方程组
+Memory: 3572/3704 3895/4029
+           当前进度:   8 % - 矩阵乘法
+Memory: 3553/3704 3872/4029
+           当前进度:   8 % - 求解线性方程组
+           当前进度:   8 % - 矩阵乘法
+           当前进度:   8 % - 求解线性方程组
+Memory: 3556/3704 3884/4029
+           当前进度:   8 % - 矩阵乘法
+Memory: 3553/3704 3872/4029
+           当前进度:   8 % - 求解线性方程组
+Memory: 3568/3704 3891/4029
+           当前进度:   8 % - 矩阵乘法
+Memory: 3553/3704 3872/4029
+           当前进度:   8 % - 求解线性方程组
+Memory: 3560/3704 3884/4029
+           当前进度:   8 % - 矩阵乘法
+Memory: 3552/3704 3871/4029
+           当前进度:   8 % - 求解线性方程组
+Memory: 3567/3704 3890/4029
+           当前进度:   8 % - 矩阵乘法
+Memory: 3552/3704 3871/4029
+           当前进度:   8 % - 求解线性方程组
+Memory: 3567/3704 3890/4029
+   1        0.19     13
+---        当前进度:  38 % - 求解线性方程组
+Memory: 3552/3704 3871/4029
+---        当前进度:  38 % - 矩阵乘法
+---        当前进度:  38 % - 求解线性方程组
+Memory: 3560/3704 3894/4029
+   2        0.24     17
+----       当前进度:  47 % - 求解线性方程组
+Memory: 3552/3704 3871/4029
+   3       0.025     28
+-------    当前进度:  72 % - 求解线性方程组
+-------    当前进度:  72 % - 矩阵乘法
+Memory: 3553/3704 3872/4029
+-------    当前进度:  72 % - 求解线性方程组
+   4     0.00028     35
+--------   当前进度:  88 % - 求解线性方程组
+   5     1.5e-08     40
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 3324/3704 3630/4029
+175 线性方程组的解。
+175 矩阵乘法。
+173 重正交化。
+求解时间：140 s。 （2 分钟，20 秒）
+物理内存: 4.26 GB
+虚拟内存: 4.63 GB
+结束时间：2026年10月21日 下午4:55:25。
+----- 研究 1/解 1 (sol1) 中的“特征值求解器 1” -------------------------------------------->
+SOLVE_DONE
+SAVED_SOLVED D:/comsol_ao_run/comsol_vector_optical_baseline/v2/out/solved_eqairFix.mph
+NEFF mode=1 re=0.412454 im=1.162817e-10 dampz=-4.713676e-04 ridge=0.0207
+NEFF mode=2 re=0.420648 im=3.982966e-11 dampz=-1.614562e-04 ridge=0.0028
+NEFF mode=3 re=0.444694 im=2.754275e-13 dampz=-1.116491e-06 ridge=0.0064
+NEFF mode=4 re=0.496581 im=-5.658587e-13 dampz=2.293803e-06 ridge=0.0422
+NEFF mode=5 re=0.513270 im=9.133550e-14 dampz=-3.702438e-07 ridge=0.0073
+NEFF mode=6 re=0.530968 im=8.756843e-14 dampz=-3.549733e-07 ridge=0.0181
+NEFF mode=7 re=0.537048 im=1.319375e-14 dampz=-5.348307e-08 ridge=0.0205
+NEFF mode=8 re=0.553803 im=1.641204e-14 dampz=-6.652895e-08 ridge=0.0090
+NEFF mode=9 re=0.594334 im=6.582885e-15 dampz=-2.668483e-08 ridge=0.0369
+NEFF mode=10 re=0.628907 im=9.113722e-17 dampz=-3.694400e-10 ridge=0.0014
+NEFF mode=11 re=0.635566 im=-2.061903e-14 dampz=8.358271e-08 ridge=0.0293
+NEFF mode=12 re=0.640472 im=7.664412e-15 dampz=-3.106898e-08 ridge=0.0083
+NEFF mode=13 re=0.666499 im=1.219214e-14 dampz=-4.942289e-08 ridge=0.0167
+NEFF mode=14 re=0.703029 im=-4.654153e-15 dampz=1.886639e-08 ridge=0.0086
+NEFF mode=15 re=0.719446 im=-2.668909e-16 dampz=1.081887e-09 ridge=0.0167
+NEFF mode=16 re=0.730275 im=-1.143275e-15 dampz=4.634458e-09 ridge=0.0028
+NEFF mode=17 re=0.731529 im=1.687353e-14 dampz=-6.839970e-08 ridge=0.0490
+NEFF mode=18 re=0.779395 im=-3.913165e-15 dampz=1.586267e-08 ridge=0.0167
+NEFF mode=19 re=0.793725 im=2.705782e-15 dampz=-1.096834e-08 ridge=0.0078
+NEFF mode=20 re=0.795898 im=6.902297e-15 dampz=-2.797962e-08 ridge=0.0027
+NEFF mode=21 re=0.807747 im=1.032905e-15 dampz=-4.187053e-09 ridge=0.0041
+NEFF mode=22 re=0.814062 im=-2.573960e-15 dampz=1.043398e-08 ridge=0.0340
+NEFF mode=23 re=0.815396 im=-5.278725e-15 dampz=2.139820e-08 ridge=0.0198
+NEFF mode=24 re=0.869291 im=1.991953e-14 dampz=-8.074714e-08 ridge=0.0078
+NEFF mode=25 re=0.870732 im=-2.281717e-14 dampz=9.249325e-08 ridge=0.0403
+NEFF mode=26 re=0.883739 im=8.399997e-16 dampz=-3.405080e-09 ridge=0.0054
+NEFF mode=27 re=0.898400 im=-2.882341e-15 dampz=1.168405e-08 ridge=0.0172
+NEFF mode=28 re=0.922366 im=1.979751e-15 dampz=-8.025255e-09 ridge=0.0312
+NEFF mode=29 re=0.929020 im=7.678648e-18 dampz=-3.112669e-11 ridge=0.0021
+NEFF mode=30 re=0.936820 im=4.993417e-15 dampz=-2.024166e-08 ridge=0.0052
+NEFF mode=31 re=0.978160 im=7.155716e-17 dampz=-2.900690e-10 ridge=0.0709
+NEFF mode=32 re=0.980111 im=-7.712225e-15 dampz=3.126280e-08 ridge=0.0119
+NEFF mode=33 re=1.029025 im=1.096393e-14 dampz=-4.444414e-08 ridge=0.1257
+NEFF mode=34 re=1.030249 im=1.163713e-14 dampz=-4.717305e-08 ridge=0.0211
+NEFF mode=35 re=1.151588 im=7.831506e-15 dampz=-3.174632e-08 ridge=0.2049
+NEFF mode=36 re=1.222484 im=1.395931e-14 dampz=-5.658639e-08 ridge=0.1531
+NEFF mode=37 re=1.469182 im=7.594935e-16 dampz=-3.078734e-09 ridge=0.1225
+NEFF mode=38 re=1.522839 im=2.193511e-15 dampz=-8.891765e-09 ridge=0.3569
+NEFF mode=39 re=1.595960 im=2.224480e-15 dampz=-9.017303e-09 ridge=0.2851
+NEFF mode=40 re=1.781893 im=2.909124e-18 dampz=-1.179262e-11 ridge=0.5825
+TOP mode=40 neff=1.7818934544410234
+ENERGY mode=1 Pdiss=5.695890e-35 Pflow=3.654025e-14
+ENERGY mode=2 Pdiss=-3.717224e-30 Pflow=5.049583e-12
+ENERGY mode=3 Pdiss=6.395496e-32 Pflow=9.674803e-13
+ENERGY mode=4 Pdiss=3.156309e-31 Pflow=3.453128e-13
+ENERGY mode=5 Pdiss=5.806342e-32 Pflow=1.289360e-12
+ENERGY mode=6 Pdiss=4.053540e-33 Pflow=8.659203e-14
+ENERGY mode=7 Pdiss=1.038922e-35 Pflow=6.990239e-14
+ENERGY mode=8 Pdiss=-1.447462e-31 Pflow=1.697250e-13
+ENERGY mode=9 Pdiss=1.799447e-32 Pflow=8.080583e-14
+ENERGY mode=10 Pdiss=-5.760286e-32 Pflow=2.909734e-13
+ENERGY mode=11 Pdiss=4.112979e-33 Pflow=2.176464e-13
+ENERGY mode=12 Pdiss=-9.540053e-31 Pflow=3.621866e-13
+ENERGY mode=13 Pdiss=-5.757595e-35 Pflow=1.005768e-13
+ENERGY mode=14 Pdiss=-8.554906e-35 Pflow=3.809040e-13
+ENERGY mode=15 Pdiss=5.669970e-36 Pflow=1.494518e-13
+ENERGY mode=16 Pdiss=-1.995795e-33 Pflow=7.368805e-13
+ENERGY mode=17 Pdiss=5.438575e-31 Pflow=1.442930e-13
+ENERGY mode=18 Pdiss=1.481754e-31 Pflow=4.395071e-13
+ENERGY mode=19 Pdiss=-4.258421e-36 Pflow=6.233096e-13
+ENERGY mode=20 Pdiss=5.811011e-33 Pflow=1.730779e-13
+ENERGY mode=21 Pdiss=-9.782462e-31 Pflow=1.372875e-12
+ENERGY mode=22 Pdiss=-1.098420e-29 Pflow=1.066677e-12
+ENERGY mode=23 Pdiss=-2.326982e-34 Pflow=2.463195e-13
+ENERGY mode=24 Pdiss=-1.947163e-31 Pflow=2.436798e-13
+ENERGY mode=25 Pdiss=-1.386507e-30 Pflow=3.958308e-13
+ENERGY mode=26 Pdiss=8.732525e-36 Pflow=8.294932e-13
+ENERGY mode=27 Pdiss=6.316060e-35 Pflow=1.172190e-12
+ENERGY mode=28 Pdiss=-7.614984e-31 Pflow=3.908953e-13
+ENERGY mode=29 Pdiss=-3.387392e-31 Pflow=2.190206e-12
+ENERGY mode=30 Pdiss=-4.653736e-35 Pflow=1.449713e-12
+ENERGY mode=31 Pdiss=-3.850084e-30 Pflow=1.360091e-12
+ENERGY mode=32 Pdiss=1.268306e-33 Pflow=1.982277e-12
+ENERGY mode=33 Pdiss=-1.526724e-30 Pflow=2.144326e-13
+ENERGY mode=34 Pdiss=2.787964e-32 Pflow=6.472691e-13
+ENERGY mode=35 Pdiss=5.155302e-31 Pflow=4.777216e-13
+ENERGY mode=36 Pdiss=1.452088e-32 Pflow=1.833545e-13
+ENERGY mode=37 Pdiss=1.345245e-30 Pflow=4.089765e-13
+ENERGY mode=38 Pdiss=-7.667101e-33 Pflow=2.580375e-13
+ENERGY mode=39 Pdiss=-3.942718e-32 Pflow=6.937410e-13
+ENERGY mode=40 Pdiss=-2.892606e-29 Pflow=1.217216e-12
+           当前进度:   0 % - 
+Memory: 1065/4262 1087/4630
+---        当前进度:  31 % - 计算
+Memory: 1093/4262 1115/4630
+---        当前进度:  34 % - 计算
+Memory: 1085/4262 1107/4630
+----       当前进度:  41 % - 计算
+Memory: 1064/4262 1086/4630
+           当前进度:   0 % - 
+Memory: 1081/4262 1102/4630
+FIELD mode=40 neff=1.7818934544410234 -> f_eqairFix_m40.csv
+---        当前进度:  31 % - 计算
+Memory: 1103/4262 1124/4630
+---        当前进度:  34 % - 计算
+Memory: 1085/4262 1110/4630
+----       当前进度:  41 % - 计算
+Memory: 1065/4262 1086/4630
+           当前进度:   0 % - 
+Memory: 1080/4262 1101/4630
+FIELD mode=39 neff=1.595960116825403 -> f_eqairFix_m39.csv
+POSTPROC_OK
+SAVED_FINAL D:/comsol_ao_run/comsol_vector_optical_baseline/v2/out/final_eqairFix.mph
+类运行时: 153 s.
+正在保存模型: D:\comsol_ao_run\comsol_vector_optical_baseline\v2\out\case_eqairFix\gen_v2_Model.mph
+保存时间: 0 s.
+总时间: 153 s.
+---------- 当前进度: 100 % - 完成
+Memory: 1077/4262 1099/4630

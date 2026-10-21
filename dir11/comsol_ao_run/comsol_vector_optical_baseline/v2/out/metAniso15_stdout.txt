@@ -1,0 +1,89 @@
+compile: ok
+batch ok, log D:\comsol_ao_run\comsol_vector_optical_baseline\v2\out\run_metAniso15.log, model final_metAniso15.mph (817 MB), 2 exports
+  CONFIG metal=true hmax=15.0 xw=1.6 shift=1.782 tag=metAniso15
+  GEOM domains 6
+  SEL solid=[2, 3, 4, 5, 6] air=[1]
+  MESH tri 175274
+  NEFF mode=1 re=0.430029 im=-2.130437e-03 dampz=8.636082e+03 ridge=0.0236
+  NEFF mode=2 re=0.441379 im=-2.009405e-03 dampz=8.145460e+03 ridge=0.0115
+  NEFF mode=3 re=0.454380 im=-3.241946e-03 dampz=1.314177e+04 ridge=0.0361
+  NEFF mode=4 re=0.514136 im=-1.326700e-03 dampz=5.378003e+03 ridge=0.0039
+  NEFF mode=5 re=0.567316 im=-1.099596e-03 dampz=4.457396e+03 ridge=0.0141
+  NEFF mode=6 re=0.585522 im=-1.990650e-03 dampz=8.069435e+03 ridge=0.0439
+  NEFF mode=7 re=0.607635 im=-4.419731e-03 dampz=1.791612e+04 ridge=0.0525
+  NEFF mode=8 re=0.626090 im=-7.941716e-04 dampz=3.219308e+03 ridge=0.0125
+  NEFF mode=9 re=0.645351 im=-2.947199e-03 dampz=1.194697e+04 ridge=0.0436
+  NEFF mode=10 re=0.661826 im=-7.480576e-04 dampz=3.032377e+03 ridge=0.0094
+  NEFF mode=11 re=0.686924 im=-6.059507e-04 dampz=2.456323e+03 ridge=0.0117
+  NEFF mode=12 re=0.728550 im=-8.170268e-05 dampz=3.311955e+02 ridge=0.0048
+  NEFF mode=13 re=0.734828 im=-1.235436e-03 dampz=5.008047e+03 ridge=0.0073
+  NEFF mode=14 re=0.738204 im=-1.001279e-03 dampz=4.058851e+03 ridge=0.0267
+  NEFF mode=15 re=0.754295 im=-9.525361e-04 dampz=3.861265e+03 ridge=0.0040
+  NEFF mode=16 re=0.767118 im=-9.768938e-04 dampz=3.960003e+03 ridge=0.0065
+  NEFF mode=17 re=0.782567 im=-1.171788e-03 dampz=4.750039e+03 ridge=0.0282
+  NEFF mode=18 re=0.797781 im=-4.523331e-04 dampz=1.833608e+03 ridge=0.0064
+  NEFF mode=19 re=0.802454 im=-1.073679e-03 dampz=4.352339e+03 ridge=0.0203
+  NEFF mode=20 re=0.817608 im=-4.763601e-04 dampz=1.931006e+03 ridge=0.0087
+  NEFF mode=21 re=0.831540 im=-2.422668e-03 dampz=9.820693e+03 ridge=0.0456
+  NEFF mode=22 re=0.865328 im=-1.934427e-03 dampz=7.841523e+03 ridge=0.0405
+  NEFF mode=23 re=0.876082 im=-8.501763e-04 dampz=3.446332e+03 ridge=0.0072
+  NEFF mode=24 re=0.901524 im=-3.353052e-04 dampz=1.359216e+03 ridge=0.0147
+  NEFF mode=25 re=0.922897 im=-3.233527e-04 dampz=1.310765e+03 ridge=0.0047
+  NEFF mode=26 re=0.938971 im=-4.787983e-04 dampz=1.940889e+03 ridge=0.0100
+  NEFF mode=27 re=0.939805 im=-6.971378e-04 dampz=2.825965e+03 ridge=0.0114
+  NEFF mode=28 re=0.967098 im=-7.765536e-04 dampz=3.147890e+03 ridge=0.0105
+  NEFF mode=29 re=0.968321 im=-8.881518e-04 dampz=3.600272e+03 ridge=0.0121
+  NEFF mode=30 re=0.970581 im=-1.053579e-03 dampz=4.270861e+03 ridge=0.0246
+  NEFF mode=31 re=1.072856 im=-3.469890e-03 dampz=1.406578e+04 ridge=0.2563
+  NEFF mode=32 re=1.106706 im=-8.518760e-03 dampz=3.453223e+04 ridge=0.1402
+  NEFF mode=33 re=1.231469 im=-7.145975e-03 dampz=2.896741e+04 ridge=0.1043
+  NEFF mode=34 re=1.246899 im=-7.628146e-03 dampz=3.092197e+04 ridge=0.0735
+  NEFF mode=35 re=1.489113 im=-1.192402e-02 dampz=4.833604e+04 ridge=0.2069
+  NEFF mode=36 re=1.531365 im=-5.316866e-03 dampz=2.155281e+04 ridge=0.4506
+  NEFF mode=37 re=1.790829 im=-1.625706e-02 dampz=6.590072e+04 ridge=0.0806
+  NEFF mode=38 re=1.820198 im=-1.463890e-02 dampz=5.934124e+04 ridge=0.0498
+  NEFF mode=39 re=2.052293 im=-2.121306e-02 dampz=8.599069e+04 ridge=0.5286
+  NEFF mode=40 re=2.152957 im=-1.571870e-02 dampz=6.371838e+04 ridge=0.6875
+  TOP mode=40 neff=2.152957051836198
+  ENERGY mode=1 Pdiss=9.249272e-10 Pflow=5.355016e-14
+  ENERGY mode=2 Pdiss=1.585094e-09 Pflow=9.729922e-14
+  ENERGY mode=3 Pdiss=3.637609e-09 Pflow=1.383987e-13
+  ENERGY mode=4 Pdiss=8.403373e-09 Pflow=7.812726e-13
+  ENERGY mode=5 Pdiss=7.546670e-09 Pflow=8.465335e-13
+  ENERGY mode=6 Pdiss=1.080827e-09 Pflow=6.697043e-14
+  ENERGY mode=7 Pdiss=8.770206e-09 Pflow=2.447573e-13
+  ENERGY mode=8 Pdiss=2.416768e-09 Pflow=3.753552e-13
+  ENERGY mode=9 Pdiss=2.476097e-09 Pflow=1.036287e-13
+  ENERGY mode=10 Pdiss=1.170466e-09 Pflow=1.929948e-13
+  ENERGY mode=11 Pdiss=8.989729e-10 Pflow=1.829916e-13
+  ENERGY mode=12 Pdiss=3.158825e-10 Pflow=4.768822e-13
+  ENERGY mode=13 Pdiss=2.604349e-09 Pflow=2.600165e-13
+  ENERGY mode=14 Pdiss=3.109250e-09 Pflow=3.830210e-13
+  ENERGY mode=15 Pdiss=1.367785e-09 Pflow=1.771162e-13
+  ENERGY mode=16 Pdiss=1.358900e-09 Pflow=1.715782e-13
+  ENERGY mode=17 Pdiss=4.526635e-09 Pflow=4.764840e-13
+  ENERGY mode=18 Pdiss=4.230705e-09 Pflow=1.153656e-12
+  ENERGY mode=19 Pdiss=1.471348e-08 Pflow=1.690296e-12
+  ENERGY mode=20 Pdiss=1.247383e-09 Pflow=3.229879e-13
+  ENERGY mode=21 Pdiss=4.186873e-09 Pflow=2.131658e-13
+  ENERGY mode=22 Pdiss=6.879946e-09 Pflow=4.386868e-13
+  ENERGY mode=23 Pdiss=6.922859e-09 Pflow=1.004381e-12
+  ENERGY mode=24 Pdiss=2.982363e-09 Pflow=1.097089e-12
+  ENERGY mode=25 Pdiss=8.861432e-09 Pflow=3.380253e-12
+  ENERGY mode=26 Pdiss=2.930585e-09 Pflow=7.549592e-13
+  ENERGY mode=27 Pdiss=1.032332e-08 Pflow=1.826512e-12
+  ENERGY mode=28 Pdiss=1.056873e-08 Pflow=1.678701e-12
+  ENERGY mode=29 Pdiss=1.777799e-08 Pflow=2.468979e-12
+  ENERGY mode=30 Pdiss=1.063475e-08 Pflow=1.245036e-12
+  ENERGY mode=31 Pdiss=1.141570e-08 Pflow=4.057967e-13
+  ENERGY mode=32 Pdiss=2.480737e-08 Pflow=3.591916e-13
+  ENERGY mode=33 Pdiss=6.107744e-08 Pflow=1.054244e-12
+  ENERGY mode=34 Pdiss=1.786070e-08 Pflow=2.888027e-13
+  ENERGY mode=35 Pdiss=2.630745e-08 Pflow=2.721308e-13
+  ENERGY mode=36 Pdiss=1.037186e-08 Pflow=2.406151e-13
+  ENERGY mode=37 Pdiss=5.725265e-08 Pflow=4.343856e-13
+  ENERGY mode=38 Pdiss=4.948037e-08 Pflow=4.169139e-13
+  ENERGY mode=39 Pdiss=9.225048e-08 Pflow=5.363981e-13
+  ENERGY mode=40 Pdiss=3.238731e-07 Pflow=2.541441e-12
+  POSTPROC_OK
+  SAVED_FINAL D:/comsol_ao_run/comsol_vector_optical_baseline/v2/out/final_metAniso15.mph

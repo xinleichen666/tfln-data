@@ -1,0 +1,2 @@
+model,n_points,center_GHz,center_offset_kHz,FWHM_MHz,Q_estimate,normalized_RMS_residual,assumed_eta_s,interpretation
+"single-pole complex Lorentzian, free center and width",10,3.305675841,11.84144935,1.132399055,2919.179265,0.0101764308,0.0005,preliminary simulated Q under assumed LN structural loss; not measured
