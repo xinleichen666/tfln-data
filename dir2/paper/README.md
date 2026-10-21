@@ -14,7 +14,7 @@ Internal group use only: simulation and scheme draft; measurements pending; no f
 
 - 推仓路径：`dir2/`（`paper/` + `data/` + 图 + 脚本报告）+ 共用表 `tfln_review/ao_shared_params_v1.md`（若仓内尚无则更新）
 - **绝不**纳入 `verify/` 第三方 PDF
-- 仓可暂时 public；写完后再改 private
+- 仓保持 public
 
 ## 本目录
 

@@ -42,7 +42,7 @@ ZERO_THR = 0.02  # |metric| <= thr → treated as zero for crossing
 DISCLAIMER = (
     "本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，"
     "Fiber-Q 对本方向 N/A，无自有流片；不得作为公开或可引用结果；"
-    "verify/ 第三方 PDF 禁止入库。仓写完后再改 private。"
+    "verify/ 第三方 PDF 禁止入库。"
 )
 
 

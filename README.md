@@ -34,13 +34,13 @@ Internal group use only: simulation and scheme draft; measurements pending; no f
 
 `freq_shift_noise/paper/` 是方向一（移频噪声账本）的工作稿包；配套脚本、参数和仍待测的自测表在 `freq_shift_noise/`，共用参数表在 `tfln_review/ao_shared_params_v1.md`。
 
-本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 未下单，无流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。仓写完后再改 private。
+本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 未下单，无流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。
 
 ## 计量→纯度上界方法稿
 
 `dir1_metrology/paper/` 是方向一（计量 → SPDC 纯度上界）的方法工作稿包；出图脚本在 `dir1_metrology/scripts/`。
 
-本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 对本方向 N/A，无自有流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。仓写完后再改 private。
+本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 对本方向 N/A，无自有流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。
 
 ## 仿真写作六轨 A–F（内部工作稿）
 
@@ -53,4 +53,4 @@ Internal group use only: simulation and scheme draft; measurements pending; no f
 - `skyrmion_noise/`：自旋–轨道纹理上的经典噪声预算（纹理积分斯格明子数）。自定纹理上的预算，不是 Zhao 实验的复现。
 - `qfc_domain_budget/`：标准准相位匹配的畴 / 膜厚预算。标准模型预算，不是该实验的复现。
 
-本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 对本方向 N/A，无自有流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。仓写完后再改 private。
+本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 对本方向 N/A，无自有流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。

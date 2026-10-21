@@ -43,7 +43,7 @@
 
 - 已在 GitHub `xinleichen666/tfln-data` 的 `main`：PR #4 `aafd59ea`（方法包入库），PR #5 `7a60a402`（Cursor A 语气锁定）。
 - 仓库内没有 `upstream_dir01` 软链。本地软链只留在工作区，指向 `/workspace/dir01`；不要添加进本仓库。
-- 仓仍 public；用户写完再改 private（既定）。
+- 仓保持 public（既定）。
 
 ## 未做 / 等拍板
 
@@ -51,4 +51,4 @@
 
 ## 挂仓声明（摘要/README 已写死）
 
-本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 对本方向 N/A，无自有流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。仓写完后再改 private。
+本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 对本方向 N/A，无自有流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。

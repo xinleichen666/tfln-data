@@ -33,7 +33,7 @@
     "losses_not_run": [],
     "batch_sizes_not_run": [],
     "dataset_description": "Locally generated 4x4 images: class0=horizontal-bar, class1=diagonal; Gaussian noise. NOT HEP/jet/top-quark.",
-    "disclaimer": "本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 对本方向 N/A，无自有流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。仓写完后再改 private。"
+    "disclaimer": "本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 对本方向 N/A，无自有流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。"
   },
   "qcnn_architecture": {
     "n_params_full": 15,
