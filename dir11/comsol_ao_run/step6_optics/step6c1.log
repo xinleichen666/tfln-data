@@ -1,0 +1,456 @@
+*******************************************
+***COMSOL 6.3.0.290 progress output file***
+*******************************************
+Wed Oct 21 23:53:35 CST 2026
+COMSOL Multiphysics 6.3 (开发版本: 290) 在批处理模式下启动
+正在运行: D:\comsol_ao_run\step6_optics\Step6c1.class
+STEP6C1_START
+CFG p_um=2.85261315 NP=7 ID=3 wr_um=1.000 wt_um=0.900 dT_nm=200.0 Ls_um=19.968292
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 461/463 491/495
+           当前进度:   0 % - 矩形
+Memory: 471/472 502/503
+           当前进度:   4 % - 矩形 2
+Memory: 474/475 503/504
+           当前进度:   8 % - 矩形 3
+-          当前进度:  12 % - 矩形 1
+-          当前进度:  16 % - 矩形 1a
+--         当前进度:  20 % - 矩形 2a
+--         当前进度:  24 % - 矩形 2b
+Memory: 474/475 504/504
+--         当前进度:  28 % - 矩形 3a
+---        当前进度:  32 % - 矩形 3b
+Memory: 476/476 507/507
+---        当前进度:  36 % - 矩形 4
+Memory: 477/477 508/508
+----       当前进度:  40 % - 矩形 4a
+Memory: 478/478 508/508
+----       当前进度:  44 % - 矩形 5
+Memory: 478/478 509/509
+----       当前进度:  48 % - 矩形 5a
+Memory: 479/479 509/509
+-----      当前进度:  52 % - 矩形 6
+-----      当前进度:  56 % - 矩形 6a
+------     当前进度:  60 % - 形成联合体
+Memory: 476/479 505/509
+---------  当前进度:  94 % - 解析域和空区域
+Memory: 480/480 509/509
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 479/482 508/510
+---------- 当前进度: 100 % - 正在创建可视化网格
+Memory: 474/482 505/511
+FINGER_CHECK variant=0 nTerm=7 nGnd=7 expect=7 nAl=14 nBot=1
+顶点单元数：60
+边界单元数：1240
+---------  当前进度:  95 % - 提高单元质量
+Memory: 830/838 854/865
+单元数：17336
+最小单元质量：0.6738
+---------- 当前进度: 100 % - 正在定型网格
+NUMELEM variant=0 n_elem=17336
+----       当前进度:  47 % - 生成方程
+Memory: 812/851 836/873
+------     当前进度:  60 % - 生成方程
+Memory: 827/852 850/875
+---        当前进度:  39 % - 生成方程
+Memory: 861/861 884/885
+-----      当前进度:  54 % - 生成方程
+Memory: 858/861 880/885
+           当前进度:   1 % - 生成方程
+Memory: 856/861 878/885
+           当前进度:   2 % - 生成方程
+Memory: 856/863 878/885
+           当前进度:   3 % - 生成方程
+Memory: 858/863 880/885
+<---- 研究/解 1 (sol1) 中的“编译方程: 特征频率” ---------------------------------------------
+开始于 2026年10月21日 下午11:53:49。
+几何形函数: 二次巧凑边点单元
+在 AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD 上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 6 个内核）。
+可用内存：32.37 GB。
+           当前进度:   5 % - 编译方程: 特征频率
+Memory: 886/891 903/907
+           当前进度:   5 % - 正在创建可视化网格
+Memory: 890/895 907/912
+时间：1。
+物理内存: 895 MB
+虚拟内存: 912 MB
+结束时间：2026年10月21日 下午11:53:51。
+----- 研究/解 1 (sol1) 中的“编译方程: 特征频率” -------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“因变量 1” --------------------------------------------------
+开始于 2026年10月21日 下午11:53:51。
+           当前进度:   5 % - 因变量 1
+Memory: 895/911 910/928
+求解时间：0 s。
+物理内存: 911 MB
+虚拟内存: 928 MB
+结束时间：2026年10月21日 下午11:53:51。
+----- 研究/解 1 (sol1) 中的“因变量 1” ------------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“特征值求解器 1” -----------------------------------------------
+开始于 2026年10月21日 下午11:53:51。
+特征值求解器
+求解的自由度数：140194。
+           当前进度:   8 % - 
+Memory: 1245/1268 1291/1315
+找到对称矩阵。
+缩放因变量：
+位移场 (comp1.u): 8.8e-11
+电势 (comp1.V): 1
+已使用显式-正交零空间函数。
+           当前进度:   8 % - 矩阵分解
+Memory: 1356/1356 1415/1449
+非对称特征值求解器
+Iter      ErrEst  Nconv
+           当前进度:   8 % - 求解线性方程组
+Memory: 1719/1719 1833/1837
+   1     6.9e-05     32
+--------   当前进度:  82 % - 求解线性方程组
+Memory: 1697/1747 1808/1859
+   2     4.1e-05     38
+---------  当前进度:  95 % - 求解线性方程组
+   3     8.7e-09     40
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 1694/1747 1806/1859
+123 线性方程组的解。
+123 矩阵乘法。
+121 重正交化。
+求解时间：27 s。
+物理内存: 1.77 GB
+虚拟内存: 1.88 GB
+结束时间：2026年10月21日 下午11:54:18。
+----- 研究/解 1 (sol1) 中的“特征值求解器 1” ---------------------------------------------->
+MODE6C variant=V0_full k=0 f_GHz=2.636584 Q=2571.0 pv=0.011 fracAl=0.0763 Pfrac=0.0000 defectRatio=1.615
+MODE6C variant=V0_full k=1 f_GHz=2.636585 Q=2571.0 pv=0.011 fracAl=0.0763 Pfrac=0.0000 defectRatio=0.383
+MODE6C variant=V0_full k=2 f_GHz=2.737619 Q=2254.6 pv=0.905 fracAl=0.0593 Pfrac=0.0000 defectRatio=1.033
+MODE6C variant=V0_full k=3 f_GHz=2.737619 Q=2254.6 pv=0.905 fracAl=0.0593 Pfrac=0.0000 defectRatio=0.966
+MODE6C variant=V0_full k=4 f_GHz=2.785407 Q=2522.6 pv=0.009 fracAl=0.0872 Pfrac=1.0000 defectRatio=0.999
+MODE6C variant=V0_full k=5 f_GHz=2.873149 Q=2130.3 pv=0.028 fracAl=0.0238 Pfrac=0.0000 defectRatio=1.005
+MODE6C variant=V0_full k=6 f_GHz=2.873149 Q=2130.3 pv=0.028 fracAl=0.0238 Pfrac=0.0000 defectRatio=0.989
+MODE6C variant=V0_full k=7 f_GHz=2.939498 Q=2244.4 pv=0.893 fracAl=0.0615 Pfrac=0.0000 defectRatio=1.060
+MODE6C variant=V0_full k=8 f_GHz=2.939498 Q=2244.4 pv=0.893 fracAl=0.0615 Pfrac=0.0000 defectRatio=0.939
+MODE6C variant=V0_full k=9 f_GHz=2.940820 Q=2720.4 pv=0.005 fracAl=0.0623 Pfrac=1.0000 defectRatio=1.000
+MODE6C variant=V0_full k=10 f_GHz=3.086961 Q=2662.6 pv=0.006 fracAl=0.0750 Pfrac=0.0000 defectRatio=1.248
+MODE6C variant=V0_full k=11 f_GHz=3.086961 Q=2662.6 pv=0.006 fracAl=0.0750 Pfrac=0.0000 defectRatio=0.752
+MODE6C variant=V0_full k=12 f_GHz=3.138728 Q=2241.1 pv=0.911 fracAl=0.0592 Pfrac=0.0000 defectRatio=1.013
+MODE6C variant=V0_full k=13 f_GHz=3.138728 Q=2241.1 pv=0.911 fracAl=0.0592 Pfrac=0.0000 defectRatio=0.986
+MODE6C variant=V0_full k=14 f_GHz=3.185175 Q=2133.9 pv=0.020 fracAl=0.0294 Pfrac=0.0000 defectRatio=0.992
+MODE6C variant=V0_full k=15 f_GHz=3.185175 Q=2133.9 pv=0.020 fracAl=0.0294 Pfrac=0.0000 defectRatio=1.004
+MODE6C variant=V0_full k=16 f_GHz=3.284286 Q=2644.7 pv=0.008 fracAl=0.0816 Pfrac=0.0000 defectRatio=1.138
+MODE6C variant=V0_full k=17 f_GHz=3.284287 Q=2644.7 pv=0.008 fracAl=0.0816 Pfrac=0.0000 defectRatio=0.862
+MODE6C variant=V0_full k=18 f_GHz=3.329958 Q=2207.6 pv=0.915 fracAl=0.0499 Pfrac=1.0000 defectRatio=0.999
+MODE6C variant=V0_full k=19 f_GHz=3.346551 Q=2268.4 pv=0.912 fracAl=0.0694 Pfrac=1.0000 defectRatio=1.000
+MODE6C variant=V0_full k=20 f_GHz=3.435878 Q=2319.6 pv=0.017 fracAl=0.0578 Pfrac=0.0000 defectRatio=1.011
+MODE6C variant=V0_full k=21 f_GHz=3.435878 Q=2319.6 pv=0.017 fracAl=0.0578 Pfrac=0.0000 defectRatio=0.985
+MODE6C variant=V0_full k=22 f_GHz=3.536624 Q=2234.5 pv=0.915 fracAl=0.0604 Pfrac=0.0000 defectRatio=1.010
+MODE6C variant=V0_full k=23 f_GHz=3.536624 Q=2234.5 pv=0.915 fracAl=0.0604 Pfrac=0.0000 defectRatio=0.989
+MODE6C variant=V0_full k=24 f_GHz=3.544217 Q=2448.7 pv=0.019 fracAl=0.0633 Pfrac=0.0000 defectRatio=1.031
+MODE6C variant=V0_full k=25 f_GHz=3.544217 Q=2448.7 pv=0.019 fracAl=0.0632 Pfrac=0.0000 defectRatio=0.965
+MODE6C variant=V0_full k=26 f_GHz=3.682959 Q=2687.9 pv=0.014 fracAl=0.0988 Pfrac=0.0000 defectRatio=0.997
+MODE6C variant=V0_full k=27 f_GHz=3.682960 Q=2687.9 pv=0.014 fracAl=0.0988 Pfrac=0.0000 defectRatio=1.002
+MODE6C variant=V0_full k=28 f_GHz=3.723020 Q=2139.2 pv=0.025 fracAl=0.0474 Pfrac=0.0000 defectRatio=0.931
+MODE6C variant=V0_full k=29 f_GHz=3.723020 Q=2139.2 pv=0.025 fracAl=0.0474 Pfrac=0.0000 defectRatio=1.064
+MODE6C variant=V0_full k=30 f_GHz=3.732331 Q=2230.9 pv=0.906 fracAl=0.0617 Pfrac=0.0000 defectRatio=0.969
+MODE6C variant=V0_full k=31 f_GHz=3.732331 Q=2230.9 pv=0.906 fracAl=0.0617 Pfrac=0.0000 defectRatio=1.029
+MODE6C variant=V0_full k=32 f_GHz=3.758682 Q=2106.6 pv=0.010 fracAl=0.0438 Pfrac=1.0000 defectRatio=1.000
+MODE6C variant=V0_full k=33 f_GHz=3.760482 Q=2110.7 pv=0.012 fracAl=0.0452 Pfrac=0.0000 defectRatio=0.358
+MODE6C variant=V0_full k=34 f_GHz=3.760482 Q=2110.7 pv=0.012 fracAl=0.0452 Pfrac=0.0000 defectRatio=1.640
+MODE6C variant=V0_full k=35 f_GHz=3.848915 Q=2671.2 pv=0.027 fracAl=0.1024 Pfrac=0.0000 defectRatio=1.215
+MODE6C variant=V0_full k=36 f_GHz=3.848915 Q=2671.2 pv=0.027 fracAl=0.1024 Pfrac=0.0000 defectRatio=0.785
+MODE6C variant=V0_full k=37 f_GHz=3.906906 Q=2168.2 pv=0.019 fracAl=0.0347 Pfrac=0.0000 defectRatio=0.955
+MODE6C variant=V0_full k=38 f_GHz=3.906906 Q=2168.2 pv=0.019 fracAl=0.0347 Pfrac=0.0000 defectRatio=1.046
+MODE6C variant=V0_full k=39 f_GHz=3.928756 Q=2235.9 pv=0.860 fracAl=0.0576 Pfrac=0.0000 defectRatio=1.018
+TARGET6C variant=V0_full k=18 f_GHz=3.329958 Pfrac=1.0000 shift_rel=7.913566e-07
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 1087/1768 1121/1881
+           当前进度:   0 % - 矩形
+Memory: 1089/1768 1122/1881
+           当前进度:   4 % - 矩形 2
+           当前进度:   9 % - 矩形 3
+-          当前进度:  13 % - 矩形 1
+-          当前进度:  17 % - 矩形 1a
+--         当前进度:  22 % - 矩形 2a
+--         当前进度:  26 % - 矩形 2b
+---        当前进度:  30 % - 矩形 4
+---        当前进度:  35 % - 矩形 4a
+---        当前进度:  39 % - 矩形 5
+----       当前进度:  43 % - 矩形 5a
+----       当前进度:  48 % - 矩形 6
+-----      当前进度:  52 % - 矩形 6a
+-----      当前进度:  57 % - 形成联合体
+---------  当前进度:  93 % - 解析域和空区域
+---------- 当前进度: 100 % - 正在更新选择
+---------- 当前进度: 100 % - 正在创建可视化网格
+FINGER_CHECK variant=1 nTerm=6 nGnd=6 expect=6 nAl=12 nBot=1
+顶点单元数：52
+边界单元数：1209
+---------  当前进度:  95 % - 提高单元质量
+Memory: 1176/1768 1207/1881
+单元数：17147
+最小单元质量：0.6738
+---------- 当前进度: 100 % - 正在定型网格
+NUMELEM variant=1 n_elem=17147
+----       当前进度:  47 % - 生成方程
+------     当前进度:  60 % - 生成方程
+Memory: 1183/1768 1214/1881
+---        当前进度:  39 % - 生成方程
+Memory: 1190/1768 1221/1881
+-----      当前进度:  54 % - 生成方程
+Memory: 1184/1768 1216/1881
+           当前进度:   1 % - 生成方程
+Memory: 1201/1768 1233/1881
+           当前进度:   2 % - 生成方程
+Memory: 1202/1768 1233/1881
+           当前进度:   3 % - 生成方程
+Memory: 1203/1768 1235/1881
+<---- 研究/解 1 (sol1) 中的“编译方程: 特征频率” ---------------------------------------------
+开始于 2026年10月21日 下午11:54:25。
+几何形函数: 二次巧凑边点单元
+在 AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD 上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 6 个内核）。
+可用内存：32.37 GB。
+           当前进度:   5 % - 编译方程: 特征频率
+Memory: 1202/1768 1234/1881
+           当前进度:   5 % - 正在创建可视化网格
+Memory: 1211/1768 1243/1881
+时间：1。
+物理内存: 1.21 GB
+虚拟内存: 1.25 GB
+结束时间：2026年10月21日 下午11:54:26。
+----- 研究/解 1 (sol1) 中的“编译方程: 特征频率” -------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“因变量 1” --------------------------------------------------
+开始于 2026年10月21日 下午11:54:26。
+           当前进度:   5 % - 因变量 1
+Memory: 1214/1768 1246/1881
+求解时间：0 s。
+物理内存: 1.21 GB
+虚拟内存: 1.25 GB
+结束时间：2026年10月21日 下午11:54:26。
+----- 研究/解 1 (sol1) 中的“因变量 1” ------------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“特征值求解器 1” -----------------------------------------------
+开始于 2026年10月21日 下午11:54:26。
+特征值求解器
+求解的自由度数：139052。
+           当前进度:   8 % - 
+Memory: 1486/1768 1528/1881
+找到对称矩阵。
+缩放因变量：
+位移场 (comp1.u): 8.8e-11
+电势 (comp1.V): 1
+已使用显式-正交零空间函数。
+           当前进度:   8 % - 矩阵分解
+Memory: 1535/1768 1608/1881
+非对称特征值求解器
+Iter      ErrEst  Nconv
+           当前进度:   8 % - 求解线性方程组
+Memory: 1900/1903 2009/2017
+           当前进度:   8 % - 矩阵乘法
+           当前进度:   8 % - 求解线性方程组
+   1      0.0084     35
+--------   当前进度:  88 % - 求解线性方程组
+Memory: 1903/1903 2013/2017
+   2     1.2e-05     39
+---------  当前进度:  98 % - 求解线性方程组
+   3     1.7e-13     40
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 1900/1903 2009/2017
+123 线性方程组的解。
+123 矩阵乘法。
+121 重正交化。
+求解时间：27 s。
+物理内存: 2.01 GB
+虚拟内存: 2.13 GB
+结束时间：2026年10月21日 下午11:54:53。
+----- 研究/解 1 (sol1) 中的“特征值求解器 1” ---------------------------------------------->
+MODE6C variant=V1_defect k=0 f_GHz=2.588782 Q=2160.5 pv=0.019 fracAl=0.0239 Pfrac=0.0015 defectRatio=0.484
+MODE6C variant=V1_defect k=1 f_GHz=2.659348 Q=2566.5 pv=0.011 fracAl=0.0679 Pfrac=0.0071 defectRatio=1.171
+MODE6C variant=V1_defect k=2 f_GHz=2.681082 Q=2591.2 pv=0.014 fracAl=0.0668 Pfrac=0.1372 defectRatio=0.295
+MODE6C variant=V1_defect k=3 f_GHz=2.742665 Q=2237.0 pv=0.904 fracAl=0.0503 Pfrac=0.0002 defectRatio=1.111
+MODE6C variant=V1_defect k=4 f_GHz=2.743322 Q=2242.2 pv=0.893 fracAl=0.0520 Pfrac=0.0004 defectRatio=0.964
+MODE6C variant=V1_defect k=5 f_GHz=2.843574 Q=2561.5 pv=0.016 fracAl=0.0656 Pfrac=0.4486 defectRatio=1.072
+MODE6C variant=V1_defect k=6 f_GHz=2.894880 Q=2174.3 pv=0.050 fracAl=0.0214 Pfrac=0.0061 defectRatio=1.069
+MODE6C variant=V1_defect k=7 f_GHz=2.905250 Q=2173.6 pv=0.028 fracAl=0.0218 Pfrac=0.0090 defectRatio=0.916
+MODE6C variant=V1_defect k=8 f_GHz=2.944891 Q=2225.2 pv=0.861 fracAl=0.0515 Pfrac=0.0002 defectRatio=1.101
+MODE6C variant=V1_defect k=9 f_GHz=2.947155 Q=2235.2 pv=0.890 fracAl=0.0548 Pfrac=0.0004 defectRatio=0.960
+MODE6C variant=V1_defect k=10 f_GHz=2.959209 Q=2708.0 pv=0.010 fracAl=0.0565 Pfrac=0.7063 defectRatio=1.647
+MODE6C variant=V1_defect k=11 f_GHz=3.114363 Q=2654.6 pv=0.017 fracAl=0.0642 Pfrac=0.0116 defectRatio=0.523
+MODE6C variant=V1_defect k=12 f_GHz=3.116425 Q=2639.9 pv=0.015 fracAl=0.0678 Pfrac=0.0075 defectRatio=0.397
+MODE6C variant=V1_defect k=13 f_GHz=3.143657 Q=2225.6 pv=0.899 fracAl=0.0501 Pfrac=0.0004 defectRatio=1.062
+MODE6C variant=V1_defect k=14 f_GHz=3.148012 Q=2233.3 pv=0.901 fracAl=0.0526 Pfrac=0.0021 defectRatio=1.031
+MODE6C variant=V1_defect k=15 f_GHz=3.214143 Q=2177.8 pv=0.020 fracAl=0.0283 Pfrac=0.0190 defectRatio=0.423
+MODE6C variant=V1_defect k=16 f_GHz=3.214664 Q=2176.1 pv=0.019 fracAl=0.0266 Pfrac=0.0111 defectRatio=0.336
+MODE6C variant=V1_defect k=17 f_GHz=3.312362 Q=2633.5 pv=0.014 fracAl=0.0722 Pfrac=0.1709 defectRatio=0.553
+MODE6C variant=V1_defect k=18 f_GHz=3.322029 Q=2615.8 pv=0.025 fracAl=0.0707 Pfrac=0.4141 defectRatio=0.487
+MODE6C variant=V1_defect k=19 f_GHz=3.339338 Q=2202.7 pv=0.898 fracAl=0.0434 Pfrac=0.9922 defectRatio=1.088
+MODE6C variant=V1_defect k=20 f_GHz=3.352958 Q=2249.9 pv=0.905 fracAl=0.0602 Pfrac=0.9971 defectRatio=1.015
+MODE6C variant=V1_defect k=21 f_GHz=3.479123 Q=2371.5 pv=0.020 fracAl=0.0528 Pfrac=0.0475 defectRatio=0.823
+MODE6C variant=V1_defect k=22 f_GHz=3.494833 Q=2384.3 pv=0.016 fracAl=0.0476 Pfrac=0.0286 defectRatio=0.808
+MODE6C variant=V1_defect k=23 f_GHz=3.543383 Q=2235.0 pv=0.853 fracAl=0.0544 Pfrac=0.0015 defectRatio=1.049
+MODE6C variant=V1_defect k=24 f_GHz=3.545166 Q=2215.5 pv=0.911 fracAl=0.0511 Pfrac=0.0020 defectRatio=1.018
+MODE6C variant=V1_defect k=25 f_GHz=3.563160 Q=2439.9 pv=0.085 fracAl=0.0584 Pfrac=0.0138 defectRatio=1.159
+MODE6C variant=V1_defect k=26 f_GHz=3.567041 Q=2444.5 pv=0.018 fracAl=0.0576 Pfrac=0.0019 defectRatio=0.295
+MODE6C variant=V1_defect k=27 f_GHz=3.712999 Q=2665.4 pv=0.019 fracAl=0.0897 Pfrac=0.0133 defectRatio=0.678
+MODE6C variant=V1_defect k=28 f_GHz=3.714052 Q=2616.6 pv=0.099 fracAl=0.0858 Pfrac=0.0044 defectRatio=0.435
+MODE6C variant=V1_defect k=29 f_GHz=3.738319 Q=2141.0 pv=0.076 fracAl=0.0474 Pfrac=0.0088 defectRatio=0.666
+MODE6C variant=V1_defect k=30 f_GHz=3.740588 Q=2196.6 pv=0.288 fracAl=0.0507 Pfrac=0.0018 defectRatio=1.155
+MODE6C variant=V1_defect k=31 f_GHz=3.742338 Q=2208.7 pv=0.855 fracAl=0.0513 Pfrac=0.0008 defectRatio=1.000
+MODE6C variant=V1_defect k=32 f_GHz=3.745614 Q=2202.4 pv=0.602 fracAl=0.0499 Pfrac=0.0021 defectRatio=1.188
+MODE6C variant=V1_defect k=33 f_GHz=3.759337 Q=2108.0 pv=0.011 fracAl=0.0442 Pfrac=0.5987 defectRatio=0.009
+MODE6C variant=V1_defect k=34 f_GHz=3.768741 Q=2124.2 pv=0.034 fracAl=0.0439 Pfrac=0.0251 defectRatio=0.878
+MODE6C variant=V1_defect k=35 f_GHz=3.857449 Q=2286.8 pv=0.031 fracAl=0.0508 Pfrac=0.0111 defectRatio=0.541
+MODE6C variant=V1_defect k=36 f_GHz=3.878455 Q=2636.7 pv=0.018 fracAl=0.0904 Pfrac=0.0224 defectRatio=0.802
+MODE6C variant=V1_defect k=37 f_GHz=3.886727 Q=2464.1 pv=0.021 fracAl=0.0687 Pfrac=0.0192 defectRatio=0.802
+MODE6C variant=V1_defect k=38 f_GHz=3.913993 Q=2183.8 pv=0.028 fracAl=0.0363 Pfrac=0.0087 defectRatio=0.275
+MODE6C variant=V1_defect k=39 f_GHz=3.930160 Q=2225.9 pv=0.183 fracAl=0.0388 Pfrac=0.0012 defectRatio=0.933
+TARGET6C variant=V1_defect k=20 f_GHz=3.352958 Pfrac=0.9971 shift_rel=6.907795e-03
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 1241/2014 1267/2125
+           当前进度:   0 % - 矩形
+Memory: 1243/2014 1269/2125
+           当前进度:   3 % - 矩形 1
+           当前进度:   6 % - 矩形 2
+           当前进度:   9 % - 差集 1
+---        当前进度:  33 % - 解析域和空区域
+---        当前进度:  37 % - 矩形 3
+----       当前进度:  40 % - 矩形 4
+Memory: 1244/2014 1269/2125
+----       当前进度:  43 % - 矩形 1a
+----       当前进度:  46 % - 矩形 1b
+----       当前进度:  49 % - 矩形 2a
+-----      当前进度:  51 % - 矩形 2b
+-----      当前进度:  54 % - 矩形 4a
+-----      当前进度:  57 % - 矩形 4b
+------     当前进度:  60 % - 矩形 5
+------     当前进度:  63 % - 矩形 5a
+------     当前进度:  66 % - 矩形 6
+Memory: 1244/2014 1270/2125
+------     当前进度:  69 % - 矩形 6a
+-------    当前进度:  71 % - 形成联合体
+Memory: 1244/2014 1269/2125
+---------  当前进度:  95 % - 解析域和空区域
+---------- 当前进度: 100 % - 正在更新选择
+---------- 当前进度: 100 % - 正在创建可视化网格
+Memory: 1247/2014 1273/2125
+FINGER_CHECK variant=2 nTerm=6 nGnd=6 expect=6 nAl=12 nBot=1
+顶点单元数：60
+边界单元数：1231
+---------  当前进度:  95 % - 提高单元质量
+Memory: 1266/2014 1290/2125
+单元数：16689
+最小单元质量：0.6738
+---------- 当前进度: 100 % - 正在定型网格
+NUMELEM variant=2 n_elem=16689
+----       当前进度:  47 % - 生成方程
+Memory: 1268/2014 1292/2125
+------     当前进度:  60 % - 生成方程
+Memory: 1269/2014 1293/2125
+---        当前进度:  39 % - 生成方程
+           当前进度:   1 % - 生成方程
+Memory: 1231/2014 1257/2125
+           当前进度:   3 % - 生成方程
+Memory: 1236/2014 1262/2125
+<---- 研究/解 1 (sol1) 中的“编译方程: 特征频率” ---------------------------------------------
+开始于 2026年10月21日 下午11:54:58。
+几何形函数: 二次巧凑边点单元
+在 AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD 上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 6 个内核）。
+可用内存：32.37 GB。
+           当前进度:   5 % - 编译方程: 特征频率
+Memory: 1260/2014 1286/2125
+           当前进度:   5 % - 正在创建可视化网格
+Memory: 1269/2014 1294/2125
+时间：1。
+物理内存: 1.27 GB
+虚拟内存: 1.3 GB
+结束时间：2026年10月21日 下午11:54:59。
+----- 研究/解 1 (sol1) 中的“编译方程: 特征频率” -------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“因变量 1” --------------------------------------------------
+开始于 2026年10月21日 下午11:54:59。
+           当前进度:   5 % - 因变量 1
+Memory: 1267/2014 1292/2125
+求解时间：0 s。
+物理内存: 1.27 GB
+虚拟内存: 1.29 GB
+结束时间：2026年10月21日 下午11:54:59。
+----- 研究/解 1 (sol1) 中的“因变量 1” ------------------------------------------------->
+<---- 研究/解 1 (sol1) 中的“特征值求解器 1” -----------------------------------------------
+开始于 2026年10月21日 下午11:54:59。
+特征值求解器
+求解的自由度数：135476。
+找到对称矩阵。
+缩放因变量：
+位移场 (comp1.u): 8.8e-11
+电势 (comp1.V): 1
+           当前进度:   8 % - 
+Memory: 1503/2014 1537/2125
+已使用显式-正交零空间函数。
+           当前进度:   8 % - 矩阵分解
+Memory: 1585/2014 1657/2125
+非对称特征值求解器
+Iter      ErrEst  Nconv
+           当前进度:   8 % - 求解线性方程组
+Memory: 1947/2014 2052/2125
+           当前进度:   8 % - 矩阵乘法
+Memory: 1944/2014 2049/2125
+           当前进度:   8 % - 求解线性方程组
+Memory: 1947/2014 2052/2125
+   1      0.0071     35
+--------   当前进度:  88 % - 求解线性方程组
+Memory: 1898/2014 2006/2125
+   2       7e-08     40
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 1840/2014 1943/2125
+102 线性方程组的解。
+102 矩阵乘法。
+101 重正交化。
+求解时间：22 s。
+物理内存: 1.95 GB
+虚拟内存: 2.05 GB
+结束时间：2026年10月21日 下午11:55:21。
+----- 研究/解 1 (sol1) 中的“特征值求解器 1” ---------------------------------------------->
+MODE6C variant=V2_defect_trench k=0 f_GHz=2.624126 Q=2233.6 pv=0.871 fracAl=0.0489 Pfrac=0.0355 defectRatio=1.205
+MODE6C variant=V2_defect_trench k=1 f_GHz=2.629554 Q=2541.2 pv=0.047 fracAl=0.0701 Pfrac=0.0163 defectRatio=0.773
+MODE6C variant=V2_defect_trench k=2 f_GHz=2.668677 Q=2270.7 pv=0.806 fracAl=0.0537 Pfrac=0.0073 defectRatio=0.695
+MODE6C variant=V2_defect_trench k=3 f_GHz=2.672974 Q=2604.3 pv=0.016 fracAl=0.0600 Pfrac=0.1197 defectRatio=0.780
+MODE6C variant=V2_defect_trench k=4 f_GHz=2.798514 Q=2525.1 pv=0.078 fracAl=0.0605 Pfrac=0.1768 defectRatio=1.536
+MODE6C variant=V2_defect_trench k=5 f_GHz=2.824609 Q=2249.3 pv=0.773 fracAl=0.0534 Pfrac=0.0481 defectRatio=0.762
+MODE6C variant=V2_defect_trench k=6 f_GHz=2.838407 Q=2199.6 pv=0.335 fracAl=0.0365 Pfrac=0.0320 defectRatio=0.641
+MODE6C variant=V2_defect_trench k=7 f_GHz=2.875502 Q=2182.3 pv=0.077 fracAl=0.0206 Pfrac=0.0142 defectRatio=0.444
+MODE6C variant=V2_defect_trench k=8 f_GHz=2.891437 Q=2200.6 pv=0.606 fracAl=0.0339 Pfrac=0.0175 defectRatio=1.048
+MODE6C variant=V2_defect_trench k=9 f_GHz=2.948704 Q=2712.8 pv=0.011 fracAl=0.0586 Pfrac=0.6621 defectRatio=0.490
+MODE6C variant=V2_defect_trench k=10 f_GHz=3.035659 Q=2234.5 pv=0.848 fracAl=0.0528 Pfrac=0.0817 defectRatio=0.709
+MODE6C variant=V2_defect_trench k=11 f_GHz=3.065928 Q=2229.2 pv=0.754 fracAl=0.0457 Pfrac=0.0828 defectRatio=1.178
+MODE6C variant=V2_defect_trench k=12 f_GHz=3.072634 Q=2665.2 pv=0.027 fracAl=0.0630 Pfrac=0.0092 defectRatio=0.154
+MODE6C variant=V2_defect_trench k=13 f_GHz=3.113473 Q=2645.7 pv=0.027 fracAl=0.0681 Pfrac=0.0063 defectRatio=0.136
+MODE6C variant=V2_defect_trench k=14 f_GHz=3.151120 Q=2153.1 pv=0.191 fracAl=0.0290 Pfrac=0.0329 defectRatio=2.715
+MODE6C variant=V2_defect_trench k=15 f_GHz=3.193340 Q=2164.6 pv=0.058 fracAl=0.0289 Pfrac=0.1559 defectRatio=0.160
+MODE6C variant=V2_defect_trench k=16 f_GHz=3.242142 Q=2234.8 pv=0.824 fracAl=0.0504 Pfrac=0.5713 defectRatio=0.896
+MODE6C variant=V2_defect_trench k=17 f_GHz=3.256004 Q=2228.1 pv=0.858 fracAl=0.0468 Pfrac=0.6524 defectRatio=1.829
+MODE6C variant=V2_defect_trench k=18 f_GHz=3.269854 Q=2637.7 pv=0.048 fracAl=0.0700 Pfrac=0.4900 defectRatio=0.235
+MODE6C variant=V2_defect_trench k=19 f_GHz=3.321400 Q=2624.3 pv=0.043 fracAl=0.0735 Pfrac=0.6129 defectRatio=0.697
+MODE6C variant=V2_defect_trench k=20 f_GHz=3.403784 Q=2167.9 pv=0.052 fracAl=0.0343 Pfrac=0.0744 defectRatio=4.498
+MODE6C variant=V2_defect_trench k=21 f_GHz=3.433538 Q=2233.1 pv=0.763 fracAl=0.0476 Pfrac=0.2241 defectRatio=1.584
+MODE6C variant=V2_defect_trench k=22 f_GHz=3.438780 Q=2233.8 pv=0.860 fracAl=0.0532 Pfrac=0.2211 defectRatio=0.998
+MODE6C variant=V2_defect_trench k=23 f_GHz=3.449643 Q=2405.6 pv=0.156 fracAl=0.0582 Pfrac=0.1867 defectRatio=1.030
+MODE6C variant=V2_defect_trench k=24 f_GHz=3.548753 Q=2374.0 pv=0.020 fracAl=0.0502 Pfrac=0.0184 defectRatio=0.423
+MODE6C variant=V2_defect_trench k=25 f_GHz=3.548860 Q=2615.9 pv=0.066 fracAl=0.0695 Pfrac=0.0352 defectRatio=0.328
+MODE6C variant=V2_defect_trench k=26 f_GHz=3.605293 Q=2198.8 pv=0.850 fracAl=0.0426 Pfrac=0.0287 defectRatio=1.922
+MODE6C variant=V2_defect_trench k=27 f_GHz=3.637152 Q=2243.7 pv=0.806 fracAl=0.0556 Pfrac=0.0057 defectRatio=0.696
+MODE6C variant=V2_defect_trench k=28 f_GHz=3.685494 Q=2682.2 pv=0.034 fracAl=0.0896 Pfrac=0.0203 defectRatio=0.202
+MODE6C variant=V2_defect_trench k=29 f_GHz=3.700044 Q=2212.8 pv=0.034 fracAl=0.0489 Pfrac=0.0395 defectRatio=2.316
+MODE6C variant=V2_defect_trench k=30 f_GHz=3.711047 Q=2595.1 pv=0.058 fracAl=0.0725 Pfrac=0.0357 defectRatio=0.369
+MODE6C variant=V2_defect_trench k=31 f_GHz=3.718634 Q=2170.7 pv=0.203 fracAl=0.0405 Pfrac=0.0903 defectRatio=0.835
+MODE6C variant=V2_defect_trench k=32 f_GHz=3.753713 Q=2122.0 pv=0.093 fracAl=0.0456 Pfrac=0.0520 defectRatio=1.078
+MODE6C variant=V2_defect_trench k=33 f_GHz=3.759165 Q=2108.5 pv=0.011 fracAl=0.0444 Pfrac=0.4923 defectRatio=0.015
+MODE6C variant=V2_defect_trench k=34 f_GHz=3.796554 Q=2191.6 pv=0.642 fracAl=0.0512 Pfrac=0.0222 defectRatio=1.085
+MODE6C variant=V2_defect_trench k=35 f_GHz=3.804896 Q=2161.5 pv=0.251 fracAl=0.0436 Pfrac=0.0317 defectRatio=1.204
+MODE6C variant=V2_defect_trench k=36 f_GHz=3.832780 Q=2259.9 pv=0.467 fracAl=0.0569 Pfrac=0.0066 defectRatio=0.646
+MODE6C variant=V2_defect_trench k=37 f_GHz=3.855441 Q=2671.9 pv=0.020 fracAl=0.0922 Pfrac=0.0419 defectRatio=0.927
+MODE6C variant=V2_defect_trench k=38 f_GHz=3.877456 Q=2553.6 pv=0.221 fracAl=0.0811 Pfrac=0.0023 defectRatio=0.209
+MODE6C variant=V2_defect_trench k=39 f_GHz=3.907674 Q=2180.4 pv=0.138 fracAl=0.0368 Pfrac=0.0317 defectRatio=0.072
+TARGET6C variant=V2_defect_trench k=17 f_GHz=3.256004 Pfrac=0.6524 shift_rel=-2.220769e-02
+SAVED D:\comsol_ao_run\step6_optics\step6c_geom.mph
+STEP6C1_DONE
+类运行时: 107 s.
+总时间: 107 s.
+---------- 当前进度: 100 % - 完成
+Memory: 1295/2014 1319/2125
