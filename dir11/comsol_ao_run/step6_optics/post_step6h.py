@@ -1,6 +1,6 @@
-"""Step 6h post-processing: electrode-limited source power for V_pi.
+﻿"""Step 6h post-processing: electrode-limited source power for V_pi.
 
-Cases: T100 (NP=15, Al 100 nm; data from step6f.log + step6gY.log), T200/T300 (NP=15, Al 200/300 nm) and NP11 (NP=11, Al 100 nm)
+Cases: T100 (NP=15, Al 100 nm; data from step6f.log + step6gY.log), T200/T300 (NP=15, Al 200/300 nm) and NP11/NP9/NP7 (NP=11/9/7, Al 100 nm)
 from step6h_<case>.log. Distributed RC model of post_step6g.py; segmented feeding with K parallel segments of length L/K.
 Output: step6h_power.log
 """
@@ -23,6 +23,8 @@ CASES = {
     "T200": dict(t=200e-9, npairs=12, logs=["step6h_T200.log"], tag="F6H"),
     "T300": dict(t=300e-9, npairs=12, logs=["step6h_T300.log"], tag="F6H"),
     "NP11": dict(t=100e-9, npairs=8, logs=["step6h_NP11.log"], tag="F6H"),
+    "NP9": dict(t=100e-9, npairs=6, logs=["step6h_NP9.log"], tag="F6H"),
+    "NP7": dict(t=100e-9, npairs=4, logs=["step6h_NP7.log"], tag="F6H"),
 }
 BASE_PEAKS = {"MAIN": 3.338550, "LOW": 3.318700}
 

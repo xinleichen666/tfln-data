@@ -3,7 +3,7 @@ import com.comsol.model.util.*;
 import java.util.*;
 import java.util.Locale;
 
-/** Step 6h: power reduction. Case from the CASE constant (COMSOL batch blocks getenv): T200 / T300 (Al finger 200 / 300 nm, NP=15) or NP11 (NP=11, Ndef=3, Al 100 nm).
+/** Step 6h: power reduction. Case from the CASE constant (COMSOL batch blocks getenv): T200 / T300 (Al finger 200 / 300 nm, NP=15) or NP11 / NP9 / NP7 (NP=11/9/7, Ndef=3, Al 100 nm).
  *  6e-style drive + overlap over 3.25-3.40 GHz (both peaks), admittance, eigenmodes with u/v/w, fracAl, Pfrac, defect-energy share. */
 public class Step6hT200 {
   static final String PZ="D:\\COMSOL63\\Multiphysics\\data\\comsol_piezo_lib.mph";
@@ -29,6 +29,8 @@ public class Step6hT200 {
       if(cs.equals("T200")) setup(15,7,new int[]{6,7,8},200e-9);
       else if(cs.equals("T300")) setup(15,7,new int[]{6,7,8},300e-9);
       else if(cs.equals("NP11")) setup(11,5,new int[]{4,5,6},100e-9);
+      else if(cs.equals("NP9")) setup(9,4,new int[]{3,4,5},100e-9);
+      else if(cs.equals("NP7")) setup(7,3,new int[]{2,3,4},100e-9);
       else throw new RuntimeException("unknown case "+cs);
       System.out.println("STEP6H_START case="+cs);
       System.out.println(String.format(Locale.US,"CFG6H case=%s p_um=%.8f NP=%d ID=%d def=%s Ls_um=%.6f hAl_nm=%.0f nPairs=%d hLn_nm=400 ridge=1.0um x 100nm air=2um mesh LN30/Al10/air150 eta_s=5e-4 expect_fracAl_driven_unitscaled=%.4f partner=%.4f",
