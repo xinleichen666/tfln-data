@@ -21,6 +21,7 @@ public class Step6j {
   static int[] DEF={6,7,8};
   static double HAL=100e-9, LS=NP*P, XC=(ID+0.5)*P;
   static boolean SCAN=false;
+  static double HR=100e-9;
   static double FLO=3.15, FHI=3.50, DF=0.002;
 
   static void setup(int np,int id,int[] def,double hal,double pum){ P_UM=pum; P=pum*1e-6; NP=np; ID=id; DEF=def; HAL=hal; LS=NP*P; XC=(ID+0.5)*P; }
@@ -30,15 +31,21 @@ public class Step6j {
       ModelUtil.initStandalone(true);
       String cs=CASE;
       if(cs.equals("SCAN")){ setup(11,5,new int[]{4,5,6},100e-9,2.71043685); SCAN=true; FLO=2.0; FHI=5.0; }
+      else if(cs.matches("N\\d+(H\\d+)?P\\d+")){
+        java.util.regex.Matcher mm=java.util.regex.Pattern.compile("N(\\d+)(?:H(\\d+))?P(\\d+)").matcher(cs); mm.matches();
+        int np=Integer.parseInt(mm.group(1)), id=(np-1)/2;
+        if(mm.group(2)!=null) HR=Double.parseDouble(mm.group(2))*1e-9;
+        setup(np,id,new int[]{id-1,id,id+1},100e-9,Double.parseDouble(mm.group(3))/1e6);
+      }
       else if(cs.startsWith("S")){ setup(11,5,new int[]{4,5,6},100e-9,Double.parseDouble(cs.substring(1))/1e6); SCAN=true; FLO=2.0; FHI=5.0; }
       else if(cs.startsWith("P")){ setup(11,5,new int[]{4,5,6},100e-9,Double.parseDouble(cs.substring(1))/1e6); }
       else throw new RuntimeException("unknown case "+cs);
       System.out.println("STEP6J_START case="+cs);
-      System.out.println(String.format(Locale.US,"CFG6J case=%s p_um=%.8f NP=%d ID=%d def=%s Ls_um=%.6f hAl_nm=%.0f nPairs=%d hLn_nm=400 ridge=1.0um x 100nm air=2um mesh LN30/Al10/air150 eta_s=5e-4 expect_fracAl_driven_unitscaled=%.4f partner=%.4f",
-        cs,P_UM,NP,ID,Arrays.toString(DEF),LS*1e6,HAL*1e9,NP-DEF.length,FA_T_UNIT*(NP-DEF.length)/NP,FA_P_UNIT*(NP-DEF.length)/NP));
+      System.out.println(String.format(Locale.US,"CFG6J case=%s p_um=%.8f NP=%d ID=%d def=%s Ls_um=%.6f hAl_nm=%.0f nPairs=%d hLn_nm=400 ridge=1.0um x %.0fnm air=2um mesh LN30/Al10/air150 eta_s=5e-4 expect_fracAl_driven_unitscaled=%.4f partner=%.4f",
+        cs,P_UM,NP,ID,Arrays.toString(DEF),LS*1e6,HAL*1e9,NP-DEF.length,HR*1e9,FA_T_UNIT*(NP-DEF.length)/NP,FA_P_UNIT*(NP-DEF.length)/NP));
 
       Model m=ModelUtil.create("M6j");
-      int[][] G=build(m,100e-9,true);
+      int[][] G=build(m,HR,true);
       Object[] op=optics(m,cs);
       if(op==null){ System.out.println("STEP6J_STOP no TE0"); return; }
       String pre=(String)op[0], SOL=(String)op[1];
@@ -80,7 +87,7 @@ public class Step6j {
   static double r7(double f){ return Math.round(f*1e7)/1e7; }
 
   static Object[] optics(Model m,String lab){
-    String[] o1=optStudy(m,"stdO1",20,"1.845");
+    String[] o1=optStudy(m,"stdO1",20,HR<150e-9?"1.845":HR<250e-9?"1.883":HR<350e-9?"1.905":"1.920");
     double[] te=pickTE0(m,o1[1],lab);
     if(te==null) return null;
     String[] o2=optStudy(m,"stdO2",1,String.format(Locale.US,"%.6f",te[0]));

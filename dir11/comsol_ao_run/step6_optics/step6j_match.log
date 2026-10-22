@@ -1,0 +1,69 @@
+CASEM case=N7P1938900 NP=7 npairs=4 hR_nm=100 p_um=1.9389 w_finger_um=0.4847 r_group_ohm_per_mm=144.41
+PKM case=N7P1938900 f_GHz=3.357900 abs_tot=3.2671e-03 Y_Spm=(632.18,40.36) P*L_ideal_Wm=1.779e-05
+MATCHM case=N7P1938900 f_pk=3.3579 L_mm=0.1 best: K=4 series=2 parallel=2 f_GHz=3.357900 Z_tot_ohm=(65.42,-4.02) P_load_mW=184.66 P_source_avail_mW=188.24 ideal_mW=177.87
+MATCHM case=N7P1938900 f_pk=3.3579 L_mm=0.2 best: K=8 series=2 parallel=4 f_GHz=3.358000 Z_tot_ohm=(32.97,1.87) P_load_mW=92.44 P_source_avail_mW=96.55 ideal_mW=88.93
+MATCHM case=N7P1938900 f_pk=3.3579 L_mm=0.5 best: K=16 series=4 parallel=4 f_GHz=3.357900 Z_tot_ohm=(53.42,-3.22) P_load_mW=37.69 P_source_avail_mW=37.77 ideal_mW=35.57
+MATCHM case=N7P1938900 f_pk=3.3579 L_mm=1.0 best: K=32 series=4 parallel=8 f_GHz=3.358000 Z_tot_ohm=(26.92,1.50) P_load_mW=18.87 P_source_avail_mW=20.74 ideal_mW=17.79
+MATCHM case=N7P1938900 f_pk=3.3579 L_mm=2.0 best: K=64 series=8 parallel=8 f_GHz=3.357900 Z_tot_ohm=(53.42,-3.22) P_load_mW=9.42 P_source_avail_mW=9.44 ideal_mW=8.89
+CASEM case=N9P1938900 NP=9 npairs=6 hR_nm=100 p_um=1.9389 w_finger_um=0.4847 r_group_ohm_per_mm=96.27
+PKM case=N9P1938900 f_GHz=3.338600 abs_tot=4.0132e-03 Y_Spm=(1096.64,62.47) P*L_ideal_Wm=2.045e-05
+MATCHM case=N9P1938900 f_pk=3.3386 L_mm=0.1 best: K=4 series=2 parallel=2 f_GHz=3.338600 Z_tot_ohm=(37.96,-2.07) P_load_mW=213.50 P_source_avail_mW=217.70 ideal_mW=204.48
+MATCHM case=N9P1938900 f_pk=3.3386 L_mm=0.2 best: K=8 series=4 parallel=2 f_GHz=3.338600 Z_tot_ohm=(75.92,-4.14) P_load_mW=106.75 P_source_avail_mW=111.59 ideal_mW=102.24
+MATCHM case=N9P1938900 f_pk=3.3386 L_mm=0.5 best: K=16 series=4 parallel=4 f_GHz=3.338700 Z_tot_ohm=(31.30,1.95) P_load_mW=43.76 P_source_avail_mW=46.23 ideal_mW=40.90
+MATCHM case=N9P1938900 f_pk=3.3386 L_mm=1.0 best: K=32 series=8 parallel=4 f_GHz=3.338600 Z_tot_ohm=(62.18,-3.31) P_load_mW=21.86 P_source_avail_mW=22.14 ideal_mW=20.45
+MATCHM case=N9P1938900 f_pk=3.3386 L_mm=2.0 best: K=64 series=8 parallel=8 f_GHz=3.338700 Z_tot_ohm=(31.30,1.95) P_load_mW=10.94 P_source_avail_mW=11.56 ideal_mW=10.22
+CASEM case=P1938900 NP=11 npairs=8 hR_nm=100 p_um=1.9389 w_finger_um=0.4847 r_group_ohm_per_mm=72.21
+PKM case=P1938900 f_GHz=3.328100 abs_tot=4.5349e-03 Y_Spm=(1516.08,-16.78) P*L_ideal_Wm=2.214e-05
+MATCHM case=P1938900 f_pk=3.3281 L_mm=0.1 best: K=4 series=2 parallel=2 f_GHz=3.328100 Z_tot_ohm=(27.58,0.29) P_load_mW=231.49 P_source_avail_mW=252.58 ideal_mW=221.39
+MATCHM case=P1938900 f_pk=3.3281 L_mm=0.2 best: K=8 series=4 parallel=2 f_GHz=3.328100 Z_tot_ohm=(55.17,0.58) P_load_mW=115.74 P_source_avail_mW=116.03 ideal_mW=110.70
+MATCHM case=P1938900 f_pk=3.3281 L_mm=0.5 best: K=16 series=8 parallel=2 f_GHz=3.328100 Z_tot_ohm=(90.43,0.93) P_load_mW=47.43 P_source_avail_mW=51.72 ideal_mW=44.28
+MATCHM case=P1938900 f_pk=3.3281 L_mm=1.0 best: K=32 series=8 parallel=4 f_GHz=3.328100 Z_tot_ohm=(45.22,0.47) P_load_mW=23.72 P_source_avail_mW=23.78 ideal_mW=22.14
+MATCHM case=P1938900 f_pk=3.3281 L_mm=2.0 best: K=64 series=16 parallel=4 f_GHz=3.328100 Z_tot_ohm=(90.43,0.93) P_load_mW=11.86 P_source_avail_mW=12.93 ideal_mW=11.07
+CASEM case=N7H200P1938900 NP=7 npairs=4 hR_nm=200 p_um=1.9389 w_finger_um=0.4847 r_group_ohm_per_mm=144.41
+PKM case=N7H200P1938900 f_GHz=3.353300 abs_tot=4.8191e-03 Y_Spm=(619.11,33.46) P*L_ideal_Wm=8.006e-06
+MATCHM case=N7H200P1938900 f_pk=3.3533 L_mm=0.1 best: K=4 series=2 parallel=2 f_GHz=3.353300 Z_tot_ohm=(66.83,-3.48) P_load_mW=83.05 P_source_avail_mW=84.88 ideal_mW=80.06
+MATCHM case=N7H200P1938900 f_pk=3.3533 L_mm=0.2 best: K=8 series=2 parallel=4 f_GHz=3.353400 Z_tot_ohm=(33.69,2.24) P_load_mW=41.56 P_source_avail_mW=43.23 ideal_mW=40.03
+MATCHM case=N7H200P1938900 f_pk=3.3533 L_mm=0.5 best: K=16 series=4 parallel=4 f_GHz=3.353300 Z_tot_ohm=(54.54,-2.79) P_load_mW=16.95 P_source_avail_mW=16.99 ideal_mW=16.01
+MATCHM case=N7H200P1938900 f_pk=3.3533 L_mm=1.0 best: K=32 series=4 parallel=8 f_GHz=3.353400 Z_tot_ohm=(27.49,1.79) P_load_mW=8.48 P_source_avail_mW=9.26 ideal_mW=8.01
+MATCHM case=N7H200P1938900 f_pk=3.3533 L_mm=2.0 best: K=64 series=8 parallel=8 f_GHz=3.353300 Z_tot_ohm=(54.54,-2.79) P_load_mW=4.24 P_source_avail_mW=4.25 ideal_mW=4.00
+CASEM case=N7H300P1938900 NP=7 npairs=4 hR_nm=300 p_um=1.9389 w_finger_um=0.4847 r_group_ohm_per_mm=144.41
+PKM case=N7H300P1938900 f_GHz=3.342500 abs_tot=6.1756e-03 Y_Spm=(601.56,-1.49) P*L_ideal_Wm=4.737e-06
+MATCHM case=N7H300P1938900 f_pk=3.3425 L_mm=0.1 best: K=4 series=2 parallel=2 f_GHz=3.342500 Z_tot_ohm=(68.90,0.16) P_load_mW=49.08 P_source_avail_mW=50.36 ideal_mW=47.37
+MATCHM case=N7H300P1938900 f_pk=3.3425 L_mm=0.2 best: K=8 series=2 parallel=4 f_GHz=3.342500 Z_tot_ohm=(34.45,0.08) P_load_mW=24.54 P_source_avail_mW=25.40 ideal_mW=23.68
+MATCHM case=N7H300P1938900 f_pk=3.3425 L_mm=0.5 best: K=16 series=4 parallel=4 f_GHz=3.342500 Z_tot_ohm=(56.20,0.13) P_load_mW=10.01 P_source_avail_mW=10.04 ideal_mW=9.47
+MATCHM case=N7H300P1938900 f_pk=3.3425 L_mm=1.0 best: K=32 series=4 parallel=8 f_GHz=3.342600 Z_tot_ohm=(28.34,3.36) P_load_mW=5.01 P_source_avail_mW=5.43 ideal_mW=4.74
+MATCHM case=N7H300P1938900 f_pk=3.3425 L_mm=2.0 best: K=64 series=8 parallel=8 f_GHz=3.342500 Z_tot_ohm=(56.20,0.13) P_load_mW=2.50 P_source_avail_mW=2.51 ideal_mW=2.37
+CASEM case=N7H400P1938900 NP=7 npairs=4 hR_nm=400 p_um=1.9389 w_finger_um=0.4847 r_group_ohm_per_mm=144.41
+PKM case=N7H400P1938900 f_GHz=3.310800 abs_tot=8.2365e-03 Y_Spm=(560.68,21.52) P*L_ideal_Wm=2.482e-06
+MATCHM case=N7H400P1938900 f_pk=3.3108 L_mm=0.1 best: K=4 series=2 parallel=2 f_GHz=3.310800 Z_tot_ohm=(73.64,-2.73) P_load_mW=25.66 P_source_avail_mW=26.65 ideal_mW=24.82
+MATCHM case=N7H400P1938900 f_pk=3.3108 L_mm=0.2 best: K=8 series=2 parallel=4 f_GHz=3.310900 Z_tot_ohm=(37.16,3.08) P_load_mW=12.83 P_source_avail_mW=13.13 ideal_mW=12.41
+MATCHM case=N7H400P1938900 f_pk=3.3108 L_mm=0.5 best: K=16 series=4 parallel=4 f_GHz=3.310800 Z_tot_ohm=(60.00,-2.19) P_load_mW=5.23 P_source_avail_mW=5.27 ideal_mW=4.96
+MATCHM case=N7H400P1938900 f_pk=3.3108 L_mm=1.0 best: K=32 series=4 parallel=8 f_GHz=3.310900 Z_tot_ohm=(30.27,2.46) P_load_mW=2.61 P_source_avail_mW=2.78 ideal_mW=2.48
+MATCHM case=N7H400P1938900 f_pk=3.3108 L_mm=2.0 best: K=64 series=8 parallel=8 f_GHz=3.310800 Z_tot_ohm=(60.00,-2.19) P_load_mW=1.31 P_source_avail_mW=1.32 ideal_mW=1.24
+CASEM case=N7H400P1927700 NP=7 npairs=4 hR_nm=400 p_um=1.9277 w_finger_um=0.4819 r_group_ohm_per_mm=145.25
+PKM case=N7H400P1927700 f_GHz=3.325700 abs_tot=8.3290e-03 Y_Spm=(567.21,24.03) P*L_ideal_Wm=2.455e-06
+MATCHM case=N7H400P1927700 f_pk=3.3257 L_mm=0.1 best: K=4 series=2 parallel=2 f_GHz=3.325700 Z_tot_ohm=(72.81,-2.98) P_load_mW=25.40 P_source_avail_mW=26.32 ideal_mW=24.55
+MATCHM case=N7H400P1927700 f_pk=3.3257 L_mm=0.2 best: K=8 series=2 parallel=4 f_GHz=3.325800 Z_tot_ohm=(36.74,2.88) P_load_mW=12.70 P_source_avail_mW=13.02 ideal_mW=12.28
+MATCHM case=N7H400P1927700 f_pk=3.3257 L_mm=0.5 best: K=16 series=4 parallel=4 f_GHz=3.325700 Z_tot_ohm=(59.34,-2.39) P_load_mW=5.17 P_source_avail_mW=5.22 ideal_mW=4.91
+MATCHM case=N7H400P1927700 f_pk=3.3257 L_mm=1.0 best: K=32 series=4 parallel=8 f_GHz=3.325800 Z_tot_ohm=(29.94,2.31) P_load_mW=2.59 P_source_avail_mW=2.76 ideal_mW=2.46
+MATCHM case=N7H400P1927700 f_pk=3.3257 L_mm=2.0 best: K=64 series=8 parallel=8 f_GHz=3.325700 Z_tot_ohm=(59.34,-2.39) P_load_mW=1.29 P_source_avail_mW=1.30 ideal_mW=1.23
+CASEM case=N9H400P1927700 NP=9 npairs=6 hR_nm=400 p_um=1.9277 w_finger_um=0.4819 r_group_ohm_per_mm=96.83
+PKM case=N9H400P1927700 f_GHz=3.320800 abs_tot=6.9286e-03 Y_Spm=(725.18,-25.16) P*L_ideal_Wm=4.537e-06
+MATCHM case=N9H400P1927700 f_pk=3.3208 L_mm=0.1 best: K=4 series=2 parallel=2 f_GHz=3.320900 Z_tot_ohm=(56.91,8.86) P_load_mW=46.36 P_source_avail_mW=46.87 ideal_mW=45.37
+MATCHM case=N9H400P1927700 f_pk=3.3208 L_mm=0.2 best: K=8 series=2 parallel=4 f_GHz=3.321000 Z_tot_ohm=(28.57,7.93) P_load_mW=23.02 P_source_avail_mW=25.13 ideal_mW=22.68
+MATCHM case=N9H400P1927700 f_pk=3.3208 L_mm=0.5 best: K=16 series=4 parallel=4 f_GHz=3.320900 Z_tot_ohm=(46.25,7.09) P_load_mW=9.42 P_source_avail_mW=9.48 ideal_mW=9.07
+MATCHM case=N9H400P1927700 f_pk=3.3208 L_mm=1.0 best: K=32 series=8 parallel=4 f_GHz=3.320800 Z_tot_ohm=(92.18,3.06) P_load_mW=4.74 P_source_avail_mW=5.20 ideal_mW=4.54
+MATCHM case=N9H400P1927700 f_pk=3.3208 L_mm=2.0 best: K=64 series=8 parallel=8 f_GHz=3.320900 Z_tot_ohm=(46.25,7.09) P_load_mW=2.35 P_source_avail_mW=2.37 ideal_mW=2.27
+PKM case=N9H400P1927700 f_GHz=3.303500 abs_tot=3.9973e-03 Y_Spm=(356.38,77.81) P*L_ideal_Wm=6.698e-06
+MATCHM case=N9H400P1927700 f_pk=3.3035 L_mm=0.1 best: K=4 series=1 parallel=4 f_GHz=3.303500 Z_tot_ohm=(27.19,-5.85) P_load_mW=67.99 P_source_avail_mW=74.93 ideal_mW=66.98
+MATCHM case=N9H400P1927700 f_pk=3.3035 L_mm=0.2 best: K=8 series=2 parallel=4 f_GHz=3.303400 Z_tot_ohm=(51.98,-18.17) P_load_mW=33.30 P_source_avail_mW=34.37 ideal_mW=33.49
+MATCHM case=N9H400P1927700 f_pk=3.3035 L_mm=0.5 best: K=16 series=4 parallel=4 f_GHz=3.303400 Z_tot_ohm=(83.90,-29.07) P_load_mW=13.44 P_source_avail_mW=15.03 ideal_mW=13.40
+MATCHM case=N9H400P1927700 f_pk=3.3035 L_mm=1.0 best: K=32 series=4 parallel=8 f_GHz=3.303400 Z_tot_ohm=(41.95,-14.53) P_load_mW=6.72 P_source_avail_mW=6.94 ideal_mW=6.70
+MATCHM case=N9H400P1927700 f_pk=3.3035 L_mm=2.0 best: K=64 series=8 parallel=8 f_GHz=3.303400 Z_tot_ohm=(83.90,-29.07) P_load_mW=3.36 P_source_avail_mW=3.76 ideal_mW=3.35
+CASEM case=N11H400P1927700 NP=11 npairs=8 hR_nm=400 p_um=1.9277 w_finger_um=0.4819 r_group_ohm_per_mm=72.63
+PKM case=N11H400P1927700 f_GHz=3.310200 abs_tot=1.1804e-02 Y_Spm=(1523.43,132.72) P*L_ideal_Wm=3.284e-06
+MATCHM case=N11H400P1927700 f_pk=3.3102 L_mm=0.1 best: K=4 series=2 parallel=2 f_GHz=3.310300 Z_tot_ohm=(27.45,0.99) P_load_mW=34.37 P_source_avail_mW=37.55 ideal_mW=32.84
+MATCHM case=N11H400P1927700 f_pk=3.3102 L_mm=0.2 best: K=8 series=4 parallel=2 f_GHz=3.310300 Z_tot_ohm=(54.90,1.98) P_load_mW=17.18 P_source_avail_mW=17.23 ideal_mW=16.42
+MATCHM case=N11H400P1927700 f_pk=3.3102 L_mm=0.5 best: K=16 series=8 parallel=2 f_GHz=3.310300 Z_tot_ohm=(90.02,3.16) P_load_mW=7.04 P_source_avail_mW=7.67 ideal_mW=6.57
+MATCHM case=N11H400P1927700 f_pk=3.3102 L_mm=1.0 best: K=32 series=8 parallel=4 f_GHz=3.310300 Z_tot_ohm=(45.01,1.58) P_load_mW=3.52 P_source_avail_mW=3.53 ideal_mW=3.28
+MATCHM case=N11H400P1927700 f_pk=3.3102 L_mm=2.0 best: K=64 series=16 parallel=4 f_GHz=3.310300 Z_tot_ohm=(90.02,3.16) P_load_mW=1.76 P_source_avail_mW=1.92 ideal_mW=1.64
