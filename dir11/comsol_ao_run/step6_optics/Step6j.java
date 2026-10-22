@@ -20,7 +20,7 @@ public class Step6j {
   static int NP=15, ID=7;
   static int[] DEF={6,7,8};
   static double HAL=100e-9, LS=NP*P, XC=(ID+0.5)*P;
-  static boolean SCAN=false;
+  static boolean SCAN=false, FIN=false;
   static double HR=100e-9;
   static double FLO=3.15, FHI=3.50, DF=0.002;
 
@@ -30,6 +30,7 @@ public class Step6j {
     try{
       ModelUtil.initStandalone(true);
       String cs=CASE;
+      if(cs.startsWith("FN")){ FIN=true; cs=cs.substring(1); }
       if(cs.equals("SCAN")){ setup(11,5,new int[]{4,5,6},100e-9,2.71043685); SCAN=true; FLO=2.0; FHI=5.0; }
       else if(cs.matches("N\\d+(H\\d+)?P\\d+")){
         java.util.regex.Matcher mm=java.util.regex.Pattern.compile("N(\\d+)(?:H(\\d+))?P(\\d+)").matcher(cs); mm.matches();
@@ -40,7 +41,8 @@ public class Step6j {
       else if(cs.startsWith("S")){ setup(11,5,new int[]{4,5,6},100e-9,Double.parseDouble(cs.substring(1))/1e6); SCAN=true; FLO=2.0; FHI=5.0; }
       else if(cs.startsWith("P")){ setup(11,5,new int[]{4,5,6},100e-9,Double.parseDouble(cs.substring(1))/1e6); }
       else throw new RuntimeException("unknown case "+cs);
-      System.out.println("STEP6J_START case="+cs);
+      if(FIN) cs="F"+cs;
+      System.out.println("STEP6J_START case="+cs+" ends="+(FIN?"free":"periodic"));
       System.out.println(String.format(Locale.US,"CFG6J case=%s p_um=%.8f NP=%d ID=%d def=%s Ls_um=%.6f hAl_nm=%.0f nPairs=%d hLn_nm=400 ridge=1.0um x %.0fnm air=2um mesh LN30/Al10/air150 eta_s=5e-4 expect_fracAl_driven_unitscaled=%.4f partner=%.4f",
         cs,P_UM,NP,ID,Arrays.toString(DEF),LS*1e6,HAL*1e9,NP-DEF.length,HR*1e9,FA_T_UNIT*(NP-DEF.length)/NP,FA_P_UNIT*(NP-DEF.length)/NP));
 
@@ -313,8 +315,10 @@ public class Step6j {
       m.component("comp1").physics("es").feature("term1").set("TerminalType","Voltage");
       m.component("comp1").physics("es").feature("term1").set("V0","1[V]");
       m.component("comp1").physics("es").create("gnd1","Ground",1); m.component("comp1").physics("es").feature("gnd1").selection().set(G[1]);
-      m.component("comp1").physics("solid").create("pc1","PeriodicCondition",1); m.component("comp1").physics("solid").feature("pc1").selection().set(G[8]);
-      m.component("comp1").physics("es").create("pc1","PeriodicCondition",1); m.component("comp1").physics("es").feature("pc1").selection().set(G[8]);
+      if(!FIN){
+        m.component("comp1").physics("solid").create("pc1","PeriodicCondition",1); m.component("comp1").physics("solid").feature("pc1").selection().set(G[8]);
+        m.component("comp1").physics("es").create("pc1","PeriodicCondition",1); m.component("comp1").physics("es").feature("pc1").selection().set(G[8]);
+      }
       Object pr=m.component("comp1").physics("solid").prop("Type2D"); sS(pr,"ModeExtension","1"); sS(pr,"kz","0");
     }
 
