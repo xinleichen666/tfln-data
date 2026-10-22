@@ -1,0 +1,484 @@
+*******************************************
+***COMSOL 6.3.0.290 progress output file***
+*******************************************
+Thu Oct 22 17:25:52 CST 2026
+COMSOL Multiphysics 6.3 (开发版本: 290) 在批处理模式下启动
+正在运行: D:\comsol_ao_run\step6_optics\Step6jS1960000.class
+STEP6J_START case=S1960000
+CFG6J case=S1960000 p_um=1.96000000 NP=11 ID=5 def=[4, 5, 6] Ls_um=21.560000 hAl_nm=100 nPairs=8 hLn_nm=400 ridge=1.0um x 100nm air=2um mesh LN30/Al10/air150 eta_s=5e-4 expect_fracAl_driven_unitscaled=0.0442 partner=0.0652
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 449/449 472/472
+           当前进度:   0 % - 矩形
+Memory: 451/451 473/473
+           当前进度:   3 % - 矩形 2
+Memory: 453/453 473/473
+           当前进度:   7 % - 矩形 3
+-          当前进度:  10 % - 矩形 4
+-          当前进度:  13 % - 矩形 5
+-          当前进度:  17 % - 矩形 6
+--         当前进度:  20 % - 矩形 1
+--         当前进度:  23 % - 矩形 1a
+--         当前进度:  27 % - 矩形 2a
+---        当前进度:  30 % - 矩形 2b
+---        当前进度:  33 % - 矩形 3a
+---        当前进度:  37 % - 矩形 3b
+----       当前进度:  40 % - 矩形 7
+----       当前进度:  43 % - 矩形 7a
+----       当前进度:  47 % - 矩形 8
+-----      当前进度:  50 % - 矩形 8a
+Memory: 453/453 474/474
+-----      当前进度:  53 % - 矩形 9
+-----      当前进度:  57 % - 矩形 9a
+------     当前进度:  60 % - 矩形 10
+------     当前进度:  63 % - 矩形 10a
+------     当前进度:  67 % - 形成联合体
+---------  当前进度:  95 % - 解析域和空区域
+Memory: 455/455 474/474
+---------- 当前进度: 100 % - 正在更新选择
+---------- 当前进度: 100 % - 正在创建可视化网格
+Memory: 458/458 476/476
+GEOM6J xc_um=10.780000 hR_nm=100 nDom=20 nLN=2(exp 2) nAl=16(exp 16) nTerm=8 nGnd=8(exp 8) nTopB=19 nBotB=1 nWallL=1 nWallR=1 nRidgeTop=1 nExt=8 nSideLN=2
+SYS2 method=general angle=[90[deg], 90[deg], 0]
+顶点单元数：76
+边界单元数：3551
+-          当前进度:  14 % - 插入内部点
+Memory: 1139/1139 1187/1187
+-          当前进度:  16 % - 插入内部点
+Memory: 1101/1140 1154/1188
+-          当前进度:  18 % - 插入内部点
+Memory: 1103/1140 1156/1188
+---------  当前进度:  95 % - 提高单元质量
+Memory: 1105/1140 1156/1188
+单元数：91106
+---------  当前进度:  99 % - 正在定型网格
+Memory: 1112/1140 1163/1188
+最小单元质量：0.5034
+---------- 当前进度: 100 % - 正在定型网格
+Memory: 1098/1140 1148/1188
+NUMELEM6J xc_um=10.780000 n_elem=91106
+----       当前进度:  47 % - 生成方程
+Memory: 1184/1188 1189/1193
+------     当前进度:  60 % - 生成方程
+Memory: 1181/1190 1187/1196
+---        当前进度:  39 % - 生成方程
+Memory: 1188/1194 1194/1200
+-----      当前进度:  54 % - 生成方程
+Memory: 1188/1194 1193/1200
+<---- 研究 1/解 1 (sol1) 中的“编译方程: 模式分析” -------------------------------------------
+开始于 2026年10月22日 下午5:26:09。
+几何形函数: 二次巧凑边点单元
+在 AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD 上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 3 个内核）。
+可用内存：32.37 GB。
+           当前进度:   0 % - 生成方程
+Memory: 1189/1194 1194/1200
+           当前进度:   2 % - 编译方程: 模式分析
+Memory: 1272/1288 1291/1307
+           当前进度:   3 % - 编译方程: 模式分析
+Memory: 1254/1288 1273/1307
+           当前进度:   3 % - 正在创建可视化网格
+Memory: 1253/1288 1269/1307
+时间：2。
+物理内存: 1.29 GB
+虚拟内存: 1.31 GB
+结束时间：2026年10月22日 下午5:26:11。
+----- 研究 1/解 1 (sol1) 中的“编译方程: 模式分析” ------------------------------------------>
+<---- 研究 1/解 1 (sol1) 中的“因变量 1” ------------------------------------------------
+开始于 2026年10月22日 下午5:26:11。
+           当前进度:   3 % - 因变量 1
+Memory: 1384/1391 1400/1407
+求解时间：0 s。
+物理内存: 1.39 GB
+虚拟内存: 1.41 GB
+结束时间：2026年10月22日 下午5:26:11。
+----- 研究 1/解 1 (sol1) 中的“因变量 1” ----------------------------------------------->
+<---- 研究 1/解 1 (sol1) 中的“特征值求解器 1” ---------------------------------------------
+开始于 2026年10月22日 下午5:26:11。
+特征值求解器
+求解的自由度数：638507。
+           当前进度:   5 % - 组装稀疏模式
+Memory: 1487/1495 1506/1528
+           当前进度:   5 % - 组装矩阵
+Memory: 2061/2147 2085/2176
+找到非对称矩阵。
+           当前进度:   5 % - 
+Memory: 2194/2230 2220/2255
+缩放因变量：
+电场 （空间坐标系） (comp1.E): 1
+已使用正交零空间函数。
+           当前进度:   5 % - 约束处理
+Memory: 2442/2527 2543/2558
+           当前进度:   5 % - 矩阵分解
+Memory: 2321/2527 2548/2558
+非对称特征值求解器
+Iter      ErrEst  Nconv
+           当前进度:   5 % - 求解线性方程组
+Memory: 4737/4737 5104/5108
+           当前进度:   5 % - 矩阵乘法
+Memory: 4726/4779 5088/5148
+           当前进度:   5 % - 求解线性方程组
+Memory: 4749/4779 5113/5148
+           当前进度:   5 % - 矩阵乘法
+Memory: 4726/4779 5088/5148
+           当前进度:   5 % - 求解线性方程组
+Memory: 4749/4779 5113/5148
+           当前进度:   5 % - 矩阵乘法
+Memory: 4682/4779 5043/5148
+           当前进度:   5 % - 求解线性方程组
+Memory: 4705/4779 5069/5148
+           当前进度:   5 % - 矩阵乘法
+Memory: 4683/4779 5044/5148
+           当前进度:   5 % - 求解线性方程组
+Memory: 4705/4779 5069/5148
+   1       0.021     13
+------     当前进度:  67 % - 求解线性方程组
+Memory: 4683/4779 5044/5148
+   2     6.5e-09     20
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 4069/4779 4420/5148
+52 线性方程组的解。
+52 矩阵乘法。
+51 重正交化。
+求解时间：62 s。 （1 分钟，2 秒）
+物理内存: 4.78 GB
+虚拟内存: 5.15 GB
+结束时间：2026年10月22日 下午5:27:13。
+----- 研究 1/解 1 (sol1) 中的“特征值求解器 1” -------------------------------------------->
+STUDY stdO1 sol=sol1 dataset=ds_stdO1 neigs=20 shift_neff=1.845
+MODE6J set=S1960000 k=0 neff_re=1.737200 neff_im=-4.4736e-02 dBcm=15751.4632 TEfrac=0.4232 ridgeFrac=0.0000
+MODE6J set=S1960000 k=1 neff_re=1.737240 neff_im=-4.4739e-02 dBcm=15752.7083 TEfrac=0.4232 ridgeFrac=0.0000
+MODE6J set=S1960000 k=2 neff_re=1.744261 neff_im=-4.0577e-03 dBcm=1428.7084 TEfrac=0.6280 ridgeFrac=0.0837
+MODE6J set=S1960000 k=3 neff_re=1.751174 neff_im=-9.5372e-03 dBcm=3358.0568 TEfrac=0.3610 ridgeFrac=0.0032
+MODE6J set=S1960000 k=4 neff_re=1.752811 neff_im=-8.4241e-03 dBcm=2966.1560 TEfrac=0.4313 ridgeFrac=0.0161
+MODE6J set=S1960000 k=5 neff_re=1.766090 neff_im=-7.8052e-03 dBcm=2748.2268 TEfrac=0.5300 ridgeFrac=0.0116
+MODE6J set=S1960000 k=6 neff_re=1.769160 neff_im=-8.0463e-03 dBcm=2833.1086 TEfrac=0.5371 ridgeFrac=0.0112
+MODE6J set=S1960000 k=7 neff_re=1.777826 neff_im=-4.9193e-03 dBcm=1732.0827 TEfrac=0.7037 ridgeFrac=0.0260
+MODE6J set=S1960000 k=8 neff_re=1.784713 neff_im=-6.3939e-03 dBcm=2251.2852 TEfrac=0.6577 ridgeFrac=0.0169
+MODE6J set=S1960000 k=9 neff_re=1.789075 neff_im=-5.7984e-03 dBcm=2041.6319 TEfrac=0.6996 ridgeFrac=0.0103
+MODE6J set=S1960000 k=10 neff_re=1.793892 neff_im=-3.2229e-03 dBcm=1134.7750 TEfrac=0.8188 ridgeFrac=0.0334
+MODE6J set=S1960000 k=11 neff_re=1.802199 neff_im=-5.8607e-03 dBcm=2063.5651 TEfrac=0.7307 ridgeFrac=0.0036
+MODE6J set=S1960000 k=12 neff_re=1.802711 neff_im=-5.2044e-03 dBcm=1832.4911 TEfrac=0.7575 ridgeFrac=0.0052
+MODE6J set=S1960000 k=13 neff_re=1.813062 neff_im=-5.4680e-03 dBcm=1925.2918 TEfrac=0.7743 ridgeFrac=0.0019
+MODE6J set=S1960000 k=14 neff_re=1.813215 neff_im=-5.3333e-03 dBcm=1877.8690 TEfrac=0.7797 ridgeFrac=0.0008
+MODE6J set=S1960000 k=15 neff_re=1.820825 neff_im=-5.1801e-03 dBcm=1823.9078 TEfrac=0.8078 ridgeFrac=0.0011
+MODE6J set=S1960000 k=16 neff_re=1.820886 neff_im=-5.1432e-03 dBcm=1810.9433 TEfrac=0.8092 ridgeFrac=0.0002
+MODE6J set=S1960000 k=17 neff_re=1.825386 neff_im=-5.0694e-03 dBcm=1784.9486 TEfrac=0.8277 ridgeFrac=0.0003
+MODE6J set=S1960000 k=18 neff_re=1.825416 neff_im=-5.0651e-03 dBcm=1783.4329 TEfrac=0.8278 ridgeFrac=0.0001
+MODE6J set=S1960000 k=19 neff_re=1.845196 neff_im=-2.0148e-06 dBcm=0.7094 TEfrac=0.9768 ridgeFrac=0.6911
+----       当前进度:  47 % - 生成方程
+Memory: 1575/4779 1603/5148
+------     当前进度:  60 % - 生成方程
+Memory: 1610/4779 1639/5148
+---        当前进度:  39 % - 生成方程
+Memory: 1596/4779 1624/5148
+-----      当前进度:  54 % - 生成方程
+Memory: 1579/4779 1606/5148
+<---- 研究 2/解 2 (sol2) 中的“编译方程: 模式分析” -------------------------------------------
+开始于 2026年10月22日 下午5:27:17。
+几何形函数: 二次巧凑边点单元
+在 AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD 上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 3 个内核）。
+可用内存：32.37 GB。
+           当前进度:   0 % - 生成方程
+Memory: 1593/4779 1622/5148
+           当前进度:   3 % - 编译方程: 模式分析
+Memory: 1547/4779 1573/5148
+           当前进度:   3 % - 正在创建可视化网格
+Memory: 1552/4779 1577/5148
+时间：2。
+物理内存: 1.59 GB
+虚拟内存: 1.62 GB
+结束时间：2026年10月22日 下午5:27:19。
+----- 研究 2/解 2 (sol2) 中的“编译方程: 模式分析” ------------------------------------------>
+<---- 研究 2/解 2 (sol2) 中的“因变量 1” ------------------------------------------------
+开始于 2026年10月22日 下午5:27:19。
+           当前进度:   3 % - 因变量 1
+Memory: 1706/4779 1718/5148
+求解时间：0 s。
+物理内存: 1.71 GB
+虚拟内存: 1.72 GB
+结束时间：2026年10月22日 下午5:27:19。
+----- 研究 2/解 2 (sol2) 中的“因变量 1” ----------------------------------------------->
+<---- 研究 2/解 2 (sol2) 中的“特征值求解器 1” ---------------------------------------------
+开始于 2026年10月22日 下午5:27:19。
+特征值求解器
+求解的自由度数：638507。
+           当前进度:   5 % - 组装稀疏模式
+Memory: 1718/4779 1741/5148
+           当前进度:   5 % - 组装矩阵
+Memory: 2322/4779 2357/5148
+找到非对称矩阵。
+缩放因变量：
+电场 （空间坐标系） (comp1.E): 1
+           当前进度:   5 % - 
+Memory: 2411/4779 2448/5148
+已使用正交零空间函数。
+           当前进度:   5 % - 约束处理
+Memory: 2686/4779 2771/5148
+           当前进度:   5 % - 矩阵分解
+Memory: 2479/4779 2776/5148
+非对称特征值求解器
+Iter      ErrEst  Nconv
+           当前进度:   5 % - 求解线性方程组
+Memory: 4588/4779 4970/5148
+           当前进度:   5 % - 矩阵乘法
+Memory: 4590/4779 4965/5148
+           当前进度:   5 % - 求解线性方程组
+Memory: 4612/4779 4990/5148
+           当前进度:   5 % - 矩阵乘法
+Memory: 4590/4779 4965/5148
+           当前进度:   5 % - 求解线性方程组
+Memory: 4612/4779 4990/5148
+           当前进度:   5 % - 矩阵乘法
+Memory: 4590/4779 4965/5148
+           当前进度:   5 % - 求解线性方程组
+Memory: 4612/4779 4990/5148
+           当前进度:   5 % - 矩阵乘法
+Memory: 4590/4779 4965/5148
+           当前进度:   5 % - 求解线性方程组
+Memory: 4612/4779 4990/5148
+   1           0      1
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 3874/4779 4230/5148
+20 线性方程组的解。
+20 矩阵乘法。
+19 重正交化。
+求解时间：28 s。
+物理内存: 4.61 GB
+虚拟内存: 4.99 GB
+结束时间：2026年10月22日 下午5:27:46。
+----- 研究 2/解 2 (sol2) 中的“特征值求解器 1” -------------------------------------------->
+STUDY stdO2 sol=sol2 dataset=ds_stdO2 neigs=1 shift_neff=1.845196
+SOLOPT6J case=S1960000 tag=sol2 neff=1.84519607 neff_im=-2.0148e-06 dBcm=0.7094 TEfrac=0.9768 ridgeFrac=0.6911 same_as_pick=true P=1.39261564e-11 W/m xc_um=10.780000
+<---- 研究 1/解 1 (sol1) 中的“编译方程: 模式分析 (2)” ---------------------------------------
+开始于 2026年10月22日 下午5:27:47。
+几何形函数: 二次巧凑边点单元
+           当前进度:   0 % - 生成方程
+Memory: 1728/4779 1776/5148
+-------    当前进度:  70 % - 解 1
+Memory: 1793/4779 1841/5148
+---------- 当前进度: 100 % - 解 1
+Memory: 1697/4779 1741/5148
+---------- 当前进度: 100 % - 正在创建可视化网格
+时间：2。
+物理内存: 1.79 GB
+虚拟内存: 1.84 GB
+结束时间：2026年10月22日 下午5:27:49。
+----- 研究 1/解 1 (sol1) 中的“编译方程: 模式分析 (2)” -------------------------------------->
+<---- 研究 2/解 2 (sol2) 中的“编译方程: 模式分析 (2)” ---------------------------------------
+开始于 2026年10月22日 下午5:27:49。
+几何形函数: 二次巧凑边点单元
+           当前进度:   0 % - 生成方程
+Memory: 1584/4779 1604/5148
+---------- 当前进度: 100 % - 解 2
+Memory: 1610/4779 1620/5148
+---------- 当前进度: 100 % - 正在创建可视化网格
+Memory: 1621/4779 1631/5148
+时间：2。
+物理内存: 1.62 GB
+虚拟内存: 1.63 GB
+结束时间：2026年10月22日 下午5:27:52。
+----- 研究 2/解 2 (sol2) 中的“编译方程: 模式分析 (2)” -------------------------------------->
+----       当前进度:  47 % - 生成方程
+Memory: 1660/4779 1669/5148
+------     当前进度:  60 % - 生成方程
+Memory: 1659/4779 1668/5148
+---        当前进度:  39 % - 生成方程
+-----      当前进度:  54 % - 生成方程
+Memory: 1659/4779 1669/5148
+STUDY stdE sol=sol3 neigs=40 shift=3.33GHz (term1 off, term edges grounded)
+           当前进度:   1 % - 生成方程
+Memory: 1571/4779 1581/5148
+           当前进度:   2 % - 生成方程
+Memory: 1555/4779 1565/5148
+           当前进度:   3 % - 生成方程
+Memory: 1566/4779 1576/5148
+<---- 研究/解 3 (sol3) 中的“编译方程: 特征频率” ---------------------------------------------
+开始于 2026年10月22日 下午5:27:56。
+几何形函数: 二次巧凑边点单元
+在 AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD 上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 3 个内核）。
+可用内存：32.37 GB。
+           当前进度:   5 % - 编译方程: 特征频率
+Memory: 1623/4779 1630/5148
+           当前进度:   5 % - 正在创建可视化网格
+Memory: 1562/4779 1568/5148
+时间：2。
+物理内存: 1.62 GB
+虚拟内存: 1.63 GB
+结束时间：2026年10月22日 下午5:27:57。
+----- 研究/解 3 (sol3) 中的“编译方程: 特征频率” -------------------------------------------->
+<---- 研究/解 3 (sol3) 中的“因变量 1” --------------------------------------------------
+开始于 2026年10月22日 下午5:27:57。
+           当前进度:   5 % - 因变量 1
+Memory: 1698/4779 1705/5148
+求解时间：0 s。
+物理内存: 1.7 GB
+虚拟内存: 1.71 GB
+结束时间：2026年10月22日 下午5:27:57。
+----- 研究/解 3 (sol3) 中的“因变量 1” ------------------------------------------------->
+<---- 研究/解 3 (sol3) 中的“特征值求解器 1” -----------------------------------------------
+开始于 2026年10月22日 下午5:27:57。
+特征值求解器
+求解的自由度数：397432。
+           当前进度:   8 % - 组装稀疏模式
+Memory: 1720/4779 1732/5148
+           当前进度:   8 % - 组装矩阵
+Memory: 2064/4779 2087/5148
+           当前进度:   8 % - 
+Memory: 2112/4779 2141/5148
+找到对称矩阵。
+缩放因变量：
+位移场 (comp1.u): 8e-11
+电势 (comp1.V): 1
+已使用显式-正交零空间函数。
+           当前进度:   8 % - 约束处理
+Memory: 2193/4779 2216/5148
+           当前进度:   8 % - 矩阵分解
+Memory: 2033/4779 2049/5148
+非对称特征值求解器
+Iter      ErrEst  Nconv
+           当前进度:   8 % - 求解线性方程组
+Memory: 4309/4779 4578/5148
+           当前进度:   8 % - 矩阵乘法
+Memory: 4311/4779 4577/5148
+           当前进度:   8 % - 求解线性方程组
+   1       1e-06    119
+---------  当前进度:  99 % - 求解线性方程组
+Memory: 4301/4779 4567/5148
+   2     2.9e-26    120
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 4209/4779 4471/5148
+302 线性方程组的解。
+302 矩阵乘法。
+299 重正交化。
+求解时间：250 s。 （4 分钟，10 秒）
+物理内存: 5.64 GB
+虚拟内存: 5.98 GB
+结束时间：2026年10月22日 下午5:32:08。
+----- 研究/解 3 (sol3) 中的“特征值求解器 1” ---------------------------------------------->
+EIG6J_OUT case=S1960000 k=0 f_GHz=0.935074 Q=2047.0 u_frac=0.9505 v_frac=0.0491 w_frac=0.0004 fracAl=0.0132 Pfrac=0.2781 defectRatio=0.326 E_defect/E_LN=0.2083 (geom 0.2727) dn0_MB=-8.711 dn0_PE=-2.239 dn0_EO=55.855 dn0_tot=44.904 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=1 f_GHz=0.969160 Q=2045.5 u_frac=0.0005 v_frac=0.0001 w_frac=0.9994 fracAl=0.0220 Pfrac=0.0085 defectRatio=1.318 E_defect/E_LN=0.3064 (geom 0.2727) dn0_MB=-0.000 dn0_PE=0.001 dn0_EO=-0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=2 f_GHz=0.983633 Q=2050.7 u_frac=0.0005 v_frac=0.0001 w_frac=0.9994 fracAl=0.0245 Pfrac=0.0008 defectRatio=1.328 E_defect/E_LN=0.2474 (geom 0.2727) dn0_MB=-2.389 dn0_PE=5.421 dn0_EO=1.033 dn0_tot=4.065 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=3 f_GHz=1.025957 Q=2136.3 u_frac=0.0807 v_frac=0.9193 w_frac=0.0001 fracAl=0.0083 Pfrac=0.9704 defectRatio=0.999 E_defect/E_LN=0.2844 (geom 0.2727) dn0_MB=2.283 dn0_PE=5.253 dn0_EO=-5.177 dn0_tot=2.358 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=4 f_GHz=1.050707 Q=2289.8 u_frac=0.0683 v_frac=0.9316 w_frac=0.0001 fracAl=0.0696 Pfrac=0.9983 defectRatio=1.019 E_defect/E_LN=0.2940 (geom 0.2727) dn0_MB=0.001 dn0_PE=-0.000 dn0_EO=0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=5 f_GHz=1.132271 Q=2048.1 u_frac=0.0005 v_frac=0.0002 w_frac=0.9994 fracAl=0.0232 Pfrac=0.0033 defectRatio=1.230 E_defect/E_LN=0.2665 (geom 0.2727) dn0_MB=-0.000 dn0_PE=0.001 dn0_EO=-0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=6 f_GHz=1.146736 Q=2049.3 u_frac=0.0005 v_frac=0.0002 w_frac=0.9993 fracAl=0.0239 Pfrac=0.0004 defectRatio=1.438 E_defect/E_LN=0.2739 (geom 0.2727) dn0_MB=-2.424 dn0_PE=5.788 dn0_EO=1.268 dn0_tot=4.632 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=7 f_GHz=1.188865 Q=2217.6 u_frac=0.0736 v_frac=0.9263 w_frac=0.0001 fracAl=0.0362 Pfrac=0.0002 defectRatio=0.902 E_defect/E_LN=0.2703 (geom 0.2727) dn0_MB=-0.001 dn0_PE=0.000 dn0_EO=0.000 dn0_tot=0.000 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=8 f_GHz=1.204422 Q=2242.7 u_frac=0.1035 v_frac=0.8963 w_frac=0.0001 fracAl=0.0481 Pfrac=0.0079 defectRatio=1.030 E_defect/E_LN=0.2724 (geom 0.2727) dn0_MB=0.082 dn0_PE=5.470 dn0_EO=13.028 dn0_tot=18.580 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=9 f_GHz=1.224704 Q=2037.8 u_frac=0.9949 v_frac=0.0047 w_frac=0.0005 fracAl=0.0108 Pfrac=0.0181 defectRatio=2.036 E_defect/E_LN=0.2431 (geom 0.2727) dn0_MB=0.002 dn0_PE=0.001 dn0_EO=-0.000 dn0_tot=0.003 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=10 f_GHz=1.241990 Q=2047.7 u_frac=0.9590 v_frac=0.0406 w_frac=0.0004 fracAl=0.0112 Pfrac=0.0544 defectRatio=0.713 E_defect/E_LN=0.2890 (geom 0.2727) dn0_MB=-9.732 dn0_PE=-2.368 dn0_EO=82.811 dn0_tot=70.710 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=11 f_GHz=1.299464 Q=2051.6 u_frac=0.0005 v_frac=0.0003 w_frac=0.9993 fracAl=0.0249 Pfrac=0.0000 defectRatio=1.175 E_defect/E_LN=0.2419 (geom 0.2727) dn0_MB=0.000 dn0_PE=0.001 dn0_EO=0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=12 f_GHz=1.303264 Q=2043.5 u_frac=0.0005 v_frac=0.0003 w_frac=0.9992 fracAl=0.0211 Pfrac=0.0005 defectRatio=1.060 E_defect/E_LN=0.3097 (geom 0.2727) dn0_MB=-2.241 dn0_PE=5.754 dn0_EO=0.807 dn0_tot=4.320 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=13 f_GHz=1.356125 Q=2243.5 u_frac=0.0776 v_frac=0.9222 w_frac=0.0002 fracAl=0.0415 Pfrac=0.0000 defectRatio=0.776 E_defect/E_LN=0.2536 (geom 0.2727) dn0_MB=0.000 dn0_PE=0.000 dn0_EO=-0.000 dn0_tot=0.000 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=14 f_GHz=1.363078 Q=2235.0 u_frac=0.0828 v_frac=0.9169 w_frac=0.0003 fracAl=0.0385 Pfrac=0.0029 defectRatio=1.244 E_defect/E_LN=0.3001 (geom 0.2727) dn0_MB=2.003 dn0_PE=6.852 dn0_EO=-5.255 dn0_tot=3.600 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=15 f_GHz=1.460308 Q=2045.5 u_frac=0.0005 v_frac=0.0004 w_frac=0.9992 fracAl=0.0219 Pfrac=0.0001 defectRatio=1.168 E_defect/E_LN=0.3011 (geom 0.2727) dn0_MB=0.000 dn0_PE=0.003 dn0_EO=0.000 dn0_tot=0.003 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=16 f_GHz=1.463025 Q=2045.3 u_frac=0.0005 v_frac=0.0004 w_frac=0.9991 fracAl=0.0219 Pfrac=0.0030 defectRatio=1.523 E_defect/E_LN=0.2490 (geom 0.2727) dn0_MB=-1.862 dn0_PE=5.092 dn0_EO=0.738 dn0_tot=3.969 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=17 f_GHz=1.519452 Q=2195.1 u_frac=0.2617 v_frac=0.7380 w_frac=0.0003 fracAl=0.0299 Pfrac=0.0004 defectRatio=1.257 E_defect/E_LN=0.2960 (geom 0.2727) dn0_MB=-2.587 dn0_PE=6.115 dn0_EO=32.182 dn0_tot=35.710 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=18 f_GHz=1.521796 Q=2200.0 u_frac=0.2707 v_frac=0.7291 w_frac=0.0002 fracAl=0.0315 Pfrac=0.0001 defectRatio=0.820 E_defect/E_LN=0.2898 (geom 0.2727) dn0_MB=-0.000 dn0_PE=0.000 dn0_EO=0.001 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=19 f_GHz=1.531156 Q=2085.8 u_frac=0.8002 v_frac=0.1994 w_frac=0.0004 fracAl=0.0180 Pfrac=0.0000 defectRatio=0.852 E_defect/E_LN=0.2298 (geom 0.2727) dn0_MB=0.002 dn0_PE=0.001 dn0_EO=-0.001 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=20 f_GHz=1.546996 Q=2078.3 u_frac=0.7953 v_frac=0.2043 w_frac=0.0004 fracAl=0.0147 Pfrac=0.0022 defectRatio=0.720 E_defect/E_LN=0.2549 (geom 0.2727) dn0_MB=-8.974 dn0_PE=-3.451 dn0_EO=83.926 dn0_tot=71.500 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=21 f_GHz=1.607153 Q=2034.6 u_frac=0.0005 v_frac=0.0004 w_frac=0.9992 fracAl=0.0166 Pfrac=0.0006 defectRatio=1.296 E_defect/E_LN=0.2702 (geom 0.2727) dn0_MB=0.000 dn0_PE=0.003 dn0_EO=0.000 dn0_tot=0.003 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=22 f_GHz=1.630783 Q=2046.9 u_frac=0.0005 v_frac=0.0004 w_frac=0.9991 fracAl=0.0226 Pfrac=0.0489 defectRatio=1.070 E_defect/E_LN=0.2152 (geom 0.2727) dn0_MB=-1.556 dn0_PE=4.613 dn0_EO=-0.004 dn0_tot=3.053 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=23 f_GHz=1.687055 Q=2243.5 u_frac=0.1079 v_frac=0.8920 w_frac=0.0002 fracAl=0.0347 Pfrac=0.0001 defectRatio=0.861 E_defect/E_LN=0.2592 (geom 0.2727) dn0_MB=0.001 dn0_PE=0.000 dn0_EO=-0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=24 f_GHz=1.692087 Q=2238.7 u_frac=0.1360 v_frac=0.8638 w_frac=0.0002 fracAl=0.0354 Pfrac=0.0001 defectRatio=1.022 E_defect/E_LN=0.2233 (geom 0.2727) dn0_MB=-1.799 dn0_PE=-6.837 dn0_EO=13.858 dn0_tot=5.222 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=25 f_GHz=1.747711 Q=2020.3 u_frac=0.0005 v_frac=0.0004 w_frac=0.9991 fracAl=0.0098 Pfrac=0.9108 defectRatio=1.870 E_defect/E_LN=0.3637 (geom 0.2727) dn0_MB=-1.833 dn0_PE=5.646 dn0_EO=0.257 dn0_tot=4.070 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=26 f_GHz=1.802374 Q=2100.6 u_frac=0.6494 v_frac=0.3501 w_frac=0.0006 fracAl=0.0099 Pfrac=0.0002 defectRatio=1.497 E_defect/E_LN=0.3387 (geom 0.2727) dn0_MB=0.002 dn0_PE=-0.000 dn0_EO=-0.000 dn0_tot=0.002 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=27 f_GHz=1.834550 Q=2116.7 u_frac=0.5740 v_frac=0.4256 w_frac=0.0004 fracAl=0.0119 Pfrac=0.0001 defectRatio=1.741 E_defect/E_LN=0.3443 (geom 0.2727) dn0_MB=-9.248 dn0_PE=-6.733 dn0_EO=83.456 dn0_tot=67.475 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=28 f_GHz=1.841974 Q=2085.3 u_frac=0.0007 v_frac=0.0005 w_frac=0.9988 fracAl=0.0406 Pfrac=0.9658 defectRatio=1.153 E_defect/E_LN=0.3239 (geom 0.2727) dn0_MB=-0.000 dn0_PE=0.001 dn0_EO=-0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=29 f_GHz=1.903596 Q=2214.1 u_frac=0.4200 v_frac=0.5797 w_frac=0.0002 fracAl=0.0414 Pfrac=0.0002 defectRatio=0.795 E_defect/E_LN=0.2913 (geom 0.2727) dn0_MB=-0.000 dn0_PE=0.001 dn0_EO=0.006 dn0_tot=0.007 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=30 f_GHz=1.906448 Q=2203.1 u_frac=0.4675 v_frac=0.5323 w_frac=0.0003 fracAl=0.0428 Pfrac=0.0002 defectRatio=1.151 E_defect/E_LN=0.2885 (geom 0.2727) dn0_MB=-4.391 dn0_PE=6.149 dn0_EO=42.692 dn0_tot=44.450 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=31 f_GHz=1.955209 Q=2066.6 u_frac=0.0005 v_frac=0.0006 w_frac=0.9989 fracAl=0.0318 Pfrac=0.0217 defectRatio=1.052 E_defect/E_LN=0.2438 (geom 0.2727) dn0_MB=0.000 dn0_PE=0.000 dn0_EO=0.000 dn0_tot=0.000 (x1e-12, supercell)
+EIG6J_OUT case=S1960000 k=32 f_GHz=1.974827 Q=2077.4 u_frac=0.0005 v_frac=0.0006 w_frac=0.9989 fracAl=0.0371 Pfrac=0.0065 defectRatio=1.360 E_defect/E_LN=0.2699 (geom 0.2727) dn0_MB=-1.170 dn0_PE=4.052 dn0_EO=1.056 dn0_tot=3.937 (x1e-12, supercell)
+EIG6J case=S1960000 k=33 f_GHz=2.043904 Q=2273.2 u_frac=0.1259 v_frac=0.8739 w_frac=0.0002 fracAl=0.0409 Pfrac=0.0001 defectRatio=1.095 E_defect/E_LN=0.2782 (geom 0.2727) dn0_MB=1.006 dn0_PE=7.917 dn0_EO=-2.619 dn0_tot=6.304 (x1e-12, supercell)
+EIG6J case=S1960000 k=34 f_GHz=2.048018 Q=2288.0 u_frac=0.1048 v_frac=0.8950 w_frac=0.0002 fracAl=0.0443 Pfrac=0.0001 defectRatio=0.898 E_defect/E_LN=0.2518 (geom 0.2727) dn0_MB=0.001 dn0_PE=0.000 dn0_EO=-0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J case=S1960000 k=35 f_GHz=2.119454 Q=2059.4 u_frac=0.0007 v_frac=0.0007 w_frac=0.9986 fracAl=0.0286 Pfrac=0.0018 defectRatio=1.654 E_defect/E_LN=0.3280 (geom 0.2727) dn0_MB=-1.203 dn0_PE=4.073 dn0_EO=2.802 dn0_tot=5.672 (x1e-12, supercell)
+EIG6J case=S1960000 k=36 f_GHz=2.125367 Q=2070.1 u_frac=0.0006 v_frac=0.0007 w_frac=0.9987 fracAl=0.0334 Pfrac=0.0015 defectRatio=0.895 E_defect/E_LN=0.2257 (geom 0.2727) dn0_MB=0.000 dn0_PE=0.001 dn0_EO=-0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J case=S1960000 k=37 f_GHz=2.147349 Q=2060.6 u_frac=0.9610 v_frac=0.0385 w_frac=0.0006 fracAl=0.0188 Pfrac=0.0010 defectRatio=0.819 E_defect/E_LN=0.2641 (geom 0.2727) dn0_MB=0.001 dn0_PE=-0.000 dn0_EO=0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J case=S1960000 k=38 f_GHz=2.172587 Q=2087.0 u_frac=0.8601 v_frac=0.1391 w_frac=0.0007 fracAl=0.0218 Pfrac=0.0003 defectRatio=0.367 E_defect/E_LN=0.2308 (geom 0.2727) dn0_MB=-7.883 dn0_PE=2.042 dn0_EO=63.170 dn0_tot=57.329 (x1e-12, supercell)
+EIG6J case=S1960000 k=39 f_GHz=2.221428 Q=2264.1 u_frac=0.1938 v_frac=0.8059 w_frac=0.0003 fracAl=0.0390 Pfrac=0.0001 defectRatio=1.023 E_defect/E_LN=0.2704 (geom 0.2727) dn0_MB=-4.718 dn0_PE=-7.010 dn0_EO=28.431 dn0_tot=16.702 (x1e-12, supercell)
+EIG6J case=S1960000 k=40 f_GHz=2.221743 Q=2295.0 u_frac=0.0902 v_frac=0.9095 w_frac=0.0002 fracAl=0.0428 Pfrac=0.0002 defectRatio=1.097 E_defect/E_LN=0.2852 (geom 0.2727) dn0_MB=-0.008 dn0_PE=-0.014 dn0_EO=0.052 dn0_tot=0.031 (x1e-12, supercell)
+EIG6J case=S1960000 k=41 f_GHz=2.275740 Q=2062.2 u_frac=0.0008 v_frac=0.0008 w_frac=0.9984 fracAl=0.0298 Pfrac=0.0001 defectRatio=1.394 E_defect/E_LN=0.2605 (geom 0.2727) dn0_MB=-0.607 dn0_PE=3.159 dn0_EO=0.912 dn0_tot=3.464 (x1e-12, supercell)
+EIG6J case=S1960000 k=42 f_GHz=2.290946 Q=2066.8 u_frac=0.0008 v_frac=0.0009 w_frac=0.9983 fracAl=0.0319 Pfrac=0.0001 defectRatio=1.254 E_defect/E_LN=0.2840 (geom 0.2727) dn0_MB=0.000 dn0_PE=0.001 dn0_EO=-0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J case=S1960000 k=43 f_GHz=2.389846 Q=2286.6 u_frac=0.1101 v_frac=0.8895 w_frac=0.0003 fracAl=0.0384 Pfrac=0.0005 defectRatio=1.194 E_defect/E_LN=0.2938 (geom 0.2727) dn0_MB=0.001 dn0_PE=-0.000 dn0_EO=0.000 dn0_tot=0.000 (x1e-12, supercell)
+EIG6J case=S1960000 k=44 f_GHz=2.392633 Q=2299.6 u_frac=0.0968 v_frac=0.9029 w_frac=0.0003 fracAl=0.0431 Pfrac=0.0000 defectRatio=0.934 E_defect/E_LN=0.2609 (geom 0.2727) dn0_MB=1.613 dn0_PE=7.074 dn0_EO=-5.815 dn0_tot=2.872 (x1e-12, supercell)
+EIG6J case=S1960000 k=45 f_GHz=2.441377 Q=2066.8 u_frac=0.0014 v_frac=0.0011 w_frac=0.9976 fracAl=0.0319 Pfrac=0.0003 defectRatio=1.379 E_defect/E_LN=0.2622 (geom 0.2727) dn0_MB=-0.910 dn0_PE=2.509 dn0_EO=4.043 dn0_tot=5.641 (x1e-12, supercell)
+EIG6J case=S1960000 k=46 f_GHz=2.448327 Q=2062.0 u_frac=0.0007 v_frac=0.0010 w_frac=0.9983 fracAl=0.0296 Pfrac=0.0002 defectRatio=1.215 E_defect/E_LN=0.2965 (geom 0.2727) dn0_MB=-0.000 dn0_PE=0.000 dn0_EO=0.000 dn0_tot=0.000 (x1e-12, supercell)
+EIG6J case=S1960000 k=47 f_GHz=2.454291 Q=2065.2 u_frac=0.9457 v_frac=0.0534 w_frac=0.0009 fracAl=0.0190 Pfrac=0.0015 defectRatio=0.455 E_defect/E_LN=0.2260 (geom 0.2727) dn0_MB=0.000 dn0_PE=0.000 dn0_EO=0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J case=S1960000 k=48 f_GHz=2.468221 Q=2057.3 u_frac=0.9712 v_frac=0.0272 w_frac=0.0015 fracAl=0.0162 Pfrac=0.0042 defectRatio=1.399 E_defect/E_LN=0.3092 (geom 0.2727) dn0_MB=-8.702 dn0_PE=1.272 dn0_EO=57.809 dn0_tot=50.379 (x1e-12, supercell)
+EIG6J case=S1960000 k=49 f_GHz=2.564856 Q=2299.9 u_frac=0.1016 v_frac=0.8981 w_frac=0.0003 fracAl=0.0407 Pfrac=0.0047 defectRatio=0.963 E_defect/E_LN=0.2349 (geom 0.2727) dn0_MB=-0.001 dn0_PE=-0.004 dn0_EO=0.006 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J case=S1960000 k=50 f_GHz=2.565404 Q=2300.5 u_frac=0.0920 v_frac=0.9076 w_frac=0.0004 fracAl=0.0403 Pfrac=0.0002 defectRatio=1.107 E_defect/E_LN=0.3105 (geom 0.2727) dn0_MB=-1.498 dn0_PE=-6.919 dn0_EO=10.748 dn0_tot=2.331 (x1e-12, supercell)
+EIG6J case=S1960000 k=51 f_GHz=2.602958 Q=2065.1 u_frac=0.0007 v_frac=0.0013 w_frac=0.9981 fracAl=0.0310 Pfrac=0.0006 defectRatio=1.197 E_defect/E_LN=0.3021 (geom 0.2727) dn0_MB=-0.470 dn0_PE=2.004 dn0_EO=1.245 dn0_tot=2.779 (x1e-12, supercell)
+EIG6J case=S1960000 k=52 f_GHz=2.608471 Q=2064.9 u_frac=0.0006 v_frac=0.0012 w_frac=0.9982 fracAl=0.0309 Pfrac=0.0009 defectRatio=1.232 E_defect/E_LN=0.2558 (geom 0.2727) dn0_MB=-0.000 dn0_PE=0.001 dn0_EO=-0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J case=S1960000 k=53 f_GHz=2.721434 Q=2287.6 u_frac=0.1081 v_frac=0.8914 w_frac=0.0005 fracAl=0.0333 Pfrac=0.0004 defectRatio=1.083 E_defect/E_LN=0.2941 (geom 0.2727) dn0_MB=0.091 dn0_PE=-6.282 dn0_EO=6.354 dn0_tot=0.163 (x1e-12, supercell)
+EIG6J case=S1960000 k=54 f_GHz=2.740102 Q=2237.4 u_frac=0.3275 v_frac=0.6718 w_frac=0.0007 fracAl=0.0358 Pfrac=0.0770 defectRatio=0.841 E_defect/E_LN=0.2155 (geom 0.2727) dn0_MB=0.001 dn0_PE=0.001 dn0_EO=0.001 dn0_tot=0.002 (x1e-12, supercell)
+EIG6J case=S1960000 k=55 f_GHz=2.759211 Q=2064.2 u_frac=0.1006 v_frac=0.0064 w_frac=0.8930 fracAl=0.0292 Pfrac=0.0169 defectRatio=1.120 E_defect/E_LN=0.2827 (geom 0.2727) dn0_MB=-2.610 dn0_PE=2.273 dn0_EO=16.970 dn0_tot=16.632 (x1e-12, supercell)
+EIG6J case=S1960000 k=56 f_GHz=2.759560 Q=2059.3 u_frac=0.8565 v_frac=0.0343 w_frac=0.1093 fracAl=0.0197 Pfrac=0.0212 defectRatio=0.852 E_defect/E_LN=0.2554 (geom 0.2727) dn0_MB=-6.516 dn0_PE=2.191 dn0_EO=46.690 dn0_tot=42.365 (x1e-12, supercell)
+EIG6J case=S1960000 k=57 f_GHz=2.759594 Q=2127.9 u_frac=0.7353 v_frac=0.2630 w_frac=0.0017 fracAl=0.0239 Pfrac=0.1738 defectRatio=0.681 E_defect/E_LN=0.2661 (geom 0.2727) dn0_MB=-0.012 dn0_PE=0.005 dn0_EO=0.083 dn0_tot=0.076 (x1e-12, supercell)
+EIG6J case=S1960000 k=58 f_GHz=2.774610 Q=2069.4 u_frac=0.0021 v_frac=0.0014 w_frac=0.9965 fracAl=0.0329 Pfrac=0.0011 defectRatio=1.193 E_defect/E_LN=0.2574 (geom 0.2727) dn0_MB=-0.000 dn0_PE=0.002 dn0_EO=0.000 dn0_tot=0.002 (x1e-12, supercell)
+EIG6J case=S1960000 k=59 f_GHz=2.887012 Q=2287.7 u_frac=0.0985 v_frac=0.9010 w_frac=0.0005 fracAl=0.0284 Pfrac=0.8204 defectRatio=1.602 E_defect/E_LN=0.3971 (geom 0.2727) dn0_MB=0.001 dn0_PE=0.000 dn0_EO=0.000 dn0_tot=0.002 (x1e-12, supercell)
+EIG6J case=S1960000 k=60 f_GHz=2.920591 Q=2069.5 u_frac=0.0007 v_frac=0.0017 w_frac=0.9976 fracAl=0.0328 Pfrac=0.0282 defectRatio=1.389 E_defect/E_LN=0.2517 (geom 0.2727) dn0_MB=-0.231 dn0_PE=0.978 dn0_EO=1.055 dn0_tot=1.801 (x1e-12, supercell)
+EIG6J case=S1960000 k=61 f_GHz=2.937554 Q=2068.7 u_frac=0.0009 v_frac=0.0016 w_frac=0.9975 fracAl=0.0326 Pfrac=0.0123 defectRatio=1.476 E_defect/E_LN=0.2967 (geom 0.2727) dn0_MB=-0.000 dn0_PE=0.001 dn0_EO=0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J case=S1960000 k=62 f_GHz=2.963634 Q=2350.4 u_frac=0.0868 v_frac=0.9129 w_frac=0.0004 fracAl=0.0609 Pfrac=0.9978 defectRatio=1.037 E_defect/E_LN=0.2826 (geom 0.2727) dn0_MB=-0.181 dn0_PE=-4.390 dn0_EO=11.207 dn0_tot=6.637 (x1e-12, supercell)
+EIG6J case=S1960000 k=63 f_GHz=3.021701 Q=2064.1 u_frac=0.9537 v_frac=0.0452 w_frac=0.0010 fracAl=0.0185 Pfrac=0.0122 defectRatio=1.425 E_defect/E_LN=0.2933 (geom 0.2727) dn0_MB=-0.000 dn0_PE=0.001 dn0_EO=-0.000 dn0_tot=0.000 (x1e-12, supercell)
+EIG6J case=S1960000 k=64 f_GHz=3.064908 Q=2074.4 u_frac=0.9190 v_frac=0.0804 w_frac=0.0006 fracAl=0.0228 Pfrac=0.0453 defectRatio=0.573 E_defect/E_LN=0.1855 (geom 0.2727) dn0_MB=-5.376 dn0_PE=5.379 dn0_EO=47.132 dn0_tot=47.135 (x1e-12, supercell)
+EIG6J case=S1960000 k=65 f_GHz=3.086287 Q=2097.5 u_frac=0.0164 v_frac=0.0983 w_frac=0.8854 fracAl=0.0358 Pfrac=0.0006 defectRatio=1.264 E_defect/E_LN=0.2697 (geom 0.2727) dn0_MB=-0.383 dn0_PE=-1.104 dn0_EO=4.890 dn0_tot=3.403 (x1e-12, supercell)
+EIG6J case=S1960000 k=66 f_GHz=3.089133 Q=2285.0 u_frac=0.1163 v_frac=0.7700 w_frac=0.1137 fracAl=0.0448 Pfrac=0.0009 defectRatio=1.188 E_defect/E_LN=0.2964 (geom 0.2727) dn0_MB=-1.483 dn0_PE=-1.967 dn0_EO=21.209 dn0_tot=17.759 (x1e-12, supercell)
+EIG6J case=S1960000 k=67 f_GHz=3.093384 Q=2067.4 u_frac=0.0010 v_frac=0.0018 w_frac=0.9972 fracAl=0.0319 Pfrac=0.0010 defectRatio=1.628 E_defect/E_LN=0.2942 (geom 0.2727) dn0_MB=0.000 dn0_PE=0.001 dn0_EO=0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J case=S1960000 k=68 f_GHz=3.115123 Q=2343.9 u_frac=0.0904 v_frac=0.9092 w_frac=0.0003 fracAl=0.0565 Pfrac=0.0247 defectRatio=0.809 E_defect/E_LN=0.2207 (geom 0.2727) dn0_MB=0.001 dn0_PE=-0.000 dn0_EO=0.001 dn0_tot=0.002 (x1e-12, supercell)
+EIG6J case=S1960000 k=69 f_GHz=3.247049 Q=2071.8 u_frac=0.0009 v_frac=0.0031 w_frac=0.9960 fracAl=0.0336 Pfrac=0.0004 defectRatio=1.002 E_defect/E_LN=0.3077 (geom 0.2727) dn0_MB=-0.172 dn0_PE=-0.083 dn0_EO=5.173 dn0_tot=4.917 (x1e-12, supercell)
+EIG6J case=S1960000 k=70 f_GHz=3.251812 Q=2074.7 u_frac=0.0014 v_frac=0.0057 w_frac=0.9929 fracAl=0.0347 Pfrac=0.0169 defectRatio=1.593 E_defect/E_LN=0.2480 (geom 0.2727) dn0_MB=0.000 dn0_PE=0.002 dn0_EO=0.000 dn0_tot=0.002 (x1e-12, supercell)
+EIG6J case=S1960000 k=71 f_GHz=3.265996 Q=2339.7 u_frac=0.0863 v_frac=0.9123 w_frac=0.0014 fracAl=0.0526 Pfrac=0.0001 defectRatio=0.942 E_defect/E_LN=0.2374 (geom 0.2727) dn0_MB=-0.394 dn0_PE=-1.373 dn0_EO=6.475 dn0_tot=4.709 (x1e-12, supercell)
+EIG6J case=S1960000 k=72 f_GHz=3.278770 Q=2323.7 u_frac=0.1056 v_frac=0.8901 w_frac=0.0043 fracAl=0.0472 Pfrac=0.0129 defectRatio=1.134 E_defect/E_LN=0.3093 (geom 0.2727) dn0_MB=-0.000 dn0_PE=0.000 dn0_EO=0.001 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J case=S1960000 k=73 f_GHz=3.294052 Q=2066.6 u_frac=0.9613 v_frac=0.0381 w_frac=0.0006 fracAl=0.0187 Pfrac=0.5696 defectRatio=1.639 E_defect/E_LN=0.3718 (geom 0.2727) dn0_MB=-6.991 dn0_PE=9.216 dn0_EO=75.808 dn0_tot=78.033 (x1e-12, supercell)
+EIG6J case=S1960000 k=74 f_GHz=3.397519 Q=2072.3 u_frac=0.0011 v_frac=0.0029 w_frac=0.9959 fracAl=0.0334 Pfrac=0.0004 defectRatio=1.453 E_defect/E_LN=0.2705 (geom 0.2727) dn0_MB=-0.115 dn0_PE=-0.438 dn0_EO=5.058 dn0_tot=4.505 (x1e-12, supercell)
+EIG6J case=S1960000 k=75 f_GHz=3.418099 Q=2084.0 u_frac=0.0251 v_frac=0.0172 w_frac=0.9577 fracAl=0.0376 Pfrac=0.1341 defectRatio=1.174 E_defect/E_LN=0.2461 (geom 0.2727) dn0_MB=0.000 dn0_PE=0.001 dn0_EO=0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J case=S1960000 k=76 f_GHz=3.421666 Q=2178.2 u_frac=0.5523 v_frac=0.4100 w_frac=0.0378 fracAl=0.0320 Pfrac=0.1437 defectRatio=0.904 E_defect/E_LN=0.2669 (geom 0.2727) dn0_MB=0.001 dn0_PE=-0.000 dn0_EO=0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J case=S1960000 k=77 f_GHz=3.443970 Q=2342.5 u_frac=0.0820 v_frac=0.9170 w_frac=0.0010 fracAl=0.0522 Pfrac=0.0006 defectRatio=1.054 E_defect/E_LN=0.2662 (geom 0.2727) dn0_MB=-0.822 dn0_PE=1.640 dn0_EO=9.061 dn0_tot=9.879 (x1e-12, supercell)
+EIG6J case=S1960000 k=78 f_GHz=3.463798 Q=2220.2 u_frac=0.4772 v_frac=0.5219 w_frac=0.0009 fracAl=0.0374 Pfrac=0.1022 defectRatio=1.050 E_defect/E_LN=0.2741 (geom 0.2727) dn0_MB=0.000 dn0_PE=-0.001 dn0_EO=0.000 dn0_tot=0.000 (x1e-12, supercell)
+EIG6J case=S1960000 k=79 f_GHz=3.550602 Q=2064.0 u_frac=0.0018 v_frac=0.0027 w_frac=0.9956 fracAl=0.0295 Pfrac=0.9153 defectRatio=2.111 E_defect/E_LN=0.3568 (geom 0.2727) dn0_MB=-0.000 dn0_PE=0.000 dn0_EO=-0.000 dn0_tot=0.000 (x1e-12, supercell)
+EIG6J case=S1960000 k=80 f_GHz=3.597602 Q=2098.5 u_frac=0.0012 v_frac=0.0064 w_frac=0.9923 fracAl=0.0462 Pfrac=0.7227 defectRatio=1.443 E_defect/E_LN=0.2600 (geom 0.2727) dn0_MB=-0.156 dn0_PE=-0.913 dn0_EO=4.085 dn0_tot=3.016 (x1e-12, supercell)
+EIG6J case=S1960000 k=81 f_GHz=3.611016 Q=2336.7 u_frac=0.0860 v_frac=0.9093 w_frac=0.0047 fracAl=0.0494 Pfrac=0.0004 defectRatio=1.198 E_defect/E_LN=0.3038 (geom 0.2727) dn0_MB=-1.404 dn0_PE=1.264 dn0_EO=13.103 dn0_tot=12.963 (x1e-12, supercell)
+EIG6J case=S1960000 k=82 f_GHz=3.614787 Q=2288.7 u_frac=0.2505 v_frac=0.7486 w_frac=0.0009 fracAl=0.0473 Pfrac=0.0031 defectRatio=0.899 E_defect/E_LN=0.2283 (geom 0.2727) dn0_MB=0.001 dn0_PE=0.000 dn0_EO=0.001 dn0_tot=0.002 (x1e-12, supercell)
+EIG6J case=S1960000 k=83 f_GHz=3.649708 Q=2130.5 u_frac=0.7771 v_frac=0.2213 w_frac=0.0016 fracAl=0.0286 Pfrac=0.0095 defectRatio=1.119 E_defect/E_LN=0.2958 (geom 0.2727) dn0_MB=0.001 dn0_PE=-0.000 dn0_EO=-0.000 dn0_tot=0.000 (x1e-12, supercell)
+EIG6J case=S1960000 k=84 f_GHz=3.679774 Q=2077.9 u_frac=0.9401 v_frac=0.0589 w_frac=0.0009 fracAl=0.0235 Pfrac=0.0261 defectRatio=0.872 E_defect/E_LN=0.2333 (geom 0.2727) dn0_MB=-4.386 dn0_PE=9.825 dn0_EO=52.523 dn0_tot=57.963 (x1e-12, supercell)
+EIG6J case=S1960000 k=85 f_GHz=3.727908 Q=2087.7 u_frac=0.0016 v_frac=0.0032 w_frac=0.9952 fracAl=0.0406 Pfrac=0.0012 defectRatio=1.474 E_defect/E_LN=0.2893 (geom 0.2727) dn0_MB=-0.046 dn0_PE=-1.466 dn0_EO=1.589 dn0_tot=0.077 (x1e-12, supercell)
+EIG6J case=S1960000 k=86 f_GHz=3.739242 Q=2093.4 u_frac=0.0015 v_frac=0.0030 w_frac=0.9955 fracAl=0.0439 Pfrac=0.0119 defectRatio=1.475 E_defect/E_LN=0.2548 (geom 0.2727) dn0_MB=-0.000 dn0_PE=0.002 dn0_EO=-0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J case=S1960000 k=87 f_GHz=3.777970 Q=2343.2 u_frac=0.0895 v_frac=0.9096 w_frac=0.0009 fracAl=0.0531 Pfrac=0.0004 defectRatio=1.024 E_defect/E_LN=0.2605 (geom 0.2727) dn0_MB=0.862 dn0_PE=1.459 dn0_EO=-0.176 dn0_tot=2.145 (x1e-12, supercell)
+EIG6J case=S1960000 k=88 f_GHz=3.792461 Q=2340.3 u_frac=0.0970 v_frac=0.9022 w_frac=0.0008 fracAl=0.0522 Pfrac=0.0004 defectRatio=1.086 E_defect/E_LN=0.2865 (geom 0.2727) dn0_MB=0.000 dn0_PE=0.000 dn0_EO=0.001 dn0_tot=0.002 (x1e-12, supercell)
+EIG6J case=S1960000 k=89 f_GHz=3.889997 Q=2098.6 u_frac=0.0021 v_frac=0.0035 w_frac=0.9943 fracAl=0.0454 Pfrac=0.0005 defectRatio=1.391 E_defect/E_LN=0.2540 (geom 0.2727) dn0_MB=0.085 dn0_PE=1.669 dn0_EO=-1.117 dn0_tot=0.637 (x1e-12, supercell)
+EIG6J case=S1960000 k=90 f_GHz=3.890128 Q=2092.1 u_frac=0.0027 v_frac=0.0035 w_frac=0.9938 fracAl=0.0429 Pfrac=0.0044 defectRatio=1.854 E_defect/E_LN=0.2984 (geom 0.2727) dn0_MB=-0.000 dn0_PE=-0.001 dn0_EO=0.002 dn0_tot=0.000 (x1e-12, supercell)
+EIG6J case=S1960000 k=91 f_GHz=3.918702 Q=2139.0 u_frac=0.7439 v_frac=0.2498 w_frac=0.0064 fracAl=0.0305 Pfrac=0.0095 defectRatio=1.588 E_defect/E_LN=0.2919 (geom 0.2727) dn0_MB=-0.002 dn0_PE=0.001 dn0_EO=0.004 dn0_tot=0.004 (x1e-12, supercell)
+EIG6J case=S1960000 k=92 f_GHz=3.936908 Q=2113.0 u_frac=0.8398 v_frac=0.1589 w_frac=0.0012 fracAl=0.0306 Pfrac=0.0095 defectRatio=0.601 E_defect/E_LN=0.2603 (geom 0.2727) dn0_MB=-4.231 dn0_PE=12.121 dn0_EO=41.024 dn0_tot=48.914 (x1e-12, supercell)
+EIG6J case=S1960000 k=93 f_GHz=3.950760 Q=2317.6 u_frac=0.1743 v_frac=0.8249 w_frac=0.0009 fracAl=0.0514 Pfrac=0.0020 defectRatio=0.993 E_defect/E_LN=0.2900 (geom 0.2727) dn0_MB=-0.699 dn0_PE=7.788 dn0_EO=21.370 dn0_tot=28.460 (x1e-12, supercell)
+EIG6J case=S1960000 k=94 f_GHz=3.957330 Q=2290.4 u_frac=0.2565 v_frac=0.7425 w_frac=0.0010 fracAl=0.0505 Pfrac=0.0002 defectRatio=1.050 E_defect/E_LN=0.2334 (geom 0.2727) dn0_MB=0.000 dn0_PE=0.002 dn0_EO=0.004 dn0_tot=0.006 (x1e-12, supercell)
+EIG6J case=S1960000 k=95 f_GHz=4.042194 Q=2101.1 u_frac=0.0037 v_frac=0.0037 w_frac=0.9926 fracAl=0.0465 Pfrac=0.0019 defectRatio=1.541 E_defect/E_LN=0.2930 (geom 0.2727) dn0_MB=-0.000 dn0_PE=0.000 dn0_EO=-0.000 dn0_tot=0.000 (x1e-12, supercell)
+EIG6J case=S1960000 k=96 f_GHz=4.048732 Q=2106.1 u_frac=0.0030 v_frac=0.0040 w_frac=0.9931 fracAl=0.0486 Pfrac=0.0005 defectRatio=1.533 E_defect/E_LN=0.2578 (geom 0.2727) dn0_MB=0.063 dn0_PE=2.210 dn0_EO=-1.999 dn0_tot=0.274 (x1e-12, supercell)
+EIG6J case=S1960000 k=97 f_GHz=4.087923 Q=2289.2 u_frac=0.2831 v_frac=0.7084 w_frac=0.0086 fracAl=0.0565 Pfrac=0.0010 defectRatio=0.803 E_defect/E_LN=0.1749 (geom 0.2727) dn0_MB=-0.001 dn0_PE=0.001 dn0_EO=0.003 dn0_tot=0.003 (x1e-12, supercell)
+EIG6J case=S1960000 k=98 f_GHz=4.100700 Q=2304.0 u_frac=0.2388 v_frac=0.7597 w_frac=0.0015 fracAl=0.0581 Pfrac=0.0011 defectRatio=0.736 E_defect/E_LN=0.1874 (geom 0.2727) dn0_MB=-0.181 dn0_PE=6.747 dn0_EO=13.285 dn0_tot=19.851 (x1e-12, supercell)
+EIG6J case=S1960000 k=99 f_GHz=4.192797 Q=2110.4 u_frac=0.0153 v_frac=0.0069 w_frac=0.9778 fracAl=0.0500 Pfrac=0.0151 defectRatio=1.715 E_defect/E_LN=0.3066 (geom 0.2727) dn0_MB=0.000 dn0_PE=0.000 dn0_EO=0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J case=S1960000 k=100 f_GHz=4.198646 Q=2166.8 u_frac=0.4312 v_frac=0.3122 w_frac=0.2566 fracAl=0.0382 Pfrac=0.0011 defectRatio=2.261 E_defect/E_LN=0.4172 (geom 0.2727) dn0_MB=-4.084 dn0_PE=7.394 dn0_EO=19.813 dn0_tot=23.123 (x1e-12, supercell)
+EIG6J case=S1960000 k=101 f_GHz=4.203630 Q=2134.9 u_frac=0.1611 v_frac=0.1144 w_frac=0.7245 fracAl=0.0482 Pfrac=0.0012 defectRatio=2.106 E_defect/E_LN=0.3195 (geom 0.2727) dn0_MB=-2.388 dn0_PE=7.449 dn0_EO=5.756 dn0_tot=10.817 (x1e-12, supercell)
+EIG6J case=S1960000 k=102 f_GHz=4.240093 Q=2168.5 u_frac=0.5485 v_frac=0.4036 w_frac=0.0479 fracAl=0.0273 Pfrac=0.0034 defectRatio=2.148 E_defect/E_LN=0.4817 (geom 0.2727) dn0_MB=0.001 dn0_PE=0.000 dn0_EO=-0.001 dn0_tot=0.000 (x1e-12, supercell)
+EIG6J case=S1960000 k=103 f_GHz=4.266575 Q=2098.9 u_frac=0.2788 v_frac=0.2306 w_frac=0.4906 fracAl=0.0186 Pfrac=0.0160 defectRatio=2.075 E_defect/E_LN=0.7500 (geom 0.2727) dn0_MB=0.001 dn0_PE=0.002 dn0_EO=-0.000 dn0_tot=0.002 (x1e-12, supercell)
+EIG6J case=S1960000 k=104 f_GHz=4.336786 Q=2207.7 u_frac=0.1674 v_frac=0.3527 w_frac=0.4799 fracAl=0.0532 Pfrac=0.0001 defectRatio=0.957 E_defect/E_LN=0.2822 (geom 0.2727) dn0_MB=-0.001 dn0_PE=0.003 dn0_EO=0.002 dn0_tot=0.004 (x1e-12, supercell)
+EIG6J case=S1960000 k=105 f_GHz=4.338757 Q=2286.6 u_frac=0.2971 v_frac=0.7019 w_frac=0.0010 fracAl=0.0477 Pfrac=0.0007 defectRatio=0.900 E_defect/E_LN=0.2513 (geom 0.2727) dn0_MB=-0.512 dn0_PE=11.253 dn0_EO=6.661 dn0_tot=17.402 (x1e-12, supercell)
+EIG6J case=S1960000 k=106 f_GHz=4.351307 Q=2137.6 u_frac=0.0109 v_frac=0.0050 w_frac=0.9841 fracAl=0.0612 Pfrac=0.0001 defectRatio=1.341 E_defect/E_LN=0.2601 (geom 0.2727) dn0_MB=-0.058 dn0_PE=-2.664 dn0_EO=8.503 dn0_tot=5.781 (x1e-12, supercell)
+EIG6J case=S1960000 k=107 f_GHz=4.358402 Q=2163.2 u_frac=0.1701 v_frac=0.2233 w_frac=0.6067 fracAl=0.0498 Pfrac=0.0028 defectRatio=0.599 E_defect/E_LN=0.3340 (geom 0.2727) dn0_MB=-0.001 dn0_PE=0.001 dn0_EO=-0.000 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J case=S1960000 k=108 f_GHz=4.463005 Q=2298.7 u_frac=0.2039 v_frac=0.6473 w_frac=0.1487 fracAl=0.0568 Pfrac=0.0001 defectRatio=1.370 E_defect/E_LN=0.3479 (geom 0.2727) dn0_MB=0.004 dn0_PE=0.126 dn0_EO=-0.060 dn0_tot=0.070 (x1e-12, supercell)
+EIG6J case=S1960000 k=109 f_GHz=4.463162 Q=2355.8 u_frac=0.1105 v_frac=0.8852 w_frac=0.0043 fracAl=0.0624 Pfrac=0.0092 defectRatio=0.834 E_defect/E_LN=0.2382 (geom 0.2727) dn0_MB=0.380 dn0_PE=8.487 dn0_EO=-4.013 dn0_tot=4.854 (x1e-12, supercell)
+EIG6J case=S1960000 k=110 f_GHz=4.486413 Q=2172.4 u_frac=0.0715 v_frac=0.0696 w_frac=0.8589 fracAl=0.0709 Pfrac=0.0035 defectRatio=1.077 E_defect/E_LN=0.2583 (geom 0.2727) dn0_MB=0.000 dn0_PE=0.001 dn0_EO=0.003 dn0_tot=0.004 (x1e-12, supercell)
+EIG6J case=S1960000 k=111 f_GHz=4.486678 Q=2165.9 u_frac=0.2612 v_frac=0.0498 w_frac=0.6891 fracAl=0.0704 Pfrac=0.0005 defectRatio=0.698 E_defect/E_LN=0.1975 (geom 0.2727) dn0_MB=-1.507 dn0_PE=4.639 dn0_EO=12.928 dn0_tot=16.060 (x1e-12, supercell)
+EIG6J case=S1960000 k=112 f_GHz=4.507804 Q=2145.2 u_frac=0.6126 v_frac=0.1058 w_frac=0.2816 fracAl=0.0443 Pfrac=0.0003 defectRatio=0.724 E_defect/E_LN=0.2554 (geom 0.2727) dn0_MB=-2.641 dn0_PE=15.504 dn0_EO=3.020 dn0_tot=15.883 (x1e-12, supercell)
+EIG6J case=S1960000 k=113 f_GHz=4.514952 Q=2189.7 u_frac=0.6456 v_frac=0.3201 w_frac=0.0343 fracAl=0.0467 Pfrac=0.0026 defectRatio=0.671 E_defect/E_LN=0.2197 (geom 0.2727) dn0_MB=0.001 dn0_PE=0.001 dn0_EO=-0.001 dn0_tot=0.001 (x1e-12, supercell)
+EIG6J case=S1960000 k=114 f_GHz=4.578451 Q=2220.1 u_frac=0.4110 v_frac=0.0333 w_frac=0.5556 fracAl=0.0877 Pfrac=0.6049 defectRatio=0.054 E_defect/E_LN=0.0009 (geom 0.2727) dn0_MB=0.000 dn0_PE=0.000 dn0_EO=-0.000 dn0_tot=0.000 (x1e-12, supercell)
+EIG6J case=S1960000 k=115 f_GHz=4.585222 Q=2218.0 u_frac=0.4039 v_frac=0.0327 w_frac=0.5634 fracAl=0.0876 Pfrac=0.0014 defectRatio=0.054 E_defect/E_LN=0.0038 (geom 0.2727) dn0_MB=-0.141 dn0_PE=-0.038 dn0_EO=2.178 dn0_tot=1.999 (x1e-12, supercell)
+EIG6J case=S1960000 k=116 f_GHz=4.594775 Q=2237.5 u_frac=0.3327 v_frac=0.1454 w_frac=0.5219 fracAl=0.0867 Pfrac=0.0202 defectRatio=1.038 E_defect/E_LN=0.0437 (geom 0.2727) dn0_MB=0.001 dn0_PE=0.001 dn0_EO=0.000 dn0_tot=0.002 (x1e-12, supercell)
+EIG6J case=S1960000 k=117 f_GHz=4.603021 Q=2248.1 u_frac=0.2102 v_frac=0.2311 w_frac=0.5586 fracAl=0.0819 Pfrac=0.0024 defectRatio=1.390 E_defect/E_LN=0.1497 (geom 0.2727) dn0_MB=0.001 dn0_PE=-0.000 dn0_EO=0.002 dn0_tot=0.002 (x1e-12, supercell)
+EIG6J case=S1960000 k=118 f_GHz=4.608273 Q=2212.0 u_frac=0.2620 v_frac=0.0283 w_frac=0.7097 fracAl=0.0868 Pfrac=0.0007 defectRatio=0.465 E_defect/E_LN=0.0886 (geom 0.2727) dn0_MB=-0.388 dn0_PE=-1.410 dn0_EO=7.212 dn0_tot=5.414 (x1e-12, supercell)
+EIG6J case=S1960000 k=119 f_GHz=4.613000 Q=2286.7 u_frac=0.0772 v_frac=0.4791 w_frac=0.4437 fracAl=0.0750 Pfrac=0.0021 defectRatio=1.536 E_defect/E_LN=0.2820 (geom 0.2727) dn0_MB=-0.002 dn0_PE=-0.001 dn0_EO=0.004 dn0_tot=0.002 (x1e-12, supercell)
+STEP6J_DONE case=S1960000
+类运行时: 403 s.
+总时间: 403 s.
+---------- 当前进度: 100 % - 完成
+Memory: 2318/5640 2326/5984

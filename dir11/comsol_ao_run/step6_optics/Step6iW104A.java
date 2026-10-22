@@ -295,7 +295,7 @@ public class Step6iW104A {
     m.component("comp1").physics("solid").create("pzm1","PiezoelectricMaterialModel",2); m.component("comp1").physics("solid").feature("pzm1").selection().named("selLN");
     m.component("comp1").multiphysics().create("pze1","PiezoelectricEffect","geom1");
     m.component("comp1").physics("es").create("ccp1","ChargeConservationPiezo",2); m.component("comp1").physics("es").feature("ccp1").selection().named("selLN");
-    Object sys=m.component("comp1").coordSystem().create("sys2","Rotated"); sS(sys,"rotationSequence","ZXZ"); sA(sys,"angle",new String[]{"90[deg]","90[deg]","0"});
+    Object sys=m.component("comp1").coordSystem().create("sys2","Rotated"); sS(sys,"method","general"); sS(sys,"rotationSequence","ZXZ"); sA(sys,"angle",new String[]{"90[deg]","90[deg]","0"}); System.out.println("SYS2 method="+m.component("comp1").coordSystem("sys2").getString("method")+" angle="+Arrays.toString(m.component("comp1").coordSystem("sys2").getStringArray("angle")));
     sS(m.component("comp1").physics("solid").feature("pzm1"),"coordinateSystem","sys2"); sS(m.component("comp1").physics("es").feature("ccp1"),"coordinateSystem","sys2");
     m.component("comp1").physics("solid").feature("pzm1").create("dmp1","Damping",2);
     m.component("comp1").physics("solid").feature("pzm1").feature("dmp1").set("DampingType","IsotropicLossFactor");
