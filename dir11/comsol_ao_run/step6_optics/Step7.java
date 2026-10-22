@@ -8,7 +8,10 @@ import java.util.Locale;
  *  comp2 (3D): piezo acoustics of a cell periodic along the waveguide (z), length LZ.
  *    U<Lz>   : fingers continuous along z, no bus bars (must reproduce the 2D FN7 result).
  *    B<Lz>   : one segment per cell: gap ZG/2 | signal bus ZB | tip gap ZT | fingers | tip gap | ground bus ZB | gap ZG/2.
- *    optional M<nm>: in-plane mesh size (default 150 nm).
+ *    optional M<nm>: in-plane mesh size (default 150 nm); Z<nm>: mesh size along z (default 600 nm);
+ *    G<nm>: segment gap ZG; b<nm>: bus width ZB; t<nm>: tip gap ZT;
+ *    T: slab etched through in the segment gap except a strip of width WK around the ridge (trench walls get no
+ *       moving-boundary term; the optical field there is negligible); W: wide driven sweep instead of eigen + narrow sweep.
  *  Optical fields inside LN use Dx/eps0/ne^2, Dy/eps0/no^2, Ez (all continuous across the LN/air interfaces). */
 public class Step7 {
   static final String PZ="D:\\COMSOL63\\Multiphysics\\data\\comsol_piezo_lib.mph";
@@ -17,29 +20,44 @@ public class Step7 {
   static final String C2="comp2";
   static final int NP=7, ID=3;
   static final int[] DEF={2,3,4};
-  static final double P_UM=1.9277, P=P_UM*1e-6, LS=NP*P, XC=(ID+0.5)*P;
-  static final double WR=1.0e-6, HLN=400e-9, HAIR=2e-6, HR=400e-9, HAL=100e-9;
-  static final double NO=2.211, NEX=2.138, N_AL=1.44, K_AL=16.0, LAM=1.55e-6, K0=2*Math.PI/LAM;
+  static final double P_UM=1.9277, P=P_UM*1e-6;
+  static double LS=NP*P, XC=(ID+0.5)*P, WR=1.0e-6, HAL=100e-9;
+  static final double HLN=400e-9, HAIR=2e-6, HR=400e-9;
+  static final double NO=2.211, NEX=2.138, LAM=1.55e-6, K0=2*Math.PI/LAM;
+  static double N_M=1.44, K_M=16.0, F0=3.21;
+  /** Shao-type section (Step6i W104): rib walls made vertical at the mean width, 4 Au fingers, pitch 0.64 um. */
+  static final String MEMS="D:\\COMSOL63\\Multiphysics\\data\\comsol_mems_lib.mph";
+  static final double S_W=10.4e-6, S_XR=2.6e-6, S_WR=(0.95e-6+2*(0.475e-6+400e-9/Math.tan(Math.toRadians(70))))/2,
+    S_XF0=5.875e-6, S_PF=0.64e-6, S_WF=0.375e-6, S_HAU=75e-9;
+  static boolean SHAO=false;
   static final double HBAR=1.054571817e-34, LA=100e-6;
-  static final double ZB=2e-6, ZT=0.5e-6, ZG=1e-6;
+  static double ZB=2e-6, ZT=0.5e-6, ZG=1e-6;
+  static final double WK=4e-6;
   static double LZ=2e-6, HXY=150e-9, HZ=600e-9;
-  static boolean BUS=false;
+  static boolean BUS=false, TR=false;
   static double[] ZP;
 
   public static void main(String[] args){
     try{
       ModelUtil.initStandalone(true);
       String cs=CASE;
-      java.util.regex.Matcher mm=java.util.regex.Pattern.compile("([UB])(\\d+)(?:M(\\d+))?(?:Z(\\d+))?(W)?").matcher(cs);
+      java.util.regex.Matcher mm=java.util.regex.Pattern.compile("(S)?([UB])(\\d+)(?:M(\\d+))?(?:Z(\\d+))?(?:G(\\d+))?(?:b(\\d+))?(?:t(\\d+))?(T)?(W)?").matcher(cs);
       if(!mm.matches()) throw new RuntimeException("unknown case "+cs);
-      BUS=mm.group(1).equals("B"); LZ=Double.parseDouble(mm.group(2))*1e-6;
-      if(mm.group(3)!=null) HXY=Double.parseDouble(mm.group(3))*1e-9;
-      if(mm.group(4)!=null) HZ=Double.parseDouble(mm.group(4))*1e-9;
-      boolean WIDE=mm.group(5)!=null;
+      SHAO=mm.group(1)!=null;
+      if(SHAO){ LS=S_W; XC=S_XR; WR=S_WR; HAL=S_HAU; N_M=0.56; K_M=11.2; F0=3.18; }
+      BUS=mm.group(2).equals("B"); LZ=Double.parseDouble(mm.group(3))*1e-6;
+      if(mm.group(4)!=null) HXY=Double.parseDouble(mm.group(4))*1e-9;
+      if(mm.group(5)!=null) HZ=Double.parseDouble(mm.group(5))*1e-9;
+      if(mm.group(6)!=null) ZG=Double.parseDouble(mm.group(6))*1e-9;
+      if(mm.group(7)!=null) ZB=Double.parseDouble(mm.group(7))*1e-9;
+      if(mm.group(8)!=null) ZT=Double.parseDouble(mm.group(8))*1e-9;
+      TR=mm.group(9)!=null;
+      boolean WIDE=mm.group(10)!=null;
+      if(TR&&!BUS) throw new RuntimeException("trench needs bus layout");
       ZP=BUS?new double[]{ZG/2,ZG/2+ZB,ZG/2+ZB+ZT,LZ-ZG/2-ZB-ZT,LZ-ZG/2-ZB,LZ-ZG/2,LZ}:new double[]{LZ};
       System.out.println("STEP7_START case="+cs);
-      System.out.println(String.format(Locale.US,"CFG7 case=%s bus=%b Lz_um=%.3f hxy_nm=%.0f hz_nm=%.0f p_um=%.6f NP=%d hR_nm=%.0f hAl_nm=%.0f ZB_um=%.2f ZT_um=%.2f ZG_um=%.2f overlap_um=%.3f zplanes_um=%s",
-        cs,BUS,LZ*1e6,HXY*1e9,HZ*1e9,P_UM,NP,HR*1e9,HAL*1e9,ZB*1e6,ZT*1e6,ZG*1e6,(BUS?ZP[3]-ZP[2]:LZ)*1e6,Arrays.toString(Arrays.stream(ZP).map(z->Math.round(z*1e9)/1e3).toArray())));
+      System.out.println(String.format(Locale.US,"CFG7 case=%s bus=%b trench=%b Lz_um=%.3f hxy_nm=%.0f hz_nm=%.0f p_um=%.6f NP=%d hR_nm=%.0f hAl_nm=%.0f shao=%b W_um=%.3f wR_um=%.3f ZB_um=%.2f ZT_um=%.2f ZG_um=%.2f overlap_um=%.3f zplanes_um=%s",
+        cs,BUS,TR,LZ*1e6,HXY*1e9,HZ*1e9,SHAO?S_PF*1e6:P_UM,NP,HR*1e9,HAL*1e9,SHAO,LS*1e6,WR*1e6,ZB*1e6,ZT*1e6,ZG*1e6,(BUS?ZP[3]-ZP[2]:LZ)*1e6,Arrays.toString(Arrays.stream(ZP).map(z->Math.round(z*1e9)/1e3).toArray())));
 
       Model m=ModelUtil.create("M7");
       build2D(m);
@@ -58,7 +76,7 @@ public class Step7 {
       TreeSet<Double> fs=new TreeSet<>();
       if(WIDE){
         mode=new double[]{Double.NaN,Double.NaN,Double.NaN};
-        for(int i=0;i<=120;i++) fs.add(Math.round((3.196+0.00025*i)*1e7)/1e7);
+        for(int i=0;i<=120;i++) fs.add(Math.round((F0-0.014+0.00025*i)*1e7)/1e7);
       }else{
         mode=eigen3(m,cs,pre);
         if(mode==null){ System.out.println("STEP7_STOP no coupled mode"); return; }
@@ -90,11 +108,8 @@ public class Step7 {
     rect(g,"airT",0,HLN,LS,HAIR);
     rect(g,"rLn",0,0,LS,HLN);
     rect(g,"rRg",XC-WR/2,HLN,WR,HR);
-    for(int c=0;c<NP;c++){
-      if(isDef(c)) continue;
-      rect(g,"rAp"+c,c*P+0.125*P,HLN,0.25*P,HAL);
-      rect(g,"rAn"+c,c*P+0.625*P,HLN,0.25*P,HAL);
-    }
+    List<double[]> pc=pieces();
+    for(int i=0;i<pc.size();i++) if(pc.get(i)[2]>0) rect(g,"rA"+i,pc.get(i)[0],HLN,pc.get(i)[1]-pc.get(i)[0],HAL);
     g.run();
     box(m,"selSlab",2,-1e-9,LS+1e-9,-1e-9,HLN+1e-9);
     box(m,"selRidge",2,XC-WR/2-1e-9,XC+WR/2+1e-9,HLN-1e-9,HLN+HR+1e-9);
@@ -130,8 +145,8 @@ public class Step7 {
     m.component("comp1").physics("ewfd").feature("weeAl").selection().named("selAl");
     Object w3=m.component("comp1").physics("ewfd").feature("weeAl");
     sS(w3,"DisplacementFieldModel","RefractiveIndex");
-    sS(w3,"n_mat","userdef"); sA(w3,"n",new String[]{""+N_AL,"0","0","0",""+N_AL,"0","0","0",""+N_AL});
-    sS(w3,"ki_mat","userdef"); sA(w3,"ki",new String[]{""+K_AL,"0","0","0",""+K_AL,"0","0","0",""+K_AL});
+    sS(w3,"n_mat","userdef"); sA(w3,"n",new String[]{""+N_M,"0","0","0",""+N_M,"0","0","0",""+N_M});
+    sS(w3,"ki_mat","userdef"); sA(w3,"ki",new String[]{""+K_M,"0","0","0",""+K_M,"0","0","0",""+K_M});
     m.component("comp1").physics("ewfd").create("sctr1","Scattering",1);
     m.component("comp1").physics("ewfd").feature("sctr1").selection().set(ia(ext));
     cpl(m,"intAll",2,null);
@@ -193,6 +208,14 @@ public class Step7 {
   // ---------------- 3D acoustics (comp2) ----------------
   static List<double[]> pieces(){
     List<double[]> r=new ArrayList<>();
+    if(SHAO){
+      for(int i=0;i<4;i++){
+        double xa=S_XF0+i*S_PF-S_WF/2;
+        r.add(new double[]{xa,xa+S_WF,i%2==0?1:2});
+        if(i<3) r.add(new double[]{xa+S_WF,xa+S_PF,0});
+      }
+      return r;
+    }
     int[][] grp={{0,DEF[0]-1},{DEF[DEF.length-1]+1,NP-1}};
     for(int[] gr:grp){
       for(int c=gr[0];c<=gr[1];c++){
@@ -215,6 +238,7 @@ public class Step7 {
     GeomSequence w=g.feature("wp1").geom();
     rect(w,"rLn",0,0,LS,HLN);
     rect(w,"rRg",XC-WR/2,HLN,WR,HR);
+    if(TR) rect(w,"rLnC",XC-WK/2,0,WK,HLN);
     List<double[]> pc=pieces();
     for(int i=0;i<pc.size();i++) rect(w,"rA"+i,pc.get(i)[0],HLN,pc.get(i)[1]-pc.get(i)[0],HAL);
     g.create("ext1","Extrude");
@@ -232,9 +256,22 @@ public class Step7 {
     double t=1e-9, yA=HLN-t, yB=HLN+HAL+t;
     box3(m,"s3Slab",3,-t,LS+t,-t,HLN+t,-t,LZ+t);
     box3(m,"s3Rg",3,XC-WR/2-t,XC+WR/2+t,HLN-t,HLN+HR+t,-t,LZ+t);
-    uni3(m,"selLN3",3,new String[]{"s3Slab","s3Rg"});
+    if(TR){
+      box3(m,"s3Tr1",3,-t,XC-WK/2+t,-t,HLN+t,-t,ZP[0]+t);
+      box3(m,"s3Tr2",3,XC+WK/2-t,LS+t,-t,HLN+t,-t,ZP[0]+t);
+      box3(m,"s3Tr3",3,-t,XC-WK/2+t,-t,HLN+t,ZP[5]-t,LZ+t);
+      box3(m,"s3Tr4",3,XC+WK/2-t,LS+t,-t,HLN+t,ZP[5]-t,LZ+t);
+      uni3(m,"s3Tr",3,new String[]{"s3Tr1","s3Tr2","s3Tr3","s3Tr4"});
+      m.component(C2).selection().create("s3SlabK","Difference");
+      m.component(C2).selection("s3SlabK").set("entitydim","3");
+      m.component(C2).selection("s3SlabK").set("add",new String[]{"s3Slab"});
+      m.component(C2).selection("s3SlabK").set("subtract",new String[]{"s3Tr"});
+      uni3(m,"selLN3",3,new String[]{"s3SlabK","s3Rg"});
+      System.out.println("TRENCH7 nTr="+e3(m,"s3Tr")+" nSlabKept="+e3(m,"s3SlabK"));
+    }else uni3(m,"selLN3",3,new String[]{"s3Slab","s3Rg"});
     List<String> sg=new ArrayList<>(), gd=new ArrayList<>();
-    double[][] span={{0.125*P,(DEF[0]-1)*P+0.875*P},{(DEF[DEF.length-1]+1)*P+0.125*P,(NP-1)*P+0.875*P}};
+    double[][] span=SHAO?new double[][]{{pc.get(0)[0],pc.get(pc.size()-1)[1]}}
+      :new double[][]{{0.125*P,(DEF[0]-1)*P+0.875*P},{(DEF[DEF.length-1]+1)*P+0.125*P,(NP-1)*P+0.875*P}};
     int k=0;
     if(BUS){
       for(double[] s:span){ box3(m,"s3SB"+k,3,s[0]-t,s[1]+t,yA,yB,ZP[0]-t,ZP[1]+t); sg.add("s3SB"+k);
@@ -258,8 +295,10 @@ public class Step7 {
     box3(m,"b3UnderRg",2,XC-WR/2-t,XC+WR/2+t,HLN-t,HLN+t,-t,LZ+t);
     box3(m,"b3RgTop",2,XC-WR/2-t,XC+WR/2+t,HLN+HR-t,HLN+HR+t,-t,LZ+t);
     dif3(m,"b3TopLN",new String[]{"b3TopAll"},new String[]{"b3UnderRg","selTerm3","selGndF3"});
-    uni3(m,"b3Top",2,new String[]{"b3TopLN","b3RgTop"});
-    box3(m,"b3Bot",2,-t,LS+t,-t,t,-t,LZ+t);
+    uni3(m,"b3TopU",2,new String[]{"b3TopLN","b3RgTop"});
+    int3(m,"b3Top",new String[]{"b3TopU","a3LN"});
+    box3(m,"b3BotAll",2,-t,LS+t,-t,t,-t,LZ+t);
+    int3(m,"b3Bot",new String[]{"b3BotAll","a3LN"});
     box3(m,"b3WL",2,XC-WR/2-t,XC-WR/2+t,HLN-t,HLN+HR+t,-t,LZ+t);
     box3(m,"b3WR",2,XC+WR/2-t,XC+WR/2+t,HLN-t,HLN+HR+t,-t,LZ+t);
     System.out.println(String.format(Locale.US,"SEL7 nLN=%d nSig=%d nGnd=%d nTerm=%d nGndF=%d nZ0=%d nZL=%d nTop=%d nBot=%d nWL=%d nWR=%d",
@@ -270,7 +309,18 @@ public class Step7 {
     Material ln=m.component(C2).material().create("matLN3","Common"); ln.selection().named("selLN3");
     copyGroup(ln,pz.material("lithium_niobate"),"def",false); copyGroup(ln,pz.material("lithium_niobate"),"StressCharge",true);
     Material al=m.component(C2).material().create("matAl3","Common"); al.selection().named("selAl3");
-    copyGroup(al,bs.material("aluminum"),"def",false); copyGroup(al,bs.material("aluminum"),"Enu",true);
+    if(SHAO){
+      Model mm=ModelUtil.load("mems",MEMS);
+      String auTag=null;
+      for(String t2:mm.material().tags()){ String lb=mm.material(t2).label(); if(t2.toLowerCase().contains("gold")||(lb!=null&&(lb.toLowerCase().contains("gold")||lb.startsWith("Au ")))){ auTag=t2; break; } }
+      if(auTag==null) throw new RuntimeException("gold not found in mems lib");
+      copyGroup(al,mm.material(auTag),"def",false);
+      if(Arrays.asList(mm.material(auTag).propertyGroup().tags()).contains("Enu")) copyGroup(al,mm.material(auTag),"Enu",true);
+      System.out.println("MAT7 metal=gold tag="+auTag);
+      ModelUtil.remove("mems");
+    }else{
+      copyGroup(al,bs.material("aluminum"),"def",false); copyGroup(al,bs.material("aluminum"),"Enu",true);
+    }
     ModelUtil.remove("pz"); ModelUtil.remove("basic");
     m.component(C2).physics().create("solid","SolidMechanics","geom2");
     m.component(C2).physics("solid").selection().named("selSolid3");
@@ -376,7 +426,7 @@ public class Step7 {
     Set<String> sb=new HashSet<>(Arrays.asList(m.sol().tags()));
     m.study().create("stdE"); m.study("stdE").create("eig","Eigenfrequency");
     m.study("stdE").feature("eig").set("neigs",BUS?"30":"12");
-    m.study("stdE").feature("eig").set("shift","3.21[GHz]");
+    m.study("stdE").feature("eig").set("shift",String.format(Locale.US,"%.3f[GHz]",F0));
     m.study("stdE").feature("eig").set("shiftactive","on");
     runStudy(m,"stdE","eig",sb);
     String zc=BUS?String.format(Locale.US,"((z>=%.10e)*(z<=%.10e))",ZP[1],ZP[4]):"1";

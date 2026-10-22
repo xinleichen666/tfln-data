@@ -28,7 +28,7 @@ def read(path):
             m = pat.match(line)
             if m:
                 data[float(m.group(1))] = (float(m.group(2)), complex(float(m.group(3)), float(m.group(4))))
-            m = re.match(r"^CFG7 case=(\S+) bus=(\S+) Lz_um=([\d.]+) hxy_nm=(\d+) hz_nm=(\d+) p_um=([\d.]+) .*hAl_nm=(\d+)", line)
+            m = re.match(r"^CFG7 case=(\S+) bus=(\S+) (?:trench=\S+ )?Lz_um=([\d.]+) hxy_nm=(\d+) hz_nm=(\d+) p_um=([\d.]+) .*hAl_nm=(\d+)", line)
             if m:
                 cfg = dict(case=m.group(1), bus=m.group(2) == "true", lz=float(m.group(3)) * 1e-6, hxy=int(m.group(4)),
                            hz=int(m.group(5)), p=float(m.group(6)) * 1e-6, t=float(m.group(7)) * 1e-9)
