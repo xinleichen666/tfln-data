@@ -10,6 +10,9 @@ import java.util.Locale;
  *    B<Lz>   : one segment per cell: gap ZG/2 | signal bus ZB | tip gap ZT | fingers | tip gap | ground bus ZB | gap ZG/2.
  *    optional M<nm>: in-plane mesh size (default 150 nm); Z<nm>: mesh size along z (default 600 nm);
  *    G<nm>: segment gap ZG; b<nm>: bus width ZB; t<nm>: tip gap ZT; P<pm>: period (F0 follows the 2D slope -1.33 GHz/um);
+ *    K<nm>[F][R]: support beams at both film edges, centred on the segment gap (z = 0), width K, length LB; far end is a PML
+ *       of length LPML (stretched along x only) or, with F, a fixed face; R adds 100 nm Al traces on the beams joined to both bus bars;
+ *       X keeps the beam geometry and mesh but leaves the beams out of all physics (mesh control);
  *    T: slab etched through in the segment gap except a strip of width WK around the ridge (trench walls get no
  *       moving-boundary term; the optical field there is negligible); W: wide driven sweep instead of eigen + narrow sweep.
  *  Optical fields inside LN use Dx/eps0/ne^2, Dy/eps0/no^2, Ez (all continuous across the LN/air interfaces). */
@@ -35,13 +38,15 @@ public class Step7 {
   static final double WK=4e-6;
   static double LZ=2e-6, HXY=150e-9, HZ=600e-9;
   static boolean BUS=false, TR=false;
+  static double WB=0, LB=6e-6, LPML=4e-6;
+  static boolean BEAM=false, FIX=false, ROUTE=false, GHOST=false;
   static double[] ZP;
 
   public static void main(String[] args){
     try{
       ModelUtil.initStandalone(true);
       String cs=CASE;
-      java.util.regex.Matcher mm=java.util.regex.Pattern.compile("(S)?([UB])(\\d+)(?:M(\\d+))?(?:Z(\\d+))?(?:G(\\d+))?(?:b(\\d+))?(?:t(\\d+))?(?:P(\\d+))?(T)?(W)?").matcher(cs);
+      java.util.regex.Matcher mm=java.util.regex.Pattern.compile("(S)?([UB])(\\d+)(?:M(\\d+))?(?:Z(\\d+))?(?:G(\\d+))?(?:b(\\d+))?(?:t(\\d+))?(?:P(\\d+))?(?:K(\\d+)(F)?(R)?(X)?)?(T)?(W)?").matcher(cs);
       if(!mm.matches()) throw new RuntimeException("unknown case "+cs);
       SHAO=mm.group(1)!=null;
       if(SHAO){ LS=S_W; XC=S_XR; WR=S_WR; HAL=S_HAU; N_M=0.56; K_M=11.2; F0=3.18; }
@@ -55,14 +60,20 @@ public class Step7 {
         if(SHAO) throw new RuntimeException("period option not for Shao-type");
         P_UM=Double.parseDouble(mm.group(9))*1e-6; P=P_UM*1e-6; LS=NP*P; XC=(ID+0.5)*P; F0=F0+1.33*(1.9277-P_UM);
       }
-      TR=mm.group(10)!=null;
-      boolean WIDE=mm.group(11)!=null;
+      if(mm.group(10)!=null){ BEAM=true; WB=Double.parseDouble(mm.group(10))*1e-9; FIX=mm.group(11)!=null; ROUTE=mm.group(12)!=null; GHOST=mm.group(13)!=null; }
+      if(GHOST&&(FIX||ROUTE)) throw new RuntimeException("X (geometry-only beams) excludes F and R");
+      TR=mm.group(14)!=null;
+      boolean WIDE=mm.group(15)!=null;
       if(TR&&!BUS) throw new RuntimeException("trench needs bus layout");
+      if(BEAM&&(SHAO||TR)) throw new RuntimeException("beams only for our layout without trench");
+      if(BEAM&&WB/2>=LZ/2) throw new RuntimeException("beam wider than cell");
+      if(ROUTE&&(!BUS||WB/2<ZG/2+ZB-1e-12)) throw new RuntimeException("routing needs bus layout and beam covering both bus bars");
       ZP=BUS?new double[]{ZG/2,ZG/2+ZB,ZG/2+ZB+ZT,LZ-ZG/2-ZB-ZT,LZ-ZG/2-ZB,LZ-ZG/2,LZ}:new double[]{LZ};
       System.out.println("STEP7_START case="+cs);
       System.out.println(String.format(Locale.US,"CFG7 case=%s bus=%b trench=%b Lz_um=%.3f hxy_nm=%.0f hz_nm=%.0f p_um=%.6f NP=%d hR_nm=%.0f hAl_nm=%.0f shao=%b W_um=%.3f wR_um=%.3f ZB_um=%.2f ZT_um=%.2f ZG_um=%.2f overlap_um=%.3f zplanes_um=%s",
         cs,BUS,TR,LZ*1e6,HXY*1e9,HZ*1e9,SHAO?S_PF*1e6:P_UM,NP,HR*1e9,HAL*1e9,SHAO,LS*1e6,WR*1e6,ZB*1e6,ZT*1e6,ZG*1e6,(BUS?ZP[3]-ZP[2]:LZ)*1e6,Arrays.toString(Arrays.stream(ZP).map(z->Math.round(z*1e9)/1e3).toArray())));
 
+      if(BEAM) System.out.println(String.format(Locale.US,"BEAM7 wb_um=%.2f lb_um=%.2f end=%s lpml_um=%.2f route=%b ghost=%b",WB*1e6,LB*1e6,FIX?"fixed":"pml",FIX?0:LPML*1e6,ROUTE,GHOST));
       Model m=ModelUtil.create("M7");
       build2D(m);
       Object[] op=optics(m,cs);
@@ -245,15 +256,21 @@ public class Step7 {
     if(TR) rect(w,"rLnC",XC-WK/2,0,WK,HLN);
     List<double[]> pc=pieces();
     for(int i=0;i<pc.size();i++) rect(w,"rA"+i,pc.get(i)[0],HLN,pc.get(i)[1]-pc.get(i)[0],HAL);
-    g.create("ext1","Extrude");
-    g.feature("ext1").set("workplane","wp1");
-    g.feature("ext1").selection("input").set(new String[]{"wp1"});
-    String[] dist=new String[ZP.length]; String[][] sc=new String[ZP.length][], dp=new String[ZP.length][]; String[] tw=new String[ZP.length];
-    for(int i=0;i<ZP.length;i++){ dist[i]=String.format(Locale.US,"%.12e",ZP[i]); sc[i]=new String[]{"1","1"}; dp[i]=new String[]{"0","0"}; tw[i]="0"; }
-    g.feature("ext1").set("distance",dist);
-    g.feature("ext1").set("scale",sc);
-    g.feature("ext1").set("displ",dp);
-    g.feature("ext1").set("twist",tw);
+    if(ROUTE){ rect(w,"rAeL",0,HLN,0.125*P,HAL); rect(w,"rAeR",(NP-1)*P+0.875*P,HLN,0.125*P,HAL); }
+    TreeSet<Double> ze=new TreeSet<>();
+    for(double z:ZP) ze.add(z);
+    if(BEAM){ ze.add(WB/2); ze.add(LZ-WB/2); }
+    List<Double> zl=new ArrayList<>();
+    for(double z:ze) if(zl.isEmpty()||z-zl.get(zl.size()-1)>1e-10) zl.add(z);
+    extrude(g,"ext1","wp1",zl,0);
+    if(BEAM){
+      List<Double> lo=new ArrayList<>(), hi=new ArrayList<>();
+      for(double z:zl){ if(z<=WB/2+1e-10) lo.add(z); if(z>LZ-WB/2+1e-10) hi.add(z-(LZ-WB/2)); }
+      beamPlane(g,"wpB0",0);
+      extrude(g,"extB0","wpB0",lo,0);
+      beamPlane(g,"wpB1",LZ-WB/2);
+      extrude(g,"extB1","wpB1",hi,0);
+    }
     g.run();
     System.out.println("GEOM7_3D nDom="+g.getNDomains()+" nBnd="+g.getNBoundaries());
 
@@ -273,6 +290,16 @@ public class Step7 {
       uni3(m,"selLN3",3,new String[]{"s3SlabK","s3Rg"});
       System.out.println("TRENCH7 nTr="+e3(m,"s3Tr")+" nSlabKept="+e3(m,"s3SlabK"));
     }else uni3(m,"selLN3",3,new String[]{"s3Slab","s3Rg"});
+    double xL=-LB-LPML-t, xR=LS+LB+LPML+t;
+    if(BEAM){
+      box3(m,"s3BmL",3,xL,t,-t,HLN+t,-t,LZ+t); box3(m,"s3BmR",3,LS-t,xR,-t,HLN+t,-t,LZ+t);
+      uni3(m,"selBeam3",3,new String[]{"s3BmL","s3BmR"});
+      uni3(m,"selLNall3",3,GHOST?new String[]{"selLN3"}:new String[]{"selLN3","selBeam3"});
+      if(!FIX){
+        box3(m,"s3PmL",3,xL,-LB+t,-t,HLN+t,-t,LZ+t); box3(m,"s3PmR",3,LS+LB-t,xR,-t,HLN+t,-t,LZ+t);
+        uni3(m,"selPML3",3,new String[]{"s3PmL","s3PmR"});
+      }
+    }else uni3(m,"selLNall3",3,new String[]{"selLN3"});
     List<String> sg=new ArrayList<>(), gd=new ArrayList<>();
     double[][] span=SHAO?new double[][]{{pc.get(0)[0],pc.get(pc.size()-1)[1]}}
       :new double[][]{{0.125*P,(DEF[0]-1)*P+0.875*P},{(DEF[DEF.length-1]+1)*P+0.125*P,(NP-1)*P+0.875*P}};
@@ -280,6 +307,13 @@ public class Step7 {
     if(BUS){
       for(double[] s:span){ box3(m,"s3SB"+k,3,s[0]-t,s[1]+t,yA,yB,ZP[0]-t,ZP[1]+t); sg.add("s3SB"+k);
                             box3(m,"s3GB"+k,3,s[0]-t,s[1]+t,yA,yB,ZP[4]-t,ZP[5]+t); gd.add("s3GB"+k); k++; }
+    }
+    if(ROUTE){
+      double[][] tr={{-LB-t,span[0][0]+t},{span[1][1]-t,LS+LB+t}};
+      for(int j=0;j<2;j++){
+        box3(m,"s3TS"+j,3,tr[j][0],tr[j][1],yA,yB,ZP[0]-t,ZP[1]+t); sg.add("s3TS"+j);
+        box3(m,"s3TG"+j,3,tr[j][0],tr[j][1],yA,yB,ZP[4]-t,ZP[5]+t); gd.add("s3TG"+j);
+      }
     }
     for(int i=0;i<pc.size();i++){
       double[] q=pc.get(i);
@@ -289,12 +323,24 @@ public class Step7 {
     uni3(m,"selSig3",3,sg.toArray(new String[0]));
     uni3(m,"selGnd3",3,gd.toArray(new String[0]));
     uni3(m,"selAl3",3,new String[]{"selSig3","selGnd3"});
-    uni3(m,"selSolid3",3,new String[]{"selLN3","selAl3"});
-    adj3(m,"a3Sig","selSig3"); adj3(m,"a3Gnd","selGnd3"); adj3(m,"a3LN","selLN3");
-    int3(m,"selTerm3",new String[]{"a3Sig","a3LN"});
-    int3(m,"selGndF3",new String[]{"a3Gnd","a3LN"});
-    box3(m,"b3Z0",2,-t,LS+t,-t,HLN+HR+t,-t,t);
-    box3(m,"b3ZL",2,-t,LS+t,-t,HLN+HR+t,LZ-t,LZ+t);
+    uni3(m,"selSolid3",3,new String[]{"selLNall3","selAl3"});
+    adj3(m,"a3Sig","selSig3"); adj3(m,"a3Gnd","selGnd3"); adj3(m,"a3LN","selLN3"); adj3(m,"a3LNall","selLNall3");
+    int3(m,"selTerm3",new String[]{"a3Sig","a3LNall"});
+    int3(m,"selGndF3",new String[]{"a3Gnd","a3LNall"});
+    double xa=BEAM?xL:-t, xb=BEAM?xR:LS+t;
+    box3(m,"b3Z0",2,xa,xb,-t,HLN+HR+t,-t,t);
+    box3(m,"b3ZL",2,xa,xb,-t,HLN+HR+t,LZ-t,LZ+t);
+    if(BEAM){
+      box3(m,"b3Z0L",2,xL,t,-t,HLN+HAL+t,-t,t); box3(m,"b3Z0R",2,LS-t,xR,-t,HLN+HAL+t,-t,t);
+      box3(m,"b3ZLL",2,xL,t,-t,HLN+HAL+t,LZ-t,LZ+t); box3(m,"b3ZLR",2,LS-t,xR,-t,HLN+HAL+t,LZ-t,LZ+t);
+      uni3(m,"b3Z0B",2,new String[]{"b3Z0L","b3Z0R"}); uni3(m,"b3ZLB",2,new String[]{"b3ZLL","b3ZLR"});
+      if(FIX){
+        box3(m,"b3FxL",2,-LB-t,-LB+t,-t,HLN+HAL+t,-t,LZ+t); box3(m,"b3FxR",2,LS+LB-t,LS+LB+t,-t,HLN+HAL+t,-t,LZ+t);
+        uni3(m,"b3Fix",2,new String[]{"b3FxL","b3FxR"});
+      }
+      System.out.println(String.format(Locale.US,"SELB7 nBeam=%d nPML=%d nZ0B=%d nZLB=%d nFix=%d",
+        e3(m,"selBeam3"),FIX?0:e3(m,"selPML3"),e3(m,"b3Z0B"),e3(m,"b3ZLB"),FIX?e3(m,"b3Fix"):0));
+    }
     box3(m,"b3TopAll",2,-t,LS+t,HLN-t,HLN+t,-t,LZ+t);
     box3(m,"b3UnderRg",2,XC-WR/2-t,XC+WR/2+t,HLN-t,HLN+t,-t,LZ+t);
     box3(m,"b3RgTop",2,XC-WR/2-t,XC+WR/2+t,HLN+HR-t,HLN+HR+t,-t,LZ+t);
@@ -310,7 +356,7 @@ public class Step7 {
     if(e3(m,"selTerm3")==0||e3(m,"selGndF3")==0||e3(m,"b3Z0")!=e3(m,"b3ZL")) throw new RuntimeException("selection mismatch 3D");
 
     Model pz=ModelUtil.load("pz",PZ); Model bs=ModelUtil.load("basic",BASIC);
-    Material ln=m.component(C2).material().create("matLN3","Common"); ln.selection().named("selLN3");
+    Material ln=m.component(C2).material().create("matLN3","Common"); ln.selection().named("selLNall3");
     copyGroup(ln,pz.material("lithium_niobate"),"def",false); copyGroup(ln,pz.material("lithium_niobate"),"StressCharge",true);
     Material al=m.component(C2).material().create("matAl3","Common"); al.selection().named("selAl3");
     if(SHAO){
@@ -329,10 +375,24 @@ public class Step7 {
     m.component(C2).physics().create("solid","SolidMechanics","geom2");
     m.component(C2).physics("solid").selection().named("selSolid3");
     m.component(C2).physics().create("es","Electrostatics","geom2");
-    m.component(C2).physics("es").selection().named("selLN3");
-    m.component(C2).physics("solid").create("pzm1","PiezoelectricMaterialModel",3); m.component(C2).physics("solid").feature("pzm1").selection().named("selLN3");
+    m.component(C2).physics("es").selection().named("selLNall3");
+    m.component(C2).physics("solid").create("pzm1","PiezoelectricMaterialModel",3); m.component(C2).physics("solid").feature("pzm1").selection().named("selLNall3");
     m.component(C2).multiphysics().create("pze1","PiezoelectricEffect","geom2");
-    m.component(C2).physics("es").create("ccp1","ChargeConservationPiezo",3); m.component(C2).physics("es").feature("ccp1").selection().named("selLN3");
+    m.component(C2).physics("es").create("ccp1","ChargeConservationPiezo",3); m.component(C2).physics("es").feature("ccp1").selection().named("selLNall3");
+    if(BEAM&&FIX){
+      m.component(C2).physics("solid").create("fix1","Fixed",2); m.component(C2).physics("solid").feature("fix1").selection().named("b3Fix");
+    }
+    if(BEAM&&!FIX&&!GHOST){
+      m.component(C2).coordSystem().create("pml1","PML");
+      m.component(C2).coordSystem("pml1").selection().named("selPML3");
+      m.component(C2).coordSystem("pml1").set("ScalingType","userDefined");
+      m.component(C2).coordSystem("pml1").set("directions","1");
+      m.component(C2).coordSystem("pml1").set("d",new String[]{String.format(Locale.US,"abs(x-%.12e[m])-%.12e[m]",LS/2,LS/2+LB),"y","z"});
+      m.component(C2).coordSystem("pml1").set("dmax",new String[]{String.format(Locale.US,"%.12e[m]",LPML),"1[m]","1[m]"});
+      m.component(C2).coordSystem("pml1").set("wavelengthSourceType","userDefined");
+      m.component(C2).coordSystem("pml1").set("typicalWavelength","1.5[um]");
+      System.out.println("PML7 ok dirs="+m.component(C2).coordSystem("pml1").getString("directions"));
+    }
     Object sys=m.component(C2).coordSystem().create("sysR","Rotated");
     sS(sys,"rotationSequence","ZXZ"); sA(sys,"angle",new String[]{"90[deg]","90[deg]","0"});
     System.out.println("SYSR angle="+Arrays.toString(m.component(C2).coordSystem("sysR").getStringArray("angle")));
@@ -366,9 +426,38 @@ public class Step7 {
     m.component(C2).mesh("mesh2").feature("ftri1").feature("sz1").set("custom","on");
     m.component(C2).mesh("mesh2").feature("ftri1").feature("sz1").set("hmaxactive",true);
     m.component(C2).mesh("mesh2").feature("ftri1").feature("sz1").set("hmax",String.format(Locale.US,"%.0f[nm]",HXY*1e9));
+    if(BEAM){
+      m.component(C2).mesh("mesh2").create("cpf1","CopyFace");
+      m.component(C2).mesh("mesh2").feature("cpf1").selection("source").named("b3Z0B");
+      m.component(C2).mesh("mesh2").feature("cpf1").selection("destination").named("b3ZLB");
+    }
     m.component(C2).mesh("mesh2").create("swe1","Sweep");
     m.component(C2).mesh("mesh2").run();
     System.out.println(String.format(Locale.US,"MESH7 n_elem=%d",m.component(C2).mesh("mesh2").getNumElem()));
+  }
+
+  static void extrude(GeomSequence g,String tag,String wp,List<Double> zs,double z0){
+    g.create(tag,"Extrude");
+    g.feature(tag).set("workplane",wp);
+    g.feature(tag).selection("input").set(new String[]{wp});
+    int n=zs.size();
+    String[] dist=new String[n]; String[][] sc=new String[n][], dp=new String[n][]; String[] tw=new String[n];
+    for(int i=0;i<n;i++){ dist[i]=String.format(Locale.US,"%.12e",zs.get(i)-z0); sc[i]=new String[]{"1","1"}; dp[i]=new String[]{"0","0"}; tw[i]="0"; }
+    g.feature(tag).set("distance",dist);
+    g.feature(tag).set("scale",sc);
+    g.feature(tag).set("displ",dp);
+    g.feature(tag).set("twist",tw);
+  }
+  /** Beam cross-section at both film edges: LN beam of length LB, then (unless FIX) a PML section LPML; optional Al trace on the beam. */
+  static void beamPlane(GeomSequence g,String tag,double z0){
+    g.create(tag,"WorkPlane");
+    g.feature(tag).set("quickplane","xy");
+    g.feature(tag).set("quickz",String.format(Locale.US,"%.12e",z0));
+    g.feature(tag).set("unite",true);
+    GeomSequence w=g.feature(tag).geom();
+    rect(w,"bL",-LB,0,LB,HLN); rect(w,"bR",LS,0,LB,HLN);
+    if(!FIX){ rect(w,"pL",-LB-LPML,0,LPML,HLN); rect(w,"pR",LS+LB,0,LPML,HLN); }
+    if(ROUTE){ rect(w,"aL",-LB,HLN,LB,HAL); rect(w,"aR",LS,HLN,LB,HAL); }
   }
 
   static void defineVars3(Model m){

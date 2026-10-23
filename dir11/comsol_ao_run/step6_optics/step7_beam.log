@@ -1,0 +1,7 @@
+BEAMSUM case=B100M250Z1500b500P1840000W f_pk=3.332641 df_MHz=+0.00 Q_drv=1931 Q_ratio=1.000 PL_peak=2.578e-06 PL_ratio=1.000 side_peaks=0 P1mm_2s5p_mW=2.85 Z=(48,-1) P1mm_10p_mW=3.45 Z=(46,40)
+BEAMSUM case=B100M250Z1500b500P1840000K2000XW f_pk=3.332641 df_MHz=+0.00 Q_drv=1931 Q_ratio=1.000 PL_peak=2.578e-06 PL_ratio=1.000 side_peaks=0 P1mm_2s5p_mW=2.85 Z=(48,-1) P1mm_10p_mW=3.45 Z=(46,40)
+BEAMSUM case=B100M250Z1500b500P1840000K2000W f_pk=3.332891 df_MHz=+0.25 Q_drv=1945 Q_ratio=1.007 PL_peak=2.850e-06 PL_ratio=1.105 side_peaks=0 P1mm_2s5p_mW=3.13 Z=(48,-7) P1mm_10p_mW=3.69 Z=(39,30)
+BEAMSUM case=B100M250Z1500b500P1840000K2000FW f_pk=3.332891 df_MHz=+0.25 Q_drv=1969 Q_ratio=1.020 PL_peak=2.858e-06 PL_ratio=1.109 side_peaks=0 P1mm_2s5p_mW=3.15 Z=(48,-8) P1mm_10p_mW=3.75 Z=(39,29)
+BEAMSUM case=B100M250Z1500b500P1840000K1000W f_pk=3.332891 df_MHz=+0.25 Q_drv=1928 Q_ratio=0.998 PL_peak=2.860e-06 PL_ratio=1.109 side_peaks=0 P1mm_2s5p_mW=3.13 Z=(49,-6) P1mm_10p_mW=3.70 Z=(39,30)
+BEAMSUM case=B100M250Z1500b500P1840000K4000W f_pk=3.332891 df_MHz=+0.25 Q_drv=1960 Q_ratio=1.015 PL_peak=2.856e-06 PL_ratio=1.108 side_peaks=0 P1mm_2s5p_mW=3.15 Z=(48,-8) P1mm_10p_mW=3.74 Z=(39,29)
+BEAMSUM case=B100M250Z1500b500P1840000K2000RW f_pk=3.332891 df_MHz=+0.25 Q_drv=1943 Q_ratio=1.006 PL_peak=2.865e-06 PL_ratio=1.111 side_peaks=0 P1mm_2s5p_mW=3.15 Z=(48,-7) P1mm_10p_mW=3.68 Z=(40,29)
