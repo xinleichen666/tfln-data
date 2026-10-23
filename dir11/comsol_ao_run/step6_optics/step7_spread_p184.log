@@ -1,0 +1,41 @@
+SPREAD7 case=B100M250Z1500b500P1840000W lz_um=100 f_pk=3.332641 r_ohm_per_m=1.522e+05 nmc=100
+BASE7S L_mm=1.0 K=10 series=2 parallel=5 f=3.332841 P_av_mW=2.891 Zt=(47.7,-3.1)
+RAND7S L_mm=1.0 series=2 sigma_MHz=0.25 P_med_mW=2.947 P_p90_mW=3.049 ratio_med=1.019 ratio_p90=1.055
+RAND7S L_mm=1.0 series=2 sigma_MHz=0.50 P_med_mW=3.190 P_p90_mW=3.468 ratio_med=1.103 ratio_p90=1.200
+RAND7S L_mm=1.0 series=2 sigma_MHz=1.00 P_med_mW=3.675 P_p90_mW=4.257 ratio_med=1.271 ratio_p90=1.473
+RAND7S L_mm=1.0 series=2 sigma_MHz=2.00 P_med_mW=4.942 P_p90_mW=6.887 ratio_med=1.710 ratio_p90=2.382
+RAND7S L_mm=1.0 series=2 sigma_MHz=4.00 P_med_mW=8.105 P_p90_mW=12.957 ratio_med=2.804 ratio_p90=4.482
+GRAD7S L_mm=1.0 series=2 span_MHz=0.50 P_av_mW=2.961 ratio=1.024 f=3.332841
+GRAD7S L_mm=1.0 series=2 span_MHz=1.00 P_av_mW=3.147 ratio=1.089 f=3.333041
+GRAD7S L_mm=1.0 series=2 span_MHz=2.00 P_av_mW=3.795 ratio=1.313 f=3.333441
+GRAD7S L_mm=1.0 series=2 span_MHz=4.00 P_av_mW=5.543 ratio=1.917 f=3.334641
+BASE7S L_mm=1.0 K=10 series=1 parallel=10 f=3.335041 P_av_mW=3.451 Zt=(42.3,37.1)
+RAND7S L_mm=1.0 series=1 sigma_MHz=0.25 P_med_mW=3.467 P_p90_mW=3.478 ratio_med=1.005 ratio_p90=1.008
+RAND7S L_mm=1.0 series=1 sigma_MHz=0.50 P_med_mW=3.519 P_p90_mW=3.575 ratio_med=1.020 ratio_p90=1.036
+RAND7S L_mm=1.0 series=1 sigma_MHz=1.00 P_med_mW=3.712 P_p90_mW=4.053 ratio_med=1.076 ratio_p90=1.174
+RAND7S L_mm=1.0 series=1 sigma_MHz=2.00 P_med_mW=4.737 P_p90_mW=6.767 ratio_med=1.373 ratio_p90=1.961
+RAND7S L_mm=1.0 series=1 sigma_MHz=4.00 P_med_mW=8.151 P_p90_mW=12.057 ratio_med=2.362 ratio_p90=3.494
+GRAD7S L_mm=1.0 series=1 span_MHz=0.50 P_av_mW=3.458 ratio=1.002 f=3.335041
+GRAD7S L_mm=1.0 series=1 span_MHz=1.00 P_av_mW=3.483 ratio=1.009 f=3.335041
+GRAD7S L_mm=1.0 series=1 span_MHz=2.00 P_av_mW=3.577 ratio=1.037 f=3.335041
+GRAD7S L_mm=1.0 series=1 span_MHz=4.00 P_av_mW=3.960 ratio=1.148 f=3.335841
+BASE7S L_mm=1.0 K=10 series=5 parallel=2 f=3.332641 P_av_mW=5.649 Zt=(269.3,-70.4)
+RAND7S L_mm=1.0 series=5 sigma_MHz=0.25 P_med_mW=5.857 P_p90_mW=6.002 ratio_med=1.037 ratio_p90=1.062
+RAND7S L_mm=1.0 series=5 sigma_MHz=0.50 P_med_mW=5.997 P_p90_mW=6.441 ratio_med=1.062 ratio_p90=1.140
+RAND7S L_mm=1.0 series=5 sigma_MHz=1.00 P_med_mW=6.791 P_p90_mW=9.446 ratio_med=1.202 ratio_p90=1.672
+RAND7S L_mm=1.0 series=5 sigma_MHz=2.00 P_med_mW=11.604 P_p90_mW=16.502 ratio_med=2.054 ratio_p90=2.921
+RAND7S L_mm=1.0 series=5 sigma_MHz=4.00 P_med_mW=20.993 P_p90_mW=33.811 ratio_med=3.716 ratio_p90=5.985
+GRAD7S L_mm=1.0 series=5 span_MHz=0.50 P_av_mW=5.968 ratio=1.056 f=3.332641
+GRAD7S L_mm=1.0 series=5 span_MHz=1.00 P_av_mW=6.614 ratio=1.171 f=3.332641
+GRAD7S L_mm=1.0 series=5 span_MHz=2.00 P_av_mW=9.232 ratio=1.634 f=3.333241
+GRAD7S L_mm=1.0 series=5 span_MHz=4.00 P_av_mW=13.964 ratio=2.472 f=3.333841
+BASE7S L_mm=2.0 K=20 series=2 parallel=10 f=3.333641 P_av_mW=1.551 Zt=(35.7,19.1)
+RAND7S L_mm=2.0 series=2 sigma_MHz=0.25 P_med_mW=1.575 P_p90_mW=1.590 ratio_med=1.016 ratio_p90=1.025
+RAND7S L_mm=2.0 series=2 sigma_MHz=0.50 P_med_mW=1.646 P_p90_mW=1.699 ratio_med=1.061 ratio_p90=1.096
+RAND7S L_mm=2.0 series=2 sigma_MHz=1.00 P_med_mW=1.866 P_p90_mW=2.033 ratio_med=1.203 ratio_p90=1.311
+RAND7S L_mm=2.0 series=2 sigma_MHz=2.00 P_med_mW=2.577 P_p90_mW=3.078 ratio_med=1.662 ratio_p90=1.985
+RAND7S L_mm=2.0 series=2 sigma_MHz=4.00 P_med_mW=3.920 P_p90_mW=5.520 ratio_med=2.528 ratio_p90=3.560
+GRAD7S L_mm=2.0 series=2 span_MHz=0.50 P_av_mW=1.571 ratio=1.013 f=3.333641
+GRAD7S L_mm=2.0 series=2 span_MHz=1.00 P_av_mW=1.615 ratio=1.041 f=3.333641
+GRAD7S L_mm=2.0 series=2 span_MHz=2.00 P_av_mW=1.769 ratio=1.141 f=3.334041
+GRAD7S L_mm=2.0 series=2 span_MHz=4.00 P_av_mW=2.205 ratio=1.422 f=3.335041

@@ -1,0 +1,18 @@
+CASE7M case=B100M250Z1500W Lz_um=100 hxy_nm=250 hz_nm=1500 n_freq=121 n_mainpeak=12 f_pk=3.216500 abs_tot=2.3322e-03 Y_Spm=(64.92,9.67) PL_peak_Wm=3.584e-06 f_best=3.216500 PL_best_Wm=3.584e-06
+MATCH7 case=B100M250Z1500W L_mm=0.1 K=1 series=1 parallel=1 f_GHz=3.216500 Z_tot_ohm=(160.4,-22.5) P_load_mW=38.14 P_source_avail_mW=53.23
+MATCH7 case=B100M250Z1500W L_mm=0.2 K=2 series=1 parallel=2 f_GHz=3.216500 Z_tot_ohm=(80.2,-11.2) P_load_mW=19.07 P_source_avail_mW=20.31
+MATCH7 case=B100M250Z1500W L_mm=0.5 K=5 series=1 parallel=5 f_GHz=3.216750 Z_tot_ohm=(37.5,3.3) P_load_mW=7.59 P_source_avail_mW=7.76
+MATCH7 case=B100M250Z1500W L_mm=1.0 K=10 series=2 parallel=5 f_GHz=3.216500 Z_tot_ohm=(64.1,-9.0) P_load_mW=3.81 P_source_avail_mW=3.90
+MATCH7 case=B100M250Z1500W L_mm=2.0 K=20 series=2 parallel=10 f_GHz=3.216750 Z_tot_ohm=(37.5,3.3) P_load_mW=1.90 P_source_avail_mW=1.94
+CASE7M case=B100M250Z1500b1000W Lz_um=100 hxy_nm=250 hz_nm=1500 n_freq=121 n_mainpeak=17 f_pk=3.216500 abs_tot=2.1420e-03 Y_Spm=(57.42,4.83) PL_peak_Wm=3.758e-06 f_best=3.214250 PL_best_Wm=3.401e-06
+MATCH7 case=B100M250Z1500b1000W L_mm=0.1 K=1 series=1 parallel=1 f_GHz=3.216500 Z_tot_ohm=(182.6,-14.5) P_load_mW=39.69 P_source_avail_mW=59.03
+MATCH7 case=B100M250Z1500b1000W L_mm=0.2 K=2 series=1 parallel=2 f_GHz=3.216750 Z_tot_ohm=(102.3,14.1) P_load_mW=18.88 P_source_avail_mW=21.59
+MATCH7 case=B100M250Z1500b1000W L_mm=0.5 K=5 series=1 parallel=5 f_GHz=3.217000 Z_tot_ohm=(47.6,15.3) P_load_mW=7.32 P_source_avail_mW=7.50
+MATCH7 case=B100M250Z1500b1000W L_mm=1.0 K=10 series=1 parallel=10 f_GHz=3.217500 Z_tot_ohm=(34.9,17.9) P_load_mW=3.65 P_source_avail_mW=3.94
+MATCH7 case=B100M250Z1500b1000W L_mm=2.0 K=20 series=2 parallel=10 f_GHz=3.217000 Z_tot_ohm=(47.6,15.3) P_load_mW=1.83 P_source_avail_mW=1.88
+CASE7M case=B100M250Z1500b500W Lz_um=100 hxy_nm=250 hz_nm=1500 n_freq=121 n_mainpeak=12 f_pk=3.216000 abs_tot=2.9028e-03 Y_Spm=(77.39,32.28) PL_peak_Wm=2.758e-06 f_best=3.215250 PL_best_Wm=2.673e-06
+MATCH7 case=B100M250Z1500b500W L_mm=0.1 K=1 series=1 parallel=1 f_GHz=3.216000 Z_tot_ohm=(119.7,-45.9) P_load_mW=30.00 P_source_avail_mW=38.74
+MATCH7 case=B100M250Z1500b500W L_mm=0.2 K=2 series=1 parallel=2 f_GHz=3.216250 Z_tot_ohm=(67.8,-8.1) P_load_mW=15.16 P_source_avail_mW=15.59
+MATCH7 case=B100M250Z1500b500W L_mm=0.5 K=5 series=1 parallel=5 f_GHz=3.216750 Z_tot_ohm=(35.1,11.3) P_load_mW=6.05 P_source_avail_mW=6.35
+MATCH7 case=B100M250Z1500b500W L_mm=1.0 K=10 series=2 parallel=5 f_GHz=3.216250 Z_tot_ohm=(54.3,-6.5) P_load_mW=3.03 P_source_avail_mW=3.05
+MATCH7 case=B100M250Z1500b500W L_mm=2.0 K=20 series=2 parallel=10 f_GHz=3.216750 Z_tot_ohm=(35.1,11.3) P_load_mW=1.51 P_source_avail_mW=1.59

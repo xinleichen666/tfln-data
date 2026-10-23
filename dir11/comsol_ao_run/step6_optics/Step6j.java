@@ -10,7 +10,8 @@ public class Step6j {
   static final String BASIC="D:\\COMSOL63\\Multiphysics\\data\\comsol_basic_material_lib.mph";
   static double P_UM=2.71043685;
   static final int NH=7;
-  static final double WR=1.0e-6, HLN=400e-9, HAIR=2e-6;
+  static final double WR=1.0e-6, HAIR=2e-6;
+  static double HLN=400e-9;
   static final double NO=2.211, NEX=2.138, N_AL=1.44, K_AL=16.0, LAM=1.55e-6;
   static final double K0=2*Math.PI/LAM;
   static double P=P_UM*1e-6;
@@ -32,19 +33,20 @@ public class Step6j {
       String cs=CASE;
       if(cs.startsWith("FN")){ FIN=true; cs=cs.substring(1); }
       if(cs.equals("SCAN")){ setup(11,5,new int[]{4,5,6},100e-9,2.71043685); SCAN=true; FLO=2.0; FHI=5.0; }
-      else if(cs.matches("N\\d+(H\\d+)?P\\d+")){
-        java.util.regex.Matcher mm=java.util.regex.Pattern.compile("N(\\d+)(?:H(\\d+))?P(\\d+)").matcher(cs); mm.matches();
+      else if(cs.matches("N\\d+(H\\d+)?(L\\d+)?P\\d+")){
+        java.util.regex.Matcher mm=java.util.regex.Pattern.compile("N(\\d+)(?:H(\\d+))?(?:L(\\d+))?P(\\d+)").matcher(cs); mm.matches();
         int np=Integer.parseInt(mm.group(1)), id=(np-1)/2;
         if(mm.group(2)!=null) HR=Double.parseDouble(mm.group(2))*1e-9;
-        setup(np,id,new int[]{id-1,id,id+1},100e-9,Double.parseDouble(mm.group(3))/1e6);
+        if(mm.group(3)!=null) HLN=Double.parseDouble(mm.group(3))*1e-9;
+        setup(np,id,new int[]{id-1,id,id+1},100e-9,Double.parseDouble(mm.group(4))/1e6);
       }
       else if(cs.startsWith("S")){ setup(11,5,new int[]{4,5,6},100e-9,Double.parseDouble(cs.substring(1))/1e6); SCAN=true; FLO=2.0; FHI=5.0; }
       else if(cs.startsWith("P")){ setup(11,5,new int[]{4,5,6},100e-9,Double.parseDouble(cs.substring(1))/1e6); }
       else throw new RuntimeException("unknown case "+cs);
       if(FIN) cs="F"+cs;
       System.out.println("STEP6J_START case="+cs+" ends="+(FIN?"free":"periodic"));
-      System.out.println(String.format(Locale.US,"CFG6J case=%s p_um=%.8f NP=%d ID=%d def=%s Ls_um=%.6f hAl_nm=%.0f nPairs=%d hLn_nm=400 ridge=1.0um x %.0fnm air=2um mesh LN30/Al10/air150 eta_s=5e-4 expect_fracAl_driven_unitscaled=%.4f partner=%.4f",
-        cs,P_UM,NP,ID,Arrays.toString(DEF),LS*1e6,HAL*1e9,NP-DEF.length,HR*1e9,FA_T_UNIT*(NP-DEF.length)/NP,FA_P_UNIT*(NP-DEF.length)/NP));
+      System.out.println(String.format(Locale.US,"CFG6J case=%s p_um=%.8f NP=%d ID=%d def=%s Ls_um=%.6f hAl_nm=%.0f nPairs=%d hLn_nm=%.0f ridge=1.0um x %.0fnm air=2um mesh LN30/Al10/air150 eta_s=5e-4 expect_fracAl_driven_unitscaled=%.4f partner=%.4f",
+        cs,P_UM,NP,ID,Arrays.toString(DEF),LS*1e6,HAL*1e9,NP-DEF.length,HLN*1e9,HR*1e9,FA_T_UNIT*(NP-DEF.length)/NP,FA_P_UNIT*(NP-DEF.length)/NP));
 
       Model m=ModelUtil.create("M6j");
       int[][] G=build(m,HR,true);

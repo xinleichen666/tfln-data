@@ -9,7 +9,7 @@ import java.util.Locale;
  *    U<Lz>   : fingers continuous along z, no bus bars (must reproduce the 2D FN7 result).
  *    B<Lz>   : one segment per cell: gap ZG/2 | signal bus ZB | tip gap ZT | fingers | tip gap | ground bus ZB | gap ZG/2.
  *    optional M<nm>: in-plane mesh size (default 150 nm); Z<nm>: mesh size along z (default 600 nm);
- *    G<nm>: segment gap ZG; b<nm>: bus width ZB; t<nm>: tip gap ZT;
+ *    G<nm>: segment gap ZG; b<nm>: bus width ZB; t<nm>: tip gap ZT; P<pm>: period (F0 follows the 2D slope -1.33 GHz/um);
  *    T: slab etched through in the segment gap except a strip of width WK around the ridge (trench walls get no
  *       moving-boundary term; the optical field there is negligible); W: wide driven sweep instead of eigen + narrow sweep.
  *  Optical fields inside LN use Dx/eps0/ne^2, Dy/eps0/no^2, Ez (all continuous across the LN/air interfaces). */
@@ -20,7 +20,7 @@ public class Step7 {
   static final String C2="comp2";
   static final int NP=7, ID=3;
   static final int[] DEF={2,3,4};
-  static final double P_UM=1.9277, P=P_UM*1e-6;
+  static double P_UM=1.9277, P=P_UM*1e-6;
   static double LS=NP*P, XC=(ID+0.5)*P, WR=1.0e-6, HAL=100e-9;
   static final double HLN=400e-9, HAIR=2e-6, HR=400e-9;
   static final double NO=2.211, NEX=2.138, LAM=1.55e-6, K0=2*Math.PI/LAM;
@@ -41,7 +41,7 @@ public class Step7 {
     try{
       ModelUtil.initStandalone(true);
       String cs=CASE;
-      java.util.regex.Matcher mm=java.util.regex.Pattern.compile("(S)?([UB])(\\d+)(?:M(\\d+))?(?:Z(\\d+))?(?:G(\\d+))?(?:b(\\d+))?(?:t(\\d+))?(T)?(W)?").matcher(cs);
+      java.util.regex.Matcher mm=java.util.regex.Pattern.compile("(S)?([UB])(\\d+)(?:M(\\d+))?(?:Z(\\d+))?(?:G(\\d+))?(?:b(\\d+))?(?:t(\\d+))?(?:P(\\d+))?(T)?(W)?").matcher(cs);
       if(!mm.matches()) throw new RuntimeException("unknown case "+cs);
       SHAO=mm.group(1)!=null;
       if(SHAO){ LS=S_W; XC=S_XR; WR=S_WR; HAL=S_HAU; N_M=0.56; K_M=11.2; F0=3.18; }
@@ -51,8 +51,12 @@ public class Step7 {
       if(mm.group(6)!=null) ZG=Double.parseDouble(mm.group(6))*1e-9;
       if(mm.group(7)!=null) ZB=Double.parseDouble(mm.group(7))*1e-9;
       if(mm.group(8)!=null) ZT=Double.parseDouble(mm.group(8))*1e-9;
-      TR=mm.group(9)!=null;
-      boolean WIDE=mm.group(10)!=null;
+      if(mm.group(9)!=null){
+        if(SHAO) throw new RuntimeException("period option not for Shao-type");
+        P_UM=Double.parseDouble(mm.group(9))*1e-6; P=P_UM*1e-6; LS=NP*P; XC=(ID+0.5)*P; F0=F0+1.33*(1.9277-P_UM);
+      }
+      TR=mm.group(10)!=null;
+      boolean WIDE=mm.group(11)!=null;
       if(TR&&!BUS) throw new RuntimeException("trench needs bus layout");
       ZP=BUS?new double[]{ZG/2,ZG/2+ZB,ZG/2+ZB+ZT,LZ-ZG/2-ZB-ZT,LZ-ZG/2-ZB,LZ-ZG/2,LZ}:new double[]{LZ};
       System.out.println("STEP7_START case="+cs);
