@@ -1,5 +1,5 @@
-TRANSM9 mesh=m from=S0 to=S0 T=1.000000 R=4.643e-27 eta_ov=1.000000 eta_E=1.000000 eta_H=1.000000 loss_dB=-0.0000 loss_ov_dB=-0.0000 rest=-4.643e-27
-TRANSM9 mesh=m from=O2 to=O2 T=1.000000 R=3.720e-22 eta_ov=1.000000 eta_E=1.000000 eta_H=1.000000 loss_dB=0.0000 loss_ov_dB=-0.0000 rest=2.220e-16
+TRANSM9 mesh=m from=S0 to=S0 T=1.000000 R=4.670e-27 eta_ov=1.000000 eta_E=1.000000 eta_H=1.000000 loss_dB=-0.0000 loss_ov_dB=-0.0000 rest=-4.670e-27
+TRANSM9 mesh=m from=O2 to=O2 T=1.000000 R=3.720e-22 eta_ov=1.000000 eta_E=1.000000 eta_H=1.000000 loss_dB=-0.0000 loss_ov_dB=-0.0000 rest=-3.720e-22
 TRANSM9 mesh=m from=SF to=S0 T=1.000000 R=4.274e-14 eta_ov=0.999999 eta_E=0.999999 eta_H=1.000000 loss_dB=0.0000 loss_ov_dB=0.0000 rest=2.028e-07
 TRANSM9 mesh=m from=S0 to=O2 T=0.994292 R=6.544e-06 eta_ov=0.999398 eta_E=0.994321 eta_H=0.994289 loss_dB=0.0249 loss_ov_dB=0.0026 rest=5.702e-03
 TRANSM9 mesh=m from=SF to=O2 T=0.994291 R=6.543e-06 eta_ov=0.999398 eta_E=0.994320 eta_H=0.994289 loss_dB=0.0249 loss_ov_dB=0.0026 rest=5.702e-03

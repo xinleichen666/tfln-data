@@ -62,5 +62,5 @@
 ## 6) 文件
 
 - `Step9Trans.java`：模型源码（默认网格）；`Step9TransF.java`：同源码，`FINE=true`（细网格、5 nm 导出间距）。
-- `post_step9_trans.py` → `step9_trans.log`（`mesh=m` 默认网格，`mesh=f` 细网格）。
+- `post_step9_trans.py` → `step9_match.log`（`mesh=m` 默认网格，`mesh=f` 细网格）。
 - 日志 `step9_Trans.log`、`step9_TransF.log`。导出的场文件（`D:\comsol_ao_run\s9tr_*.txt`，粗网格各 55 MB、细网格各 220 MB）不入库。

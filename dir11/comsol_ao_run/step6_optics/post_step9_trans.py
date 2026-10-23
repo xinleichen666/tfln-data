@@ -11,7 +11,7 @@ import sys, os, math
 import numpy as np
 
 D = r"D:\comsol_ao_run"
-OUT = os.path.join(D, "step6_optics", "step9_trans.log")
+OUT = os.path.join(D, "step6_optics", "step9_match.log")
 
 
 def load(case):
