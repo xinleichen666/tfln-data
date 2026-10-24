@@ -154,12 +154,12 @@ $L=1$ mm 信号源功率 3.26 mW（仿真）/ 5.5–17 mW（校准后）。流�
 13 & [Step 4] 接地边按“相交”选择，多选 5 条边 & 打印选中边 & 约 48 MHz 偏差 & 改精确选择并打印检查；二维/三维一致到 0.01\% \\
 14 & [6i] 坐标旋转用 \texttt{inPlane}，旋转被截断 & 张量检查与结果异常 & 第一次 Shao 校准作废 & 改 \texttt{general} 重算（提交 3e9b2b3 → fba4d2d） \\
 15 & [6h/6j] 周期超胞结果对 NP 不收敛 & NP 扫描 & 超胞结果分散 1.8 倍以上 & 用有限长模型作为基准 \\
-16 & [6j] 周期按 $f\propto1/p$ 估算 & Step 7 实算 & 估到 1.86–1.89 µm，实际应为 1.84 µm & 改用实测线性斜率 $-1.33$ MHz/nm（\texttt{summary\_step6j.md} 尚未标注） \\
+16 & [6j] 周期按 $f\propto1/p$ 估算 & Step 7 实算 & 估到 1.86–1.89 µm，实际应为 1.84 µm & 改用实测线性斜率 $-1.33$ MHz/nm（已在 \texttt{summary\_step6j.md} 加注） \\
 17 & [6b2] TM0 参考值按各向同性给出（1.7432） & 各向异性复算 & 参考值偏差，对结果影响 $<1\%$ & 更正为 1.718502 \\
 18 & [6c] 沟槽脊横向泄漏；贴铝平板无可用光模 & 光学模式计算 & 方案光学上不可行 & 改标准脊（平板 400 nm，缺陷胞 3 个） \\
 \midrule
 \multicolumn{5}{l}{\textbf{C. 后处理、单位与判定}}\\
-19 & [Step 5] 相位 $\phi/L$ 换算因子写成 $\times1000$（应 $\times10^{-3}$） & 6a 自检 & 数值偏大 $10^6$ 倍 & 6a 起改正（\texttt{postprocess\_6a.py}“修正 1”）；\texttt{summary\_step5.md} 尚未标注 \\
+19 & [Step 5] 相位 $\phi/L$ 换算因子写成 $\times1000$（应 $\times10^{-3}$） & 6a 自检 & 数值偏大 $10^6$ 倍 & 6a 起改正（\texttt{postprocess\_6a.py}“修正 1”）；已在 \texttt{summary\_step5.md} 加注并改脚本 \\
 20 & [6a/6b1] 归一化缩放错误 & 自检对照 & 旧的谐波结果无效 & 统一归一化后重算 \\
 21 & [6c] 伙伴模认错（按频率最近认模） & 用户 & 合格判断从“合格”变为“不合格” & 统一按铝中能量占比 fracAl 认模 \\
 22 & [6e] 扫描参数应填 $\beta$ 却填了别的量；首轮扫描窗口错过峰值 & 结果异常、加宽窗口 & 出现伪模，峰值漏掉 & 改为 $\beta$，扩大窗口重扫 \\
@@ -195,10 +195,11 @@ $L=1$ mm 信号源功率 3.26 mW（仿真）/ 5.5–17 mW（校准后）。流�
 \item \textbf{表述保守}：数字一律标明“仿真预测”；作废的结论在原记录中标注，不静默删除。
 \end{enumerate}
 
-\section{原记录中尚未标注的更正}
+\section{原记录的补充更正（2026 年 10 月 24 日）}
 \begin{itemize}
-\item \texttt{step5\_drive/summary\_step5.md}：$\phi/L$ 偏大 $10^6$ 倍的问题（第 19 条）未在该文件中标注，正确值以 6a 为准。
-\item \texttt{step6\_optics/summary\_step6j.md}：按 $f\propto1/p$ 估的周期 1.86–1.89 µm（第 16 条）未更正，正确值见 Step 7（1.84 µm）。
+\item \texttt{step5\_drive/summary\_step5.md}：已加注 $\phi/L$ 偏大 $10^6$ 倍（第 19 条）并给出正确值，
+例如 3.329805 GHz 处 $(2\pi/\lambda)|K_\mathrm{Tot}| = 0.356$ rad/(mm$\cdot$V)；\texttt{postprocess\_step5.py} 的换算因子已改为 $10^{-3}$。
+\item \texttt{step6\_optics/summary\_step6j.md}：已加注按 $f\propto1/p$ 估的周期 1.86–1.89 µm（第 16 条）不对，应取 Step 7 的 1.84 µm。
 \end{itemize}
 
 \end{document}
