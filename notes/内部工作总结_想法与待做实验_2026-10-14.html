@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>内部工作总结：想法与待做实验（2026-10-14）</title>
+<style>
+  @page { size: A4; margin: 14mm 15mm 14mm 15mm; }
+  html { font-size: 10.2pt; }
+  body {
+    font-family: "WenQuanYi Micro Hei", "Droid Sans Fallback", sans-serif;
+    color: #1a1a1a;
+    line-height: 1.48;
+    margin: 0;
+  }
+  h1 { font-size: 18pt; line-height: 1.3; margin: 0 0 4px; }
+  h2 { font-size: 13pt; margin: 12px 0 4px; border-bottom: 1px solid #ccc; padding-bottom: 2px; break-after: avoid; }
+  h3 { font-size: 11.2pt; margin: 9px 0 3px; break-after: avoid; }
+  table, .box { break-inside: avoid; }
+  p { margin: 6px 0; }
+  ul, ol { margin: 4px 0 8px; padding-left: 1.3em; }
+  li { margin: 2px 0; }
+  .meta { color: #444; font-size: 9.5pt; margin-bottom: 10px; }
+  .box {
+    border: 1px solid #888;
+    background: #f6f6f6;
+    padding: 8px 10px;
+    margin: 8px 0 12px;
+    font-size: 9.5pt;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 6px 0 10px; font-size: 9.2pt; }
+  th, td { border: 1px solid #bbb; padding: 4px 6px; vertical-align: top; text-align: left; }
+  th { background: #eee; }
+  code { font-family: "WenQuanYi Micro Hei Mono", monospace; font-size: 9pt; }
+  .small { font-size: 9pt; color: #333; }
+</style>
+</head>
+<body>
+
+<h1>内部工作总结：想法与待做实验</h1>
+<p class="meta">日期：2026-10-14（Asia/Shanghai） · 范围：仓库 <code>tfln-data</code> 已有工作稿 · 题目取自各稿标题 · 数字只复述各轨已写入的 <code>summary.json</code> / STATUS，本页不新算、不改结论</p>
+
+<div class="box">
+<strong>挂仓声明（与各轨原文相同，不删不改）：</strong><br />
+仿真六轨 A–F、计量稿：本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 对本方向 N/A，无自有流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。仓写完后再改 private。<br />
+移频账本、方向二：本稿仅限课题组内部：仿真与方案工作稿，实测待做，无伪造数据，Fiber-Q 未下单，无流片；不得作为公开或可引用结果；verify/ 第三方 PDF 禁止入库。仓写完后再改 private。<br />
+本 PDF 是组内索引，不是投稿件，也不是器件结果。
+</div>
+
+<h2>1. 想法</h2>
+
+<p>现在手里的是两层工作稿。一层是薄膜铌酸锂这条线上的方案：移频噪声、声学误差传递、膜厚计量，以及标准准相位匹配的频率转换预算。另一层是六条仿真轨 A–F：各自用固定种子把一个方法问题算完，用来决定哪些说法站得住、哪些必须写成负结果。两层都还没有本组实测。</p>
+
+<h3>1.1 薄膜铌酸锂这条线</h3>
+<ul>
+  <li><strong>移频噪声账本</strong>（<code>freq_shift_noise/</code>）。室温台面上看商用声光移频器的载波抑制和 Hong–Ou–Mandel 可见度账。波长锁在约 1550 nm，AOM 型号锁在 G&amp;H Fiber-Q 80 MHz。片上约 3 GHz 声模不是这次台面。文献里的偏转口频率仓纯度不等于台面可见度，插损不进可见度。</li>
+  <li><strong>声学马赫–曾德尔联合误差</strong>（<code>dir2/</code>）。把热声相位、单波导光弹重叠和联合误差传递放在一张账上。光弹重叠只在仿真里；台面只核误差公式，用商用 AOM 加光纤相位。不写双环光子分子，也不写“片上已经同时集成移频与声延迟”。</li>
+  <li><strong>膜厚计量 → SPDC 纯度上界</strong>（<code>dir1_metrology/</code>）。用计量间距和误差假设，预告自发参量下转换纯度的蒙特卡洛上界。这是方法账，不是器件设计文。主表里 10% 分位也过 0.90 的只有 5 mm、Δz = 0.04 mm 那一格（中位 0.969；10%–90% 为 0.932–0.982）。10 mm 只报分布（中位 0.906，10% 分位 0.855），不当设计点。宽度起伏 2 nm、膜厚误差 0.3 nm 是假设，不是已测值。</li>
+  <li><strong>F · 量子频率转换的畴 / 膜厚预算</strong>（<code>qfc_domain_budget/</code>）。在标准一阶准相位匹配下，看畴壁抖动、占空比、膜厚偏移怎样压低相对转换效率，并在同一组温度、周期、膜厚扫描上比较频率转换与泵浦寄生 SPDC 的 Δk 斜率。标准模型预算，不是那篇 PRL 的复现。仿真里三条扫描的斜率都没有反号，判决写「未见到」。作用长度 5.0000 mm 是对齐整数周期后的计算长度，不是推荐设计点。</li>
+</ul>
+
+<h3>1.2 仿真六轨里其余五条（Fiber-Q 对本方向 N/A）</h3>
+<ul>
+  <li><strong>A · 分块保真度核</strong>（<code>qkernel_budget/</code>）。在自造 thin-slab 上问：分块对准时，块保真度核相对 RBF 的差，会不会在分块划错或标签翻转后塌掉。不重写欺诈基准，不上量子硬件。</li>
+  <li><strong>B · QCNN–CNN 协议对照</strong>（<code>qcnn_protocol/</code>）。在无噪声态矢量模拟器上，用参数量对齐的 CNN 对照 QCNN，再做敏感性剪枝。题目是协议对照，不是“量子胜过经典”。</li>
+  <li><strong>C · 矩匹配与未见覆盖</strong>（<code>mmd_coverage/</code>）。在 N = 10、汉明重量为 5 的有效串上，用同一类 Pauli-Z 矩匹配损失训练两个模型，看损失接近时，未见有效覆盖是否仍然分开。</li>
+  <li><strong>D · Floquet SSH 临界签名</strong>（<code>floquet_crit_budget/</code>）。教科书一维两步 Floquet SSH 上，扫键无序和交错损耗，看 0 模与 π 模签名何时消失。标准模型诊断，不是 Cheng 等 Nature 实验的复现。多临界与可加对数本扫不定，不报。</li>
+  <li><strong>E · 斯格明子噪声预算</strong>（<code>skyrmion_noise/</code>）。在自定自旋–轨道纹理上，用纹理积分算斯格明子数，并和 concurrence、discord 比谁先到零。不是 Zhao 等氮化硅芯片实验的复现。斯格明子数必须是横截面斯托克斯纹理积分。</li>
+</ul>
+
+<h2>2. 各方向的题目，以及现有数据能支持什么</h2>
+<p>题目用各稿 <code>paper/main_zh.md</code> 已有标题，不另起投稿题。「能支持」只复述该稿结论里已经写下的主张。这些数据是仿真、公开锚或空着的实测格，撑到方法预算和方案账为止。</p>
+
+<h3>薄膜铌酸锂</h3>
+<ul>
+  <li><strong>题目：</strong>声光移频的频率仓纯度与 HOM 可见度上限：噪声账本（方向一工作稿）。英文副题 <em>Frequency-bin purity and HOM visibility bounds for acousto-optic frequency shifters: a room-temperature noise budget</em>。<br />
+  <strong>现有数据能支持：</strong>室温下，残余载波怎样写成频率仓纯度，以及 HOM 可见度上限对载波抑制的理论主曲线；甲类用 Shao 公开数做器件模型，乙类只锁 Shao 2019 参数，丙类在模型假设下给出可见度上限。插损只进符合计数率。自测表全是待测，所以这些数据支持的是无实测的公式账，不支持「台面已经测到可见度」。</li>
+  <li><strong>题目：</strong>同一路声驱动下的热声相位与光弹移频：联合误差传递。<br />
+  <strong>现有数据能支持：</strong>仿真给出的联合误差传递。热声效率与 Xu 的 4.03 rad/W 为同一数量级，不确定度带覆盖该锚点；相对 Shao 热声实测仍为同量级。单波导行波光弹 \(V_\pi L\approx 0.47\) V·cm，与 Shao 悬空锚、Ni 的 TFLN-on-Si 锚分平台并列。相位误差斜率约 4.0 rad/W（加热）和 1.8 rad/W（射频）。实测仍待测，所以不支持台面已核对、也不支持超过这些公开锚。</li>
+  <li><strong>题目：</strong>膜厚计量噪声预算：TFLN 上 SPDC 预告纯度上界。<br />
+  <strong>现有数据能支持：</strong>在公开晶圆迹线和自洽 TM 泵系数、以及基线假设（宽度起伏 2 nm、膜厚误差 0.3 nm）下，计量间距到纯度上界的蒙特卡洛处方。主表里中位和 10% 分位都 ≥ 0.90 的只有 5 mm、Δz = 0.04 mm（中位 0.969；0.932–0.982）。10 mm 只报分布（中位 0.906，10% 分位 0.855）。假设改成 10 nm 或 1 nm 时中位崩塌。这支持一份方法账里的上界，不支持把某一长度写成流片配方，也不支持「这是本组晶圆的测量」。</li>
+  <li><strong>题目：</strong>量子频率转换：畴误差与膜厚的标准准相位匹配预算（Bot F）。<br />
+  <strong>现有数据能支持：</strong>在这套自设标准准相位匹配模型里，畴壁抖动、占空比和膜厚偏移对相对效率 η/η₀ 的压制，以及温度、周期、膜厚三条扫描上 QFC 与泵浦寄生 SPDC 的 Δk 斜率<strong>没有反号</strong>。半效率的本扫点是 σ/Λ = 0.2200、膜厚正侧 δH ≈ 0.0020 μm。L = 5.0000 mm 只是对齐周期后的计算长度。这些数支持「本模型里未见到反向调谐」和一条相对效率曲线，不支持绝对效率、PRL 复现或推荐波导长度。</li>
+</ul>
+
+<h3>仿真轨 A–E</h3>
+<ul>
+  <li><strong>题目：</strong>分块保真度核在失配与标签噪声下的表示预算（方法·噪声预算）（Bot A）。<br />
+  <strong>现有数据能支持：</strong>在本轮自造平衡 thin-slab 上，对准的块保真度核相对 RBF 有大约 0.26–0.30 的测试准确率差；这个差是表示差异。相对真实块乘积线性基线，块保真度核没有正 gap。分块失配下相对 RBF 的差在本扫内未消失。标签翻转下，平衡套的优势在阶 3 翻转率 0.5、阶 4 翻转率 0.4 首次消失。不平衡套没有相对 RBF 的准确率优势。这些数支持一份表示预算，不支持量子加速，也不支持欺诈基准上的结果。</li>
+  <li><strong>题目：</strong>无噪声模拟器上 QCNN 与参数量对齐经典模型的协议对照（内部工作稿）（Bot B）。<br />
+  <strong>现有数据能支持：</strong>在本地 4×4 横条/对角图、无噪声态矢量、<code>numpy_statevector_v1</code> 上，8 组全参对照里 CNN 的测试准确率都更高，平均差（QCNN 减 CNN）为 −0.3385；剪到 9 参后仍是 CNN。这支持「本协议、本数据上经典对照更好」这一条负结果，不支持量子胜过经典，也不支持高能喷注分类。</li>
+  <li><strong>题目：</strong>Pauli-Z 矩匹配损失下的未见有效覆盖预算（方法·噪声预算）（Bot C）。<br />
+  <strong>现有数据能支持：</strong>在 N = 10、汉明重量为 5 的自构任务上，两个模型的匹配 MMD² 约 0.1775 时，未见有效覆盖约为 0.280 与 0.392。这支持「训练损失接近，并不单独担保未见有效覆盖」。不支持 30 量子比特、基因组数据，也不支持「硬件必不可少」。</li>
+  <li><strong>题目：</strong>Floquet SSH 边缘模在键无序与交错损耗下的噪声预算（方法·噪声预算）（Bot D）。<br />
+  <strong>现有数据能支持：</strong>在教科书两步 Floquet SSH（γ₁/π = 0.25，γ₂/π = 0.80，N = 60）上，干净极限同时有 0 模和 π 模。键无序下 π 签名先消失（W = 0.4，0 签名在 W = 1.2）。交错损耗下 π 签名在 κ = 0.5 消失，0 签名在本扫内未消失。这支持本扫上的经典数值预算，不支持「观测到相变」、Cheng 实验复现、多临界可加对数或推荐器件长度。</li>
+  <li><strong>题目：</strong>自旋–轨道斯格明子数相对 concurrence / discord 的噪声预算（方法·噪声预算）（Bot E）。<br />
+  <strong>现有数据能支持：</strong>在自定 LG 纹理上，斯格明子数由纹理积分给出，干净极限 |N<sub>sk</sub>| = 0.953。退极化下 concurrence 先到零（ξ = 0.7），然后是 discord（0.9），再是 |N<sub>sk</sub>|（1.0）。相位翻转和比特相位翻转下 discord 略先（p = 0.45），concurrence 与 |N<sub>sk</sub>| 同在 p = 0.5，p &gt; 0.5 回升。这支持本模型里「谁先到零」的预算，不支持 Zhao 芯片实验的复现、观测声明或态转移优势。</li>
+</ul>
+
+<h2>3. 仿真已经写下的判断</h2>
+<p class="small">下表只搬运各轨 STATUS 已有顶格句。sha16 是该轨 <code>data/summary.json</code> 的 sha256 前 16 位。文献器件数不进这些结果。</p>
+
+<table>
+  <thead>
+    <tr><th>轨</th><th>已写判断</th><th>sha16</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>平衡套件上 BF−RBF 为 +0.260（阶 3）/ +0.295（阶 4）；失配相对 RBF 在本扫范围内未消失；标签翻转的消失点为阶 3 的 0.5、阶 4 的 0.4。不平衡套件对准后相对 RBF 即无优势。</td>
+      <td><code>b274b15e70e3e871</code></td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>判决 <code>cnn_better_on_average</code>。全参对照平均测试准确率差（QCNN 减 CNN）约 −0.3385，8/8 次 CNN 更高。剪到 9 个参数后仍是 CNN。模拟器 <code>numpy_statevector_v1</code>，4 量子比特，无噪声。</td>
+      <td><code>a1b0a0383a3ccbe0</code></td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>N = 10，有效串 252 条。匹配损失 L* ≈ 0.1775。两模型未见有效覆盖约 0.280 与 0.392（绝对差约 0.112）。判决：损失接近但覆盖分开。</td>
+      <td><code>9afad65469a28a3f</code></td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>自设 γ₁/π = 0.25、γ₂/π = 0.80、N = 60。干净极限 n₀ = nπ = 2，体隙约 1.730 与 0.176，半链纠缠熵约 1.194。无序下 0 签名在 W = 1.2 消失，π 签名在 W = 0.4 消失。损耗下 π 签名在 κ = 0.5 消失，0 签名本扫范围内未消失。</td>
+      <td><code>4a792cb60da790cc</code></td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>干净极限 |N<sub>sk</sub>| = 0.953（有限格离散积分），concurrence 与 discord 均为 1.000。退极化扫描里谁先到零是 concurrence（ξ = 0.7；discord 在 0.9，|N<sub>sk</sub>| 在 1.0）。相位翻转与比特相位翻转里谁先到零是 discord（p = 0.45；concurrence 与 |N<sub>sk</sub>| 在 0.5）。p &gt; 0.5 会回升，照写。</td>
+      <td><code>7bda75637c864aaa</code></td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>自设 393.0 nm → 1550.0 nm，泵浦 526.4909 nm，Λ₀ = 1.6807 μm，L = 5.0000 mm（2975 个周期）。畴壁抖动使相对效率到 0.5 的本扫点为 σ/Λ = 0.2200；膜厚正侧为 δH ≈ 0.0020 μm。温度、周期、膜厚三条扫描上，QFC 与泵浦 SPDC 的 Δk 斜率都未反号。</td>
+      <td><code>3cf8304f4934b627</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>4. 待做实验</h2>
+<p>下面是各稿已经写明“实测待做”的测量项。仿真里的消失点、半效率点和纯度上界是模型内读数，不当作器件公差或合格线。文献里的效率、噪声和保真度只作对照，不填进实测格。</p>
+
+<h3>4.1 本组台面：移频噪声（<code>freq_shift_noise/</code>）</h3>
+<p>Fiber-Q 尚未下单。型号与波长已锁，自测表整格待测。测的是商用光纤 AOM，不是片上 3 GHz 声模。</p>
+<ul>
+  <li>待测：驱动频率（标称 80.0 MHz）、射频功率、移频效率、载波抑制 R<sub>c</sub>、边带抑制、光纤到光纤插损、符合计数率、HOM 可见度 V。</li>
+  <li>手册上的通断消光不是已经测到的 R<sub>c</sub>。Shao 的 3.5% 和约 31 dB 处的偏转口纯度不填进本实验格，也不叠进台面可见度曲线。</li>
+  <li>插损只进入符合计数率因子，不进入 V。纵轴没有测到之前，不把理论曲线当成实测点。</li>
+</ul>
+
+<h3>4.2 本组台面：声学误差公式（<code>dir2/</code>）</h3>
+<ul>
+  <li>台面只核误差公式：商用 AOM 加光纤相位。Fig. 3 的台面图仍是方案，没有实测点。</li>
+  <li>光弹重叠留在仿真。不在这次台面上声称片上同时集成了移频和声延迟。</li>
+  <li>与文献热光、声光数字对照时保持“同一量级 / 分平台并列”。不把计算的 VπL 写成超过某篇悬空或非悬空器件。</li>
+  <li>Fiber-Q 尚未下单，无自有流片。</li>
+</ul>
+
+<h3>4.3 膜厚计量（<code>dir1_metrology/</code>）</h3>
+<ul>
+  <li>现有厚度曲线来自公开晶圆迹线，不是本组晶圆。要做的测量是本组样品上的膜厚，并记下计量间距。</li>
+  <li>宽度起伏和膜厚测量误差在稿里是假设（基线 2 nm 与 0.3 nm）。改成 10 nm 或 1 nm 时，稿里写明 10 mm 那条故事不成立。这两项在测到之前不能写成已测值。</li>
+  <li>不把“最长 L 使中位纯度 ≥ 0.90”写成流片配方。10 mm 不当设计点。Fiber-Q 对本方向 N/A。</li>
+  <li>这套纯度上界不拿去充当频率转换效率。F 轨已写明二者物理量不同。</li>
+</ul>
+
+<h3>4.4 F：频率转换的畴、占空比与膜厚（若做器件测量）</h3>
+<p>这一项和上面的台面不是已经排上的同一套光路。稿子要求的是标准准相位匹配预算的实验检验，不是 PRL 复现。原文畴缺陷公式系数还没读到，就不能把实验写成复现。</p>
+<ul>
+  <li>在周期极化薄膜铌酸锂上，对 393 nm 到 1550 nm 的差频转换，测相对效率 η/η₀ 随畴壁抖动、占空比和膜厚偏移的变化。仿真给出的 σ/Λ = 0.2200 和 δH ≈ 0.0020 μm 是自设色散、自设长度下的本扫点，不外推成加工公差。</li>
+  <li>在同一器件上扫温度、极化周期和膜厚，分别拟合频率转换与泵浦寄生 SPDC 的 Δk 斜率，只记录是否反号。仿真三条都是「未见到」。实测同号就继续写未见到。</li>
+  <li>有效折射率要换成波导模式求解或实测模指数。现稿用的是自设色散加膜厚一次项。</li>
+  <li>绝对效率、噪声计数率和信噪比若要报，必须是这只器件的实测。文献里的 28.8%、35 个/秒、120:1 不进结果表。</li>
+  <li>不设推荐波导长度或推荐周期。不把钙离子节点、离子纠缠或器件无关密钥分发写成这项实验的交付。</li>
+</ul>
+
+<h3>4.5 A–E：只有在单独做对应实验时才需要</h3>
+<p>这五轨的 STATUS 写明 Fiber-Q 对本方向 N/A，也没有自有流片。它们不是第 4.1–4.2 节那张台面清单。若要把想法做成实测，缺的是下面这些，而且不能把第 3 节的仿真读数当成目标值。</p>
+<ul>
+  <li><strong>A。</strong> 在量子处理器或含噪声云后端上重做分块保真度核与 RBF 的对照，覆盖分块对准、分块划错和标签翻转。标签若要对接欺诈任务，用真实金融标签并自行测量；Peng 等文中的表内数字不抄进结果。不平衡数据上仿真已无优势，硬件上照写。本轮也没有做 SVM 的 C 超参搜索（C 固定为 1.0），那是计算缺口，不是台面项。</li>
+  <li><strong>B。</strong> 在含噪声设备上重做 QCNN 与参数量对齐 CNN 的对照。本轮只有无噪声 <code>numpy_statevector_v1</code>。无高能喷注数据。本轮剪枝是参数对 ⟨Z⟩ 的敏感性方差代理，不是 Elhag 文中 DEA 的逐行复现；若实验要称 DEA，需按原文算法另做。</li>
+  <li><strong>C。</strong> 在量子采样硬件上检查：损失接近时，未见有效覆盖是否仍然分开。本轮是 N = 10 的全枚举，没有 30 量子比特，也没有基因组或 SNV 数据。不把这条仿真写成“硬件必不可少”。</li>
+  <li><strong>D。</strong> 若做声学超材料或等价的 Floquet SSH，测量 0 模与 π 模签名随无序和损耗如何消失。耦合常数来自该样品的标定。本轨没有使用 Nature 文的实验耦合，仿真的 W 与 κ 不是器件指标。多临界和可加对数在仿真网格里没有定出，实验也不要先报这一项。不画推荐器件长度。</li>
+  <li><strong>E。</strong> 在两光子自旋–轨道纹理上，用横截面斯托克斯积分测斯格明子数，并与 concurrence、discord 一起，在退极化、相位翻转、比特相位翻转下记录谁先到零。不用 4×4 密度矩阵的本征值代替纹理积分。不把 Zhao 等报道的约 1.981、约 89%、纯度约 0.34 / 0.25、混合比例 0.5 当作仿真目标或本实验的合格线。不写芯片制备流程，不写态转移操作优势，不与 D 轨并成一篇。</li>
+</ul>
+
+<h2>5. 现在就能用的边界</h2>
+<ul>
+  <li>可以在组内阅读各轨 <code>paper/main_zh.md</code> 和本页。数字以对应 <code>data/summary.json</code> 为准。</li>
+  <li>可以按第 4.1 节下单并测量 Fiber-Q 台面。下单之前，自测表保持待测。</li>
+  <li>不能把任一轨写成已观测、已流片、可引用的器件结果，也不能把文献数字填进实测栏。</li>
+</ul>
+
+<p class="small">出处：根目录 <code>README.md</code>、<code>sim_tracks_汇合_STATUS.md</code>；各轨 <code>STATUS.md</code>、<code>paper/README.md</code>、<code>paper/non_claims.md</code>；另有 <code>freq_shift_noise/selftest_table.md</code>、<code>dir2/paper/non_claims.md</code>、<code>dir1_metrology/STATUS.md</code>。生成日期 2026-10-14。</p>
+
+</body>
+</html>
