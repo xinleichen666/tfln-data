@@ -1,0 +1,1597 @@
+*******************************************
+***COMSOL 6.3.0.290 progress output file***
+*******************************************
+Sun Oct 25 17:37:23 CST 2026
+COMSOL Multiphysics 6.3 (开发版本: 290) 在批处理模式下启动
+正在运行: D:\comsol_ao_run\step6_optics\Step6iCalXR30.class
+STEP6I_START case=XR30
+CFG6I case=XR30 W_um=10.000 XR_um=3.000 rib_top_um=0.950 rib_bot_um=1.2412 HS_nm=400 HR_nm=400 Au_nm=75 finger_w_um=0.300 finger_pitch_um=0.600 XF_um=5.875..7.675 eta_s=5e-4 La_um=100
+---------- 当前进度: 100 % - 正在更新选择
+Memory: 448/448 473/473
+           当前进度:   0 % - 矩形
+Memory: 454/454 479/479
+           当前进度:   6 % - 矩形 2
+Memory: 455/455 479/479
+-          当前进度:  12 % - 多边形
+-          当前进度:  18 % - 矩形 3
+Memory: 457/457 479/479
+--         当前进度:  24 % - 矩形 1
+--         当前进度:  29 % - 矩形 2a
+---        当前进度:  35 % - 矩形 3a
+----       当前进度:  41 % - 形成联合体
+---------  当前进度:  91 % - 解析域和空区域
+---------- 当前进度: 100 % - 正在更新选择
+---------- 当前进度: 100 % - 正在创建可视化网格
+Memory: 460/460 485/485
+GEOM6I nDom=7 nLN=2(exp 2) nAu=4(exp 4) nTerm=2 nGnd=2 nTop=7 nBot=1 nWallL=1 nWallR=1 nEndL=1 nEndR=1 nExt=4
+MAT6I gold tag=au_-_gold label=Au - Gold groups=[def, Enu]
+SYS2 method=general angle=[90[deg], 90[deg], 0]
+顶点单元数：28
+边界单元数：1259
+-----      当前进度:  51 % - 提高单元质量
+Memory: 1000/1014 1028/1042
+单元数：32278
+最小单元质量：0.5506
+---------- 当前进度: 100 % - 正在定型网格
+Memory: 994/1014 1023/1042
+NUMELEM6I n_elem=32278
+----       当前进度:  47 % - 生成方程
+Memory: 1022/1031 1044/1053
+------     当前进度:  60 % - 生成方程
+Memory: 1028/1039 1051/1061
+---        当前进度:  39 % - 生成方程
+Memory: 1033/1046 1055/1067
+-----      当前进度:  54 % - 生成方程
+Memory: 1031/1046 1053/1067
+<---- 研究 1/解 1 (sol1) 中的“编译方程: 模式分析” -------------------------------------------
+开始于 2026年10月25日 下午5:37:38。
+几何形函数: 二次巧凑边点单元
+在 AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD 上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 6 个内核）。
+可用内存：32.37 GB。
+           当前进度:   0 % - 生成方程
+Memory: 1040/1046 1060/1067
+           当前进度:   3 % - 编译方程: 模式分析
+Memory: 1039/1058 1055/1080
+           当前进度:   3 % - 正在创建可视化网格
+Memory: 1064/1065 1081/1081
+时间：2。
+物理内存: 1.07 GB
+虚拟内存: 1.08 GB
+结束时间：2026年10月25日 下午5:37:40。
+----- 研究 1/解 1 (sol1) 中的“编译方程: 模式分析” ------------------------------------------>
+<---- 研究 1/解 1 (sol1) 中的“因变量 1” ------------------------------------------------
+开始于 2026年10月25日 下午5:37:40。
+           当前进度:   3 % - 因变量 1
+Memory: 1129/1130 1146/1147
+求解时间：0 s。
+物理内存: 1.13 GB
+虚拟内存: 1.15 GB
+结束时间：2026年10月25日 下午5:37:40。
+----- 研究 1/解 1 (sol1) 中的“因变量 1” ----------------------------------------------->
+<---- 研究 1/解 1 (sol1) 中的“特征值求解器 1” ---------------------------------------------
+开始于 2026年10月25日 下午5:37:40。
+特征值求解器
+求解的自由度数：226395。
+           当前进度:   5 % - 组装矩阵
+Memory: 1425/1442 1488/1531
+找到非对称矩阵。
+缩放因变量：
+电场 （空间坐标系） (comp1.E): 1
+已使用正交零空间函数。
+           当前进度:   5 % - 矩阵分解
+Memory: 1581/1619 1666/1682
+非对称特征值求解器
+Iter      ErrEst  Nconv
+           当前进度:   5 % - 求解线性方程组
+Memory: 2246/2246 2415/2419
+   1       0.044      4
+----       当前进度:  43 % - 求解线性方程组
+Memory: 2201/2252 2368/2425
+   2     0.00093      6
+------     当前进度:  62 % - 求解线性方程组
+Memory: 2238/2252 2408/2425
+   3     5.7e-07     10
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 2059/2252 2219/2425
+34 线性方程组的解。
+34 矩阵乘法。
+30 重正交化。
+求解时间：13 s。
+物理内存: 2.25 GB
+虚拟内存: 2.42 GB
+结束时间：2026年10月25日 下午5:37:53。
+----- 研究 1/解 1 (sol1) 中的“特征值求解器 1” -------------------------------------------->
+STUDY stdO1 sol=sol1 dataset=ds_stdO1 neigs=10 shift_neff=1.95
+MODE6I k=0 neff_re=1.772991 neff_im=-7.8317e-04 dBcm=275.7570 TEfrac=0.9049 ribFrac=0.1095
+MODE6I k=1 neff_re=1.785001 neff_im=-4.2190e-04 dBcm=148.5528 TEfrac=0.9482 ribFrac=0.0427
+MODE6I k=2 neff_re=1.801223 neff_im=-1.3424e-03 dBcm=472.6695 TEfrac=0.9180 ribFrac=0.1105
+MODE6I k=3 neff_re=1.808579 neff_im=-4.6522e-04 dBcm=163.8040 TEfrac=0.9392 ribFrac=0.2754
+MODE6I k=4 neff_re=1.825291 neff_im=-3.1820e-03 dBcm=1120.3949 TEfrac=0.9148 ribFrac=0.0023
+MODE6I k=5 neff_re=1.941851 neff_im=-1.3496e-09 dBcm=0.0005 TEfrac=0.9422 ribFrac=0.9577
+MODE6I k=6 neff_re=1.949522 neff_im=-1.2105e-11 dBcm=0.0000 TEfrac=0.0134 ribFrac=0.9851
+MODE6I k=7 neff_re=2.065292 neff_im=-1.4321e-02 dBcm=5042.3722 TEfrac=0.3353 ribFrac=0.0000
+MODE6I k=8 neff_re=2.086512 neff_im=-1.3343e-02 dBcm=4698.1875 TEfrac=0.2748 ribFrac=0.0000
+MODE6I k=9 neff_re=2.110145 neff_im=-1.2410e-02 dBcm=4369.6346 TEfrac=0.2072 ribFrac=0.0000
+----       当前进度:  47 % - 生成方程
+Memory: 1194/2252 1235/2425
+------     当前进度:  60 % - 生成方程
+Memory: 1198/2252 1238/2425
+---        当前进度:  39 % - 生成方程
+Memory: 1203/2252 1248/2425
+-----      当前进度:  54 % - 生成方程
+Memory: 1211/2252 1251/2425
+<---- 研究 2/解 2 (sol2) 中的“编译方程: 模式分析” -------------------------------------------
+开始于 2026年10月25日 下午5:37:55。
+几何形函数: 二次巧凑边点单元
+在 AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD 上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 6 个内核）。
+可用内存：32.37 GB。
+           当前进度:   0 % - 生成方程
+Memory: 1213/2252 1254/2425
+           当前进度:   3 % - 编译方程: 模式分析
+Memory: 1230/2252 1271/2425
+           当前进度:   3 % - 正在创建可视化网格
+Memory: 1226/2252 1267/2425
+时间：1。
+物理内存: 1.24 GB
+虚拟内存: 1.28 GB
+结束时间：2026年10月25日 下午5:37:56。
+----- 研究 2/解 2 (sol2) 中的“编译方程: 模式分析” ------------------------------------------>
+<---- 研究 2/解 2 (sol2) 中的“因变量 1” ------------------------------------------------
+开始于 2026年10月25日 下午5:37:56。
+           当前进度:   3 % - 因变量 1
+Memory: 1294/2252 1336/2425
+求解时间：0 s。
+物理内存: 1.3 GB
+虚拟内存: 1.34 GB
+结束时间：2026年10月25日 下午5:37:56。
+----- 研究 2/解 2 (sol2) 中的“因变量 1” ----------------------------------------------->
+<---- 研究 2/解 2 (sol2) 中的“特征值求解器 1” ---------------------------------------------
+开始于 2026年10月25日 下午5:37:56。
+特征值求解器
+求解的自由度数：226395。
+           当前进度:   5 % - 组装矩阵
+Memory: 1555/2252 1604/2425
+找到非对称矩阵。
+缩放因变量：
+电场 （空间坐标系） (comp1.E): 1
+已使用正交零空间函数。
+           当前进度:   5 % - 矩阵分解
+Memory: 1657/2252 1785/2425
+非对称特征值求解器
+Iter      ErrEst  Nconv
+           当前进度:   5 % - 求解线性方程组
+Memory: 2360/2360 2515/2520
+   1           0      1
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 1502/2367 1558/2527
+20 线性方程组的解。
+20 矩阵乘法。
+19 重正交化。
+求解时间：8 s。
+物理内存: 2.37 GB
+虚拟内存: 2.53 GB
+结束时间：2026年10月25日 下午5:38:05。
+----- 研究 2/解 2 (sol2) 中的“特征值求解器 1” -------------------------------------------->
+STUDY stdO2 sol=sol2 dataset=ds_stdO2 neigs=1 shift_neff=1.941851
+SOLOPT6I case=XR30 tag=sol2 neff=1.94185099 neff_im=-1.3496e-09 dBcm=0.0005 TEfrac=0.9422 ribFrac=0.9577 same_as_pick=true P=2.19196248e-12 W/m
+<---- 研究 1/解 1 (sol1) 中的“编译方程: 模式分析 (2)” ---------------------------------------
+开始于 2026年10月25日 下午5:38:05。
+几何形函数: 二次巧凑边点单元
+           当前进度:   0 % - 生成方程
+Memory: 1369/2367 1407/2527
+---------- 当前进度: 100 % - 解 1
+Memory: 1387/2367 1425/2527
+---------- 当前进度: 100 % - 正在创建可视化网格
+Memory: 1385/2367 1423/2527
+时间：1。
+物理内存: 1.39 GB
+虚拟内存: 1.43 GB
+结束时间：2026年10月25日 下午5:38:06。
+----- 研究 1/解 1 (sol1) 中的“编译方程: 模式分析 (2)” -------------------------------------->
+<---- 研究 2/解 2 (sol2) 中的“编译方程: 模式分析 (2)” ---------------------------------------
+开始于 2026年10月25日 下午5:38:06。
+几何形函数: 二次巧凑边点单元
+           当前进度:   0 % - 生成方程
+Memory: 1400/2367 1439/2527
+---------- 当前进度: 100 % - 解 2
+Memory: 1415/2367 1468/2527
+---------- 当前进度: 100 % - 正在创建可视化网格
+Memory: 1420/2367 1473/2527
+时间：1。
+物理内存: 1.42 GB
+虚拟内存: 1.47 GB
+结束时间：2026年10月25日 下午5:38:08。
+----- 研究 2/解 2 (sol2) 中的“编译方程: 模式分析 (2)” -------------------------------------->
+ORIENT6I es.epsilonrxx n/a
+ORIENT6I es.epsilonryy n/a
+ORIENT6I es.epsilonrzz n/a
+ORIENT6I solid.epsilonrSxx n/a
+ORIENT6I solid.epsilonrSyy n/a
+----       当前进度:  47 % - 生成方程
+Memory: 1431/2367 1480/2527
+------     当前进度:  60 % - 生成方程
+Memory: 1430/2367 1479/2527
+---        当前进度:  39 % - 生成方程
+Memory: 1431/2367 1480/2527
+-----      当前进度:  54 % - 生成方程
+Memory: 1412/2367 1466/2527
+STUDY stdE sol=sol3 neigs=100 shift=2.5GHz (term1 off, term edges grounded)
+           当前进度:   1 % - 生成方程
+Memory: 1405/2367 1455/2527
+           当前进度:   2 % - 生成方程
+Memory: 1418/2367 1468/2527
+           当前进度:   3 % - 生成方程
+Memory: 1417/2367 1467/2527
+<---- 研究/解 3 (sol3) 中的“编译方程: 特征频率” ---------------------------------------------
+开始于 2026年10月25日 下午5:38:11。
+几何形函数: 二次巧凑边点单元
+在 AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD 上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 6 个内核）。
+可用内存：32.37 GB。
+           当前进度:   5 % - 编译方程: 特征频率
+Memory: 1434/2367 1480/2527
+           当前进度:   5 % - 正在创建可视化网格
+Memory: 1439/2367 1485/2527
+时间：1。
+物理内存: 1.44 GB
+虚拟内存: 1.49 GB
+结束时间：2026年10月25日 下午5:38:12。
+----- 研究/解 3 (sol3) 中的“编译方程: 特征频率” -------------------------------------------->
+<---- 研究/解 3 (sol3) 中的“因变量 1” --------------------------------------------------
+开始于 2026年10月25日 下午5:38:12。
+           当前进度:   5 % - 因变量 1
+Memory: 1424/2367 1463/2527
+求解时间：0 s。
+物理内存: 1.44 GB
+虚拟内存: 1.49 GB
+结束时间：2026年10月25日 下午5:38:12。
+----- 研究/解 3 (sol3) 中的“因变量 1” ------------------------------------------------->
+<---- 研究/解 3 (sol3) 中的“特征值求解器 1” -----------------------------------------------
+开始于 2026年10月25日 下午5:38:12。
+特征值求解器
+求解的自由度数：130000。
+           当前进度:   8 % - 
+Memory: 1630/2367 1673/2527
+找到对称矩阵。
+缩放因变量：
+位移场 (comp1.u): 7.7e-11
+电势 (comp1.V): 1
+已使用正交零空间函数。
+           当前进度:   8 % - 矩阵分解
+Memory: 1714/2367 1779/2527
+非对称特征值求解器
+Iter      ErrEst  Nconv
+           当前进度:   8 % - 求解线性方程组
+Memory: 2250/2367 2370/2527
+   1     1.5e-22    100
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 2252/2367 2371/2527
+201 线性方程组的解。
+201 矩阵乘法。
+199 重正交化。
+求解时间：44 s。
+物理内存: 2.58 GB
+虚拟内存: 2.71 GB
+结束时间：2026年10月25日 下午5:38:57。
+----- 研究/解 3 (sol3) 中的“特征值求解器 1” ---------------------------------------------->
+EIG6I case=XR30 k=0 f_GHz=0.000000 Q=0.0 dn0_MB=182.621 dn0_PE=0.000 dn0_EO=0.000 dn0_tot=182.621 (x1e-12) VpiL_S10_Vcm=0.00000 u_frac=0.4058 v_frac=0.5776 w_frac=0.0166 fracAu=0.0273 E_rib/E_LN=0.0001
+EIG6I case=XR30 k=1 f_GHz=0.000000 Q=0.0 dn0_MB=161.211 dn0_PE=-0.000 dn0_EO=-0.000 dn0_tot=161.211 (x1e-12) VpiL_S10_Vcm=0.00000 u_frac=0.4269 v_frac=0.5562 w_frac=0.0169 fracAu=0.0296 E_rib/E_LN=-0.0022
+EIG6I case=XR30 k=2 f_GHz=0.000000 Q=0.0 dn0_MB=4.069 dn0_PE=0.000 dn0_EO=-0.000 dn0_tot=4.069 (x1e-12) VpiL_S10_Vcm=0.00000 u_frac=0.0017 v_frac=0.0004 w_frac=0.9979 fracAu=0.0045 E_rib/E_LN=0.0560
+EIG6I case=XR30 k=3 f_GHz=0.000000 Q=0.0 dn0_MB=157.208 dn0_PE=0.000 dn0_EO=-0.000 dn0_tot=157.208 (x1e-12) VpiL_S10_Vcm=0.00000 u_frac=0.0137 v_frac=0.9828 w_frac=0.0035 fracAu=0.0234 E_rib/E_LN=0.0219
+EIG6I case=XR30 k=4 f_GHz=0.028138 Q=2035.0 dn0_MB=-0.097 dn0_PE=0.873 dn0_EO=1.322 dn0_tot=2.097 (x1e-12) VpiL_S10_Vcm=0.01937 u_frac=0.0126 v_frac=0.9874 w_frac=0.0000 fracAu=0.0129 E_rib/E_LN=0.0160
+EIG6I case=XR30 k=5 f_GHz=0.075158 Q=2051.9 dn0_MB=-0.303 dn0_PE=1.818 dn0_EO=3.541 dn0_tot=5.056 (x1e-12) VpiL_S10_Vcm=0.02146 u_frac=0.0138 v_frac=0.9862 w_frac=0.0000 fracAu=0.0136 E_rib/E_LN=0.0405
+EIG6I case=XR30 k=6 f_GHz=0.142205 Q=2039.6 dn0_MB=-0.284 dn0_PE=1.310 dn0_EO=2.655 dn0_tot=3.681 (x1e-12) VpiL_S10_Vcm=0.05576 u_frac=0.0430 v_frac=0.9570 w_frac=0.0000 fracAu=0.0073 E_rib/E_LN=0.0205
+EIG6I case=XR30 k=7 f_GHz=0.172210 Q=2017.3 dn0_MB=-0.678 dn0_PE=2.809 dn0_EO=-1.726 dn0_tot=0.405 (x1e-12) VpiL_S10_Vcm=0.61352 u_frac=0.0005 v_frac=0.0000 w_frac=0.9995 fracAu=0.0076 E_rib/E_LN=0.0293
+EIG6I case=XR30 k=8 f_GHz=0.222952 Q=2051.4 dn0_MB=-0.126 dn0_PE=0.200 dn0_EO=2.244 dn0_tot=2.318 (x1e-12) VpiL_S10_Vcm=0.13884 u_frac=0.0730 v_frac=0.9270 w_frac=0.0000 fracAu=0.0090 E_rib/E_LN=0.0102
+EIG6I case=XR30 k=9 f_GHz=0.323866 Q=2043.2 dn0_MB=0.069 dn0_PE=-1.602 dn0_EO=30.087 dn0_tot=28.554 (x1e-12) VpiL_S10_Vcm=0.01637 u_frac=0.9528 v_frac=0.0467 w_frac=0.0005 fracAu=0.0030 E_rib/E_LN=0.0070
+EIG6I case=XR30 k=10 f_GHz=0.344042 Q=2076.1 dn0_MB=-0.632 dn0_PE=0.112 dn0_EO=11.338 dn0_tot=10.818 (x1e-12) VpiL_S10_Vcm=0.04591 u_frac=0.0791 v_frac=0.9209 w_frac=0.0000 fracAu=0.0095 E_rib/E_LN=0.0327
+EIG6I case=XR30 k=11 f_GHz=0.358714 Q=2017.6 dn0_MB=-1.198 dn0_PE=5.030 dn0_EO=-3.193 dn0_tot=0.639 (x1e-12) VpiL_S10_Vcm=0.80999 u_frac=0.0005 v_frac=0.0000 w_frac=0.9995 fracAu=0.0073 E_rib/E_LN=0.0445
+EIG6I case=XR30 k=12 f_GHz=0.467106 Q=2090.4 dn0_MB=-0.986 dn0_PE=-0.907 dn0_EO=13.105 dn0_tot=11.211 (x1e-12) VpiL_S10_Vcm=0.06014 u_frac=0.0773 v_frac=0.9225 w_frac=0.0003 fracAu=0.0085 E_rib/E_LN=0.0445
+EIG6I case=XR30 k=13 f_GHz=0.475806 Q=2009.8 dn0_MB=-0.524 dn0_PE=2.310 dn0_EO=-1.539 dn0_tot=0.247 (x1e-12) VpiL_S10_Vcm=2.78020 u_frac=0.0005 v_frac=0.0003 w_frac=0.9992 fracAu=0.0038 E_rib/E_LN=0.0160
+EIG6I case=XR30 k=14 f_GHz=0.565657 Q=2097.0 dn0_MB=-0.121 dn0_PE=-0.449 dn0_EO=7.765 dn0_tot=7.195 (x1e-12) VpiL_S10_Vcm=0.11349 u_frac=0.1318 v_frac=0.8681 w_frac=0.0000 fracAu=0.0086 E_rib/E_LN=0.0238
+EIG6I case=XR30 k=15 f_GHz=0.660466 Q=2022.7 dn0_MB=-0.827 dn0_PE=3.590 dn0_EO=-0.919 dn0_tot=1.845 (x1e-12) VpiL_S10_Vcm=0.51678 u_frac=0.0009 v_frac=0.0001 w_frac=0.9990 fracAu=0.0100 E_rib/E_LN=0.0199
+EIG6I case=XR30 k=16 f_GHz=0.670384 Q=2049.6 dn0_MB=0.043 dn0_PE=-1.114 dn0_EO=52.872 dn0_tot=51.801 (x1e-12) VpiL_S10_Vcm=0.01868 u_frac=0.9460 v_frac=0.0531 w_frac=0.0009 fracAu=0.0049 E_rib/E_LN=0.0125
+EIG6I case=XR30 k=17 f_GHz=0.730141 Q=2130.8 dn0_MB=-0.863 dn0_PE=-2.620 dn0_EO=17.356 dn0_tot=13.873 (x1e-12) VpiL_S10_Vcm=0.07597 u_frac=0.1333 v_frac=0.8666 w_frac=0.0001 fracAu=0.0149 E_rib/E_LN=0.0294
+EIG6I case=XR30 k=18 f_GHz=0.869729 Q=2026.0 dn0_MB=-1.756 dn0_PE=8.059 dn0_EO=-4.135 dn0_tot=2.168 (x1e-12) VpiL_S10_Vcm=0.57898 u_frac=0.0005 v_frac=0.0002 w_frac=0.9993 fracAu=0.0112 E_rib/E_LN=0.0511
+EIG6I case=XR30 k=19 f_GHz=0.902873 Q=2087.6 dn0_MB=0.688 dn0_PE=2.547 dn0_EO=11.365 dn0_tot=14.600 (x1e-12) VpiL_S10_Vcm=0.08927 u_frac=0.7034 v_frac=0.2961 w_frac=0.0005 fracAu=0.0075 E_rib/E_LN=0.0128
+EIG6I case=XR30 k=20 f_GHz=0.941899 Q=2125.5 dn0_MB=-1.700 dn0_PE=-6.702 dn0_EO=34.710 dn0_tot=26.308 (x1e-12) VpiL_S10_Vcm=0.05168 u_frac=0.3354 v_frac=0.6643 w_frac=0.0003 fracAu=0.0087 E_rib/E_LN=0.0474
+EIG6I case=XR30 k=21 f_GHz=1.028241 Q=2018.2 dn0_MB=-1.664 dn0_PE=8.184 dn0_EO=-4.046 dn0_tot=2.474 (x1e-12) VpiL_S10_Vcm=0.59998 u_frac=0.0006 v_frac=0.0011 w_frac=0.9982 fracAu=0.0068 E_rib/E_LN=0.0562
+EIG6I case=XR30 k=22 f_GHz=1.043402 Q=2139.2 dn0_MB=-1.354 dn0_PE=-5.669 dn0_EO=8.428 dn0_tot=1.405 (x1e-12) VpiL_S10_Vcm=1.07213 u_frac=0.1527 v_frac=0.8463 w_frac=0.0011 fracAu=0.0080 E_rib/E_LN=0.0424
+EIG6I case=XR30 k=23 f_GHz=1.155682 Q=2039.0 dn0_MB=-0.355 dn0_PE=1.838 dn0_EO=-0.429 dn0_tot=1.054 (x1e-12) VpiL_S10_Vcm=1.58294 u_frac=0.0006 v_frac=0.0007 w_frac=0.9987 fracAu=0.0168 E_rib/E_LN=0.0195
+EIG6I case=XR30 k=24 f_GHz=1.197728 Q=2178.7 dn0_MB=-0.887 dn0_PE=-4.235 dn0_EO=16.978 dn0_tot=11.856 (x1e-12) VpiL_S10_Vcm=0.14583 u_frac=0.1368 v_frac=0.8627 w_frac=0.0005 fracAu=0.0192 E_rib/E_LN=0.0281
+EIG6I case=XR30 k=25 f_GHz=1.250603 Q=2086.5 dn0_MB=0.012 dn0_PE=1.547 dn0_EO=34.561 dn0_tot=36.120 (x1e-12) VpiL_S10_Vcm=0.04998 u_frac=0.9037 v_frac=0.0954 w_frac=0.0009 fracAu=0.0162 E_rib/E_LN=0.0104
+EIG6I case=XR30 k=26 f_GHz=1.359847 Q=2047.8 dn0_MB=-1.504 dn0_PE=7.804 dn0_EO=-2.058 dn0_tot=4.241 (x1e-12) VpiL_S10_Vcm=0.46285 u_frac=0.0008 v_frac=0.0005 w_frac=0.9987 fracAu=0.0213 E_rib/E_LN=0.0444
+EIG6I case=XR30 k=27 f_GHz=1.413817 Q=2203.3 dn0_MB=-1.954 dn0_PE=-11.629 dn0_EO=17.028 dn0_tot=3.445 (x1e-12) VpiL_S10_Vcm=0.59242 u_frac=0.1348 v_frac=0.8647 w_frac=0.0005 fracAu=0.0231 E_rib/E_LN=0.0353
+EIG6I case=XR30 k=28 f_GHz=1.505226 Q=2054.6 dn0_MB=-2.154 dn0_PE=11.599 dn0_EO=-0.065 dn0_tot=9.380 (x1e-12) VpiL_S10_Vcm=0.23164 u_frac=0.0007 v_frac=0.0008 w_frac=0.9985 fracAu=0.0246 E_rib/E_LN=0.0874
+EIG6I case=XR30 k=29 f_GHz=1.579121 Q=2151.4 dn0_MB=1.727 dn0_PE=15.965 dn0_EO=32.486 dn0_tot=50.177 (x1e-12) VpiL_S10_Vcm=0.04543 u_frac=0.4825 v_frac=0.5169 w_frac=0.0007 fracAu=0.0211 E_rib/E_LN=0.0289
+EIG6I case=XR30 k=30 f_GHz=1.614096 Q=2220.1 dn0_MB=-2.015 dn0_PE=-8.976 dn0_EO=70.299 dn0_tot=59.309 (x1e-12) VpiL_S10_Vcm=0.03929 u_frac=0.4617 v_frac=0.5377 w_frac=0.0006 fracAu=0.0472 E_rib/E_LN=0.0473
+EIG6I case=XR30 k=31 f_GHz=1.663421 Q=2077.3 dn0_MB=-0.991 dn0_PE=5.150 dn0_EO=1.635 dn0_tot=5.795 (x1e-12) VpiL_S10_Vcm=0.41438 u_frac=0.0010 v_frac=0.0010 w_frac=0.9980 fracAu=0.0332 E_rib/E_LN=0.0477
+EIG6I case=XR30 k=32 f_GHz=1.707547 Q=2207.7 dn0_MB=-1.487 dn0_PE=-7.267 dn0_EO=42.855 dn0_tot=34.101 (x1e-12) VpiL_S10_Vcm=0.07228 u_frac=0.2454 v_frac=0.7541 w_frac=0.0005 fracAu=0.0286 E_rib/E_LN=0.0463
+EIG6I case=XR30 k=33 f_GHz=1.794268 Q=2153.3 dn0_MB=-0.357 dn0_PE=2.139 dn0_EO=-1.698 dn0_tot=0.084 (x1e-12) VpiL_S10_Vcm=30.68187 u_frac=0.0021 v_frac=0.0011 w_frac=0.9968 fracAu=0.0651 E_rib/E_LN=0.0328
+EIG6I case=XR30 k=34 f_GHz=1.883912 Q=2164.3 dn0_MB=0.345 dn0_PE=14.037 dn0_EO=58.407 dn0_tot=72.789 (x1e-12) VpiL_S10_Vcm=0.03736 u_frac=0.7487 v_frac=0.2493 w_frac=0.0020 fracAu=0.0333 E_rib/E_LN=0.0369
+EIG6I case=XR30 k=35 f_GHz=1.931546 Q=2293.3 dn0_MB=-1.960 dn0_PE=-8.844 dn0_EO=55.896 dn0_tot=45.092 (x1e-12) VpiL_S10_Vcm=0.06184 u_frac=0.2219 v_frac=0.7740 w_frac=0.0041 fracAu=0.0537 E_rib/E_LN=0.0429
+EIG6I case=XR30 k=36 f_GHz=1.975763 Q=2056.3 dn0_MB=-1.498 dn0_PE=9.320 dn0_EO=5.526 dn0_tot=13.349 (x1e-12) VpiL_S10_Vcm=0.21366 u_frac=0.0015 v_frac=0.0035 w_frac=0.9950 fracAu=0.0246 E_rib/E_LN=0.1290
+EIG6I case=XR30 k=37 f_GHz=2.050444 Q=2273.1 dn0_MB=-1.475 dn0_PE=-7.846 dn0_EO=37.683 dn0_tot=28.362 (x1e-12) VpiL_S10_Vcm=0.10436 u_frac=0.7588 v_frac=0.2341 w_frac=0.0071 fracAu=0.0732 E_rib/E_LN=0.0558
+EIG6I case=XR30 k=38 f_GHz=2.070242 Q=2177.2 dn0_MB=-0.694 dn0_PE=-2.483 dn0_EO=11.223 dn0_tot=8.046 (x1e-12) VpiL_S10_Vcm=0.37141 u_frac=0.0247 v_frac=0.0605 w_frac=0.9147 fracAu=0.0708 E_rib/E_LN=0.0050
+EIG6I case=XR30 k=39 f_GHz=2.081013 Q=2319.8 dn0_MB=-1.323 dn0_PE=-10.416 dn0_EO=27.477 dn0_tot=15.738 (x1e-12) VpiL_S10_Vcm=0.19088 u_frac=0.2309 v_frac=0.6673 w_frac=0.1018 fracAu=0.0789 E_rib/E_LN=0.0174
+EIG6I case=XR30 k=40 f_GHz=2.265762 Q=2234.3 dn0_MB=-3.538 dn0_PE=-30.680 dn0_EO=70.314 dn0_tot=36.095 (x1e-12) VpiL_S10_Vcm=0.09061 u_frac=0.2031 v_frac=0.7958 w_frac=0.0011 fracAu=0.0235 E_rib/E_LN=0.1238
+EIG6I case=XR30 k=41 f_GHz=2.291820 Q=2091.5 dn0_MB=-0.281 dn0_PE=-0.006 dn0_EO=3.380 dn0_tot=3.093 (x1e-12) VpiL_S10_Vcm=1.06977 u_frac=0.0083 v_frac=0.0024 w_frac=0.9893 fracAu=0.0358 E_rib/E_LN=0.0882
+EIG6I case=XR30 k=42 f_GHz=2.309045 Q=2438.4 dn0_MB=-0.847 dn0_PE=-6.852 dn0_EO=18.239 dn0_tot=10.540 (x1e-12) VpiL_S10_Vcm=0.31624 u_frac=0.5500 v_frac=0.4454 w_frac=0.0047 fracAu=0.1287 E_rib/E_LN=0.0100
+EIG6I case=XR30 k=43 f_GHz=2.426901 Q=2325.4 dn0_MB=-1.763 dn0_PE=11.771 dn0_EO=76.842 dn0_tot=86.850 (x1e-12) VpiL_S10_Vcm=0.04034 u_frac=0.6103 v_frac=0.3427 w_frac=0.0469 fracAu=0.0785 E_rib/E_LN=0.1090
+EIG6I case=XR30 k=44 f_GHz=2.492465 Q=2051.5 dn0_MB=-0.108 dn0_PE=-1.480 dn0_EO=11.609 dn0_tot=10.021 (x1e-12) VpiL_S10_Vcm=0.35905 u_frac=0.0114 v_frac=0.0198 w_frac=0.9688 fracAu=0.0155 E_rib/E_LN=0.1255
+EIG6I case=XR30 k=45 f_GHz=2.548490 Q=2270.0 dn0_MB=0.412 dn0_PE=36.943 dn0_EO=13.650 dn0_tot=51.006 (x1e-12) VpiL_S10_Vcm=0.07213 u_frac=0.2512 v_frac=0.7390 w_frac=0.0098 fracAu=0.0419 E_rib/E_LN=0.0797
+EIG6I case=XR30 k=46 f_GHz=2.689888 Q=2158.6 dn0_MB=-0.040 dn0_PE=-0.007 dn0_EO=2.176 dn0_tot=2.130 (x1e-12) VpiL_S10_Vcm=1.82299 u_frac=0.0037 v_frac=0.0026 w_frac=0.9937 fracAu=0.0703 E_rib/E_LN=0.0005
+EIG6I case=XR30 k=47 f_GHz=2.748859 Q=2123.3 dn0_MB=-0.609 dn0_PE=13.252 dn0_EO=23.559 dn0_tot=36.202 (x1e-12) VpiL_S10_Vcm=0.10961 u_frac=0.2915 v_frac=0.1366 w_frac=0.5719 fracAu=0.0385 E_rib/E_LN=0.2690
+EIG6I case=XR30 k=48 f_GHz=2.755024 Q=2369.8 dn0_MB=-0.637 dn0_PE=7.623 dn0_EO=20.655 dn0_tot=27.641 (x1e-12) VpiL_S10_Vcm=0.14388 u_frac=0.4039 v_frac=0.4899 w_frac=0.1062 fracAu=0.0993 E_rib/E_LN=0.0407
+EIG6I case=XR30 k=49 f_GHz=2.816354 Q=2877.3 dn0_MB=-2.142 dn0_PE=16.686 dn0_EO=56.234 dn0_tot=70.778 (x1e-12) VpiL_S10_Vcm=0.05744 u_frac=0.5409 v_frac=0.3244 w_frac=0.1347 fracAu=0.2736 E_rib/E_LN=0.0310
+EIG6I case=XR30 k=50 f_GHz=2.820592 Q=2479.5 dn0_MB=-1.170 dn0_PE=-13.992 dn0_EO=46.412 dn0_tot=31.249 (x1e-12) VpiL_S10_Vcm=0.13030 u_frac=0.1402 v_frac=0.2607 w_frac=0.5991 fracAu=0.1652 E_rib/E_LN=0.0826
+EIG6I case=XR30 k=51 f_GHz=2.842873 Q=2406.7 dn0_MB=-2.573 dn0_PE=-8.886 dn0_EO=76.687 dn0_tot=65.228 (x1e-12) VpiL_S10_Vcm=0.06291 u_frac=0.2244 v_frac=0.5750 w_frac=0.2006 fracAu=0.1089 E_rib/E_LN=0.1707
+EIG6I case=XR30 k=52 f_GHz=2.870587 Q=2381.9 dn0_MB=-2.360 dn0_PE=22.727 dn0_EO=44.614 dn0_tot=64.981 (x1e-12) VpiL_S10_Vcm=0.06377 u_frac=0.2449 v_frac=0.0495 w_frac=0.7056 fracAu=0.1407 E_rib/E_LN=0.1109
+EIG6I case=XR30 k=53 f_GHz=2.909660 Q=2718.7 dn0_MB=-2.042 dn0_PE=19.198 dn0_EO=52.114 dn0_tot=69.270 (x1e-12) VpiL_S10_Vcm=0.06064 u_frac=0.2368 v_frac=0.1023 w_frac=0.6609 fracAu=0.2492 E_rib/E_LN=0.0743
+EIG6I case=XR30 k=54 f_GHz=2.923062 Q=2512.0 dn0_MB=-3.919 dn0_PE=40.152 dn0_EO=85.687 dn0_tot=121.920 (x1e-12) VpiL_S10_Vcm=0.03461 u_frac=0.4534 v_frac=0.1911 w_frac=0.3555 fracAu=0.1533 E_rib/E_LN=0.1252
+EIG6I case=XR30 k=55 f_GHz=2.979467 Q=3640.7 dn0_MB=-0.731 dn0_PE=5.872 dn0_EO=16.959 dn0_tot=22.100 (x1e-12) VpiL_S10_Vcm=0.19462 u_frac=0.1325 v_frac=0.0990 w_frac=0.7685 fracAu=0.4081 E_rib/E_LN=0.0108
+EIG6I case=XR30 k=56 f_GHz=3.039954 Q=2340.5 dn0_MB=0.075 dn0_PE=-14.483 dn0_EO=34.173 dn0_tot=19.765 (x1e-12) VpiL_S10_Vcm=0.22203 u_frac=0.2047 v_frac=0.1087 w_frac=0.6866 fracAu=0.0850 E_rib/E_LN=0.1441
+EIG6I case=XR30 k=57 f_GHz=3.051620 Q=2328.5 dn0_MB=-0.609 dn0_PE=10.196 dn0_EO=-6.565 dn0_tot=3.022 (x1e-12) VpiL_S10_Vcm=1.45781 u_frac=0.2515 v_frac=0.1871 w_frac=0.5614 fracAu=0.0952 E_rib/E_LN=0.1122
+EIG6I case=XR30 k=58 f_GHz=3.131097 Q=2533.3 dn0_MB=-2.018 dn0_PE=23.220 dn0_EO=24.698 dn0_tot=45.899 (x1e-12) VpiL_S10_Vcm=0.09847 u_frac=0.4256 v_frac=0.3344 w_frac=0.2400 fracAu=0.0458 E_rib/E_LN=0.1623
+EIG6I case=XR30 k=59 f_GHz=3.168098 Q=2479.1 dn0_MB=-1.281 dn0_PE=20.219 dn0_EO=-0.256 dn0_tot=18.682 (x1e-12) VpiL_S10_Vcm=0.24480 u_frac=0.3241 v_frac=0.6661 w_frac=0.0098 fracAu=0.1315 E_rib/E_LN=0.0270
+EIG6I case=XR30 k=60 f_GHz=3.189440 Q=2304.7 dn0_MB=-2.801 dn0_PE=43.611 dn0_EO=-3.640 dn0_tot=37.170 (x1e-12) VpiL_S10_Vcm=0.12387 u_frac=0.2072 v_frac=0.7829 w_frac=0.0099 fracAu=0.0546 E_rib/E_LN=0.1055
+EIG6I case=XR30 k=61 f_GHz=3.271023 Q=2900.9 dn0_MB=-0.033 dn0_PE=0.213 dn0_EO=0.663 dn0_tot=0.843 (x1e-12) VpiL_S10_Vcm=5.60381 u_frac=0.0032 v_frac=0.0068 w_frac=0.9900 fracAu=0.3041 E_rib/E_LN=0.0000
+EIG6I case=XR30 k=62 f_GHz=3.280309 Q=2678.6 dn0_MB=-0.838 dn0_PE=-3.487 dn0_EO=37.672 dn0_tot=33.347 (x1e-12) VpiL_S10_Vcm=0.14200 u_frac=0.0160 v_frac=0.0205 w_frac=0.9635 fracAu=0.2420 E_rib/E_LN=0.1663
+EIG6I case=XR30 k=63 f_GHz=3.363273 Q=4976.1 dn0_MB=-0.218 dn0_PE=-0.049 dn0_EO=4.669 dn0_tot=4.403 (x1e-12) VpiL_S10_Vcm=1.10262 u_frac=0.0159 v_frac=0.0670 w_frac=0.9172 fracAu=0.5933 E_rib/E_LN=0.0146
+EIG6I case=XR30 k=64 f_GHz=3.406021 Q=2751.1 dn0_MB=-4.179 dn0_PE=45.191 dn0_EO=34.412 dn0_tot=75.424 (x1e-12) VpiL_S10_Vcm=0.06519 u_frac=0.3488 v_frac=0.4544 w_frac=0.1968 fracAu=0.2284 E_rib/E_LN=0.1381
+EIG6I case=XR30 k=65 f_GHz=3.419390 Q=3201.2 dn0_MB=-3.922 dn0_PE=35.103 dn0_EO=43.247 dn0_tot=74.428 (x1e-12) VpiL_S10_Vcm=0.06632 u_frac=0.2902 v_frac=0.3053 w_frac=0.4044 fracAu=0.3420 E_rib/E_LN=0.1351
+EIG6I case=XR30 k=66 f_GHz=3.471393 Q=2323.1 dn0_MB=-1.813 dn0_PE=25.670 dn0_EO=-22.855 dn0_tot=1.002 (x1e-12) VpiL_S10_Vcm=5.00223 u_frac=0.3772 v_frac=0.4298 w_frac=0.1930 fracAu=0.0546 E_rib/E_LN=0.1740
+EIG6I case=XR30 k=67 f_GHz=3.497001 Q=2546.5 dn0_MB=-3.105 dn0_PE=25.838 dn0_EO=15.976 dn0_tot=38.709 (x1e-12) VpiL_S10_Vcm=0.13041 u_frac=0.0369 v_frac=0.0519 w_frac=0.9112 fracAu=0.2067 E_rib/E_LN=0.1360
+EIG6I case=XR30 k=68 f_GHz=3.504391 Q=2487.0 dn0_MB=-4.278 dn0_PE=26.392 dn0_EO=34.708 dn0_tot=56.822 (x1e-12) VpiL_S10_Vcm=0.08903 u_frac=0.0828 v_frac=0.2012 w_frac=0.7159 fracAu=0.1730 E_rib/E_LN=0.1474
+EIG6I case=XR30 k=69 f_GHz=3.562475 Q=2173.9 dn0_MB=-18.957 dn0_PE=192.472 dn0_EO=16.469 dn0_tot=189.984 (x1e-12) VpiL_S10_Vcm=0.02707 u_frac=0.5608 v_frac=0.3212 w_frac=0.1180 fracAu=0.0185 E_rib/E_LN=0.2358
+EIG6I case=XR30 k=70 f_GHz=3.601189 Q=2623.1 dn0_MB=-4.594 dn0_PE=49.787 dn0_EO=-4.213 dn0_tot=40.980 (x1e-12) VpiL_S10_Vcm=0.12685 u_frac=0.2947 v_frac=0.4132 w_frac=0.2921 fracAu=0.1907 E_rib/E_LN=0.0278
+EIG6I case=XR30 k=71 f_GHz=3.611674 Q=2845.6 dn0_MB=-0.862 dn0_PE=3.131 dn0_EO=10.723 dn0_tot=12.992 (x1e-12) VpiL_S10_Vcm=0.40129 u_frac=0.2248 v_frac=0.2817 w_frac=0.4936 fracAu=0.2669 E_rib/E_LN=0.0398
+EIG6I case=XR30 k=72 f_GHz=3.730523 Q=2449.9 dn0_MB=-3.290 dn0_PE=30.862 dn0_EO=-0.498 dn0_tot=27.074 (x1e-12) VpiL_S10_Vcm=0.19890 u_frac=0.4423 v_frac=0.5396 w_frac=0.0181 fracAu=0.1301 E_rib/E_LN=0.0355
+EIG6I case=XR30 k=73 f_GHz=3.761084 Q=2289.2 dn0_MB=-4.180 dn0_PE=42.362 dn0_EO=6.618 dn0_tot=44.800 (x1e-12) VpiL_S10_Vcm=0.12119 u_frac=0.1825 v_frac=0.4951 w_frac=0.3224 fracAu=0.0844 E_rib/E_LN=0.1517
+EIG6I case=XR30 k=74 f_GHz=3.798339 Q=2309.0 dn0_MB=-6.476 dn0_PE=72.201 dn0_EO=-17.944 dn0_tot=47.780 (x1e-12) VpiL_S10_Vcm=0.11476 u_frac=0.1009 v_frac=0.2788 w_frac=0.6202 fracAu=0.0957 E_rib/E_LN=0.1326
+EIG6I case=XR30 k=75 f_GHz=3.867288 Q=2302.9 dn0_MB=-12.592 dn0_PE=95.479 dn0_EO=-24.431 dn0_tot=58.456 (x1e-12) VpiL_S10_Vcm=0.09550 u_frac=0.3203 v_frac=0.6335 w_frac=0.0462 fracAu=0.0773 E_rib/E_LN=0.1605
+EIG6I case=XR30 k=76 f_GHz=3.922371 Q=2301.9 dn0_MB=-10.349 dn0_PE=86.792 dn0_EO=-16.460 dn0_tot=59.983 (x1e-12) VpiL_S10_Vcm=0.09440 u_frac=0.2428 v_frac=0.2973 w_frac=0.4599 fracAu=0.1015 E_rib/E_LN=0.1186
+EIG6I case=XR30 k=77 f_GHz=3.964518 Q=2217.0 dn0_MB=-2.984 dn0_PE=18.968 dn0_EO=-5.033 dn0_tot=10.951 (x1e-12) VpiL_S10_Vcm=0.52262 u_frac=0.0320 v_frac=0.0668 w_frac=0.9012 fracAu=0.0837 E_rib/E_LN=0.1627
+EIG6I case=XR30 k=78 f_GHz=3.973642 Q=2402.8 dn0_MB=-6.636 dn0_PE=70.084 dn0_EO=-23.909 dn0_tot=39.539 (x1e-12) VpiL_S10_Vcm=0.14507 u_frac=0.1147 v_frac=0.2821 w_frac=0.6032 fracAu=0.1300 E_rib/E_LN=0.0743
+EIG6I case=XR30 k=79 f_GHz=4.007142 Q=2903.0 dn0_MB=-1.523 dn0_PE=10.662 dn0_EO=-2.749 dn0_tot=6.390 (x1e-12) VpiL_S10_Vcm=0.90527 u_frac=0.2881 v_frac=0.6122 w_frac=0.0997 fracAu=0.2789 E_rib/E_LN=0.0929
+EIG6I case=XR30 k=80 f_GHz=4.050879 Q=2997.6 dn0_MB=-20.443 dn0_PE=156.680 dn0_EO=-54.282 dn0_tot=81.956 (x1e-12) VpiL_S10_Vcm=0.07135 u_frac=0.4266 v_frac=0.4558 w_frac=0.1176 fracAu=0.3100 E_rib/E_LN=0.1943
+EIG6I case=XR30 k=81 f_GHz=4.087239 Q=2739.0 dn0_MB=-4.303 dn0_PE=18.034 dn0_EO=-7.267 dn0_tot=6.464 (x1e-12) VpiL_S10_Vcm=0.91272 u_frac=0.1760 v_frac=0.7111 w_frac=0.1129 fracAu=0.2287 E_rib/E_LN=0.1241
+EIG6I case=XR30 k=82 f_GHz=4.144048 Q=2646.5 dn0_MB=-2.247 dn0_PE=20.358 dn0_EO=-7.899 dn0_tot=10.212 (x1e-12) VpiL_S10_Vcm=0.58580 u_frac=0.0357 v_frac=0.0572 w_frac=0.9071 fracAu=0.2329 E_rib/E_LN=0.0935
+EIG6I case=XR30 k=83 f_GHz=4.163361 Q=5300.6 dn0_MB=-14.673 dn0_PE=96.452 dn0_EO=-37.868 dn0_tot=43.911 (x1e-12) VpiL_S10_Vcm=0.13687 u_frac=0.3745 v_frac=0.3117 w_frac=0.3138 fracAu=0.6171 E_rib/E_LN=0.0672
+EIG6I case=XR30 k=84 f_GHz=4.168233 Q=5258.4 dn0_MB=-7.177 dn0_PE=41.105 dn0_EO=-16.256 dn0_tot=17.672 (x1e-12) VpiL_S10_Vcm=0.34048 u_frac=0.2060 v_frac=0.4834 w_frac=0.3106 fracAu=0.6128 E_rib/E_LN=0.0391
+EIG6I case=XR30 k=85 f_GHz=4.192866 Q=3521.3 dn0_MB=-26.863 dn0_PE=168.914 dn0_EO=-67.498 dn0_tot=74.553 (x1e-12) VpiL_S10_Vcm=0.08118 u_frac=0.4806 v_frac=0.4983 w_frac=0.0211 fracAu=0.4078 E_rib/E_LN=0.0947
+EIG6I case=XR30 k=86 f_GHz=4.213572 Q=3502.4 dn0_MB=-18.170 dn0_PE=96.284 dn0_EO=-38.231 dn0_tot=39.883 (x1e-12) VpiL_S10_Vcm=0.15251 u_frac=0.3857 v_frac=0.5222 w_frac=0.0921 fracAu=0.4095 E_rib/E_LN=0.0890
+EIG6I case=XR30 k=87 f_GHz=4.284551 Q=2603.1 dn0_MB=-27.803 dn0_PE=167.491 dn0_EO=-68.686 dn0_tot=71.002 (x1e-12) VpiL_S10_Vcm=0.08711 u_frac=0.3329 v_frac=0.6296 w_frac=0.0376 fracAu=0.1720 E_rib/E_LN=0.1156
+EIG6I case=XR30 k=88 f_GHz=4.326058 Q=2330.0 dn0_MB=-36.990 dn0_PE=149.654 dn0_EO=-46.930 dn0_tot=65.733 (x1e-12) VpiL_S10_Vcm=0.09500 u_frac=0.3587 v_frac=0.4950 w_frac=0.1463 fracAu=0.0903 E_rib/E_LN=0.2552
+EIG6I case=XR30 k=89 f_GHz=4.328279 Q=2203.7 dn0_MB=-12.374 dn0_PE=50.256 dn0_EO=-17.478 dn0_tot=20.403 (x1e-12) VpiL_S10_Vcm=0.30623 u_frac=0.0923 v_frac=0.0784 w_frac=0.8293 fracAu=0.0810 E_rib/E_LN=0.1330
+EIG6I case=XR30 k=90 f_GHz=4.364732 Q=2365.0 dn0_MB=-6.545 dn0_PE=48.508 dn0_EO=-23.049 dn0_tot=18.914 (x1e-12) VpiL_S10_Vcm=0.33313 u_frac=0.2637 v_frac=0.5797 w_frac=0.1566 fracAu=0.0847 E_rib/E_LN=0.1031
+EIG6I case=XR30 k=91 f_GHz=4.391801 Q=2376.2 dn0_MB=-37.642 dn0_PE=141.162 dn0_EO=-34.639 dn0_tot=68.880 (x1e-12) VpiL_S10_Vcm=0.09204 u_frac=0.3871 v_frac=0.5682 w_frac=0.0447 fracAu=0.0940 E_rib/E_LN=0.2584
+EIG6I case=XR30 k=92 f_GHz=4.427601 Q=2074.1 dn0_MB=-7.093 dn0_PE=44.344 dn0_EO=-13.641 dn0_tot=23.609 (x1e-12) VpiL_S10_Vcm=0.27072 u_frac=0.0353 v_frac=0.1226 w_frac=0.8421 fracAu=0.0222 E_rib/E_LN=0.1244
+EIG6I case=XR30 k=93 f_GHz=4.429245 Q=2394.8 dn0_MB=-15.986 dn0_PE=38.608 dn0_EO=2.668 dn0_tot=25.290 (x1e-12) VpiL_S10_Vcm=0.25282 u_frac=0.3693 v_frac=0.5407 w_frac=0.0900 fracAu=0.0954 E_rib/E_LN=0.1059
+EIG6I case=XR30 k=94 f_GHz=4.500906 Q=2441.1 dn0_MB=-5.878 dn0_PE=31.066 dn0_EO=-12.974 dn0_tot=12.213 (x1e-12) VpiL_S10_Vcm=0.53201 u_frac=0.2858 v_frac=0.6035 w_frac=0.1107 fracAu=0.1127 E_rib/E_LN=0.0801
+EIG6I case=XR30 k=95 f_GHz=4.531988 Q=2341.4 dn0_MB=-7.141 dn0_PE=17.709 dn0_EO=6.403 dn0_tot=16.970 (x1e-12) VpiL_S10_Vcm=0.38550 u_frac=0.4779 v_frac=0.4560 w_frac=0.0661 fracAu=0.1035 E_rib/E_LN=0.1132
+EIG6I case=XR30 k=96 f_GHz=4.557484 Q=2192.3 dn0_MB=-2.753 dn0_PE=20.331 dn0_EO=-4.523 dn0_tot=13.055 (x1e-12) VpiL_S10_Vcm=0.50394 u_frac=0.0715 v_frac=0.0694 w_frac=0.8591 fracAu=0.0761 E_rib/E_LN=0.0405
+EIG6I case=XR30 k=97 f_GHz=4.606406 Q=2410.9 dn0_MB=-6.122 dn0_PE=32.894 dn0_EO=-10.806 dn0_tot=15.966 (x1e-12) VpiL_S10_Vcm=0.41649 u_frac=0.4974 v_frac=0.3803 w_frac=0.1223 fracAu=0.1058 E_rib/E_LN=0.1156
+EIG6I case=XR30 k=98 f_GHz=4.674965 Q=2400.5 dn0_MB=-0.679 dn0_PE=2.506 dn0_EO=0.093 dn0_tot=1.920 (x1e-12) VpiL_S10_Vcm=3.51484 u_frac=0.3862 v_frac=0.5701 w_frac=0.0437 fracAu=0.1101 E_rib/E_LN=0.2066
+EIG6I case=XR30 k=99 f_GHz=4.721810 Q=2274.1 dn0_MB=-9.217 dn0_PE=41.470 dn0_EO=-10.428 dn0_tot=21.825 (x1e-12) VpiL_S10_Vcm=0.31231 u_frac=0.2819 v_frac=0.5697 w_frac=0.1485 fracAu=0.0670 E_rib/E_LN=0.1334
+TOP6I case=XR30 k=69 f_GHz=3.562475 dn0_tot=189.984 x1e-12
+TOP6I case=XR30 k=54 f_GHz=2.923062 dn0_tot=121.920 x1e-12
+TOP6I case=XR30 k=43 f_GHz=2.426901 dn0_tot=86.850 x1e-12
+TOP6I case=XR30 k=64 f_GHz=3.406021 dn0_tot=75.424 x1e-12
+----       当前进度:  47 % - 生成方程
+Memory: 1391/2578 1427/2710
+---        当前进度:  39 % - 生成方程
+Memory: 1414/2578 1447/2710
+-----      当前进度:  54 % - 生成方程
+Memory: 1416/2578 1448/2710
+STUDY stdF0 sol=sol4 nfreq=49
+           当前进度:   1 % - 生成方程
+Memory: 1420/2578 1452/2710
+           当前进度:   2 % - 生成方程
+Memory: 1421/2578 1453/2710
+           当前进度:   3 % - 生成方程
+Memory: 1423/2578 1455/2710
+<---- 研究 3/解 4 (sol4) 中的“编译方程: 频域” ---------------------------------------------
+开始于 2026年10月25日 下午5:39:05。
+几何形函数: 二次巧凑边点单元
+在 AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD 上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 6 个内核）。
+可用内存：32.37 GB。
+           当前进度:   4 % - 编译方程: 频域
+Memory: 1399/2578 1435/2710
+           当前进度:   4 % - 正在创建可视化网格
+Memory: 1411/2578 1446/2710
+时间：1。
+物理内存: 1.41 GB
+虚拟内存: 1.45 GB
+结束时间：2026年10月25日 下午5:39:07。
+----- 研究 3/解 4 (sol4) 中的“编译方程: 频域” -------------------------------------------->
+<---- 研究 3/解 4 (sol4) 中的“因变量 1” ------------------------------------------------
+开始于 2026年10月25日 下午5:39:07。
+           当前进度:   4 % - 因变量 1
+Memory: 1419/2578 1454/2710
+求解时间：0 s。
+物理内存: 1.42 GB
+虚拟内存: 1.45 GB
+结束时间：2026年10月25日 下午5:39:07。
+----- 研究 3/解 4 (sol4) 中的“因变量 1” ----------------------------------------------->
+<---- 研究 3/解 4 (sol4) 中的“稳态求解器 1” ----------------------------------------------
+开始于 2026年10月25日 下午5:39:07。
+参数化求解器
+线性求解器 
+求解的自由度数：130000。
+    
+参数 freq = 3.55648e+09。
+           当前进度:   5 % - 
+Memory: 1570/2578 1588/2710
+找到对称矩阵。
+缩放因变量：
+位移场 (comp1.u): 8.1e-11
+电势 (comp1.V): 1
+已使用正交零空间函数。
+           当前进度:   5 % - 矩阵分解
+Memory: 1704/2578 1749/2710
+           当前进度:   6 % - 矩阵分解
+Memory: 1733/2578 2003/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98    1    1    1  1.3e-12    3e-14
+           当前进度:   7 % - 求解线性方程组
+Memory: 1869/2578 1942/2710
+    
+参数 freq = 3.55673e+09。
+           当前进度:   7 % - 约束处理
+Memory: 2000/2578 2120/2710
+           当前进度:   8 % - 矩阵分解
+Memory: 1841/2578 2103/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98    2    2    2  1.4e-12  2.6e-14
+    
+参数 freq = 3.55698e+09。
+           当前进度:   9 % - 组装稀疏模式
+Memory: 1842/2578 1909/2710
+           当前进度:   9 % - 矩阵分解
+Memory: 1688/2578 1937/2710
+-          当前进度:  10 % - 矩阵分解
+Memory: 1861/2578 2087/2710
+-          当前进度:  11 % - 矩阵分解
+Memory: 2007/2578 2087/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98    3    3    3  5.3e-13    2e-14
+    
+参数 freq = 3.55723e+09。
+-          当前进度:  11 % - 组装矩阵
+Memory: 1944/2578 2017/2710
+-          当前进度:  11 % - 矩阵分解
+Memory: 1740/2578 2061/2710
+-          当前进度:  12 % - 矩阵分解
+Memory: 1886/2578 2061/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-          当前进度:  13 % - 求解线性方程组
+Memory: 1951/2578 2027/2710
+   1        0.98   1.0000000        0.98    4    4    4  1.2e-12  2.2e-14
+    
+参数 freq = 3.55748e+09。
+-          当前进度:  13 % - 约束处理
+Memory: 1982/2578 2073/2710
+-          当前进度:  13 % - 矩阵分解
+Memory: 1789/2578 2057/2710
+-          当前进度:  14 % - 矩阵分解
+Memory: 1930/2578 2057/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-          当前进度:  15 % - 求解线性方程组
+Memory: 1897/2578 1969/2710
+   1        0.98   1.0000000        0.98    5    5    5  9.4e-13    2e-14
+    
+参数 freq = 3.55773e+09。
+-          当前进度:  15 % - 矩阵分解
+Memory: 1676/2578 1696/2710
+-          当前进度:  16 % - 矩阵分解
+Memory: 1835/2578 2053/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-          当前进度:  17 % - 求解线性方程组
+Memory: 1945/2578 2019/2710
+   1        0.98   1.0000000        0.98    6    6    6  1.4e-12    2e-14
+    
+参数 freq = 3.55798e+09。
+-          当前进度:  17 % - 组装矩阵
+Memory: 1932/2578 2005/2710
+-          当前进度:  17 % - 矩阵分解
+Memory: 1735/2578 2044/2710
+-          当前进度:  18 % - 矩阵分解
+Memory: 1882/2578 2045/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-          当前进度:  18 % - 求解线性方程组
+Memory: 1890/2578 1961/2710
+   1        0.98   1.0000000        0.98    7    7    7    1e-12  2.1e-14
+    
+参数 freq = 3.55823e+09。
+-          当前进度:  19 % - 约束处理
+Memory: 1905/2578 1977/2710
+-          当前进度:  19 % - 矩阵分解
+Memory: 1797/2578 2049/2710
+--         当前进度:  20 % - 矩阵分解
+Memory: 1938/2578 2049/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98    8    8    8  8.7e-13  2.7e-14
+    
+参数 freq = 3.55848e+09。
+--         当前进度:  21 % - 约束处理
+Memory: 1876/2578 1995/2710
+--         当前进度:  21 % - 矩阵分解
+Memory: 1674/2578 1695/2710
+--         当前进度:  22 % - 矩阵分解
+Memory: 1850/2578 2051/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+--         当前进度:  22 % - 求解线性方程组
+Memory: 1943/2578 2018/2710
+   1        0.98   1.0000000        0.98    9    9    9    9e-13  2.6e-14
+    
+参数 freq = 3.55873e+09。
+--         当前进度:  23 % - 组装矩阵
+Memory: 1928/2578 1998/2710
+--         当前进度:  23 % - 矩阵分解
+Memory: 1752/2578 2051/2710
+--         当前进度:  24 % - 矩阵分解
+Memory: 1912/2578 2051/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+--         当前进度:  24 % - 求解线性方程组
+Memory: 1944/2578 2018/2710
+   1        0.98   1.0000000        0.98   10   10   10  3.3e-12  2.5e-14
+    
+参数 freq = 3.55898e+09。
+--         当前进度:  25 % - 矩阵分解
+--         当前进度:  26 % - 矩阵分解
+Memory: 1959/2578 2053/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   11   11   11  3.2e-12  2.6e-14
+    
+参数 freq = 3.55923e+09。
+--         当前进度:  26 % - 求解线性方程组
+Memory: 1895/2578 1966/2710
+--         当前进度:  27 % - 矩阵分解
+Memory: 1687/2578 1707/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+--         当前进度:  28 % - 求解线性方程组
+Memory: 1956/2578 2030/2710
+   1        0.98   1.0000000        0.98   12   12   12  2.2e-12  2.8e-14
+    
+参数 freq = 3.55948e+09。
+--         当前进度:  29 % - 组装矩阵
+Memory: 1934/2578 2004/2710
+--         当前进度:  29 % - 矩阵分解
+Memory: 1746/2578 2053/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---        当前进度:  30 % - 求解线性方程组
+Memory: 1896/2578 1966/2710
+   1        0.98   1.0000000        0.98   13   13   13  2.1e-12  3.2e-14
+    
+参数 freq = 3.55973e+09。
+---        当前进度:  31 % - 约束处理
+Memory: 1909/2578 1982/2710
+---        当前进度:  31 % - 矩阵分解
+Memory: 1796/2578 2053/2710
+---        当前进度:  32 % - 矩阵分解
+Memory: 1952/2578 2053/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   14   14   14  4.5e-12    3e-14
+    
+参数 freq = 3.55998e+09。
+---        当前进度:  32 % - 组装矩阵
+Memory: 1927/2578 1998/2710
+---        当前进度:  33 % - 矩阵分解
+Memory: 1718/2578 2053/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---        当前进度:  34 % - 求解线性方程组
+Memory: 1947/2578 2020/2710
+   1        0.98   1.0000000        0.98   15   15   15  7.8e-13  3.7e-14
+    
+参数 freq = 3.56023e+09。
+---        当前进度:  35 % - 
+Memory: 1971/2578 2046/2710
+---        当前进度:  35 % - 矩阵分解
+Memory: 1778/2578 2057/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   16   16   16  4.7e-12    4e-14
+    
+参数 freq = 3.56048e+09。
+---        当前进度:  36 % - 组装矩阵
+Memory: 1843/2578 1914/2710
+---        当前进度:  37 % - 矩阵分解
+Memory: 1681/2578 1705/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---        当前进度:  38 % - 求解线性方程组
+Memory: 1951/2578 2028/2710
+   1        0.98   1.0000000        0.98   17   17   17  3.3e-12  3.8e-14
+    
+参数 freq = 3.56073e+09。
+---        当前进度:  38 % - 组装矩阵
+Memory: 1932/2578 2002/2710
+---        当前进度:  39 % - 矩阵分解
+Memory: 1738/2578 2062/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+----       当前进度:  40 % - 求解线性方程组
+Memory: 1901/2578 1978/2710
+   1        0.98   1.0000000        0.98   18   18   18    2e-12  4.9e-14
+    
+参数 freq = 3.56098e+09。
+----       当前进度:  40 % - 约束处理
+Memory: 1963/2578 2078/2710
+----       当前进度:  41 % - 矩阵分解
+Memory: 1798/2578 2062/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   19   19   19  1.8e-12  5.2e-14
+    
+参数 freq = 3.56123e+09。
+----       当前进度:  42 % - 约束处理
+Memory: 1923/2578 2002/2710
+----       当前进度:  42 % - 矩阵分解
+Memory: 1722/2578 2049/2710
+----       当前进度:  43 % - 矩阵分解
+Memory: 1861/2578 2066/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+----       当前进度:  44 % - 求解线性方程组
+Memory: 1956/2578 2032/2710
+   1        0.98   1.0000000        0.98   20   20   20  3.3e-12  5.3e-14
+    
+参数 freq = 3.56148e+09。
+----       当前进度:  44 % - 组装矩阵
+Memory: 1940/2578 2010/2710
+----       当前进度:  44 % - 矩阵分解
+Memory: 1744/2578 2066/2710
+----       当前进度:  45 % - 矩阵分解
+Memory: 1889/2578 2066/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+----       当前进度:  46 % - 求解线性方程组
+Memory: 1959/2578 2032/2710
+   1        0.98   1.0000000        0.98   21   21   21  6.2e-12  6.5e-14
+    
+参数 freq = 3.56173e+09。
+----       当前进度:  46 % - 
+Memory: 1957/2578 2028/2710
+----       当前进度:  46 % - 矩阵分解
+Memory: 1783/2578 2066/2710
+----       当前进度:  47 % - 矩阵分解
+Memory: 1926/2578 2066/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+----       当前进度:  48 % - 求解线性方程组
+Memory: 1958/2578 2032/2710
+   1        0.98   1.0000000        0.98   22   22   22  1.7e-12  8.1e-14
+    
+参数 freq = 3.56198e+09。
+----       当前进度:  48 % - 矩阵分解
+Memory: 1953/2578 2026/2710
+----       当前进度:  49 % - 矩阵分解
+Memory: 1954/2578 2062/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   23   23   23  1.6e-12  8.2e-14
+    
+参数 freq = 3.56223e+09。
+-----      当前进度:  50 % - 约束处理
+Memory: 1936/2578 2006/2710
+-----      当前进度:  50 % - 矩阵分解
+Memory: 1720/2578 2045/2710
+-----      当前进度:  51 % - 矩阵分解
+Memory: 1868/2578 2062/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-----      当前进度:  51 % - 求解线性方程组
+Memory: 1955/2578 2028/2710
+   1        0.98   1.0000000        0.98   24   24   24  3.5e-12    9e-14
+    
+参数 freq = 3.56248e+09。
+-----      当前进度:  52 % - 
+Memory: 1978/2578 2050/2710
+-----      当前进度:  52 % - 矩阵分解
+Memory: 1783/2578 2062/2710
+-----      当前进度:  53 % - 矩阵分解
+Memory: 1922/2578 2062/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-----      当前进度:  53 % - 求解线性方程组
+Memory: 1955/2578 2028/2710
+   1        0.98   1.0000000        0.98   25   25   25  9.6e-12  1.2e-13
+    
+参数 freq = 3.56273e+09。
+-----      当前进度:  54 % - 矩阵分解
+Memory: 1782/2578 2026/2710
+-----      当前进度:  55 % - 矩阵分解
+Memory: 1982/2578 2062/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   26   26   26  1.2e-11  1.1e-13
+    
+参数 freq = 3.56298e+09。
+-----      当前进度:  56 % - 组装矩阵
+Memory: 1932/2578 2002/2710
+-----      当前进度:  56 % - 矩阵分解
+Memory: 1737/2578 2062/2710
+-----      当前进度:  57 % - 矩阵分解
+Memory: 1886/2578 2062/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-----      当前进度:  57 % - 求解线性方程组
+Memory: 1954/2578 2028/2710
+   1        0.98   1.0000000        0.98   27   27   27  4.5e-12  8.7e-14
+    
+参数 freq = 3.56323e+09。
+-----      当前进度:  58 % - 
+Memory: 1976/2578 2050/2710
+-----      当前进度:  58 % - 矩阵分解
+Memory: 1789/2578 2062/2710
+-----      当前进度:  59 % - 矩阵分解
+Memory: 1943/2578 2061/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   28   28   28  7.4e-12  6.9e-14
+    
+参数 freq = 3.56348e+09。
+-----      当前进度:  59 % - 组装矩阵
+Memory: 1845/2578 1914/2710
+------     当前进度:  60 % - 矩阵分解
+Memory: 1682/2578 1705/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+------     当前进度:  61 % - 求解线性方程组
+Memory: 1951/2578 2028/2710
+   1        0.98   1.0000000        0.98   29   29   29  3.3e-12  6.5e-14
+    
+参数 freq = 3.56373e+09。
+------     当前进度:  62 % - 组装矩阵
+Memory: 1933/2578 2006/2710
+------     当前进度:  62 % - 矩阵分解
+Memory: 1717/2578 2045/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+------     当前进度:  63 % - 求解线性方程组
+Memory: 1951/2578 2028/2710
+   1        0.98   1.0000000        0.98   30   30   30  5.2e-12  5.3e-14
+    
+参数 freq = 3.56398e+09。
+------     当前进度:  64 % - 
+Memory: 1974/2578 2046/2710
+------     当前进度:  64 % - 矩阵分解
+Memory: 1775/2578 2057/2710
+------     当前进度:  65 % - 矩阵分解
+Memory: 1930/2578 2057/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+------     当前进度:  65 % - 求解线性方程组
+Memory: 1951/2578 2024/2710
+   1        0.98   1.0000000        0.98   31   31   31  8.3e-12  4.9e-14
+    
+参数 freq = 3.56423e+09。
+------     当前进度:  66 % - 矩阵分解
+Memory: 1691/2578 2010/2710
+------     当前进度:  67 % - 矩阵分解
+Memory: 1954/2578 2045/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   32   32   32  1.6e-12  4.2e-14
+    
+参数 freq = 3.56448e+09。
+------     当前进度:  67 % - 组装矩阵
+Memory: 1920/2578 1990/2710
+------     当前进度:  68 % - 矩阵分解
+Memory: 1719/2578 2049/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+------     当前进度:  69 % - 求解线性方程组
+Memory: 1942/2578 2016/2710
+   1        0.98   1.0000000        0.98   33   33   33  7.7e-12  3.8e-14
+    
+参数 freq = 3.56473e+09。
+-------    当前进度:  70 % - 
+Memory: 1966/2578 2042/2710
+-------    当前进度:  70 % - 矩阵分解
+Memory: 1771/2578 2053/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-------    当前进度:  71 % - 求解线性方程组
+Memory: 1943/2578 2020/2710
+   1        0.98   1.0000000        0.98   34   34   34    5e-13  3.3e-14
+    
+参数 freq = 3.56498e+09。
+-------    当前进度:  71 % - 矩阵分解
+Memory: 1941/2578 2014/2710
+-------    当前进度:  72 % - 矩阵分解
+Memory: 1811/2578 2049/2710
+-------    当前进度:  73 % - 矩阵分解
+Memory: 1958/2578 2049/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   35   35   35  5.3e-12  3.7e-14
+    
+参数 freq = 3.56523e+09。
+-------    当前进度:  73 % - 组装矩阵
+Memory: 1924/2578 1994/2710
+-------    当前进度:  73 % - 矩阵分解
+Memory: 1708/2578 2033/2710
+-------    当前进度:  74 % - 矩阵分解
+Memory: 1865/2578 2049/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-------    当前进度:  75 % - 求解线性方程组
+Memory: 1943/2578 2016/2710
+   1        0.98   1.0000000        0.98   36   36   36  5.9e-12  5.5e-14
+    
+参数 freq = 3.56548e+09。
+-------    当前进度:  75 % - 
+Memory: 1966/2578 2038/2710
+-------    当前进度:  76 % - 矩阵分解
+Memory: 1766/2578 2049/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-------    当前进度:  77 % - 求解线性方程组
+Memory: 1943/2578 2016/2710
+   1        0.98   1.0000000        0.98   37   37   37  1.4e-12  2.7e-14
+    
+参数 freq = 3.56573e+09。
+-------    当前进度:  77 % - 矩阵分解
+Memory: 1941/2578 2014/2710
+-------    当前进度:  78 % - 矩阵分解
+Memory: 1806/2578 2049/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   38   38   38    4e-12  3.2e-14
+    
+参数 freq = 3.56598e+09。
+-------    当前进度:  79 % - 组装矩阵
+Memory: 1840/2578 1907/2710
+-------    当前进度:  79 % - 矩阵分解
+Memory: 1675/2578 1695/2710
+--------   当前进度:  80 % - 矩阵分解
+Memory: 1835/2578 2051/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   39   39   39  3.1e-12  3.3e-14
+    
+参数 freq = 3.56623e+09。
+--------   当前进度:  81 % - 组装矩阵
+Memory: 1924/2578 1994/2710
+--------   当前进度:  81 % - 矩阵分解
+Memory: 1717/2578 2049/2710
+--------   当前进度:  82 % - 矩阵分解
+Memory: 1864/2578 2049/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+--------   当前进度:  83 % - 求解线性方程组
+Memory: 1943/2578 2016/2710
+   1        0.98   1.0000000        0.98   40   40   40  1.4e-12  2.6e-14
+    
+参数 freq = 3.56648e+09。
+--------   当前进度:  83 % - 
+Memory: 1941/2578 2012/2710
+--------   当前进度:  83 % - 矩阵分解
+Memory: 1773/2578 2049/2710
+--------   当前进度:  84 % - 矩阵分解
+Memory: 1923/2578 2049/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+--------   当前进度:  84 % - 求解线性方程组
+Memory: 1943/2578 2016/2710
+   1        0.97   1.0000000        0.97   41   41   41  8.3e-13  2.2e-14
+    
+参数 freq = 3.56673e+09。
+--------   当前进度:  85 % - 矩阵分解
+Memory: 1675/2578 1697/2710
+--------   当前进度:  86 % - 矩阵分解
+Memory: 1971/2578 2053/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.97   1.0000000        0.97   42   42   42  2.1e-12  2.1e-14
+    
+参数 freq = 3.56698e+09。
+--------   当前进度:  87 % - 组装矩阵
+Memory: 1924/2578 1994/2710
+--------   当前进度:  87 % - 矩阵分解
+Memory: 1728/2578 2053/2710
+--------   当前进度:  88 % - 矩阵分解
+Memory: 1879/2578 2053/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+--------   当前进度:  88 % - 求解线性方程组
+Memory: 1944/2578 2020/2710
+   1        0.97   1.0000000        0.97   43   43   43  9.8e-13  2.3e-14
+    
+参数 freq = 3.56723e+09。
+--------   当前进度:  89 % - 
+Memory: 1967/2578 2042/2710
+--------   当前进度:  89 % - 矩阵分解
+Memory: 1775/2578 2053/2710
+---------  当前进度:  90 % - 矩阵分解
+Memory: 1930/2578 2053/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.97   1.0000000        0.97   44   44   44    6e-13  1.8e-14
+    
+参数 freq = 3.56748e+09。
+---------  当前进度:  90 % - 组装矩阵
+Memory: 1873/2578 1964/2710
+---------  当前进度:  91 % - 矩阵分解
+Memory: 1680/2578 1701/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---------  当前进度:  92 % - 求解线性方程组
+Memory: 1949/2578 2024/2710
+   1        0.97   1.0000000        0.97   45   45   45  1.7e-12  2.2e-14
+    
+参数 freq = 3.56773e+09。
+---------  当前进度:  93 % - 
+Memory: 1973/2578 2046/2710
+---------  当前进度:  93 % - 矩阵分解
+Memory: 1771/2578 2057/2710
+---------  当前进度:  94 % - 矩阵分解
+Memory: 1919/2578 2057/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---------  当前进度:  94 % - 求解线性方程组
+Memory: 1950/2578 2024/2710
+   1        0.96   1.0000000        0.96   46   46   46  2.8e-13  1.9e-14
+    
+参数 freq = 3.56798e+09。
+---------  当前进度:  95 % - 矩阵分解
+Memory: 1681/2578 1701/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---------  当前进度:  96 % - 求解线性方程组
+Memory: 1951/2578 2024/2710
+   1        0.96   1.0000000        0.96   47   47   47  1.6e-12  1.6e-14
+    
+参数 freq = 3.56823e+09。
+---------  当前进度:  97 % - 组装矩阵
+Memory: 1932/2578 2002/2710
+---------  当前进度:  97 % - 矩阵分解
+Memory: 1727/2578 2062/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---------  当前进度:  98 % - 求解线性方程组
+Memory: 1954/2578 2028/2710
+   1        0.96   1.0000000        0.96   48   48   48  7.9e-13    2e-14
+    
+参数 freq = 3.56848e+09。
+---------  当前进度:  99 % - 约束处理
+Memory: 1946/2578 2020/2710
+---------  当前进度:  99 % - 矩阵分解
+Memory: 1779/2578 2057/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 1948/2578 2024/2710
+   1        0.96   1.0000000        0.96   49   49   49  9.5e-13  1.6e-14
+求解时间：49 s。
+物理内存: 2.01 GB
+虚拟内存: 2.12 GB
+结束时间：2026年10月25日 下午5:39:55。
+----- 研究 3/解 4 (sol4) 中的“稳态求解器 1” --------------------------------------------->
+F6I set=stdF0 f_GHz=3.556476 PE=(1.288456e-04,-1.877814e-05) EO=(7.071871e-06,-1.647758e-06) MB=(-1.228303e-05,1.854050e-06) abs_tot=1.250216e-04 ReY_Spm=2.815903e-01 ImY_Spm=1.076648e+01
+F6I set=stdF0 f_GHz=3.556726 PE=(1.345370e-04,-2.039633e-05) EO=(7.572837e-06,-1.785206e-06) MB=(-1.284442e-05,2.013470e-06) abs_tot=1.308292e-04 ReY_Spm=3.029495e-01 ImY_Spm=1.085391e+01
+F6I set=stdF0 f_GHz=3.556976 PE=(1.407098e-04,-2.223343e-05) EO=(8.114736e-06,-1.941375e-06) MB=(-1.345322e-05,2.194459e-06) abs_tot=1.371442e-04 ReY_Spm=3.272160e-01 ImY_Spm=1.094768e+01
+F6I set=stdF0 f_GHz=3.557226 PE=(1.474266e-04,-2.433048e-05) EO=(8.702912e-06,-2.119770e-06) MB=(-1.411558e-05,2.401057e-06) abs_tot=1.440358e-04 ReY_Spm=3.549340e-01 ImY_Spm=1.104861e+01
+F6I set=stdF0 f_GHz=3.557476 PE=(1.547606e-04,-2.673844e-05) EO=(9.343638e-06,-2.324753e-06) MB=(-1.483871e-05,2.638290e-06) abs_tot=1.515865e-04 ReY_Spm=3.867797e-01 ImY_Spm=1.115767e+01
+F6I set=stdF0 f_GHz=3.557726 PE=(1.627982e-04,-2.952134e-05) EO=(1.004431e-05,-2.561795e-06) MB=(-1.563111e-05,2.912460e-06) abs_tot=1.598948e-04 ReY_Spm=4.236020e-01 ImY_Spm=1.127602e+01
+F6I set=stdF0 f_GHz=3.557976 PE=(1.716419e-04,-3.276031e-05) EO=(1.081372e-05,-2.837835e-06) MB=(-1.650290e-05,3.231563e-06) abs_tot=1.690796e-04 ReY_Spm=4.664773e-01 ImY_Spm=1.140501e+01
+F6I set=stdF0 f_GHz=3.558226 PE=(1.814141e-04,-3.655941e-05) EO=(1.166232e-05,-3.161772e-06) MB=(-1.746610e-05,3.605848e-06) abs_tot=1.792855e-04 ReY_Spm=5.167854e-01 ImY_Spm=1.154626e+01
+F6I set=stdF0 f_GHz=3.558476 PE=(1.922610e-04,-4.105365e-05) EO=(1.260264e-05,-3.545152e-06) MB=(-1.853513e-05,4.048615e-06) abs_tot=1.906899e-04 ReY_Spm=5.763171e-01 ImY_Spm=1.170171e+01
+F6I set=stdF0 f_GHz=3.558726 PE=(2.043590e-04,-4.642056e-05) EO=(1.364979e-05,-4.003158e-06) MB=(-1.972736e-05,4.577352e-06) abs_tot=2.035127e-04 ReY_Spm=6.474266e-01 ImY_Spm=1.187370e+01
+F6I set=stdF0 f_GHz=3.558976 PE=(2.179206e-04,-5.289691e-05) EO=(1.482195e-05,-4.556040e-06) MB=(-2.106371e-05,5.215383e-06) abs_tot=2.180292e-04 ReY_Spm=7.332539e-01 ImY_Spm=1.206505e+01
+F6I set=stdF0 f_GHz=3.559226 PE=(2.332029e-04,-6.080351e-05) EO=(1.614114e-05,-5.231238e-06) MB=(-2.256950e-05,5.994309e-06) abs_tot=2.345880e-04 ReY_Spm=8.380531e-01 ImY_Spm=1.227916e+01
+F6I set=stdF0 f_GHz=3.559476 PE=(2.505152e-04,-7.058244e-05) EO=(1.763385e-05,-6.066566e-06) MB=(-2.427519e-05,6.957674e-06) abs_tot=2.536363e-04 ReY_Spm=9.676863e-01 ImY_Spm=1.252014e+01
+F6I set=stdF0 f_GHz=3.559726 PE=(2.702264e-04,-8.285421e-05) EO=(1.933166e-05,-7.115102e-06) MB=(-2.621709e-05,8.166600e-06) abs_tot=2.757537e-04 ReY_Spm=1.130381e+00 ImY_Spm=1.279286e+01
+F6I set=stdF0 f_GHz=3.559976 PE=(2.927649e-04,-9.850713e-05) EO=(2.127127e-05,-8.452838e-06) MB=(-2.843741e-05,9.708586e-06) abs_tot=3.017026e-04 ReY_Spm=1.337916e+00 ImY_Spm=1.310301e+01
+F6I set=stdF0 f_GHz=3.560226 PE=(3.186006e-04,-1.188393e-04) EO=(2.349294e-05,-1.019083e-05) MB=(-3.098239e-05,1.171150e-05) abs_tot=3.324964e-04 ReY_Spm=1.607502e+00 ImY_Spm=1.345681e+01
+F6I set=stdF0 f_GHz=3.560476 PE=(3.481767e-04,-1.457872e-04) EO=(2.603467e-05,-1.249474e-05) MB=(-3.389565e-05,1.436605e-05) abs_tot=3.694950e-04 ReY_Spm=1.964811e+00 ImY_Spm=1.386012e+01
+F6I set=stdF0 f_GHz=3.560726 PE=(3.817191e-04,-1.822917e-04) EO=(2.891591e-05,-1.561622e-05) MB=(-3.719941e-05,1.796192e-05) abs_tot=4.145295e-04 ReY_Spm=2.448831e+00 ImY_Spm=1.431592e+01
+F6I set=stdF0 f_GHz=3.560976 PE=(4.187449e-04,-2.328677e-04) EO=(3.209552e-05,-1.994158e-05) MB=(-4.084605e-05,2.294378e-05) abs_tot=4.700357e-04 ReY_Spm=3.119409e+00 ImY_Spm=1.481779e+01
+F6I set=stdF0 f_GHz=3.561226 PE=(4.568451e-04,-3.043791e-04) EO=(3.536764e-05,-2.605822e-05) MB=(-4.459817e-05,2.998762e-05) abs_tot=5.391000e-04 ReY_Spm=4.067520e+00 ImY_Spm=1.533375e+01
+F6I set=stdF0 f_GHz=3.561476 PE=(4.888038e-04,-4.066153e-04) EO=(3.811527e-05,-3.480409e-05) MB=(-4.774495e-05,4.005754e-05) abs_tot=6.250594e-04 ReY_Spm=5.422899e+00 ImY_Spm=1.576809e+01
+F6I set=stdF0 f_GHz=3.561726 PE=(4.965183e-04,-5.505249e-04) EO=(3.878984e-05,-4.711670e-05) MB=(-4.850322e-05,5.423160e-05) abs_tot=7.295707e-04 ReY_Spm=7.330577e+00 ImY_Spm=1.588078e+01
+F6I set=stdF0 f_GHz=3.561976 PE=(4.423246e-04,-7.368977e-04) EO=(3.416872e-05,-6.306515e-05) MB=(-4.316338e-05,7.258705e-05) abs_tot=8.466702e-04 ReY_Spm=9.800814e+00 ImY_Spm=1.517252e+01
+F6I set=stdF0 f_GHz=3.562226 PE=(2.748475e-04,-9.247393e-04) EO=(1.985434e-05,-7.914380e-05) MB=(-2.666595e-05,9.108550e-05) abs_tot=9.513373e-04 ReY_Spm=1.228988e+01 ImY_Spm=1.296250e+01
+F6I set=stdF0 f_GHz=3.562476 PE=(-7.253036e-06,-1.010355e-03) EO=(-4.272085e-06,-8.648012e-05) MB=(1.119500e-06,9.951382e-05) abs_tot=9.973759e-04 ReY_Spm=1.342317e+01 ImY_Spm=9.233554e+00
+F6I set=stdF0 f_GHz=3.562726 PE=(-2.890855e-04,-9.238851e-04) EO=(-2.838270e-05,-7.909192e-05) MB=(2.887603e-05,9.099297e-05) abs_tot=9.565565e-04 ReY_Spm=1.227523e+01 ImY_Spm=5.509105e+00
+F6I set=stdF0 f_GHz=3.562976 PE=(-4.559856e-04,-7.355512e-04) EO=(-4.266346e-05,-6.298319e-05) MB=(4.531111e-05,7.244104e-05) abs_tot=8.559947e-04 ReY_Spm=9.777598e+00 ImY_Spm=3.308788e+00
+F6I set=stdF0 f_GHz=3.563226 PE=(-5.096193e-04,-5.490325e-04) EO=(-4.725278e-05,-4.702524e-05) MB=(5.059036e-05,5.406955e-05) abs_tot=7.416686e-04 ReY_Spm=7.304676e+00 ImY_Spm=2.609933e+00
+F6I set=stdF0 f_GHz=3.563476 PE=(-5.014808e-04,-4.051582e-04) EO=(-4.655510e-05,-3.471369e-05) MB=(4.978617e-05,3.989912e-05) abs_tot=6.389295e-04 ReY_Spm=5.397414e+00 ImY_Spm=2.729685e+00
+F6I set=stdF0 f_GHz=3.563726 PE=(-4.692251e-04,-3.030240e-04) EO=(-4.379241e-05,-2.597266e-05) MB=(4.660725e-05,2.984013e-05) abs_tot=5.541057e-04 ReY_Spm=4.043612e+00 ImY_Spm=3.168883e+00
+F6I set=stdF0 f_GHz=3.563976 PE=(-4.309194e-04,-2.316291e-04) EO=(-4.051107e-05,-1.986159e-05) MB=(4.283293e-05,2.280882e-05) abs_tot=4.857893e-04 ReY_Spm=3.097337e+00 ImY_Spm=3.688084e+00
+F6I set=stdF0 f_GHz=3.564226 PE=(-3.937492e-04,-1.811640e-04) EO=(-3.732630e-05,-1.554143e-05) MB=(3.917076e-05,1.783891e-05) abs_tot=4.307930e-04 ReY_Spm=2.428509e+00 ImY_Spm=4.192092e+00
+F6I set=stdF0 f_GHz=3.564476 PE=(-3.601032e-04,-1.447588e-04) EO=(-3.444274e-05,-1.242442e-05) MB=(3.585591e-05,1.425373e-05) abs_tot=3.861183e-04 ReY_Spm=1.946044e+00 ImY_Spm=4.649283e+00
+F6I set=stdF0 f_GHz=3.564726 PE=(-3.304510e-04,-1.178978e-04) EO=(-3.190076e-05,-1.012424e-05) MB=(3.293458e-05,1.160853e-05) abs_tot=3.493820e-04 ReY_Spm=1.590082e+00 ImY_Spm=5.053457e+00
+F6I set=stdF0 f_GHz=3.564976 PE=(-3.045579e-04,-9.764097e-05) EO=(-2.968042e-05,-8.389292e-06) MB=(3.038360e-05,9.613737e-06) abs_tot=3.187849e-04 ReY_Spm=1.321647e+00 ImY_Spm=5.407741e+00
+F6I set=stdF0 f_GHz=3.565226 PE=(-2.819752e-04,-8.205353e-05) EO=(-2.774338e-05,-7.054010e-06) MB=(2.815876e-05,8.078792e-06) abs_tot=2.929874e-04 ReY_Spm=1.115095e+00 ImY_Spm=5.718096e+00
+F6I set=stdF0 f_GHz=3.565476 PE=(-2.622295e-04,-6.983882e-05) EO=(-2.604918e-05,-6.007429e-06) MB=(2.621339e-05,6.875994e-06) abs_tot=2.709892e-04 ReY_Spm=9.532380e-01 ImY_Spm=5.990806e+00
+F6I set=stdF0 f_GHz=3.565726 PE=(-2.448897e-04,-6.010985e-05) EO=(-2.456098e-05,-5.173636e-06) MB=(2.450503e-05,5.917986e-06) abs_tot=2.520369e-04 ReY_Spm=8.243217e-01 ImY_Spm=6.231593e+00
+F6I set=stdF0 f_GHz=3.565976 PE=(-2.295851e-04,-5.224722e-05) EO=(-2.324709e-05,-4.499619e-06) MB=(2.299718e-05,5.143770e-06) abs_tot=2.355568e-04 ReY_Spm=7.201367e-01 ImY_Spm=6.445373e+00
+F6I set=stdF0 f_GHz=3.566226 PE=(-2.160052e-04,-4.580980e-05) EO=(-2.208096e-05,-3.947617e-06) MB=(2.165922e-05,4.509899e-06) abs_tot=2.211062e-04 ReY_Spm=6.348370e-01 ImY_Spm=6.636267e+00
+F6I set=stdF0 f_GHz=3.566476 PE=(-2.038920e-04,-4.047755e-05) EO=(-2.104051e-05,-3.490238e-06) MB=(2.046575e-05,3.984857e-06) abs_tot=2.083393e-04 ReY_Spm=5.641816e-01 ImY_Spm=6.807696e+00
+F6I set=stdF0 f_GHz=3.566726 PE=(-1.930322e-04,-3.601432e-05) EO=(-2.010753e-05,-3.107265e-06) MB=(1.939576e-05,3.545389e-06) abs_tot=1.969832e-04 ReY_Spm=5.050411e-01 ImY_Spm=6.962490e+00
+F6I set=stdF0 f_GHz=3.566976 PE=(-1.832492e-04,-3.224310e-05) EO=(-1.926689e-05,-2.783547e-06) MB=(1.843185e-05,3.174063e-06) abs_tot=1.868197e-04 ReY_Spm=4.550701e-01 ImY_Spm=7.102995e+00
+F6I set=stdF0 f_GHz=3.567226 PE=(-1.743961e-04,-2.902930e-05) EO=(-1.850603e-05,-2.507562e-06) MB=(1.755954e-05,2.857625e-06) abs_tot=1.776725e-04 ReY_Spm=4.124855e-01 ImY_Spm=7.231156e+00
+F6I set=stdF0 f_GHz=3.567476 PE=(-1.663504e-04,-2.626926e-05) EO=(-1.781448e-05,-2.270432e-06) MB=(1.676678e-05,2.585866e-06) abs_tot=1.693981e-04 ReY_Spm=3.759133e-01 ImY_Spm=7.348600e+00
+F6I set=stdF0 f_GHz=3.567726 PE=(-1.590093e-04,-2.388210e-05) EO=(-1.718345e-05,-2.065235e-06) MB=(1.604343e-05,2.350823e-06) abs_tot=1.618783e-04 ReY_Spm=3.442823e-01 ImY_Spm=7.456691e+00
+F6I set=stdF0 f_GHz=3.567976 PE=(-1.522862e-04,-2.180408e-05) EO=(-1.660554e-05,-1.886513e-06) MB=(1.538098e-05,2.146219e-06) abs_tot=1.550152e-04 ReY_Spm=3.167481e-01 ImY_Spm=7.556578e+00
+F6I set=stdF0 f_GHz=3.568226 PE=(-1.461078e-04,-1.998443e-05) EO=(-1.607445e-05,-1.729918e-06) MB=(1.477218e-05,1.967055e-06) abs_tot=1.487268e-04 ReY_Spm=2.926378e-01 ImY_Spm=7.649234e+00
+F6I set=stdF0 f_GHz=3.568476 PE=(-1.404114e-04,-1.838232e-05) EO=(-1.558486e-05,-1.591954e-06) MB=(1.421088e-05,1.809308e-06) abs_tot=1.429443e-04 ReY_Spm=2.714106e-01 ImY_Spm=7.735490e+00
+PEAK6I set=XR30_m69 eig_f_GHz=3.562475 f_peak_GHz=3.562476 abs_tot_peak=9.973759e-04 FWHM_MHz=1.6468 Q=2163.3 PE=(-7.253036e-06,-1.010355e-03) EO=(-4.272085e-06,-8.648012e-05) MB=(1.119500e-06,9.951382e-05) ReY_Spm=1.342317e+01 ImY_Spm=9.233554e+00 at_edge=false
+----       当前进度:  47 % - 生成方程
+Memory: 1545/2578 1554/2710
+------     当前进度:  60 % - 生成方程
+Memory: 1546/2578 1554/2710
+---        当前进度:  39 % - 生成方程
+-----      当前进度:  54 % - 生成方程
+STUDY stdF1 sol=sol5 nfreq=49
+           当前进度:   1 % - 生成方程
+Memory: 1547/2578 1554/2710
+           当前进度:   2 % - 生成方程
+Memory: 1547/2578 1555/2710
+           当前进度:   3 % - 生成方程
+<---- 研究 1a/解 5 (sol5) 中的“编译方程: 频域” --------------------------------------------
+开始于 2026年10月25日 下午5:40:00。
+几何形函数: 二次巧凑边点单元
+在 AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD 上运行。
+在以下位置使用 1 个插槽： BF-202401010040 上（共 6 个内核）。
+可用内存：32.37 GB。
+           当前进度:   4 % - 编译方程: 频域
+Memory: 1485/2578 1495/2710
+           当前进度:   4 % - 正在创建可视化网格
+Memory: 1495/2578 1504/2710
+时间：1。
+物理内存: 1.55 GB
+虚拟内存: 1.55 GB
+结束时间：2026年10月25日 下午5:40:01。
+----- 研究 1a/解 5 (sol5) 中的“编译方程: 频域” ------------------------------------------->
+<---- 研究 1a/解 5 (sol5) 中的“因变量 1” -----------------------------------------------
+开始于 2026年10月25日 下午5:40:01。
+           当前进度:   4 % - 因变量 1
+Memory: 1519/2578 1527/2710
+求解时间：0 s。
+物理内存: 1.52 GB
+虚拟内存: 1.53 GB
+结束时间：2026年10月25日 下午5:40:01。
+----- 研究 1a/解 5 (sol5) 中的“因变量 1” ---------------------------------------------->
+<---- 研究 1a/解 5 (sol5) 中的“稳态求解器 1” ---------------------------------------------
+开始于 2026年10月25日 下午5:40:01。
+参数化求解器
+线性求解器 
+求解的自由度数：130000。
+    
+参数 freq = 2.91706e+09。
+           当前进度:   5 % - 
+Memory: 1566/2578 1616/2710
+找到对称矩阵。
+缩放因变量：
+位移场 (comp1.u): 8.1e-11
+电势 (comp1.V): 1
+已使用正交零空间函数。
+           当前进度:   5 % - 矩阵分解
+Memory: 1729/2578 1795/2710
+           当前进度:   6 % - 矩阵分解
+Memory: 1762/2578 2065/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.97   1.0000000        0.97    1    1    1    1e-12  6.7e-14
+    
+参数 freq = 2.91731e+09。
+           当前进度:   9 % - 求解线性方程组
+Memory: 1898/2578 2005/2710
+           当前进度:   9 % - 矩阵分解
+Memory: 1934/2578 2044/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.97   1.0000000        0.97    2    2    2  9.8e-13    5e-14
+    
+参数 freq = 2.91756e+09。
+           当前进度:   9 % - 组装稀疏模式
+Memory: 1849/2578 1954/2710
+           当前进度:   9 % - 矩阵分解
+Memory: 1699/2578 1759/2710
+-          当前进度:  10 % - 矩阵分解
+Memory: 1825/2578 2068/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-          当前进度:  11 % - 求解线性方程组
+Memory: 1922/2578 2036/2710
+   1        0.98   1.0000000        0.98    3    3    3  2.5e-12  6.3e-14
+    
+参数 freq = 2.91781e+09。
+-          当前进度:  11 % - 
+Memory: 1914/2578 2021/2710
+-          当前进度:  11 % - 矩阵分解
+Memory: 1709/2578 2033/2710
+-          当前进度:  12 % - 矩阵分解
+Memory: 1854/2578 2033/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-          当前进度:  13 % - 求解线性方程组
+Memory: 1891/2578 2000/2710
+   1        0.98   1.0000000        0.98    4    4    4    2e-12  4.3e-14
+    
+参数 freq = 2.91806e+09。
+-          当前进度:  13 % - 矩阵分解
+Memory: 1885/2578 1993/2710
+-          当前进度:  14 % - 矩阵分解
+Memory: 1752/2578 2029/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98    5    5    5    7e-13  5.5e-14
+    
+参数 freq = 2.91831e+09。
+-          当前进度:  15 % - 组装矩阵
+Memory: 1873/2578 1977/2710
+-          当前进度:  15 % - 矩阵分解
+Memory: 1649/2578 2025/2710
+-          当前进度:  16 % - 矩阵分解
+Memory: 1789/2578 2025/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-          当前进度:  17 % - 求解线性方程组
+Memory: 1883/2578 1991/2710
+   1        0.98   1.0000000        0.98    6    6    6  6.3e-13  4.4e-14
+    
+参数 freq = 2.91856e+09。
+-          当前进度:  17 % - 
+Memory: 1913/2578 2019/2710
+-          当前进度:  17 % - 矩阵分解
+Memory: 1716/2578 2027/2710
+-          当前进度:  18 % - 矩阵分解
+Memory: 1853/2578 2027/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-          当前进度:  18 % - 求解线性方程组
+Memory: 1886/2578 1993/2710
+   1        0.98   1.0000000        0.98    7    7    7  8.1e-13  4.3e-14
+    
+参数 freq = 2.91881e+09。
+-          当前进度:  19 % - 矩阵分解
+Memory: 1884/2578 1991/2710
+--         当前进度:  20 % - 矩阵分解
+Memory: 1904/2578 2027/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98    8    8    8  1.5e-12  4.6e-14
+    
+参数 freq = 2.91906e+09。
+--         当前进度:  21 % - 组装矩阵
+Memory: 1871/2578 1975/2710
+--         当前进度:  21 % - 矩阵分解
+Memory: 1664/2578 2023/2710
+--         当前进度:  22 % - 矩阵分解
+Memory: 1815/2578 2023/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+--         当前进度:  22 % - 求解线性方程组
+Memory: 1883/2578 1989/2710
+   1        0.98   1.0000000        0.98    9    9    9  1.6e-12  5.8e-14
+    
+参数 freq = 2.91931e+09。
+--         当前进度:  23 % - 约束处理
+Memory: 1882/2578 1985/2710
+--         当前进度:  23 % - 矩阵分解
+Memory: 1720/2578 2023/2710
+--         当前进度:  24 % - 矩阵分解
+Memory: 1870/2578 2023/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+--         当前进度:  24 % - 求解线性方程组
+Memory: 1834/2578 1937/2710
+   1        0.98   1.0000000        0.98   10   10   10  8.3e-13  7.8e-14
+    
+参数 freq = 2.91956e+09。
+--         当前进度:  25 % - 矩阵分解
+Memory: 1620/2578 1672/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+--         当前进度:  26 % - 求解线性方程组
+Memory: 1889/2578 1995/2710
+   1        0.98   1.0000000        0.98   11   11   11    1e-12  8.6e-14
+    
+参数 freq = 2.91981e+09。
+--         当前进度:  27 % - 组装矩阵
+Memory: 1874/2578 1977/2710
+--         当前进度:  27 % - 矩阵分解
+Memory: 1655/2578 2027/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+--         当前进度:  28 % - 求解线性方程组
+Memory: 1887/2578 1993/2710
+   1        0.98   1.0000000        0.98   12   12   12  1.6e-12  1.1e-13
+    
+参数 freq = 2.92006e+09。
+--         当前进度:  29 % - 
+Memory: 1911/2578 2015/2710
+--         当前进度:  29 % - 矩阵分解
+Memory: 1715/2578 2027/2710
+---        当前进度:  30 % - 矩阵分解
+Memory: 1862/2578 2027/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   13   13   13  2.3e-12  6.9e-14
+    
+参数 freq = 2.92031e+09。
+---        当前进度:  30 % - 组装矩阵
+Memory: 1870/2578 1992/2710
+---        当前进度:  31 % - 矩阵分解
+Memory: 1618/2578 1670/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---        当前进度:  32 % - 求解线性方程组
+Memory: 1886/2578 1992/2710
+   1        0.98   1.0000000        0.98   14   14   14  1.5e-12    2e-13
+    
+参数 freq = 2.92056e+09。
+---        当前进度:  33 % - 组装矩阵
+Memory: 1873/2578 1979/2710
+---        当前进度:  33 % - 矩阵分解
+Memory: 1691/2578 2027/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---        当前进度:  34 % - 求解线性方程组
+Memory: 1888/2578 1993/2710
+   1        0.98   1.0000000        0.98   15   15   15  2.8e-12  1.1e-13
+    
+参数 freq = 2.92081e+09。
+---        当前进度:  35 % - 矩阵分解
+Memory: 1851/2578 1955/2710
+---        当前进度:  36 % - 矩阵分解
+Memory: 1885/2578 2027/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   16   16   16  4.6e-12  8.2e-14
+    
+参数 freq = 2.92106e+09。
+---        当前进度:  36 % - 约束处理
+Memory: 1869/2578 1971/2710
+---        当前进度:  37 % - 矩阵分解
+Memory: 1618/2578 1670/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---        当前进度:  38 % - 求解线性方程组
+Memory: 1888/2578 1993/2710
+   1        0.98   1.0000000        0.98   17   17   17  1.7e-12    2e-13
+    
+参数 freq = 2.92131e+09。
+---        当前进度:  38 % - 组装矩阵
+Memory: 1878/2578 1983/2710
+---        当前进度:  39 % - 矩阵分解
+Memory: 1669/2578 2023/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+----       当前进度:  40 % - 求解线性方程组
+Memory: 1881/2578 1987/2710
+   1        0.98   1.0000000        0.98   18   18   18  1.9e-12  7.5e-14
+    
+参数 freq = 2.92156e+09。
+----       当前进度:  40 % - 约束处理
+Memory: 1925/2578 2040/2710
+----       当前进度:  41 % - 矩阵分解
+Memory: 1732/2578 2023/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   19   19   19  3.7e-12  1.6e-13
+    
+参数 freq = 2.92181e+09。
+----       当前进度:  42 % - 组装矩阵
+Memory: 1783/2578 1883/2710
+----       当前进度:  42 % - 矩阵分解
+Memory: 1615/2578 1670/2710
+----       当前进度:  43 % - 矩阵分解
+Memory: 1764/2578 2027/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   20   20   20  4.1e-12  1.1e-13
+    
+参数 freq = 2.92206e+09。
+----       当前进度:  44 % - 约束处理
+Memory: 1802/2578 1975/2710
+----       当前进度:  44 % - 矩阵分解
+Memory: 1651/2578 2008/2710
+----       当前进度:  45 % - 矩阵分解
+Memory: 1795/2578 2025/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+----       当前进度:  46 % - 求解线性方程组
+Memory: 1885/2578 1992/2710
+   1        0.98   1.0000000        0.98   21   21   21  2.1e-12  1.7e-13
+    
+参数 freq = 2.92231e+09。
+----       当前进度:  46 % - 
+Memory: 1909/2578 2013/2710
+----       当前进度:  46 % - 矩阵分解
+Memory: 1700/2578 2025/2710
+----       当前进度:  47 % - 矩阵分解
+Memory: 1853/2578 2025/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+----       当前进度:  48 % - 求解线性方程组
+Memory: 1886/2578 1992/2710
+   1        0.98   1.0000000        0.98   22   22   22  1.1e-12  1.9e-13
+    
+参数 freq = 2.92256e+09。
+----       当前进度:  48 % - 矩阵分解
+Memory: 1612/2578 1664/2710
+----       当前进度:  49 % - 矩阵分解
+Memory: 1758/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   23   23   23  6.7e-12  2.3e-13
+    
+参数 freq = 2.92281e+09。
+-----      当前进度:  50 % - 组装矩阵
+Memory: 1863/2578 1965/2710
+-----      当前进度:  50 % - 矩阵分解
+Memory: 1677/2578 2021/2710
+-----      当前进度:  51 % - 矩阵分解
+Memory: 1816/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-----      当前进度:  51 % - 求解线性方程组
+Memory: 1881/2578 1987/2710
+   1        0.98   1.0000000        0.98   24   24   24  3.6e-12    4e-13
+    
+参数 freq = 2.92306e+09。
+-----      当前进度:  52 % - 
+Memory: 1880/2578 1983/2710
+-----      当前进度:  52 % - 矩阵分解
+Memory: 1713/2578 2021/2710
+-----      当前进度:  53 % - 矩阵分解
+Memory: 1859/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   25   25   25  3.8e-12  3.2e-13
+    
+参数 freq = 2.92331e+09。
+-----      当前进度:  54 % - 组装矩阵
+Memory: 1777/2578 1877/2710
+-----      当前进度:  54 % - 矩阵分解
+Memory: 1612/2578 1664/2710
+-----      当前进度:  55 % - 矩阵分解
+Memory: 1903/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   26   26   26  7.9e-12  3.8e-13
+    
+参数 freq = 2.92356e+09。
+-----      当前进度:  56 % - 组装矩阵
+Memory: 1865/2578 1967/2710
+-----      当前进度:  56 % - 矩阵分解
+Memory: 1655/2578 2021/2710
+-----      当前进度:  57 % - 矩阵分解
+Memory: 1804/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-----      当前进度:  57 % - 求解线性方程组
+Memory: 1882/2578 1987/2710
+   1        0.98   1.0000000        0.98   27   27   27  7.8e-12    2e-13
+    
+参数 freq = 2.92381e+09。
+-----      当前进度:  58 % - 
+Memory: 1884/2578 1987/2710
+-----      当前进度:  58 % - 矩阵分解
+Memory: 1718/2578 2021/2710
+-----      当前进度:  59 % - 矩阵分解
+Memory: 1868/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   28   28   28  4.3e-12  1.5e-13
+    
+参数 freq = 2.92406e+09。
+-----      当前进度:  59 % - 组装矩阵
+Memory: 1781/2578 1881/2710
+------     当前进度:  60 % - 矩阵分解
+Memory: 1612/2578 1664/2710
+------     当前进度:  61 % - 矩阵分解
+Memory: 1908/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   29   29   29  9.2e-12  1.3e-13
+    
+参数 freq = 2.92431e+09。
+------     当前进度:  61 % - 约束处理
+Memory: 1867/2578 1973/2710
+------     当前进度:  62 % - 矩阵分解
+Memory: 1647/2578 2004/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+------     当前进度:  63 % - 求解线性方程组
+Memory: 1882/2578 1987/2710
+   1        0.98   1.0000000        0.98   30   30   30  5.2e-12  1.1e-13
+    
+参数 freq = 2.92456e+09。
+------     当前进度:  64 % - 组装矩阵
+Memory: 1865/2578 1969/2710
+------     当前进度:  64 % - 矩阵分解
+Memory: 1692/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+------     当前进度:  65 % - 求解线性方程组
+Memory: 1882/2578 1987/2710
+   1        0.98   1.0000000        0.98   31   31   31  9.2e-12  1.1e-13
+    
+参数 freq = 2.92481e+09。
+------     当前进度:  66 % - 矩阵分解
+Memory: 1845/2578 1949/2710
+------     当前进度:  67 % - 矩阵分解
+Memory: 1888/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   32   32   32  4.1e-12  1.2e-13
+    
+参数 freq = 2.92506e+09。
+------     当前进度:  67 % - 组装矩阵
+Memory: 1863/2578 1965/2710
+------     当前进度:  68 % - 矩阵分解
+Memory: 1647/2578 2004/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+------     当前进度:  69 % - 求解线性方程组
+Memory: 1882/2578 1987/2710
+   1        0.98   1.0000000        0.98   33   33   33  1.4e-12  1.1e-13
+    
+参数 freq = 2.92531e+09。
+-------    当前进度:  70 % - 
+Memory: 1905/2578 2009/2710
+-------    当前进度:  70 % - 矩阵分解
+Memory: 1705/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-------    当前进度:  71 % - 求解线性方程组
+Memory: 1830/2578 1933/2710
+   1        0.98   1.0000000        0.98   34   34   34  4.2e-12  8.1e-14
+    
+参数 freq = 2.92556e+09。
+-------    当前进度:  71 % - 矩阵分解
+Memory: 1871/2578 1985/2710
+-------    当前进度:  72 % - 矩阵分解
+Memory: 1754/2578 2021/2710
+-------    当前进度:  73 % - 矩阵分解
+Memory: 1903/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   35   35   35  8.5e-13  5.8e-14
+    
+参数 freq = 2.92581e+09。
+-------    当前进度:  73 % - 组装矩阵
+Memory: 1863/2578 1965/2710
+-------    当前进度:  73 % - 矩阵分解
+Memory: 1660/2578 2021/2710
+-------    当前进度:  74 % - 矩阵分解
+Memory: 1818/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-------    当前进度:  75 % - 求解线性方程组
+Memory: 1880/2578 1985/2710
+   1        0.98   1.0000000        0.98   36   36   36  1.7e-12  8.6e-14
+    
+参数 freq = 2.92606e+09。
+-------    当前进度:  75 % - 约束处理
+Memory: 1911/2578 2038/2710
+-------    当前进度:  76 % - 矩阵分解
+Memory: 1726/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   37   37   37  4.1e-12  5.9e-14
+    
+参数 freq = 2.92631e+09。
+-------    当前进度:  77 % - 组装矩阵
+Memory: 1781/2578 1881/2710
+-------    当前进度:  77 % - 矩阵分解
+Memory: 1612/2578 1664/2710
+-------    当前进度:  78 % - 矩阵分解
+Memory: 1765/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+-------    当前进度:  79 % - 求解线性方程组
+Memory: 1880/2578 1986/2710
+   1        0.98   1.0000000        0.98   38   38   38  1.1e-12  4.5e-14
+    
+参数 freq = 2.92656e+09。
+-------    当前进度:  79 % - 组装矩阵
+Memory: 1869/2578 1971/2710
+-------    当前进度:  79 % - 矩阵分解
+Memory: 1647/2578 2004/2710
+--------   当前进度:  80 % - 矩阵分解
+Memory: 1791/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+--------   当前进度:  81 % - 求解线性方程组
+Memory: 1882/2578 1988/2710
+   1        0.98   1.0000000        0.98   39   39   39  5.8e-13  4.9e-14
+    
+参数 freq = 2.92681e+09。
+--------   当前进度:  81 % - 
+Memory: 1905/2578 2009/2710
+--------   当前进度:  81 % - 矩阵分解
+Memory: 1709/2578 2021/2710
+--------   当前进度:  82 % - 矩阵分解
+Memory: 1856/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+--------   当前进度:  83 % - 求解线性方程组
+Memory: 1882/2578 1988/2710
+   1        0.98   1.0000000        0.98   40   40   40  1.4e-12  3.8e-14
+    
+参数 freq = 2.92706e+09。
+--------   当前进度:  83 % - 矩阵分解
+Memory: 1612/2578 1664/2710
+--------   当前进度:  84 % - 矩阵分解
+Memory: 1904/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   41   41   41  2.6e-13  3.8e-14
+    
+参数 freq = 2.92731e+09。
+--------   当前进度:  85 % - 组装矩阵
+Memory: 1863/2578 1965/2710
+--------   当前进度:  85 % - 矩阵分解
+Memory: 1658/2578 2021/2710
+--------   当前进度:  86 % - 矩阵分解
+Memory: 1803/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+--------   当前进度:  86 % - 求解线性方程组
+Memory: 1882/2578 1988/2710
+   1        0.98   1.0000000        0.98   42   42   42  1.5e-12  4.1e-14
+    
+参数 freq = 2.92756e+09。
+--------   当前进度:  87 % - 约束处理
+Memory: 1895/2578 2038/2710
+--------   当前进度:  87 % - 矩阵分解
+Memory: 1719/2578 2021/2710
+--------   当前进度:  88 % - 矩阵分解
+Memory: 1858/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.98   1.0000000        0.98   43   43   43  7.9e-13  3.4e-14
+    
+参数 freq = 2.92781e+09。
+--------   当前进度:  89 % - 组装矩阵
+Memory: 1777/2578 1877/2710
+--------   当前进度:  89 % - 矩阵分解
+Memory: 1613/2578 1665/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---------  当前进度:  90 % - 求解线性方程组
+Memory: 1882/2578 1988/2710
+   1        0.98   1.0000000        0.98   44   44   44  9.9e-13  3.4e-14
+    
+参数 freq = 2.92806e+09。
+---------  当前进度:  91 % - 组装矩阵
+Memory: 1865/2578 1968/2710
+---------  当前进度:  91 % - 矩阵分解
+Memory: 1700/2578 2021/2710
+---------  当前进度:  92 % - 矩阵分解
+Memory: 1840/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---------  当前进度:  92 % - 求解线性方程组
+Memory: 1882/2578 1988/2710
+   1        0.97   1.0000000        0.97   45   45   45  5.3e-13  2.5e-14
+    
+参数 freq = 2.92831e+09。
+---------  当前进度:  93 % - 矩阵分解
+Memory: 1880/2578 1986/2710
+---------  当前进度:  94 % - 矩阵分解
+Memory: 1904/2578 2021/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.97   1.0000000        0.97   46   46   46  5.4e-13  3.7e-14
+    
+参数 freq = 2.92856e+09。
+---------  当前进度:  95 % - 组装矩阵
+Memory: 1869/2578 1972/2710
+---------  当前进度:  95 % - 矩阵分解
+Memory: 1665/2578 2023/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---------  当前进度:  96 % - 求解线性方程组
+Memory: 1884/2578 1990/2710
+   1        0.97   1.0000000        0.97   47   47   47  1.3e-12  3.2e-14
+    
+参数 freq = 2.92881e+09。
+---------  当前进度:  97 % - 组装矩阵
+Memory: 1869/2578 1972/2710
+---------  当前进度:  97 % - 矩阵分解
+Memory: 1696/2578 2023/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+---------  当前进度:  98 % - 求解线性方程组
+Memory: 1884/2578 1990/2710
+   1        0.97   1.0000000        0.97   48   48   48  6.8e-13  2.5e-14
+    
+参数 freq = 2.92906e+09。
+---------  当前进度:  99 % - 矩阵分解
+Memory: 1611/2578 1663/2710
+---------- 当前进度: 100 % - 矩阵分解
+Memory: 1903/2578 2019/2710
+Iter      SolEst     Damping    Stepsize #Res #Jac #Sol   LinErr   LinRes
+   1        0.97   1.0000000        0.97   49   49   49  1.4e-12  2.3e-14
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 1431/2578 1473/2710
+求解时间：49 s。
+物理内存: 1.98 GB
+虚拟内存: 2.12 GB
+结束时间：2026年10月25日 下午5:40:50。
+----- 研究 1a/解 5 (sol5) 中的“稳态求解器 1” -------------------------------------------->
+F6I set=stdF1 f_GHz=2.917062 PE=(-5.820822e-05,3.153503e-06) EO=(-1.261486e-04,6.074567e-06) MB=(5.622393e-06,-2.989497e-07) abs_tot=1.789573e-04 ReY_Spm=5.040453e-01 ImY_Spm=1.463070e+01
+F6I set=stdF1 f_GHz=2.917312 PE=(-5.946738e-05,3.566153e-06) EO=(-1.285959e-04,6.991991e-06) MB=(5.741948e-06,-3.397967e-07) abs_tot=1.826075e-04 ReY_Spm=5.218061e-01 ImY_Spm=1.482703e+01
+F6I set=stdF1 f_GHz=2.917562 PE=(-6.090642e-05,4.021052e-06) EO=(-1.314434e-04,7.995753e-06) MB=(5.879306e-06,-3.847108e-07) abs_tot=1.868330e-04 ReY_Spm=5.440786e-01 ImY_Spm=1.503070e+01
+F6I set=stdF1 f_GHz=2.917812 PE=(-6.254343e-05,4.528041e-06) EO=(-1.347282e-04,9.107253e-06) MB=(6.036209e-06,-4.346588e-07) abs_tot=1.916905e-04 ReY_Spm=5.714522e-01 ImY_Spm=1.524359e+01
+F6I set=stdF1 f_GHz=2.918062 PE=(-6.440065e-05,5.099136e-06) EO=(-1.384964e-04,1.035247e-05) MB=(6.214811e-06,-4.908188e-07) abs_tot=1.972505e-04 ReY_Spm=6.047021e-01 ImY_Spm=1.546780e+01
+F6I set=stdF1 f_GHz=2.918312 PE=(-6.650537e-05,5.749261e-06) EO=(-1.428052e-04,1.176352e-05) MB=(6.417757e-06,-5.546519e-07) abs_tot=2.036003e-04 ReY_Spm=6.448400e-01 ImY_Spm=1.570576e+01
+F6I set=stdF1 f_GHz=2.918562 PE=(-6.889110e-05,6.497248e-06) EO=(-1.477251e-04,1.338081e-05) MB=(6.648303e-06,-6.279999e-07) abs_tot=2.108485e-04 ReY_Spm=6.931867e-01 ImY_Spm=1.596031e+01
+F6I set=stdF1 f_GHz=2.918812 PE=(-7.159910e-05,7.367233e-06) EO=(-1.533433e-04,1.525604e-05) MB=(6.910462e-06,-7.132216e-07) abs_tot=2.191300e-04 ReY_Spm=7.514731e-01 ImY_Spm=1.623482e+01
+F6I set=stdF1 f_GHz=2.919062 PE=(-7.468045e-05,8.390644e-06) EO=(-1.597679e-04,1.745639e-05) MB=(7.209210e-06,-8.133871e-07) abs_tot=2.286139e-04 ReY_Spm=8.219874e-01 ImY_Spm=1.653334e+01
+F6I set=stdF1 f_GHz=2.919312 PE=(-7.819879e-05,9.609086e-06) EO=(-1.671342e-04,2.007075e-05) MB=(7.550745e-06,-9.325592e-07) abs_tot=2.395137e-04 ReY_Spm=9.077884e-01 ImY_Spm=1.686083e+01
+F6I set=stdF1 f_GHz=2.919562 PE=(-8.223401e-05,1.107862e-05) EO=(-1.756120e-04,2.321878e-05) MB=(7.942858e-06,-1.076211e-06) abs_tot=2.521016e-04 ReY_Spm=1.013023e+00 ImY_Spm=1.722339e+01
+F6I set=stdF1 f_GHz=2.919812 PE=(-8.688730e-05,1.287622e-05) EO=(-1.854168e-04,2.706477e-05) MB=(8.395419e-06,-1.251857e-06) abs_tot=2.667296e-04 ReY_Spm=1.143409e+00 ImY_Spm=1.762868e+01
+F6I set=stdF1 f_GHz=2.920062 PE=(-9.228803e-05,1.510989e-05) EO=(-1.968243e-04,3.183913e-05) MB=(8.921047e-06,-1.470039e-06) abs_tot=2.838583e-04 ReY_Spm=1.306981e+00 ImY_Spm=1.808640e+01
+F6I set=stdF1 f_GHz=2.920312 PE=(-9.860304e-05,1.793472e-05) EO=(-2.101903e-04,3.787268e-05) MB=(9.536023e-06,-1.745895e-06) abs_tot=3.041013e-04 ReY_Spm=1.515290e+00 ImY_Spm=1.860895e+01
+F6I set=stdF1 f_GHz=2.920562 PE=(-1.060492e-04,2.157936e-05) EO=(-2.259775e-04,4.565319e-05) MB=(1.026151e-05,-2.101740e-06) abs_tot=3.282909e-04 ReY_Spm=1.785368e+00 ImY_Spm=1.921239e+01
+F6I set=stdF1 f_GHz=2.920812 PE=(-1.149096e-04,2.639109e-05) EO=(-2.447901e-04,5.592145e-05) MB=(1.112514e-05,-2.571471e-06) abs_tot=3.575791e-04 ReY_Spm=2.143073e+00 ImY_Spm=1.991756e+01
+F6I set=stdF1 f_GHz=2.921062 PE=(-1.255514e-04,3.291525e-05) EO=(-2.674122e-04,6.984081e-05) MB=(1.216276e-05,-3.208313e-06) abs_tot=3.935975e-04 ReY_Spm=2.628977e+00 ImY_Spm=2.075141e+01
+F6I set=stdF1 f_GHz=2.921312 PE=(-1.384382e-04,4.204065e-05) EO=(-2.948337e-04,8.930748e-05) MB=(1.341962e-05,-4.099018e-06) abs_tot=4.387121e-04 ReY_Spm=3.309131e+00 ImY_Spm=2.174773e+01
+F6I set=stdF1 f_GHz=2.921562 PE=(-1.541025e-04,5.527539e-05) EO=(-3.281933e-04,1.175391e-04) MB=(1.494771e-05,-5.390781e-06) abs_tot=4.964323e-04 ReY_Spm=4.295453e+00 ImY_Spm=2.294500e+01
+F6I set=stdF1 f_GHz=2.921812 PE=(-1.729660e-04,7.528228e-05) EO=(-3.683944e-04,1.602180e-04) MB=(1.678824e-05,-7.343514e-06) abs_tot=5.720414e-04 ReY_Spm=5.785217e+00 ImY_Spm=2.437269e+01
+F6I set=stdF1 f_GHz=2.922062 PE=(-1.946084e-04,1.068969e-04) EO=(-4.145466e-04,2.276642e-04) MB=(1.890023e-05,-1.042922e-05) abs_tot=6.733960e-04 ReY_Spm=8.135867e+00 ImY_Spm=2.599647e+01
+F6I set=stdF1 f_GHz=2.922312 PE=(-2.151375e-04,1.587089e-04) EO=(-4.583560e-04,3.382143e-04) MB=(2.090390e-05,-1.548638e-05) abs_tot=8.109590e-04 ReY_Spm=1.198019e+01 ImY_Spm=2.752257e+01
+F6I set=stdF1 f_GHz=2.922562 PE=(-2.188630e-04,2.427577e-04) EO=(-4.663552e-04,5.175843e-04) MB=(2.126790e-05,-2.369037e-05) abs_tot=9.917085e-04 ReY_Spm=1.819809e+01 ImY_Spm=2.778198e+01
+F6I set=stdF1 f_GHz=2.922812 PE=(-1.628463e-04,3.558250e-04) EO=(-3.469043e-04,7.589682e-04) MB=(1.580097e-05,-3.472767e-05) abs_tot=1.187656e-03 ReY_Spm=2.652191e+01 ImY_Spm=2.360027e+01
+F6I set=stdF1 f_GHz=2.923062 PE=(-9.679085e-06,4.208930e-04) EO=(-2.005976e-05,8.980572e-04) MB=(8.506384e-07,-4.108118e-05) abs_tot=1.278196e-03 ReY_Spm=3.122793e+01 ImY_Spm=1.226293e+01
+F6I set=stdF1 f_GHz=2.923312 PE=(1.429843e-04,3.546828e-04) EO=(3.058960e-04,7.569858e-04) MB=(-1.405233e-05,-3.462072e-05) abs_tot=1.161511e-03 ReY_Spm=2.622211e+01 ImY_Spm=1.052055e+00
+F6I set=stdF1 f_GHz=2.923562 PE=(1.981226e-04,2.412122e-04) EO=(4.237901e-04,5.149153e-04) MB=(-1.943658e-05,-2.354583e-05) abs_tot=9.485006e-04 ReY_Spm=1.778706e+01 ImY_Spm=-2.912204e+00
+F6I set=stdF1 f_GHz=2.923812 PE=(1.937285e-04,1.572151e-04) EO=(4.145913e-04,3.356578e-04) MB=(-1.900947e-05,-1.534697e-05) abs_tot=7.584969e-04 ReY_Spm=1.157361e+01 ImY_Spm=-2.493378e+00
+F6I set=stdF1 f_GHz=2.924062 PE=(1.727655e-04,1.055833e-04) EO=(3.699841e-04,2.254466e-04) MB=(-1.696460e-05,-1.030703e-05) abs_tot=6.158839e-04 ReY_Spm=7.766152e+00 ImY_Spm=-8.719740e-01
+F6I set=stdF1 f_GHz=2.924312 PE=(1.508322e-04,7.415779e-05) EO=(3.232745e-04,1.583555e-04) MB=(-1.482469e-05,-7.239387e-06) abs_tot=5.115548e-04 ReY_Spm=5.454374e+00 ImY_Spm=8.064067e-01
+F6I set=stdF1 f_GHz=2.924562 PE=(1.317550e-04,5.431930e-05) EO=(2.826411e-04,1.159960e-04) MB=(-1.296336e-05,-5.302776e-06) abs_tot=4.340246e-04 ReY_Spm=3.997966e+00 ImY_Spm=2.264647e+00
+F6I set=stdF1 f_GHz=2.924812 PE=(1.159171e-04,4.122909e-05) EO=(2.489087e-04,8.804242e-05) MB=(-1.141809e-05,-4.024903e-06) abs_tot=3.749449e-04 ReY_Spm=3.038676e+00 ImY_Spm=3.477774e+00
+F6I set=stdF1 f_GHz=2.925062 PE=(1.028760e-04,3.222771e-05) EO=(2.211371e-04,6.881851e-05) MB=(-1.014574e-05,-3.146171e-06) abs_tot=3.287813e-04 ReY_Spm=2.380048e+00 ImY_Spm=4.480384e+00
+F6I set=stdF1 f_GHz=2.925312 PE=(9.208741e-05,2.581126e-05) EO=(1.981667e-04,5.511409e-05) MB=(-9.093170e-06,-2.519780e-06) abs_tot=2.918885e-04 ReY_Spm=1.911188e+00 ImY_Spm=5.313830e+00
+F6I set=stdF1 f_GHz=2.925562 PE=(8.308056e-05,2.109460e-05) EO=(1.789945e-04,4.503954e-05) MB=(-8.214471e-06,-2.059327e-06) abs_tot=2.618220e-04 ReY_Spm=1.566931e+00 ImY_Spm=6.013578e+00
+F6I set=stdF1 f_GHz=2.925812 PE=(7.548352e-05,1.753536e-05) EO=(1.628274e-04,3.743686e-05) MB=(-7.473339e-06,-1.711866e-06) abs_tot=2.369022e-04 ReY_Spm=1.307403e+00 ImY_Spm=6.607551e+00
+F6I set=stdF1 f_GHz=2.926062 PE=(6.901007e-05,1.478858e-05) EO=(1.490553e-04,3.156949e-05) MB=(-6.841842e-06,-1.443721e-06) abs_tot=2.159460e-04 ReY_Spm=1.107275e+00 ImY_Spm=7.117193e+00
+F6I set=stdF1 f_GHz=2.926312 PE=(6.344093e-05,1.262745e-05) EO=(1.372107e-04,2.695307e-05) MB=(-6.298583e-06,-1.232750e-06) abs_tot=1.981001e-04 ReY_Spm=9.499128e-01 ImY_Spm=7.558913e+00
+F6I set=stdF1 f_GHz=2.926562 PE=(5.860735e-05,1.089835e-05) EO=(1.269336e-04,2.325954e-05) MB=(-5.827092e-06,-1.063958e-06) abs_tot=1.827356e-04 ReY_Spm=8.240656e-01 ImY_Spm=7.945327e+00
+F6I set=stdF1 f_GHz=2.926812 PE=(5.437834e-05,9.494499e-06) EO=(1.179448e-04,2.026083e-05) MB=(-5.414586e-06,-9.269197e-07) abs_tot=1.693799e-04 ReY_Spm=7.219196e-01 ImY_Spm=8.286227e+00
+F6I set=stdF1 f_GHz=2.927062 PE=(5.065118e-05,8.339926e-06) EO=(1.100252e-04,1.779468e-05) MB=(-5.051042e-06,-8.142176e-07) abs_tot=1.576718e-04 ReY_Spm=6.379216e-01 ImY_Spm=8.589288e+00
+F6I set=stdF1 f_GHz=2.927312 PE=(4.734452e-05,7.379460e-06) EO=(1.030014e-04,1.574325e-05) MB=(-4.728520e-06,-7.204660e-07) abs_tot=1.473306e-04 ReY_Spm=5.680433e-01 ImY_Spm=8.860590e+00
+F6I set=stdF1 f_GHz=2.927562 PE=(4.439323e-05,6.572293e-06) EO=(9.673450e-05,1.401935e-05) MB=(-4.440664e-06,-6.416809e-07) abs_tot=1.381353e-04 ReY_Spm=5.093078e-01 ImY_Spm=9.105001e+00
+F6I set=stdF1 f_GHz=2.927812 PE=(4.174468e-05,5.887741e-06) EO=(9.111223e-05,1.255744e-05) MB=(-4.182338e-06,-5.748664e-07) abs_tot=1.299096e-04 ReY_Spm=4.594786e-01 ImY_Spm=9.326456e+00
+F6I set=stdF1 f_GHz=2.928062 PE=(3.935592e-05,5.302386e-06) EO=(8.604307e-05,1.130748e-05) MB=(-3.949352e-06,-5.177364e-07) abs_tot=1.225111e-04 ReY_Spm=4.168504e-01 ImY_Spm=9.528169e+00
+F6I set=stdF1 f_GHz=2.928312 PE=(3.719162e-05,4.798116e-06) EO=(8.145167e-05,1.023077e-05) MB=(-3.738258e-06,-4.685226e-07) abs_tot=1.158239e-04 ReY_Spm=3.801055e-01 ImY_Spm=9.712785e+00
+F6I set=stdF1 f_GHz=2.928562 PE=(3.522246e-05,4.360749e-06) EO=(7.727554e-05,9.297026e-06) MB=(-3.546194e-06,-4.258403e-07) abs_tot=1.097524e-04 ReY_Spm=3.482129e-01 ImY_Spm=9.882499e+00
+F6I set=stdF1 f_GHz=2.928812 PE=(3.342393e-05,3.979059e-06) EO=(7.346244e-05,8.482246e-06) MB=(-3.370769e-06,-3.885935e-07) abs_tot=1.042172e-04 ReY_Spm=3.203569e-01 ImY_Spm=1.003915e+01
+F6I set=stdF1 f_GHz=2.929062 PE=(3.177540e-05,3.644069e-06) EO=(6.996840e-05,7.767247e-06) MB=(-3.209971e-06,-3.559056e-07) abs_tot=9.915209e-05 ReY_Spm=2.958857e-01 ImY_Spm=1.018428e+01
+PEAK6I set=XR30_m54 eig_f_GHz=2.923062 f_peak_GHz=2.923062 abs_tot_peak=1.278196e-03 FWHM_MHz=1.1803 Q=2476.4 PE=(-9.679085e-06,4.208930e-04) EO=(-2.005976e-05,8.980572e-04) MB=(8.506384e-07,-4.108118e-05) ReY_Spm=3.122793e+01 ImY_Spm=1.226293e+01 at_edge=false
+STEP6I_DONE case=XR30
+类运行时: 209 s.
+总时间: 209 s.
+---------- 当前进度: 100 % - 完成
+Memory: 1487/2578 1531/2710
