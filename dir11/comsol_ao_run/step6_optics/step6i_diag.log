@@ -1,0 +1,469 @@
+*******************************************
+***COMSOL 6.3.0.290 progress output file***
+*******************************************
+Sun Oct 25 17:07:33 CST 2026
+COMSOL Multiphysics 6.3 (寮�鍙戠増鏈�: 290) 鍦ㄦ壒澶勭悊妯″紡涓嬪惎鍔�
+姝ｅ湪杩愯: D:\comsol_ao_run\step6_optics\Step6iDiag.class
+STEP6I_START case=PAP1
+CFG6I case=PAP1 W_um=10.000 XR_um=2.600 rib_top_um=0.950 rib_bot_um=1.2412 HS_nm=400 HR_nm=400 Au_nm=75 finger_w_um=0.300 finger_pitch_um=0.600 XF_um=5.875..7.675 eta_s=5e-4 La_um=100
+---------- 褰撳墠杩涘害: 100 % - 姝ｅ湪鏇存柊閫夋嫨
+Memory: 457/457 485/485
+           褰撳墠杩涘害:   0 % - 鐭╁舰
+Memory: 462/462 490/490
+           褰撳墠杩涘害:   6 % - 鐭╁舰 2
+Memory: 464/464 491/491
+-          褰撳墠杩涘害:  12 % - 澶氳竟褰�
+-          褰撳墠杩涘害:  18 % - 鐭╁舰 3
+Memory: 465/465 491/491
+--         褰撳墠杩涘害:  24 % - 鐭╁舰 1
+--         褰撳墠杩涘害:  29 % - 鐭╁舰 2a
+---        褰撳墠杩涘害:  35 % - 鐭╁舰 3a
+----       褰撳墠杩涘害:  41 % - 褰㈡垚鑱斿悎浣�
+---------  褰撳墠杩涘害:  91 % - 瑙ｆ瀽鍩熷拰绌哄尯鍩�
+---------- 褰撳墠杩涘害: 100 % - 姝ｅ湪鏇存柊閫夋嫨
+---------- 褰撳墠杩涘害: 100 % - 姝ｅ湪鍒涘缓鍙鍖栫綉鏍�
+Memory: 470/470 496/496
+GEOM6I nDom=7 nLN=2(exp 2) nAu=4(exp 4) nTerm=2 nGnd=2 nTop=7 nBot=1 nWallL=1 nWallR=1 nEndL=1 nEndR=1 nExt=4
+MAT6I gold tag=au_-_gold label=Au - Gold groups=[def, Enu]
+SYS2 method=general angle=[90[deg], 90[deg], 0]
+椤剁偣鍗曞厓鏁帮細28
+杈圭晫鍗曞厓鏁帮細1259
+----       褰撳墠杩涘害:  48 % - 鎻愰珮鍗曞厓璐ㄩ噺
+Memory: 827/830 850/855
+鍗曞厓鏁帮細32152
+鏈�灏忓崟鍏冭川閲忥細0.5597
+---------- 褰撳墠杩涘害: 100 % - 姝ｅ湪瀹氬瀷缃戞牸
+Memory: 771/830 802/855
+NUMELEM6I n_elem=32152
+----       褰撳墠杩涘害:  47 % - 鐢熸垚鏂圭▼
+Memory: 832/840 854/861
+------     褰撳墠杩涘害:  60 % - 鐢熸垚鏂圭▼
+Memory: 839/842 860/864
+---        褰撳墠杩涘害:  39 % - 鐢熸垚鏂圭▼
+Memory: 835/850 858/871
+-----      褰撳墠杩涘害:  54 % - 鐢熸垚鏂圭▼
+Memory: 838/850 859/871
+<---- 鐮旂┒ 1/瑙� 1 (sol1) 涓殑鈥滅紪璇戞柟绋�: 妯″紡鍒嗘瀽鈥� -------------------------------------------
+寮�濮嬩簬 2026骞�10鏈�25鏃� 涓嬪崍5:07:53銆�
+鍑犱綍褰㈠嚱鏁�: 浜屾宸у噾杈圭偣鍗曞厓
+鍦� AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD 涓婅繍琛屻��
+鍦ㄤ互涓嬩綅缃娇鐢� 1 涓彃妲斤細 BF-202401010040 涓婏紙鍏� 6 涓唴鏍革級銆�
+鍙敤鍐呭瓨锛�32.37 GB銆�
+           褰撳墠杩涘害:   0 % - 鐢熸垚鏂圭▼
+Memory: 846/854 867/875
+           褰撳墠杩涘害:   3 % - 缂栬瘧鏂圭▼: 妯″紡鍒嗘瀽
+Memory: 924/939 946/968
+           褰撳墠杩涘害:   3 % - 姝ｅ湪鍒涘缓鍙鍖栫綉鏍�
+Memory: 945/948 962/968
+鏃堕棿锛�2銆�
+鐗╃悊鍐呭瓨: 948 MB
+铏氭嫙鍐呭瓨: 968 MB
+缁撴潫鏃堕棿锛�2026骞�10鏈�25鏃� 涓嬪崍5:07:55銆�
+----- 鐮旂┒ 1/瑙� 1 (sol1) 涓殑鈥滅紪璇戞柟绋�: 妯″紡鍒嗘瀽鈥� ------------------------------------------>
+<---- 鐮旂┒ 1/瑙� 1 (sol1) 涓殑鈥滃洜鍙橀噺 1鈥� ------------------------------------------------
+寮�濮嬩簬 2026骞�10鏈�25鏃� 涓嬪崍5:07:55銆�
+           褰撳墠杩涘害:   3 % - 鍥犲彉閲� 1
+Memory: 1014/1014 1032/1032
+姹傝В鏃堕棿锛�0 s銆�
+鐗╃悊鍐呭瓨: 1.01 GB
+铏氭嫙鍐呭瓨: 1.03 GB
+缁撴潫鏃堕棿锛�2026骞�10鏈�25鏃� 涓嬪崍5:07:55銆�
+----- 鐮旂┒ 1/瑙� 1 (sol1) 涓殑鈥滃洜鍙橀噺 1鈥� ----------------------------------------------->
+<---- 鐮旂┒ 1/瑙� 1 (sol1) 涓殑鈥滅壒寰佸�兼眰瑙ｅ櫒 1鈥� ---------------------------------------------
+寮�濮嬩簬 2026骞�10鏈�25鏃� 涓嬪崍5:07:55銆�
+鐗瑰緛鍊兼眰瑙ｅ櫒
+姹傝В鐨勮嚜鐢卞害鏁帮細225513銆�
+           褰撳墠杩涘害:   5 % - 缁勮鐭╅樀
+Memory: 1314/1338 1379/1407
+鎵惧埌闈炲绉扮煩闃点��
+缂╂斁鍥犲彉閲忥細
+鐢靛満 锛堢┖闂村潗鏍囩郴锛� (comp1.E): 1
+宸蹭娇鐢ㄦ浜ら浂绌洪棿鍑芥暟銆�
+           褰撳墠杩涘害:   5 % - 绾︽潫澶勭悊
+Memory: 1444/1476 1538/1539
+           褰撳墠杩涘害:   5 % - 鐭╅樀鍒嗚В
+Memory: 1521/1521 1606/1606
+闈炲绉扮壒寰佸�兼眰瑙ｅ櫒
+Iter      ErrEst  Nconv
+           褰撳墠杩涘害:   5 % - 姹傝В绾挎�ф柟绋嬬粍
+Memory: 2103/2118 2280/2296
+           褰撳墠杩涘害:   5 % - 鐭╅樀涔樻硶
+Memory: 2101/2118 2276/2296
+           褰撳墠杩涘害:   5 % - 姹傝В绾挎�ф柟绋嬬粍
+Memory: 2109/2118 2286/2296
+   1       0.017      5
+-----      褰撳墠杩涘害:  53 % - 姹傝В绾挎�ф柟绋嬬粍
+Memory: 2082/2118 2267/2296
+   2     0.00034      7
+-------    褰撳墠杩涘害:  72 % - 姹傝В绾挎�ф柟绋嬬粍
+Memory: 2086/2118 2263/2296
+   3     5.5e-08     10
+---------- 褰撳墠杩涘害: 100 % - 姹傝В绾挎�ф柟绋嬬粍
+Memory: 1827/2118 1989/2296
+33 绾挎�ф柟绋嬬粍鐨勮В銆�
+33 鐭╅樀涔樻硶銆�
+29 閲嶆浜ゅ寲銆�
+姹傝В鏃堕棿锛�15 s銆�
+鐗╃悊鍐呭瓨: 2.12 GB
+铏氭嫙鍐呭瓨: 2.3 GB
+缁撴潫鏃堕棿锛�2026骞�10鏈�25鏃� 涓嬪崍5:08:10銆�
+----- 鐮旂┒ 1/瑙� 1 (sol1) 涓殑鈥滅壒寰佸�兼眰瑙ｅ櫒 1鈥� -------------------------------------------->
+STUDY stdO1 sol=sol1 dataset=ds_stdO1 neigs=10 shift_neff=1.95
+MODE6I k=0 neff_re=1.785070 neff_im=-5.1270e-04 dBcm=180.5229 TEfrac=0.9437 ribFrac=0.0420
+MODE6I k=1 neff_re=1.801776 neff_im=-1.3207e-03 dBcm=465.0319 TEfrac=0.9154 ribFrac=0.1372
+MODE6I k=2 neff_re=1.808350 neff_im=-4.3470e-04 dBcm=153.0591 TEfrac=0.9417 ribFrac=0.2650
+MODE6I k=3 neff_re=1.825267 neff_im=-3.1835e-03 dBcm=1120.9134 TEfrac=0.9149 ribFrac=0.0010
+MODE6I k=4 neff_re=1.941851 neff_im=-1.2629e-10 dBcm=0.0000 TEfrac=0.9422 ribFrac=0.9575
+MODE6I k=5 neff_re=1.949522 neff_im=-1.5608e-12 dBcm=0.0000 TEfrac=0.0134 ribFrac=0.9850
+MODE6I k=6 neff_re=2.065226 neff_im=-1.4318e-02 dBcm=5041.3386 TEfrac=0.3353 ribFrac=0.0000
+MODE6I k=7 neff_re=2.086502 neff_im=-1.3343e-02 dBcm=4698.0308 TEfrac=0.2748 ribFrac=0.0000
+MODE6I k=8 neff_re=2.110136 neff_im=-1.2410e-02 dBcm=4369.4797 TEfrac=0.2072 ribFrac=0.0000
+MODE6I k=9 neff_re=2.127530 neff_im=-1.1810e-02 dBcm=4158.4416 TEfrac=0.1570 ribFrac=0.0000
+----       褰撳墠杩涘害:  47 % - 鐢熸垚鏂圭▼
+Memory: 1156/2118 1202/2296
+------     褰撳墠杩涘害:  60 % - 鐢熸垚鏂圭▼
+Memory: 1177/2118 1223/2296
+---        褰撳墠杩涘害:  39 % - 鐢熸垚鏂圭▼
+Memory: 1173/2118 1218/2296
+-----      褰撳墠杩涘害:  54 % - 鐢熸垚鏂圭▼
+Memory: 1172/2118 1216/2296
+<---- 鐮旂┒ 2/瑙� 2 (sol2) 涓殑鈥滅紪璇戞柟绋�: 妯″紡鍒嗘瀽鈥� -------------------------------------------
+寮�濮嬩簬 2026骞�10鏈�25鏃� 涓嬪崍5:08:13銆�
+鍑犱綍褰㈠嚱鏁�: 浜屾宸у噾杈圭偣鍗曞厓
+鍦� AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD 涓婅繍琛屻��
+鍦ㄤ互涓嬩綅缃娇鐢� 1 涓彃妲斤細 BF-202401010040 涓婏紙鍏� 6 涓唴鏍革級銆�
+鍙敤鍐呭瓨锛�32.37 GB銆�
+           褰撳墠杩涘害:   0 % - 鐢熸垚鏂圭▼
+Memory: 1177/2118 1221/2296
+           褰撳墠杩涘害:   3 % - 缂栬瘧鏂圭▼: 妯″紡鍒嗘瀽
+Memory: 1178/2118 1225/2296
+           褰撳墠杩涘害:   3 % - 姝ｅ湪鍒涘缓鍙鍖栫綉鏍�
+Memory: 1179/2118 1225/2296
+鏃堕棿锛�2銆�
+鐗╃悊鍐呭瓨: 1.19 GB
+铏氭嫙鍐呭瓨: 1.23 GB
+缁撴潫鏃堕棿锛�2026骞�10鏈�25鏃� 涓嬪崍5:08:15銆�
+----- 鐮旂┒ 2/瑙� 2 (sol2) 涓殑鈥滅紪璇戞柟绋�: 妯″紡鍒嗘瀽鈥� ------------------------------------------>
+<---- 鐮旂┒ 2/瑙� 2 (sol2) 涓殑鈥滃洜鍙橀噺 1鈥� ------------------------------------------------
+寮�濮嬩簬 2026骞�10鏈�25鏃� 涓嬪崍5:08:15銆�
+           褰撳墠杩涘害:   3 % - 鍥犲彉閲� 1
+Memory: 1250/2118 1297/2296
+姹傝В鏃堕棿锛�0 s銆�
+鐗╃悊鍐呭瓨: 1.25 GB
+铏氭嫙鍐呭瓨: 1.3 GB
+缁撴潫鏃堕棿锛�2026骞�10鏈�25鏃� 涓嬪崍5:08:15銆�
+----- 鐮旂┒ 2/瑙� 2 (sol2) 涓殑鈥滃洜鍙橀噺 1鈥� ----------------------------------------------->
+<---- 鐮旂┒ 2/瑙� 2 (sol2) 涓殑鈥滅壒寰佸�兼眰瑙ｅ櫒 1鈥� ---------------------------------------------
+寮�濮嬩簬 2026骞�10鏈�25鏃� 涓嬪崍5:08:15銆�
+鐗瑰緛鍊兼眰瑙ｅ櫒
+姹傝В鐨勮嚜鐢卞害鏁帮細225513銆�
+           褰撳墠杩涘害:   5 % - 缁勮鐭╅樀
+Memory: 1514/2118 1572/2296
+鎵惧埌闈炲绉扮煩闃点��
+缂╂斁鍥犲彉閲忥細
+鐢靛満 锛堢┖闂村潗鏍囩郴锛� (comp1.E): 1
+宸蹭娇鐢ㄦ浜ら浂绌洪棿鍑芥暟銆�
+           褰撳墠杩涘害:   5 % - 绾︽潫澶勭悊
+Memory: 1631/2118 1739/2296
+           褰撳墠杩涘害:   5 % - 鐭╅樀鍒嗚В
+Memory: 1747/2118 1846/2296
+闈炲绉扮壒寰佸�兼眰瑙ｅ櫒
+Iter      ErrEst  Nconv
+           褰撳墠杩涘害:   5 % - 姹傝В绾挎�ф柟绋嬬粍
+Memory: 2312/2312 2475/2479
+           褰撳墠杩涘害:   5 % - 鐭╅樀涔樻硶
+Memory: 2255/2319 2424/2486
+           褰撳墠杩涘害:   5 % - 姹傝В绾挎�ф柟绋嬬粍
+Memory: 2263/2319 2433/2486
+   1           0      1
+---------- 褰撳墠杩涘害: 100 % - 姹傝В绾挎�ф柟绋嬬粍
+Memory: 2143/2319 2327/2486
+20 绾挎�ф柟绋嬬粍鐨勮В銆�
+20 鐭╅樀涔樻硶銆�
+19 閲嶆浜ゅ寲銆�
+姹傝В鏃堕棿锛�10 s銆�
+鐗╃悊鍐呭瓨: 2.32 GB
+铏氭嫙鍐呭瓨: 2.49 GB
+缁撴潫鏃堕棿锛�2026骞�10鏈�25鏃� 涓嬪崍5:08:25銆�
+----- 鐮旂┒ 2/瑙� 2 (sol2) 涓殑鈥滅壒寰佸�兼眰瑙ｅ櫒 1鈥� -------------------------------------------->
+STUDY stdO2 sol=sol2 dataset=ds_stdO2 neigs=1 shift_neff=1.941851
+SOLOPT6I case=PAP1 tag=sol2 neff=1.94185089 neff_im=-1.2629e-10 dBcm=0.0000 TEfrac=0.9422 ribFrac=0.9575 same_as_pick=true P=2.18076314e-12 W/m
+<---- 鐮旂┒ 1/瑙� 1 (sol1) 涓殑鈥滅紪璇戞柟绋�: 妯″紡鍒嗘瀽 (2)鈥� ---------------------------------------
+寮�濮嬩簬 2026骞�10鏈�25鏃� 涓嬪崍5:08:25銆�
+鍑犱綍褰㈠嚱鏁�: 浜屾宸у噾杈圭偣鍗曞厓
+           褰撳墠杩涘害:   0 % - 鐢熸垚鏂圭▼
+Memory: 1325/2319 1371/2486
+---------- 褰撳墠杩涘害: 100 % - 瑙� 1
+Memory: 1339/2319 1385/2486
+---------- 褰撳墠杩涘害: 100 % - 姝ｅ湪鍒涘缓鍙鍖栫綉鏍�
+Memory: 1340/2319 1386/2486
+鏃堕棿锛�2銆�
+鐗╃悊鍐呭瓨: 1.34 GB
+铏氭嫙鍐呭瓨: 1.39 GB
+缁撴潫鏃堕棿锛�2026骞�10鏈�25鏃� 涓嬪崍5:08:27銆�
+----- 鐮旂┒ 1/瑙� 1 (sol1) 涓殑鈥滅紪璇戞柟绋�: 妯″紡鍒嗘瀽 (2)鈥� -------------------------------------->
+<---- 鐮旂┒ 2/瑙� 2 (sol2) 涓殑鈥滅紪璇戞柟绋�: 妯″紡鍒嗘瀽 (2)鈥� ---------------------------------------
+寮�濮嬩簬 2026骞�10鏈�25鏃� 涓嬪崍5:08:27銆�
+鍑犱綍褰㈠嚱鏁�: 浜屾宸у噾杈圭偣鍗曞厓
+           褰撳墠杩涘害:   0 % - 鐢熸垚鏂圭▼
+Memory: 1357/2319 1403/2486
+---------- 褰撳墠杩涘害: 100 % - 瑙� 2
+Memory: 1374/2319 1437/2486
+---------- 褰撳墠杩涘害: 100 % - 姝ｅ湪鍒涘缓鍙鍖栫綉鏍�
+Memory: 1371/2319 1432/2486
+鏃堕棿锛�1銆�
+鐗╃悊鍐呭瓨: 1.37 GB
+铏氭嫙鍐呭瓨: 1.44 GB
+缁撴潫鏃堕棿锛�2026骞�10鏈�25鏃� 涓嬪崍5:08:28銆�
+----- 鐮旂┒ 2/瑙� 2 (sol2) 涓殑鈥滅紪璇戞柟绋�: 妯″紡鍒嗘瀽 (2)鈥� -------------------------------------->
+ORIENT6I es.epsilonrxx n/a
+ORIENT6I es.epsilonryy n/a
+ORIENT6I es.epsilonrzz n/a
+ORIENT6I solid.epsilonrSxx n/a
+ORIENT6I solid.epsilonrSyy n/a
+----       褰撳墠杩涘害:  47 % - 鐢熸垚鏂圭▼
+Memory: 1354/2319 1416/2486
+------     褰撳墠杩涘害:  60 % - 鐢熸垚鏂圭▼
+Memory: 1362/2319 1423/2486
+---        褰撳墠杩涘害:  39 % - 鐢熸垚鏂圭▼
+Memory: 1367/2319 1427/2486
+-------    褰撳墠杩涘害:  72 % - 鐢熸垚鏂圭▼
+Memory: 1373/2319 1432/2486
+STUDY stdE sol=sol3 neigs=100 shift=2.5GHz (term1 off, term edges grounded)
+           褰撳墠杩涘害:   1 % - 鐢熸垚鏂圭▼
+Memory: 1376/2319 1434/2486
+           褰撳墠杩涘害:   3 % - 鐢熸垚鏂圭▼
+Memory: 1376/2319 1435/2486
+<---- 鐮旂┒/瑙� 3 (sol3) 涓殑鈥滅�   1     3.4e-23    100
+---------- 当前进度: 100 % - 求解线性方程组
+Memory: 2257/2319 2383/2486
+201 线性方程组的解。
+201 矩阵乘法。
+198 重正交化。
+求解时间：55 s。
+物理内存: 2.59 GB
+虚拟内存: 2.72 GB
+结束时间：2026年10月25日 下午5:09:28。
+----- 研究/解 3 (sol3) 中的“特征值求解器 1” ---------------------------------------------->
+DIAG6I k=0 f_GHz=0.000000 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.011 0.017 0.016 0.029 0.064 0.676 0.107 0.079 Ws_ridgeFrac=0.0002 u_frac=0.2178 v_frac=0.7813 w_frac=0.0009
+DIAG6I k=1 f_GHz=0.000000 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Ws_ridgeFrac=0.0132 u_frac=0.0121 v_frac=0.9876 w_frac=0.0003
+DIAG6I k=2 f_GHz=0.000000 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 Ws_ridgeFrac=-1.0000 u_frac=0.9360 v_frac=0.0614 w_frac=0.0026
+DIAG6I k=3 f_GHz=0.000000 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.011 0.019 0.018 0.036 0.076 0.750 0.058 0.032 Ws_ridgeFrac=-1.0000 u_frac=0.0087 v_frac=0.0037 w_frac=0.9877
+DIAG6I k=4 f_GHz=0.027887 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.030 0.084 0.090 0.270 0.252 0.030 0.169 0.075 Ws_ridgeFrac=0.0103 u_frac=0.0143 v_frac=0.9857 w_frac=0.0000
+DIAG6I k=5 f_GHz=0.075282 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.052 0.117 0.116 0.185 0.161 0.199 0.096 0.074 Ws_ridgeFrac=0.0342 u_frac=0.0181 v_frac=0.9819 w_frac=0.0000
+DIAG6I k=6 f_GHz=0.146127 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.094 0.151 0.159 0.073 0.086 0.156 0.206 0.073 Ws_ridgeFrac=0.0356 u_frac=0.0285 v_frac=0.9715 w_frac=0.0000
+DIAG6I k=7 f_GHz=0.169382 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.000 0.083 0.142 0.424 0.291 0.016 0.042 0.002 Ws_ridgeFrac=0.0237 u_frac=0.0005 v_frac=0.0000 w_frac=0.9995
+DIAG6I k=8 f_GHz=0.223865 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.108 0.107 0.140 0.066 0.053 0.208 0.237 0.080 Ws_ridgeFrac=0.0114 u_frac=0.0831 v_frac=0.9169 w_frac=0.0000
+DIAG6I k=9 f_GHz=0.319510 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.015 0.024 0.023 0.074 0.116 0.571 0.109 0.067 Ws_ridgeFrac=0.0140 u_frac=0.8498 v_frac=0.1498 w_frac=0.0004
+DIAG6I k=10 f_GHz=0.332635 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.051 0.055 0.053 0.081 0.068 0.312 0.254 0.126 Ws_ridgeFrac=0.0114 u_frac=0.2116 v_frac=0.7883 w_frac=0.0001
+DIAG6I k=11 f_GHz=0.360702 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.001 0.172 0.267 0.301 0.197 0.003 0.053 0.005 Ws_ridgeFrac=0.0410 u_frac=0.0005 v_frac=0.0000 w_frac=0.9995
+DIAG6I k=12 f_GHz=0.465440 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.036 0.061 0.027 0.064 0.099 0.281 0.246 0.185 Ws_ridgeFrac=0.0319 u_frac=0.0661 v_frac=0.9338 w_frac=0.0000
+DIAG6I k=13 f_GHz=0.496429 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.004 0.371 0.534 0.026 0.004 0.005 0.053 0.003 Ws_ridgeFrac=0.0372 u_frac=0.0005 v_frac=0.0001 w_frac=0.9995
+DIAG6I k=14 f_GHz=0.605056 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.143 0.217 0.077 0.039 0.054 0.139 0.192 0.139 Ws_ridgeFrac=0.0406 u_frac=0.1291 v_frac=0.8708 w_frac=0.0001
+DIAG6I k=15 f_GHz=0.643802 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.003 0.097 0.137 0.327 0.231 0.006 0.191 0.010 Ws_ridgeFrac=0.0128 u_frac=0.0005 v_frac=0.0001 w_frac=0.9994
+DIAG6I k=16 f_GHz=0.674657 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.061 0.083 0.053 0.082 0.109 0.203 0.132 0.278 Ws_ridgeFrac=0.0170 u_frac=0.8604 v_frac=0.1391 w_frac=0.0004
+DIAG6I k=17 f_GHz=0.709812 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.177 0.208 0.095 0.041 0.030 0.149 0.178 0.121 Ws_ridgeFrac=0.0320 u_frac=0.2374 v_frac=0.7625 w_frac=0.0001
+DIAG6I k=18 f_GHz=0.838278 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.001 0.001 0.013 0.398 0.271 0.020 0.290 0.006 Ws_ridgeFrac=0.0303 u_frac=0.0005 v_frac=0.0003 w_frac=0.9992
+DIAG6I k=19 f_GHz=0.867782 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.050 0.037 0.018 0.048 0.100 0.262 0.297 0.188 Ws_ridgeFrac=0.0240 u_frac=0.2363 v_frac=0.7635 w_frac=0.0003
+DIAG6I k=20 f_GHz=0.951500 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.145 0.147 0.077 0.046 0.014 0.237 0.145 0.188 Ws_ridgeFrac=0.0134 u_frac=0.8132 v_frac=0.1863 w_frac=0.0005
+DIAG6I k=21 f_GHz=1.059934 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.005 0.074 0.137 0.239 0.144 0.008 0.389 0.004 Ws_ridgeFrac=0.0558 u_frac=0.0005 v_frac=0.0003 w_frac=0.9991
+DIAG6I k=22 f_GHz=1.083326 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.040 0.022 0.026 0.050 0.098 0.255 0.316 0.193 Ws_ridgeFrac=0.0361 u_frac=0.1214 v_frac=0.8783 w_frac=0.0003
+DIAG6I k=23 f_GHz=1.185171 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.003 0.267 0.427 0.021 0.010 0.017 0.250 0.006 Ws_ridgeFrac=0.0636 u_frac=0.0012 v_frac=0.0004 w_frac=0.9985
+DIAG6I k=24 f_GHz=1.218238 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.196 0.156 0.108 0.046 0.061 0.138 0.090 0.205 Ws_ridgeFrac=0.0203 u_frac=0.8670 v_frac=0.1318 w_frac=0.0013
+DIAG6I k=25 f_GHz=1.267279 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.153 0.111 0.058 0.062 0.057 0.182 0.193 0.183 Ws_ridgeFrac=0.0538 u_frac=0.1995 v_frac=0.8002 w_frac=0.0003
+DIAG6I k=26 f_GHz=1.330797 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.011 0.133 0.186 0.198 0.134 0.009 0.317 0.011 Ws_ridgeFrac=0.0232 u_frac=0.0008 v_frac=0.0016 w_frac=0.9976
+DIAG6I k=27 f_GHz=1.362904 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.187 0.160 0.061 0.033 0.049 0.169 0.210 0.132 Ws_ridgeFrac=0.0378 u_frac=0.1469 v_frac=0.8519 w_frac=0.0012
+DIAG6I k=28 f_GHz=1.484679 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.001 0.037 0.049 0.139 0.082 0.029 0.651 0.012 Ws_ridgeFrac=0.0394 u_frac=0.0008 v_frac=0.0009 w_frac=0.9982
+DIAG6I k=29 f_GHz=1.535117 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.012 0.008 0.006 0.055 0.088 0.207 0.325 0.300 Ws_ridgeFrac=0.0245 u_frac=0.3965 v_frac=0.6028 w_frac=0.0007
+DIAG6I k=30 f_GHz=1.565375 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.129 0.069 0.070 0.063 0.064 0.284 0.183 0.139 Ws_ridgeFrac=0.0186 u_frac=0.5855 v_frac=0.4133 w_frac=0.0012
+DIAG6I k=31 f_GHz=1.673927 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.001 0.006 0.006 0.007 0.002 0.006 0.962 0.010 Ws_ridgeFrac=0.0907 u_frac=0.0006 v_frac=0.0010 w_frac=0.9984
+DIAG6I k=32 f_GHz=1.735904 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.038 0.021 0.020 0.066 0.080 0.293 0.318 0.164 Ws_ridgeFrac=0.0397 u_frac=0.1977 v_frac=0.8016 w_frac=0.0007
+DIAG6I k=33 f_GHz=1.792387 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.001 0.005 0.016 0.044 0.032 0.018 0.883 0.002 Ws_ridgeFrac=0.0686 u_frac=0.0007 v_frac=0.0010 w_frac=0.9983
+DIAG6I k=34 f_GHz=1.896395 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.107 0.032 0.038 0.031 0.026 0.164 0.510 0.091 Ws_ridgeFrac=0.0178 u_frac=0.5906 v_frac=0.4084 w_frac=0.0009
+DIAG6I k=35 f_GHz=2.007488 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.213 0.101 0.106 0.109 0.046 0.218 0.094 0.114 Ws_ridgeFrac=0.0868 u_frac=0.3606 v_frac=0.5874 w_frac=0.0520
+DIAG6I k=36 f_GHz=2.015350 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.041 0.028 0.053 0.242 0.128 0.111 0.285 0.111 Ws_ridgeFrac=0.0563 u_frac=0.0295 v_frac=0.0367 w_frac=0.9339
+DIAG6I k=37 f_GHz=2.051390 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.073 0.024 0.021 0.026 0.028 0.119 0.395 0.314 Ws_ridgeFrac=0.0185 u_frac=0.2335 v_frac=0.7413 w_frac=0.0253
+DIAG6I k=38 f_GHz=2.073692 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.006 0.007 0.013 0.022 0.016 0.026 0.865 0.045 Ws_ridgeFrac=0.0059 u_frac=0.0055 v_frac=0.0088 w_frac=0.9857
+DIAG6I k=39 f_GHz=2.140292 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.117 0.042 0.090 0.057 0.031 0.184 0.348 0.132 Ws_ridgeFrac=0.0645 u_frac=0.6478 v_frac=0.3473 w_frac=0.0049
+DIAG6I k=40 f_GHz=2.218836 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.261 0.147 0.066 0.062 0.079 0.259 0.090 0.035 Ws_ridgeFrac=0.0831 u_frac=0.3126 v_frac=0.5923 w_frac=0.0951
+DIAG6I k=41 f_GHz=2.224258 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.148 0.245 0.244 0.013 0.024 0.172 0.132 0.021 Ws_ridgeFrac=0.1236 u_frac=0.0208 v_frac=0.0708 w_frac=0.9084
+DIAG6I k=42 f_GHz=2.307819 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.006 0.005 0.003 0.006 0.004 0.013 0.367 0.595 Ws_ridgeFrac=0.0034 u_frac=0.5991 v_frac=0.3981 w_frac=0.0028
+DIAG6I k=43 f_GHz=2.347828 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.104 0.055 0.258 0.168 0.033 0.232 0.147 0.004 Ws_ridgeFrac=0.1041 u_frac=0.6495 v_frac=0.3227 w_frac=0.0279
+DIAG6I k=44 f_GHz=2.541088 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.064 0.052 0.155 0.237 0.141 0.143 0.207 0.000 Ws_ridgeFrac=0.1187 u_frac=0.0219 v_frac=0.0384 w_frac=0.9398
+DIAG6I k=45 f_GHz=2.582984 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.164 0.087 0.096 0.212 0.070 0.300 0.071 0.000 Ws_ridgeFrac=0.1958 u_frac=0.2644 v_frac=0.6864 w_frac=0.0491
+DIAG6I k=46 f_GHz=2.689959 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.007 0.002 0.002 0.005 0.005 0.027 0.866 0.085 Ws_ridgeFrac=0.0019 u_frac=0.0062 v_frac=0.0046 w_frac=0.9892
+DIAG6I k=47 f_GHz=2.711102 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.077 0.021 0.056 0.047 0.091 0.377 0.322 0.009 Ws_ridgeFrac=0.2002 u_frac=0.3907 v_frac=0.3081 w_frac=0.3012
+DIAG6I k=48 f_GHz=2.755443 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.002 0.001 0.001 0.001 0.001 0.005 0.373 0.617 Ws_ridgeFrac=0.0115 u_frac=0.4129 v_frac=0.5489 w_frac=0.0382
+DIAG6I k=49 f_GHz=2.797404 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.016 0.095 0.312 0.119 0.031 0.098 0.242 0.087 Ws_ridgeFrac=0.1171 u_frac=0.1658 v_frac=0.1052 w_frac=0.7290
+DIAG6I k=50 f_GHz=2.832817 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.050 0.059 0.135 0.027 0.037 0.171 0.366 0.156 Ws_ridgeFrac=0.0512 u_frac=0.2692 v_frac=0.3490 w_frac=0.3818
+DIAG6I k=51 f_GHz=2.838220 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.005 0.004 0.009 0.004 0.002 0.044 0.804 0.128 Ws_ridgeFrac=0.0187 u_frac=0.0803 v_frac=0.0676 w_frac=0.8522
+DIAG6I k=52 f_GHz=2.901341 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.088 0.036 0.086 0.129 0.021 0.083 0.516 0.040 Ws_ridgeFrac=0.0885 u_frac=0.1572 v_frac=0.1112 w_frac=0.7316
+DIAG6I k=53 f_GHz=2.903785 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.054 0.055 0.101 0.162 0.130 0.290 0.205 0.003 Ws_ridgeFrac=0.1969 u_frac=0.1495 v_frac=0.1607 w_frac=0.6898
+DIAG6I k=54 f_GHz=2.943036 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.186 0.063 0.077 0.095 0.043 0.308 0.209 0.018 Ws_ridgeFrac=0.0792 u_frac=0.2736 v_frac=0.5942 w_frac=0.1323
+DIAG6I k=55 f_GHz=2.976947 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.005 0.002 0.006 0.006 0.001 0.008 0.923 0.047 Ws_ridgeFrac=0.0102 u_frac=0.1366 v_frac=0.1099 w_frac=0.7534
+DIAG6I k=56 f_GHz=3.036585 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.037 0.074 0.165 0.169 0.052 0.070 0.362 0.071 Ws_ridgeFrac=0.1396 u_frac=0.0540 v_frac=0.0448 w_frac=0.9012
+DIAG6I k=57 f_GHz=3.066721 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.069 0.025 0.023 0.029 0.010 0.053 0.521 0.271 Ws_ridgeFrac=0.0302 u_frac=0.4812 v_frac=0.4383 w_frac=0.0806
+DIAG6I k=58 f_GHz=3.150770 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.220 0.137 0.107 0.210 0.039 0.132 0.078 0.076 Ws_ridgeFrac=0.1771 u_frac=0.3399 v_frac=0.6142 w_frac=0.0459
+DIAG6I k=59 f_GHz=3.173474 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.056 0.049 0.322 0.405 0.038 0.026 0.089 0.015 Ws_ridgeFrac=0.2102 u_frac=0.5951 v_frac=0.2828 w_frac=0.1221
+DIAG6I k=60 f_GHz=3.178051 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.063 0.034 0.082 0.055 0.022 0.053 0.478 0.213 Ws_ridgeFrac=0.0895 u_frac=0.4481 v_frac=0.5427 w_frac=0.0092
+DIAG6I k=61 f_GHz=3.270915 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.011 0.024 0.235 0.152 0.031 0.086 0.431 0.030 Ws_ridgeFrac=0.0179 u_frac=0.0692 v_frac=0.0667 w_frac=0.8641
+DIAG6I k=62 f_GHz=3.272260 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.017 0.038 0.383 0.247 0.051 0.142 0.117 0.004 Ws_ridgeFrac=0.1652 u_frac=0.4605 v_frac=0.4041 w_frac=0.1353
+DIAG6I k=63 f_GHz=3.333523 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.012 0.033 0.062 0.089 0.022 0.020 0.762 0.001 Ws_ridgeFrac=0.1091 u_frac=0.0074 v_frac=0.0167 w_frac=0.9759
+DIAG6I k=64 f_GHz=3.367379 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.006 0.004 0.002 0.007 0.003 0.017 0.933 0.029 Ws_ridgeFrac=0.0367 u_frac=0.0127 v_frac=0.0452 w_frac=0.9421
+DIAG6I k=65 f_GHz=3.398391 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.006 0.085 0.374 0.297 0.083 0.041 0.110 0.004 Ws_ridgeFrac=0.2226 u_frac=0.0193 v_frac=0.0195 w_frac=0.9612
+DIAG6I k=66 f_GHz=3.429597 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.004 0.033 0.103 0.089 0.026 0.035 0.681 0.028 Ws_ridgeFrac=0.0785 u_frac=0.0237 v_frac=0.0153 w_frac=0.9610
+DIAG6I k=67 f_GHz=3.512250 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.045 0.024 0.049 0.065 0.076 0.519 0.207 0.015 Ws_ridgeFrac=0.1133 u_frac=0.1567 v_frac=0.4356 w_frac=0.4077
+DIAG6I k=68 f_GHz=3.531197 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.075 0.030 0.006 0.113 0.088 0.344 0.337 0.007 Ws_ridgeFrac=0.0970 u_frac=0.1509 v_frac=0.4457 w_frac=0.4034
+DIAG6I k=69 f_GHz=3.595081 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.007 0.003 0.023 0.020 0.006 0.024 0.369 0.548 Ws_ridgeFrac=0.0337 u_frac=0.3595 v_frac=0.5191 w_frac=0.1214
+DIAG6I k=70 f_GHz=3.624070 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.058 0.012 0.025 0.059 0.010 0.040 0.404 0.393 Ws_ridgeFrac=0.0714 u_frac=0.1977 v_frac=0.2637 w_frac=0.5386
+DIAG6I k=71 f_GHz=3.656084 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.108 0.050 0.157 0.091 0.046 0.258 0.240 0.051 Ws_ridgeFrac=0.1639 u_frac=0.3500 v_frac=0.4982 w_frac=0.1517
+DIAG6I k=72 f_GHz=3.731923 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.252 0.101 0.095 0.144 0.055 0.076 0.169 0.108 Ws_ridgeFrac=0.1695 u_frac=0.5168 v_frac=0.4682 w_frac=0.0150
+DIAG6I k=73 f_GHz=3.741397 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.082 0.025 0.016 0.021 0.009 0.065 0.439 0.343 Ws_ridgeFrac=0.0648 u_frac=0.3349 v_frac=0.6521 w_frac=0.0130
+DIAG6I k=74 f_GHz=3.815885 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.095 0.022 0.038 0.030 0.014 0.186 0.604 0.012 Ws_ridgeFrac=0.0804 u_frac=0.0536 v_frac=0.0649 w_frac=0.8815
+DIAG6I k=75 f_GHz=3.866837 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.371 0.208 0.259 0.053 0.007 0.025 0.071 0.007 Ws_ridgeFrac=0.2289 u_frac=0.1529 v_frac=0.3171 w_frac=0.5300
+DIAG6I k=76 f_GHz=3.926810 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.291 0.152 0.256 0.116 0.063 0.055 0.059 0.008 Ws_ridgeFrac=0.1994 u_frac=0.2825 v_frac=0.3316 w_frac=0.3859
+DIAG6I k=77 f_GHz=3.945551 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.045 0.013 0.021 0.072 0.049 0.323 0.419 0.059 Ws_ridgeFrac=0.1327 u_frac=0.2151 v_frac=0.5742 w_frac=0.2106
+DIAG6I k=78 f_GHz=3.967267 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.068 0.038 0.028 0.105 0.059 0.113 0.556 0.033 Ws_ridgeFrac=0.0771 u_frac=0.1369 v_frac=0.1837 w_frac=0.6793
+DIAG6I k=79 f_GHz=3.994470 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.004 0.020 0.032 0.075 0.040 0.153 0.619 0.055 Ws_ridgeFrac=0.0704 u_frac=0.2440 v_frac=0.3106 w_frac=0.4454
+DIAG6I k=80 f_GHz=4.036865 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.041 0.017 0.030 0.046 0.024 0.127 0.605 0.110 Ws_ridgeFrac=0.0895 u_frac=0.3518 v_frac=0.6202 w_frac=0.0279
+DIAG6I k=81 f_GHz=4.088033 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.034 0.023 0.015 0.181 0.097 0.366 0.254 0.030 Ws_ridgeFrac=0.1381 u_frac=0.2181 v_frac=0.6559 w_frac=0.1259
+DIAG6I k=82 f_GHz=4.151681 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.010 0.031 0.054 0.014 0.006 0.075 0.677 0.133 Ws_ridgeFrac=0.0687 u_frac=0.0742 v_frac=0.0848 w_frac=0.8409
+DIAG6I k=83 f_GHz=4.165415 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.024 0.009 0.045 0.048 0.015 0.095 0.575 0.188 Ws_ridgeFrac=0.0441 u_frac=0.4390 v_frac=0.5154 w_frac=0.0456
+DIAG6I k=84 f_GHz=4.169984 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.001 0.015 0.038 0.023 0.008 0.056 0.584 0.275 Ws_ridgeFrac=0.0663 u_frac=0.0967 v_frac=0.2069 w_frac=0.6964
+DIAG6I k=85 f_GHz=4.198604 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.037 0.015 0.058 0.057 0.015 0.080 0.652 0.086 Ws_ridgeFrac=0.0840 u_frac=0.4978 v_frac=0.4366 w_frac=0.0656
+DIAG6I k=86 f_GHz=4.208740 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.006 0.005 0.010 0.056 0.028 0.218 0.410 0.268 Ws_ridgeFrac=0.0540 u_frac=0.2912 v_frac=0.5492 w_frac=0.1596
+DIAG6I k=87 f_GHz=4.287682 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.072 0.031 0.047 0.125 0.028 0.115 0.491 0.092 Ws_ridgeFrac=0.1484 u_frac=0.4166 v_frac=0.5377 w_frac=0.0457
+DIAG6I k=88 f_GHz=4.328054 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.020 0.026 0.200 0.207 0.033 0.093 0.257 0.164 Ws_ridgeFrac=0.2091 u_frac=0.2349 v_frac=0.2741 w_frac=0.4910
+DIAG6I k=89 f_GHz=4.338658 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.024 0.074 0.410 0.251 0.012 0.058 0.154 0.017 Ws_ridgeFrac=0.2705 u_frac=0.2311 v_frac=0.2542 w_frac=0.5147
+DIAG6I k=90 f_GHz=4.351013 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.074 0.054 0.295 0.147 0.028 0.131 0.211 0.060 Ws_ridgeFrac=0.1502 u_frac=0.4125 v_frac=0.5110 w_frac=0.0765
+DIAG6I k=91 f_GHz=4.395477 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.299 0.097 0.109 0.196 0.071 0.073 0.128 0.026 Ws_ridgeFrac=0.1561 u_frac=0.1817 v_frac=0.4507 w_frac=0.3676
+DIAG6I k=92 f_GHz=4.423220 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.007 0.007 0.068 0.067 0.014 0.025 0.345 0.468 Ws_ridgeFrac=0.0529 u_frac=0.2816 v_frac=0.5849 w_frac=0.1335
+DIAG6I k=93 f_GHz=4.441301 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.470 0.164 0.118 0.038 0.011 0.037 0.086 0.076 Ws_ridgeFrac=0.1412 u_frac=0.0871 v_frac=0.3265 w_frac=0.5864
+DIAG6I k=94 f_GHz=4.487431 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.075 0.063 0.170 0.204 0.064 0.244 0.168 0.013 Ws_ridgeFrac=0.1303 u_frac=0.2589 v_frac=0.6909 w_frac=0.0502
+DIAG6I k=95 f_GHz=4.522182 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.032 0.018 0.080 0.179 0.033 0.080 0.388 0.190 Ws_ridgeFrac=0.0673 u_frac=0.4839 v_frac=0.4515 w_frac=0.0645
+DIAG6I k=96 f_GHz=4.555332 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.042 0.056 0.175 0.022 0.005 0.064 0.529 0.106 Ws_ridgeFrac=0.0414 u_frac=0.0534 v_frac=0.0586 w_frac=0.8880
+DIAG6I k=97 f_GHz=4.609390 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.037 0.061 0.222 0.057 0.025 0.156 0.400 0.042 Ws_ridgeFrac=0.1250 u_frac=0.5233 v_frac=0.3724 w_frac=0.1043
+DIAG6I k=98 f_GHz=4.668472 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.020 0.029 0.097 0.204 0.045 0.165 0.268 0.171 Ws_ridgeFrac=0.1307 u_frac=0.3873 v_frac=0.5542 w_frac=0.0585
+DIAG6I k=99 f_GHz=4.719809 E2[L1,L2,rL,rR,R1,gap,fing,R]=0.028 0.063 0.161 0.135 0.055 0.162 0.192 0.203 Ws_ridgeFrac=0.0653 u_frac=0.0890 v_frac=0.1598 w_frac=0.7512
+EIG6I case=PAP1 k=0 f_GHz=0.000000 Q=0.0 dn0_MB=49.305 dn0_PE=-0.000 dn0_EO=-0.000 dn0_tot=49.305 (x1e-12) VpiL_S10_Vcm=0.00000 u_frac=0.2178 v_frac=0.7813 w_frac=0.0009 fracAu=0.0301 E_rib/E_LN=0.0002
+EIG6I case=PAP1 k=1 f_GHz=0.000000 Q=0.0 dn0_MB=210.091 dn0_PE=-0.000 dn0_EO=-0.000 dn0_tot=210.091 (x1e-12) VpiL_S10_Vcm=0.00000 u_frac=0.0121 v_frac=0.9876 w_frac=0.0003 fracAu=0.0071 E_rib/E_LN=0.0135
+EIG6I case=PAP1 k=2 f_GHz=0.000000 Q=0.0 dn0_MB=51.620 dn0_PE=-0.000 dn0_EO=-0.000 dn0_tot=51.620 (x1e-12) VpiL_S10_Vcm=0.00000 u_frac=0.9360 v_frac=0.0614 w_frac=0.0026 fracAu=0.0059 E_rib/E_LN=0.0072
+EIG6I case=PAP1 k=3 f_GHz=0.000000 Q=0.0 dn0_MB=5.938 dn0_PE=-0.000 dn0_EO=-0.000 dn0_tot=5.938 (x1e-12) VpiL_S10_Vcm=0.00000 u_frac=0.0087 v_frac=0.0037 w_frac=0.9877 fracAu=0.0066 E_rib/E_LN=0.0124
+EIG6I case=PAP1 k=4 f_GHz=0.027887 Q=2032.5 dn0_MB=-0.052 dn0_PE=0.720 dn0_EO=1.059 dn0_tot=1.727 (x1e-12) VpiL_S10_Vcm=0.02330 u_frac=0.0143 v_frac=0.9857 w_frac=0.0000 fracAu=0.0126 E_rib/E_LN=0.0105
+EIG6I case=PAP1 k=5 f_GHz=0.075282 Q=2050.7 dn0_MB=-0.266 dn0_PE=1.726 dn0_EO=3.323 dn0_tot=4.783 (x1e-12) VpiL_S10_Vcm=0.02272 u_frac=0.0181 v_frac=0.9819 w_frac=0.0000 fracAu=0.0139 E_rib/E_LN=0.0352
+EIG6I case=PAP1 k=6 f_GHz=0.146127 Q=2047.1 dn0_MB=-0.402 dn0_PE=1.880 dn0_EO=4.266 dn0_tot=5.743 (x1e-12) VpiL_S10_Vcm=0.03673 u_frac=0.0285 v_frac=0.9715 w_frac=0.0000 fracAu=0.0078 E_rib/E_LN=0.0374
+EIG6I case=PAP1 k=7 f_GHz=0.169382 Q=2016.3 dn0_MB=-0.604 dn0_PE=2.502 dn0_EO=-1.534 dn0_tot=0.364 (x1e-12) VpiL_S10_Vcm=0.67236 u_frac=0.0005 v_frac=0.0000 w_frac=0.9995 fracAu=0.0073 E_rib/E_LN=0.0238
+EIG6I case=PAP1 k=8 f_GHz=0.223865 Q=2048.3 dn0_MB=-0.185 dn0_PE=0.737 dn0_EO=0.377 dn0_tot=0.928 (x1e-12) VpiL_S10_Vcm=0.34809 u_frac=0.0831 v_frac=0.9169 w_frac=0.0000 fracAu=0.0076 E_rib/E_LN=0.0126
+EIG6I case=PAP1 k=9 f_GHz=0.319510 Q=2060.1 dn0_MB=-0.201 dn0_PE=-1.116 dn0_EO=27.643 dn0_tot=26.327 (x1e-12) VpiL_S10_Vcm=0.01752 u_frac=0.8498 v_frac=0.1498 w_frac=0.0004 fracAu=0.0076 E_rib/E_LN=0.0140
+EIG6I case=PAP1 k=10 f_GHz=0.332635 Q=2053.2 dn0_MB=0.283 dn0_PE=-0.715 dn0_EO=8.989 dn0_tot=8.557 (x1e-12) VpiL_S10_Vcm=0.05611 u_frac=0.2116 v_frac=0.7883 w_frac=0.0001 fracAu=0.0043 E_rib/E_LN=0.0115
+EIG6I case=PAP1 k=11 f_GHz=0.360702 Q=2019.3 dn0_MB=-1.159 dn0_PE=4.877 dn0_EO=-3.075 dn0_tot=0.642 (x1e-12) VpiL_S10_Vcm=0.81053 u_frac=0.0005 v_frac=0.0000 w_frac=0.9995 fracAu=0.0083 E_rib/E_LN=0.0413
+EIG6I case=PAP1 k=12 f_GHz=0.465440 Q=2096.6 dn0_MB=-0.829 dn0_PE=-0.679 dn0_EO=7.288 dn0_tot=5.780 (x1e-12) VpiL_S10_Vcm=0.11625 u_frac=0.0661 v_frac=0.9338 w_frac=0.0000 fracAu=0.0122 E_rib/E_LN=0.0322
+EIG6I case=PAP1 k=13 f_GHz=0.496429 Q=2009.8 dn0_MB=-1.165 dn0_PE=4.959 dn0_EO=-2.854 dn0_tot=0.941 (x1e-12) VpiL_S10_Vcm=0.76182 u_frac=0.0005 v_frac=0.0001 w_frac=0.9995 fracAu=0.0033 E_rib/E_LN=0.0380
+EIG6I case=PAP1 k=14 f_GHz=0.605056 Q=2097.3 dn0_MB=-1.218 dn0_PE=-2.351 dn0_EO=4.339 dn0_tot=0.770 (x1e-12) VpiL_S10_Vcm=1.13473 u_frac=0.1291 v_frac=0.8708 w_frac=0.0001 fracAu=0.0072 E_rib/E_LN=0.0428
+EIG6I case=PAP1 k=15 f_GHz=0.643802 Q=2019.5 dn0_MB=-0.329 dn0_PE=1.383 dn0_EO=-0.745 dn0_tot=0.309 (x1e-12) VpiL_S10_Vcm=3.00977 u_frac=0.0005 v_frac=0.0001 w_frac=0.9994 fracAu=0.0085 E_rib/E_LN=0.0130
+EIG6I case=PAP1 k=16 f_GHz=0.674657 Q=2062.7 dn0_MB=-0.291 dn0_PE=-1.748 dn0_EO=51.776 dn0_tot=49.737 (x1e-12) VpiL_S10_Vcm=0.01958 u_frac=0.8604 v_frac=0.1391 w_frac=0.0004 fracAu=0.0077 E_rib/E_LN=0.0171
+EIG6I case=PAP1 k=17 f_GHz=0.709812 Q=2108.3 dn0_MB=-0.436 dn0_PE=-1.679 dn0_EO=27.258 dn0_tot=25.143 (x1e-12) VpiL_S10_Vcm=0.04075 u_frac=0.2374 v_frac=0.7625 w_frac=0.0001 fracAu=0.0072 E_rib/E_LN=0.0349
+EIG6I case=PAP1 k=18 f_GHz=0.838278 Q=2026.3 dn0_MB=-1.196 dn0_PE=5.452 dn0_EO=-2.821 dn0_tot=1.435 (x1e-12) VpiL_S10_Vcm=0.84328 u_frac=0.0005 v_frac=0.0003 w_frac=0.9992 fracAu=0.0114 E_rib/E_LN=0.0303
+EIG6I case=PAP1 k=19 f_GHz=0.867782 Q=2125.0 dn0_MB=0.789 dn0_PE=2.727 dn0_EO=5.646 dn0_tot=9.162 (x1e-12) VpiL_S10_Vcm=0.13673 u_frac=0.2363 v_frac=0.7635 w_frac=0.0003 fracAu=0.0108 E_rib/E_LN=0.0244
+EIG6I case=PAP1 k=20 f_GHz=0.951500 Q=2085.8 dn0_MB=-0.196 dn0_PE=-0.472 dn0_EO=48.729 dn0_tot=48.060 (x1e-12) VpiL_S10_Vcm=0.02858 u_frac=0.8132 v_frac=0.1863 w_frac=0.0005 fracAu=0.0088 E_rib/E_LN=0.0136
+EIG6I case=PAP1 k=21 f_GHz=1.059934 Q=2031.7 dn0_MB=-1.921 dn0_PE=9.187 dn0_EO=-4.405 dn0_tot=2.860 (x1e-12) VpiL_S10_Vcm=0.53495 u_frac=0.0005 v_frac=0.0003 w_frac=0.9991 fracAu=0.0142 E_rib/E_LN=0.0559
+EIG6I case=PAP1 k=22 f_GHz=1.083326 Q=2164.6 dn0_MB=-1.585 dn0_PE=-6.885 dn0_EO=30.102 dn0_tot=21.631 (x1e-12) VpiL_S10_Vcm=0.07229 u_frac=0.1214 v_frac=0.8783 w_frac=0.0003 fracAu=0.0160 E_rib/E_LN=0.0361
+EIG6I case=PAP1 k=23 f_GHz=1.185171 Q=2023.2 dn0_MB=-1.831 dn0_PE=8.974 dn0_EO=-3.864 dn0_tot=3.279 (x1e-12) VpiL_S10_Vcm=0.52181 u_frac=0.0012 v_frac=0.0004 w_frac=0.9985 fracAu=0.0094 E_rib/E_LN=0.0644
+EIG6I case=PAP1 k=24 f_GHz=1.218238 Q=2093.8 dn0_MB=0.823 dn0_PE=5.060 dn0_EO=0.096 dn0_tot=5.979 (x1e-12) VpiL_S10_Vcm=0.29413 u_frac=0.8670 v_frac=0.1318 w_frac=0.0013 fracAu=0.0129 E_rib/E_LN=0.0211
+EIG6I case=PAP1 k=25 f_GHz=1.267279 Q=2159.3 dn0_MB=-2.431 dn0_PE=-12.733 dn0_EO=33.118 dn0_tot=17.954 (x1e-12) VpiL_S10_Vcm=0.10189 u_frac=0.1995 v_frac=0.8002 w_frac=0.0003 fracAu=0.0132 E_rib/E_LN=0.0549
+EIG6I case=PAP1 k=26 f_GHz=1.330797 Q=2040.8 dn0_MB=-0.315 dn0_PE=1.047 dn0_EO=0.255 dn0_tot=0.987 (x1e-12) VpiL_S10_Vcm=1.94540 u_frac=0.0008 v_frac=0.0016 w_frac=0.9976 fracAu=0.0169 E_rib/E_LN=0.0236
+EIG6I case=PAP1 k=27 f_GHz=1.362904 Q=2180.9 dn0_MB=0.948 dn0_PE=5.840 dn0_EO=-4.804 dn0_tot=1.984 (x1e-12) VpiL_S10_Vcm=0.99154 u_frac=0.1469 v_frac=0.8519 w_frac=0.0012 fracAu=0.0153 E_rib/E_LN=0.0401
+EIG6I case=PAP1 k=28 f_GHz=1.484679 Q=2070.5 dn0_MB=-1.201 dn0_PE=6.444 dn0_EO=0.179 dn0_tot=5.421 (x1e-12) VpiL_S10_Vcm=0.39534 u_frac=0.0008 v_frac=0.0009 w_frac=0.9982 fracAu=0.0308 E_rib/E_LN=0.0395
+EIG6I case=PAP1 k=29 f_GHz=1.535117 Q=2208.1 dn0_MB=-1.003 dn0_PE=-3.828 dn0_EO=39.284 dn0_tot=34.452 (x1e-12) VpiL_S10_Vcm=0.06432 u_frac=0.3965 v_frac=0.6028 w_frac=0.0007 fracAu=0.0381 E_rib/E_LN=0.0246
+EIG6I case=PAP1 k=30 f_GHz=1.565375 Q=2148.1 dn0_MB=0.651 dn0_PE=7.964 dn0_EO=35.715 dn0_tot=44.330 (x1e-12) VpiL_S10_Vcm=0.05097 u_frac=0.5855 v_frac=0.4133 w_frac=0.0012 fracAu=0.0245 E_rib/E_LN=0.0190
+EIG6I case=PAP1 k=31 f_GHz=1.673927 Q=2078.3 dn0_MB=-1.995 dn0_PE=10.285 dn0_EO=2.027 dn0_tot=10.316 (x1e-12) VpiL_S10_Vcm=0.23423 u_frac=0.0006 v_frac=0.0010 w_frac=0.9984 fracAu=0.0352 E_rib/E_LN=0.0907
+EIG6I case=PAP1 k=32 f_GHz=1.735904 Q=2265.2 dn0_MB=-2.021 dn0_PE=-15.053 dn0_EO=25.596 dn0_tot=8.522 (x1e-12) VpiL_S10_Vcm=0.29406 u_frac=0.1977 v_frac=0.8016 w_frac=0.0007 fracAu=0.0527 E_rib/E_LN=0.0398
+EIG6I case=PAP1 k=33 f_GHz=1.792387 Q=2142.6 dn0_MB=-1.436 dn0_PE=7.721 dn0_EO=4.066 dn0_tot=10.351 (x1e-12) VpiL_S10_Vcm=0.24996 u_frac=0.0007 v_frac=0.0010 w_frac=0.9983 fracAu=0.0618 E_rib/E_LN=0.0686
+EIG6I case=PAP1 k=34 f_GHz=1.896395 Q=2243.4 dn0_MB=0.976 dn0_PE=17.676 dn0_EO=41.627 dn0_tot=60.279 (x1e-12) VpiL_S10_Vcm=0.04541 u_frac=0.5906 v_frac=0.4084 w_frac=0.0009 fracAu=0.0632 E_rib/E_LN=0.0178
+EIG6I case=PAP1 k=35 f_GHz=2.007488 Q=2218.5 dn0_MB=-3.223 dn0_PE=-24.057 dn0_EO=60.620 dn0_tot=33.340 (x1e-12) VpiL_S10_Vcm=0.08692 u_frac=0.3606 v_frac=0.5874 w_frac=0.0520 fracAu=0.0413 E_rib/E_LN=0.0871
+EIG6I case=PAP1 k=36 f_GHz=2.015350 Q=2081.4 dn0_MB=-0.923 dn0_PE=-3.193 dn0_EO=23.436 dn0_tot=19.320 (x1e-12) VpiL_S10_Vcm=0.15058 u_frac=0.0295 v_frac=0.0367 w_frac=0.9339 fracAu=0.0285 E_rib/E_LN=0.0568
+EIG6I case=PAP1 k=37 f_GHz=2.051390 Q=2274.6 dn0_MB=0.404 dn0_PE=12.382 dn0_EO=27.771 dn0_tot=40.557 (x1e-12) VpiL_S10_Vcm=0.07301 u_frac=0.2335 v_frac=0.7413 w_frac=0.0253 fracAu=0.0512 E_rib/E_LN=0.0186
+EIG6I case=PAP1 k=38 f_GHz=2.073692 Q=2165.6 dn0_MB=-0.105 dn0_PE=-0.295 dn0_EO=8.428 dn0_tot=8.028 (x1e-12) VpiL_S10_Vcm=0.37289 u_frac=0.0055 v_frac=0.0088 w_frac=0.9857 fracAu=0.0704 E_rib/E_LN=0.0060
+EIG6I case=PAP1 k=39 f_GHz=2.140292 Q=2287.2 dn0_MB=-2.382 dn0_PE=2.190 dn0_EO=110.220 dn0_tot=110.027 (x1e-12) VpiL_S10_Vcm=0.02808 u_frac=0.6478 v_frac=0.3473 w_frac=0.0049 fracAu=0.0758 E_rib/E_LN=0.0649
+EIG6I case=PAP1 k=40 f_GHz=2.218836 Q=2227.9 dn0_MB=-0.250 dn0_PE=6.804 dn0_EO=38.109 dn0_tot=44.663 (x1e-12) VpiL_S10_Vcm=0.07171 u_frac=0.3126 v_frac=0.5923 w_frac=0.0951 fracAu=0.0295 E_rib/E_LN=0.0861
+EIG6I case=PAP1 k=41 f_GHz=2.224258 Q=2069.7 dn0_MB=-1.020 dn0_PE=6.585 dn0_EO=24.973 dn0_tot=30.538 (x1e-12) VpiL_S10_Vcm=0.10514 u_frac=0.0208 v_frac=0.0708 w_frac=0.9084 fracAu=0.0210 E_rib/E_LN=0.1247
+EIG6I case=PAP1 k=42 f_GHz=2.307819 Q=2441.8 dn0_MB=0.166 dn0_PE=2.380 dn0_EO=-1.703 dn0_tot=0.843 (x1e-12) VpiL_S10_Vcm=3.95248 u_frac=0.5991 v_frac=0.3981 w_frac=0.0028 fracAu=0.1317 E_rib/E_LN=0.0035
+EIG6I case=PAP1 k=43 f_GHz=2.347828 Q=2262.2 dn0_MB=-1.290 dn0_PE=-11.433 dn0_EO=26.606 dn0_tot=13.883 (x1e-12) VpiL_S10_Vcm=0.24412 u_frac=0.6495 v_frac=0.3227 w_frac=0.0279 fracAu=0.0540 E_rib/E_LN=0.1042
+EIG6I case=PAP1 k=44 f_GHz=2.541088 Q=2096.5 dn0_MB=-0.631 dn0_PE=-4.306 dn0_EO=8.087 dn0_tot=3.150 (x1e-12) VpiL_S10_Vcm=1.16455 u_frac=0.0219 v_frac=0.0384 w_frac=0.9398 fracAu=0.0364 E_rib/E_LN=0.1187
+EIG6I case=PAP1 k=45 f_GHz=2.582984 Q=2268.9 dn0_MB=-3.612 dn0_PE=-31.645 dn0_EO=96.465 dn0_tot=61.208 (x1e-12) VpiL_S10_Vcm=0.06092 u_frac=0.2644 v_frac=0.6864 w_frac=0.0491 fracAu=0.0363 E_rib/E_LN=0.1965
+EIG6I case=PAP1 k=46 f_GHz=2.689959 Q=2160.0 dn0_MB=-0.036 dn0_PE=2.295 dn0_EO=1.646 dn0_tot=3.904 (x1e-12) VpiL_S10_Vcm=0.99457 u_frac=0.0062 v_frac=0.0046 w_frac=0.9892 fracAu=0.0707 E_rib/E_LN=0.0019
+EIG6I case=PAP1 k=47 f_GHz=2.711102 Q=2253.8 dn0_MB=-0.946 dn0_PE=28.251 dn0_EO=36.211 dn0_tot=63.515 (x1e-12) VpiL_S10_Vcm=0.06162 u_frac=0.3907 v_frac=0.3081 w_frac=0.3012 fracAu=0.0734 E_rib/E_LN=0.2006
+EIG6I case=PAP1 k=48 f_GHz=2.755443 Q=2401.8 dn0_MB=-0.094 dn0_PE=2.804 dn0_EO=4.694 dn0_tot=7.404 (x1e-12) VpiL_S10_Vcm=0.53720 u_frac=0.4129 v_frac=0.5489 w_frac=0.0382 fracAu=0.1048 E_rib/E_LN=0.0115
+EIG6I case=PAP1 k=49 f_GHz=2.797404 Q=2318.2 dn0_MB=-0.818 dn0_PE=19.797 dn0_EO=5.233 dn0_tot=24.213 (x1e-12) VpiL_S10_Vcm=0.16678 u_frac=0.1658 v_frac=0.1052 w_frac=0.7290 fracAu=0.0991 E_rib/E_LN=0.1178
+EIG6I case=PAP1 k=50 f_GHz=2.832817 Q=2626.8 dn0_MB=-0.393 dn0_PE=18.014 dn0_EO=-5.710 dn0_tot=11.910 (x1e-12) VpiL_S10_Vcm=0.34334 u_frac=0.2692 v_frac=0.3490 w_frac=0.3818 fracAu=0.2046 E_rib/E_LN=0.0515
+EIG6I case=PAP1 k=51 f_GHz=2.838220 Q=2838.1 dn0_MB=-0.043 dn0_PE=-0.829 dn0_EO=5.912 dn0_tot=5.040 (x1e-12) VpiL_S10_Vcm=0.81286 u_frac=0.0803 v_frac=0.0676 w_frac=0.8522 fracAu=0.2784 E_rib/E_LN=0.0188
+EIG6I case=PAP1 k=52 f_GHz=2.901341 Q=2709.2 dn0_MB=-1.302 dn0_PE=9.845 dn0_EO=40.310 dn0_tot=48.852 (x1e-12) VpiL_S10_Vcm=0.08573 u_frac=0.1572 v_frac=0.1112 w_frac=0.7316 fracAu=0.2439 E_rib/E_LN=0.0886
+EIG6I case=PAP1 k=53 f_GHz=2.903785 Q=2251.7 dn0_MB=-0.895 dn0_PE=15.067 dn0_EO=24.907 dn0_tot=39.079 (x1e-12) VpiL_S10_Vcm=0.10726 u_frac=0.1495 v_frac=0.1607 w_frac=0.6898 fracAu=0.0829 E_rib/E_LN=0.1970
+EIG6I case=PAP1 k=54 f_GHz=2.943036 Q=2488.0 dn0_MB=-2.300 dn0_PE=23.977 dn0_EO=41.110 dn0_tot=62.787 (x1e-12) VpiL_S10_Vcm=0.06766 u_frac=0.2736 v_frac=0.5942 w_frac=0.1323 fracAu=0.1309 E_rib/E_LN=0.0798
+EIG6I case=PAP1 k=55 f_GHz=2.976947 Q=3592.2 dn0_MB=-0.757 dn0_PE=6.836 dn0_EO=18.992 dn0_tot=25.071 (x1e-12) VpiL_S10_Vcm=0.17141 u_frac=0.1366 v_frac=0.1099 w_frac=0.7534 fracAu=0.4013 E_rib/E_LN=0.0102
+EIG6I case=PAP1 k=56 f_GHz=3.036585 Q=2264.6 dn0_MB=-0.644 dn0_PE=-3.698 dn0_EO=42.682 dn0_tot=38.340 (x1e-12) VpiL_S10_Vcm=0.11433 u_frac=0.0540 v_frac=0.0448 w_frac=0.9012 fracAu=0.0995 E_rib/E_LN=0.1401
+EIG6I case=PAP1 k=57 f_GHz=3.066721 Q=2531.7 dn0_MB=-2.052 dn0_PE=32.183 dn0_EO=11.873 dn0_tot=42.004 (x1e-12) VpiL_S10_Vcm=0.10539 u_frac=0.4812 v_frac=0.4383 w_frac=0.0806 fracAu=0.1578 E_rib/E_LN=0.0306
+EIG6I case=PAP1 k=58 f_GHz=3.150770 Q=2307.3 dn0_MB=-2.432 dn0_PE=9.469 dn0_EO=66.488 dn0_tot=73.524 (x1e-12) VpiL_S10_Vcm=0.06186 u_frac=0.3399 v_frac=0.6142 w_frac=0.0459 fracAu=0.0383 E_rib/E_LN=0.1797
+EIG6I case=PAP1 k=59 f_GHz=3.173474 Q=2466.7 dn0_MB=-7.225 dn0_PE=82.128 dn0_EO=73.881 dn0_tot=148.783 (x1e-12) VpiL_S10_Vcm=0.03079 u_frac=0.5951 v_frac=0.2828 w_frac=0.1221 fracAu=0.0534 E_rib/E_LN=0.2105
+EIG6I case=PAP1 k=60 f_GHz=3.178051 Q=2391.8 dn0_MB=-4.878 dn0_PE=46.956 dn0_EO=69.748 dn0_tot=111.825 (x1e-12) VpiL_S10_Vcm=0.04103 u_frac=0.4481 v_frac=0.5427 w_frac=0.0092 fracAu=0.1035 E_rib/E_LN=0.0898
+EIG6I case=PAP1 k=61 f_GHz=3.270915 Q=2851.7 dn0_MB=-1.605 dn0_PE=18.915 dn0_EO=7.098 dn0_tot=24.409 (x1e-12) VpiL_S10_Vcm=0.19344 u_frac=0.0692 v_frac=0.0667 w_frac=0.8641 fracAu=0.2831 E_rib/E_LN=0.0179
+EIG6I case=PAP1 k=62 f_GHz=3.272260 Q=2506.1 dn0_MB=-5.350 dn0_PE=62.872 dn0_EO=23.941 dn0_tot=81.463 (x1e-12) VpiL_S10_Vcm=0.05799 u_frac=0.4605 v_frac=0.4041 w_frac=0.1353 fracAu=0.0752 E_rib/E_LN=0.1652
+EIG6I case=PAP1 k=63 f_GHz=3.333523 Q=3254.8 dn0_MB=0.186 dn0_PE=-8.208 dn0_EO=13.160 dn0_tot=5.139 (x1e-12) VpiL_S10_Vcm=0.93641 u_frac=0.0074 v_frac=0.0167 w_frac=0.9759 fracAu=0.3801 E_rib/E_LN=0.1093
+EIG6I case=PAP1 k=64 f_GHz=3.367379 Q=4393.9 dn0_MB=-0.211 dn0_PE=3.061 dn0_EO=0.677 dn0_tot=3.527 (x1e-12) VpiL_S10_Vcm=1.37830 u_frac=0.0127 v_frac=0.0452 w_frac=0.9421 fracAu=0.5392 E_rib/E_LN=0.0368
+EIG6I case=PAP1 k=65 f_GHz=3.398391 Q=2161.2 dn0_MB=-0.461 dn0_PE=-13.391 dn0_EO=44.955 dn0_tot=31.103 (x1e-12) VpiL_S10_Vcm=0.15772 u_frac=0.0193 v_frac=0.0195 w_frac=0.9612 fracAu=0.0615 E_rib/E_LN=0.2226
+EIG6I case=PAP1 k=66 f_GHz=3.429597 Q=3414.9 dn0_MB=0.756 dn0_PE=-18.560 dn0_EO=19.627 dn0_tot=1.823 (x1e-12) VpiL_S10_Vcm=2.71536 u_frac=0.0237 v_frac=0.0153 w_frac=0.9610 fracAu=0.4037 E_rib/E_LN=0.0786
+EIG6I case=PAP1 k=67 f_GHz=3.512250 Q=2559.1 dn0_MB=-2.275 dn0_PE=20.194 dn0_EO=27.220 dn0_tot=45.139 (x1e-12) VpiL_S10_Vcm=0.11232 u_frac=0.1567 v_frac=0.4356 w_frac=0.4077 fracAu=0.1825 E_rib/E_LN=0.1135
+EIG6I case=PAP1 k=68 f_GHz=3.531197 Q=2692.6 dn0_MB=-2.726 dn0_PE=37.236 dn0_EO=0.010 dn0_tot=34.521 (x1e-12) VpiL_S10_Vcm=0.14766 u_frac=0.1509 v_frac=0.4457 w_frac=0.4034 fracAu=0.2182 E_rib/E_LN=0.0971
+EIG6I case=PAP1 k=69 f_GHz=3.595081 Q=2561.1 dn0_MB=-3.542 dn0_PE=33.037 dn0_EO=9.693 dn0_tot=39.188 (x1e-12) VpiL_S10_Vcm=0.13243 u_frac=0.3595 v_frac=0.5191 w_frac=0.1214 fracAu=0.1573 E_rib/E_LN=0.0338
+EIG6I case=PAP1 k=70 f_GHz=3.624070 Q=2759.8 dn0_MB=-0.926 dn0_PE=3.945 dn0_EO=13.374 dn0_tot=16.393 (x1e-12) VpiL_S10_Vcm=0.31913 u_frac=0.1977 v_frac=0.2637 w_frac=0.5386 fracAu=0.2517 E_rib/E_LN=0.0717
+EIG6I case=PAP1 k=71 f_GHz=3.656084 Q=2407.4 dn0_MB=-5.878 dn0_PE=63.885 dn0_EO=0.377 dn0_tot=58.383 (x1e-12) VpiL_S10_Vcm=0.09040 u_frac=0.3500 v_frac=0.4982 w_frac=0.1517 fracAu=0.1157 E_rib/E_LN=0.1645
+EIG6I case=PAP1 k=72 f_GHz=3.731923 Q=2266.7 dn0_MB=-19.240 dn0_PE=169.254 dn0_EO=-16.650 dn0_tot=133.363 (x1e-12) VpiL_S10_Vcm=0.04039 u_frac=0.5168 v_frac=0.4682 w_frac=0.0150 fracAu=0.0697 E_rib/E_LN=0.1697
+EIG6I case=PAP1 k=73 f_GHz=3.741397 Q=2401.4 dn0_MB=-8.411 dn0_PE=69.187 dn0_EO=-10.463 dn0_tot=50.312 (x1e-12) VpiL_S10_Vcm=0.10735 u_frac=0.3349 v_frac=0.6521 w_frac=0.0130 fracAu=0.1064 E_rib/E_LN=0.0650
+EIG6I case=PAP1 k=74 f_GHz=3.815885 Q=2263.7 dn0_MB=-1.901 dn0_PE=9.116 dn0_EO=11.681 dn0_tot=18.896 (x1e-12) VpiL_S10_Vcm=0.29152 u_frac=0.0536 v_frac=0.0649 w_frac=0.8815 fracAu=0.1019 E_rib/E_LN=0.0806
+EIG6I case=PAP1 k=75 f_GHz=3.866837 Q=2132.0 dn0_MB=-11.681 dn0_PE=106.262 dn0_EO=-16.511 dn0_tot=78.069 (x1e-12) VpiL_S10_Vcm=0.07150 u_frac=0.1529 v_frac=0.3171 w_frac=0.5300 fracAu=0.0227 E_rib/E_LN=0.2299
+EIG6I case=PAP1 k=76 f_GHz=3.926810 Q=2145.1 dn0_MB=-21.507 dn0_PE=186.958 dn0_EO=-53.599 dn0_tot=111.851 (x1e-12) VpiL_S10_Vcm=0.05068 u_frac=0.2825 v_frac=0.3316 w_frac=0.3859 fracAu=0.0137 E_rib/E_LN=0.2005
+EIG6I case=PAP1 k=77 f_GHz=3.945551 Q=2392.2 dn0_MB=-4.630 dn0_PE=18.466 dn0_EO=-4.723 dn0_tot=9.113 (x1e-12) VpiL_S10_Vcm=0.62497 u_frac=0.2151 v_frac=0.5742 w_frac=0.2106 fracAu=0.1094 E_rib/E_LN=0.1331
+EIG6I case=PAP1 k=78 f_GHz=3.967267 Q=2432.8 dn0_MB=-7.262 dn0_PE=54.110 dn0_EO=-13.967 dn0_tot=32.880 (x1e-12) VpiL_S10_Vcm=0.17417 u_frac=0.1369 v_frac=0.1837 w_frac=0.6793 fracAu=0.1592 E_rib/E_LN=0.0772
+EIG6I case=PAP1 k=79 f_GHz=3.994470 Q=2696.6 dn0_MB=-10.061 dn0_PE=83.643 dn0_EO=-27.078 dn0_tot=46.504 (x1e-12) VpiL_S10_Vcm=0.12399 u_frac=0.2440 v_frac=0.3106 w_frac=0.4454 fracAu=0.2333 E_rib/E_LN=0.0705
+EIG6I case=PAP1 k=80 f_GHz=4.036865 Q=3135.1 dn0_MB=-9.405 dn0_PE=63.319 dn0_EO=-21.497 dn0_tot=32.418 (x1e-12) VpiL_S10_Vcm=0.17976 u_frac=0.3518 v_frac=0.6202 w_frac=0.0279 fracAu=0.3368 E_rib/E_LN=0.0895
+EIG6I case=PAP1 k=81 f_GHz=4.088033 Q=2939.5 dn0_MB=-12.306 dn0_PE=97.580 dn0_EO=-35.024 dn0_tot=50.249 (x1e-12) VpiL_S10_Vcm=0.11744 u_frac=0.2181 v_frac=0.6559 w_frac=0.1259 fracAu=0.2846 E_rib/E_LN=0.1383
+EIG6I case=PAP1 k=82 f_GHz=4.151681 Q=3335.9 dn0_MB=-3.713 dn0_PE=27.290 dn0_EO=-10.610 dn0_tot=12.967 (x1e-12) VpiL_S10_Vcm=0.46218 u_frac=0.0742 v_frac=0.0848 w_frac=0.8409 fracAu=0.3920 E_rib/E_LN=0.0688
+EIG6I case=PAP1 k=83 f_GHz=4.165415 Q=6408.8 dn0_MB=-1.036 dn0_PE=4.182 dn0_EO=-1.601 dn0_tot=1.545 (x1e-12) VpiL_S10_Vcm=3.89131 u_frac=0.4390 v_frac=0.5154 w_frac=0.0456 fracAu=0.6828 E_rib/E_LN=0.0442
+EIG6I case=PAP1 k=84 f_GHz=4.169984 Q=3523.1 dn0_MB=-5.032 dn0_PE=36.546 dn0_EO=-14.259 dn0_tot=17.256 (x1e-12) VpiL_S10_Vcm=0.34884 u_frac=0.0967 v_frac=0.2069 w_frac=0.6964 fracAu=0.4198 E_rib/E_LN=0.0663
+EIG6I case=PAP1 k=85 f_GHz=4.198604 Q=3287.8 dn0_MB=-0.680 dn0_PE=4.418 dn0_EO=-1.616 dn0_tot=2.121 (x1e-12) VpiL_S10_Vcm=2.85702 u_frac=0.4978 v_frac=0.4366 w_frac=0.0656 fracAu=0.3607 E_rib/E_LN=0.0841
+EIG6I case=PAP1 k=86 f_GHz=4.208740 Q=3833.4 dn0_MB=-5.772 dn0_PE=46.922 dn0_EO=-19.114 dn0_tot=22.036 (x1e-12) VpiL_S10_Vcm=0.27571 u_frac=0.2912 v_frac=0.5492 w_frac=0.1596 fracAu=0.4591 E_rib/E_LN=0.0541
+EIG6I case=PAP1 k=87 f_GHz=4.287682 Q=2530.9 dn0_MB=-21.345 dn0_PE=90.343 dn0_EO=-31.781 dn0_tot=37.217 (x1e-12) VpiL_S10_Vcm=0.16631 u_frac=0.4166 v_frac=0.5377 w_frac=0.0457 fracAu=0.1466 E_rib/E_LN=0.1486
+EIG6I case=PAP1 k=88 f_GHz=4.328054 Q=2239.7 dn0_MB=-38.429 dn0_PE=181.763 dn0_EO=-64.510 dn0_tot=78.824 (x1e-12) VpiL_S10_Vcm=0.07926 u_frac=0.2349 v_frac=0.2741 w_frac=0.4910 fracAu=0.0837 E_rib/E_LN=0.2092
+EIG6I case=PAP1 k=89 f_GHz=4.338658 Q=2209.2 dn0_MB=-44.572 dn0_PE=201.302 dn0_EO=-70.273 dn0_tot=86.458 (x1e-12) VpiL_S10_Vcm=0.07244 u_frac=0.2311 v_frac=0.2542 w_frac=0.5147 fracAu=0.0625 E_rib/E_LN=0.2707
+EIG6I case=PAP1 k=90 f_GHz=4.351013 Q=2407.7 dn0_MB=-19.337 dn0_PE=59.134 dn0_EO=-10.483 dn0_tot=29.314 (x1e-12) VpiL_S10_Vcm=0.21426 u_frac=0.4125 v_frac=0.5110 w_frac=0.0765 fracAu=0.1238 E_rib/E_LN=0.1503
+EIG6I case=PAP1 k=91 f_GHz=4.395477 Q=2214.8 dn0_MB=-23.322 dn0_PE=106.941 dn0_EO=-37.996 dn0_tot=45.623 (x1e-12) VpiL_S10_Vcm=0.13908 u_frac=0.1817 v_frac=0.4507 w_frac=0.3676 fracAu=0.0477 E_rib/E_LN=0.1563
+EIG6I case=PAP1 k=92 f_GHz=4.423220 Q=2428.0 dn0_MB=-6.680 dn0_PE=8.106 dn0_EO=6.454 dn0_tot=7.879 (x1e-12) VpiL_S10_Vcm=0.81039 u_frac=0.2816 v_frac=0.5849 w_frac=0.1335 fracAu=0.1132 E_rib/E_LN=0.0529
+EIG6I case=PAP1 k=93 f_GHz=4.441301 Q=2128.7 dn0_MB=-15.391 dn0_PE=84.749 dn0_EO=-28.090 dn0_tot=41.269 (x1e-12) VpiL_S10_Vcm=0.15535 u_frac=0.0871 v_frac=0.3265 w_frac=0.5864 fracAu=0.0315 E_rib/E_LN=0.1413
+EIG6I case=PAP1 k=94 f_GHz=4.487431 Q=2382.8 dn0_MB=-3.793 dn0_PE=20.267 dn0_EO=-8.143 dn0_tot=8.332 (x1e-12) VpiL_S10_Vcm=0.77750 u_frac=0.2589 v_frac=0.6909 w_frac=0.0502 fracAu=0.0799 E_rib/E_LN=0.1305
+EIG6I case=PAP1 k=95 f_GHz=4.522182 Q=2465.2 dn0_MB=0.846 dn0_PE=31.194 dn0_EO=-31.264 dn0_tot=0.776 (x1e-12) VpiL_S10_Vcm=8.41536 u_frac=0.4839 v_frac=0.4515 w_frac=0.0645 fracAu=0.1323 E_rib/E_LN=0.0673
+EIG6I case=PAP1 k=96 f_GHz=4.555332 Q=2181.3 dn0_MB=-2.808 dn0_PE=27.923 dn0_EO=-11.958 dn0_tot=13.157 (x1e-12) VpiL_S10_Vcm=0.49979 u_frac=0.0534 v_frac=0.0586 w_frac=0.8880 fracAu=0.0705 E_rib/E_LN=0.0414
+EIG6I case=PAP1 k=97 f_GHz=4.609390 Q=2393.0 dn0_MB=-4.685 dn0_PE=-3.281 dn0_EO=25.627 dn0_tot=17.660 (x1e-12) VpiL_S10_Vcm=0.37677 u_frac=0.5233 v_frac=0.3724 w_frac=0.1043 fracAu=0.1036 E_rib/E_LN=0.1251
+EIG6I case=PAP1 k=98 f_GHz=4.668472 Q=2422.4 dn0_MB=-3.954 dn0_PE=26.125 dn0_EO=-15.969 dn0_tot=6.202 (x1e-12) VpiL_S10_Vcm=1.08663 u_frac=0.3873 v_frac=0.5542 w_frac=0.0585 fracAu=0.1245 E_rib/E_LN=0.1309
+EIG6I case=PAP1 k=99 f_GHz=4.719809 Q=2286.4 dn0_MB=-2.297 dn0_PE=13.914 dn0_EO=-2.323 dn0_tot=9.294 (x1e-12) VpiL_S10_Vcm=0.73308 u_frac=0.0890 v_frac=0.1598 w_frac=0.7512 fracAu=0.1082 E_rib/E_LN=0.0653
+TOP6I case=PAP1 k=59 f_GHz=3.173474 dn0_tot=148.783 x1e-12
+TOP6I case=PAP1 k=60 f_GHz=3.178051 dn0_tot=111.825 x1e-12
+TOP6I case=PAP1 k=39 f_GHz=2.140292 dn0_tot=110.027 x1e-12
+TOP6I case=PAP1 k=62 f_GHz=3.272260 dn0_tot=81.463 x1e-12
+STEP6I_DIAG_DONE case=PAP1
+类运行时: 125 s.
+总时间: 125 s.
+---------- 当前进度: 100 % - 完成
+Memory: 1442/2585 1489/2724
+GHz=4.609390 Q=2393.0 dn0_MB=-4.685 dn0_PE=-3.281 dn0_EO=25.627 dn0_tot=17.660 (x1e-12) VpiL_S10_Vcm=0.37677 u_frac=0.5233 v_frac=0.3724 w_frac=0.1043 fracAu=0.1036 E_rib/E_LN=0.1251
+EIG6I case=PAP1 k=98 f_GHz=4.668472 Q=2422.4 dn0_MB=-3.954 dn0_PE=26.125 dn0_EO=-15.969 dn0_tot=6.202 (x1e-12) VpiL_S10_Vcm=1.08663 u_frac=0.3873 v_frac=0.5542 w_frac=0.0585 fracAu=0.1245 E_rib/E_LN=0.1309
+EIG6I case=PAP1 k=99 f_GHz=4.719809 Q=2286.4 dn0_MB=-2.297 dn0_PE=13.914 dn0_EO=-2.323 dn0_tot=9.294 (x1e-12) VpiL_S10_Vcm=0.73308 u_frac=0.0890 v_frac=0.1598 w_frac=0.7512 fracAu=0.1082 E_rib/E_LN=0.0653
+TOP6I case=PAP1 k=59 f_GHz=3.173474 dn0_tot=148.783 x1e-12
+TOP6I case=PAP1 k=60 f_GHz=3.178051 dn0_tot=111.825 x1e-12
+TOP6I case=PAP1 k=39 f_GHz=2.140292 dn0_tot=110.027 x1e-12
+TOP6I case=PAP1 k=62 f_GHz=3.272260 dn0_tot=81.463 x1e-12
+DIAG_NA java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+STEP6I_DIAG_DONE case=PAP1
+绫昏繍琛屾椂: 129 s.
+鎬绘椂闂�: 129 s.
+---------- 褰撳墠杩涘害: 100 % - 瀹屾垚
+Memory: 1401/2547 1426/2674
