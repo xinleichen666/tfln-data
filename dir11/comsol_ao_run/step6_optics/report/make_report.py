@@ -17,12 +17,15 @@ H2=ParagraphStyle('H2',fontName='MSYHBD',fontSize=12,spaceBefore=10,spaceAfter=4
 B=ParagraphStyle('B',fontName='MSYH',fontSize=9.5,leading=14)
 TINY=ParagraphStyle('TINY',fontName='MSYH',fontSize=8,leading=11)
 
-doc=SimpleDocTemplate(os.path.join(D,'TFLN_AOM_设计报告.pdf'),pagesize=A4,
+doc=SimpleDocTemplate(os.path.join(D,'TFLN_AOM_设计报告_v2.pdf'),pagesize=A4,
   leftMargin=16*mm,rightMargin=16*mm,topMargin=14*mm,bottomMargin=14*mm,
   title='TFLN 声光调制器设计报告')
 E=[]
 def P(t,s=B): E.append(Paragraph(t,s))
-def IMG(f,w=170*mm): E.append(Image(os.path.join(D,f),width=w,height=w*0.5 if 'xsec' in f else None))
+def IMG(f,w=170*mm):
+    from PIL import Image as PILImage
+    iw,ih=PILImage.open(os.path.join(D,f)).size
+    E.append(Image(os.path.join(D,f),width=w,height=w*ih/iw))
 
 P('悬空 TFLN 声光调制器：仿真设计、复现校准与流片要点（内部报告）',H1)
 P('日期：2026-10-25 ｜ 口径：预测仿真，非实验；校准锚：Shao et al., Optica 6, 1498 (2019)')
@@ -96,4 +99,4 @@ P('(1) 悬空膜应力/翘曲与支撑梁机械强度（需工艺侧膜应力数
 P('附：数据文件（dir11/comsol_ao_run/step6_optics/，commit 166751c 及之前）：summary_routeA.md、summary_step7*.md、'
   'Step6iCal*.java、step6i_cal_*.log、Step7*.java 等。')
 doc.build(E)
-print('PDF built:', os.path.getsize(os.path.join(D,'TFLN_AOM_设计报告.pdf')))
+print('PDF built:', os.path.getsize(os.path.join(D,'TFLN_AOM_设计报告_v2.pdf')))

@@ -26,7 +26,7 @@ def fingers(ax,xf0,wf,pf,n,hau,ys):
     ax.annotate('周期 %.2f µm'%pf,(xf0+(n/2-0.5)*pf,ys+0.14),fontsize=8,ha='center')
 
 # ---- Fig 1: Shao calibration cross-section (PAP1)
-fig,ax=plt.subplots(figsize=(9,2.6))
+fig,ax=plt.subplots(figsize=(12,3.2))
 ax.add_patch(Rectangle((0,0),10,0.4,color=SUB))
 ridge(ax,2.6,0.95,0.4,0.4,70)
 fingers(ax,5.875,0.30,0.60,4,0.075,0.4)
@@ -42,7 +42,7 @@ ax.set_aspect('equal')
 plt.tight_layout(); plt.savefig(os.path.join(D,'fig_xsec_shao.png'),dpi=200); plt.close()
 
 # ---- Fig 2: Step 7 design cross-section
-fig,ax=plt.subplots(figsize=(9,2.6))
+fig,ax=plt.subplots(figsize=(12,3.2))
 ax.add_patch(Rectangle((0,0),12,0.4,color=SUB))
 ridge(ax,2.6,0.95,0.4,0.4,70)
 fingers(ax,4.5,0.46,1.84,4,0.1,0.4)
@@ -54,7 +54,7 @@ ax.set_aspect('equal')
 plt.tight_layout(); plt.savefig(os.path.join(D,'fig_xsec_design.png'),dpi=200); plt.close()
 
 # ---- Fig 3: z-segmented layout
-fig,ax=plt.subplots(figsize=(9,1.6))
+fig,ax=plt.subplots(figsize=(12,2.2))
 ax.add_patch(Rectangle((0,0.15),100,0.7,color='#eef2f7'))
 for i in range(10):
     ax.add_patch(Rectangle((i*10,0.3),10,0.4,color='#bcd4e6',alpha=0.7))
@@ -68,7 +68,7 @@ plt.tight_layout(); plt.savefig(os.path.join(D,'fig_zseg.png'),dpi=200); plt.clo
 ang=[60,65,70,75,90]
 tot3=[1.492791e-3,1.971211e-3,2.184152e-3,1.734954e-3,3.319112e-3]
 p1mm=[28.66,27.24,25.97,24.28,18.13]
-fig,ax1=plt.subplots(figsize=(7,3.4))
+fig,ax1=plt.subplots(figsize=(9,4.2))
 ax1.plot(ang,tot3,'o-',color='#1f6fb2'); ax1.set_xlabel('侧壁角 θ (°)'); ax1.set_ylabel('3D |Δn_eff|/V',color='#1f6fb2')
 ax1.axvline(70,color='red',ls='--',lw=1); ax1.annotate('70° 选点',(70.5,2.2e-3),fontsize=8,color='red')
 ax2=ax1.twinx(); ax2.plot(ang,p1mm,'s--',color='#c0504d'); ax2.set_ylabel('1 mm nonseg 源功率 (mW)',color='#c0504d')
