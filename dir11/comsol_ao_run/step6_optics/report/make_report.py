@@ -16,8 +16,15 @@ H1=ParagraphStyle('H1',fontName='MSYHBD',fontSize=16,spaceAfter=8,textColor=colo
 H2=ParagraphStyle('H2',fontName='MSYHBD',fontSize=12,spaceBefore=10,spaceAfter=4,textColor=colors.HexColor('#1a3a5c'))
 B=ParagraphStyle('B',fontName='MSYH',fontSize=9.5,leading=14)
 TINY=ParagraphStyle('TINY',fontName='MSYH',fontSize=8,leading=11)
+TS=ParagraphStyle('TS',fontName='MSYH',fontSize=8,leading=10)
+TH=ParagraphStyle('TH',fontName='MSYHBD',fontSize=8,leading=10)
+def T(rows):
+    out=[]
+    for i,r in enumerate(rows):
+        out.append([Paragraph(str(c),(TH if i==0 else TS)) for c in r])
+    return out
 
-doc=SimpleDocTemplate(os.path.join(D,'TFLN_AOM_设计报告_v2.pdf'),pagesize=A4,
+doc=SimpleDocTemplate(os.path.join(D,'TFLN_AOM_设计报告_v3.pdf'),pagesize=A4,
   leftMargin=16*mm,rightMargin=16*mm,topMargin=14*mm,bottomMargin=14*mm,
   title='TFLN 声光调制器设计报告')
 E=[]
@@ -47,7 +54,7 @@ P('图 4：梯形侧壁角扫（三维）：70° 为工艺最优（|Δn_eff|/V �
 IMG('fig_trap.png')
 
 P('3. 关键结果',H2)
-t3=Table([
+t3=Table(T([
  ['项目','数值','口径'],
  ['3D 100µm 段主峰 |Δn_eff|/V','3.32e-3（矩形 90°）/ 2.18e-3（梯形 70°）','每伏指间电压'],
  ['驱动 Q','1931–2007','主峰 FWHM'],
@@ -58,20 +65,20 @@ t3=Table([
  ['支撑梁（每段一根 2 µm + PML）','损失 1.11×，Q 不降','锚点漏能'],
  ['膜厚容差 ±10 nm','频率 ±4.4 MHz；效率 ±7%（刻蚀深）','二维 FN7'],
  ['脊位置容差','±0.4 µm 使主模族耦合降 2–40×（建议按 ±0.2 µm 控制）','路A XR 扫'],
-],colWidths=[62*mm,66*mm,42*mm])
+]),colWidths=[62*mm,66*mm,42*mm])
 t3.setStyle(TableStyle([('FONTNAME',(0,0),(-1,-1),'MSYH'),('FONTNAME',(0,0),(-1,0),'MSYHBD'),
  ('FONTSIZE',(0,0),(-1,-1),8),('GRID',(0,0),(-1,-1),0.4,colors.grey),('VALIGN',(0,0),(-1,-1),'MIDDLE')]))
 E.append(t3)
 
 P('4. 模型校准（路A，Shao 2019 五模逐模对齐）',H2)
-t4=Table([
+t4=Table(T([
  ['Shao 模 (GHz)','模型模','f','Δn0 比','备注'],
  ['1.55（tot 32.3）','k29 @1.535','−1.0%','1.07×','EO 主导'],
  ['2.17（tot 71.7）','k39 @2.140','−1.4%','1.53×（PAP1C 口径 1.37×）','EO 主导'],
  ['2.40（tot 17.2）','k43 @2.348','−2.2%','0.81×',''],
  ['3.16（tot 65.0）','k58 @3.151','−0.3%','1.13×','PE+EO'],
  ['3.24（tot 102.5）','k62 @3.272','+1.0%','0.79×','Fig.S2 场指纹认定'],
-],colWidths=[34*mm,34*mm,20*mm,26*mm,56*mm])
+]),colWidths=[34*mm,34*mm,20*mm,26*mm,56*mm])
 t4.setStyle(TableStyle([('FONTNAME',(0,0),(-1,-1),'MSYH'),('FONTNAME',(0,0),(-1,0),'MSYHBD'),
  ('FONTSIZE',(0,0),(-1,-1),8),('GRID',(0,0),(-1,-1),0.4,colors.grey),('VALIGN',(0,0),(-1,-1),'MIDDLE')]))
 E.append(t4)
@@ -79,7 +86,7 @@ P('实测锚：VπL = 0.058 V·cm（模型）对 0.046 V·cm（Shao 实测，3.3
   '迁移到本设计结构时，功率按 ×0.6–1.9 区间引用（锚定 k62 为 ×0.63）。')
 
 P('5. 设计规则与流片要点',H2)
-t5=Table([
+t5=Table(T([
  ['参数','设计值','备注'],
  ['周期','1.84 µm','回调到 3.33 GHz；±1% → ∓25 MHz'],
  ['段长 / 拓扑','100 µm；1 mm 为 2 串×5 并','段长越长模式分裂越弱'],
@@ -88,7 +95,7 @@ t5=Table([
  ['脊位置','XR=2.6 µm；对准容差 ±0.2 µm','关键尺寸，主模族对其极敏感'],
  ['膜厚','800 nm（板 400 + 脊 400）','±10 nm → ±4.4 MHz'],
  ['支撑梁','每段间隙两侧各 1 根 2 µm，信号/地同梁','损失 1.11×'],
-],colWidths=[34*mm,64*mm,72*mm])
+]),colWidths=[34*mm,64*mm,72*mm])
 t5.setStyle(TableStyle([('FONTNAME',(0,0),(-1,-1),'MSYH'),('FONTNAME',(0,0),(-1,0),'MSYHBD'),
  ('FONTSIZE',(0,0),(-1,-1),8),('GRID',(0,0),(-1,-1),0.4,colors.grey),('VALIGN',(0,0),(-1,-1),'MIDDLE')]))
 E.append(t5)
@@ -99,4 +106,4 @@ P('(1) 悬空膜应力/翘曲与支撑梁机械强度（需工艺侧膜应力数
 P('附：数据文件（dir11/comsol_ao_run/step6_optics/，commit 166751c 及之前）：summary_routeA.md、summary_step7*.md、'
   'Step6iCal*.java、step6i_cal_*.log、Step7*.java 等。')
 doc.build(E)
-print('PDF built:', os.path.getsize(os.path.join(D,'TFLN_AOM_设计报告_v2.pdf')))
+print('PDF built:', os.path.getsize(os.path.join(D,'TFLN_AOM_设计报告_v3.pdf')))
