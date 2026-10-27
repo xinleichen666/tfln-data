@@ -24,7 +24,7 @@ def T(rows):
         out.append([Paragraph(str(c),(TH if i==0 else TS)) for c in r])
     return out
 
-doc=SimpleDocTemplate(os.path.join(D,'TFLN_AOM_设计报告_v3.pdf'),pagesize=A4,
+doc=SimpleDocTemplate(os.path.join(D,'TFLN_AOM_设计报告_v4.pdf'),pagesize=A4,
   leftMargin=16*mm,rightMargin=16*mm,topMargin=14*mm,bottomMargin=14*mm,
   title='TFLN 声光调制器设计报告')
 E=[]
@@ -58,8 +58,8 @@ t3=Table(T([
  ['项目','数值','口径'],
  ['3D 100µm 段主峰 |Δn_eff|/V','3.32e-3（矩形 90°）/ 2.18e-3（梯形 70°）','每伏指间电压'],
  ['驱动 Q','1931–2007','主峰 FWHM'],
- ['1 mm 驱动功率（仿真/匹配）','2.85 mW（2 串×5 并，48 Ω）','50 Ω 源，含失配'],
- ['1 mm 功率（路A校准后）','1.7–5.4 mW（锚定 k62：1.8 mW）','功率带 ×0.6–1.9'],
+ ['1 mm 驱动功率（仿真/匹配）','3.45 mW（全并联，10 并）','50 Ω 源，含失配'],
+ ['1 mm 功率（路A校准后）','2.1–6.6 mW（锚定 k62：2.2 mW）','功率带 ×0.6–1.9'],
  ['梯形 70° 光学损耗','≤5e-4 dB/cm（TE0，neff 1.946）','数值底噪'],
  ['分段模化','主模分裂 0.3–1 MHz；1 µm 汇流条为"坏宽度"；0.5 µm 收敛','三维 z 模混合'],
  ['支撑梁（每段一根 2 µm + PML）','损失 1.11×，Q 不降','锚点漏能'],
@@ -89,7 +89,7 @@ P('5. 设计规则与流片要点',H2)
 t5=Table(T([
  ['参数','设计值','备注'],
  ['周期','1.84 µm','回调到 3.33 GHz；±1% → ∓25 MHz'],
- ['段长 / 拓扑','100 µm；1 mm 为 2 串×5 并','段长越长模式分裂越弱'],
+ ['段长 / 拓扑','100 µm；1 mm 全并联（10 并）','段长越长模式分裂越弱'],
  ['汇流条','0.5 µm（避开 1 µm 坏宽度）','0.3–0.7 µm 内平滑'],
  ['侧壁角','70°（工艺窗口内最优）','60–75° 已扫'],
  ['脊位置','XR=2.6 µm；对准容差 ±0.2 µm','关键尺寸，主模族对其极敏感'],
@@ -106,4 +106,4 @@ P('(1) 悬空膜应力/翘曲与支撑梁机械强度（需工艺侧膜应力数
 P('附：数据文件（dir11/comsol_ao_run/step6_optics/，commit 166751c 及之前）：summary_routeA.md、summary_step7*.md、'
   'Step6iCal*.java、step6i_cal_*.log、Step7*.java 等。')
 doc.build(E)
-print('PDF built:', os.path.getsize(os.path.join(D,'TFLN_AOM_设计报告_v3.pdf')))
+print('PDF built:', os.path.getsize(os.path.join(D,'TFLN_AOM_设计报告_v4.pdf')))
